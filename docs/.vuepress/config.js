@@ -6,7 +6,7 @@ module.exports = {
     lastUpdated: 'Last updated',
     searchPlaceholder: 'Search...',
     smoothScroll: true,
-    base: '/guide/',
+    base: '/rl-docs/',
     sidebar:{
       '/beginner/':
     [
