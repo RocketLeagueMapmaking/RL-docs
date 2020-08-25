@@ -1,13 +1,4 @@
-# VuePress Sandbox
+# Rocket league maps documentation
+A guide by Mr Swaggles
 
-Playground for VuePress development.
-
-## Getting Started
-
-```sh
-# Install dependencies
-yarn
-
-# Start local env
-yarn dev
-```
+## Edit

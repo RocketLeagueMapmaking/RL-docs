@@ -29,3 +29,7 @@ To download this, you will need to make an account with RocketLeagueMods.com, ou
 * [simple setup](https://rocketleaguemods.com/mods/udk-2015-simple-setup/)
 
 After completing you can continue with [subject](link). 
+
+## No setup package
+
+To complete the installation manually continue on the next page

@@ -12,27 +12,14 @@ module.exports = {
     [
       {
         title: 'Introduction',   // required
-        path: '/beginner/',      // optional, link of the title, which should be an absolute path and must exist
+        // path: '/beginner/',      // optional, link of the title, which should be an absolute path and must exist
         collapsable: false, // optional, defaults to true
         sidebarDepth: 1,    // optional, defaults to 1
         children: [
-    
-        '',
-      // enter
-        
-    //  enter
-        // 'quickinstall',
-        // 'installing',
-        // 'dummyclasses',
-        // // enter
-        // 'projectsetup',
-        // 'udk_intro',
-        // 'udk_editor',
-        // 'content_browser'
-        
+        ''
+     
       ]},{
         title: 'Beginning',   // required
-        path: '/beginner/',      // optional, link of the title, which should be an absolute path and must exist
         collapsable: false, // optional, defaults to true
         sidebarDepth: 1,    // optional, defaults to 1
         children: [
@@ -42,7 +29,6 @@ module.exports = {
         ]
       },{
         title: 'Installing UDK',   // required
-        path: '/beginner/',      // optional, link of the title, which should be an absolute path and must exist
         collapsable: false, // optional, defaults to true
         sidebarDepth: 1,    // optional, defaults to 1
         children: [
@@ -52,7 +38,6 @@ module.exports = {
         ]
       },{
         title: 'Exploring UDK',   // required
-        path: '/beginner/',      // optional, link of the title, which should be an absolute path and must exist
         collapsable: false, // optional, defaults to true
         sidebarDepth: 1,    // optional, defaults to 1
         children: [
@@ -65,7 +50,6 @@ module.exports = {
     ],'/guide/':[
       {
         title: 'Information',   // required
-        path: '/guide/',      // optional, link of the title, which should be an absolute path and must exist
         collapsable: false, // optional, defaults to true
         sidebarDepth: 1,    // optional, defaults to 1
         children: [
@@ -75,7 +59,6 @@ module.exports = {
       },
       {
         title: 'UDK Basics',   // required
-        path: '/guide/',      // optional, link of the title, which should be an absolute path and must exist
         collapsable: false, // optional, defaults to true
         sidebarDepth: 1,    // optional, defaults to 1
         children: [
@@ -93,7 +76,6 @@ module.exports = {
       },
       {
         title: 'UDK Advanced',   // required
-        path: '/guide/',      // optional, link of the title, which should be an absolute path and must exist
         collapsable: false, // optional, defaults to true
         sidebarDepth: 1,    // optional, defaults to 1
         children: [
@@ -107,7 +89,6 @@ module.exports = {
       },
       {
         title: 'Finishing',   // required
-        path: '/guide/',      // optional, link of the title, which should be an absolute path and must exist
         collapsable: false, // optional, defaults to true
         sidebarDepth: 1,    // optional, defaults to 1
         children: [
@@ -117,33 +98,6 @@ module.exports = {
       }
     ]
   },
-    // ,'/guide/': [
-    //     '',
-    //     'request',
-        // enter
-        // 'udk-basics',
-        // 'collideable_mesh',
-        // 'collideable_collisions',
-        // 'owl',
-        // 'materials',
-        // 'lighting',
-        // 'game_items',
-        // 'details',
-        // 'what_next',
-        // 'rapid_test',
-        // // enter
-        // 'dummy_assets',
-        // 'upgrading',
-        // 'custom_material',
-        // 'matinee',
-        // 'KActors',
-        // 'skeletal_mesh',
-        // // enter
-        // 'publishing',
-        // 'playing'        
-      // ]
-    
-    // },
     nav: [
       {
         text: 'Home',

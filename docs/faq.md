@@ -1,7 +1,23 @@
+---
+sidebar: 'auto'
+---
+
 # FAQ
 
-Consectetur proident commodo et cillum. Fugiat dolor veniam non duis aliqua. Eu officia ad culpa ad non est deserunt. Aute aute dolore ex in ipsum adipisicing sit exercitation ipsum. Excepteur sunt et dolor incididunt deserunt pariatur adipisicing fugiat duis duis veniam magna est culpa. Consequat consectetur culpa nulla voluptate aliquip veniam id in non cupidatat sint nisi. Culpa adipisicing anim voluptate qui excepteur.
+## General
 
-Duis ad reprehenderit proident anim fugiat id exercitation deserunt Lorem enim cillum tempor dolor. Excepteur qui labore cillum ipsum ipsum amet ut aute dolore eiusmod amet exercitation esse magna. Adipisicing proident irure sint aute id proident cillum adipisicing veniam excepteur. Elit consectetur pariatur qui proident ea culpa. Ut ipsum aliqua consectetur exercitation in est aute pariatur reprehenderit nisi aute anim ullamco. Consequat nisi dolor velit in est proident mollit incididunt voluptate ullamco.
+### How do I get started?
 
-Laboris laboris quis adipisicing eu labore nulla anim esse dolore dolore non. Non aute ad reprehenderit est labore. Laborum duis laborum magna ad.
+Pick your favorite Getting Started guide (selfishly I would recommend my own, at the top of the [Guides list](guides)). At the very least, you’ll need UDK, [Rocket League](https://rocketleague.com), and a lot of free time. Be sure to join the Mapmaking Discord (top of the [Communities list](communities)) and don’t be afraid to ask questions!
+
+Tags:
+
+Answered by: 
+
+### What is UDK?
+
+UDK is the development tool for game creation using Unreal Engine 3. It was originally released by Epic Games in 2006, and they continued supporting and improving it until the release of Unreal Engine 4 in 2014. Rocket League was made with this tool, so we have the privilege of using it as well.
+
+Tags:
+
+Answered by:

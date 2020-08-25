@@ -22,6 +22,7 @@ In this guide I'll sometimes refer to some usefull links and recourses. You can 
 * [assets]()
 * [guides]()
 * [downloads]()
+* [cheat sheets]()
 
 
 ## Support

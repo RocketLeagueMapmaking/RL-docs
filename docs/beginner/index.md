@@ -8,6 +8,8 @@ tags:
 
 # Starting
 
+![alt text](../.vuepress/public/images/image234.png)
+
 ## Hello
 
 First off, a sincere thanks to all of you for using this guide over the years. I originally made it with the intent to make a series of guides, but quickly fell off the bandwagon. But, here I am, almost 4 years after the original release, and I have finally found the motivation to make the updates I always wanted to.
@@ -21,6 +23,7 @@ Who am I? I have a few names, depending on where you find me: Dasoccerguy, Mr. S
 ### This guide
 
 <!-- ![alt text](./vuepress/public/logo_rlmm_tallbanner_1440.png)  -->
+![alt text](../.vuepress/public/image165.jpg)
 
 This guide is intended to help anyone start making their own custom maps for Rocket League, and to open the door to an infinite number of great creations. It will address anything I feel is important, and will be updated as necessary and as we continue to figure out the process.
 
