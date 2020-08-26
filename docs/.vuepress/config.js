@@ -120,17 +120,17 @@ module.exports = {
             items: [
               {
                 text:'3D modelling',
-                link:''
+                link:'/modelling/'
               },{
                 text:'Multiplayer',
-                link:''
+                link:'/multiplayer/'
               },{
                 text:'Kismet',
-                link:''
+                link:'/kismet/'
               },
               {
                 text:'Textures',
-                link:''
+                link:'/textures/'
               },
               {
                 text:'old guide',
