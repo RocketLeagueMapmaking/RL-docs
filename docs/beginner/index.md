@@ -16,7 +16,7 @@ First off, a sincere thanks to all of you for using this guide over the years. I
 
 This guide will attempt to be an all-in-one explanation of the Rocket League mapmaking process, **from installing UDK to playing your finished multiplayer map from the Steam Workshop**, using Blender as the 3D modeling software.
 
-### Me
+### Me 
 
 Who am I? I have a few names, depending on where you find me: Dasoccerguy, Mr. Swaggles, and Dr. Swaggles. I have been using Blender since 2003, though only for hobby-level projects. I consider myself very competent with Blender, but I am by no means a professional and I still have much to learn. I have been playing Rocket League since one week after release, and I can safely say that it is my favorite game ever. Most often you’ll find me shooting some Hoops. (2020 update… this is all still completely true)
 

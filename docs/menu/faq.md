@@ -4,6 +4,8 @@ sidebar: 'auto'
 
 # FAQ
 
+Is an answer incomplete or not up-to-date? Read [here]() the guide how you can contribute or go directly to [github]()
+
 ## General
 
 ### How do I get started?

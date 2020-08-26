@@ -7,9 +7,7 @@ title: Request more
 
 Since this guide is made specifically for the map making, we will not add guides for [other tools](). In this guide you will find the most relevant and up-to-date content. We will, of course, make additions to the current pages and add new ones.
 
-Requests may be as simple as "add an example to the maps examples page", or "add a page about Kismet". We'll do our best to fulfill all requests, as long as they're reasonable.
-
-To make a request, simply head over to [the repo's issue tracker]() and [create a new issue]()! Title it appropriately, and let us know exactly what you mean inside the issue description. Make sure that you've looked at the [faq](./faq),[guides](./guides) [future content](./##Future Content) and [inventor board]() before making a request; it might already exist!
+Check [here](../menu/contribute) to learn how to request more content
 
 ## Future content
 

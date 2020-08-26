@@ -1,4 +1,5 @@
 # Rocket league maps documentation
 A guide by Mr Swaggles
 
-## Edit
+## Contribute
+Read [this guide](./docs/menu/contribute) for how to contribute

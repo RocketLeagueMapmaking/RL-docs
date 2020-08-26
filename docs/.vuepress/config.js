@@ -1,10 +1,31 @@
 module.exports = {
   title: 'DOCS',
-  description: 'This is your landing page description.',
+  description: 'Rocket league maps with documentation',
   themeConfig: {
     logo: '/logo_rlmm_round_1440.png',
     lastUpdated: 'Last updated',
     searchPlaceholder: 'Search...',
+     // Assumes GitHub. Can also be a full GitLab url.
+     repo: 'webbuildlucas/RL-docs',
+     // Customising the header label
+     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
+     repoLabel: 'Github',
+ 
+     // Optional options for generating "Edit this page" link
+ 
+     // if your docs are in a different repo from your main project:
+    //  docsRepo: 'vuejs/vuepress',
+     // if your docs are not at the root of the repo:
+    //  docsDir: 'docs',
+     // if your docs are in a specific branch (defaults to 'master'):
+     docsBranch: 'master',
+     // defaults to false, set to true to enable
+     editLinks: true,
+     // custom text for edit link. Defaults to "Edit this page"
+     editLinkText: 'Edit this page on Github',
+    head: [
+      ['link', { rel: 'icon', href: '/logo_rlmm_round_1440.png' }]
+    ],
     smoothScroll: true,
     base: '/rl-docs/',
     sidebar:{
@@ -19,27 +40,27 @@ module.exports = {
         ''
      
       ]},{
-        title: 'Beginning',   // required
-        collapsable: false, // optional, defaults to true
-        sidebarDepth: 1,    // optional, defaults to 1
+        title: 'Beginning',   
+        collapsable: false, 
+        sidebarDepth: 1,    
         children: [
           'ready',
           'udk',
           'windows',
         ]
       },{
-        title: 'Installing UDK',   // required
-        collapsable: false, // optional, defaults to true
-        sidebarDepth: 1,    // optional, defaults to 1
+        title: 'Installing UDK',   
+        collapsable: false, 
+        sidebarDepth: 1,    
         children: [
           'quickinstall',
         'installing',
         'dummyclasses',
         ]
       },{
-        title: 'Exploring UDK',   // required
-        collapsable: false, // optional, defaults to true
-        sidebarDepth: 1,    // optional, defaults to 1
+        title: 'Exploring UDK',   
+        collapsable: false, 
+        sidebarDepth: 1,    
         children: [
           'projectsetup',
         'udk_intro',
@@ -49,18 +70,18 @@ module.exports = {
       }
     ],'/guide/':[
       {
-        title: 'Information',   // required
-        collapsable: false, // optional, defaults to true
-        sidebarDepth: 1,    // optional, defaults to 1
+        title: 'Information',  
+        collapsable: false, 
+        sidebarDepth: 1,    
         children: [
           '',
           'request',
         ]
       },
       {
-        title: 'UDK Basics',   // required
-        collapsable: false, // optional, defaults to true
-        sidebarDepth: 1,    // optional, defaults to 1
+        title: 'UDK Basics',   
+        collapsable: false, 
+        sidebarDepth: 1,    
         children: [
           'udk-basics',
           'collideable_mesh',
@@ -75,9 +96,9 @@ module.exports = {
         ]
       },
       {
-        title: 'UDK Advanced',   // required
-        collapsable: false, // optional, defaults to true
-        sidebarDepth: 1,    // optional, defaults to 1
+        title: 'UDK Advanced',   
+        collapsable: false, 
+        sidebarDepth: 1,    
         children: [
           'dummy_assets',
           'upgrading',
@@ -88,9 +109,9 @@ module.exports = {
         ]
       },
       {
-        title: 'Finishing',   // required
-        collapsable: false, // optional, defaults to true
-        sidebarDepth: 1,    // optional, defaults to 1
+        title: 'Finishing',   
+        collapsable: false, 
+        sidebarDepth: 1,    
         children: [
           'publishing',
            'playing'
@@ -105,58 +126,59 @@ module.exports = {
       },
       {
         text: 'Starting',
-        link: '/beginner/#section-introduction'
+        link: '/beginner/'
       },
       {
         text: 'Documentation',
-        link: '/guide/#section-introduction'
+        link: '/guide/'
+      },
+      {
+        text: 'Guides',
+        items: [
+          {
+            text:'3D modelling',
+            link:'/modelling/'
+          },{
+            text:'Multiplayer',
+            link:'/multiplayer/'
+          },{
+            text:'Kismet',
+            link:'/kismet/'
+          },
+          {
+            text:'Textures',
+            link:'/textures/'
+          },
+          {
+            text:'old guide',
+            link:'https://docs.google.com/document/d/166A68CLxWk0LxMZ4B9vsuBmIgbphLIMbRB0BCn3ezsc/edit#'
+          },
+          {
+            text:'Other guides',
+            link:'/menu/guides'
+          }
+        ]
       },
       
       {
         text: 'More',
         items: [
-           {
-            text: 'Guides',
-            items: [
-              {
-                text:'3D modelling',
-                link:'/modelling/'
-              },{
-                text:'Multiplayer',
-                link:'/multiplayer/'
-              },{
-                text:'Kismet',
-                link:'/kismet/'
-              },
-              {
-                text:'Textures',
-                link:'/textures/'
-              },
-              {
-                text:'old guide',
-                link:'https://docs.google.com/document/d/166A68CLxWk0LxMZ4B9vsuBmIgbphLIMbRB0BCn3ezsc/edit#'
-              },
-              {
-                text:'Other guides',
-                link:'/guides'
-              }
-            ]
-          },
+           
         {
           text:'recources',
           items:[
             {
               text:'downloads',
-              link:'/downloads'
+              link:'/menu/downloads'
             }, {
               text:'cheat sheets',
-              link:'/cheats'
+              link:'/menu/cheats'
             },{
-              text:'assets',
-              link:'/assets'
+              text:'Kismet snippets',
+              link:'/kismet/kismet'
             }, {
               text:'communities',
-              link:'/communities'
+              link:'/menu/communities'
             }
           ]
         },{
@@ -164,14 +186,14 @@ module.exports = {
           items:[
             {
               text: 'how to contribute',
-              link: '/contribute'
+              link: '/menu/contribute'
             },{
               text: 'Special thanks',
-              link: '/credits'
+              link: '/menu/credits'
             },
             {
               text: 'FAQ',
-              link: '/faq'
+              link: '/menu/faq'
             },
           ]
         }
@@ -180,6 +202,10 @@ module.exports = {
         ]
       }
     ],
-    plugins: ['@vuepress/active-header-links','@vuepress/last-updated']
+    plugins: [
+      '@vuepress/active-header-links',
+      '@vuepress/last-updated',
+    '@vuepress/pwa'
+    ]
   }
 };
