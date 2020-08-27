@@ -6,7 +6,7 @@ sidebar: auto
 
 You can find here every download and asset from this guide
 
-# Downloads
+## Downloads
 
 ### Starting
 

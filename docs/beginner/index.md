@@ -22,7 +22,6 @@ Who am I? I have a few names, depending on where you find me: Dasoccerguy, Mr. S
 
 ### This guide
 
-<!-- ![alt text](./vuepress/public/logo_rlmm_tallbanner_1440.png)  -->
 ![alt text](../.vuepress/public/image165.jpg)
 
 This guide is intended to help anyone start making their own custom maps for Rocket League, and to open the door to an infinite number of great creations. It will address anything I feel is important, and will be updated as necessary and as we continue to figure out the process.

@@ -44,3 +44,116 @@ So it looks like this:
 This tells UDK to recognize that these folders contain assets that you intend to use, and allows you to place them in the editor.
 
 **Inside `{UDK Folder}\Development\Src\Engine\Classes\` open `StaticMeshActor.uc`, `PrimitiveComponent.uc`, and `Actor.uc`.**
+
+**In `StaticMeshActor.uc`** go to these lines
+```unrealscript
+Begin Object Class=StaticMeshComponent Name=StaticMeshComponent0
+    bAllowApproximateOcclusion=TRUE
+    bForceDirectLightMap=TRUE
+    bUsePrecomputedShadows=TRUE
+End Object
+```
+And replace it with these lines
+```unrealscript{5-7}
+Begin Object Class=StaticMeshComponent Name=StaticMeshComponent0
+    bAllowApproximateOcclusion=TRUE
+    bForceDirectLightMap=TRUE
+    bUsePrecomputedShadows=TRUE
+    BlockRigidBody=false
+    bDisableAllRigidBody=true
+    bAcceptsDynamicDecals=false
+End Object
+```
+This is to set the defaults that we want on every solid object in the game.
+
+**In `PrimitiveComponent.uc`** go to these lines
+```unrealscript
+enum ERBCollisionChannel
+{
+    RBCC_Default,
+    RBCC_Nothing, // Special channel that nothing should request collision with.
+    RBCC_Pawn,
+    RBCC_Vehicle,
+    RBCC_Water,
+    RBCC_GameplayPhysics,
+    RBCC_EffectPhysics,
+    RBCC_Untitled1,
+    RBCC_Untitled2,
+    RBCC_Untitled3,
+    RBCC_Untitled4,
+    RBCC_Cloth,
+    RBCC_FluidDrain,
+    RBCC_SoftBody,
+    RBCC_FracturedMeshPart,
+    RBCC_BlockingVolume,
+    RBCC_DeadPawn,
+    RBCC_Clothing,
+    RBCC_ClothingCollision
+};
+```
+And replace it with these lines
+```unrealscript{10-12}
+enum ERBCollisionChannel
+{
+    RBCC_Default,
+    RBCC_Nothing, // Special channel that nothing should request collision with.
+    RBCC_Pawn,
+    RBCC_Vehicle,
+    RBCC_Water,
+    RBCC_GameplayPhysics,
+    RBCC_EffectPhysics,
+    RBCC_Ball,
+    RBCC_VehicleBlocker,
+    RBCC_BallBlocker,
+    RBCC_Untitled1,
+    RBCC_Untitled2,
+    RBCC_Untitled3,
+    RBCC_Untitled4,
+    RBCC_Cloth,
+    RBCC_FluidDrain,
+    RBCC_SoftBody,
+    RBCC_FracturedMeshPart,
+    RBCC_BlockingVolume,
+    RBCC_DeadPawn,
+    RBCC_Clothing,
+    RBCC_ClothingCollision
+};
+```
+This allows us to give objects different collision channels for different behaviors. VehicleBlocker objects allow the ball through, but not the player. BallBlocker is the reverse. And Ball is… like the ball.
+
+**Lastly, in `Actor.uc`** go to this line
+```unrealscript
+var const bool bNoDelete; // Cannot be deleted during play.
+```
+And replace it with this line
+```unrealscript
+var() const bool bNoDelete; // Cannot be deleted during play.
+```
+This is (I believe) to get the FXActors we use for boost pads to behave as expected.
+
+**Lastly, you will need to recompile UDK scripts so it recognizes these changes.**
+
+::: warning Note
+If you ever change these in the future, you will need to recompile again.
+:::
+
+In `{UDK Folder}\Binaries\`, run `UnrealFrontend.exe`. 
+
+![alt text](../.vuepress/public/images/image81.png)
+*I don’t know why this has a cake slice as its icon*
+
+**Click Script and run Full Recompile.** Close it after it finishes, and now you’re allowed to start.
+...almost
+
+## Park_P
+
+Thanks to the hard work of friendly modders, there is an extremely useful UDK Package (.UPK) which contains a number of assets ripped from the game. They allow you to build your map with pieces and materials that are already in the game. However, the important thing is that they have the exact same name as the in-game assets. More on this aspect of things later.
+
+You can find the download [here](../menu/downloads.html#park-p-dummy-assets)
+
+**Place this into `{UDK Folder}\UDKGame\Content\`** alongside the various other files. UDK will recognize it here and make its contents available to you.
+
+[A later section]() of this guide will show you how to use any resource from any map, but this is more than enough to get started with.
+
+![alt text](../.vuepress/public/images/image225.png)
+*For a world that isn’t just white and blue checkers*

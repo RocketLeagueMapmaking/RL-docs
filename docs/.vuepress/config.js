@@ -125,16 +125,16 @@ module.exports = {
         link: 'https://rlmaps.netlify.app/'
       },
       {
-        text: 'Starting',
-        link: '/beginner/'
-      },
-      {
         text: 'Documentation',
         link: '/guide/'
       },
       {
         text: 'Guides',
         items: [
+          {
+            text: 'Starting',
+            link: '/beginner/'
+          },
           {
             text:'3D modelling',
             link:'/modelling/'

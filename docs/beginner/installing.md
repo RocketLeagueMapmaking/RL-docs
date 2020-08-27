@@ -4,7 +4,7 @@ title: Installing
 ---
 # Installing UDK
 
-After you download the UDK installer from my Drive (or any other friendly modder’s secret stash), double click it to start the install process. Accept the TOS.
+After you [download the UDK installer]() from my Drive (or any other friendly modder’s secret stash), double click it to start the install process. Accept the TOS.
 
 ![alt text](../.vuepress/public/images/image149.png)
 
