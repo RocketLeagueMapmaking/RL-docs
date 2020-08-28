@@ -3,3 +3,5 @@
 .vscode
 /docs/.vuepress/dist
 .gitignore
+yarn.lock
+.gitattributes
