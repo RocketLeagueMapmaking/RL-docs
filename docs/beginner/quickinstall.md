@@ -21,7 +21,7 @@ It has not been thoroughly tested, so please message me if it misbehaves.
 * [setup script](https://github.com/Dasoccerguy/RocketLeagueMapMaking)
 
 
-After completing you can continue with [subject](link)
+<!-- After completing you can continue with [subject](link) -->
 
 ## Newk’s UDK Simple Setup
 
@@ -29,8 +29,5 @@ To download this, you will need to make an account with RocketLeagueMods.com, ou
 
 * [simple setup](https://rocketleaguemods.com/mods/udk-2015-simple-setup/)
 
-After completing you can continue with [subject](link). 
+<!-- After completing you can continue with [subject](link).  -->
 
-## No setup package
-
-To complete the installation manually continue on the next page

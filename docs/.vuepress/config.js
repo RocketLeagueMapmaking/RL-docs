@@ -1,6 +1,7 @@
 module.exports = {
   title: 'DOCS',
   description: 'Rocket league maps with documentation',
+  theme: 'default-prefers-color-scheme',
   themeConfig: {
     logo: '/logo_rlmm_round_1440.png',
     lastUpdated: 'Last updated',
@@ -31,15 +32,16 @@ module.exports = {
     sidebar:{
       '/beginner/':
     [
-      {
-        title: 'Introduction',   // required
-        // path: '/beginner/',      // optional, link of the title, which should be an absolute path and must exist
-        collapsable: false, // optional, defaults to true
-        sidebarDepth: 1,    // optional, defaults to 1
-        children: [
-        ''
+      // {
+      //   title: 'Introduction',   // required
+      //   // path: '/beginner/',      // optional, link of the title, which should be an absolute path and must exist
+      //   collapsable: false, // optional, defaults to true
+      //   sidebarDepth: 1,    // optional, defaults to 1
+      //   children: [
+      //   ''
      
-      ]},{
+      // ]},
+      {
         title: 'Beginning',   
         collapsable: false, 
         sidebarDepth: 1,    
@@ -122,7 +124,9 @@ module.exports = {
     nav: [
       {
         text: 'Home',
-        link: 'https://rlmaps.netlify.app/'
+        link: 'http://rocketleaguemapmaking.com/',
+        rel:false,
+        target:'_self'
       },
       {
         text: 'Documentation',
@@ -133,7 +137,7 @@ module.exports = {
         items: [
           {
             text: 'Starting',
-            link: '/beginner/'
+            link: '/beginner/ready'
           },
           {
             text:'3D modelling',
@@ -175,7 +179,7 @@ module.exports = {
               link:'/menu/cheats'
             },{
               text:'Kismet snippets',
-              link:'/kismet/kismet'
+              link:'https://github.com/RocketLeagueMapmaking/Kismet'
             }, {
               text:'communities',
               link:'/menu/communities'
@@ -189,7 +193,7 @@ module.exports = {
               link: '/menu/contribute'
             },{
               text: 'Special thanks',
-              link: '/menu/credits'
+              link: '/index.html#special-thanks'
             },
             {
               text: 'FAQ',
