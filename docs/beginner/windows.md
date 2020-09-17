@@ -15,7 +15,7 @@ I highly recommend disabling the option to “hide file extensions for known typ
 
 That, or always keep the “Type” column visible in your file explorer windows. You will have to frequently make changes to file extensions during this process, and it’s just a good thing to have enabled in general.
 
-## Batch Script For Quickly Testing Maps (BSFQTM)
+## Batch Script For Quickly Testing Maps (BSFQTM) <Badge text="important" type="tip"/>
 
 Create a new text file, then rename it something like UtopiaOverwrite.bat. To use this script, simply drag your map file onto it, and it will overwrite the Rocket Labs Utopia (donut) map, which is not used in any multiplayer playlist. 
 

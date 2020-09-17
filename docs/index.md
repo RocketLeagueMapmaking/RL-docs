@@ -1,16 +1,24 @@
 ---
+title: Rocket League Mapmaking guide
 home: false
 heroImage: /logo_rlmm_round_1440.png
 # actionText: Documentation →
 # actionLink: /basic/
 # sidebar: auto
-
+meta:
+  - name: Rocket league map making guide
+    content: hello
+tags:
+  - welcome
+  - guide
+  - rocket league map making
 ---
 
 
 ![alt text](./.vuepress/public/images/image234.png)
 
-# Hello
+# Rocket League map making guide
+## Hello
 
 First off, a sincere thanks to all of you for using this guide over the years. I originally made it with the intent to make a series of guides, but quickly fell off the bandwagon. But, here I am, almost 4 years after the original release, and I have finally found the motivation to make the updates I always wanted to.
 

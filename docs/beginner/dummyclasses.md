@@ -19,6 +19,8 @@ Extract the .zip, and paste the four folders alongside all of the others in
 
 The Development folder already has a folder named `Engine`. When you paste these into `{UDK Folder}\Development\Src`, Windows should automatically combine the contents of the folders.
 
+## Edit files <Badge text="important" type="tip"/>
+
 Using Notepad or Notepad++ or Sublime or whatever you like, **open the file `DefaultEngine.ini` within `{UDK Folder}\UDKGame\Config\`**
 
 Insert these lines

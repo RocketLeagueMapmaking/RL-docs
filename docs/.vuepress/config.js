@@ -1,7 +1,8 @@
 module.exports = {
   title: 'DOCS',
-  description: 'Rocket league maps with documentation',
+  description: 'Rocket league maps with documentation. The biggest website for Rocket League map making',
   theme: 'default-prefers-color-scheme',
+  icon:'/logo_rlmm_round_1440.png',
   themeConfig: {
     logo: '/logo_rlmm_round_1440.png',
     lastUpdated: 'Last updated',
@@ -25,7 +26,16 @@ module.exports = {
      // custom text for edit link. Defaults to "Edit this page"
      editLinkText: 'Edit this page on Github',
     head: [
-      ['link', { rel: 'icon', href: '/logo_rlmm_round_1440.png' }]
+      ['link', { rel: 'icon', type: "image/png",href: 'https://cdn.discordapp.com/attachments/713071168331972699/746411613791453274/logo_rlmm_round_1440.png' }],
+      // ['link', { rel: 'manifest', href: '/manifest.json' }],
+      ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+      ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+      ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+      ['link', { rel: 'apple-touch-icon', href: '/icons/apple-touch-icon-152x152.png' }],
+      ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
+      ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
+      ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+
     ],
     smoothScroll: true,
     base: '/rl-docs/',
@@ -67,7 +77,8 @@ module.exports = {
           'projectsetup',
         'udk_intro',
         'udk_editor',
-        'content_browser'
+        'content_browser',
+        'sticky-walls'
         ]
       }
     ],'/guide/':[
@@ -87,14 +98,16 @@ module.exports = {
         children: [
           'udk-basics',
           'collideable_mesh',
+          'rapid_test',
           'collideable_collisions',
           'owl',
           'materials',
           'lighting',
           'game_items',
+          'boost',
           'details',
           'what_next',
-          'rapid_test',
+          
         ]
       },
       {
@@ -122,12 +135,12 @@ module.exports = {
     ]
   },
     nav: [
-      {
-        text: 'Home',
-        link: 'http://rocketleaguemapmaking.com/',
-        rel:false,
-        target:'_self'
-      },
+      // {
+      //   text: 'Home',
+      //   link: 'http://rocketleaguemapmaking.com/',
+      //   rel:false,
+      //   target:'_self'
+      // },
       {
         text: 'Documentation',
         link: '/guide/'
@@ -143,18 +156,21 @@ module.exports = {
             text:'3D modelling',
             link:'/modelling/'
           },{
-            text:'Multiplayer',
-            link:'/multiplayer/'
-          },{
+            
             text:'Kismet',
             link:'/kismet/'
           },
           {
             text:'Textures',
             link:'/textures/'
+            
           },
+          
           {
-            text:'old guide',
+            text:'Play maps',
+            link:'/guide/playing'
+          },{
+            text:'Old guide',
             link:'https://docs.google.com/document/d/166A68CLxWk0LxMZ4B9vsuBmIgbphLIMbRB0BCn3ezsc/edit#'
           },
           {
@@ -169,14 +185,14 @@ module.exports = {
         items: [
            
         {
-          text:'recources',
+          text:'Recources',
           items:[
             {
               text:'downloads',
               link:'/menu/downloads'
-            }, {
-              text:'cheat sheets',
-              link:'/menu/cheats'
+            // }, {
+            //   text:'cheat sheets',
+            //   link:'/menu/cheats'
             },{
               text:'Kismet snippets',
               link:'https://github.com/RocketLeagueMapmaking/Kismet'
@@ -186,7 +202,7 @@ module.exports = {
             }
           ]
         },{
-          text:'other',
+          text:'Other',
           items:[
             {
               text: 'how to contribute',
@@ -196,20 +212,42 @@ module.exports = {
               link: '/index.html#special-thanks'
             },
             {
+              text: 'Contact us',
+              link: '/menu/contact'
+            },
+            {
               text: 'FAQ',
               link: '/menu/faq'
-            },
+            }
           ]
-        }
+        },{
+          text:'Versions',
+          items:[
+            {
+              text: 'UDK 2013/2015',
+              link: '/guide/'
+            },{
+              text: 'V2',
+              link: '/v2/'
+            }
+          ]
           
          
-        ]
-      }
+        
+      
+      }]}
     ],
     plugins: [
       '@vuepress/active-header-links',
       '@vuepress/last-updated',
-    '@vuepress/pwa'
+    '@vuepress/pwa',
+    {
+      serviceWorker: true,
+        updatePopup: {
+                  message: "New content is available.",
+                  buttonText: "Refresh"
+                }
+    }
     ]
   }
 };

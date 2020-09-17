@@ -20,6 +20,7 @@ First, it’s a good idea to sketch out your idea somewhere, be it a sticky note
 
 I am starting with a completely blank map to be thorough. **You don’t have to**. However, there are still a few gotchas if you use one of the non-blank maps. Keep an eye out for compasses if you skip ahead quickly.
 
+#### Name your project <Badge text="important" type="tip"/>
 
 Go to FIle > Save All and pick a good name for the project. Mine is called CeilingGoal. It is saved inside `{UDK Folder}\UDKGame\Content\Maps\CeilingGoal\.` 
 
@@ -33,6 +34,8 @@ Many things will not work properly if you have spaces in the project name, so ei
 
 First, there are a few World properties to tweak. Open World Properties from the View menu. Search for “kill” and then change Kill Z to something like -3000 and Soft Kill to -2500. Kill Z is the height at which you die, and Soft Kill is where your camera stops as you fall to your death. These just need to be substantially below the playing field.
 
+#### Include Stickywalls <Badge text="important" type="tip"/>
+
 ![alt text](../.vuepress/public/images/image27.png)
 
 *It sticks with you*
@@ -41,3 +44,11 @@ Next, we are going to include [StickyWalls®]() in this project. **Right click a
 
 Because this is going to be based on the default soccar map, the initial assets are almost all ready to go. **In the [Content Browser](), right click Park_P and select Fully Load.** Filter to Static Meshes only in the Object Type selector.
 
+![alt text](../.vuepress/public/images/image22.png)
+
+*All the makings of a delicious new map*
+
+Inside the Content Browser viewer section, there are a number of assets called Field_something and Goal_something. These are the pieces we’ll start with. But first, we’ll just make an empty platform with a single wall.
+
+
+**Find the static mesh named ConcreteBase, and drag it into the 3d editor.** This will be the floor. Once it is in the scene, **either right click it and select Properties at the top, or press F4.**

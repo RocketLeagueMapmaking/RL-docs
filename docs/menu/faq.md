@@ -1,15 +1,16 @@
 ---
 sidebar: 'auto'
-sidebarDepth: 1
+sidebarDepth: 0
 ---
 
 # FAQ
 
-## This FAQ
+## This FAQ <Badge text="not finished" type="warning"/>
 Hello, and welcome to this FAQ. This is an attempt at distilling down much of the knowledge that has been shared in Discord and other places, and giving answers to the common but important questions that everyone has in this process.
 
+:::warning NOTE
 **This FAQ will cover Map Making. It will not cover Bakkesmod Plugins, Decal Mods, RLBots, or anything outside the scope of Map Making.**
-
+:::
 Is an answer incomplete or not up-to-date? Read [here]() the guide how you can contribute or go directly to [github]()
 
 ## General

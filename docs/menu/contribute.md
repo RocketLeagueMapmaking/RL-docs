@@ -2,6 +2,8 @@
 
 We thank you for helping us to create a complete guide for Rocket League mapmaking. As a contributer you will get a [special thanks](../menu/credits) for helping
 
+If you have any idea for the website, you can reach us [here]()
+
 ## This guide
 
 You can contribute by editing a page and suggesting new items for the guide
@@ -29,38 +31,14 @@ How to suggest new items:
 You can always [fork the repo](https://github.com/webbuildlucas/RL-docs/pulls) and [pull a request](https://github.com/webbuildlucas/RL-docs/pulls) to add something yourself. It also saves me a lot of time. Create a new file `FILENAME.md` inside the correct folder. [Visit this page](../assets) for markdown tips.
 :::
 
-::: tip Suggest changes to website
-To suggest changes to the website you can follow the same steps. The folder is in '/docs/./vuepress/public'
-:::
-#### Add your Kismet code
 
-See [here](../kismet/kismet) the Kismet snippet library
+### Add your Kismet code
 
-1. [Fork the repo](https://github.com/webbuildlucas/RL-docs/pulls)
-2. Add at the bottom of [this page]() your kismet snippet as in the example below. 
- [Go to this page]() to see how the example is made
+See [here](https://github.com/RocketLeagueMapmaking/Kismet) the Kismet snippet library and add your own snippet
 
-::: details example kismet snippet
-<!-- Begin of your kismet snippet. Copy also this line -->
-## Snippet example
-by {name}
 
-Add here if necessary a comment, how to use, etc.
 
-* [Download](link-to-your-code)
 
-<!-- code is optional -->
-::: details Code
-
-```ini
-echo this is a example
-echo add here your code
-echo and pull a request
-```
-
-:::
-<!-- End of your kismet snippet. Copy also this line -->
-3. [Pull a request]() with the label `Kismet`
 
 
 

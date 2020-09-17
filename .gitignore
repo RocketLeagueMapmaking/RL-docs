@@ -5,3 +5,4 @@
 .gitignore
 yarn.lock
 .gitattributes
+.gitignore

@@ -10,7 +10,7 @@ tags:
 
 If you don’t want to stress about this setup process, there are two publicly-available packages which streamline it immensely.
 
-## Dasoccerguy’s (my) RocketLeagueMapMaking Setup Script
+## Dasoccerguy’s (my) RocketLeagueMapMaking Setup Script <Badge text="beta" type="warning"/>
 
 This script is meant to hold your hand through the entire setup process, take care of tedious and error-prone steps for you, then generate a projects folder that starts you off on the right path. 
 
