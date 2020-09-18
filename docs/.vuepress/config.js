@@ -8,7 +8,7 @@ module.exports = {
     lastUpdated: 'Last updated',
     searchPlaceholder: 'Search...',
      // Assumes GitHub. Can also be a full GitLab url.
-     repo: 'webbuildlucas/RL-docs',
+     repo: 'webbuildlucas/RL-docs/docs/',
      // Customising the header label
      // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
      repoLabel: 'Github',
