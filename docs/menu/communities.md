@@ -1,5 +1,6 @@
 ---
 title: communities
+editLink: false
 ---
 # Useful communities
 

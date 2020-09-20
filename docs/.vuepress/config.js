@@ -121,6 +121,7 @@ module.exports = {
           'matinee',
           'KActors',
           'skeletal_mesh',
+          'assets'
         ]
       },
       {
@@ -130,6 +131,68 @@ module.exports = {
         children: [
           'publishing',
            'playing'
+        ]
+      }
+    ],'/kismet/':[
+      {
+        title: 'Kismet',   
+        collapsable: false, 
+        sidebarDepth: 1,    
+        children: [
+          '',
+           'kismet',
+           'project',
+           'trigger',
+           'advanced'
+        ]
+      }
+    ],'/modelling/':[
+      {
+        title: 'Other sources',   
+        collapsable: false, 
+        sidebarDepth: 1,    
+        children: [
+          'csg',
+           'other',
+           
+        ]
+      },
+      {
+        title: 'Blender Basics',   
+        collapsable: false, 
+        sidebarDepth: 1,    
+        children: [
+          '',
+           'intro',
+           'setup',
+           'modelling',
+           'fbx',
+           'uv',
+           'unwrapping',
+           'texels',
+           'resolution',
+           'mipmaps'
+        ]
+      },
+      {
+        title: 'Blender Advanced',   
+        collapsable: false, 
+        sidebarDepth: 1,    
+        children: [
+          'animation',
+           'modifiers',
+           'curves'
+        ]
+      }
+    ],'/textures/':[
+      {
+        title: 'Other sources',   
+        collapsable: false, 
+        sidebarDepth: 1,    
+        children: [
+          '',
+           'maps',
+           'custom'
         ]
       }
     ]

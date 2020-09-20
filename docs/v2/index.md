@@ -1,5 +1,6 @@
 ---
 title: Version ???
+editLink: false
 ---
 
 # Rocket League map making v2

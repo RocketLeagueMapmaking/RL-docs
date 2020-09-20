@@ -5,7 +5,7 @@ title: Request more
 
 ## How
 
-Since this guide is made specifically for the map making, we will not add guides for [other tools](). We will, of course, make additions to the current pages and add new ones about Rocket League map making.
+Since this guide is made specifically for the map making, we will not add guides for [other tools](../menu/faq). We will, of course, make additions to the current pages and add new ones about Rocket League map making.
 
 Check [here](../menu/contribute) to learn how to request more content
 

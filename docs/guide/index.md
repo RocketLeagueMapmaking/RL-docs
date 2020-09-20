@@ -22,26 +22,26 @@ In this guide I'll sometimes refer to some usefull links and recourses. You can 
 
 ## Support
 
-A lot of map making is not discovered (by you), so you will probably need some help along the way. Please check the [faq](../menu/faq) or [contact us](../menu/faq) to get help
+A lot of map making is not discovered (by you), so you will probably need some help along the way. Please check the [faq](../menu/faq) or [contact us](../menu/contact) to get help
 
 ## Shortcuts
 
 To save some time, you can jump to the following sections:
-* [Boost]()
-* [Collisions]()
-* [Dummy Assets]()
-* [KActors]()
-* [Lighting]()
+* [Boost](boost)
+* [Collisions](collidable_collisions)
+* [Dummy Assets](dummy_asssets)
+* [KActors](KActors)
+* [Lighting](lighting)
 * [Map Models]()
-* [Materials]()
-* [Multiplayer]()
-* [Quick testing]()
+* [Materials](materials)
+* [Multiplayer](playing)
+* [Quick testing](rapid_test)
 * [Soccar setup]()
-* [StickyWalls]()
+* [StickyWalls](../beginner/sticky-walls)
 * [Template]()
-* [Udk basics]()
-* [Udk tips]()
-* [UV Mapping]()
+* [Udk basics](../beginner/udk_intro)
+* [Udk tips](owl)
+* [UV Mapping](../modelling/uv)
 
 ## Ads
 

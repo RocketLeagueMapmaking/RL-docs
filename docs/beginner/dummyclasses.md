@@ -11,7 +11,7 @@ Thanks to the hard work of dedicated modders, there is a repository of Dummy Cla
 
 These are UDK-ready classes with the same names and properties as the customized classes that were created by Psyonix for Rocket League. They allow us to drop in objects which have advanced functionality, like goals and boost pads.
 
-The download may be found under [downloads]()
+The download may be found under [downloads](../menu/downloads.html#starting)
 If you feel like using git, you can run git clone within the UDK folder. Downloading the .zip file is totally fine too.
 
 Extract the .zip, and paste the four folders alongside all of the others in
@@ -155,7 +155,7 @@ You can find the download [here](../menu/downloads.html#park-p-dummy-assets)
 
 **Place this into `{UDK Folder}\UDKGame\Content\`** alongside the various other files. UDK will recognize it here and make its contents available to you.
 
-[A later section]() of this guide will show you how to use any resource from any map, but this is more than enough to get started with.
+[A later section](../guide/dummy_assets) of this guide will show you how to use any resource from any map, but this is more than enough to get started with.
 
 ![alt text](../.vuepress/public/images/image225.png)
 *For a world that isn’t just white and blue checkers*

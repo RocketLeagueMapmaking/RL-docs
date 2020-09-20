@@ -13,7 +13,7 @@ You have finished your map or want to play a custom map with friends. You can le
 
 As of 2020, the best way to play custom maps with others is to use the Rocket Plugin. This is a Bakkesmod plugin, which is a wonderful program that everyone should use. It opens a whole universe of possibilities for Rocket League.
 
-[Bakkesmod discord]()
+[Bakkesmod discord](../menu/communities)
 
 ## Leth's video
 

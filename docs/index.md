@@ -1,5 +1,6 @@
 ---
 title: Rocket League Mapmaking guide
+editLink: false
 home: false
 heroImage: /logo_rlmm_round_1440.png
 # actionText: Documentation →

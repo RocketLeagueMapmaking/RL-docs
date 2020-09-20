@@ -49,7 +49,7 @@ This can be nice to select specific items which may be buried or misplaced.
 
 ![alt text](../.vuepress/public/images/image61.png)
 
-These bring up the [Content Browser](), [Kismet](), and [Matinee]() windows. Each of these will be explained in painful amounts of (relevant) detail in their own sections.
+These bring up the [Content Browser](conten_browser), [Kismet](../kismet), and [Matinee](../guide/matinee) windows. Each of these will be explained in painful amounts of (relevant) detail in their own sections.
 
 ### 6 - Editor Visibility Options
 

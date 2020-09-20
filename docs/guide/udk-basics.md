@@ -3,7 +3,7 @@ title: 'Starting a map'
 ---
 # Starting a map
 
-This is the point in the guide where things have to go a little non-linear. You may need to jump forward to [Blender sections](), then back to [Material sections](), then back to this for it all to make sense.
+This is the point in the guide where things have to go a little non-linear. You may need to jump forward to [Blender sections](../modelling), then back to [Material sections](../textures), then back to this for it all to make sense.
 
 :::tip Progress
 From here until the end, this guide will focus on creating a custom map from scratch.
@@ -28,7 +28,7 @@ Go to FIle > Save All and pick a good name for the project. Mine is called Ceili
 Many things will not work properly if you have spaces in the project name, so either use camelCase, snake_case, or what3ver_MAKESxSENSE-toYou.
 :::
 
-[Here]() is another set of meshes to get you going. I fine-tuned the UVs so that they look reasonably good with no materials. You may use these or the ones inside Park_P.upk.
+[Here](https://drive.google.com/file/d/1_SRltyPZXlqwuA4s2rHA5H8GgMOiSqk-/view?usp=sharing) is another set of meshes to get you going. I fine-tuned the UVs so that they look reasonably good with no materials. You may use these or the ones inside Park_P.upk.
 
 ### Project settings
 
@@ -40,9 +40,9 @@ First, there are a few World properties to tweak. Open World Properties from the
 
 *It sticks with you*
 
-Next, we are going to include [StickyWalls®]() in this project. **Right click and Fully Load the Generic package. Right click StickyWalls and do “Create a copy…” Select your new map in the Package dropdown (or type it exactly). Click OK. If this fails, make sure that your project name does not have spaces.**
+Next, we are going to include [StickyWalls®](../beginner/sticky-walls) in this project. **Right click and Fully Load the Generic package. Right click StickyWalls and do “Create a copy…” Select your new map in the Package dropdown (or type it exactly). Click OK. If this fails, make sure that your project name does not have spaces.**
 
-Because this is going to be based on the default soccar map, the initial assets are almost all ready to go. **In the [Content Browser](), right click Park_P and select Fully Load.** Filter to Static Meshes only in the Object Type selector.
+Because this is going to be based on the default soccar map, the initial assets are almost all ready to go. **In the [Content Browser](../beginner/content_browser), right click Park_P and select Fully Load.** Filter to Static Meshes only in the Object Type selector.
 
 ![alt text](../.vuepress/public/images/image22.png)
 

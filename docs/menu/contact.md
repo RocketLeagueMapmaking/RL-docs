@@ -1,5 +1,6 @@
 ---
 title: contact us
+editLink: false
 ---
 # Contact and socials
 
@@ -21,3 +22,6 @@ If you have any question or idea, you can contact us via:
 
 [Rocket League Map Making](https://www.youtube.com/channel/UCp6gkqadtgsaZmPnex9MNiA)
 
+## Twitch
+
+[MrSwaggly](https://www.twitch.tv/mrswaggly)

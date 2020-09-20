@@ -26,7 +26,7 @@ If worst comes to worst and you’ve ruined everything, you can always uninstall
 
 Alright, I’m sorry that I did that to you. But, it’s not a true modding experience if everything goes right the first time. **You and the ball will fall through the map, and no property you change can fix that.**
 
-To put it simply, the StaticMesh that Rocket League knows as StaticMesh'Park_P.park_assets.Meshes.ConcreteBase' has some property which is invisible to us that makes it un-collide-with-able. To make the game physics feel realistic, Psyonix ended up completely [replacing the physics engine of Unreal Engine 3]() during the development process, opting for one that offers much better optimization, control, and collision results. With that come many added mysteries for us modders.
+To put it simply, the StaticMesh that Rocket League knows as StaticMesh'Park_P.park_assets.Meshes.ConcreteBase' has some property which is invisible to us that makes it un-collide-with-able. To make the game physics feel realistic, Psyonix ended up completely [replacing the physics engine of Unreal Engine 3](https://www.youtube.com/watch?v=ueEmiDM94IE) during the development process, opting for one that offers much better optimization, control, and collision results. With that come many added mysteries for us modders.
 
 :::tip CSG Brush
 In a similar vein, you will never be able to collide with a surface you create using the cube (rectangular prism) CSG brush. Sorry.
@@ -39,7 +39,7 @@ If you’re like me, you never get anything right on the first try. You probably
 
 You do not need to close Rocket League to test changes to your map. You just need to overwrite the file it’s using and reload the map in game. I also recommend setting the game to either Borderless or Windowed mode in the Video settings so that the process of jumping in and out is less painful.
 
-Near the [top of the guide](), I provided a small batch (.bat) script for quickly testing maps
+Near the [beginning of the guide](../beginner/windows.html#batch-script-for-quickly-testing-maps-bsfqtm), I provided a small batch (.bat) script for quickly testing maps
 
 **I keep a copy of this inside each project folder within Maps.** This way, I can drag the map onto this script and instantly load it into Rocket League.
 
