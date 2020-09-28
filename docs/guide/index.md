@@ -8,7 +8,7 @@ tags:
 
 ## Starting guide
 
-If you're reading this, it probably means you have completed all the steps in the [starting guide](../beginner/). Then you're ready to read this guide. If you don't have experience with map making, I higly suggest to read it first. After that, come back and get started!
+If you're reading this, it probably means you have completed all the steps in the [starting guide](../beginner/ready). Then you're ready to read this guide. If you don't have experience with map making, I higly suggest to read it first. After that, come back and get started!
 
 ## Usefull links and resources
 
@@ -41,7 +41,7 @@ To save some time, you can jump to the following sections:
 * [Template]()
 * [Udk basics](../beginner/udk_intro)
 * [Udk tips](owl)
-* [UV Mapping](../modelling/uv)
+* [UV Mapping](../modeling/uv)
 
 ## Ads
 

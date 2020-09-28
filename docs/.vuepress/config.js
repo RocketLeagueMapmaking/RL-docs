@@ -146,7 +146,7 @@ module.exports = {
            'advanced'
         ]
       }
-    ],'/modelling/':[
+    ],'/modeling/':[
       {
         title: 'Other sources',   
         collapsable: false, 
@@ -165,7 +165,7 @@ module.exports = {
           '',
            'intro',
            'setup',
-           'modelling',
+           'modeling',
            'fbx',
            'uv',
            'unwrapping',
@@ -216,8 +216,8 @@ module.exports = {
             link: '/beginner/ready'
           },
           {
-            text:'3D modelling',
-            link:'/modelling/'
+            text:'3D modeling',
+            link:'/modeling/'
           },{
             
             text:'Kismet',

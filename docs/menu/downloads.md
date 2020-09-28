@@ -41,8 +41,20 @@ This a list of useful things in order of importance:
 
 [Download](https://drive.google.com/file/d/1_SRltyPZXlqwuA4s2rHA5H8GgMOiSqk-/view?usp=sharing)
 
+### Salty shores Dummy Assets
+
+Dummy Assets for Salty Shores. Just unzip and paste it alongside everything else in the Maps folder!
+
+<a href="" download>Download</a>
+
+### Simplicity_v5 
+A fully playable standard map with no materials or environment detail
+
+<a href="" download>Download</a>
+
 ### More assets
 
+* [JimJoms' One Stop Chop Shop](https://drive.google.com/drive/folders/0B1VfmKjZuD8OYVlURld3ZFhTRk0)
 * [Paragon](https://www.unrealengine.com/en-US/paragon)
 
 ## Links

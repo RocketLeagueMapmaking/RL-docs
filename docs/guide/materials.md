@@ -3,7 +3,7 @@ title: 'Materials'
 ---
 # UDK Basics
 
-As will be explained in painful amounts of detail in the [Blender sections](../modelling) (should you choose to read them), materials are a way to handle all of the visual properties of a mesh. For right now, we’re just going to use existing materials and not really worry about what they’re made of. To make your own, see the [Custom Materials section](custom_material).
+As will be explained in painful amounts of detail in the [Blender sections](../modeling) (should you choose to read them), materials are a way to handle all of the visual properties of a mesh. For right now, we’re just going to use existing materials and not really worry about what they’re made of. To make your own, see the [Custom Materials section](custom_material).
 
 ## Built-In Materials
 

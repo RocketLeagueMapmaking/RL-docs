@@ -9,7 +9,7 @@ title: The rest of the map
 
 *How to make a Rocket League map in 3 minutes!*
 
-Now that we have the fundamentals all in place, the rest of the map can come together very quickly. For brevity, I am going to skip over the modeling steps, but that will be explained [here](../modelling).
+Now that we have the fundamentals all in place, the rest of the map can come together very quickly. For brevity, I am going to skip over the modeling steps, but that will be explained [here](../modeling).
 
 ![alt text](../.vuepress/public/images/image209.png)
 

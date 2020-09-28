@@ -9,7 +9,7 @@ For some reason, UDK requires that you add TriggerVolume Touch Events in a diffe
 
 *Hello TriggerVolume*
 
-**Place a TriggerVolume in the map using the [CSG brush](../modelling/csg) and the Add Volume button. Keep it selected. In the Kismet Editor, right click and select New Event Using TriggerVolume_# > Touch.**
+**Place a TriggerVolume in the map using the [CSG brush](../modeling/csg) and the Add Volume button. Keep it selected. In the Kismet Editor, right click and select New Event Using TriggerVolume_# > Touch.**
 
 ![alt text](../.vuepress/public/images/image236.png)
 

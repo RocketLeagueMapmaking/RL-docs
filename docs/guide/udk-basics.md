@@ -3,7 +3,7 @@ title: 'Starting a map'
 ---
 # Starting a map
 
-This is the point in the guide where things have to go a little non-linear. You may need to jump forward to [Blender sections](../modelling), then back to [Material sections](../textures), then back to this for it all to make sense.
+This is the point in the guide where things have to go a little non-linear. You may need to jump forward to [Blender sections](../modeling), then back to [Material sections](../textures), then back to this for it all to make sense.
 
 :::tip Progress
 From here until the end, this guide will focus on creating a custom map from scratch.

@@ -1,22 +1,46 @@
 ---
 title: style
 ---
+# Titles
+## Header
+Input:
+```md
 # A title
-
+```
+Output:
+# A title
+## Subtitle(s)
+Input
+```md
 ## A subtitle
+### Another subtitle
+```
+Output:
+## A subtitle
+### Another subtitle
 
-[link]()
+# Markdown
 
-badge <Badge text="title" type="warning"/> <Badge text="badge title" type="warning"/> <Badge text="title" type="tip"/>
-
-badge <Badge text="beta" type="warning"/> <Badge text="not finished" type="warning"/> <Badge text="important" type="tip"/>
+Input:
+```md
+~~strikethrough~~
+*italic*
+**bold**
+**_bold italic_**
+> quote
+```
+Ouput:
 
 ~~strikethrough~~
 *italic*
 **bold**
 **_bold italic_**
+> quote
 
+# Extra's
 
+Input:
+```md
 ::: tip
 This is a tip
 :::
@@ -30,29 +54,67 @@ This is a dangerous warning
 :::
 
 ::: details
-This is a details block, which does not work in IE / Edge (just dont use Edge)
+This is a details block
+:::
+---
+````
+Output:
+::: tip
+This is a tip
 :::
 
-<!-- images -->
-![alt text](/relative path)
+::: warning
+This is a warning
+:::
 
-> quote
+::: danger
+This is a dangerous warning
+:::
 
-line
+::: details
+This is a details block
+:::
 ---
 
-youtube video
+# Links
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+Input:
+```md
+![alt text](/relative path)
 
-code
+[link](https://rocketleaguemapmaking.com) (or use relative paths)
 
-specific language
+[![alt text](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+```
+Output:
+
+
+
+
+
+
+
+
+# Code
+
+## Specific language
+
+Input:
+
+
 ```javascript
-
 let guide = ['page','page2']
 console.log(guide)
 ```
+
+
+
+Output:
+```javascript
+let guide = ['page','page2']
+console.log(guide)
+```
+
 no language
 ```
 no syntax highlights
