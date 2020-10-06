@@ -1,0 +1,4 @@
+# Only allow the folders we need for deployment into the dockerfile.
+*
+!/deployment
+!/docs/.vuepress
