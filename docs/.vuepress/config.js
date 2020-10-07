@@ -57,7 +57,7 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            'ready',
+            '',
             'udk',
             'windows',
           ],
@@ -66,20 +66,20 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            'quickinstall',
+            'quick_install',
             'installing',
-            'dummyclasses',
+            'dummy_classes',
           ],
         }, {
           title: 'Exploring UDK',
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            'projectsetup',
+            'project_setup',
             'udk_intro',
             'udk_editor',
             'content_browser',
-            'sticky-walls',
+            'sticky_walls',
           ],
         },
       ],
@@ -89,7 +89,7 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            'extra_information',
+            '',
             'request',
           ],
         },
@@ -141,7 +141,7 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            'introduction',
+            '',
             'kismet',
             'project',
             'trigger',
@@ -155,9 +155,8 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            'csg',
+            '',
             'other',
-
           ],
         },
         {
@@ -194,7 +193,7 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            'introduction',
+            '',
             'maps',
             'custom',
           ],
@@ -236,7 +235,8 @@ module.exports = {
           {
             text: 'Play maps',
             link: '/guide/playing',
-          }, {
+          },
+          {
             text: 'Old guide',
             link: 'https://docs.google.com/document/d/166A68CLxWk0LxMZ4B9vsuBmIgbphLIMbRB0BCn3ezsc/edit#',
           },
@@ -258,10 +258,12 @@ module.exports = {
                 // }, {
                 //   text:'cheat sheets',
                 //   link:'/menu/cheats'
-              }, {
+              },
+              {
                 text: 'Kismet snippets',
                 link: 'https://github.com/RocketLeagueMapmaking/Kismet',
-              }, {
+              },
+              {
                 text: 'Communities',
                 link: '/menu/communities',
               },
@@ -272,7 +274,8 @@ module.exports = {
               {
                 text: 'How to contribute',
                 link: '/menu/contribute',
-              }, {
+              },
+              {
                 text: 'Special thanks',
                 link: '/index.html#special-thanks',
               },
@@ -291,7 +294,8 @@ module.exports = {
               {
                 text: 'UDK 2013/2015',
                 link: '/guide/',
-              }, {
+              },
+              {
                 text: 'V2',
                 link: '/v2/',
               },

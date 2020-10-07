@@ -37,7 +37,7 @@ To save some time, you can jump to the following sections:
 * [Multiplayer](playing)
 * [Quick testing](rapid_test)
 * [Soccar setup]()
-* [StickyWalls](../beginner/sticky-walls)
+* [StickyWalls](../beginner/sticky_walls.md)
 * [Template]()
 * [Udk basics](../beginner/udk_intro)
 * [Udk tips](owl)
