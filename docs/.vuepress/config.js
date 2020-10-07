@@ -61,7 +61,8 @@ module.exports = {
             'udk',
             'windows',
           ],
-        }, {
+        },
+        {
           title: 'Installing UDK',
           collapsable: false,
           sidebarDepth: 1,
@@ -70,7 +71,8 @@ module.exports = {
             'installing',
             'dummy_classes',
           ],
-        }, {
+        },
+        {
           title: 'Exploring UDK',
           collapsable: false,
           sidebarDepth: 1,
@@ -268,7 +270,8 @@ module.exports = {
                 link: '/menu/communities',
               },
             ],
-          }, {
+          },
+          {
             text: 'Other',
             items: [
               {
@@ -288,7 +291,8 @@ module.exports = {
                 link: '/menu/faq',
               },
             ],
-          }, {
+          },
+          {
             text: 'Versions',
             items: [
               {
