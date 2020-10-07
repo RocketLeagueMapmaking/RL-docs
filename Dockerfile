@@ -1,5 +1,5 @@
 ARG deploy_base_image="nginx:1.16.1-alpine"
-ARG build_base_image="node:node:14.13.0-alpine3.12"
+ARG build_base_image="node:14.13.0-alpine3.12"
 
 # Use an intermediary image to do our builds, removing coupling from the machine executing commands and allowing us to
 # trim the fat.
@@ -7,11 +7,17 @@ FROM $build_base_image AS builder
 
 WORKDIR /opt/build
 
-COPY package.json yarn.lock docs/ ./
+# Copy in dependency resolution files.
+COPY package*.json ./
 
-RUN npm install yarn -g
-RUN yarn install
-RUN yarn docs:build
+# Copy in docs folder to build from.
+COPY docs ./docs
+
+# Install NPM dependencies.
+RUN npm install
+
+# Build the site into static js/html.
+RUN npm run docs:build
 
 
 FROM $deploy_base_image

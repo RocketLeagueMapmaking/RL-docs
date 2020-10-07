@@ -10,6 +10,6 @@ Contribution is performed through a number of simple steps:
 8. Branch is merged
 
 # Development environment setup
-The project utilises `vuepress` in order to create pages for our documentation.  
-Packages are installed using Yarn2 (aka Berry) for our package management. Due to this, you must have Yarn globally 
-installed (`npm install yarn -g`) using NPM before you can execute dependency installation
+The project utilises `vuepress` in order to create pages for our documentation, running on a Node backend.
+
+## Building
