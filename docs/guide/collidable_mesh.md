@@ -1,9 +1,9 @@
 ---
-title: 'collidable mesh'
+title: 'Collidable mesh'
 ---
 # UDK Basics
 
-## collidable Meshes <Badge text="important" type="tip"/>
+## Collidable Meshes <Badge text="important" type="tip"/>
 
 **To make a collidable mesh, you need to set these Properties:**
 
