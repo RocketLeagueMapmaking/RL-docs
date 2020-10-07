@@ -10,11 +10,11 @@ WORKDIR /opt/build
 # Copy in dependency resolution files.
 COPY package*.json ./
 
+# Install NPM dependencies. Execute this before copy to ensure that caching occurs.
+RUN npm ci
+
 # Copy in docs folder to build from.
 COPY docs ./docs
-
-# Install NPM dependencies.
-RUN npm ci
 
 # Build the site into static js/html.
 RUN npm run docs:build
