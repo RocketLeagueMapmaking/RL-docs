@@ -1,5 +1,5 @@
 ---
-title: 'Collideable collisions'
+title: 'collidable collisions'
 ---
 # UDK Basics
 
@@ -85,6 +85,6 @@ When we have made our mesh, we head back to UDK to import this Static Mesh into 
 
 UDK will kindly try to figure out how to collide with these objects. But, remember that Psyonix replaced the whole physics engine, meaning that these checkboxes are dead to us. **Double click the newly imported Static Mesh and change these settings.**
 
-**Using the Static Mesh swap technique from [Option 2](collideable_collisions.html#option-2-swap-in-collision-floor), trade out the old floor for the new one.** If you are doing Options 1, 2, and 3 like me, you will also have to move this back to (0,0,0).
+**Using the Static Mesh swap technique from [Option 2](collidable_collisions.html#option-2-swap-in-collision-floor), trade out the old floor for the new one.** If you are doing Options 1, 2, and 3 like me, you will also have to move this back to (0,0,0).
 
 Save all, load it, and test it out!

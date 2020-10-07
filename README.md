@@ -1,4 +1,4 @@
-# Rocket league maps documentation
+# Rocket league mapmaking website documentation
 A guide by Mr Swaggles
 
 ## Deployment
@@ -17,5 +17,5 @@ The site can be executed as a docker container on the host machine.
     - To view the NGINX logs of a container, execute `docker logs <container_name>`.
 6. Access the site at the correct URL (`rocketleaguemapmaking.com`).
 
-## Contribute
-Read [this guide](./docs/menu/contribute) for how to contribute
+## Contributing documentation
+Read [this guide](./docs/menu/contribute.md) for guidelines when contributing documentation.

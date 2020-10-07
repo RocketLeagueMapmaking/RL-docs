@@ -14,14 +14,13 @@ module.exports = {
     repo: 'webbuildlucas/RL-docs/',
     // Customising the header label
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
-    repoLabel: 'Github',
-    docsDir: 'docs',
+    repoLabel: 'GitHub',
     // Optional options for generating "Edit this page" link
 
     // if your docs are in a different repo from your main project:
     //  docsRepo: 'vuejs/vuepress',
     // if your docs are not at the root of the repo:
-    //  docsDir: 'docs',
+    docsDir: 'docs',
     // if your docs are in a specific branch (defaults to 'master'):
     docsBranch: 'master',
     // defaults to false, set to true to enable
@@ -31,7 +30,7 @@ module.exports = {
     head: [
       ['link', {
         rel: 'icon', type: "image/png",
-        href: 'https://cdn.discordapp.com/attachments/713071168331972699/746411613791453274/logo_rlmm_round_1440.png'
+        href: 'https://cdn.discordapp.com/attachments/713071168331972699/746411613791453274/logo_rlmm_round_1440.png',
       }],
       // ['link', { rel: 'manifest', href: '/manifest.json' }],
       ['meta', {name: 'theme-color', content: '#3eaf7c'}],
@@ -40,31 +39,29 @@ module.exports = {
       ['link', {rel: 'apple-touch-icon', href: '/icons/apple-touch-icon-152x152.png'}],
       ['link', {rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c'}],
       ['meta', {name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png'}],
-      ['meta', {name: 'msapplication-TileColor', content: '#000000'}]
-
+      ['meta', {name: 'msapplication-TileColor', content: '#000000'}],
     ],
     smoothScroll: true,
     base: '/rl-docs/',
     sidebar: {
-      '/beginner/':
-        [
-          // {
-          //   title: 'Introduction',   // required
-          //   // path: '/beginner/',      // optional, link of the title, which should be an absolute path and must
-          // exist collapsable: false, // optional, defaults to true sidebarDepth: 1,    // optional, defaults to 1
-          // children: [ ''
-
-          // ]},
-          {
-            title: 'Beginning',
-            collapsable: false,
-            sidebarDepth: 1,
-            children: [
-              'ready',
-              'udk',
-              'windows',
-            ]
-          }, {
+      '/beginner/': [
+        // {
+        //   title: 'Introduction',   // required
+        //   // path: '/beginner/',      // optional, link of the title, which should be an absolute path and must
+        // exist collapsable: false, // optional, defaults to true sidebarDepth: 1,    // optional, defaults to 1
+        // children: [
+        //   '' // This will load whatever file is named index.md within $ROOT/docs/beginner
+        // ]},
+        {
+          title: 'Beginning',
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [
+            'ready',
+            'udk',
+            'windows',
+          ],
+        }, {
           title: 'Installing UDK',
           collapsable: false,
           sidebarDepth: 1,
@@ -72,7 +69,7 @@ module.exports = {
             'quickinstall',
             'installing',
             'dummyclasses',
-          ]
+          ],
         }, {
           title: 'Exploring UDK',
           collapsable: false,
@@ -82,28 +79,29 @@ module.exports = {
             'udk_intro',
             'udk_editor',
             'content_browser',
-            'sticky-walls'
-          ]
-        }
-        ], '/guide/': [
+            'sticky-walls',
+          ],
+        },
+      ],
+      '/guide/': [
         {
           title: 'Information',
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            '',
+            'extra_information',
             'request',
-          ]
+          ],
         },
         {
           title: 'UDK Basics',
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            'udk-basics',
-            'collideable_mesh',
+            'udk_basics',
+            'collidable_mesh',
             'rapid_test',
-            'collideable_collisions',
+            'collidable_collisions',
             'owl',
             'materials',
             'lighting',
@@ -111,8 +109,7 @@ module.exports = {
             'boost',
             'details',
             'what_next',
-
-          ]
+          ],
         },
         {
           title: 'UDK Advanced',
@@ -125,8 +122,8 @@ module.exports = {
             'matinee',
             'KActors',
             'skeletal_mesh',
-            'assets'
-          ]
+            'assets',
+          ],
         },
         {
           title: 'Finishing',
@@ -134,23 +131,25 @@ module.exports = {
           sidebarDepth: 1,
           children: [
             'publishing',
-            'playing'
-          ]
-        }
-      ], '/kismet/': [
+            'playing',
+          ],
+        },
+      ],
+      '/kismet/': [
         {
           title: 'Kismet',
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            '',
+            'introduction',
             'kismet',
             'project',
             'trigger',
-            'advanced'
-          ]
-        }
-      ], '/modeling/': [
+            'advanced',
+          ],
+        },
+      ],
+      '/modeling/': [
         {
           title: 'Other sources',
           collapsable: false,
@@ -159,14 +158,14 @@ module.exports = {
             'csg',
             'other',
 
-          ]
+          ],
         },
         {
           title: 'Blender Basics',
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            '',
+            'blender',
             'intro',
             'setup',
             'modeling',
@@ -175,8 +174,8 @@ module.exports = {
             'unwrapping',
             'texels',
             'resolution',
-            'mipmaps'
-          ]
+            'mipmaps',
+          ],
         },
         {
           title: 'Blender Advanced',
@@ -185,21 +184,22 @@ module.exports = {
           children: [
             'animation',
             'modifiers',
-            'curves'
-          ]
-        }
-      ], '/textures/': [
+            'curves',
+          ],
+        },
+      ],
+      '/textures/': [
         {
           title: 'Other sources',
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            '',
+            'introduction',
             'maps',
-            'custom'
-          ]
-        }
-      ]
+            'custom',
+          ],
+        },
+      ],
     },
     nav: [
       // {
@@ -210,98 +210,95 @@ module.exports = {
       // },
       {
         text: 'Documentation',
-        link: '/guide/'
+        link: '/guide/',
       },
       {
         text: 'Guides',
         items: [
           {
             text: 'Starting',
-            link: '/beginner/ready'
+            link: '/beginner/ready',
           },
           {
             text: '3D modeling',
-            link: '/modeling/'
+            link: '/modeling/',
           }, {
 
             text: 'Kismet',
-            link: '/kismet/'
+            link: '/kismet/',
           },
           {
             text: 'Textures',
-            link: '/textures/'
+            link: '/textures/',
 
           },
 
           {
             text: 'Play maps',
-            link: '/guide/playing'
+            link: '/guide/playing',
           }, {
             text: 'Old guide',
-            link: 'https://docs.google.com/document/d/166A68CLxWk0LxMZ4B9vsuBmIgbphLIMbRB0BCn3ezsc/edit#'
+            link: 'https://docs.google.com/document/d/166A68CLxWk0LxMZ4B9vsuBmIgbphLIMbRB0BCn3ezsc/edit#',
           },
           {
             text: 'Other guides',
-            link: '/menu/guides'
-          }
-        ]
+            link: '/menu/guides',
+          },
+        ],
       },
-
       {
         text: 'More',
         items: [
-
           {
             text: 'Recources',
             items: [
               {
-                text: 'downloads',
-                link: '/menu/downloads'
+                text: 'Downloads',
+                link: '/menu/downloads',
                 // }, {
                 //   text:'cheat sheets',
                 //   link:'/menu/cheats'
               }, {
                 text: 'Kismet snippets',
-                link: 'https://github.com/RocketLeagueMapmaking/Kismet'
+                link: 'https://github.com/RocketLeagueMapmaking/Kismet',
               }, {
-                text: 'communities',
-                link: '/menu/communities'
-              }
-            ]
+                text: 'Communities',
+                link: '/menu/communities',
+              },
+            ],
           }, {
             text: 'Other',
             items: [
               {
-                text: 'how to contribute',
-                link: '/menu/contribute'
+                text: 'How to contribute',
+                link: '/menu/contribute',
               }, {
                 text: 'Special thanks',
-                link: '/index.html#special-thanks'
+                link: '/index.html#special-thanks',
               },
               {
                 text: 'Contact us',
-                link: '/menu/contact'
+                link: '/menu/contact',
               },
               {
                 text: 'FAQ',
-                link: '/menu/faq'
-              }
-            ]
+                link: '/menu/faq',
+              },
+            ],
           }, {
             text: 'Versions',
             items: [
               {
                 text: 'UDK 2013/2015',
-                link: '/guide/'
+                link: '/guide/',
               }, {
                 text: 'V2',
-                link: '/v2/'
-              }
-            ]
-
-
-          }]
-      }
+                link: '/v2/',
+              },
+            ],
+          },
+        ],
+      },
     ],
     plugins: [
       '@vuepress/active-header-links',
@@ -311,9 +308,9 @@ module.exports = {
         serviceWorker: true,
         updatePopup: {
           message: "New content is available.",
-          buttonText: "Refresh"
-        }
-      }
-    ]
-  }
+          buttonText: "Refresh",
+        },
+      },
+    ],
+  },
 };
