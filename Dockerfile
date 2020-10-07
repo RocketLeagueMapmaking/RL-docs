@@ -22,8 +22,12 @@ RUN npm run docs:build
 
 FROM $deploy_base_image
 
-# Copy in the required files we built in the previous image (.vuepress).
-COPY --from=builder /opt/build/docs /usr/share/nginx/html
+# Destroy the old html folder contents to avoid confusion.
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy in the required files we built in the previous image.
+# Only the Dist folder is required as everything is compiled into there on build.
+COPY --from=builder /opt/build/docs/.vuepress/dist /usr/share/nginx/html
 
 # Copy in our configuration, which is applied on startup.
 COPY ./deployment/server.conf /etc/nginx/conf.d/server.conf
