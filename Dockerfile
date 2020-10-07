@@ -14,7 +14,7 @@ COPY package*.json ./
 COPY docs ./docs
 
 # Install NPM dependencies.
-RUN npm install
+RUN npm ci
 
 # Build the site into static js/html.
 RUN npm run docs:build
