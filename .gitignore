@@ -1,8 +1,7 @@
-/node_modules
+node_modules
 .gitlab-ci.yml
 .vscode
 /docs/.vuepress/dist
-.gitignore
-yarn.lock
 .gitattributes
 .gitignore
+.idea
