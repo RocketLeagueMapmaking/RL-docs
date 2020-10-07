@@ -28,6 +28,9 @@ COPY --from=builder /opt/build /usr/share/nginx/html
 # Copy in our configuration, which is applied on startup.
 COPY ./deployment/server.conf /etc/nginx/conf.d/server.conf
 
+# We serve on http and https.
+EXPOSE 80 443
+
 # Start nginx with a global parameter specifying that we wish to follow the process.
 # This is required as a docker container is a single running process, so if nginx crashes we also want the container
 # to turn off, allowing us to view that it's no longer working.
