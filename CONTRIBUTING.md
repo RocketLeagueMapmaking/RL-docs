@@ -29,4 +29,4 @@ The project utilises `vuepress` in order to create pages for our documentation, 
 
 ## Execution
 1. Execute `npm run docs:dev`.
-2. Open the URL specified within the output of that command.
+2. Open the URL specified within the output of the command.
