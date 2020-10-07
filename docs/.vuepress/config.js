@@ -216,7 +216,7 @@ module.exports = {
         items: [
           {
             text: 'Starting',
-            link: '/beginner/ready',
+            link: '/beginner/',
           },
           {
             text: '3D modeling',
