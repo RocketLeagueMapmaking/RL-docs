@@ -2,6 +2,11 @@
   "name": "rocket_league_map_making",
   "version": "0.1.0",
   "description": "A website containing information pertaining to the creation, extension, debugging, and concepts of Rocket League map making.",
+  "homepage": "http://rocketleaguemapmaking.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webbuildlucas/RL-docs.git"
+  },
   "scripts": {
     "docs:build": "vuepress build docs",
     "docs:dev": "vuepress dev docs",
