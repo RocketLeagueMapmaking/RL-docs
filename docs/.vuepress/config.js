@@ -1,6 +1,6 @@
 module.exports = {
   title: 'DOCS',
-  description: 'Rocket league maps with documentation. The biggest website for Rocket League map making',
+  description: 'Rocket league maps with documentation. The biggest website for Rocket League map making.',
   theme: 'default-prefers-color-scheme',
   icon: '/logo_rlmm_round_1440.png',
   // Only target browsers currently popular, avoiding polyfills and speeding up build time.
@@ -28,10 +28,7 @@ module.exports = {
     // custom text for edit link. Defaults to "Edit this page"
     editLinkText: 'Edit this page on Github',
     head: [
-      ['link', {
-        rel: 'icon', type: "image/png",
-        href: 'https://cdn.discordapp.com/attachments/713071168331972699/746411613791453274/logo_rlmm_round_1440.png',
-      }],
+      ['link', {rel: 'icon', type: 'image/png', href: '/logo_rlmm_round_1440.png'}],
       // ['link', { rel: 'manifest', href: '/manifest.json' }],
       ['meta', {name: 'theme-color', content: '#3eaf7c'}],
       ['meta', {name: 'apple-mobile-web-app-capable', content: 'yes'}],

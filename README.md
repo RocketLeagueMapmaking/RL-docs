@@ -18,3 +18,10 @@ This site can be executed as a docker container on the host machine.
 
 ## Contributing documentation
 Read the [contribution](./docs/menu/contribute.md) documentation for guidelines when contributing.
+
+## Certificate Renewal
+Currently we [manually redeploy](https://certbot.eff.org/docs/using.html#manual) certificates using certbot on the host machine. This should be automated in future.  
+1. Execute `sudo  certbot certonly --manual --preferred-challenges dns -d rocketleaguemapmaking.com -d www.rocketleaguemapmaking.com --expand --renew-by-default  --manual-public-ip-logging-ok` on the host machine.
+2. Follow the instructions on how to complete the certificate generation.
+3. Wait ~5 minutes for the DNS record to become available. Being too eager causes challenge failure.
+4. Restart the docker container `sudo docker container restart rlmm`.

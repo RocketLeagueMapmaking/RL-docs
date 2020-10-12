@@ -25,4 +25,4 @@ fi
 # Make sure the container doesn't exist then redeploy.
 docker container stop rlmm >/dev/null
 docker container rm rlmm >/dev/null
-docker run --name rlmm -p 80:80 -p 443:443 -d rlmm:${version}
+docker run --name rlmm -p 80:80 -p 443:443 -v /etc/letsencrypt:/etc/letsencrypt -d rlmm:${version}
