@@ -1,12 +1,14 @@
 ---
-title: Version ???
+title: Custom maps updates
 editLink: false
 ---
 
 # Rocket League map making v2
 
-:::tip ???
-It will probably take some time, but when they do you can find a guide here. 
+As of right now, Psyonix hasn't announced anything about custom maps support. It will probably take some time, but when they do you can find a guide here. 
+
+:::tip Documentation
+[Click here](/guide/) to return to the documentation
 :::
 
 If you have any idea for this website, feel free to [contact us](/menu/contact)

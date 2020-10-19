@@ -6,3 +6,5 @@
 yarn.lock
 .gitattributes
 .gitignore
+package.json
+package-lock.json

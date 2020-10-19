@@ -11,6 +11,8 @@
   "author": "Lucas van Duijn",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.20.0",
+    "node-fetch": "^2.6.1",
     "vuepress-theme-default-prefers-color-scheme": "^1.1.0"
   },
   "devDependencies": {
