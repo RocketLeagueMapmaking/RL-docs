@@ -11,8 +11,11 @@
   "author": "Lucas van Duijn",
   "license": "ISC",
   "dependencies": {
+    "@chenfengyuan/vue-carousel": "^1.0.5",
     "axios": "^0.20.0",
     "node-fetch": "^2.6.1",
+    "vue": "^2.6.12",
+    "vue-template-compiler": "^2.6.12",
     "vuepress-theme-default-prefers-color-scheme": "^1.1.0"
   },
   "devDependencies": {

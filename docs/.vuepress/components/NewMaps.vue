@@ -37,13 +37,13 @@ export default {
         let start = maps.length - LastMapscount;
         await maps.splice(LastMapscount,start);
 
-        for(let w=0;w<maps.length;w++){
-            titles.push(maps[w].title);
-        }
-        let results = titles.join('\n');
+        // for(let w=0;w<maps.length;w++){
+            titles = maps
+        
+        let results = titles
     
         let promise = new Promise((resolve, reject) => {
-            setTimeout(() => resolve(results), 5000);
+            setTimeout(() => resolve(results), 3000);
         })
 
         let result = await promise;
@@ -52,13 +52,28 @@ export default {
   },
   render (h) {
     return (
-      <div>{this.info}</div>
+      
+      <div class='slider'>
+      <div class='slidercontrol' style='background-color:#2d2d2d;'>
+      
+      </div>
+      <div class='slide' style='display:flex;flex-direction:row;margin-left:10vw;margin-right:10vw;border-radius:8px;background-color:#ffffff;color:black;'>
+      <img src={this.info[0].preview_url} style='width:50%'></img>
+      <div class='right-side' style='border:none;width:50%;padding:9px'>
+      <div class='top-side' style='height=30%;'>
+      <h2 style='font-weight:bold;font-size:40px'>{this.info[0].title}</h2>
+      <p>{this.info[0].short_description}...</p>
+      <p>read more</p>
+      <p>{this.info[0].creator}</p>
+      </div>
+      <div class='bottom-side' style='bottom:0;position:relative;height=30%;background-color:#2d2d2d;color:white;'>
+      <p>More by {this.info[0].creator}</p>
+      </div>
+      </div></div>
+      </div>
+    
     )
   }
 }
 
 </script>
-
-<style scoped>
-
-</style>
