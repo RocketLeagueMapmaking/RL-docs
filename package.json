@@ -11,6 +11,8 @@
   "author": "Lucas van Duijn",
   "license": "ISC",
   "dependencies": {
+    "@bbob/html": "^2.5.8",
+    "@bbob/preset-html5": "^2.5.8",
     "@chenfengyuan/vue-carousel": "^1.0.5",
     "axios": "^0.20.0",
     "node-fetch": "^2.6.1",

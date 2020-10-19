@@ -80,3 +80,14 @@ padding:0px;
 }
 
 </style>
+
+<!-- <script>
+import bbobHTML from '@bbob/html'
+import presetHTML5 from '@bbob/preset-html5'
+    
+setTimeout(() => replace(), 10000);
+function replace(){
+        const p = document.getElementById('to-fill')
+        p.innerHTML = bbobHTML(p, presetHTML5()) 
+    }
+</script> -->

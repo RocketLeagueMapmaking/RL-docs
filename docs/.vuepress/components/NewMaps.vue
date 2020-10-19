@@ -1,5 +1,8 @@
 <script>
 import axios from 'axios';
+import bbobHTML from '@bbob/html'
+import presetHTML5 from '@bbob/preset-html5'
+
 const {rlappid, steam } = require('../../../data.env');
 
 let maps = [];
@@ -37,17 +40,22 @@ export default {
         let start = maps.length - LastMapscount;
         await maps.splice(LastMapscount,start);
 
-        // for(let w=0;w<maps.length;w++){
+        for(let w=0;w<maps.length;w++){
+          let processed = ''
+           processed = bbobHTML(maps[w].short_description, presetHTML5())
+           maps[w].short_description = processed
+        }
             titles = maps
         
         let results = titles
     
-        let promise = new Promise((resolve, reject) => {
-            setTimeout(() => resolve(results), 3000);
-        })
+        // let promise = new Promise((resolve, reject) => {
+        //     setTimeout(() => resolve(results), 3000);
+        // })
 
-        let result = await promise;
-        this.info = result;
+        // let result = await promise;
+        this.info = results;
+        console.log(this.info[0].short_description)
     }
   },
   render (h) {
@@ -62,7 +70,7 @@ export default {
       <div class='right-side' style='border:none;width:50%;padding:9px'>
       <div class='top-side' style='height=30%;'>
       <h2 style='font-weight:bold;font-size:40px'>{this.info[0].title}</h2>
-      <p>{this.info[0].short_description}...</p>
+      <p id='to-fill'>{this.info[0].short_description}</p>
       <p>read more</p>
       <p>{this.info[0].creator}</p>
       </div>
@@ -70,9 +78,13 @@ export default {
       <p>More by {this.info[0].creator}</p>
       </div>
       </div></div>
+      
       </div>
+      
     
     )
+
+      
   }
 }
 
