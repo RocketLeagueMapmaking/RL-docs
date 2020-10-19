@@ -8,3 +8,4 @@ yarn.lock
 .gitignore
 package.json
 package-lock.json
+data.env.js
