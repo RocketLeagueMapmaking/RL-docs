@@ -1,12 +1,38 @@
+<template>
+  <div class='slider'>
+      <div class='slidercontrol'>
+      
+      </div>
+
+      <div v-for="map in this.info" class='slide'>
+        <img :src="map.preview_url">
+
+        <div class='right-side'>
+          <div class='top-side'>
+            <h2 style=''>{{map.title}}</h2>
+            <div v-html="map.short_description"></div>
+            <p>read more</p>
+            <p> {{ map.creator }} </p>
+          </div>
+
+          <div class='bottom-side' style=''>
+            <p>More by {{map.creator}}</p>
+          </div>
+        </div>
+
+      </div>
+  </div>
+</template>
+
 <script>
 import axios from 'axios';
 import bbobHTML from '@bbob/html'
 import presetHTML5 from '@bbob/preset-html5'
-
 const {rlappid, steam } = require('../../../data.env');
 
 let maps = [];
-let titles = []
+let players = []
+let creators = [];
 let LastMapscount = 5;
 
 export default {
@@ -21,9 +47,10 @@ export default {
   },
   methods: {
     getMsg: async function () {
+        // replace with totalmaps
         let pages = Math.ceil(260/100);
         
-        for(let x= 0; x<pages;x++){
+        for(let x= 0; x < pages;x++){
             let z = x + 1;
             await axios
             .get(`https://cors-anywhere.herokuapp.com/https://api.steampowered.com/IPublishedFileService/QueryFiles/v1/?key=${steam}&page=${z}&numperpage=1000&appid=${rlappid}&return_vote_data=1&return_tags=1&return_previews=1&return_children=1&return_short_description=1&return_reactions=1`)
@@ -36,56 +63,73 @@ export default {
             })
         }
         await maps.sort((a, b) => b.time_created - a.time_created);
-     
+
         let start = maps.length - LastMapscount;
         await maps.splice(LastMapscount,start);
 
-        for(let w=0;w<maps.length;w++){
-          let processed = ''
-           processed = bbobHTML(maps[w].short_description, presetHTML5())
-           maps[w].short_description = processed
-        }
-            titles = maps
-        
-        let results = titles
-    
-        // let promise = new Promise((resolve, reject) => {
-        //     setTimeout(() => resolve(results), 3000);
-        // })
+        for(let w = 0;w < maps.length;w++){
+           let processed = '';
+           processed = bbobHTML(maps[w].short_description, presetHTML5()) + '...';
+           maps[w].short_description = processed;
 
-        // let result = await promise;
-        this.info = results;
-        console.log(this.info[0].short_description)
+           creators.push(maps[w].creator);
+        }
+      
+        await axios
+            .get(`https://cors-anywhere.herokuapp.com/https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2/?key=${steam}&steamids=${creators}`)
+            .then(response => {
+                players = response.data.response.players;
+                
+            })
+
+        for(let x = 0;x < players.length;x++){
+          let index = creators.indexOf(players[x].steamid)
+          maps[x].creator = players[index].personaname
+        }
+
+        this.info = maps;
     }
   },
-  render (h) {
-    return (
-      
-      <div class='slider'>
-      <div class='slidercontrol' style='background-color:#2d2d2d;'>
-      
-      </div>
-      <div class='slide' style='display:flex;flex-direction:row;margin-left:10vw;margin-right:10vw;border-radius:8px;background-color:#ffffff;color:black;'>
-      <img src={this.info[0].preview_url} style='width:50%'></img>
-      <div class='right-side' style='border:none;width:50%;padding:9px'>
-      <div class='top-side' style='height=30%;'>
-      <h2 style='font-weight:bold;font-size:40px'>{this.info[0].title}</h2>
-      <p id='to-fill'>{this.info[0].short_description}</p>
-      <p>read more</p>
-      <p>{this.info[0].creator}</p>
-      </div>
-      <div class='bottom-side' style='bottom:0;position:relative;height=30%;background-color:#2d2d2d;color:white;'>
-      <p>More by {this.info[0].creator}</p>
-      </div>
-      </div></div>
-      
-      </div>
-      
-    
-    )
-
-      
-  }
 }
 
 </script>
+<style>
+.slidercontrol{
+  background-color:#2d2d2d;
+}
+.slide{
+  display:flex;
+  flex-direction:row;
+  margin-left:10vw;
+  margin-bottom:10px;
+  margin-right:10vw;
+  border-radius:8px;
+  background-color:#ffffff;
+  color:black;
+}
+.slide img{
+  width:50%;
+  max-height:350px;
+  object-fit:contain;
+}
+.right-side{
+  border:none;
+  width:50%;
+  padding:9px;
+}
+.top-side{
+  height:70%;
+}
+.top-side h2{
+  font-weight:bold;
+  font-size:40px;
+}
+.bottom-side{
+  bottom:0;
+  position:relative;
+  height:30%;
+  background-color:#2d2d2d;
+  color:white;
+}
+
+</style>
