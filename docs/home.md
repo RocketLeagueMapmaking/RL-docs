@@ -3,21 +3,18 @@ editLink: false
 sidebar: false
 ---
 <div class='custom'>
-<section class='headpage'>
-<h1 class='titel' style=''>Rocket league <br>map making</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus dolor lacus neque, semper nullam massa lectus scelerisque amet. Interdum venenatis est gravida eros, porttitor platea egestas arcu. Amet faucibus duis et consequat luctus ac, elementum sed. Venenatis sit ligula volutpat scelerisque luctus venenatis, hendrerit.
-</p> <a href='#readme' class='first-link'>read more</a><a class='second-link' href='/guide'>documentation</a>
-</section>
-<section class='body-part' id='readme'>
-<h1 class='section-title'><span>New</span><br> maps</h1>
-<NewMaps />
-
-<p>Total maps:<TotalMaps /> </p>
-
-
-</section>
-
-
+    <section class='headpage'>
+        <h1 class='titel'>Rocket league <br>map making</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus dolor lacus neque, semper nullam massa lectus scelerisque amet. Interdum venenatis est gravida eros, porttitor platea egestas arcu. Amet faucibus duis et consequat luctus ac, elementum sed. Venenatis sit ligula volutpat scelerisque luctus venenatis, hendrerit.
+        </p> 
+        <a href='#readme' class='first-link'>read more</a>
+        <a href='/guide'  class='second-link'>documentation</a>
+    </section> 
+    <section class='body-part' id='readme'>
+        <h1 class='section-title'><span>New</span><br> maps</h1>
+        <NewMaps />
+    </section>
+    <FooterText />
 </div>
    
 <style>
@@ -49,6 +46,10 @@ sidebar: false
 max-width:600px;
 padding-bottom:12px;
 }
+.headpage a{
+    display: inline-block;
+    width: fit-content;
+}
 .first-link{
     color:#00DD30;
 }
@@ -64,7 +65,7 @@ padding-bottom:12px;
     text-transform:uppercase;
     font-size:30px;
     margin-left:10vw;
-    margin-bottom:14px;
+    margin-bottom:24px;
 }
 .section-title span{
     color:#00861D;
@@ -76,5 +77,7 @@ max-width:100%;
 margin:0px;
 padding:0px;
 }
-
+.page-edit{
+    display:none;
+}
 </style>
