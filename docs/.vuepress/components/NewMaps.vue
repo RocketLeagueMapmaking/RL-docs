@@ -1,37 +1,38 @@
 <template>
-  <div class='slider'>
-      <div class='slidercontrol'>
-      <div class="slider-dot"></div>
-      <div class="slider-dot"></div>
-      <div class="slider-dot"></div>
-      <div class="slider-dot"></div>
-      <div class="slider-dot"></div>
-      </div>
+    
+  <vueper-slides class="slider" :arrows="false" bullets-outside>
+      
+    <vueper-slide v-for="map in this.info.slice(0, 5)">
+      <template v-slot:content>
+        <div class="slide">
+          <img :src="map.preview_url">
 
-      <div v-for="map in this.info" class='slide'>
-        <img :src="map.preview_url">
+          <div class='right-side'>
+            <div class='top-side'>
+              <h2>{{map.title}}</h2>
+              <div v-html="map.short_description" class="slide-description"></div>
+              <br>
+              <a v-bind:href="'https://steamcommunity.com/sharedfiles/filedetails/?id='+map.publishedfileid">Subscribe</a>
+              <p><em> {{ map.creator }} </em></p>
+            </div>
 
-        <div class='right-side'>
-          <div class='top-side'>
-            <h2>{{map.title}}</h2>
-            <div v-html="map.short_description"></div>
-            <a v-bind:href="'https://steamcommunity.com/sharedfiles/filedetails/?id='+map.publishedfileid">Subscribe</a>
-            <p><em> {{ map.creator }} </em></p>
+            <div class='bottom-side'>
+              <p>More by {{map.creator}}</p>
+              <!-- <div v-for='maps in this.extra'>
+                <img v-bind:src="maps.image" alt="">
+              </div> -->
+            </div>
           </div>
-
-          <div class='bottom-side'>
-            <p>More by {{map.creator}}</p>
-            <!-- <div v-for='maps in this.extra'>
-              <img v-bind:src="maps.image" alt="">
-            </div> -->
-          </div>
-        </div>
-
-      </div>
-  </div>
+        </div> 
+      </template>
+    </vueper-slide>
+  </vueper-slides>
 </template>
 
 <script>
+import { VueperSlides, VueperSlide } from 'vueperslides'
+import 'vueperslides/dist/vueperslides.css'
+ 
 import axios from 'axios';
 import bbobHTML from '@bbob/html';
 import presetHTML5 from '@bbob/preset-html5';
@@ -54,6 +55,7 @@ export default {
       extra: null
     }
   },
+  components: { VueperSlides, VueperSlide },
   methods: {
     
     getMsg: async function () {
@@ -136,6 +138,26 @@ export default {
 
 </script>
 <style>
+*{
+    padding:0;
+    margin:0; 
+}
+.vueperslides__bullet .default {
+  background-color: rgba(78, 78, 78, 0.3);
+  border: none;
+  box-shadow: none;
+  transition: 0.3s;
+  width: 16px;
+  height: 16px;
+}
+.vueperslides__bullet--active .default {background-color: #42b983;}
+.vueperslides__bullet span {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 10px;
+  opacity: 0.8;
+}
 
 .slidercontrol{
   background-color:#2d2d2d;
@@ -167,6 +189,7 @@ export default {
   border-radius:8px;
   background-color:#222222;
   color:white;
+  max-width: 80vw;
 }
 .slide img{
   width:50%;
@@ -188,11 +211,13 @@ export default {
   font-size:40px;
   border-bottom: none;
 }
-.top-side div{
+.slide-description{
   padding-bottom:10px;
+  font-size: 1rem !important;
+  display: inline;
 }
-.top-side div h1{
-  font-size: 1rem;
+.slide-description h1{
+  font-size: 1rem !important;
   display: inline;
 }
 .bottom-side{

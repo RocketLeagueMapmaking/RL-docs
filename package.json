@@ -18,6 +18,7 @@
     "node-fetch": "^2.6.1",
     "vue": "^2.6.12",
     "vue-template-compiler": "^2.6.12",
+    "vueperslides": "^2.10.8",
     "vuepress-theme-default-prefers-color-scheme": "^1.1.0"
   },
   "devDependencies": {
