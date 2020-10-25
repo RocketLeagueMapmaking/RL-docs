@@ -1,11 +1,6 @@
 module.exports = {
-<<<<<<< HEAD
-  title: 'DOCS',
-  description: 'Rocket league maps with documentation. The biggest website for Rocket League map making.',
-=======
   title: 'RLMM',
   description: 'Guides, Resources, Maps, and More',
->>>>>>> swaggles-revisions
   theme: 'default-prefers-color-scheme',
   icon: '/logo_rlmm_round_1440.png',
   // Only target browsers currently popular, avoiding polyfills and speeding up build time.
@@ -63,7 +58,6 @@ module.exports = {
         collapsable: false, 
         sidebarDepth: 1,    
         children: [
-          'ready',
           'udk',
           'windows',
         ]
@@ -72,20 +66,20 @@ module.exports = {
         collapsable: false, 
         sidebarDepth: 1,    
         children: [
-          'quickinstall',
+          'quick_install',
         'installing',
-        'dummyclasses',
+        'dummy_classes',
         ]
       },{
         title: 'Exploring UDK',   
         collapsable: false, 
         sidebarDepth: 1,    
         children: [
-          'projectsetup',
+          'project_setup',
         'udk_intro',
         'udk_editor',
         'content_browser',
-        'sticky-walls'
+        'sticky_walls'
         ]
       }
     ],'/guide/':[
@@ -103,10 +97,10 @@ module.exports = {
         collapsable: false, 
         sidebarDepth: 1,    
         children: [
-          'udk-basics',
-          'collideable_mesh',
+          'udk_basics',
+          'collidable_mesh',
           'rapid_test',
-          'collideable_collisions',
+          'collidable_collisions',
           'owl',
           'materials',
           'lighting',
@@ -226,15 +220,15 @@ module.exports = {
         items: [
           {
             text: 'Essential',
-            link: '/beginner/ready'
+            link: '/beginner/index'
           },
           {
             text: 'FAQ',
-            link: '/beginner/ready'
+            link: '/beginner/index'
           },
           {
             text: 'Guides',
-            link: '/beginner/ready'
+            link: '/beginner/index'
           },
           {
             text: 'Cheatsheets',

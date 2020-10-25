@@ -27,7 +27,7 @@ This a list of useful things in order of importance:
 * [UV cube](https://drive.google.com/file/d/1sS6KkDMfkzkhJfuBMicUa56FpdiDXvO-/view)
 * [Autodesk fbx tool](https://www.autodesk.com/developer-network/platform-technologies/fbx-converter-archives)
 
-[All-in-one packages](../beginner/quickinstall):
+[All-in-one packages](../beginner/quick_install):
 * [Dasoccerguy’s (my) RocketLeagueMapMaking Setup Script](https://github.com/Dasoccerguy/RocketLeagueMapMaking)
 * [Newk’s UDK Simple Setup](https://rocketleaguemods.com/mods/udk-2015-simple-setup/)
 
