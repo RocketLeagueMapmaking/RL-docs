@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'DOCS',
-  description: 'Rocket league maps with documentation. The biggest website for Rocket League map making',
+  title: 'RLMM',
+  description: 'Guides, Resources, Maps, and More',
   theme: 'default-prefers-color-scheme',
   icon:'/logo_rlmm_round_1440.png',
   themeConfig: {
@@ -8,7 +8,7 @@ module.exports = {
     lastUpdated: 'Last updated',
     searchPlaceholder: 'Search...',
      // Assumes GitHub. Can also be a full GitLab url.
-     repo: 'webbuildlucas/RL-docs/',
+     repo: 'RocketLeagueMapmaking/RL-docs/',
      // Customising the header label
      // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
      repoLabel: 'Github',

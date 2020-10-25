@@ -5,7 +5,7 @@ tags:
   - structure
 ---
 
-# The big picture 
+# The Big Picture
 
 It can be hard to know where to start, so here is a flowchart to help you pick the right path. 
 

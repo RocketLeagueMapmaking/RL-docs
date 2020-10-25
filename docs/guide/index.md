@@ -10,7 +10,7 @@ tags:
 
 If you're reading this, it probably means you have completed all the steps in the [starting guide](../beginner/ready). Then you're ready to read this guide. If you don't have experience with map making, I higly suggest to read it first. After that, come back and get started!
 
-## Usefull links and resources
+## Useful links and resources
 
 In this guide I'll sometimes refer to some usefull links and recourses. You can view it also here:
 
