@@ -4,11 +4,14 @@ editLink: false
 ---
 # Contact and socials
 
-If you have any question or idea, you can contact us via:
-
 <!-- ## Form -->
 
 <!-- form -->
+:::tip Collaborate
+If you want to collaborate with us for new features (or your own (rl) website) contact me on discord (ghostrider-05#8461).
+Knowledge of `Vue.js` is a pre as this website is built on Vue.
+:::
+If you have any question or ideas, you can contact us via:
 
 ## Twitter
 

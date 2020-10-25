@@ -12,7 +12,7 @@ module.exports = {
      // Customising the header label
      // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
      repoLabel: 'Github',
- docsDir:'docs',
+     docsDir:'docs',
      // Optional options for generating "Edit this page" link
  
      // if your docs are in a different repo from your main project:
@@ -118,6 +118,7 @@ module.exports = {
           'dummy_assets',
           'upgrading',
           'custom_material',
+          'extra-modes',
           'matinee',
           'KActors',
           'skeletal_mesh',
@@ -206,99 +207,53 @@ module.exports = {
       // },
       {
         text: 'Documentation',
-        link: '/guide/'
-      },
-      {
-        text: 'Guides',
         items: [
           {
-            text: 'Starting',
-            link: '/beginner/ready'
-          },
-          {
-            text:'3D modeling',
-            link:'/modeling/'
+            text: 'Essential',
+            link: '/guide/'
           },{
-            
-            text:'Kismet',
-            link:'/kismet/'
-          },
+            text: 'FAQ',
+            link: '/menu/faq'
+        },
           {
-            text:'Textures',
-            link:'/textures/'
-            
-          },
+          text:'Guides',
+          items:[
+            {
+              text: 'Starting',
+              link: '/beginner/ready'
+            },
+            {
+              text:'3D modeling',
+              link:'/modeling/'
+            },{
+              
+              text:'Kismet',
+              link:'/kismet/'
+            },
+            {
+              text:'Textures',
+              link:'/textures/'
+            },
+            {
+              text:'Other guides',
+              link:'/menu/guides'
+            }
+          ]
+        }
           
-          {
-            text:'Play maps',
-            link:'/guide/playing'
-          },{
-            text:'Old guide',
-            link:'https://docs.google.com/document/d/166A68CLxWk0LxMZ4B9vsuBmIgbphLIMbRB0BCn3ezsc/edit#'
-          },
-          {
-            text:'Other guides',
-            link:'/menu/guides'
-          }
         ]
-      },
-      
-      {
-        text: 'More',
-        items: [
-           
+      },{
+        text: 'Map making',
+        items: [ 
         {
-          text:'Recources',
-          items:[
-            {
-              text:'downloads',
-              link:'/menu/downloads'
-            // }, {
-            //   text:'cheat sheets',
-            //   link:'/menu/cheats'
-            },{
-              text:'Kismet snippets',
-              link:'https://github.com/RocketLeagueMapmaking/Kismet'
-            }, {
-              text:'communities',
-              link:'/menu/communities'
-            }
-          ]
+         text: 'Contests',
+         link: '/'
         },{
-          text:'Other',
-          items:[
-            {
-              text: 'how to contribute',
-              link: '/menu/contribute'
-            },{
-              text: 'Special thanks',
-              link: '/index.html#special-thanks'
-            },
-            {
-              text: 'Contact us',
-              link: '/menu/contact'
-            },
-            {
-              text: 'FAQ',
-              link: '/menu/faq'
-            }
-          ]
-        },{
-          text:'Versions',
-          items:[
-            {
-              text: 'UDK 2013/2015',
-              link: '/guide/'
-            },{
-              text: 'V2',
-              link: '/v2/'
-            }
-          ]
-          
-         
-        
-      
-      }]}
+          text: 'Another link',
+          link: '/home'
+         } 
+    ]
+  }
     ],
     plugins: [
       '@vuepress/active-header-links',
@@ -306,10 +261,10 @@ module.exports = {
     '@vuepress/pwa',
     {
       serviceWorker: true,
-        updatePopup: {
-                  message: "New content is available.",
-                  buttonText: "Refresh"
-                }
+      updatePopup: {
+        message: "New content is available.",
+        buttonText: "Refresh"
+      }
     }
     ]
   }

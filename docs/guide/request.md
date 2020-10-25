@@ -17,6 +17,7 @@ Some content can also be marked as not finished with this badge: <Badge text="no
 
 * Using in-game assets
 * Moving volumes
-
+* extra modes
+and much more! Check our [roadmap]() to see all future content.
 
 

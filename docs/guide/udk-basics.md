@@ -9,6 +9,10 @@ This is the point in the guide where things have to go a little non-linear. You 
 From here until the end, this guide will focus on creating a custom map from scratch.
 :::
 
+:::tip
+Have you already decided on what you want to make? Don't forget to check the [flowchart](../beginner/ready) to see what you need to do
+:::
+
 ## Getting going
 
 ### Project information
