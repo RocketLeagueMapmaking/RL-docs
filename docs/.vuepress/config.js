@@ -275,7 +275,7 @@ module.exports = {
           },
           {
             text: 'References',
-            link: '/resources/downloads'
+            link: '/resources/references'
           },
           {
             text: 'Modding Network',
