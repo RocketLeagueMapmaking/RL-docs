@@ -1,5 +1,5 @@
 ---
-title: Rocket League Mapmaking guide
+title: Rocket League Mapmaking
 editLink: false
 home: false
 heroImage: /logo_rlmm_round_1440.png
@@ -7,7 +7,7 @@ heroImage: /logo_rlmm_round_1440.png
 # actionLink: /basic/
 # sidebar: auto
 meta:
-  - name: Rocket league map making guide
+  - name: Rocket League Mapmaking
     content: hello
 tags:
   - welcome
@@ -18,7 +18,7 @@ tags:
 
 ![alt text](./.vuepress/public/images/image234.png)
 
-# Rocket League map making guide
+# Rocket League Mapmaking
 ## Hello
 
 First off, a sincere thanks to all of you for using this guide over the years. I originally made it with the intent to make a series of guides, but quickly fell off the bandwagon. But, here I am, almost 4 years after the original release, and I have finally found the motivation to make the updates I always wanted to.
@@ -43,19 +43,20 @@ Any actions you will need to do are in bold text for visibility. You will also s
 
 These guys will be referred to as friendly/wonderful/amazing modders, so please thank them if you get a chance. Shoot me a message if I didn’t give you credit for discovering something, and I’ll add you.
 
-* whynotsteven (RL modding founder, the OG)
-* ButterandCream (Discord/Reddit admin and creator of Rocket Launcher)
-* glhglh (Collision channels and other foundational discoveries)
-* Lethamyr (Countless custom maps, new features, and publicity)
-* KarlHeinzSchneider (Collision channels and other foundational discoveries)
-* wejrox/JimJoms (Influential map and tutorial creator, One-Stop-Chop-Shop creator)
-* Derzo (Collisions, guides, custom materials, and in-game assets)
-* Stanbroek (Advanced map and kismet techniques, creator of Rocket Plugin)
-* Thanrek (Advanced map and kismet techniques)
-* Ardivee (Boost and map making techniques)
-* Eliot (UE Explorer program)
-* Martinn (UPK decryptor, dummy assets)
-* LiveDimensions (Tech support)
+* **whynotsteven** (RL modding founder, the OG)
+* **ButterandCream** (Discord/Reddit admin and creator of Rocket Launcher)
+* **glhglh** (Collision channels and other foundational discoveries)
+* **Lethamyr** (Countless custom maps, new features, and publicity)
+* **KarlHeinzSchneider** (Collision channels and other foundational discoveries)
+* **wejrox/JimJoms** (Web development, video tutorials, One-Stop-Chop-Shop)
+* **Derzo** (Collisions, guides, custom materials, and in-game assets)
+* **Stanbroek** (Advanced map and kismet techniques, creator of Rocket Plugin)
+* **Thanrek** (Advanced map and kismet techniques)
+* **Ardivee** (Boost and map making techniques)
+* **Eliot** (UE Explorer program)
+* **Martinn** (UPK decryptor, dummy assets)
+* **LiveDimensions** (Tech support)
+* **ghostrider05** (RocketLeagueMapmaking.com)
 
 And a shoutout to you, for embarking on this journey.
 
