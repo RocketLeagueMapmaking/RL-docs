@@ -195,111 +195,94 @@ module.exports = {
            'custom'
         ]
       }
+    ],
+    '/more/':[
+      {
+        title: 'More Information',   
+        collapsable: false, 
+        sidebarDepth: 1,    
+        children: [
+          '',
+           'about',
+           'roadmap',
+           'contribute',
+           'psyonix'
+        ]
+      }
     ]
   },
+
     nav: [
-      // {
-      //   text: 'Home',
-      //   link: 'http://rocketleaguemapmaking.com/',
-      //   rel:false,
-      //   target:'_self'
-      // },
       {
         text: 'Documentation',
-        link: '/guide/'
-      },
-      {
-        text: 'Guides',
+        link: '/guide/',
         items: [
           {
-            text: 'Starting',
+            text: 'Essential',
             link: '/beginner/ready'
           },
           {
-            text:'3D modeling',
-            link:'/modeling/'
-          },{
-            
-            text:'Kismet',
-            link:'/kismet/'
+            text: 'FAQ',
+            link: '/beginner/ready'
           },
           {
-            text:'Textures',
-            link:'/textures/'
-            
-          },
-          
-          {
-            text:'Play maps',
-            link:'/guide/playing'
-          },{
-            text:'Old guide',
-            link:'https://docs.google.com/document/d/166A68CLxWk0LxMZ4B9vsuBmIgbphLIMbRB0BCn3ezsc/edit#'
+            text: 'Guides',
+            link: '/beginner/ready'
           },
           {
-            text:'Other guides',
-            link:'/menu/guides'
+            text: 'Cheatsheets',
+            link: '/cheatsheet/'
           }
         ]
       },
-      
+
+      {
+        text: 'Resources',
+        link: '/resources/',
+        items: [
+          {
+            text: 'Downloads',
+            link: '/menu/downloads'
+          },
+          {
+            text: 'FAQ',
+            link: '/menu/faq'
+          },
+          {
+            text: 'References',
+            link: '/menu/downloads'
+          },
+          {
+            text: 'Modding Network',
+            link: '/resources/moddingnetwork'
+          }
+        ]
+      },
+
       {
         text: 'More',
+        link: '/more/',
         items: [
-           
-        {
-          text:'Recources',
-          items:[
-            {
-              text:'downloads',
-              link:'/menu/downloads'
-            // }, {
-            //   text:'cheat sheets',
-            //   link:'/menu/cheats'
-            },{
-              text:'Kismet snippets',
-              link:'https://github.com/RocketLeagueMapmaking/Kismet'
-            }, {
-              text:'communities',
-              link:'/menu/communities'
-            }
-          ]
-        },{
-          text:'Other',
-          items:[
-            {
-              text: 'how to contribute',
-              link: '/menu/contribute'
-            },{
-              text: 'Special thanks',
-              link: '/index.html#special-thanks'
-            },
-            {
-              text: 'Contact us',
-              link: '/menu/contact'
-            },
-            {
-              text: 'FAQ',
-              link: '/menu/faq'
-            }
-          ]
-        },{
-          text:'Versions',
-          items:[
-            {
-              text: 'UDK 2013/2015',
-              link: '/guide/'
-            },{
-              text: 'V2',
-              link: '/v2/'
-            }
-          ]
-          
-         
-        
-      
-      }]}
+          {
+            text: 'About',
+            link: '/more/about'
+          },
+          {
+            text: 'Roadmap',
+            link: '/more/roadmap'
+          },
+          {
+            text: 'Contribute',
+            link: '/more/contribute'
+          },
+          {
+            text: 'Psyonix Links',
+            link: '/more/psyonix'
+          }
+        ]
+      }
     ],
+
     plugins: [
       '@vuepress/active-header-links',
       '@vuepress/last-updated',
