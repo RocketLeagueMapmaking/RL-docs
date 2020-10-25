@@ -42,11 +42,11 @@ module.exports = {
     smoothScroll: true,
     base: '/rl-docs/',
     sidebar:{
-      '/beginner/':
+      '/essential/':
     [
       // {
       //   title: 'Introduction',   // required
-      //   // path: '/beginner/',      // optional, link of the title, which should be an absolute path and must exist
+      //   // path: '/essential/',      // optional, link of the title, which should be an absolute path and must exist
       //   collapsable: false, // optional, defaults to true
       //   sidebarDepth: 1,    // optional, defaults to 1
       //   children: [
@@ -54,32 +54,32 @@ module.exports = {
      
       // ]},
       {
-        title: 'Beginning',   
+        title: 'Introduction',   
         collapsable: false, 
         sidebarDepth: 1,    
         children: [
-          'udk',
-          'windows',
+          '',
+          '01_flowchart',
+          '02_clarifications'
         ]
       },{
         title: 'Installing UDK',   
         collapsable: false, 
         sidebarDepth: 1,    
         children: [
-          'quick_install',
-        'installing',
-        'dummy_classes',
+          '03_installing',
+          '04_dummy_classes',
+          '05_project_setup'
         ]
       },{
         title: 'Exploring UDK',   
         collapsable: false, 
         sidebarDepth: 1,    
         children: [
-          'project_setup',
-        'udk_intro',
-        'udk_editor',
-        'content_browser',
-        'sticky_walls'
+          '06_udk_intro',
+          '07_udk_editor',
+          '08_content_browser',
+          '09_sticky_walls'
         ]
       }
     ],'/guide/':[
@@ -88,115 +88,98 @@ module.exports = {
         collapsable: false, 
         sidebarDepth: 1,    
         children: [
-          '',
-          'request',
+          ''
         ]
       },
+
       {
         title: 'UDK Basics',   
-        collapsable: false, 
+        collapsable: true, 
         sidebarDepth: 1,    
         children: [
-          'udk_basics',
-          'collidable_mesh',
-          'rapid_test',
-          'collidable_collisions',
-          'owl',
-          'materials',
-          'lighting',
-          'game_items',
-          'boost',
-          'details',
-          'what_next',
+          '/guide/udk/01_csg',
+          '/guide/udk/02_udk_basics',
+          '/guide/udk/03_collidable_mesh',
+          '/guide/udk/04_map_test',
+          '/guide/udk/05_collidable_collisions',
+          '/guide/udk/06_owl',
+          '/guide/udk/07_materials',
+          '/guide/udk/08_lighting',
+          '/guide/udk/09_game_items',
+          '/guide/udk/10_boost',
+          '/guide/udk/11_details',
+          '/guide/udk/12_interlude_next',
           
         ]
       },
-      {
-        title: 'UDK Advanced',   
-        collapsable: false, 
-        sidebarDepth: 1,    
-        children: [
-          'dummy_assets',
-          'upgrading',
-          'custom_material',
-          'matinee',
-          'KActors',
-          'skeletal_mesh',
-          'assets'
-        ]
-      },
-      {
-        title: 'Finishing',   
-        collapsable: false, 
-        sidebarDepth: 1,    
-        children: [
-          'publishing',
-           'playing'
-        ]
-      }
-    ],'/kismet/':[
-      {
-        title: 'Kismet',   
-        collapsable: false, 
-        sidebarDepth: 1,    
-        children: [
-          '',
-           'kismet',
-           'project',
-           'trigger',
-           'advanced'
-        ]
-      }
-    ],'/modeling/':[
-      {
-        title: 'Other sources',   
-        collapsable: false, 
-        sidebarDepth: 1,    
-        children: [
-          'csg',
-           'other',
-           
-        ]
-      },
+
       {
         title: 'Blender Basics',   
-        collapsable: false, 
+        collapsable: true, 
         sidebarDepth: 1,    
         children: [
-          '',
-           'intro',
-           'setup',
-           'modeling',
-           'fbx',
-           'uv',
-           'unwrapping',
-           'texels',
-           'resolution',
-           'mipmaps'
+          '/guide/blender/01_blender',
+          '/guide/blender/02_intro',
+          '/guide/blender/03_setup',
+          '/guide/blender/04_modeling',
+          '/guide/blender/05_fbx',
+          '/guide/blender/06_uv',
+          '/guide/blender/07_unwrapping',
+          '/guide/blender/08_resolution',
+          '/guide/blender/09_mipmaps',
+          '/guide/blender/10_interlude_other',
         ]
       },
+
+      {
+        title: 'UDK Advanced',   
+        collapsable: true, 
+        sidebarDepth: 1,    
+        children: [
+          '/guide/udk/14_dummy_assets',
+          '/guide/udk/15_upgrading',
+          '/guide/udk/16_custom_material',
+          '/guide/udk/17_matinee',
+          '/guide/udk/18_kactors',
+          '/guide/udk/19_skeletal_mesh',
+          '/guide/udk/20_extra_modes'
+        ]
+      },
+
+      {
+        title: 'Kismet',   
+        collapsable: true, 
+        sidebarDepth: 1,    
+        children: [
+          '/guide/kismet/01_kismet',
+          '/guide/kismet/02_project',
+          '/guide/kismet/03_trigger',
+          '/guide/kismet/04_advanced'
+        ]
+      },
+
       {
         title: 'Blender Advanced',   
-        collapsable: false, 
+        collapsable: true, 
         sidebarDepth: 1,    
         children: [
-          'animation',
-           'modifiers',
-           'curves'
+          '/guide/blender/11_animation',
+          '/guide/blender/12_modifiers',
+          '/guide/blender/13_curves'
         ]
-      }
-    ],'/textures/':[
+      },
+
       {
-        title: 'Other sources',   
-        collapsable: false, 
+        title: 'Multiplayer',   
+        collapsable: true, 
         sidebarDepth: 1,    
         children: [
-          '',
-           'maps',
-           'custom'
+          '/guide/multiplayer/01_publishing',
+          '/guide/multiplayer/02_playing'
         ]
       }
     ],
+
     '/more/':[
       {
         title: 'More Information',   
@@ -220,19 +203,19 @@ module.exports = {
         items: [
           {
             text: 'Essential',
-            link: '/beginner/index'
+            link: '/essential/index'
           },
           {
             text: 'FAQ',
-            link: '/beginner/index'
+            link: '/faq/index'
           },
           {
             text: 'Guides',
-            link: '/beginner/index'
+            link: '/guide/index'
           },
           {
             text: 'Cheatsheets',
-            link: '/cheatsheet/'
+            link: '/cheatsheet/index'
           }
         ]
       },
@@ -264,6 +247,10 @@ module.exports = {
         text: 'More',
         link: '/more/',
         items: [
+          {
+            text: 'Contact',
+            link: '/more/contact'
+          },
           {
             text: 'About',
             link: '/more/about'
