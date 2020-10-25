@@ -1,11 +1,13 @@
 /node_modules
+
+# Ignore project files
 .gitlab-ci.yml
 .vscode
+
+# Ignore compiled HTML
 /docs/.vuepress/dist
-.gitignore
-yarn.lock
-.gitattributes
-.gitignore
-package.json
-package-lock.json
-data.env.js
+
+# Do not commit API keys
+data.env.*
+
+
