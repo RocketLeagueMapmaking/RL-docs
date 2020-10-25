@@ -1,0 +1,8 @@
+# Only allow the folders we need for deployment into the dockerfile.
+*
+!/deployment
+!/package*.json
+!/docs
+
+# Need to avoid dist conflicts on build.
+/docs/.vuepress/dist

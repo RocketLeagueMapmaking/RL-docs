@@ -1,11 +1,15 @@
 {
-  "name": "rocket_league_maps",
+  "name": "rocket_league_map_making",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A website containing information pertaining to the creation, extension, debugging, and concepts of Rocket League map making.",
+  "homepage": "http://rocketleaguemapmaking.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webbuildlucas/RL-docs.git"
+  },
   "scripts": {
-    "create:docs": "vuepress build docs",
-    "dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:dev": "vuepress dev docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Lucas van Duijn",

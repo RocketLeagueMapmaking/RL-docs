@@ -1,8 +1,7 @@
-/node_modules
-
-# Ignore project files
+node_modules
 .gitlab-ci.yml
 .vscode
+.idea
 
 # Ignore compiled HTML
 /docs/.vuepress/dist

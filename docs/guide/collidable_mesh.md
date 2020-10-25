@@ -1,11 +1,11 @@
 ---
-title: 'Collideable mesh'
+title: 'Collidable mesh'
 ---
 # UDK Basics
 
-## Collideable Meshes <Badge text="important" type="tip"/>
+## Collidable Meshes <Badge text="important" type="tip"/>
 
-**To make a collideable mesh, you need to set these Properties:**
+**To make a collidable mesh, you need to set these Properties:**
 
 | Search for  | Change the line(s)  | To this value |
 | ------------- |:-------------:| -----:|

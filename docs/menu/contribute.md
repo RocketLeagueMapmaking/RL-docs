@@ -42,7 +42,7 @@ To edit a page:
 Requests may be as simple as "add an example to the maps examples page", or "add a page about Kismet". We'll do our best to fulfill all requests, as long as they're reasonable.
 
 How to suggest new items:
-1. Make sure that you've looked at the [faq](../menu/faq), [guides](../menu/guides), [future content](../guide/request.html#future-content) and [inventor board](link) before making a request; it might already exist!
+1. Make sure that you've looked at the [faq](../menu/faq.md), [guides](../menu/guides), [future content](../guide/request.html#future-content) and [inventor board](link) before making a request; it might already exist!
 2. Make a request; go to [the repo's issue tracker](https://github.com/webbuildlucas/RL-docs/issues) and [create a new issue](https://github.com/webbuildlucas/RL-docs/issues)
 3. Title it appropriately, and let us know exactly what you mean inside the issue description. 
 

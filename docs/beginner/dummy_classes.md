@@ -155,7 +155,7 @@ You can find the download [here](../menu/downloads.html#park-p-dummy-assets)
 
 **Place this into `{UDK Folder}\UDKGame\Content\`** alongside the various other files. UDK will recognize it here and make its contents available to you.
 
-[A later section](../guide/dummy_assets) of this guide will show you how to use any resource from any map, but this is more than enough to get started with.
+[A later section](../guide/dummy_assets.md) of this guide will show you how to use any resource from any map, but this is more than enough to get started with.
 
 ![alt text](../.vuepress/public/images/image225.png)
 *For a world that isn’t just white and blue checkers*

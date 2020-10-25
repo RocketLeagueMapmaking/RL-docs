@@ -27,4 +27,4 @@ The standard way to get stuff done when you don’t want to handle it yourself i
 There are a number of websites such as Fiverr, Freelancer, or Upwork for hiring someone, but unless you have a very clear vision and have budgeted for your project, these options are not for you.
 
 ## Rocket League Itself
-The ace up our sleeves? [Dummy Assets](../guide/dummy_assets)
+The ace up our sleeves? [Dummy Assets](../guide/dummy_assets.md)
