@@ -24,7 +24,13 @@ In this guide I'll sometimes refer to some usefull links and recourses. You can 
 
 A lot of map making is not discovered (by you), so you will probably need some help along the way. Please check the [faq](../menu/faq) or [contact us](../menu/contact) to get help
 
-## Shortcuts
+### Support us
+
+This is a guide without advertisements to let you focus on the one important thing: map making. If you want to support us, thank you very much! You can help us with:
+* [contribute to this guide](../menu/contribute)
+* [donate (to prize pools)](../menu/contribute)
+
+## Shortcuts <Badge text="beta" type="warning"/>
 
 To save some time, you can jump to the following sections:
 * [Boost](boost)
@@ -43,8 +49,3 @@ To save some time, you can jump to the following sections:
 * [Udk tips](owl)
 * [UV Mapping](../modeling/uv)
 
-## Ads
-
-This is a guide without advertisements to let you focus on the one important thing: map making. If you want to support us, thank you very much! You can help us with:
-* [option]()
-* [option]()
