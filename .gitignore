@@ -4,7 +4,7 @@ node_modules
 .idea
 
 # Ignore compiled HTML
-/docs/.vuepress/dist
+/docs/.vuepress/dist/
 
 # Do not commit API keys
 data.env.*

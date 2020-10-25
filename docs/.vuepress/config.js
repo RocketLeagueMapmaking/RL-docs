@@ -170,6 +170,17 @@ module.exports = {
       },
 
       {
+        title: 'Textures',   
+        collapsable: true, 
+        sidebarDepth: 1,    
+        children: [
+          '/guide/textures/01_textures',
+          '/guide/textures/02_custom',
+          '/guide/textures/03_maps'
+        ]
+      },
+
+      {
         title: 'Multiplayer',   
         collapsable: true, 
         sidebarDepth: 1,    
@@ -210,12 +221,41 @@ module.exports = {
             link: '/faq/index'
           },
           {
-            text: 'Guides',
-            link: '/guide/index'
-          },
-          {
             text: 'Cheatsheets',
             link: '/cheatsheet/index'
+          },
+          {
+            text: 'Guides',
+            items: [
+              {
+                text: 'UDK Basics',
+                link: '/guide/udk/01_csg'
+              },
+              {
+                text: 'Blender Basics',
+                link: '/guide/blender/01_blender'
+              },
+              {
+                text: 'UDK Advanced',
+                link: '/guide/udk/14_dummy_assets'
+              },
+              {
+                text: 'Kismet',
+                link: '/guide/kismet/01_kismet'
+              },
+              {
+                text: 'Blender Advanced',
+                link: '/guide/blender/11_animation'
+              },
+              {
+                text: 'Textures',
+                link: '/guide/01_textures'
+              },
+              {
+                text: 'Multiplayer',
+                link: '/guide/01_publishing'
+              },
+            ]
           }
         ]
       },
