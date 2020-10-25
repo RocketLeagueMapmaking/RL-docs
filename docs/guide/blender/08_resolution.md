@@ -27,7 +27,7 @@ In older 3D games, due to hardware limitations, textures were very low resolutio
 :::warning NOTE
 UDK will only accept perfectly square .TGA textures, and prefers that the resolution is a power of 2. 
 :::
-The following table contains some guidelines, with [the previous questions](texels) in mind:
+The following table contains some guidelines, with the previous questions in mind:
 
 |Resolution|Use Case |File Size|
 |------|------|------|

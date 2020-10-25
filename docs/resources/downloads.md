@@ -27,7 +27,7 @@ This a list of useful things in order of importance:
 * [UV cube](https://drive.google.com/file/d/1sS6KkDMfkzkhJfuBMicUa56FpdiDXvO-/view)
 * [Autodesk fbx tool](https://www.autodesk.com/developer-network/platform-technologies/fbx-converter-archives)
 
-[All-in-one packages](../essential/quick_install):
+[All-in-one packages](../essential/03_installing.html#all-in-one-packages):
 * [Dasoccerguy’s (my) RocketLeagueMapMaking Setup Script](https://github.com/Dasoccerguy/RocketLeagueMapMaking)
 * [Newk’s UDK Simple Setup](https://rocketleaguemods.com/mods/udk-2015-simple-setup/)
 
@@ -52,13 +52,14 @@ A fully playable standard map with no materials or environment detail
 
 <a href="" download>Download</a>
 
-### More assets
+### One stop chop shop
 
 * [JimJoms' One Stop Chop Shop](https://drive.google.com/drive/folders/0B1VfmKjZuD8OYVlURld3ZFhTRk0)
-* [Paragon](https://www.unrealengine.com/en-US/paragon)
 
 ## Links
 
 * [Derzo's spreadsheet](https://docs.google.com/spreadsheets/d/1KLs5r_sUn3W6rLrw_xQJbEK-LOmxCiBRfo9_XI79Kng)
 * [Kismet snippet library](https://github.com/RocketLeagueMapmaking/Kismet)
+* [SteamCMD support page](https://developer.valvesoftware.com/wiki/SteamCMD)
 * [Psyonix talk about the 3D engine](https://www.youtube.com/watch?v=ueEmiDM94IE)
+* [Paragon](https://www.unrealengine.com/en-US/paragon)

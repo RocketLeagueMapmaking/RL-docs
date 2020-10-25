@@ -14,13 +14,9 @@ title: Installing
 
 If you don’t want to stress about this setup process, there are two publicly-available packages which streamline it immensely.
 
-### RocketLeagueMapmaking UDK RL Setup Script <Badge text="beta" type="warning"/>
+### RocketLeagueMapmaking UDK RL Setup Script
 
 This script is meant to hold your hand through the entire setup process, take care of tedious and error-prone steps for you, then generate a Project folder that starts you off on the right path. Refer to the section below to install UDK properly.
-
-:::warning Errors
-This script has not been thoroughly tested, so please message me if it misbehaves.
-:::
 
 * [Github Link](https://github.com/RocketLeagueMapmaking/UDK_RL_Setup)
 

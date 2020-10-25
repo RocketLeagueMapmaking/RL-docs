@@ -6,7 +6,7 @@ title: Kismet Editor
 ## Overview
 Kismet is a node-based programming system that presents a “cleaner” and “easier to use” interface than you would get writing your own code. Logical blocks take the place of code classes and functions, and lines on the page indicate data and program flow.
 
-Kismet, much like the [CSG tools](../modeling/csg), is not meant to be used to program a whole game. It is meant more as a tool for cheap and dirty testing, but in this case it is the only option we have.
+Kismet, much like the [CSG tools](../udk/01_csg), is not meant to be used to program a whole game. It is meant more as a tool for cheap and dirty testing, but in this case it is the only option we have.
 
 ### Key Terms
 * `Node` - A Kismet code snippet, represented by a shape with labels on it
@@ -79,10 +79,10 @@ If you wish to completely abuse the game for things like Chaos Rumble or (the or
 |Type|Used for...|
 |------|------|
 |Bool|True/False data, like a door being open or shut|
-|External Variable|Named variables of any type from an external sequence ([see Sequences](kismet.html#sequences))|
+|External Variable|Named variables of any type from an external sequence ([see Sequences](01_kismet.html#sequences))|
 |Float|Numbers with decimal precision, like speed or Z location|
 |Int|Numbers with integer precision, like number of players|
-|Matinee Data|Animation data (see [Matinee](../guide/matinee))|
+|Matinee Data|Animation data (see [Matinee](../udk/17_matinee))|
 |Named Variable|Named variables of any type|
 |Object|Objects in the map, like the ball|
 |Player|Players themselves|
@@ -97,7 +97,7 @@ I encourage you to test out any Events which sound interesting. Here are some of
 |Level Loaded|Running code as soon as the map is loaded|
 |Player > Player Spawned|Running code when a player spawns or respawns|
 |TAGame > Round Start|Running code when gameplay starts or resumes|
-|TriggerVolume Touch|Running code when the player or ball enters a region (more on this [here](trigger))|
+|TriggerVolume Touch|Running code when the player or ball enters a region (more on this [here](03_trigger))|
 
 ### Actions
 Some Actions are basically Events or Conditions, but in general these will make up the majority of the Kismet code. Again, some of the most useful and frequently used nodes are:

@@ -3,7 +3,7 @@ title: Custom Materials
 ---
 # UDK Advanced 
 
-[Dummy Assets](dummy_assets) are a powerful tool which gives you instant access to hundreds of materials which are ready to go. But, it’s hard to achieve a truly custom look using pre-built stuff. To make an honestly custom map, we need Custom Materials.
+[Dummy Assets](14_dummy_assets) are a powerful tool which gives you instant access to hundreds of materials which are ready to go. But, it’s hard to achieve a truly custom look using pre-built stuff. To make an honestly custom map, we need Custom Materials.
 
 ## Public Service Announcement
 
@@ -101,7 +101,7 @@ Not every material in the game will need to have this much detail (obviously), b
 *Fur Elise*
 
 I will be using this stupid fur texture that I stole from the internet. You are welcome to copy it from here, or work with any other texture you like. 
-:::tip GIVE CREDITS
+:::warning GIVE CREDITS
 **Many websites want to charge you to use their images and textures. Often these are higher quality, but there are enough free resources available that you should have all you need. Give credit where credit is due if you use something which obviously had a lot of work put into it.**
 :::
 
@@ -122,6 +122,6 @@ I will be using this stupid fur texture that I stole from the internet. You are 
 
 **Select the imported texture in the Content Browser. Find the Diffuse channel under Parameter Groups > Texture Parameter Values. Click the green arrow to assign the texture to this channel. Lastly, click the checkbox next to the word Diffuse. The preview will update when you do this step, which indicates that this succeeded.**
 
-**Apply this to a mesh and check it out in the game!** In the [Textures guide](../textures) there is a detailed explanation of the other channels and how to create textures for them. Diffuse will achieve 90% of the look you are going for, and is the easiest and most intuitive. **Generally speaking, you can make a perfectly acceptable map with custom materials that only use the Diffuse channel.**
+**Apply this to a mesh and check it out in the game!** In the [Textures guide](../textures/01_textures) there is a detailed explanation of the other channels and how to create textures for them. Diffuse will achieve 90% of the look you are going for, and is the easiest and most intuitive. **Generally speaking, you can make a perfectly acceptable map with custom materials that only use the Diffuse channel.**
 
 Once Emissive, Specular, and Normal maps have been created, they may be applied in exactly the same way. Textures may also be updated following the exact same process as meshes.

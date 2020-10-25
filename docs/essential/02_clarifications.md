@@ -27,7 +27,9 @@ That, or always keep the “Type” column visible in your file explorer windows
 
 When Psyonix publishes a map, they perform an encryption step to protect the assets they worked hard to create. This means that it is not possible to directly open an existing Rocket League map. Decrypting these assets is possible, but location data is not preserved, meaning that you would have to rebuild the map from its components.
 
-**Rocket League mapmaking techniques cannot be used to give you a competitive advantage in the game, and any attempts at that are directly against the EULA.** Please play nice and play by the rules.
+:::danger EULA
+**Rocket League mapmaking techniques cannot be used to give you a competitive advantage in the game, and any attempts at that are directly against the [EULA](../more/psyonix).** Please play nice and play by the rules.
+:::
 
 ## Getting Set Up
 

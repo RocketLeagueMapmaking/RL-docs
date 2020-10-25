@@ -3,7 +3,7 @@ title: Dummy Assets
 ---
 # UDK Advanced 
 
-This is perhaps the most important section in this whole guide, yet it’s never been written down in a very intelligible or collected fashion. However, I feel it’s important to understand [basic mapmaking](../essential/) (i.e. everything leading up to this point) before attempting this, because this is where it starts to get really weird. Dedicated modders finally cracked the code in 2017, which allows for any map maker to use any in-game asset. The trick?
+This is perhaps the most important section in this whole guide, yet it’s never been written down in a very intelligible or collected fashion. However, I feel it’s important to understand [basic mapmaking](../../essential/01_flowchart) (i.e. everything leading up to this point) before attempting this, because this is where it starts to get really weird. Dedicated modders finally cracked the code in 2017, which allows for any map maker to use any in-game asset. The trick?
 
 Just name it correctly.
 
@@ -23,7 +23,7 @@ It’s also worth mentioning that there will be a name clash between the pre-exi
 Thankfully, the reason the Dummy Assets approach even works is the same reason that we are able to create custom maps for the game. **Rocket League is essentially a collection of folders,** much like the list of packages within UDK’s Content Browser. In fact, each map within CookedPCConsole is an Unreal Package (.upk file), so it is exactly like this.
 
 
-Recall that the word “Cooked” refers to the fact that these packages have been encrypted. This means that the Dummy Assets method is not as simple as copying Dropshot out of CookedPCConsole and opening it in UDK, but it is nearly that simple. Martinn took the time to pass all of the Rocket League maps through a decryption tool (discussed [later in this guide](assets)), and then organized the resulting pieces into this library.
+Recall that the word “Cooked” refers to the fact that these packages have been encrypted. This means that the Dummy Assets method is not as simple as copying Dropshot out of CookedPCConsole and opening it in UDK, but it is nearly that simple. Martinn took the time to pass all of the Rocket League maps through a decryption tool (discussed [later in this guide](../decryption/assets)), and then organized the resulting pieces into this library.
 
 Most map names should be obvious, especially with the renamed folders. Here is a list of some key names used in UDK/UPK files versus what you will encounter in the game:
 

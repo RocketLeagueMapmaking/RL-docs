@@ -46,7 +46,7 @@ But, for now, it’s just nice to have a floor to drive on. Test it out!
 
 To get the best of both worlds - a mesh we can collide with that also looks the way we want - the best way is to do it ourselves. For any and all 3D asset creation, this guide is going to show you how to use Blender because Blender is bae (not to mention 100% free and incredibly powerful).
 
-This section will be a lightweight crash-course experience for both modeling and UV mapping. Please see the [Blender guide](../modeling) for more information.
+This section will be a lightweight crash-course experience for both modeling and UV mapping. Please see the [Blender guide](../blender/01_blender) for more information.
 
 :::details Crash course blender
 ![alt text](../../.vuepress/public/images/image150.png)
@@ -85,6 +85,6 @@ When we have made our mesh, we head back to UDK to import this Static Mesh into 
 
 UDK will kindly try to figure out how to collide with these objects. But, remember that Psyonix replaced the whole physics engine, meaning that these checkboxes are dead to us. **Double click the newly imported Static Mesh and change these settings.**
 
-**Using the Static Mesh swap technique from [Option 2](collidable_collisions.html#option-2-swap-in-collision-floor), trade out the old floor for the new one.** If you are doing Options 1, 2, and 3 like me, you will also have to move this back to (0,0,0).
+**Using the Static Mesh swap technique from [Option 2](05_collidable_collisions.html#option-2-swap-in-collision-floor), trade out the old floor for the new one.** If you are doing Options 1, 2, and 3 like me, you will also have to move this back to (0,0,0).
 
 Save all, load it, and test it out!

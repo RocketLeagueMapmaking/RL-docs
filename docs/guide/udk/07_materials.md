@@ -3,7 +3,7 @@ title: 'Materials'
 ---
 # UDK Basics
 
-As will be explained in painful amounts of detail in the [Blender sections](../modeling) (should you choose to read them), materials are a way to handle all of the visual properties of a mesh. For right now, we’re just going to use existing materials and not really worry about what they’re made of. To make your own, see the [Custom Materials section](custom_material).
+As will be explained in painful amounts of detail in the [Blender sections](../blender/01_blender) (should you choose to read them), materials are a way to handle all of the visual properties of a mesh. For right now, we’re just going to use existing materials and not really worry about what they’re made of. To make your own, see the [Custom Materials section](16_custom_material).
 
 ## Built-In Materials
 
@@ -13,7 +13,7 @@ However, not all of these are created equal. Rocket League has a package which i
 
 A lovely modder by the name of Derzo put together [this spreadsheet](https://docs.google.com/spreadsheets/d/1KLs5r_sUn3W6rLrw_xQJbEK-LOmxCiBRfo9_XI79Kng), which explains the situation with all of UDK’s standard materials. 
 
-This will be explored in much more detail in the [Custom Materials section](custom_material).
+This will be explored in much more detail in the [Custom Materials section](16_custom_material).
 
 ## Making a Solid Color Material
 
@@ -48,7 +48,7 @@ We’re going to put a grass material on the ceiling, and a glass material on th
 
 *Material possessions*
 
-In the [Content Browser](../essential/content_browser), **search for “grass” within the [Park_P](../essential/dummy_classes.html#park-p) package. It can also help to filter down to only Materials and Material Instances (Constant).** Remember to clear these filters when you need to search for something else. **Select `GrassAndBush_Mat`. Select the ceiling, and press F4 to bring up its properties. Search for “mater” and assign this to its first Materials slot using the green arrow.**
+In the [Content Browser](../../essential/08_content_browser), **search for “grass” within the [Park_P](../../essential/04_dummy_classes.html#park-p) package. It can also help to filter down to only Materials and Material Instances (Constant).** Remember to clear these filters when you need to search for something else. **Select `GrassAndBush_Mat`. Select the ceiling, and press F4 to bring up its properties. Search for “mater” and assign this to its first Materials slot using the green arrow.**
 
 This will appear as basically a solid color in the editor. We are unable to use fully custom materials in Rocket League, which means that you just have to deal with this for now.
 

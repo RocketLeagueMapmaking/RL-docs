@@ -15,7 +15,7 @@ There are a number of websites where artists make 3D assets available for downlo
 
 ## Unreal Marketplace
 Epic Games, the parent company of Psyonix and creator of Unreal Engine, integrated a marketplace into Unreal Engine 4 for easy content sharing between game developers. There is an impressive amount of content available there both for free and for money. For example, Epic made public [all of the assets for its game Paragon](https://www.unrealengine.com/en-US/paragon)
-However, these assets are .UASSET files, meaning that you will have to first place them into an Unreal Engine 4 project and then export them as .FBX files: https://www.youtube.com/watch?v=k5B7UOAT51E
+However, these assets are .UASSET files, meaning that you will have to first place them into an Unreal Engine 4 project and then [export them as .FBX files](https://www.youtube.com/watch?v=k5B7UOAT51E)
 
 Additionally, the exported FBX files might not be compatible with the older engine. Autodesk has [an old tool](https://www.autodesk.com/developer-network/platform-technologies/fbx-converter-archives) (almost as old as UDK) that should take care of that.
 

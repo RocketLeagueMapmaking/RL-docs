@@ -186,8 +186,18 @@ module.exports = {
         collapsable: true, 
         sidebarDepth: 1,    
         children: [
-          '/guide/multiplayer/01_publishing',
-          '/guide/multiplayer/02_playing'
+          '/guide/multiplayer/01_multiplayer',
+          '/guide/multiplayer/02_publishing',
+          '/guide/multiplayer/03_playing'
+        ]
+      },
+
+      {
+        title: 'Decryption',   
+        collapsable: true, 
+        sidebarDepth: 1,    
+        children: [
+          '/guide/decryption/assets'
         ]
       }
     ],

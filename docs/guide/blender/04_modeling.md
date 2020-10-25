@@ -176,7 +176,7 @@ Now, let’s make the hand do something interesting. **Move the 3d cursor to the
 
 ## Key Takeaways <Badge text="important" type="tip"/>
 
-- Hotkeys are your best friends
+- [Hotkeys](02_intro.html#the-hottest-hotkeys) are your best friends
 - Start with a base mesh that makes your life easier
 - Ring select (`Alt+click`), Box select (`B`), and Circle select (`C`) are wonderful
 - Make the most of the 3D cursor
