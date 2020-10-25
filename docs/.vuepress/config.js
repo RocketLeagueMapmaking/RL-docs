@@ -279,7 +279,7 @@ module.exports = {
           },
           {
             text: 'Modding Network',
-            link: '/resources/moddingnetwork'
+            link: '/resources/modding_network'
           }
         ]
       },
