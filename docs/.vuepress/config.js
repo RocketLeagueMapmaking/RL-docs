@@ -7,6 +7,7 @@ module.exports = {
   // Disable if we want ES5 transpilation for IE.
   evergreen: true,
   themeConfig: {
+    defaultTheme: 'dark',
     logo: '/logo_rlmm_round_1440.png',
     lastUpdated: 'Last updated',
     searchPlaceholder: 'Search...',
@@ -266,15 +267,15 @@ module.exports = {
         items: [
           {
             text: 'Downloads',
-            link: '/menu/downloads'
+            link: '/resources/downloads'
           },
           {
-            text: 'FAQ',
-            link: '/menu/faq'
+            text: 'Kismet Library',
+            link: 'https://github.com/RocketLeagueMapmaking/Kismet'
           },
           {
             text: 'References',
-            link: '/menu/downloads'
+            link: '/resources/downloads'
           },
           {
             text: 'Modding Network',
