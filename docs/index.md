@@ -46,10 +46,10 @@ tags:
 <div class='card card-social'>
 <h2>See more</h2>
 <div class='socials-icons'>
-<a href='https://www.twitch.tv/mrswaggly'><font-awesome-icon :icon="['fab', 'twitch']"  class='icon'/></a>
-<a href='https://twitter.com/RLMapMaking?s=20'><font-awesome-icon :icon="['fab', 'twitter-square']"  class='icon'/></a>
-<a href='https://discord.gg/PWu3ZWa'><font-awesome-icon :icon="['fab', 'discord']" class='icon' /></a>
-<a href='https://www.youtube.com/channel/UCp6gkqadtgsaZmPnex9MNiA/featured'><font-awesome-icon :icon="['fab', 'youtube']"  class='icon'/></a>
+<a href='https://www.twitch.tv/mrswaggly'><img src='./.vuepress/public/images/twitch-brands.svg'></img></a>
+<a href='https://twitter.com/RLMapMaking?s=20'><img src='./.vuepress/public/images/twitter-square-brands.svg'></img></a>
+<a href='https://discord.gg/PWu3ZWa'><img src='./.vuepress/public/images/discord-brands.svg'></img></a>
+<a href='https://www.youtube.com/channel/UCp6gkqadtgsaZmPnex9MNiA/featured'><img src='./.vuepress/public/images/youtube-brands.svg'></img></a>
 </div>
 </div>
 </div>
@@ -219,7 +219,6 @@ padding:0px;
     width:80%
   }
 }
-
 @media screen and (max-width: 1000px) {
 .social-part{
     flex-direction:column;
