@@ -3,9 +3,6 @@ title: Rocket League Mapmaking
 editLink: false
 home: false
 heroImage: /logo_rlmm_round_1440.png
-# actionText: Documentation →
-# actionLink: /basic/
-# sidebar: auto
 meta:
   - name: Rocket League Mapmaking
     content: hello
@@ -14,6 +11,10 @@ tags:
   - guide
   - rocket league map making
 ---
+<noscript>
+  <!-- anchor linking to external file -->
+  <a href="https://www.rocketleague.com/">Failed to load</a>
+</noscript>
 <section class='background-section'>
 <section class='headpage'>
     <h1 class='titel'>Rocket league <br>map making</h1>
@@ -29,7 +30,7 @@ tags:
             <p class='guide-part-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus nibh turpis id at mauris. Metus, rhoncus luctus quam viverra lacus nibh. Sit consequat, tincidunt magnis ultricies nunc. Purus nibh turpis id at mauris. Metus, rhoncus luctus quam viverra lacus nibh. </p>
         </div>
         <div class='guide-intro'>
-          <img src='./.vuepress/public/images/image260.png'></img>
+          <img src='./.vuepress/public/images/image260.png' alt='Maptember madness'></img>
         </div>
 </section>
 
@@ -37,7 +38,7 @@ tags:
      <h1 class='section-title'><span>Highlight</span><br>Socials</h1>
      <div class='social-part'>
      <div class='card'>
-     <iframe width="100%" height="315" src="https://www.youtube.com/embed/Umsn9ILID3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style='margin:20px;'></iframe>
+     <iframe title='RLMM Youtube highlight' width="100%" height="315" src="https://www.youtube.com/embed/Umsn9ILID3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style='margin:20px;'></iframe>
 </div>
 <div class='card'>
 <Twitter/>
@@ -46,10 +47,12 @@ tags:
 <div class='card card-social'>
 <h2>See more</h2>
 <div class='socials-icons'>
-<a href='https://www.twitch.tv/mrswaggly'><img src='./.vuepress/public/images/twitch-brands.svg'></img></a>
-<a href='https://twitter.com/RLMapMaking?s=20'><img src='./.vuepress/public/images/twitter-square-brands.svg'></img></a>
-<a href='https://discord.gg/PWu3ZWa'><img src='./.vuepress/public/images/discord-brands.svg'></img></a>
-<a href='https://www.youtube.com/channel/UCp6gkqadtgsaZmPnex9MNiA/featured'><img src='./.vuepress/public/images/youtube-brands.svg'></img></a>
+
+[![](./.vuepress/public/images/twitch-brands.svg)](https://www.twitch.tv/mrswaggly)
+[![](./.vuepress/public/images/twitter-square-brands.svg)](https://twitter.com/RLMapMaking?s=20)
+[![](./.vuepress/public/images/discord-brands.svg)](https://discord.gg/PWu3ZWa)
+[![](./.vuepress/public/images/youtube-square-brands.svg)](https://www.youtube.com/channel/UCp6gkqadtgsaZmPnex9MNiA/featured)
+
 </div>
 </div>
 </div>
@@ -57,7 +60,7 @@ tags:
 </section>
 </section>
 <div class='footer'>
-<img src='./.vuepress/public/logo_rlmm_round_1440.png'>
+<img alt='RLMM logo' src='./.vuepress/public/icons/logo_rlmm_round_144.png'>
 <a href='https://www.youtube.com/channel/UCp6gkqadtgsaZmPnex9MNiA/featured'>YouTube</a>
 <a href='https://discord.gg/PWu3ZWa'>Discord</a>
 <a href='https://github.com/RocketLeagueMapmaking/RL-docs'>Github</a>
@@ -71,7 +74,8 @@ tags:
 <style scoped>
 .headpage{
     height:calc(100vh - 3.6rem);
-    background-image: linear-gradient(180deg, rgba(0, 134, 29, 0.33) 0%, #000000 100%),url('https://steamuserimages-a.akamaihd.net/ugc/806620296079743607/6DB81EC94FACC387C7840B2CAD21F4151F5F6996/');
+    background-color:#2d2d2d;
+    background-image: linear-gradient(180deg, rgba(0, 134, 29, 0.33) 0%, #000000 100%),url('./.vuepress/public/images/rsz_home-stadium.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -94,6 +98,7 @@ tags:
 .headpage p{
 max-width:600px;
 padding-bottom:12px;
+padding-right:5vw;
 }
 .headpage a{
     display: inline-block;
@@ -128,12 +133,14 @@ padding-bottom:12px;
 .guide-part-body{
     margin-left:10vw;
     max-width:500px;
+    padding-right:5vw;
 }
 .guide-intro{
     display:flex;
     flex-direction:row;
     width:50%;
     padding-left:15px;
+    padding-right:5vw;
 }
 .guide-intro img{
   max-width:600px;
@@ -164,9 +171,13 @@ padding-bottom:12px;
   flex-direction:column;
   border-radius:6px;
 }
-.socials-icons .icon{
-  font-size:30px;
+.socials-icons p a img{
+  width:40px;
   padding:10px;
+  color: var(--accentColor);
+}
+.socials-icons p a .icon.outbound{
+display:none;
 }
 .footer{
   display:flex;
@@ -195,14 +206,14 @@ margin:0px;
 padding:0px;
 }
 @media screen and (max-width: 600px) {
-  .headpage,.card-social,.guide-intro,.section-title,.under-footer{
+  .headpage,.card-social,.guide-intro,.section-title.under-footer{
     padding-left:5vw;
   }
   .under-footer{
     padding-right:5vw;
   }
   .headpage h1{
-    transform: translateY(0px);
+    transform: translateY(35px);
     font-size:64px;
     line-height:4rem;
   }
@@ -236,5 +247,8 @@ padding:0px;
     align-items:center;
     justify-content:center;
   }
+}
+span.time{
+  color:#eeeeee;
 }
 </style>

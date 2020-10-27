@@ -2,13 +2,25 @@ module.exports = {
   title: 'RLMM',
   description: 'Guides, Resources, Maps, and More',
   theme: 'default-prefers-color-scheme',
-  icon: '/logo_rlmm_round_1440.png',
+  icon: '/icons/logo_rlmm_round_144.png',
   // Only target browsers currently popular, avoiding polyfills and speeding up build time.
   // Disable if we want ES5 transpilation for IE.
   evergreen: true,
+  head: [
+    ['meta',{name:"viewport", content:"width=device-width,initial-scale=1,maximum-scale=5,minimal-ui"}],
+    ['link', {rel: 'icon', href: '/icons/logo_rlmm_round_144.png'}],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', {name: 'theme-color', content: '#3eaf7c'}],
+    ['meta', {name: 'apple-mobile-web-app-capable', content: 'yes'}],
+    ['meta', {name: 'apple-mobile-web-app-status-bar-style', content: 'black'}],
+    ['link', {rel: 'apple-touch-icon', href: '/icons/apple-touch-icon-152x152.png'}],
+    ['link', {rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c'}],
+    ['meta', {name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png'}],
+    ['meta', {name: 'msapplication-TileColor', content: '#000000'}],
+  ],
   themeConfig: {
     defaultTheme: 'dark',
-    logo: '/logo_rlmm_round_1440.png',
+    logo: '/icons/logo_rlmm_round_144.png',
     lastUpdated: 'Last updated',
     searchPlaceholder: 'Search...',
      // Assumes GitHub. Can also be a full GitLab url.
@@ -29,17 +41,6 @@ module.exports = {
     editLinks: true,
     // custom text for edit link. Defaults to "Edit this page"
     editLinkText: 'Edit this page on Github',
-    head: [
-      ['link', {rel: 'icon', type: 'image/png', href: '/logo_rlmm_round_1440.png'}],
-      // ['link', { rel: 'manifest', href: '/manifest.json' }],
-      ['meta', {name: 'theme-color', content: '#3eaf7c'}],
-      ['meta', {name: 'apple-mobile-web-app-capable', content: 'yes'}],
-      ['meta', {name: 'apple-mobile-web-app-status-bar-style', content: 'black'}],
-      ['link', {rel: 'apple-touch-icon', href: '/icons/apple-touch-icon-152x152.png'}],
-      ['link', {rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c'}],
-      ['meta', {name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png'}],
-      ['meta', {name: 'msapplication-TileColor', content: '#000000'}],
-    ],
     smoothScroll: true,
     base: '/rl-docs/',
     sidebar:{
@@ -322,17 +323,14 @@ module.exports = {
       }
     ],
 
-    plugins: [
-      '@vuepress/active-header-links',
-      '@vuepress/last-updated',
-      '@vuepress/pwa',
-      {
+  
+  },  plugins: {
+    '@vuepress/active-header-links':{},
+    '@vuepress/last-updated':{},
+    'seo':{},
+    '@vuepress/pwa':{
         serviceWorker: true,
-        updatePopup: {
-          message: "New content is available.",
-          buttonText: "Refresh"
-        }
+        updatePopup: true
       }
-    ]
   }
 };
