@@ -27,13 +27,13 @@ If you have any question or ideas, you can contact us via:
 ## Content Requests
 
 :::tip Collaborate
-If you want to collaborate with us for new features (or your own (rl) website) contact me on discord (ghostrider-05#8461).
+If you want to collaborate with us for new features (or your own (RL) website) contact me on discord (ghostrider-05#8461).
 Knowledge of `Vue.js` is a pre as this website is built on Vue.
 :::
 
-Since this guide is made specifically for the map making, we will not add guides for [other tools](../menu/faq). We will, of course, make additions to the current pages and add new ones about Rocket League map making.
+Since this guide is made specifically for the map making, we will not add guides for [other tools](../faq/). We will, of course, make additions to the current pages and add new ones about Rocket League map making.
 
-Check [here](../menu/contribute) to learn how to request more content
+Check [here](contribute) to learn how to request more content
 
 Some content will be marked as beta with this badge: <Badge text="beta" type="warning"/>. This means it is not fully tested and might contain some incorrect information. If you discover an improvent, don't hesitate to share it!
 

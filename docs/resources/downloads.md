@@ -28,7 +28,7 @@ This a list of useful things in order of importance:
 * [Autodesk fbx tool](https://www.autodesk.com/developer-network/platform-technologies/fbx-converter-archives)
 
 [All-in-one packages](../essential/03_installing.html#all-in-one-packages):
-* [Dasoccerguy’s (my) RocketLeagueMapMaking Setup Script](https://github.com/Dasoccerguy/RocketLeagueMapMaking)
+* [RocketLeagueMapmaking UDK RL Setup Script](https://github.com/Dasoccerguy/RocketLeagueMapMaking)
 * [Newk’s UDK Simple Setup](https://rocketleaguemods.com/mods/udk-2015-simple-setup/)
 
 ## Assets
@@ -37,29 +37,53 @@ This a list of useful things in order of importance:
 
 [Download](https://drive.google.com/open?id=1rpQzqHgoRgpOBSHEpeDwvRtG3sYUXacl)
 
+### Dummy assets
+
+[Github](https://github.com/Martinii89/RL_DummyAssets)
+
 ### Default map pieces
 
 [Download](https://drive.google.com/file/d/1_SRltyPZXlqwuA4s2rHA5H8GgMOiSqk-/view?usp=sharing)
+
+or already in a `.upk` file:
+
+[Lazord's DribbBasic](https://drive.google.com/file/d/1RVUngLPzipSE1zSw1Wp8SX7bBfb73hBS/view?usp=sharing)
 
 ### Salty shores Dummy Assets
 
 Dummy Assets for Salty Shores. Just unzip and paste it alongside everything else in the Maps folder!
 
-<a href="" download>Download</a>
+* [Download](https://drive.google.com/file/d/1u-weyhNGARNOIeerNxeCqpXkZy7wKsB1/view?usp=sharing)
+* [List of all meshes and their corresponding materials](https://drive.google.com/file/d/1q_8Bn1N9RRWTf6szIdC5Ee4qvB1V3qf5/view?usp=sharing)
 
 ### Simplicity_v5 
 A fully playable standard map with no materials or environment detail
 
-<a href="" download>Download</a>
+[Download](https://drive.google.com/file/d/1byF7HAl7GTJcaw1nrTq-U9EYt1fCK5Zy/view?usp=sharing)
+
+### Hoops
+`HoopsFloor_Clean` is a fine-tuned version of the hoops floor, with the lines physically extruded. Because of that, you need to use a flat surface like `HoopsFloor_Coll` for the collision geometry.
+:::tip
+don't forget to put the StickyWalls physical material on the Coll mesh, and you can use the setting "Hidden Game" to make it invisible
+:::
+
+* [HoopsFloor_Clean](https://drive.google.com/file/d/1IgdR1_6jnBHw3ZB34DKHr6FUKlamkl2r/view?usp=sharing)
+* [HoopsFloor_Coll](https://drive.google.com/file/d/1bCouWyxO8i17fiyH97S-yB1iFHJW8Fgy/view?usp=sharing)
 
 ### One stop chop shop
 
 * [JimJoms' One Stop Chop Shop](https://drive.google.com/drive/folders/0B1VfmKjZuD8OYVlURld3ZFhTRk0)
+
+### Rings
+A set of rings for making an aerial challenge map
+
+[Download](https://drive.google.com/file/d/1xjLiQAIps3FzfEBZvdRQUSQqzCfyL5nR/view?usp=sharing)
 
 ## Links
 
 * [Derzo's spreadsheet](https://docs.google.com/spreadsheets/d/1KLs5r_sUn3W6rLrw_xQJbEK-LOmxCiBRfo9_XI79Kng)
 * [Kismet snippet library](https://github.com/RocketLeagueMapmaking/Kismet)
 * [SteamCMD support page](https://developer.valvesoftware.com/wiki/SteamCMD)
+* [Test multiplayer on 1 computer](https://steamcommunity.com/sharedfiles/filedetails/?id=311943358)
 * [Psyonix talk about the 3D engine](https://www.youtube.com/watch?v=ueEmiDM94IE)
 * [Paragon](https://www.unrealengine.com/en-US/paragon)

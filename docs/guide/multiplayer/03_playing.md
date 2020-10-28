@@ -9,13 +9,13 @@ You have finished your map or want to play a custom map with friends. You can le
 * [the written guide](#written-guide)
 * [Leth's video](./#leth-s-video)
 
-## written guide
+## Written guide <Badge text="not finished" type="warning"/>
 
 As of 2020, the best way to play custom maps with others is to use the Rocket Plugin. This is a Bakkesmod plugin, which is a wonderful program that everyone should use. It opens a whole universe of possibilities for Rocket League.
 
 [Bakkesmod discord](../menu/communities)
 
-## Leth's video
+## Leth's video <Badge text="outdated" type="warning"/>
 
 All the download links are in the discription
 

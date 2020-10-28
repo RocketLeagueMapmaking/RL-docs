@@ -49,7 +49,7 @@ Don’t launch it, because we have some things to change.
 
 ## Things to Change
 
-If you used one of the All-in-One packages, you may skip ahead to [the UDK Intro section](/essential/06_udk_intro.html). If you are manually setting up UDK, or just want to see what is happening behind the scenes with those packages, please continue.
+If you used one of the All-in-One packages, you may skip ahead to [the UDK Intro section](06_udk_intro). If you are manually setting up UDK, or just want to see what is happening behind the scenes with those packages, please continue.
 
 <!-- ## Install locations <Badge text="not finished" type="warning"/>
 

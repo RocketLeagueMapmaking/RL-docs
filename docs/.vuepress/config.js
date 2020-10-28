@@ -261,11 +261,11 @@ module.exports = {
               },
               {
                 text: 'Textures',
-                link: '/guide/01_textures'
+                link: '/guide/textures/01_textures'
               },
               {
                 text: 'Multiplayer',
-                link: '/guide/01_publishing'
+                link: '/guide/multiplayer/01_multiplayer'
               },
             ]
           }

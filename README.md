@@ -3,7 +3,7 @@ A guide by Mr Swaggles
 
 ## Deployment
 **NOTE**: These steps will currently only work for the main `rocketleaguemapmaking.com` domain, as it hasn't been made 
-customisable yet. If you wish to view this locally, see the [contribution](./docs/menu/contribute.md) documentation.
+customisable yet. If you wish to view this locally, see the [contribution](./docs/more/contribute.md) documentation.
 
 This site can be executed as a docker container on the host machine.
 1. [Install Docker-CE](https://docs.docker.com/engine/install/) on the host machine. Docker (non-ce) should also work but is not tested.
@@ -17,7 +17,7 @@ This site can be executed as a docker container on the host machine.
 6. Access the site at the correct URL (`rocketleaguemapmaking.com`).
 
 ## Contributing documentation
-Read the [contribution](./docs/menu/contribute.md) documentation for guidelines when contributing.
+Read the [contribution](./docs/more/contribute.md) documentation for guidelines when contributing.
 
 ## Certificate Renewal
 Currently we [manually redeploy](https://certbot.eff.org/docs/using.html#manual) certificates using certbot on the host machine. This should be automated in future.  
