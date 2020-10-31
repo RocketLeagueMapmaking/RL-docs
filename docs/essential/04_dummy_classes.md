@@ -14,6 +14,8 @@ These are UDK-ready classes with the same names and properties as the customized
 The download may be found under [Downloads.](../resources/downloads.html#starting)
 If you feel like using git, you can run git clone within the UDK folder. Downloading the .zip file is totally fine too.
 
+<img src='../.vuepress/public/images/dummyclasses_location.png' title="Lots of goodies"></img>
+
 Extract the .zip, and paste the four folders alongside all of the others in
 `{UDK Folder}\Development\Src`
 
@@ -141,8 +143,7 @@ If you ever change these files in the future, you will need to recompile again.
 
 In `{UDK Folder}\Binaries\`, run `UnrealFrontend.exe`. 
 
-![alt text](../.vuepress/public/images/image81.png)
-*I don’t know why this has a cake slice as its icon*
+<img src='../.vuepress/public/images/image81.png' title="Because you bake a cake before you ship it... thanks TJ"></img>
 
 **Click Script and run Full Recompile.** Close it after it finishes, and now you’re allowed to start.
 ...almost

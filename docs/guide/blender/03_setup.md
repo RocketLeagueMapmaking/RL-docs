@@ -7,23 +7,23 @@ title: Blender Window
 
 There are a few user defaults which are good to change if you are just installing Blender. These are three things you should absolutely adjust, but feel free to tinker with as many others as you want. Go to `Edit > Preferences`:
 
-![alt text](../../.vuepress/public/images/image219.png)
-![alt text](../../.vuepress/public/images/image37.png)
-![alt text](../../.vuepress/public/images/image55.png)
+<img src='../../.vuepress/public/images/image219.png' title="QOL is a big deal"></img>
 
 **Under Navigation, turn off Auto Perspective.** With this enabled, the view will switch to perspective mode every time you manually rotate the camera. This should never be the default mode :contemplativeDisappointedFace:
 
-There are three things you should absolutely adjust, but feel free to tinker with as many things as you feel like.
+<img src='../../.vuepress/public/images/image37.png' title="Thank me later"></img>
 
 **Under System, increase Undo Steps to a much bigger number than 32.** This will save your life one day.
 
-**Lastly, click the 3 line menu button in the lower left and Save Preferences for next time.** Time to get into the goods.
+<img src='../../.vuepress/public/images/image55.png' title="Gotta have FBX"></img>
+
+**Under Add-ons, enable the FBX Importer/Exporter.** We need this to create assets for UDK and Rocket League.
 
 **Lastly, click the 3 line menu button in the lower left and Save Preferences for next time.** Time to get into the goods.
 
 ## The Window
 
-*Beautiful Blender and the Billion Buttons*
+<img src='../../.vuepress/public/images/image151.png' title="Beautiful Blender and the Billion Buttons"></img>
 
 ### 1 - Menus
 These are what you would expect. One item we’ll be frequently visiting is `File > Export`

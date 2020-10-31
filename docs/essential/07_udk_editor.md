@@ -9,9 +9,7 @@ tags:
 
 ## Editor Window
 
-![alt text](../.vuepress/public/images/image235.png)
-
-*The main course*
+<img src='../.vuepress/public/images/image235.png' title="The main course"></img>
 
 ### 1 - Dropdown Menus
 

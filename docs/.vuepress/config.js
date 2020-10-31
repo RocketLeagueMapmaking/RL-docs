@@ -20,7 +20,7 @@ module.exports = {
   ],
   themeConfig: {
     defaultTheme: 'dark',
-    logo: '/icons/logo_rlmm_round_144.png',
+    logo: 'icons/logo_rlmm_round_144.png',
     lastUpdated: 'Last updated',
     searchPlaceholder: 'Search...',
      // Assumes GitHub. Can also be a full GitLab url.
