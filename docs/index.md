@@ -52,7 +52,9 @@ tags:
      <iframe title='RLMM Youtube highlight' width="100%" height="315" src="https://www.youtube.com/embed/Umsn9ILID3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style='margin:20px;'></iframe>
 </div>
 <div class='card'>
-<Twitter/>
+  <ClientOnly>
+    <Twitter/>
+  </ClientOnly>
 </div>
 
 <div class='card card-social'>
@@ -71,15 +73,15 @@ tags:
 </section>
 </section>
 <div class='footer'>
-<img alt='RLMM logo' src='icons/logo_rlmm_round_144.png'>
-<a href='https://www.youtube.com/channel/UCp6gkqadtgsaZmPnex9MNiA/featured'>YouTube</a>
-<a href='https://discord.gg/PWu3ZWa'>Discord</a>
-<a href='https://github.com/RocketLeagueMapmaking/RL-docs'>GitHub</a>
-<a href='./more/contact'>Contact</a>
-<a href='./more/about'>About</a>
+  <img alt='RLMM logo' src='icons/logo_rlmm_round_144.png'></img>
+  <a href='https://www.youtube.com/channel/UCp6gkqadtgsaZmPnex9MNiA/featured'>YouTube</a>
+  <a href='https://discord.gg/PWu3ZWa'>Discord</a>
+  <a href='https://github.com/RocketLeagueMapmaking/RL-docs'>GitHub</a>
+  <a href='./more/contact'>Contact</a>
+  <a href='./more/about'>About</a>
 </div>
 <div class='under-footer'>
-<p>Powered by Vuepress | Written by Mr. Swaggles | Designed by ghostrider-05</p>
+  <p>Powered by Vuepress   |   Written by Mr. Swaggles   |   Designed by ghostrider-05</p>
 </div>
 
 <style scoped>
