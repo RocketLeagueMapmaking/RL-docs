@@ -9,11 +9,11 @@ tags:
 
 ## Overview
 
-UDK is from a different era of software project development, so it doesn’t have a lot of the nice features (or the look) that we have grown accustomed to. It can be a bit of a bear to navigate and understand, so the next few sections will be a walkthrough of how you should set it up.
+UDK is from a different era of software project development, so it doesn’t have a lot of the nice features (or the look) that we have grown accustomed to. It can be a bit annoying to navigate and understand, so the next few sections will be a walkthrough of how you should set it up.
 
 ## Folder Setup
 
-I am on Windows, so please keep that in mind through the entirety of this guide.
+I use Windows 10 and the Steam version of Rocket League, so please keep that in mind through the entirety of this guide. Because Rocket League is no longer officially supported on Mac or Linux as of 2019, and installing UDK is also unlikely to work, you're almost certainly going to have to be on Windows also.
 
 * My Rocket League install location is `C:\Games\SteamApps\common\rocketleague`
   * All Rocket League assets live inside `\TAGame\CookedPCConsole`
@@ -38,12 +38,12 @@ I highly recommend creating folder shortcuts between all of these places, becaus
 
 ## Batch Script For Quickly Testing Maps (BSFQTM) <Badge text="important" type="tip"/>
 
-Create a new text file, then rename it something like UtopiaOverwrite.bat. To use this script, simply drag your map file onto it, and it will overwrite the Rocket Labs Utopia (donut) map, which is not used in any multiplayer playlist. 
+Create a new text file, then rename it something like UtopiaOverwrite.bat. To use this script, simply drag your map file onto it, and it will overwrite the Rocket Labs Utopia Retro (donut) map, which is not used in any online multiplayer playlist. 
 
 ::: warning
-Make a backup of this map (Rocket Labs Utopia) somewhere safe.
+Make a backup of this map (Labs_Utopia_P.upk) somewhere safe.
 :::
-```
+```sh
 @echo off
 echo "%~1"
 echo F|xcopy /y "%~1" "{CookedPCConsole}\Labs_Utopia_P.upk"
@@ -52,7 +52,7 @@ CookedPCConsole is the folder containing all of Rocket League’s assets, within
 **C:\Program Files (x86)\Steam\steamapps\common\rocketleague\TAGame\CookedPCConsole**
 
 Meaning that the script for me is:
-```
+```sh
 @echo off
 echo "%~1"
 echo F|xcopy /y "%~1" "C:\Program Files (x86)\Steam\steamapps\common\rocketleague\TAGame\CookedPCConsole\Labs_Utopia_P.upk"
@@ -61,7 +61,7 @@ echo F|xcopy /y "%~1" "C:\Program Files (x86)\Steam\steamapps\common\rocketleagu
 For ease of use, I copy this script into the folder of each of my in-progress maps.
 
 
-## Starting a new project
+## Starting a New Project
 
 When you run UDK Editor, you will be faced with a welcome splash screen and a few options.
 
@@ -70,6 +70,8 @@ When you run UDK Editor, you will be faced with a welcome splash screen and a fe
 
 If you want to have an animated skysphere around your world, use one of the Lighting templates. If you just want an entirely clean slate, go with the Blank Map option.
 
-After making the project, save it in a new folder inside `{UDK Folder}\UDKGame\Content\Maps\`
+After making the project, the first thing you are going to want to do is save your new project with a better name than Untitled-3. I recommend putting it in a dedicated folder such as:
+
+`{UDK Folder}\UDKGame\Content\Maps\MyNewMap`
 
 It is no problem at all to change the name of a project after the fact, so don’t feel like you are locked in to a folder name or a project name.

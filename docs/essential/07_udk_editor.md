@@ -149,9 +149,9 @@ As you mouse over the various buttons on the right edge, the tooltips will fill 
 
 ![alt text](../.vuepress/public/images/image198.png) - Insert a New Item Before This Item - Really stunning iconographic work here.
 
-## Right Click Menu <Badge text="beta" type="warning"/>
+## Right Click Menu <Badge text="note" type="warning"/>
 
-The entries shown below are for a StaticMeshActor. They will be different for lights and so on.
+The entries shown below are for a StaticMeshActor. They will be slightly different for lights and so on.
 
 ![alt text](../.vuepress/public/images/image999.png)
 

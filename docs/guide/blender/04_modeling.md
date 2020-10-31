@@ -5,18 +5,17 @@ title: Modeling
 
 ## Modeling
 
-Let’s start with easy assets for a skate park. We’ll make a box ramp, a halfpipe, a rail, and a loop
+You can make anything in Blender, given enough dedication and time. This guide is both impatient and rushed, so we will get straight to cranking out map assets.
 
-![alt text](../../.vuepress/public/images/image177.png)
+Let’s start with easy assets for a skate park. We’ll make a box ramp, a halfpipe, a rail, and a loop-de-loop.
 
 ## Modeling Examples
 
-## Model meshes
+The following examples showcase some Blender mesh modeling. I recognize that written guides are not for everyone, especially on topics like this, so I will kindly refer you to [these helpful resources](01_blender) for more tutorials and help.
 
 **Enter Edit mode, and click the Toggle X-Ray button in the top right of the 3D Viewport.** This will allow you to select geometry which is “behind” other geometry. Occasionally it is helpful to turn this off, but try to always be aware of which mode you’re operating in.
 
-:::details Simple mesh - Box Ramp
-![alt text](../../.vuepress/public/images/image11.png)
+**Enter Edit mode, and click the Toggle X-Ray button in the top right of the 3D Viewport.** This will allow you to select geometry which is “behind” other geometry. It can be helpful to turn this off, but try to always be aware of which mode you’re operating in.
 
 *Let’s get down to business*
 
@@ -178,14 +177,14 @@ Now, let’s make the hand do something interesting. **Move the 3d cursor to the
 
 - [Hotkeys](02_intro.html#the-hottest-hotkeys) are your best friends
 - Start with a base mesh that makes your life easier
-- Ring select (`Alt+click`), Box select (`B`), and Circle select (`C`) are wonderful
+- Ring select (`Alt + Click`), Box select (`B`), and Circle select (`C`) are wonderful
 - Make the most of the 3D cursor
-- Bevel (`Ctrl+B`) is a great tool for making rounded edges
+- Bevel (`Ctrl + B`) is a great tool for making rounded edges
 - Proportional Editing (`O`) is great for making strange, curved surfaces
 - Subdivision Surface Modifiers can help you smooth everything
-- Always use Angle-Based Smoothing
-- Use modifiers like Mirror or Array to minimize the amount of work you have do while also doing it better
+- Always use Smooth Face Shading and Angle-Based Smoothing
+- Use modifiers like Mirror or Array to reduce the amount of work while also doing it better
 - Use reference images and sketches when possible
-- Matcaps are a great way to view your meshes
+- MatCaps are a great way to view your meshes
 
 Have fun! Blender is great!

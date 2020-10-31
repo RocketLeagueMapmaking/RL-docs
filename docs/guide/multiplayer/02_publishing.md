@@ -50,23 +50,23 @@ Next, create a new text file and change the file extension to .vdf. This is a Va
 {
     "appid"		"252950"
     "publishedfileid"		"0"
-    "contentfolder"		"C:\UDK\RocketLeagueMods\UDKGame\Content\Maps\SteamWorkshop\YourMap"
-    "previewfile"		"C:\UDK\RocketLeagueMods\UDKGame\Content\Maps\SteamWorkshop\YourMap\preview.jpg"
+    "contentfolder"		"C:\UDK\RLMM\UDKGame\Content\Maps\SteamWorkshop\YourMap"
+    "previewfile"		"C:\UDK\RLMM\UDKGame\Content\Maps\SteamWorkshop\YourMap\preview.jpg"
     "visibility"		"0"
     "title"		"YourMap v2"
     "description"		"A description of your map. You can change this easily in Steam"
     "changenote"		"v2 - a description of what you did, for posterity's sake"
 }
 ```
-| Field name        | Explanation          | 
-| ------------- |:-------------:| -----:|
-| appid         | **needs to be 252950** like I've shown here. That is the code that corresponds to Rocket League, as you can see at the end of its [Steam URL](http://store.steampowered.com/app/252950/) |
-| publishedfileid  | the unique ID tied to your item and profile. Only the contributors to an item have access to modify that Workshop item. You can see the number at the end of the workshop page's URL: [http://steamcommunity.com/sharedfiles/filedetails/?id=814858208](http://steamcommunity.com/sharedfiles/filedetails/?id=814858208) (shameless plug). For the initial upload, this needs to be '0'. SteamCMD will automatically change it to the correct value after your first upload.     |  
-| visibility | when set to 0 means Public. If you just want to use this as way to iteratively test maps and not be judged, you can change that to 1 (Friends only) or 2 (only me)     |
+| Field name| Explanation | 
+|-|-|
+| appid | **needs to be 252950** like I've shown here. That is the code that corresponds to Rocket League, as you can see at the end of its [Steam URL](http://store.steampowered.com/app/252950/) |
+| publishedfileid  | the unique ID tied to your item and profile. Only the contributors to an item have access to modify that Workshop item. You can see the number at the end of the workshop page's URL: [http://steamcommunity.com/sharedfiles/filedetails/?id=814858208](http://steamcommunity.com/sharedfiles/filedetails/?id=814858208) (shameless plug). For the initial upload, this needs to be '0'. SteamCMD will automatically change it to the correct value after your first upload.|  
+| visibility | when set to 0 means Public. If you just want to use this as way to iteratively test maps and not be judged, you can change that to 1 (Friends only) or 2 (only me)|
 
 Hopefully the rest of the fields are self-explanatory.
 
-## Finish
+## SteamCMD Upload
 
 Now, run SteamCMD. You will have to close Rocket League, and it’s probably simpler to log out of Steam as well. I also recommend disconnecting your controller, because it tends to show up only as player 2 after running SteamCMD. 
 
@@ -79,7 +79,7 @@ login YourUserName YourPassword SteamGuardCode
 
 If you don’t have SteamGuard enabled, ignore the third argument. You should see it successfully log in, and that’s half the battle.
 
-Copy the full path of your .vdf file from the file explorer window. In this example, that is `C:\UDK\RocketLeagueMods\UDKGame\Content\Maps\SteamWorkshop\YourMap\`
+Copy the full path of your .vdf file from the file explorer window. In this example, that is `C:\UDK\RLMM\UDKGame\Content\Maps\SteamWorkshop\YourMap\`
 
 In SteamCMD, type:
 ```
@@ -88,7 +88,7 @@ workshop_build_item
 And then right click to paste what you copied, and add \YourMap.vdf. 
 The full command should look like:
 ```
-workshop_build_item C:\UDK\RocketLeagueMods\UDKGame\Content\Maps\SteamWorkshop\YourMap\YourMap.vdf
+workshop_build_item C:\UDK\RLMM\UDKGame\Content\Maps\SteamWorkshop\YourMap\YourMap.vdf
 ```
 Now, check your Workshop page to see if it uploaded. If SteamCMD thinks it did, then it did.
 

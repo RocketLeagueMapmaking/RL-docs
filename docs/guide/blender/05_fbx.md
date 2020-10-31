@@ -11,7 +11,7 @@ There is one bit of trickery involved with the export, which has to do with a co
 
 ![alt text](../../.vuepress/public/images/image141.png)
 
-*The pale orange dot*
+These are important for manipulating objects in Blender, because any transformation in Object Mode will treat this as the center point. To move this dot, you have a few options under Object > Set Origin (while in Object mode). Typically you want to put it at the location that makes the most sense to serve as a control point for moving around. For a hand, this might be at the wrist joint. For a light pole, it could be at the bottom of the pole. For a sword, that would (hopefully) be inside the handhold.
 
 These are important for manipulating objects in Blender, because any transformation in Object Mode will treat this as the center point. To move this dot, you have a few options under Object > Set Origin (while in Object mode). Typically you want to put it at the location that makes the most sense to serve as a control point for moving around. For a hand, this might be at the wrist joint. For a light pole, it would be at the bottom of the pole. For a sword, that would be inside the hand hold.
 
@@ -20,13 +20,13 @@ However, **the FBX exporter completely disregards the object origin of each obje
 ![alt text](../../.vuepress/public/images/image191.png)
 ![alt text](../../.vuepress/public/images/image69.png)
 
-Check Selected Objects, and deselect every object type except Mesh. Make sure that you have Scale 1, Y Forward, and Z Up. Select a good place to keep it, and press Export FBX.
+Check Selected Objects, and deselect every object type except Mesh. Make sure that you have Scale 1, Y Forward, and Z Up. Select a good place to keep it, and press `Export FBX`
 
 Also, once you set these settings, you should click the + button next to Operator Presets and save this as a new preset.
 
 If you see that your mesh has holes in it when you place it in UDK, there are two things that could be going wrong:
 
-- 1: You have face normals that are screwed up, so you should show normals in the 3D viewer and fix their orientations
-- 2: You have non-planar faces. UDK cannot even hope to comprehend a face that is bent or curved, so it draws nothing. Everything must be flat. In Blender, in Edit mode, you may either Triangulate Faces (`Ctrl+T`) or Mesh > Clean Up > Make Planar Faces.
+* 1) You have face normals that are screwed up, so you should show normals in the 3D viewer and fix their orientations
+* 2) You have non-planar faces. UDK cannot even hope to comprehend a face that is bent or curved, so it draws nothing. Everything must be flat. In Blender, in Edit mode, you may either Triangulate Faces (`Ctrl+T`) or `Mesh > Clean Up > Make Planar Faces`
 
 If you are not seeing your mesh at all in Rocket League, make sure that you have imported the mesh into the correct package in the Content Browser for the map you are working on (e.g. CeilingGoal). Rocket League expects all assets for a custom map to be within the same .UPK.

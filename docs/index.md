@@ -2,7 +2,7 @@
 title: Rocket League Mapmaking
 editLink: false
 home: false
-heroImage: /logo_rlmm_round_1440.png
+heroImage: icons/logo_rlmm_round_144.png
 meta:
   - name: Rocket League Mapmaking
     content: hello
@@ -17,17 +17,28 @@ tags:
 </noscript>
 <section class='background-section'>
 <section class='headpage'>
-    <h1 class='titel'>Rocket league <br>map making</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus dolor lacus neque, semper nullam massa lectus scelerisque amet. Interdum venenatis est gravida eros, porttitor platea egestas arcu. Amet faucibus duis et consequat luctus ac, elementum sed. Venenatis sit ligula volutpat scelerisque luctus venenatis, hendrerit.
-    </p> 
-    <a href='#home' class='first-link'>read more</a>
-    <a href='/guide/udk/01_csg'  class='second-link'>documentation</a>
+    <div style="height:100px; margin:0 auto;">
+    </div>
+    <div style="width:800px; margin:0 auto;">
+    <img src='./.vuepress/public/icons/logo_rlmm_round_512.png' alt='RLMM'></img>
+    </div>
+    <h1 class='title'>Rocket League<br>Mapmaking</h1>
+    <h2>Guides, Maps, Downloads, and More!</h2>
+    <h3>
+      <a href='/essential/index.html' class='first-link'>Get Started with UDK</a>
+      <br>
+      <a href='/guide/udk/00_start.html'  class='second-link'>Explore the Documentation</a>
+      <br>
+      <a href='/more/contribute'  class='first-link'>Get Involved</a>
+      <br>
+      <a href='https://steamcommunity.com/app/252950/workshop/'  class='second-link'>Browse the Maps</a>
+    </h3> 
 </section> 
 <section class='homepage' id='home'>
   <section class='guide-part'>
         <div class='guide-text'>
-            <h1 class='section-title'><span>Map making</span><br>contests</h1>
-            <p class='guide-part-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus nibh turpis id at mauris. Metus, rhoncus luctus quam viverra lacus nibh. Sit consequat, tincidunt magnis ultricies nunc. Purus nibh turpis id at mauris. Metus, rhoncus luctus quam viverra lacus nibh. </p>
+            <h1 class='section-title'><span>Maptember</span><br>Madness</h1>
+            <p class='guide-part-body'>In September 2020, Rocket League Mapmaking kicked off a contest featuring $550 in prize money. These prizes went to <a href=https://imgur.com/gallery/TElpGKG>seven very deserving maps</a> as judged by a panel and by the Rocket League Community. Keep an eye out for future contests!</p>
         </div>
         <div class='guide-intro'>
           <img src='./.vuepress/public/images/image260.png' alt='Maptember madness'></img>

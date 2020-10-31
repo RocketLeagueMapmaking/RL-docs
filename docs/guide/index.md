@@ -8,7 +8,15 @@ tags:
 
 ## Essentials Guide
 
-If you're reading this, hopefully you have completed all of the steps in the [Essentials section](../essential/index.html). If so, you're ready to go.
+If you're reading this, hopefully you have completed all of the steps in the [Essentials section](../essential/index.html):
+
+* Installed UDK 2015
+* Added Dummy Classes to UDK install
+* Installed 3D software, like Blender
+* Installed image editing software, like Paint.net
+* Created a StickyWalls Physical Material
+
+If so, you're ready to go.
 
 ## Useful Links and Resources
 
@@ -18,17 +26,20 @@ Resources and communities can seem a bit scattered. The Rocket League Mapmaking 
 * [Guides](/guides)
 * [Downloads](../resources/downloads)
 * [External References](../resources/references)
-* [Kismet Snippets](https://github.com/RocketLeagueMapmaking/Kismet)
+* [Kismet Snippets Library](https://github.com/RocketLeagueMapmaking/Kismet)
 
-## Support
+## Support You
 
-You'll likely require assistance at some point in your journey. Please check the [FAQ](../faq) or [contact us](../more/contact) for assistance.
+You'll likely require assistance at some point in your journey. Please check the [FAQ](../faq) or [contact us](../more/contact) for assistance. Join the [Rocket League Mapmaking Discord Server](https://discord.gg/PWu3ZWa) to get connected.
 
-### Support Us
+## Support Us
 
-This is a guide without advertisements to let you focus on the one important thing: map making. If you want to support us, thank you very much! You can help us with:
-* [contribute to this guide](../more/contribute)
-* [donate (to prize pools)](../more/contribute)
+This website has no advertisements so you can focus on the important stuff. If you want to support us with content, ideas, or simply money for contests, we would greatly appreciate it!
+* [Contribute to this guide](../more/contribute)
+* [Donate (for future contests)](../more/contribute)
+
+## Cheat Sheets
+Portions of these guides have been condensed into brief, single-page references, which may be found in the [Cheat Sheets](../cheatsheet) section. Refer to them when you just need a quick reminder.
 
 ## Shortcuts <Badge text="beta" type="warning"/>
 
@@ -41,11 +52,11 @@ To save some time, you can jump to the following sections:
 * [Map Models]()
 * [Materials](/udk/07_materials)
 * [Multiplayer](/multiplayer/02_playing)
-* [Quick testing](/udk/13_interlude_test)
+* [Quick Testing](/udk/13_interlude_test)
 * [Soccar setup]()
 * [StickyWalls](../essential/09_sticky_walls.md)
 * [Template]()
-* [UDK basics](../essential/06_udk_intro)
-* [UDK tips](owl)
+* [UDK Basics](../essential/06_udk_intro)
+* [UDK Tips](owl)
 * [UV Mapping](../modeling/06_uv)
 

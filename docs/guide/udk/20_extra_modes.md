@@ -4,7 +4,7 @@ title: Extra Modes
 # UDK Advanced
 
 :::tip
-Have you experience with extra modes and want to share your knowledge? Check the [contribute guide]() for some helpful tips to save you time
+Do you have experience with extra modes and want to share your knowledge? Check the [contribution guide.](../../more/contribute)
 :::
 
 ## Hoops <Badge text="not finished" type="warning"/>
@@ -15,4 +15,4 @@ Have you experience with extra modes and want to share your knowledge? Check the
 
 ## Rumble <Badge text="not finished" type="warning"/>
 
-## Heetseaker <Badge text="not finished" type="warning"/>
+## Heetseeker <Badge text="not finished" type="warning"/>

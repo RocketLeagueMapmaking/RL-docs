@@ -6,7 +6,7 @@ title: Kismet
 ## Overview
 Kismet is a node-based programming system that presents a “cleaner” and “easier to use” interface than you would get writing your own code. Logical blocks take the place of code classes and functions, and lines on the page indicate data and program flow.
 
-Kismet, much like the [CSG tools](../udk/01_csg), is not meant to be used to program a whole game. It is meant more as a tool for cheap and dirty testing, but in this case it is the only option we have.
+Kismet, much like the [CSG tools](../udk/01_csg), is not meant to be used to program a whole game. It is meant more as a tool for cheap and dirty testing, but in this case it is the only option we appear to have.
 
 ### Key Terms
 * `Node` - A Kismet code snippet, represented by a shape with labels on it

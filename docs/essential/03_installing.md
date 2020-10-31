@@ -6,7 +6,7 @@ title: Installing
 
 ## The Bare Minimum Software Suite
 
-* Unreal Development Kit (2015 preferably, or 2013 if you must)
+* [Unreal Development Kit 2015](https://drive.google.com/uc?id=1z9C3t6nKW1utWilVshODxyGcucxuzbOW&export=download) (or 2013 if you want to cause trouble)
 * A full-featured 3D modeling program like [Blender](https://www.blender.org)
 * A capable image editor like [Paint.net](http://www.getpaint.net/download.html#download) or [GIMP](https://www.gimp.org/downloads/) to accompany Blender. If you have Photoshop or something else you prefer, stick with that.
 
@@ -18,7 +18,7 @@ If you don’t want to stress about this setup process, there are two publicly-a
 
 This script is meant to hold your hand through the entire setup process, take care of tedious and error-prone steps for you, then generate a Project folder that starts you off on the right path. Refer to the section below to install UDK properly.
 
-* [Github Link](https://github.com/RocketLeagueMapmaking/UDK_RL_Setup)
+* [GitHub Link](https://github.com/RocketLeagueMapmaking/UDK_RL_Setup)
 
 
 ### Newk’s UDK Simple Setup
@@ -29,7 +29,7 @@ To download this, you will need to make an account with RocketLeagueMods.com, ou
 
 ## Running the Installer
 
-After you [download the UDK installer](../menu/downloads.html#starting) from my Drive (or any other friendly modder’s secret stash), double click it to start the install process. Accept the TOS.
+After you [download the UDK 2015 Installer](../menu/downloads.html#starting) from my Drive (or any other friendly modder’s secret stash), double click it to start the install process. Accept the TOS.
 
 ![alt text](../.vuepress/public/images/image149.png)
 

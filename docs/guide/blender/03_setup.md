@@ -5,30 +5,28 @@ title: Blender Window
 
 ## Blender Setup
 
-There are a few user defaults which are good to change if you are just installing Blender. Go to Edit > Preferences.
+There are a few user defaults which are good to change if you are just installing Blender. These are three things you should absolutely adjust, but feel free to tinker with as many others as you want. Go to `Edit > Preferences`:
 
 ![alt text](../../.vuepress/public/images/image219.png)
 ![alt text](../../.vuepress/public/images/image37.png)
 ![alt text](../../.vuepress/public/images/image55.png)
 
-*QOL is a big deal*
+**Under Navigation, turn off Auto Perspective.** With this enabled, the view will switch to perspective mode every time you manually rotate the camera. This should never be the default mode :contemplativeDisappointedFace:
 
 There are three things you should absolutely adjust, but feel free to tinker with as many things as you feel like.
 
-- **Under Navigation, turn off Auto Perspective.** With this enabled, the view will switch to perspective mode every time you manually rotate the camera. This should never be the default mode :contemplativeDisappointedFace:
-- **Under System, increase Undo Steps to a much bigger number than 32.** This will save your life one day.
-- **Under Add-ons, enable the FBX Importer/Exporter.** We need this to create assets for UDK and Rocket League.
+**Under System, increase Undo Steps to a much bigger number than 32.** This will save your life one day.
 
 **Lastly, click the 3 line menu button in the lower left and Save Preferences for next time.** Time to get into the goods.
 
-## The window
+**Lastly, click the 3 line menu button in the lower left and Save Preferences for next time.** Time to get into the goods.
 
 ## The Window
 
 *Beautiful Blender and the Billion Buttons*
 
 ### 1 - Menus
-These are what you would expect. One item we’ll be frequently visiting is File > Export.
+These are what you would expect. One item we’ll be frequently visiting is `File > Export`
 
 ### 2 - Selection Settings
 Generally you don’t need to touch these, but they can be useful. Try them out.
@@ -43,7 +41,7 @@ This bar offers a set of subwindow configurations which are tailored to differen
 These allow for snapping and proportional editing, which are very nice for certain tasks.
 
 ### 6 - Scene and Layer
-Scenes and Layers are to help handle very, very large projects. Collections are perfectly fine for managing 99% of projects.
+Scenes and Layers are to help handle large or chaotic projects. Collections are perfectly fine for managing 99% of projects.
 
 ### 7 - Viewport Settings
 These are different view modes for the 3D editor. The most common thing you will use this for is to switch between wireframe and solid views.
@@ -70,5 +68,5 @@ Depending on the tab selected, this is where you adjust things like render outpu
 This is a slider to play back animations. Spacebar will stop and start it. For our purposes, we won’t really use this.
 
 ### 15 - Project Information
-Along the bottom bar, you can see general information about the project. This can be useful to know the complexity of your 3D objects.
+Along the bottom bar, you can see general information about the project. This can be useful to know the complexity of your 3D objects, like to keep a mesh under UDK's limit of 65535 polygons.
 

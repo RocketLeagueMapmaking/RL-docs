@@ -27,7 +27,7 @@ module.exports = {
      repo: 'RocketLeagueMapmaking/RL-docs/',
      // Customising the header label
      // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
-     repoLabel: 'Github',
+     repoLabel: 'GitHub',
      docsDir:'docs',
      // Optional options for generating "Edit this page" link
  
@@ -40,7 +40,7 @@ module.exports = {
     // defaults to false, set to true to enable
     editLinks: true,
     // custom text for edit link. Defaults to "Edit this page"
-    editLinkText: 'Edit this page on Github',
+    editLinkText: 'Edit this page on GitHub',
     smoothScroll: true,
     base: '/rl-docs/',
     sidebar:{

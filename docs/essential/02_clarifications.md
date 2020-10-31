@@ -11,7 +11,7 @@ tags:
 
 One frequently asked question is “why do we have to use UDK?” Rocket League was originally built with Unreal Engine 3 in UDK 2013, so that version had the fewest compatibility issues. In the years since then, improvements have been made and it’s no longer an issue to use UDK 2015.
 
-Maps made with UDK 2015 cannot be opened in UDK 2013, but the reverse is not a problem at all. If everyone makes the switch to UDK 2015, then we will have world peace.
+**Maps made with UDK 2015 cannot be opened in UDK 2013,** but the reverse is not a problem at all. If everyone makes the switch to UDK 2015, then we will have world peace.
 
 ## Unreal Engine 4
 
@@ -28,9 +28,5 @@ That, or always keep the “Type” column visible in your file explorer windows
 When Psyonix publishes a map, they perform an encryption step to protect the assets they worked hard to create. This means that it is not possible to directly open an existing Rocket League map. Decrypting these assets is possible, but location data is not preserved, meaning that you would have to rebuild the map from its components.
 
 :::danger EULA
-**Rocket League mapmaking techniques cannot be used to give you a competitive advantage in the game, and any attempts at that are directly against the [EULA](../more/psyonix).** Please play nice and play by the rules.
+**Rocket League mapmaking techniques cannot be used to give you a competitive advantage in the game, and any attempts at that are directly against the [EULA](../more/psyonix).** Please play nice and play by the rules, and you have nothing to fear.
 :::
-
-## Getting Set Up
-
-Thanks for reading! It's time to install UDK and get to work.

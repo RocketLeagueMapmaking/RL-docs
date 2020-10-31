@@ -11,12 +11,12 @@ One easy method is to simply drag the new file into the Content Browser as befor
 
 ![alt text](../../.vuepress/public/images/image35.png)
 
-*A very 'handy' tool*
+After making edits to a mesh in Blender and re-exporting the FBX, it’s dead simple to update in UDK. **Right click the asset and select `Reimport Static Mesh`.** This will also update any instances of the mesh in use in the map, and will not break collisions, materials, or anything. **However, if you have built lighting, it will erase any lightmaps for this object.**
 
 After making edits to a mesh in Blender and re-exporting the FBX, it’s dead simple to update in UDK. **Right click the asset and select Reimport Static Mesh.** This will also update any instances of the mesh in use in the map, and will not break collisions, materials, or anything. **However, if you have built lighting, it will erase any lightmaps for this object.**
 
-![alt text](../../.vuepress/public/images/image32.png)
+Alternatively, you may set certain paths which UDK will monitor for file updates. It will automatically reimport meshes and textures from these locations… probably. **In my experience, this doesn’t work 100% as expected, so be aware and don’t trust it blindly.**
 
 ## Workflow Advice
 
-Alternatively, you may set certain paths which UDK will monitor for file updates. It will automatically reimport meshes and textures from these locations… probably. **In my experience, this doesn’t work 100% as expected, so be aware and don’t trust it blindly.**
+Because you will want to playtest your map as you build it, I highly recommend creating placeholder meshes which have the right shape. As you finesse that, you can add more detail and replace these with more interesting meshes. Along those lines, don't worry about UV unwrapping the first versions of your meshes, unless their materials need to be set a certain way for gameplay purposes. **You'll be much happier with your map if you playtest it as you work on it.**

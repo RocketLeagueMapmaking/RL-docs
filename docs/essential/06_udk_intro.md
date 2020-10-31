@@ -13,13 +13,13 @@ tags:
 
 * `Space` - Switch between Translate, Rotate, and Scale manipulator widget modes.
 * ` (to the left of the number row) - Switch between World and Local coordinates.
-* `Ctrl+S` - Does not save. This does a geometry subtraction with the brush.
-* `Ctrl+A` - Does not select all. This does a geometry addition with the brush.
+* `Ctrl+S`<Badge text="dumb" type="warning"/>  - Does not save. This does a geometry subtraction with the brush.
+* `Ctrl+A`<Badge text="dumb" type="warning"/>  - Does not select all. This does a geometry addition with the brush.
 * `F4` - With an actor selected, brings up its Properties window.
 * `Ctrl+D` - Duplicate. This creates a copy which is slightly offset in space.
 * `Ctrl+C Ctrl+V` - Copy/Paste. Doing this creates a copy which is not offset from the original.
 
-**Hidden functions will show up when you right click many of the buttons around UDK**
+**Hidden functions will show up when you right click many of the buttons around UDK.**
 
 **Additionally, a treasure trove of options will show up when you right click an Actor in the Editor Window. See [the Properties Window](./07_udk_editor.html#properties-window) section.**
 
@@ -29,7 +29,7 @@ tags:
 * `Right Click + Move` - Freely spin the view around
 * `WASD` - Fly in 3d space (also Numpad 8/4/2/6)
 * `QE` - Fly up and down in 3d space (also Numpad 7/9)
-* `Right Click + WASDQE` - Fly while looking around - a.k.a. the way you want to be moving
+* `Right Click + WASDQE`<Badge text="important" type="tip"/> - Fly while looking around - a.k.a. the way you want to be moving
 * `Scroll Wheel` - Speed up and slow down while flying
 
 ### View Hotkeys

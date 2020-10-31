@@ -7,7 +7,7 @@ You might feel that you are not up to the task of making your own 3D models, whi
 
 ## Solidworks, Sketchup, Maya, 3DSMax, Cinema4D, Rhino, Houdini
 
-Blender isn’t the only way to create 3D models. If you already have experience with other software, go ahead and use that! I personally use Blender because it is free and powerful. Most 3D software is prohibitively expensive if you aren’t a either a student or employee at a major company.
+Blender isn’t the only way to create 3D models. If you already have experience with other software, go ahead and use that! I personally use Blender because it is free, fast, and very powerful. Most 3D software is prohibitively expensive if you aren’t a either a student or employee at a major company.
 
 ## SketchFab, Free3D, CGTrader, Turbosquid
 
@@ -22,9 +22,12 @@ Additionally, the exported FBX files might not be compatible with the older engi
 Again, this might help in very specific ways, but this won’t work for everything.
 
 ## Contract Work
-The standard way to get stuff done when you don’t want to handle it yourself is to find someone else who can do it. The mapmaking community has a number of capable 3D artists who are there to help, either with advice or assets. However, it is unfair to expect that anyone do work for free, so please avoid requesting that. If someone offers to do work for free, then be grateful for that.
+The standard way to get stuff done when you don’t want to handle it yourself is to find someone else who can do it. There are a number of websites such as Fiverr, Freelancer, or Upwork for hiring someone, but unless you have a very clear vision and have budgeted for your project, these options are not for you.
 
-There are a number of websites such as Fiverr, Freelancer, or Upwork for hiring someone, but unless you have a very clear vision and have budgeted for your project, these options are not for you.
+## Collaboration
+The mapmaking community has a number of capable 3D artists who are there to help, either with advice or assets. However, it is unfair to expect that anyone do work for free, so please avoid requesting that. If someone offers to do work for free, then be grateful for that.
+
+I would love to see more collaboration happen in the mapmaking community, because not everyone wants to learn the entirety of Blender just to make a simple custom map. I had the pleasure of working with Panic on [Air Race](https://steamcommunity.com/sharedfiles/filedetails/?id=2204381361), and thanks to **gidek's** amazing Kismet work it has really taken on a life of its own.
 
 ## Rocket League Itself
-The ace up our sleeves? [Dummy Assets](../guide/dummy_assets.md)
+But the ace up our sleeves? [Dummy Assets.](../guide/udk/14_dummy_assets.md)

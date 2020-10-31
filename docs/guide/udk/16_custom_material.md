@@ -20,31 +20,31 @@ title: Custom Materials
 Instead, we have to rely on `Material Instances`. As mentioned briefly in a previous section, Material Instances are copies of a base material which allow for customization of certain parameters. This idea is widespread through UDK, Unreal Engine, and programming in general. To use a C++ description, this is equivalent to passing arguments into the constructor of a class.
 
 ## Available Base Materials Within Startup.upk
-I will kindly refer you to [Derzo’s spreadsheet](https://docs.google.com/spreadsheets/d/1KLs5r_sUn3W6rLrw_xQJbEK-LOmxCiBRfo9_XI79Kng/), which outlines all of the available options.
+I will kindly refer you to [Derzo’s Spreadsheet](https://docs.google.com/spreadsheets/d/1KLs5r_sUn3W6rLrw_xQJbEK-LOmxCiBRfo9_XI79Kng/), which outlines all of the available options.
 
 **For ___ Channel rows, “Texture” means that it will accept an image. “Vector” means it may only be a solid color. Rows in bold (in this table) are the most important:**
 
 |Column Name|What it means|
 |------|------|
-|Material|The name of the material|
-|Package|The package it may be found in. Avoid Red packages if you don’t want to force/require people to put extra .upks into their game.|
-|RenderMode|The general lighting property. Lit materials will have shading. Unlit will not be affected by lights. Translucent may be see-through (i.e. have an alpha channel)|
-|Diffuse Channel|The color of the material|
-|Emissive Channel|The areas which emit light (i.e. unaffected by other lighting)|
-|Normal Channel|Bumps and small surface details (also called a normal map)|
-|Specular Channel|The areas which will be shiny|
-|Opacity Channel|The areas which will be solid or see through (also called an alpha map)|
-|TwoSided|Faces with this material can be seen from the anti-normal side|
-|MasterOnly|Material instances (customizations) will not work|
-|Special|Something that makes this material notable|
-|Skeletal|This material can go on a skeletal mesh (like a walking character)|
-|Fractured|This material can go on objects which break apart|
-|ParticleSprite|This material can go on individual particles|
-|BeamTrails|This material can go on effect trails|
-|ParticleSubUV|This material can do something extra cool with particles, probably|
-|StaticLighting|This material accepts static lighting|
-|FluidSurface|This material can go on a fluid surface|
-|MaterialEffect|This material can be used as an effect|
+| Material|The name of the material|
+| **Package**|The package it may be found in. Avoid Red packages if you don’t want to force/require people to put extra .upks into their game.|
+| RenderMode|The general lighting property. Lit materials will have shading. Unlit will not be affected by lights. Translucent may be see-through (i.e. have an alpha channel)|
+| **Diffuse Channel**|The color of the material|
+| Emissive Channel|The areas which emit light (i.e. unaffected by other lighting)|
+| Normal Channel|Bumps and small surface details (also called a normal map)|
+| Specular Channel|The areas which will be shiny|
+| **Opacity Channel**|The areas which will be solid or see through (also called an alpha map)|
+| TwoSided|Faces with this material can be seen from the anti-normal side|
+| MasterOnly|Material instances (customizations) will not work|
+| Special|Something that makes this material notable|
+| Skeletal|This material can go on a skeletal mesh (like a walking character)|
+| Fractured|This material can go on objects which break apart|
+| ParticleSprite|This material can go on individual particles|
+| BeamTrails|This material can go on effect trails|
+| ParticleSubUV|This material can do something extra cool with particles, probably|
+| StaticLighting|This material accepts static lighting|
+| FluidSurface|This material can go on a fluid surface|
+| MaterialEffect|This material can be used as an effect|
 
 As you can hopefully see, rows with more green boxes are better. **Rows with a red box under “Package” should be avoided, otherwise you will need to mention and refer people to the “Workshop Textures” setup on the page for your map.**
 
@@ -69,7 +69,7 @@ This material is the chosen one when it comes to custom materials for Rocket Lea
 
 *Yes*
 
-**Find TexturePaint_2Tex_Color at the bottom of Engine>Content>EngineDebugMaterials. Right click it and hit Create New Material Instance (Constant)...**
+<Badge text="important" type="tip"/> <b>Find TexturePaint_2Tex_Color at the bottom of Engine>Content>EngineDebugMaterials. Right click it and hit Create New Material Instance (Constant)...</b>
 
 ![alt text](../../.vuepress/public/images/image185.png)
 
@@ -84,7 +84,7 @@ This material is the chosen one when it comes to custom materials for Rocket Lea
 An uninspiring gray sphere will show up in a popup window, and the Content Browser will switch packages to highlight the new creation. **Double check that this exists within your map project.**
 
 ## Material Channels
-A Material Instance, as mentioned, has a number of parameters which may be customized. In the case of a material based on TexturePaint_2Tex_Color, we are able to control the Diffuse channel (color), Emissive channel (brightness of light emitted), Normal channel (surface displacement to add detail), and Spec[ular] channel (shininess), **all with textures.**
+A Material Instance, as mentioned, has a number of parameters which may be customized. In the case of a material based on TexturePaint_2Tex_Color, we are able to control the Diffuse channel (color), Emissive channel (brightness of light emitted), Normal channel (surface displacement to add detail), and Spec(ular) channel (shininess), **all with textures.**
 
 In this context, “Channel” simply refers to a property of the material. Red, Green, and Blue are often referred to as the Red channel, Green channel, and Blue channel in image editing software. Consider this render from the game EVE Online:
 
@@ -107,7 +107,7 @@ I will be using this stupid fur texture that I stole from the internet. You are 
 **Many websites want to charge you to use their images and textures. Often these are higher quality, but there are enough free resources available that you should have all you need. Give credit where credit is due if you use something which obviously had a lot of work put into it.**
 :::
 
-**Textures must be .TGA (Targa) files, with a resolution that is a power of 2. I will be importing this as 256x256, which is rather low-quality.** See the table above for some guidance on texture resolutions.
+**Textures must be .TGA (Targa) files, with a resolution that is a power of 2. I will be importing this as 256x256, which is rather low-quality.** See the [Texture Resolutions table](../blender/08_resolution) for some guidance.
 
 ![alt text](../../.vuepress/public/images/image119.png)
 
@@ -124,6 +124,6 @@ I will be using this stupid fur texture that I stole from the internet. You are 
 
 **Select the imported texture in the Content Browser. Find the Diffuse channel under Parameter Groups > Texture Parameter Values. Click the green arrow to assign the texture to this channel. Lastly, click the checkbox next to the word Diffuse. The preview will update when you do this step, which indicates that this succeeded.**
 
-**Apply this to a mesh and check it out in the game!** In the [Textures guide](../textures/01_textures) there is a detailed explanation of the other channels and how to create textures for them. Diffuse will achieve 90% of the look you are going for, and is the easiest and most intuitive. **Generally speaking, you can make a perfectly acceptable map with custom materials that only use the Diffuse channel.**
+**Apply this to a mesh and check it out in the game!** In the [Textures Guide](../textures/01_textures) there is a detailed explanation of the other channels and how to create textures for them. Diffuse will achieve 90% of the look you are going for, and is the easiest and most intuitive. **Generally speaking, you can make a perfectly acceptable map with custom materials that only use the Diffuse channel.**
 
-Once Emissive, Specular, and Normal maps have been created, they may be applied in exactly the same way. Textures may also be updated following the exact same process as meshes.
+Once Emissive, Specular, and Normal maps have been created, they may be applied in exactly the same way. Textures may also be updated following the exact same process as for meshes.

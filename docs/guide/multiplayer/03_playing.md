@@ -6,18 +6,13 @@ title: Playing Maps
 
 ## How to Play Multiplayer Maps
 
-You have finished your map or want to play a custom map with friends. You can learn it in:
-* [the written guide](#written-guide)
-* [Leth's video](./#leth-s-video)
+As of 2020, the best way to play custom maps with others is to use the Rocket Plugin. This is a Bakkesmod plugin, which is a wonderful program that everyone should use. It opens a whole universe of possibilities for Rocket League:
 
-## Written guide <Badge text="not finished" type="warning"/>
+* [Bakkesmod](https://www.bakkesmod.com/)
+* [Rocket Plugin](https://bakkesplugins.com/plugins/view/26)
 
-As of 2020, the best way to play custom maps with others is to use the Rocket Plugin. This is a Bakkesmod plugin, which is a wonderful program that everyone should use. It opens a whole universe of possibilities for Rocket League.
+## Leth's Video <Badge text="outdated" type="warning"/>
 
-[Bakkesmod discord](../menu/communities)
-
-## Leth's video <Badge text="outdated" type="warning"/>
-
-All the download links are in the discription
+Download links are also in the description of Lethamyr's tutorial video:
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/vfIIa2cUZSE/0.jpg)](https://www.youtube.com/watch?v=vfIIa2cUZSE)
