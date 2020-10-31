@@ -259,7 +259,6 @@ module.exports = {
     nav: [
       {
         text: 'Documentation',
-        link: '/guide/',
         items: [
           {
             text: 'Essential',
@@ -323,7 +322,6 @@ module.exports = {
 
       {
         text: 'Resources',
-        link: '/resources/',
         items: [
           {
             text: 'Downloads',
@@ -350,7 +348,6 @@ module.exports = {
 
       {
         text: 'More',
-        link: '/more/contact',
         items: [
           {
             text: 'Contact',
