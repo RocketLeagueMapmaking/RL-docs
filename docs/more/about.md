@@ -20,7 +20,7 @@ Who am I? I have a few names, depending on where you find me: Mr. Swaggles in Ro
 
 These guys will be referred to as friendly/wonderful/amazing modders, so please thank them if you get a chance. Please send me a message if I didn’t give you credit for discovering something, and I’ll add you.
 
-| | |
+| Modder| Credits for |
 |-|-|
 |**whynotsteven** | RL Modding Founder, The OG |
 |**ButterandCream** | Discord/Reddit Admin, Rocket Launcher Creator |
@@ -43,4 +43,3 @@ These guys will be referred to as friendly/wonderful/amazing modders, so please 
 |**tj** | Kismet Library |
 |**Ecrase-Patate** | Kismet Support |
 |**ghostrider-05** | RocketLeagueMapmaking.com |
-| | |

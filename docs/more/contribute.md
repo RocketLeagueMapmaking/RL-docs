@@ -7,7 +7,7 @@ tags:
 
 # Contribute
 
-Thank you for helping us to try to create a complete guide for Rocket League Mapmaking. Contribute enough, and you will secure a place in the [special thanks](/readme.md).
+Thank you for helping us to try to create a complete guide for Rocket League Mapmaking. Contribute enough, and you will secure a place in the [special thanks](../more/about).
 
 If you have ideas for the website, you can reach us [here](../more/contact)
 

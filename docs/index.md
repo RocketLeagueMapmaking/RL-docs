@@ -20,11 +20,11 @@ tags:
     <div style="height:100px; margin:0 auto;">
     </div>
     <div style="width:800px; margin:0 auto;">
-    <img src='./.vuepress/public/icons/logo_rlmm_round_512.png' alt='RLMM'></img>
+    <!-- <img src='./.vuepress/public/icons/logo_rlmm_round_512.png' alt='RLMM'></img> -->
     </div>
     <h1 class='title'>Rocket League<br>Mapmaking</h1>
-    <h2>Guides, Maps, Downloads, and More!</h2>
-    <h3>
+    <p>Guides, Maps, Downloads, and More!</p>
+    <h3 style='display: inline-block;'>
       <a href='/essential/index.html' class='first-link'>Get Started with UDK</a>
       <br>
       <a href='/guide/udk/00_start.html'  class='second-link'>Explore the Documentation</a>
@@ -90,6 +90,7 @@ tags:
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -105,15 +106,18 @@ tags:
     font-weight:bold;
     line-height: 5rem;
     transform: translateY(30px);
+    margin-block-end:20px;
 }
 .headpage p{
 max-width:600px;
 padding-bottom:12px;
 padding-right:5vw;
+font-size:30px;
 }
 .headpage a{
     display: inline-block;
     width: fit-content;
+    margin-bottom:15px;
 }
 .first-link{
     color:#00DD30;
@@ -225,8 +229,9 @@ padding:0px;
   }
   .headpage h1{
     transform: translateY(35px);
-    font-size:64px;
+    font-size:54px;
     line-height:4rem;
+    max-width:90vw;
   }
   .social-part,.guide-part,.footer{
     flex-direction:column;
