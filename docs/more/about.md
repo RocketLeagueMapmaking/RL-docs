@@ -20,7 +20,7 @@ Who am I? I have a few names, depending on where you find me: Mr. Swaggles in Ro
 
 These guys will be referred to as friendly/wonderful/amazing modders, so please thank them if you get a chance. Please send me a message if I didn’t give you credit for discovering something, and I’ll add you.
 
-| Modder| Credits for |
+| | |
 |-|-|
 |**whynotsteven** | RL Modding Founder, The OG |
 |**ButterandCream** | Discord/Reddit Admin, Rocket Launcher Creator |
@@ -30,7 +30,7 @@ These guys will be referred to as friendly/wonderful/amazing modders, so please 
 |**Lethamyr** | Countless Custom Maps, New Features, and Publicity |
 |**KarlHeinzSchneider** | Collision Channels, Foundational Discoveries |
 |**wejrox/JimJoms** | Web Development, Video Tutorials, One-Stop-Chop-Shop |
-|**Derzo** | Collisions, Guides, Custom Materials, In-Game Assets |
+|**Derzo** | Fixed Collisions, Guides, Custom Materials, In-Game Assets |
 |**Stanbroek** | Advanced Map and Kismet Techniques, Creator of Rocket Plugin |
 |**Thanrek** | Advanced Map and Kismet Techniques |
 |**French Fries** | Foundational Dribbling Challenge Maps |
@@ -43,3 +43,4 @@ These guys will be referred to as friendly/wonderful/amazing modders, so please 
 |**tj** | Kismet Library |
 |**Ecrase-Patate** | Kismet Support |
 |**ghostrider-05** | RocketLeagueMapmaking.com |
+| | |

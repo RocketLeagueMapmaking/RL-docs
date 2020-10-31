@@ -1,6 +1,5 @@
 ---
 title: Installing
-# sidebar: auto
 ---
 # Installing UDK
 

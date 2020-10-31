@@ -3,8 +3,8 @@ title: Miscellaneous
 ---
 # Miscellaneous Guides
 
-## Grass <Badge text="not finished" type="warning"/>
+## What Goes Here?
 
-## Weather <Badge text="not finished" type="warning"/>
+This section is for anything and everything that's not along the critical path of mapmaking. These are the `woah that's cool`'s, the `nice to have`'s, and generally just features that you will not always need.
 
-## Stacked Transparency <Badge text="not finished" type="warning"/>
+Anything you would like to see here? [Contact us](../more/contact) with your idea, or [Contribute](.../more/contribute) directly!

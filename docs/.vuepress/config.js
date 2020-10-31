@@ -208,7 +208,11 @@ module.exports = {
         collapsable: true, 
         sidebarDepth: 1,    
         children: [
-          '/guide/misc/01_misc'
+          '/guide/misc/01_misc',
+          '/guide/misc/02_grass',
+          '/guide/misc/03_weather',
+          '/guide/misc/04_stacked_transparency',
+          '/guide/misc/05_geometry_editor'
         ]
       }
     ],
@@ -224,6 +228,29 @@ module.exports = {
           'roadmap',
           'contribute',
           'psyonix'
+        ]
+      }
+    ],
+
+    '/cheatsheet/':[
+      {
+        title: 'Cheat Sheets',   
+        collapsable: false, 
+        sidebarDepth: 1,    
+        children: [
+          '',
+          '01_stickywalls',
+          '02_dummyassets',
+          '03_collisions',
+          '04_materials',
+          '05_boost',
+          '06_quick_testing',
+          '07_kactors',
+          '08_lighting',
+          '09_map_models',
+          '10_multiplayer',
+          '11_soccar',
+          '12_uvmaps'
         ]
       }
     ]
