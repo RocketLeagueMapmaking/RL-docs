@@ -1,7 +1,11 @@
 ---
 title: Publishing
 ---
-# Publishing your map
+# Multiplayer
+
+## Publishing
+
+This process works perfectly on the Steam version of Rocket League. As of November 1, 2020, the process for playing custom maps on the Epic version is still messy and weird.
 
 ## Psyonix Uploader Tool
 

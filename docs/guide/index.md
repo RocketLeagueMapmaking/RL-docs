@@ -1,12 +1,12 @@
 ---
-title: Guides
+title: Guides Hub
 tags:
   - guide
   - start
 ---
-# Extra Information
+# Guides Hub
 
-## Starting Guide
+## Essentials Guide
 
 If you're reading this, hopefully you have completed all of the steps in the [Essentials section](../essential/index.html). If so, you're ready to go.
 

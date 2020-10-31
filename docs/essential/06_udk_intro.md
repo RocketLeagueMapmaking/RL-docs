@@ -23,7 +23,7 @@ tags:
 
 **Additionally, a treasure trove of options will show up when you right click an Actor in the Editor Window. See [the Properties Window](./07_udk_editor.html#properties-window) section.**
 
-### Navigating Around <Badge text="important" type="tip"/>
+### Navigating Around
 
 * `Left Click + Move` - Rotate the view left and right
 * `Right Click + Move` - Freely spin the view around

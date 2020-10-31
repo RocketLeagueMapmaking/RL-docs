@@ -1,12 +1,12 @@
 {
-    "name": "Rocket League Map Making",
+    "name": "Rocket League Mapmaking",
     "short_name": "RLMM",
-    "description": "A guide for map making",
+    "description": "Custom maps for Rocket League",
     "display": "standalone",
     "theme_color": "#3eaf7c",
     "background_color":"#3eaf7c",
     "scope": "/",
-    "start_url": "/",
+    "start_url": "../public/",
     "icons": [
         {
         "src": "icons/logo_rlmm_round_48.png",

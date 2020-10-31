@@ -1,14 +1,14 @@
 ---
-title: contact us
+title: Contact Us
 editLink: false
 ---
-# Contact and socials
+# Contact and Socials
 
 <!-- form -->
 
 If you have any question or ideas, you can contact us via:
 
-## Twitter
+## Discord
 
 [@RocketleagueMapMaking](https://twitter.com/rlmapmaking)
 

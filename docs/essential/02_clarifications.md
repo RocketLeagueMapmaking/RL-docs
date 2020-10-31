@@ -7,7 +7,7 @@ tags:
 ---
 # Clarifications
 
-## A Note on UDK 2013 vs 2015 (and Unreal 4)
+## Notes on UDK 2013 vs 2015
 
 One frequently asked question is “why do we have to use UDK?” Rocket League was originally built with Unreal Engine 3 in UDK 2013, so that version had the fewest compatibility issues. In the years since then, improvements have been made and it’s no longer an issue to use UDK 2015.
 

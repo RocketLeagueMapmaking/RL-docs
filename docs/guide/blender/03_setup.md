@@ -3,7 +3,7 @@ title: Blender Window
 ---
 # Blender Basics
 
-## Blender setup
+## Blender Setup
 
 There are a few user defaults which are good to change if you are just installing Blender. Go to Edit > Preferences.
 
@@ -23,7 +23,7 @@ There are three things you should absolutely adjust, but feel free to tinker wit
 
 ## The window
 
-![alt text](../../.vuepress/public/images/image151.png)
+## The Window
 
 *Beautiful Blender and the Billion Buttons*
 

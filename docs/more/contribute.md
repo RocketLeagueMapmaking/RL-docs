@@ -1,3 +1,10 @@
+---
+title: Contribute
+tags:
+  - contribute
+  - info
+---
+
 # Contribute
 
 We thank you for helping us to create a complete guide for Rocket League mapmaking. As a contributer you will get a [special thanks](/readme.md) for helping

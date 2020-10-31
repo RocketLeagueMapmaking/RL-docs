@@ -3,6 +3,8 @@ title: FBX Export
 ---
 # Blender Basics
 
+## FBX Export
+
 UDK’s preferred file format is called FBX, as you have probably figured out by now. **Any assets you intend to use in UDK must be exported in this format.**
 
 There is one bit of trickery involved with the export, which has to do with a concept called the Object Origin. In Blender, it is shown as a pale orange dot when you have any object selected.

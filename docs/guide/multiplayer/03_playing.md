@@ -2,8 +2,9 @@
 title: Playing Maps
 
 ---
+# Multiplayer
 
-# How to play multiplayer maps
+## How to Play Multiplayer Maps
 
 You have finished your map or want to play a custom map with friends. You can learn it in:
 * [the written guide](#written-guide)

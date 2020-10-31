@@ -1,7 +1,7 @@
 ---
 title: Other Sources
 ---
-# Other sources for 3D modeling
+# Other Sources of 3D Models
 
 You might feel that you are not up to the task of making your own 3D models, which is totally fine. There are a few other ways to approach this.
 

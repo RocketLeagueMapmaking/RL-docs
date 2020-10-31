@@ -1,4 +1,6 @@
 ---
-title: Skeletal mesh
+title: Skeletal Mesh
 ---
-# UDK Advanced <Badge text="not finished" type="warning"/>
+# UDK Advanced
+
+## Skeletal Mesh <Badge text="not finished" type="warning"/>

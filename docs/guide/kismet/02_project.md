@@ -1,7 +1,7 @@
 ---
 title: Adding Kismet
 ---
-# UDK Advanced
+# Kismet
 
 ## Adding Kismet to the Project <Badge text="important" type="tip"/>
 

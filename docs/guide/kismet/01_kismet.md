@@ -1,7 +1,7 @@
 ---
-title: Kismet Editor  
+title: Kismet
 ---
-# UDK Advanced
+# Kismet
 
 ## Overview
 Kismet is a node-based programming system that presents a “cleaner” and “easier to use” interface than you would get writing your own code. Logical blocks take the place of code classes and functions, and lines on the page indicate data and program flow.
@@ -70,6 +70,7 @@ These categories are visible (in a different order) in the right click menu in t
 
 
 While there are severe limitations, there are already countless examples in the community of [very impressive things made with Kismet](https://github.com/RocketLeagueMapmaking/Kismet). 
+
 :::tip
 If you wish to completely abuse the game for things like Chaos Rumble or (the original version of) Curveball, you should probably use Bakkesmod. Kismet allows for a lot of control, but certain things are simply not accessible or would be prohibitively complex to do with nodes and connector lines.
 :::

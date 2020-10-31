@@ -5,7 +5,7 @@ tags:
   - essentials
 ---
 
-# Essentials
+# Mapmaking Essentials
 
 This is not going to be easy, but it will be rewarding if you see it through. I believe in you.
 

@@ -21,7 +21,7 @@ This a list of useful things in order of importance:
 * [Park_P Dummy Assets](./downloads.html#park-p-dummy-assets)
 
 
-### More downloads
+### More Downloads
 * [UE Viewer](http://www.gildor.org/en/projects/umodel#files)
 * [Rocket League UPK Decryptor](https://www.reddit.com/r/RocketLeague/comments/3v9d10/rocket_league_upk_decryptor_datamined_car_hitbox/?st=iti85t6x&sh=ad0687b1)
 * [UV cube](https://drive.google.com/file/d/1sS6KkDMfkzkhJfuBMicUa56FpdiDXvO-/view)
@@ -33,7 +33,7 @@ This a list of useful things in order of importance:
 
 ## Assets
 
-### Park_P Dummy Assets
+### Full Game Dummy Assets
 
 [Download](https://drive.google.com/open?id=1rpQzqHgoRgpOBSHEpeDwvRtG3sYUXacl)
 

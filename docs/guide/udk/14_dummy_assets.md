@@ -3,7 +3,9 @@ title: Dummy Assets
 ---
 # UDK Advanced 
 
-This is perhaps the most important section in this whole guide, yet it’s never been written down in a very intelligible or collected fashion. However, I feel it’s important to understand [basic mapmaking](../../essential/01_flowchart) (i.e. everything leading up to this point) before attempting this, because this is where it starts to get really weird. Dedicated modders finally cracked the code in 2017, which allows for any map maker to use any in-game asset. The trick?
+## Dummy Assets
+
+This is perhaps the most important section in this whole guide, yet it’s never been written down in a very intelligible or collected fashion. I feel it’s important to understand [basic mapmaking](../../essential/01_flowchart) (i.e. everything leading up to this point) before attempting this, because this is where it starts to get really weird. Dedicated modders finally cracked the code in 2017, which allows for any map maker to use any in-game asset. The trick?
 
 Just name it correctly.
 

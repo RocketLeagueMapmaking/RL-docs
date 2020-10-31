@@ -1,11 +1,9 @@
 ---
 title: TriggerVolumes
 ---
-# UDK Advanced
+# Kismet
 
-For some reason, UDK requires that you add TriggerVolume Touch Events in a different way from every other node. :shrug_emoji:
-
-![alt text](../../.vuepress/public/images/image184.png)
+## TriggerVolumes
 
 *Hello TriggerVolume*
 

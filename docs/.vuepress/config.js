@@ -56,7 +56,7 @@ module.exports = {
      
       // ]},
       {
-        title: 'Introduction',   
+        title: 'Mapmaking Essentials',   
         collapsable: false, 
         sidebarDepth: 1,    
         children: [
@@ -99,6 +99,7 @@ module.exports = {
         collapsable: true, 
         sidebarDepth: 1,    
         children: [
+          '/guide/udk/00_start',
           '/guide/udk/01_csg',
           '/guide/udk/02_udk_basics',
           '/guide/udk/03_collidable_mesh',
@@ -178,7 +179,7 @@ module.exports = {
         children: [
           '/guide/textures/01_textures',
           '/guide/textures/02_custom',
-          '/guide/textures/03_maps'
+          '/guide/textures/03_painting'
         ]
       },
 
@@ -198,7 +199,16 @@ module.exports = {
         collapsable: true, 
         sidebarDepth: 1,    
         children: [
-          '/guide/decryption/assets'
+          '/guide/decryption/01_decryption'
+        ]
+      },
+
+      {
+        title: 'Miscellaneous',   
+        collapsable: true, 
+        sidebarDepth: 1,    
+        children: [
+          '/guide/misc/01_misc'
         ]
       }
     ],
@@ -209,11 +219,11 @@ module.exports = {
         collapsable: false, 
         sidebarDepth: 1,    
         children: [
-          '',
-           'about',
-           'roadmap',
-           'contribute',
-           'psyonix'
+          'contact',
+          'about',
+          'roadmap',
+          'contribute',
+          'psyonix'
         ]
       }
     ]
@@ -240,8 +250,12 @@ module.exports = {
             text: 'Guides',
             items: [
               {
+                text: 'Information',
+                link: '/guide/index'
+              },
+              {
                 text: 'UDK Basics',
-                link: '/guide/udk/01_csg'
+                link: '/guide/udk/00_start'
               },
               {
                 text: 'Blender Basics',
@@ -267,6 +281,14 @@ module.exports = {
                 text: 'Multiplayer',
                 link: '/guide/multiplayer/01_multiplayer'
               },
+              {
+                text: 'Decryption',
+                link: '/guide/decryption/01_decryption'
+              },
+              {
+                text: 'Miscellaneous',
+                link: '/guide/misc/01_misc'
+              }
             ]
           }
         ]
@@ -285,6 +307,10 @@ module.exports = {
             link: 'https://github.com/RocketLeagueMapmaking/Kismet'
           },
           {
+            text: 'Other Guides',
+            link: '/resources/guides'
+          },
+          {
             text: 'References',
             link: '/resources/references'
           },
@@ -297,7 +323,7 @@ module.exports = {
 
       {
         text: 'More',
-        link: '/more/',
+        link: '/more/contact',
         items: [
           {
             text: 'Contact',

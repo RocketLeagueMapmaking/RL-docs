@@ -3,13 +3,13 @@ title: Modeling
 ---
 # Blender Basics
 
-You can make anything in Blender, given enough patience and time. This guide is both impatient and rushed, so we will get straight to cranking out map assets.
+## Modeling
 
 Let’s start with easy assets for a skate park. We’ll make a box ramp, a halfpipe, a rail, and a loop
 
 ![alt text](../../.vuepress/public/images/image177.png)
 
-*These are healthy X-Rays*
+## Modeling Examples
 
 ## Model meshes
 

@@ -3,6 +3,8 @@ title: 'Map Detail'
 ---
 # UDK Basics
 
+## Map Detail
+
 The sky is the limit for what you can add to a map. Please take time to mess with anything that sounds interesting, and maybe you’ll invent a fun new mechanic for the game.
 
 ## Cinematic Camera

@@ -3,6 +3,8 @@ title: Texture Resolution
 ---
 # Blender Basics
 
+## Texture Resolution
+
 Now that you are familiar with the way that UV maps work, it’s important to discuss the textures themselves.
 
 If you have played older 3D games (c. 2000), the concept of a texel will instantly be familiar. Minecraft is another fine example, but that style is done with more intentionality.

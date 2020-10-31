@@ -3,6 +3,8 @@ title: 'Game Items'
 ---
 # UDK Basics
 
+## Game Items
+
 So, you can make a pretty cool looking box. That’s more than half the battle. Sadly, Rocket League requires a little more detail for the map to be truly playable. This section will explain how to add interesting elements to the map, such as player spawns, goals, teleporters, and boost.
 
 This section will reference many custom classes that are available from the Dummy Classes section above. **If you don’t see them in UDK, you may need to repeat those steps.**

@@ -3,7 +3,7 @@ title: Mipmaps and LOD
 ---
 # Blender Basics
 
-To get back to [the earlier statement](08_resolution), ideally one pixel of any texture will be seen as one pixel on the player’s screen. Since you cannot magically add pixels and detail to an image, the only way to do this is to start with a large texture and downsample or downscale it. Then, when the object is further away or smaller, the game engine knows that it can use a smaller version of the texture rather than loading the original. **This is why UDK always requests textures in the resolutions listed [here](08_resolution).**
+## Mipmaps
 
 ![alt text](../../.vuepress/public/images/image240.png)
 

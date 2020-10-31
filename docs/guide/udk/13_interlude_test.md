@@ -1,8 +1,8 @@
 ---
 title: Interlude - Rapid Testing
 ---
-
 # Notes on Rapid Testing
+
 If you’re like me, you never get anything right on the first try. You probably don’t get it right on the second try, or even the third. I’m lucky to get things right on the fourth try. Because this is such an error-prone and goofy development process, you should absolutely take all the steps you can to make your life easier.
 
 You do not need to close Rocket League to test changes to your map. You just need to overwrite the file it’s using and reload the map in game. I also recommend setting the game to either Borderless or Windowed mode in the Video settings so that the process of jumping in and out is less painful.

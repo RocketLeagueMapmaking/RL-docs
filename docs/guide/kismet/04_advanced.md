@@ -1,7 +1,7 @@
 ---
 title: Advanced Kismet
 ---
-# UDK Advanced
+# Kismet
 
 ## Advanced Kismet
 I encourage you to ask for help in Discord, or even to reach out to people who have made maps that have features you want to either copy or improve upon. As always, give people credit if you borrow their hard work.
