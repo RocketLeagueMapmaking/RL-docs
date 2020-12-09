@@ -1,4 +1,7 @@
 # Overview
+
+This page is only for adding new content, the expended page can be found [here](https://rocketleaguemapmaking.com/recourses/contribute.html). 
+
 Contribution should be performed through a number of simple steps:
 1. Find an issue to fix.
 2. Fork the repository.
