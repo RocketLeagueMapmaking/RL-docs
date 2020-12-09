@@ -16,19 +16,19 @@ Is an answer incomplete or not up-to-date? Read [this guide](../more/contribute)
 
 :::details How do I get started?
 
-Pick your favorite Getting Started guide (selfishly I would recommend my own, at the top of the [Guides list](../guide/guides)). At the very least, you’ll need UDK, [Rocket League](https://rocketleague.com), and a lot of free time. Be sure to join the Mapmaking Discord (top of the [Communities list](../resources/modding_network)) and don’t be afraid to ask questions!
+Pick your favorite Getting Started guide (selfishly I would recommend my own, at the top of the [Guides list](../guide/guides)). At the very least, you’ll need [UDK](../recourses/downloads.html#setup), [Rocket League](https://rocketleague.com), and a lot of free time. Be sure to join the Mapmaking Discord (top of the [Communities list](../resources/modding_network)) and don’t be afraid to ask questions!
 
-Tags:
+Tags: [setup](../essential/), [UDK](../guide/udk/00_start)
 
-Answered by: 
+Answered by: Mr. Swaggles
 :::
 :::details What is UDK?
 
 UDK is the development tool for game creation using Unreal Engine 3. It was originally released by Epic Games in 2006, and they continued supporting and improving it until the release of Unreal Engine 4 in 2014. Rocket League was made with this tool, so we have the privilege of using it as well.
 
-Tags:
+Tags: [UDK](../guide/udk/00_start)
 
-Answered by:
+Answered by: Mr. Swaggles
 :::
 :::details What is Blender?
 
@@ -168,9 +168,9 @@ Answered by:
 :::
 :::details How do I play custom maps with friends?
 
-Answer
+If you play on steam you can go the [playing maps](../guide/multiplayer/03_playing) page which explains everything on how to play custom maps online with friends. If you play on the Epic games client you have to wait until there's a new bakkesmod update. 
 
-Tags:
+Tags: [multiplayer](../guide/multiplayer/01_multiplayer), [playing](../guide/multiplayer/03_playing)
 
 Answered by:
 :::
