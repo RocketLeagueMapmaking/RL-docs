@@ -11,7 +11,7 @@ Thanks to the work of dedicated modders, there is a repository of wonderful Dumm
 
 These are UDK-ready classes with the same names and properties as the customized classes that were created by Psyonix developers for Rocket League. They allow us to drop in objects which have advanced functionality, such as goals and boost pads.
 
-The download may be found under [Downloads.](../resources/downloads.html#starting)
+The download may be found under [Downloads.](../resources/downloads.html#setup)
 If you feel like using git, you can run git clone within the UDK folder. Downloading the .zip file is totally fine too.
 
 <img src='../.vuepress/public/images/dummyclasses_location.png' title="Lots of goodies"></img>

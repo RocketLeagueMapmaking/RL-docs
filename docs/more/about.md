@@ -1,5 +1,6 @@
 ---
 title: About
+editLink: false
 tags:
   - about
   - info
@@ -43,4 +44,5 @@ These guys will be referred to as friendly/wonderful/amazing modders, so please 
 |**tj** | Kismet Library |
 |**Ecrase-Patate** | Kismet Support |
 |**ghostrider-05** | RocketLeagueMapmaking.com |
-| | |
+
+<!-- | | | -->

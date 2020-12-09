@@ -28,7 +28,7 @@ To download this, you will need to make an account with RocketLeagueMods.com, ou
 
 ## Running the Installer
 
-After you [download the UDK 2015 Installer](../menu/downloads.html#starting) from my Drive (or any other friendly modder’s secret stash), double click it to start the install process. Accept the TOS.
+After you [download the UDK 2015 Installer](../resources/downloads.html#setup) from my Drive (or any other friendly modder’s secret stash), double click it to start the install process. Accept the TOS.
 
 <img src='../.vuepress/public/images/image149.png' title="UT Sample Game will cause great sadness"></img>
 
