@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Rocket League Map Making discord server
+    url: https://discord.gg/PWu3ZWa
+    about: Please use this Discord Server to ask questions about the website. We will likely answer (faster) questions there 
+  - name: RLMM docs discussions
+    url: https://github.com/RocketLeagueMapmaking/RL-docs/discussions
+    about: Please use Github discussions for any other questions or ideas
+  - name: Kismet Library
+    url: https://github.com/RocketLeagueMapmaking/Kismet/issues
+    about: Please go to the Kismet snippets repo for questions about the Kismet snippets
