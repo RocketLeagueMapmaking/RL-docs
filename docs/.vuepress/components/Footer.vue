@@ -27,6 +27,7 @@ export default {
 
 <style lang="stylus">
 .footer{
+  background-color:#25272a;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -40,6 +41,7 @@ export default {
   padding:20px;
 }
 .under-footer{
+  background-color:#25272a;
   display:flex;
   align-items:center;
   justify-content:center;
