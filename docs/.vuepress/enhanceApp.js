@@ -2,6 +2,7 @@ import Hero from './components/Home/Hero'
 import Contest from './components/Home/Contest'
 import Socials from './components/Home/Socials'
 import Footer from './components/Footer'
+import FlowChart from './components/FlowChart'
 
 export default ({
   Vue, // the version of Vue being used in the VuePress app
@@ -15,5 +16,5 @@ export default ({
   Vue.component('SocialsComponent', Socials)
 
   Vue.component('FooterComponent', Footer)
-
+  Vue.component('FlowChartComponent', FlowChart)
 }
