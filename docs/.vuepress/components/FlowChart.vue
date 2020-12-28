@@ -1,6 +1,8 @@
 <template>
     <div class="flowchart">
-        <button v-on:click="reset = !reset" v-if="reset" v-html="messages.begin" class="button"></button>
+        <div class="begin">
+            <button v-on:click="reset = !reset" v-if="reset" v-html="messages.begin" class="begin_message"></button>
+        </div>
 
         <div v-if="!reset && !end" v-for="question in questions">
             <div v-if="progress === questions.indexOf(question)" class="question">
@@ -11,18 +13,20 @@
         </div>
 
         <div v-if="progress === questions.length">
-            <p v-html="messages.ready"></p>
+            <p v-html="messages.ready" class="ready_message"></p>
             <div v-for="type in typeofmaps" class="category">
                 <h2 v-html="type.category"></h2>
                 <p v-html="messages.menu.example"></p>
-                <p v-html="example" v-for="example in type.examples"></p>
+                <div class="category_examples">
+                    <p v-html="example" v-for="example in type.examples"></p>
+                </div>
                 <p v-html="messages.menu.focus"></p>
                 <button v-html="focus" v-for="focus in type.focus" v-on:click='active = types.find(x => x.name === focus); progress += 1'></button>
             </div>
         </div>
 
         <div v-if="active !== 0 && !end && !reset" v-for="question in active.data" >
-            <div v-if="progress === questions.length + active.data.indexOf(question)">
+            <div v-if="active.data.indexOf(question) > 0 && progress === questions.length + active.data.indexOf(question)">
                 <p v-html="`${messages.menu.question} ${question.question}?`"></p>
                 <button v-on:click="end = !end" v-html="buttons.yes"></button>
                 <button v-on:click="progress += 1" v-html="buttons.no"></button>
@@ -267,5 +271,58 @@ export default{
 </script>
 
 <style lang="stylus" scoped>
-
+.flowchart{
+    background-color: #222222;
+    padding: 7px;
+    border-radius:5px;
+}
+button{
+    padding:8px;
+    margin:5px;
+    border-radius: 4px;
+    background-color: #333333;
+    color: #ffffff;
+    width:100px;
+    border:none;
+}
+button:hover{
+    background-color: var(--accentColor);
+}
+p{
+    padding-left: 8px;
+    margin: 3px;
+}
+.begin{
+    display:flex;
+    align-items: center;
+    flex-direction: column
+}
+.begin_message{
+    width: 250px;
+    height: 50px;
+    font-size:16px;
+}
+.ready_message{
+    text-align:center;
+}
+.category{
+    border-bottom: 3px solid #333333;
+    border-radius: 3px;
+}
+.category h2{
+    border:none;
+    padding-left: 8px;
+    margin-bottom: 6px;
+}
+.category_examples{
+    display:flex;
+    flex-direction:row;
+    padding-left: 8px;
+}
+.category_examples p{
+    background-color: #333333;
+    padding: 5px;
+    margin-right: 8px;
+    border-radius: 3px;
+}
 </style>
