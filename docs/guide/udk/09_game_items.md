@@ -17,7 +17,7 @@ These custom actor classes may be found in the Actor Classes tab of the Content 
 
 ## Pylon_Soccar_TA
 
-The Pylon is an object which Rocket League needst to detect to say that this is a playable map. Without it, you will not be able to spawn a game ball, and a number of other features such as automatic team coloration on the map will likely not happen.
+The Pylon is an object which Rocket League needs to detect that this is a playable map. Without it, you will not be able to spawn a game ball, and a number of other features such as automatic team coloration on the map will likely not happen.
 
 ![alt text](../../.vuepress/public/images/image102.png)
 
