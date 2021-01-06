@@ -22,7 +22,7 @@ Read the [contribution](./docs/more/contribute.md) documentation for guidelines 
 ## Certificate Renewal
 Currently we [manually redeploy](https://certbot.eff.org/docs/using.html#renewing-certificates) certificates using certbot on the host machine. This should be automated in future.  
 1. Stop the docker container to free up port 80 `docker stop rlmm`
-2. Execute `sudo  certbot certonly --force-renew --cer-name rocketleaguemapmaking.com` on the host machine.
+2. Execute `sudo  certbot certonly --force-renew --cert-name rocketleaguemapmaking.com` on the host machine.
 3. Select option 2 (temporary webserver, hence needing step 1)
 4. Check that the new certificate looks good `sudo certbot certificates`
 5. Restart the docker container `sudo docker container restart rlmm`
