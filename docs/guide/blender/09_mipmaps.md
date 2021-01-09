@@ -17,4 +17,6 @@ Find more information about mipmaps within UDK in the [Custom Materials](../udk/
 
 A similar and related concept is the LOD system, or Level of Detail. This same process and line of thinking is applied to the meshes themselves, including the “LOD popping” phenomenon. UDK allows for multiple meshes to be related to one another, and dynamically trades them out as the player gets nearer or farther.
 
-<Badge text="not finished" type="warning"/> This has not been explored much by the custom mapmaking scene, but it could be a crucial step in optimizing the performace of a complicated map.
+### Optimization <Badge text="not finished" type="warning"/>
+
+This has not been explored much by the custom mapmaking scene, but it could be a crucial step in optimizing the performace of a complicated map.

@@ -27,3 +27,8 @@ title: Modding Network
 * [@RLMapMaking](https://twitter.com/RLMapMaking)
 * [@BakkesMod](https://twitter.com/bakkesmod?lang=en)
 * [@Lethamyr_RL](https://twitter.com/Lethamyr_RL)
+
+## Github
+
+* [Rocket League Map Making](https://github.com/RocketLeagueMapmaking) 
+* [RLBot](https://github.com/RLBot)

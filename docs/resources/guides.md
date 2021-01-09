@@ -34,4 +34,5 @@ More Recent/Thorough Guides At The Top
 
 * [Thanrek's Not So Ultimate Modding Guide](https://docs.google.com/document/d/1rZU_kDCLdgioF9jeuYipJ14-KulxLqOEXpZY8KPiuSQ/pub)
 * [Wejrox's RL Modding Series](https://www.youtube.com/watch?v=U8dx2IZNvZc&index=1&list=PLvhilV-QKVLQVtH_sxbcfQ-Mct-GBBVb9)
+* [Wascy's turorial on collectible pixel-art](https://www.youtube.com/watch?v=lg_MHpDOB3U)
 

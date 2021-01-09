@@ -160,17 +160,17 @@ Answered by:
 :::
 :::details How do I upload to the Steam Workshop?
 
-Answer
+Although Psyonix has released their [own workshop uploader tool](02_publishing.html#psyonix-uploader-tool), we do not recommend to use it (unless you are somehow able to upload with the tool). SteamCMD is a more popular choice to [upload a custom map to the steam workshop](../guide/multiplayer/02_publishing). Before uploading your map you can already make a preview image (or multiple) or a youtube video highlighting what your map looks like. The preview image will be displayed on [the steam workshop](https://steamcommunity.com/app/252950/workshop/) and Steam players can also see this image under the `workshop` tab in the play menu (some map loaders might also be able to show it).
 
-Tags:
+Tags: [publishing](../guide/multiplayer/02_publishing)
 
-Answered by:
+Answered by: Ghostrider-05
 :::
 :::details How do I play custom maps with friends?
 
-If you play on steam you can go the [playing maps](../guide/multiplayer/03_playing) page which explains everything on how to play custom maps online with friends. If you play on the Epic games client you have to wait until there's a new bakkesmod update. 
+If you play on pc (either on Steam or Epic Games) you can go the [playing maps](../guide/multiplayer/03_playing) page which explains everything on how to play custom maps online with friends. If you play on console, you would have to wait until there's an in-game option to play custom maps.
 
 Tags: [multiplayer](../guide/multiplayer/01_multiplayer), [playing](../guide/multiplayer/03_playing)
 
-Answered by:
+Answered by: Ghostrider-05
 :::

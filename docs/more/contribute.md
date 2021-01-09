@@ -67,24 +67,29 @@ We have some minor style requirements for documentation additions:
 conventions.
 - If you are adding image resources, pay attention to their file size. 
   - Images above 1MB will not be accepted, and anything above 500KB should be reviewed.
+  - Images should be added in `/docs/.vuepress/public/images` and icons in `/docs/.vuepress/public/icons`
 :::
 
 :::details Development and local testing
 The project utilises `vuepress` in order to create pages for our documentation, running on a Node backend.
 
-## Dependencies
+### Dependencies
 1. Install [Node v10+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (or later).
   - `node --version` should show at least `v10.15.3`. Lower versions have not been tested but may also work.
   - `npm --version` should show at least `6.9.0`. Lower versions have not been tested but may also work.
 2. Clone the repository to your machine.
 3. Execute `npm install` from the root of the repository.
 
-## Execution
+### Execution
 1. Execute `npm run docs:dev`.
 2. Open the URL specified within the output of the command.
 
-## Components
-Vuepress makes use of [Vue components](https://vuepress.vuejs.org/guide/using-vue.html#using-components). Vue components are registered inside `/docs/.vuepress/components/`. Make sure that the name of the file matches the component's name. 
+### Components
+Vuepress makes use of [Vue components](https://vuepress.vuejs.org/guide/using-vue.html#using-components). If you make multiple components for one page or the components are about the same subject, add them in a folder. 
+* Components are placed inside `/docs/.vuepress/components/` 
+* Components are registered globally in `/docs/.vuepress/public/enhanceApp.js`. 
+
+**Make sure a custom component’s name either contains a hyphen or is in PascalCase. Otherwise it will be treated as an inline element and wrapped inside a `<p>` tag, which will lead to hydration mismatch because `<p>` does not allow block elements to be placed inside it.**
 
 Example: `MyComponent.vue` can be called with `<Mycomponent/>` 
 :::

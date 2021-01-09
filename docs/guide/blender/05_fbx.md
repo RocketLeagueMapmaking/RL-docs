@@ -31,4 +31,6 @@ If you see that your mesh has holes in it when you place it in UDK, there are tw
 
 <img src='../../.vuepress/public/images/image69.png' title="Caption"></img>
 
-<Badge text="important" type="tip"/> If you do not see your mesh at all in Rocket League, make sure that you have imported the mesh into the <b>same package in the Content Browser as the map you are working on</b> (e.g. CeilingGoal). Rocket League expects all assets for a custom map to be within the same .UPK.
+## .UPK Package <Badge text="important" type="tip"/>
+
+If you do not see your mesh at all in Rocket League, make sure that you have imported the mesh into the **same package in the Content Browser as the map you are working on** (e.g. CeilingGoal). Rocket League expects all (your own) assets for a custom map to be within the same .UPK package (you don't have to bring [Dummy assets](../udk/14_dummy_assets) materials into your own package).

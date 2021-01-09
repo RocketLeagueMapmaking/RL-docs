@@ -15,8 +15,7 @@ Contribution should be performed through a number of simple steps:
 # Guidelines
 We have some minor style requirements for documentation additions:
 - Always proofread your submissions. PRs that contain spelling mistakes or incorrect grammar will be denied.
-- When naming your readme files and folders, use [snake_case](https://en.wikipedia.org/wiki/Snake_case) for file naming 
-conventions.
+- When naming your readme files and folders, use [snake_case](https://en.wikipedia.org/wiki/Snake_case) for file naming conventions.
 - If you are adding image resources, pay attention to their file size. 
   - Images above 1MB will not be accepted, and anything above 500KB should be reviewed.
 

@@ -42,13 +42,13 @@ Twiddle your thumbs for a few minutes as it installs prerequisites and then inst
 
 Ignore the extra options, and complete the install. 
 
-:::danger
-Don’t launch it, because we have some things to change.
-:::
-
 ## Things to Change
 
-If you used one of the All-in-One packages, you may skip ahead to [the UDK Intro section](06_udk_intro). If you are manually setting up UDK, or just want to see what is happening behind the scenes with those packages, please continue.
+If you used one of the All-in-One packages, you may skip ahead to [the start an UDK project](05_project_setup.html#starting-a-new-project). If you are manually setting up UDK, or just want to see what is happening behind the scenes with those packages, please continue.
+
+:::danger Manual installation
+If you are going to install UDK manually: don’t launch it, because we have some things to change.
+:::
 
 <!-- ## Install locations <Badge text="not finished" type="warning"/>
 
