@@ -112,9 +112,9 @@ export default{
             },
             messages:{
                 begin: {
-                    title: 'Flowchart',
-                    text: 'Dont know where to start but you want to start making a map? Press this button and see what you need to do. After every question is a description on what you could do and a link to specific page and / or cheatsheets',
-                    button:'I want to make a map',
+                    title: 'How do I start?',
+                    text: 'Don\'t know where to start? This flowchart should help.<br>Each answer contains useful links and relevant information.<br>',
+                    button:'I want to make a custom map',
                 },
                 ready: 'What kind of map do you want to make?',
                 end: 'You are at the end',
@@ -128,46 +128,51 @@ export default{
             buttons:{
                 back: '<span class="iconify" data-inline="false" data-icon="fa-solid:angle-left" style="color: #ffffff; font-size: 40px;"></span>',
                 menu: '<span class="iconify" data-inline="false" data-icon="fa-solid:angle-double-left" style="color: #ffffff; font-size: 40px;"></span>',
-                reset: '<span class="iconify" data-inline="false" data-icon="fa-solid:window-close" style="color: #ffffff; font-size: 40px;"></span>',
-                question: 'Back to question',
+                reset: '<span class="iconify" data-inline="false" data-icon="fa-solid:undo-alt" title="Restart" style="color: #ffffff; font-size: 40px;"></span>',
+                return: '<span class="iconify" data-inline="false" data-icon="fa-solid:level-down-alt" data-rotate="90deg" title="Return" style="color: #ffffff; font-size: 40px;"></span>',
                 yes: 'yes',
                 no: 'no',
                 prev:'<span class="iconify" data-inline="false" data-icon="fa-solid:caret-left" style="color: #ffffff; font-size: 40px;"></span>',
                 next: '<span class="iconify" data-inline="false" data-icon="fa-solid:caret-right" style="color: #ffffff; font-size: 40px;"></span>'
             },
-            boxs:[
-                {
-                    title: 'RLbot',
-                    desc: 'Interested in making Rocket league bots work in custom maps?',
-                    button: {
-                        text: 'Read more',
-                        link: '../guide/misc/05_bots'
-                    }
-                },
-                {
-                    title: 'Old flowchart',
-                    desc: 'Still interested in the old flowchart? It is still here somewhere',
-                    button: {
-                        text: 'Go back in time',
-                        link: '/'
-                    }
-                }
-            ],
+
             questions: [
             {
                 question: 'Do you have UDK installed?',
-                desc: 'A small description to add some text to the question!',
-                no: 'Download UDK <a href="/">A link</a><br>More text'
+                desc: '<b>UDK</b>, or the <b>Unreal Development Kit</b>, is the program used to create games in Unreal Engine 3. Since Rocket League is made with this tool, we have to use it too.',
+                no: 'If you are new to UDK, <b>I recommend that you follow most of this website in order.</b><br><br>\
+                To install UDK you may <a href="https://github.com/RocketLeagueMapmaking/UDK_RL_Setup" target="_blank">use the Easy Installer,</a><br>\
+                or <a href="https://drive.google.com/file/d/1ozqiKBgcWSgcq7X5J6g0AErKyevjMRwd/view" target="_blank">do it yourself.</a><br><br>\
+                Either way, please follow the <b>Installing UDK</b> tutorial sections.<br>'
             },
             {
                 question: 'Do you want to make 3D objects?',
-                desc: 'A small description to add some text to the question!',
-                no: 'Look online for 3d objects'
+                desc: 'Rocket League maps are made of 3D assets called <b>meshes.</b><br>\
+                You will have to get used to manipulating them in UDK, but you don\'t necessarily need to make them yourself.',
+                no: 'UDK has a built-in tool called CSG that some find useful. However, it has severe limitations and will result in boxy, simple-looking maps.<br><br>\
+                For more detail, websites such as <a href="https://sketchfab.com/" target="_blank">Sketchfab</a> or <a href="https://www.cgtrader.com/free-3d-models" target="_blank">cgtrader</a> offer some free 3D models.\
+                Alternatively, you may find some people in the community willing to make 3D models for you.<br><br>\
+                <b>But most importantly,</b> please do not beg for or expect free 3D models. Some people go to university specifically to learn these skills, and it\'s hard work.<br>'
             },
             {
-                question: 'Do you have 3d modelling software?',
-                desc: 'A small description to add some text to the question!',
-                no: 'Download blender'
+                question: 'Do you have 3D modelling software?',
+                desc: 'To create or modify models for UDK, you will need 3D software. Much of this website will reference Blender, \
+                but if you are already familiar with another one, please use that!',
+                no: 'I wholeheartedly recommend <a href="https://www.blender.org/" target="_blank">Blender</a>. It is a free and tremendously powerful 3D creation suite and\
+                is the most popular 3D software for indie game developers. This website features numerous guides for Blender.<br><br>\
+                If you are a university student, you should be able to get Autodesk software like \
+                <a href="https://www.autodesk.com/products/3ds-max/" target="_blank">3DS Max,</a>\
+                <a href="https://www.autodesk.com/products/maya/" target="_blank">Maya</a>\
+                 or <a href="https://www.autodesk.com/products/autocad/" target="_blank">AutoCAD</a>\
+                , which are normally very expensive.<br><br>\
+                Other free software such as \
+                <a href="https://www.sketchup.com/" target="_blank">Sketchup</a>\
+                or <a href="https://www.daz3d.com/" target="_blank">Daz Studio</a>\
+                 are typically for a more focused purpose, but may be useful.<br><br>\
+                And lastly, more traditional CAD software such as \
+                <a href="https://www.solidworks.com/" target="_blank">SolidWorks</a>\
+                 and <a href="https://www.autodesk.com/products/fusion-360/" target="_blank">Fusion 360</a>\
+                 are options, but will typically require a program like Blender to convert to UDK\'s file formats.<br>'
             },
             {
                 question: 'Do you have image editing software?',
