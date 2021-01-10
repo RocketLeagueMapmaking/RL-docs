@@ -79,11 +79,13 @@
                 <button v-if="!end && !reset && progress === 0" v-bind:disabled='true' v-html="buttons.back" class="menu-button"></button>
                 <button v-if="!end && progress > 0 && progress !== questions.length + 1 && progress !== questions.length" v-on:click='progress -= 1' v-html="buttons.back" class="menu-button"></button>
                 <button v-if="!end && progress > questions.length" v-on:click="progress = questions.length" v-html="buttons.menu" class="menu-button"></button>
-                <button v-on:click="reset = !reset; progress = 0; slides.current = 0" v-if="!reset && !end" v-html="buttons.reset" class="resetbutton"></button>
 
-                <button v-on:click='end = !end' v-if="end" v-html="buttons.question" class="menu-button" id="question-btn"></button>
+                <button v-on:click='end = !end' v-if="end" v-html="buttons.return" class="returnbutton" id="returnbutton"></button>
+
                 <button v-on:click="reset = !reset; end = !end; progress = 0; slides.current = 0" v-if="end" v-html="buttons.reset" class="resetbutton"></button>
+                <button v-on:click="reset = !reset; progress = 0; slides.current = 0" v-if="!reset && !end" v-html="buttons.reset" class="resetbutton"></button>
             </div>
+
         </div>
 
         <div class="extra">  
@@ -391,6 +393,7 @@ text-color = #ffffff
 // buttons
 .buttons, .mobile-btn{
     display: flex;
+    margin: 5px 5px 5px 16px;
     flex-direction: row;
     flex-wrap: nowrap;
 }
