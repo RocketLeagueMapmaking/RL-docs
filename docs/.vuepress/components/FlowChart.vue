@@ -10,11 +10,6 @@
                 <button v-html="messages.begin.button" class="begin_message" v-on:click="reset = !reset"></button>
             </div>
 
-            <!-- progress set-up questions -->
-            <div class="progress" v-if="!reset && progress < questions.length">
-                <p v-html="`${messages.setup} ${progress + 1} / ${questions.length}`"></p>
-            </div>
-
             <!-- Set-up questions -->
             <div v-if="!reset && !end && progress === questions.indexOf(question)" v-for="question in questions" class="question">
                 <p v-html="question.question" class="ask"></p>
