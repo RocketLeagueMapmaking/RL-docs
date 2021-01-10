@@ -16,9 +16,11 @@
                 <p v-html="question.desc"></p>
                 <div class="mobile-btn">
                     <button v-on:click="progress += 1" v-html="buttons.yes" class="choicebutton"></button>
-                    <button v-on:click="end = !end" v-html="buttons.no" class="choicebutton"></button>
+                    <button v-on:click="end = !end" v-html="buttons.no" class="choicebutton-no"></button>
                 </div>
             </div>
+
+
 
             <!-- Select map type -->
             <div v-if="progress === questions.length">
@@ -46,7 +48,7 @@
                     <p v-html="question.desc"></p>
                     <div class="mobile-btn">
                         <button v-on:click="end = !end" v-html="buttons.yes" class="choicebutton"></button>
-                        <button v-on:click="progress += 1" v-html="buttons.no" class="choicebutton"></button>
+                        <button v-on:click="progress += 1" v-html="buttons.no" class="choicebutton-no"></button>
                     </div>
                 </div>   
             </div>
@@ -65,7 +67,7 @@
                     <p v-html="active.data[progress - questions.length].no" class="answer"></p>
                 </div>
             </div>
-            
+
             <!-- Buttons -->
             <div class="buttons">
                 <button v-html="buttons.prev" v-bind:disabled='true' v-if="progress === questions.length && slides.current === 0" class="menu-button"></button>  
@@ -409,13 +411,30 @@ button{
     font-size: 18px;
     font-weight: 500;
 }
-.resetbutton, .menu-button{
+.choicebutton-no{
+    text-transform: uppercase;
+    padding: 14px 0 14px 0;
+    margin: 30px 0 15px 16px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.choicebutton-no:hover{
+    background: #B33;
+}
+.resetbutton, .menu-button, .returnbutton{
     max-width: 70px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+}
+.resetbutton{
+    margin-left: auto;
+}
+.resetbutton:hover{
+    background: #B33;
 }
 #question-btn{
     max-width: 300px;
@@ -461,6 +480,7 @@ p{
 
 // Setup progress
 .progress{
+    text-align: center;
     padding: 10px;
 }
 
@@ -473,6 +493,7 @@ p{
 // answer
 .answer{
     margin:16px 0;
+    margin-bottom: auto;
 }
 
 // Selecting map type
