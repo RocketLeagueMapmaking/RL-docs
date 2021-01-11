@@ -30,13 +30,13 @@ Resources and communities can seem a bit scattered. The Rocket League Mapmaking 
 
 ## Support You
 
-You'll likely require assistance at some point in your journey. Please check the [FAQ](../faq) or [contact us](../more/contact) for assistance. Join the [Rocket League Mapmaking Discord Server](https://discord.gg/PWu3ZWa) to get connected.
+You'll likely require assistance at some point in your journey. Please check the [FAQ](../faq) or [contact us](/more/contact) for assistance. Join the [Rocket League Mapmaking Discord Server](https://discord.gg/PWu3ZWa) to get connected.
 
 ## Support Us
 
 This website has no advertisements so you can focus on the important stuff. If you want to support us with content, ideas, or simply money for contests, we would greatly appreciate it!
-* [Contribute to this guide](../more/contribute)
-* [Donate (for future contests)](../more/contribute)
+* [Contribute to this guide](/more/contribute)
+* [Donate (for future contests)](/more/contribute)
 
 ## Cheat Sheets
 Portions of these guides have been condensed into brief, single-page references, which may be found in the [Cheat Sheets](../cheatsheet) section. Refer to them when you just need a quick reminder.

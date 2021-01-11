@@ -10,7 +10,7 @@ This is an attempt at distilling down much of the knowledge that has been shared
 :::warning NOTE
 **This FAQ will cover Mapmaking. It will not cover Bakkesmod Plugins, Decal Mods, RLBots, or anything outside the scope of Mapmaking.**
 :::
-Is an answer incomplete or not up-to-date? Read [this guide](../more/contribute) to learn how you can contribute, or go directly to [GitHub.](https://github.com/RocketLeagueMapmaking/RL-docs/blob/master/CONTRIBUTING.md)
+Is an answer incomplete or not up-to-date? Read [this guide](/more/contribute) to learn how you can contribute, or go directly to [GitHub.](https://github.com/RocketLeagueMapmaking/RL-docs/blob/master/CONTRIBUTING.md)
 
 ## General
 
