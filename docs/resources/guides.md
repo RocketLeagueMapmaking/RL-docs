@@ -8,10 +8,16 @@ tags:
 
 More Recent/Thorough Guides At The Top
 
+## 2021
+* [Plumato's How to Play Steam Workshop Maps](https://youtu.be/wO_ApfzdLSM)
+
 ## 2020
 
 * [Mr. Swaggles' Map Making Guide](https://docs.google.com/document/d/166A68CLxWk0LxMZ4B9vsuBmIgbphLIMbRB0BCn3ezsc/) (this guide, but as a monolithic Google Doc)
+* [ItsBranK's Decryption Guide](https://docs.google.com/document/d/1-o-7AojY1j4_5i0gj5LmI6hDhJL9VZg0IW40KL7objQ/edit)
 * [Ardivee's Rocket League Tools Modding Wiki](https://rocketleaguemoddingwiki.github.io/index.html)
+* [Renaiku's Rocket League Modding Wiki](https://rocketleaguemoddingwiki.github.io/index.html)
+* [RLBot Useful Game Values](https://github.com/RLBot/RLBot/wiki/Useful-Game-Values)
 * [Leth's How to Play Custom RL Maps With Friends](https://www.youtube.com/watch?v=vfIIa2cUZSE) 
 
 ## 2019

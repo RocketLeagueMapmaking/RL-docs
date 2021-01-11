@@ -31,10 +31,10 @@ Next, there are some properties to set within the boost pill’s VehiclePickup_B
 
 |Search for|Change the line(s)|To this value|
 |------|------|------|
-|“loca”|Z|72|
-|“boo”|Boost Amount|9999|
-|“boo”|Boost Type|BoostType_Pill|
-|“res”|Respawn Delay|10|
+|“loca”| Z | 72 |
+|“boo” |Boost Amount| 9999|
+|“boo” | Boost Type| BoostType_Pill|
+|“res” |Respawn Delay|10|
 
 ![alt text](../../.vuepress/public/images/image21.png)![alt text](../../.vuepress/public/images/image48.png)
 **Lastly, lock the properties window. Select the `FXActor_Boost_TA`, then hit the arrow.** This tells the VehiclePickup which boost it should animate (and then hide) when a player passes through its hitbox. And speaking of the hitbox, its radius is given by the Boost Type selection.

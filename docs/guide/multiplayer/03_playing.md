@@ -6,18 +6,20 @@ title: Playing Maps
 
 With the update of Bakkesmod for Epic games, it's now possible to play workshop maps together. 
 
-## Bakkesmod (steam and epic games)
+## Bakkesmod 
+
+This part of the guide is for people using Steam **and** Epic games. 
 
 ### Multiplayer
 
-The easiest way to host and play custom maps with others is to use the Rocket Plugin. This is a Bakkesmod plugin, which is a wonderful program that everyone should use. It opens a whole universe of possibilities for Rocket League:
+The easiest way to host and play custom maps with others is to use the Rocket Plugin. This is a Bakkesmod plugin, which is a wonderful program that everyone should use. It opens a whole universe of possibilities for Rocket League.
 
 1. Everyone needs to download the following programs and files:
 
 * [Bakkesmod](https://www.bakkesmod.com/)
 * [Rocket Plugin](https://bakkesplugins.com/plugins/view/26)
 * [Logmein Hamachi](https://vpn.net) or [radmin](http://www.radmin-vpn.com/)
-* Subsribe to the [workshop maps](https://steamcommunity.com/workshop/browse/?appid=252950) you're going to play (if you use the Epic Games client place the maps you downloaded in a `mods` folder in the CookedPCconsole folder)
+* Subscribe to the [workshop maps](https://steamcommunity.com/workshop/browse/?appid=252950) you're going to play (if you use the Epic Games client place the maps you downloaded in a `mods` folder in the CookedPCconsole folder)
 
 2. Create a new network in the vpn or join using the name and password of the network
 
@@ -51,6 +53,7 @@ Click join
 - Using the vpn doesn't show your real IP address
 - If you want to play some of Lethamyr's maps from his website, you have to use a map swapper
 - If you are missing textures you have to download the [Worskhop textures](https://drive.google.com/drive/folders/1fvMMw0jGkkGr0fZpme9tWlwD3hC5LX0W) to be able to see those. Extract this to the `{CookedPCConsole}` folder
+- Check the [bakkesmod subreddit](https://www.reddit.com/r/bakkesmod) or the plugin's support page (or discord server) 
 :::
 
 :::tip RLLobby

@@ -12,11 +12,11 @@ This is an attempt at distilling down much of the knowledge that has been shared
 :::
 Is an answer incomplete or not up-to-date? Read [this guide](../more/contribute) to learn how you can contribute, or go directly to [GitHub.](https://github.com/RocketLeagueMapmaking/RL-docs/blob/master/CONTRIBUTING.md)
 
-## General
+## General <Badge text="not finished" type="warning"/>
 
 :::details How do I get started?
 
-Pick your favorite Getting Started guide (selfishly I would recommend my own, at the top of the [Guides list](../guide/guides)). At the very least, you’ll need [UDK](../recourses/downloads.html#setup), [Rocket League](https://rocketleague.com), and a lot of free time. Be sure to join the Mapmaking Discord (top of the [Communities list](../resources/modding_network)) and don’t be afraid to ask questions!
+Pick your favorite Getting Started guide (selfishly I would recommend my own: the website you are currently visiting). At the very least, you’ll need [UDK](../recourses/downloads.html#setup), [Rocket League](https://rocketleague.com), and a lot of free time. Be sure to join the Mapmaking Discord (top of the [Modding network](../resources/modding_network)) and don’t be afraid to ask questions!
 
 Tags: [setup](../essential/), [UDK](../guide/udk/00_start)
 
@@ -70,7 +70,7 @@ Tags:
 
 Answered by:
 :::
-## Rocket League Mods Discord
+## Rocket League Mods Discord <Badge text="not finished" type="warning"/>
 
 :::details How do I use Rocket Launcher?
 
@@ -104,7 +104,7 @@ Tags:
 
 Answered by:
 :::
-## UDK
+## UDK <Badge text="not finished" type="warning"/>
 
 :::details Where do I download UDK?
 
@@ -130,7 +130,7 @@ Tags:
 
 Answered by:
 :::
-## Mapmaking
+## Mapmaking <Badge text="not finished" type="warning"/>
 
 :::details What are Dummy Assets?
 
@@ -148,19 +148,19 @@ Tags:
 
 Answered by:
 :::
-## Uploading, Sharing, Playing
+## Uploading, Sharing, Playing 
 
 :::details How do I test my maps?
 
-Answer
+The fastest way to test your map is by using [the bat script](../essential/05_project_setup.html#batch-script-for-quickly-testing-maps-bsfqtm) from the beginning of this guide and overwrite `Labs_Utopia_P.upk` with your map. If you used the [RLLM UDK RL setup script](../essential/03_installing.html#rocketleaguemapmaking-udk-rl-setup-script) this file will be located in `{UDK Folder}\UDKGame\Content\Maps\`. Drag your map onto the script and open the Utopia map in Rocket League and you are ready to go! You can read more about it [here](../guide/udk/04_test). To test your maps in multiplayer (recommended if you make use of Kismet and want the map to have multiplayer) you can check one of [these options](../guide/multiplayer/01_multiplayer.html#testing-multiplayer)
 
-Tags:
+Tags: [multiplayer](../guide/multiplayer/01_multiplayer), [testing](../guide/udk/04_test)
 
-Answered by:
+Answered by: Ghostrider-05
 :::
 :::details How do I upload to the Steam Workshop?
 
-Although Psyonix has released their [own workshop uploader tool](02_publishing.html#psyonix-uploader-tool), we do not recommend to use it (unless you are somehow able to upload with the tool). SteamCMD is a more popular choice to [upload a custom map to the steam workshop](../guide/multiplayer/02_publishing). Before uploading your map you can already make a preview image (or multiple) or a youtube video highlighting what your map looks like. The preview image will be displayed on [the steam workshop](https://steamcommunity.com/app/252950/workshop/) and Steam players can also see this image under the `workshop` tab in the play menu (some map loaders might also be able to show it).
+Although Psyonix has released their [own workshop uploader tool](../guide/multiplayer/02_publishing.html#psyonix-uploader-tool), we do not recommend to use it (unless you are somehow able to upload with the tool). SteamCMD is a more popular choice to [upload a custom map to the steam workshop](../guide/multiplayer/02_publishing). Before uploading your map you can already make a preview image (or multiple) or a youtube video highlighting what your map looks like. The preview image will be displayed on [the steam workshop](https://steamcommunity.com/app/252950/workshop/) and Steam players can also see this image under the `workshop` tab in the play menu (some map loaders might also be able to show it).
 
 Tags: [publishing](../guide/multiplayer/02_publishing)
 
