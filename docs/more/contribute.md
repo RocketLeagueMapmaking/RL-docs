@@ -26,16 +26,6 @@ You may contribute by editing a page or suggesting new content. Visit [the Kisme
 Do you want to help improve this guide (or want your own (RL related) website)? Contact me on discord (ghostrider-05#8461) and we can make some awesome features! (Experience with `Vue.js` is a plus)
 :::
 
-:::warning Bounty Board
-These are some of the great unsolved mysteries of Rocket League Mapmaking. Contact us if you think you have cracked one of these mysteries:
-* Non-kismet code
-* Unlimited map size (in multiplayer)
-* Truly custom materials (not MIC)
-* Custom (background) music / sounds (in-game)
-
-Have you discovered a new mystery? Share it and it can go up here!
-:::
-
 ### Edit Existing Content
 
 To edit an existing page, click the link in the footer: `Edit this page on GitHub`. By clicking on this link github will create a fork based on the main branch. Follow all instructions in the section [Add new content](./contribute.html#add-new-content) to make sure your changes are accepted.
@@ -73,6 +63,7 @@ We have some minor style requirements for documentation additions:
 
 :::details Development and local testing
 The project utilises `vuepress` in order to create pages for our documentation, running on a Node backend.
+Tips and tricks on how to style a page can be found [here](../assets)
 
 ### Dependencies
 1. Install [Node v10+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (or later).
@@ -90,7 +81,7 @@ Vuepress makes use of [Vue components](https://vuepress.vuejs.org/guide/using-vu
 * Components are placed inside `/docs/.vuepress/components/` 
 * Components are registered globally in `/docs/.vuepress/public/enhanceApp.js`. 
 
-**Make sure a custom component’s name either contains a hyphen or is in PascalCase. Otherwise it will be treated as an inline element and wrapped inside a `<p>` tag, which will lead to hydration mismatch because `<p>` does not allow block elements to be placed inside it.**
+**Make sure a custom component’s name either contains a hyphen or is in PascalCase. Otherwise it will be treated as an inline element and wrapped inside a `<p>` tag, which will lead to hydration mismatch because `<p>` does not allow block elements to be placed inside it.** Read more about it [here](https://vuejs.org/v2/guide/components-registration.html#Component-Names).
 
 Example: `MyComponent.vue` can be called with `<MyComponent/>`\
 or `<MyComponent></MyComponent>` 

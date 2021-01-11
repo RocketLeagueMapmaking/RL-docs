@@ -1,43 +1,33 @@
 ---
 title: style
 ---
-# Titles
-## Header
+# Assets guide
+
+On this page you can find some tips and tricks related to styling a page. Vuepress uses [markdown-it](https://markdown-it.github.io/) and has also [documentation](https://vuepress.vuejs.org/guide/markdown.html#header-anchors) on how to use markdown. You can view the raw source of this page [here](https://github.com/RocketLeagueMapmaking/RL-docs/blob/master/docs/assets.md)
+
+## Text
 Input:
 ```md
-# A title
-```
-Output:
-# A title
-## Subtitle(s)
-Input
-```md
-## A subtitle
-### Another subtitle
-```
-Output:
-## A subtitle
-### Another subtitle
+# Page title
 
-# Markdown
+## Subtitle
+#### Small title
+```
 
 Input:
 ```md
 ~~strikethrough~~
+
 *italic*
+
 **bold**
+
 **_bold italic_**
+
 > quote
 ```
-Ouput:
 
-~~strikethrough~~
-*italic*
-**bold**
-**_bold italic_**
-> quote
-
-# Extra's
+## Vuepress assets
 
 Input:
 ```md
@@ -76,54 +66,40 @@ This is a details block
 :::
 ---
 
-# Links
+## Images and links
 
-Input:
 ```md
+Images:
 ![alt text](/relative path)
 
-[link](https://rocketleaguemapmaking.com) (or use relative paths)
+Images with text:
+![alt text](/image.png "Hover over the image to see me")
 
+Links:
+[link](https://rocketleague.com)
+[Another link](/essential)
+
+Youtube videos:
 [![alt text](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 ```
-Output:
 
+## Code blocks
 
-
-
-
-
-
-
-# Code
-
-## Specific language
-
-Input:
-
+With a specific language:
 
 ```javascript
 let guide = ['page','page2']
 console.log(guide)
 ```
 
-
-
-Output:
-```javascript
-let guide = ['page','page2']
-console.log(guide)
-```
-
-no language
+With no language specified:
 ```
 no syntax highlights
 // rest of text
 ```
+With lines highlighted:
 
-line highlights
-
-```javascript{2}
-let guide = ['page','page2']
+```javascript{1}
+let guide = ['page','page2','page3']
 console.log(guide)
 ```

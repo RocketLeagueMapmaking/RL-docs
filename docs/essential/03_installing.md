@@ -30,11 +30,11 @@ To download this, you will need to make an account with RocketLeagueMods.com, ou
 
 After you [download the UDK 2015 Installer](../resources/downloads.html#setup) from my Drive (or any other friendly modder’s secret stash), double click it to start the install process. Accept the TOS.
 
-<img src='../.vuepress/public/images/image149.png' title="UT Sample Game will cause great sadness"></img>
+![alt text](../.vuepress/public/images/image149.png "UT Sample Game will cause great sadness")
 
 **Install with an Empty Game.** The Sample Game has lots of cool things, but they’re completely irrelevant to Rocket League. Sorry.
 
-<img src='../.vuepress/public/images/image243.png' title="Or whatever you wanna name it"></img>
+![alt text](../.vuepress/public/images/image243.png "Or whatever you wanna name it")
 
 In the Project Name field, enter a good name for your project. I call mine RLMM (Rocket League MapMaking) but yours will be referred to as `{ProjectName}` in this guide. Additionally, this folder will be called `{UDK Folder}` for the rest of this guide.
 

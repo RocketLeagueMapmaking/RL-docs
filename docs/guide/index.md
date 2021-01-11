@@ -41,6 +41,16 @@ This website has no advertisements so you can focus on the important stuff. If y
 ## Cheat Sheets
 Portions of these guides have been condensed into brief, single-page references, which may be found in the [Cheat Sheets](../cheatsheet) section. Refer to them when you just need a quick reminder.
 
+:::warning Bounty Board
+These are some of the great unsolved mysteries of Rocket League Mapmaking. Contact us if you think you have cracked one of these mysteries:
+* Non-kismet code
+* Unlimited map size (in multiplayer)
+* Truly custom materials (not MIC)
+* Custom (background) music / sounds (in-game)
+
+Have you discovered a new mystery? Share it and it can go up here!
+:::
+
 <!-- ## Shortcuts <Badge text="beta" type="warning"/>
 
 To save some time, you can jump to the following sections:

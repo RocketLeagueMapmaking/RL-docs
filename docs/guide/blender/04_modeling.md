@@ -14,11 +14,11 @@ Let’s start with easy assets for a skate park. We’ll make a box ramp, a half
 The following examples showcase some Blender mesh modeling. I recognize that written guides are not for everyone, especially on topics like this, so I will kindly refer you to [these helpful resources](01_blender) for more tutorials and help.
 
 :::details Simple Mesh - Box Ramp
-<img src='../../.vuepress/public/images/image177.png' title="These are healthy X-Rays"></img>
+![alt text](../../.vuepress/public/images/image177.png "These are healthy X-Rays")
 
 **Enter Edit mode, and click the Toggle X-Ray button in the top right of the 3D Viewport.** This will allow you to select geometry which is “behind” other geometry. It can be helpful to turn this off, but try to always be aware of which mode you’re operating in.
 
-<img src='../../.vuepress/public/images/image11.png' title="Let’s get down to business"></img>
+![alt text](../../.vuepress/public/images/image11.png "Let’s get down to business")
 
 **Press `A` to select the whole cube. Go to front view with `Numpad 1`. Then press `G`, `Z`, and type `1`.** This should move the entire cube up one big gridline, so that the small pale orange dot (object origin) is centered on the bottom face.
 

@@ -9,7 +9,7 @@ tags:
 
 ## Editor Window
 
-<img src='../.vuepress/public/images/image235.png' title="The main course"></img>
+![alt text](../.vuepress/public/images/image235.png "The main course")
 
 ### 1 - Dropdown Menus
 
@@ -125,9 +125,7 @@ Sometimes you may want to move or rotate an object by much smaller increments. F
 
 When you have an actor selected and do either `right click > Properties` (the top option), `View > Actor Properties`, or press `F4`, the Properties popup window will appear. This is a huge pile of settings, so the key is to know what you are after and disregard the rest. **The search bar is your best friend.** Keep in mind that this list will be different for each actor type, so it can be good to familiarize yourself with the contents so that you know what to search for. The sections which deal with actually making the map provide some recommended shorthand versions of parameter names for easy searching.
 
-![alt text](../.vuepress/public/images/image181.png)
-
-*Almost as much fun as filing your taxes!*
+![alt text](../.vuepress/public/images/image181.png "Almost as much fun as filing your taxes!")
 
 As you mouse over the various buttons on the right edge, the tooltips will fill you in on what they do. However, it can still be a little unclear from their descriptions.
 

@@ -7,7 +7,7 @@ tags:
 
 # Mapmaking Essentials
 
-<img src='../.vuepress/public/images/dangerous.png' title='Also dangerous to take this'></img>
+![alt text](../.vuepress/public/images/dangerous.png "Also dangerous to take this")
 
 ### This is not going to be easy, but it will be rewarding if you see it through.
 ### I believe in you.

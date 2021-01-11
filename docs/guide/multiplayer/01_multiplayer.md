@@ -13,7 +13,7 @@ To test it in multiplayer you can either:
 
 ## Multiplayer Limitations <Badge text="not finished" type="warning"/>
 
-- There's a limit on your map size. If an object has a location higher than ..., 
+- There's a limit on your map size.
 - Kismet is not shared across clients, more information about how to make sure your kismet works in multiplayer can be found on [the advanced kismet](../kismet/04_advanced) page
 
 

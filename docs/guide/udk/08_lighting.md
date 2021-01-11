@@ -28,11 +28,7 @@ One of the key optimizations used by UDK is a strategy called Light Mapping. Thi
 
  ![alt text](../../.vuepress/public/images/image176.png)**Building lighting will force your map to refresh the behavior of all materials.** If shadows are not showing up, or certain parts are wildly miscolored, building lighting will attempt to fix all of that. Before uploading a map, it is always a good idea to rebuild the lighting so it looks finished.
 
-![alt text](../../.vuepress/public/images/image210.png)
-
-
-Task Failed Successfully!
-
+![alt text](../../.vuepress/public/images/image210.png "Task Failed Successfully!")
 
 When you build, UDK is inevitably going to complain about some things. In general you can ignore Warnings, but Errors should be resolved before publishing your map.
 

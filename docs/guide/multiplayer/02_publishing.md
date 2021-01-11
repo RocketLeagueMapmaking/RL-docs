@@ -31,14 +31,11 @@ First, you should prepare a separate folder for Workshop uploads. This way you c
 It’s best to keep this outside of the UDK project folder so that you don’t get duplicate package warnings when you start UDK.
 :::
 <!--  -->
-![alt text](../../.vuepress/public/images/image214.png)
-
-*Nobody ever complains that their computer is too well organized*
+![alt text](../../.vuepress/public/images/image214.png "Nobody ever complains that their computer is too well organized")
 
 **Copy and paste the .udk file into this new folder. Two files will need to accompany the .udk upload:**
-* [a preview image](./publishing.html#creating-a-preview-image)
-* [a .vdf file](./publishing.html#vdf-file)
-
+* [a preview image](02_publishing.html#creating-a-preview-image)
+* [a .vdf file](02_publishing.html#vdf-file)
 
 For the thumbnail image, you may either use a scaled down image at a 16:9 ratio (i.e. a 1920x1080 screenshot scaled to ~⅓ size) or a square image (512x512 or smaller). Make it eye-catching so that you rake in those juicy downloads.
 
