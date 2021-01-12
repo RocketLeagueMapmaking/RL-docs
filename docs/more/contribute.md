@@ -7,9 +7,9 @@ tags:
 
 # Contribute
 
-Thank you for helping us to try to create a complete guide for Rocket League Mapmaking. Contribute enough, and you will secure a place in the [special thanks](../more/about).
+Thank you for helping us to try to create a complete guide for Rocket League Mapmaking. Contribute enough, and you will secure a place in the [special thanks](../more/about.html#special-thanks).
 
-If you have ideas for the website, you can reach us [here](../more/contact) or on [github discussions](https://github.com/RocketLeagueMapmaking/RL-docs/discussions)
+If you have ideas for the website, you can reach us [here](../more/contact.html) or on [github discussions](https://github.com/RocketLeagueMapmaking/RL-docs/discussions)
 
 ## Financial Contribution
 
