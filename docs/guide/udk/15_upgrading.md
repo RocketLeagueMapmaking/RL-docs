@@ -9,11 +9,11 @@ In the mapmaking process, if you get something right the first time, you’re pr
 
 One easy method is to simply drag the new file into the Content Browser as before, but this is tedious and time-consuming when rapidly iterating.
 
-<img src='../../.vuepress/public/images/image35.png' title="A very 'handy' tool"></img>
+![alt text](../../.vuepress/public/images/image35.png "A very 'handy' tool")
 
 After making edits to a mesh in Blender and re-exporting the FBX, it’s dead simple to update in UDK. **Right click the asset and select `Reimport Static Mesh`.** This will also update any instances of the mesh in use in the map, and will not break collisions, materials, or anything. **However, if you have built lighting, it will erase any lightmaps for this object.**
 
-<img src='../../.vuepress/public/images/image32.png' title='"Truly Automatic"'></img>
+![alt text](../../.vuepress/public/images/image32.png "'Truly Automatic'")
 
 Alternatively, you may set certain paths which UDK will monitor for file updates. It will automatically reimport meshes and textures from these locations… probably. **In my experience, this doesn’t work 100% as expected, so be aware and don’t trust it blindly.**
 

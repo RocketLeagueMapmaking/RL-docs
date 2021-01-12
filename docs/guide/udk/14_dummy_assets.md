@@ -13,7 +13,7 @@ Just name it correctly.
 
 [This GitHub repository](https://github.com/Martinii89/RL_DummyAssets) is a massive library of essentially blank objects with weird names. Thanks to the dedicated work of Martinn (show him some love if you encounter him in the wild), this is a nearly complete list of all assets within Rocket League, properly sorted into their respective UPKs, groups, and subgroups.
 
-<img src='../../.vuepress/public/images/image91.png' title="Dummy Thicc"></img>
+![alt text](../../.vuepress/public/images/image91.png "Dummy Thicc")
 
 **Click that friendly green button and place this .zip in the same location as the Park_P.upk file that you have been working with. Extract it, then look for it in UDK.**
 
@@ -23,7 +23,7 @@ It’s also worth mentioning that there will be a name clash between the pre-exi
 
 Thankfully, the reason the Dummy Assets approach even works is the same reason that we are able to create custom maps for the game. **Rocket League is essentially a collection of folders,** much like the list of packages within UDK’s Content Browser. In fact, each map within CookedPCConsole is an Unreal Package (.upk file), so it is exactly like this.
 
-Recall that the word “Cooked” refers to the fact that these packages have been encrypted. This means that the Dummy Assets method is not as simple as copying Dropshot out of CookedPCConsole and opening it in UDK, but it is nearly that simple. **Martinn** took the time to pass all of the Rocket League maps through a decryption tool (discussed [later in this guide](../decryption/assets)), and then organized the resulting pieces into this library.
+Recall that the word “Cooked” refers to the fact that these packages have been encrypted. This means that the Dummy Assets method is not as simple as copying Dropshot out of CookedPCConsole and opening it in UDK, but it is nearly that simple. **Martinn** took the time to pass all of the Rocket League maps through a decryption tool (discussed [later in this guide](../decryption/01_decryption)), and then organized the resulting pieces into this library.
 
 Most map names should be obvious, especially with the renamed folders. Here is a list of some key names used in UDK/UPK files versus what you will encounter in the game:
 
@@ -58,18 +58,18 @@ A powerful workflow is to create packages of reusable assets, then copy them int
 ## Dummy Static Meshes
 As mentioned, these are essentially blank objects. You will find meshes with no vertices, materials with no visibility, and textures with no pixels. Therefore, you should take a few extra steps when building a map with them. **There is also going to be a lot of trial and error involved, so be patient.**
 
-<img src='../../.vuepress/public/images/image78.png' title="Locked and loaded and ready to get dumb"></img>
+![alt text](../../.vuepress/public/images/image78.png "Locked and loaded and ready to get dumb")
 
 **First, you will need to right click a package in the Content Browser and select Fully Load.** This will make all of the contents available in the editor. **Avoid Fully Loading all of the Dummy Assets unless you are patient and have a very high-end computer, otherwise you will probably crash UDK.**
 
-<img src='../../.vuepress/public/images/image241.png' title="Bag em and tag em"></img>
+![alt text](../../.vuepress/public/images/image241.png "Bag em and tag em")
 
 **Drag a StaticMesh asset into the map,** or right click in the 3D Editor and select `Add StaticMesh: ...`
 :::tip
 **Before doing anything else, give it a useful name in the Tag field of its Properties.** This will make it possble to find this object later, since it has no physical representation within the editor.
 :::
 
-<img src='../../.vuepress/public/images/image23.png' title="Not all who wander are lost"></img>
+![alt text](../../.vuepress/public/images/image23.png "Not all who wander are lost")
 
 **The Scene tab of the Content Browser will only update after saving the map. Sort by the Tag column by clicking on it, and any named Dummy Assets will appear in alphabetical order.** The panel on the right of this window will allow you to edit all of the same properties that are accessible within the F4 popup window. If you wish to use that window instead, **selecing the object within the Scene tab will make it the active selection within the 3D Editor as well, meaning that you may simply move your mouse and press F4 to bring up the Properties window.**
 
@@ -80,7 +80,7 @@ Generally, when rebuilding a map purely with these assets, you will need to plac
 ## Dummy Materials
 Dummy materials work in the same way, but must be applied using the friendly green arrow.
 
-<img src='../../.vuepress/public/images/image163.png' title="Filter to Material Instances and Materials, then click dat arrow"></img>
+![alt text](../../.vuepress/public/images/image163.png "Filter to Material Instances and Materials, then click dat arrow")
 
 **Most Dummy Assets will not have any available material slots, so it will be necessary to click the green plus button under Materials first.** Additionally, it can be hard to know which materials go in which slots of which Dummy Assets, as the names are not 1-to-1 and there may be multiple slots.
 
@@ -88,11 +88,11 @@ To further complicate matters, many of these materials will simply not work on c
 
 [This is for you](https://drive.google.com/file/d/1sS6KkDMfkzkhJfuBMicUa56FpdiDXvO-/view)
 
-<img src='../../.vuepress/public/images/image53.png' title="Not your grandpappy’s cube ball"></img>
+![alt text](../../.vuepress/public/images/image53.png "Not your grandpappy’s cube ball")
 
 **Assign a Dummy material to slot one, and check it out in game.** The best part about this is that you can then “close the loop” and adjust the UV map of a custom mesh to fit parts of this, based on a screenshot. I also recommend placing multiple cubes at once to test a wide range of materials.
 
 ![alt text](../../.vuepress/public/images/image180.png)
-<img src='../../.vuepress/public/images/image255.png' title="Monkeyball 2020"></img>
+![alt text](../../.vuepress/public/images/image255.png "Monkeyball 2020")
 
 This won’t be a perfectly easy process, unless you get the screen capture lined up 100%. But, it can be fun and unlocks a whole world of possibilities. This brings us to the next important point: how to iterate and improve your map.

@@ -4,12 +4,7 @@ title: CSG
 
 # UDK Basics
 
-## CSG
-
-![alt text](../../.vuepress/public/images/image104.png)
-![alt text](../../.vuepress/public/images/image156.png)
-
-*You vs the map she tells you not to worry about*
+![alt text](../../.vuepress/public/images/image104.png "You vs the map she tells you not to worry about")
 
 The simplest and most straightforward way to build a map is using UDK’s brush system, CSG (Constructive Solid Geometry). In the days of yore, this was basically the only way people were making maps, until people started using 3D modeling software and following the steps laid out in the first version of this guide in late 2016.
 

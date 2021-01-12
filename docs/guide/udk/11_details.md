@@ -47,9 +47,7 @@ To create objects which have these collision properties, open the Properties win
 
 The standard Brush shapes should cover 99.5% of Volume needs, but there is a workaround to get a truly custom Volume shape.
 
-![alt text](../../.vuepress/public/images/image171.png)
-
-*Unblocking the potential of custom volumes*
+![alt text](../../.vuepress/public/images/image171.png "Unblocking the potential of custom volumes")
 
 :::warning SAVE
 First, save your map. UDK likes to crash when doing this process on complex objects.
@@ -57,14 +55,10 @@ First, save your map. UDK likes to crash when doing this process on complex obje
 
 **Add a `StaticMeshActor` with your desired shape. Right click, select Create Blocking Volume, and then Auto Convex Collision…**
 
-![alt text](../../.vuepress/public/images/image134.png)
-
-*Unblocking the potential of custom volumes*
+![alt text](../../.vuepress/public/images/image134.png "Unblocking the potential of custom volumes")
 
 After selecting the Auto Convex Collision, a small popup will appear. `Depth` refers to the precision of the shape around the object. `Max Hull Verts` refers to the number of points the collision will have. `Allow Splits` means that the result will actually be made of distinct pieces. This should be no problem for a TriggerVolume (which a player or ball merely needs to touch to interact with), but it will be problematic for a GoalVolume (which has to fully contain the ball to score a goal).
 
-![alt text](../../.vuepress/public/images/image43.png)
-
-*Trigger warning*
+![alt text](../../.vuepress/public/images/image43.png "Trigger warning")
 
 ## Particle systems <Badge text="not finished" type="warning"/>
