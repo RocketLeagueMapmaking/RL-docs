@@ -160,7 +160,7 @@ Answered by: Ghostrider-05
 :::
 :::details How do I upload to the Steam Workshop?
 
-Although Psyonix has released their [own Workshop Uploader tool](../guide/multiplayer/02_publishing.html#psyonix-uploader-tool), we do not recommend using it (unless you are magical). SteamCMD is a more dependable choice to [upload a custom map to the Steam Workshop](../guide/multiplayer/02_publishing). Before uploading your map you will need to make a preview image (or multiple). The preview image will be displayed on [the Steam Workshop](https://steamcommunity.com/app/252950/workshop/), and Steam players can also see this image under `Play > Extra Modes > Workshop` in the game.
+Although Psyonix has released their [own Workshop Uploader tool](../guide/multiplayer/02_publishing.html#psyonix-uploader-tool), we do not recommend using it (unless you are magical). SteamCMD is a more dependable choice to [upload a custom map to the Steam Workshop](../guide/multiplayer/02_publishing). Before uploading your map you will need to make a preview image (or multiple). The preview image will be displayed on [the Steam Workshop](https://steamcommunity.com/app/252950/workshop/), and Steam players can also see this image under `Play > Custom Games > Workshop` in the game.
 
 Tags: [publishing](../guide/multiplayer/02_publishing)
 

@@ -66,7 +66,7 @@ The easiest way to play Workshop maps in single player **on Steam**:
 
 1. Subscribe to the [Workshop maps](https://steamcommunity.com/workshop/browse/?appid=252950&browsesort=trend&section=readytouseitems) you want to play
 
-2. Open Rocket League, go to `Play > Extra Modes > Workshop`, and select the map you want to play
+2. Open Rocket League, go to `Play > Custom Games > Workshop`, and select the map you want to play
 
 :::warning Missing maps
 Rocket League only shows 50 workshop maps in this list, in the order you subscribed to them. If you have more than 50 subscribed workshop maps and dont see the map you want to play, you have to unsubscribe from other maps.
