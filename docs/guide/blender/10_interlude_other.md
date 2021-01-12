@@ -29,8 +29,8 @@ The mapmaking community has a number of capable 3D artists who are there to help
 
 I would love to see more collaboration happen in the mapmaking community, because not everyone wants to learn the entirety of Blender just to make a simple custom map. I had the pleasure of working with Panic on [Air Race](https://steamcommunity.com/sharedfiles/filedetails/?id=2204381361), and thanks to **gidek's** amazing Kismet work it has really taken on a life of its own.
 
-:::tip Discord server
-If you have an idea and are looking for collaboration, go the the #collaboration channel in the discord server and someone might be able to help you. If you have an idea that's way too big to do on your own, you can always post it in the #projects channel
+:::tip Discord Server
+If you have an idea and are looking for collaboration, check out the #collaboration channel in the Discord server and someone might be able to help you. If you have an idea that's way too big to do on your own, you can always post it in the #projects or #map-ideas channels.
 :::
 
 ## Rocket League Itself

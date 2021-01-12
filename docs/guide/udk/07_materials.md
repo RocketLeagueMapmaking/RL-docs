@@ -45,7 +45,7 @@ We’re going to put a grass material on the ceiling, and a glass material on th
 In the [Content Browser](../../essential/08_content_browser), **search for “grass” within the [Park_P](../../essential/04_dummy_classes.html#park-p) package. It can also help to filter down to only Materials and Material Instances (Constant).** Remember to clear these filters when you need to search for something else. **Select `GrassAndBush_Mat`. Select the ceiling, and press F4 to bring up its properties. Search for “mater” and assign this to its first Materials slot using the green arrow.**
 
 :::tip
-To view how a material looks you can download [the Bibliothèque d'Alexandrie](../../resources/downloads.html#miscellaneous-downloads). If you drive close enough you will see the material name you can use in UDK (you can also view particles) 
+To view how a material looks you can download [the Bibliothèque d'Alexandrie](../../resources/downloads.html#miscellaneous-downloads). By touching a cube, you will see the material name to grab from the Dummy Assets.
 :::
 
 This will appear as basically a solid color in the editor. We are unable to use fully custom materials in Rocket League, which means that you just have to deal with this for now.

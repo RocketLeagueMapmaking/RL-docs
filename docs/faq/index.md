@@ -152,7 +152,7 @@ Answered by:
 
 :::details How do I test my maps?
 
-The fastest way to test your map is by using [the bat script](../essential/05_project_setup.html#batch-script-for-quickly-testing-maps-bsfqtm) from the beginning of this guide and overwrite `Labs_Utopia_P.upk` with your map. If you used the [RLLM UDK RL setup script](../essential/03_installing.html#rocketleaguemapmaking-udk-rl-setup-script) this file will be located in `{UDK Folder}\UDKGame\Content\Maps\`. Drag your map onto the script and open the Utopia map in Rocket League and you are ready to go! You can read more about it [here](../guide/udk/04_test). To test your maps in multiplayer (recommended if you make use of Kismet and want the map to have multiplayer) you can check one of [these options](../guide/multiplayer/01_multiplayer.html#testing-multiplayer)
+The fastest way to test your map is by using [the .bat script](../essential/05_project_setup.html#batch-script-for-quickly-testing-maps-bsfqtm) from the beginning of this guide to overwrite `Labs_Utopia_P.upk` with your map. If you used the [RLMM UDK RL setup script](../essential/03_installing.html#rocketleaguemapmaking-udk-rl-setup-script) this script will be located in `{UDK Folder}\UDKGame\Content\Maps\`. Drag your map onto the script, open the Utopia Retro map in Rocket League, and you are ready to go! You can read more about it [here](../guide/udk/04_test). To test your maps in multiplayer (recommended if you make use of Kismet and want the map to have multiplayer) you can check out [this corner of the website.](../guide/multiplayer/01_multiplayer.html#testing-multiplayer)
 
 Tags: [multiplayer](../guide/multiplayer/01_multiplayer), [testing](../guide/udk/04_test)
 
@@ -160,7 +160,7 @@ Answered by: Ghostrider-05
 :::
 :::details How do I upload to the Steam Workshop?
 
-Although Psyonix has released their [own workshop uploader tool](../guide/multiplayer/02_publishing.html#psyonix-uploader-tool), we do not recommend to use it (unless you are somehow able to upload with the tool). SteamCMD is a more popular choice to [upload a custom map to the steam workshop](../guide/multiplayer/02_publishing). Before uploading your map you can already make a preview image (or multiple) or a youtube video highlighting what your map looks like. The preview image will be displayed on [the steam workshop](https://steamcommunity.com/app/252950/workshop/) and Steam players can also see this image under the `workshop` tab in the play menu (some map loaders might also be able to show it).
+Although Psyonix has released their [own Workshop Uploader tool](../guide/multiplayer/02_publishing.html#psyonix-uploader-tool), we do not recommend using it (unless you are magical). SteamCMD is a more dependable choice to [upload a custom map to the Steam Workshop](../guide/multiplayer/02_publishing). Before uploading your map you will need to make a preview image (or multiple). The preview image will be displayed on [the Steam Workshop](https://steamcommunity.com/app/252950/workshop/), and Steam players can also see this image under `Play > Extra Modes > Workshop` in the game.
 
 Tags: [publishing](../guide/multiplayer/02_publishing)
 
@@ -168,7 +168,7 @@ Answered by: Ghostrider-05
 :::
 :::details How do I play custom maps with friends?
 
-If you play on pc (either on Steam or Epic Games) you can go the [playing maps](../guide/multiplayer/03_playing) page which explains everything on how to play custom maps online with friends. If you play on console, you would have to wait until there's an in-game option to play custom maps.
+If you play on PC (either on Steam or Epic Games) you can go the [playing maps](../guide/multiplayer/03_playing) page which explains everything on how to play custom maps online with friends. Custom maps currently are not supported on consoles.
 
 Tags: [multiplayer](../guide/multiplayer/01_multiplayer), [playing](../guide/multiplayer/03_playing)
 

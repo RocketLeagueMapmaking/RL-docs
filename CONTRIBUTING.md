@@ -18,9 +18,9 @@ We have some minor style requirements for documentation additions:
 - When naming your readme files and folders, use [snake_case](https://en.wikipedia.org/wiki/Snake_case) for file naming conventions.
 - If you are changing / adding content related to UDK, check your changes in UDK (only follow the content you have written and not your own knowledge). Any PR with changes in UDK should be reviewed.
 - If you are adding image resources: 
-  - pay attention to their file size: images above 1MB will not be accepted, and anything above 500KB should be reviewed.
+  - pay attention to their file size: images above 5MB will not be accepted, and anything above 1MB should be reviewed.
   - Images should be added in `/docs/.vuepress/public/images` and icons in `/docs/.vuepress/public/icons`
-- Create an issue for small contributions (such as fixing typo's or broken links)
+- Create an issue for small contributions (such as fixing typos or broken links)
 
 # Development and local testing
 The project utilises `vuepress` in order to create pages for our documentation, running on a Node backend.

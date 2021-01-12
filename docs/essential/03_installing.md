@@ -32,7 +32,7 @@ After you [download the UDK 2015 Installer](../resources/downloads.html#setup) f
 
 ![alt text](../.vuepress/public/images/image149.png "UT Sample Game will cause great sadness")
 
-**Install with an Empty Game.** The Sample Game has lots of cool things, but they’re completely irrelevant to Rocket League. Sorry.
+**Install with an Empty Game.** The Sample Game has lots of cool things, but they’re completely irrelevant to Rocket League and will only cause trouble. Sorry.
 
 ![alt text](../.vuepress/public/images/image243.png "Or whatever you wanna name it")
 
@@ -44,7 +44,7 @@ Ignore the extra options, and complete the install.
 
 ## Things to Change
 
-If you used one of the All-in-One packages, you may skip ahead to [the start an UDK project](05_project_setup.html#starting-a-new-project). If you are manually setting up UDK, or just want to see what is happening behind the scenes with those packages, please continue.
+If you used one of the All-in-One packages, you may skip ahead to [and start a UDK project](05_project_setup.html#starting-a-new-project). If you are manually setting up UDK, or just want to see what is happening behind the scenes with those packages, please continue.
 
 :::danger Manual installation
 If you are going to install UDK manually: don’t launch it, because we have some things to change.

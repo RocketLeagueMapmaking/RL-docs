@@ -47,6 +47,7 @@ These are some of the great unsolved mysteries of Rocket League Mapmaking. Conta
 * Unlimited map size (in multiplayer)
 * Truly custom materials (not MIC)
 * Custom (background) music / sounds (in-game)
+* Non-braindead bots
 
 Have you discovered a new mystery? Share it and it can go up here!
 :::

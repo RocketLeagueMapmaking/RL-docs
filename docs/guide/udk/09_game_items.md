@@ -61,8 +61,8 @@ If you want to create a set of standard Soccar spawns, **duplicate (Ctrl+D) this
 
 If you have been following along, you might have had the idea to get clever and use the Transform > Mirror X Axis tool. This works for getting them to the correct location, **but Mirroring across an axis also sets the scale in that axis to negative.** What this means for a spawn point is that you might spawn backward or upside down. If you do choose to use Mirror, reset all of the Scale options to 1 and then fix the rotation. In the end, you won’t save any time by using it.
 
-:::tip Demo spawn points
-If you add more spawnpoints than the 5 points above, they will be used for spawnpoints **only** when someone is demoed
+:::tip Demo Spawn Points
+If you add spawnpoints after the 5 above, they will be used **only** after someone is demolished
 :::
 
 ## GoalVolume_TA
@@ -123,7 +123,7 @@ At this point, the map should be playable in Training by yourself. To make it pl
 
 Open the Pylon_Soccar_TA’s Properties and Lock the window. ![alt text](../../.vuepress/public/images/image48.png)
 
-![alt text](../../.vuepress/public/images/image93.png "The Green Arrow is your favorite superhero")
+![alt text](../../.vuepress/public/images/image93.png "The Green Arrow is now your favorite superhero")
 
 **Click each of the PlayerStart_TA’s, then click the green arrow next to the Spawn Points field in the Pylon_Soccar_TA’s Properties.** Each time you click, the new one should get added to the bottom of the list.
 

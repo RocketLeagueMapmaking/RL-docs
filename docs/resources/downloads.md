@@ -50,7 +50,7 @@ This a list of useful things in order of importance:
 
 :::tip How to use the assets
 * For maps that are not yet in the dummy assets folder: just unzip and paste it alongside the rest of the Dummy Assets maps
-* For maps that are already in the dummy assets folder: remove the other map with the same name if you get an error of a duplicate asset
+* For maps that are already in the dummy assets folder: delete that map's folder and paste the new one
 :::
 
 * [Park_P Slightly-Less-Dummy Assets](https://drive.google.com/open?id=1rpQzqHgoRgpOBSHEpeDwvRtG3sYUXacl)
@@ -71,10 +71,10 @@ This a list of useful things in order of importance:
 
 ### Standard maps
 
-* [Shark standard](https://drive.google.com/file/d/14r0C8ova4SUmgyLsfYaB8_VmM1GKAbtD/view?usp=sharing)
-* [Park_P recreation](https://steamcommunity.com/sharedfiles/filedetails/?id=2325477336)
+* [Shark Standard](https://drive.google.com/file/d/14r0C8ova4SUmgyLsfYaB8_VmM1GKAbtD/view?usp=sharing)
+* [Park_P Recreation](https://steamcommunity.com/sharedfiles/filedetails/?id=2325477336)
 * [Simplicity_v5](https://drive.google.com/file/d/1byF7HAl7GTJcaw1nrTq-U9EYt1fCK5Zy/view?usp=sharing)
-* [Hoops template](https://steamcommunity.com/sharedfiles/filedetails/?id=2098030363)
+* [Hoops Template](https://steamcommunity.com/sharedfiles/filedetails/?id=2098030363)
 
 
 ### Fonts
