@@ -1,7 +1,7 @@
 # Rocket League Mapmaking Website Documentation
-Guide by Mr Swaggles
-Site design by ghostrider-05
-Webdev trickery by wejrox
+- Guide by Mr Swaggles
+- Site design by ghostrider-05
+- Webdev trickery by wejrox
 
 ## Deployment
 **NOTE**: These steps will currently only work for the main `rocketleaguemapmaking.com` domain, as it hasn't been made 
