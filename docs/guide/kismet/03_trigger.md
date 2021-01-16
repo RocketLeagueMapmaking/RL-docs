@@ -7,11 +7,11 @@ title: TriggerVolumes
 
 For some reason, UDK requires that you add TriggerVolume Touch Events in a different way from every other node. :shrug_emoji:
 
-<img src='../../.vuepress/public/images/image184.png' title="Hello TriggerVolume"></img>
+![alt text](../../.vuepress/public/images/image184.png "Hello TriggerVolume")
 
 **Place a TriggerVolume in the map using the [CSG Brush](../udk/01_csg) and the Add Volume button. Keep it selected. In the Kismet Editor, right click and select New Event Using TriggerVolume_# > Touch.**
 
-<img src='../../.vuepress/public/images/image236.png' title="Hello Pain"></img>
+![alt text](../../.vuepress/public/images/image236.png "Hello Pain")
 
 ## Max Trigger Count <Badge text="important" type="tip"/>
 

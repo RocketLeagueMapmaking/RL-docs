@@ -11,10 +11,10 @@ Thanks to the work of dedicated modders, there is a repository of wonderful Dumm
 
 These are UDK-ready classes with the same names and properties as the customized classes that were created by Psyonix developers for Rocket League. They allow us to drop in objects which have advanced functionality, such as goals and boost pads.
 
-The download may be found under [Downloads.](../resources/downloads.html#starting)
+The download may be found under [Downloads.](../resources/downloads.html#setup)
 If you feel like using git, you can run git clone within the UDK folder. Downloading the .zip file is totally fine too.
 
-<img src='../.vuepress/public/images/dummyclasses_location.png' title="Lots of goodies"></img>
+![alt text](../.vuepress/public/images/dummyclasses_location.png "Lots of goodies")
 
 Extract the .zip, and paste the four folders alongside all of the others in
 `{UDK Folder}\Development\Src`
@@ -143,7 +143,7 @@ If you ever change these files in the future, you will need to recompile again.
 
 In `{UDK Folder}\Binaries\`, run `UnrealFrontend.exe`. 
 
-<img src='../.vuepress/public/images/image81.png' title="Because you bake a cake before you ship it... thanks TJ"></img>
+![alt text](../.vuepress/public/images/image81.png "Because you bake a cake before you ship it... thanks TJ")
 
 **Click Script and run Full Recompile.** Close it after it finishes, and now you’re allowed to start.
 ...almost

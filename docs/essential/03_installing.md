@@ -28,13 +28,13 @@ To download this, you will need to make an account with RocketLeagueMods.com, ou
 
 ## Running the Installer
 
-After you [download the UDK 2015 Installer](../menu/downloads.html#starting) from my Drive (or any other friendly modder’s secret stash), double click it to start the install process. Accept the TOS.
+After you [download the UDK 2015 Installer](../resources/downloads.html#setup) from my Drive (or any other friendly modder’s secret stash), double click it to start the install process. Accept the TOS.
 
-<img src='../.vuepress/public/images/image149.png' title="UT Sample Game will cause great sadness"></img>
+![alt text](../.vuepress/public/images/image149.png "UT Sample Game will cause great sadness")
 
-**Install with an Empty Game.** The Sample Game has lots of cool things, but they’re completely irrelevant to Rocket League. Sorry.
+**Install with an Empty Game.** The Sample Game has lots of cool things, but they’re completely irrelevant to Rocket League and will only cause trouble. Sorry.
 
-<img src='../.vuepress/public/images/image243.png' title="Or whatever you wanna name it"></img>
+![alt text](../.vuepress/public/images/image243.png "Or whatever you wanna name it")
 
 In the Project Name field, enter a good name for your project. I call mine RLMM (Rocket League MapMaking) but yours will be referred to as `{ProjectName}` in this guide. Additionally, this folder will be called `{UDK Folder}` for the rest of this guide.
 
@@ -42,13 +42,13 @@ Twiddle your thumbs for a few minutes as it installs prerequisites and then inst
 
 Ignore the extra options, and complete the install. 
 
-:::danger
-Don’t launch it, because we have some things to change.
-:::
-
 ## Things to Change
 
-If you used one of the All-in-One packages, you may skip ahead to [the UDK Intro section](06_udk_intro). If you are manually setting up UDK, or just want to see what is happening behind the scenes with those packages, please continue.
+If you used one of the All-in-One packages, you may skip ahead to [and start a UDK project](05_project_setup.html#starting-a-new-project). If you are manually setting up UDK, or just want to see what is happening behind the scenes with those packages, please continue.
+
+:::danger Manual installation
+If you are going to install UDK manually: don’t launch it, because we have some things to change.
+:::
 
 <!-- ## Install locations <Badge text="not finished" type="warning"/>
 

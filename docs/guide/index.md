@@ -23,7 +23,7 @@ If so, you're ready to go.
 Resources and communities can seem a bit scattered. The Rocket League Mapmaking project is an attempt to consolidate all of the information into one place, at long last.
 
 * [Communities](../resources/modding_network)
-* [Guides](/guides)
+* [Guides](../resources/guides)
 * [Downloads](../resources/downloads)
 * [External References](../resources/references)
 * [Kismet Snippets Library](https://github.com/RocketLeagueMapmaking/Kismet)
@@ -34,14 +34,25 @@ You'll likely require assistance at some point in your journey. Please check the
 
 ## Support Us
 
-This website has no advertisements so you can focus on the important stuff. If you want to support us with content, ideas, or simply money for contests, we would greatly appreciate it!
-* [Contribute to this guide](../more/contribute)
-* [Donate (for future contests)](../more/contribute)
+This website has no advertisements so you can focus on the important stuff. If you want to support us with content, ideas, or simply money (for contests), we would greatly appreciate it!
+* [Contribute to this guide](../more/contribute.html#this-guide)
+* [Donate (for future contests)](../more/contribute.html#financial-contribution)
 
 ## Cheat Sheets
 Portions of these guides have been condensed into brief, single-page references, which may be found in the [Cheat Sheets](../cheatsheet) section. Refer to them when you just need a quick reminder.
 
-## Shortcuts <Badge text="beta" type="warning"/>
+:::warning Bounty Board
+These are some of the great unsolved mysteries of Rocket League Mapmaking. Contact us if you think you have cracked one of these mysteries:
+* Non-kismet code
+* Unlimited map size (in multiplayer)
+* Truly custom materials (not MIC)
+* Custom (background) music / sounds (in-game)
+* Non-braindead bots
+
+Have you discovered a new mystery? Share it and it can go up here!
+:::
+
+<!-- ## Shortcuts <Badge text="beta" type="warning"/>
 
 To save some time, you can jump to the following sections:
 * [Boost](/udk/10_boost)
@@ -58,5 +69,5 @@ To save some time, you can jump to the following sections:
 * [Template]()
 * [UDK Basics](../essential/06_udk_intro)
 * [UDK Tips](owl)
-* [UV Mapping](../modeling/06_uv)
+* [UV Mapping](../modeling/06_uv) -->
 

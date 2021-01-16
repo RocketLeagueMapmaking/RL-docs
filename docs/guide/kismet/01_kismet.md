@@ -30,7 +30,7 @@ The terms Link/Connector/Connection are used somewhat interchangeably, but they 
 
 ### Kismet Editor Window <Badge text="important" type="tip"/>
 
-<img src='../../.vuepress/public/images/image18.png' title="Nice and simple"></img>
+![alt text](../../.vuepress/public/images/image18.png "Nice and simple")
 
 1 - Toolbar - Various useful-ish functions, all in one place:
  - ![alt text](../../.vuepress/public/images/image87.png) Go back to the previous sequence

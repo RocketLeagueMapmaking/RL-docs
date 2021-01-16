@@ -212,7 +212,8 @@ module.exports = {
           '/guide/misc/02_grass',
           '/guide/misc/03_weather',
           '/guide/misc/04_stacked_transparency',
-          '/guide/misc/05_geometry_editor'
+          '/guide/misc/05_geometry_editor',
+          '/guide/misc/06_bots'
         ]
       }
     ],

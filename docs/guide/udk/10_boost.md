@@ -15,9 +15,7 @@ What a sad place the world would be without boost. Luckily, it can be added and 
 
 ## Boost Pill
 
-![alt text](../../.vuepress/public/images/image143.png)
-
-*I wish it looked like this in game*
+![alt text](../../.vuepress/public/images/image143.png "I wish it looked like this in game")
 
 The image shown above is a `VehiclePickup_Boost_TA` on top of an `FXActor_Boost_TA` and a StaticMeshActor. This one is a Boost Pill, as you can tell from the long legs on the model.
 
@@ -31,10 +29,10 @@ Next, there are some properties to set within the boost pill’s VehiclePickup_B
 
 |Search for|Change the line(s)|To this value|
 |------|------|------|
-|“loca”|Z|72|
-|“boo”|Boost Amount|9999|
-|“boo”|Boost Type|BoostType_Pill|
-|“res”|Respawn Delay|10|
+|“loca”| Z | 72 |
+|“boo” |Boost Amount| 9999|
+|“boo” | Boost Type| BoostType_Pill|
+|“res” |Respawn Delay|10|
 
 ![alt text](../../.vuepress/public/images/image21.png)![alt text](../../.vuepress/public/images/image48.png)
 **Lastly, lock the properties window. Select the `FXActor_Boost_TA`, then hit the arrow.** This tells the VehiclePickup which boost it should animate (and then hide) when a player passes through its hitbox. And speaking of the hitbox, its radius is given by the Boost Type selection.
@@ -79,8 +77,6 @@ Boost pickups on a standard Soccar map are at these locations. The ± symbol mea
 
 **Whenever you copy and paste a set of boost objects, the new `VehiclePickup_Boost_TA` will not have the FXActor assigned automatically. You must go in and manually reassociate them.**
 
-![alt text](../../.vuepress/public/images/image142.png)
-
-*A heart in a box (see it?)*
+![alt text](../../.vuepress/public/images/image142.png "A heart in a box (see it?)")
 
 You may have noticed that the boost pads still have no static mesh under them. We can solve this in two ways: **Make our own in Blender, rip one out of the game, or use a library of Dummy Assets to borrow things from Rocket League itself.** All are absolutely worth learning about.

@@ -19,13 +19,11 @@ It can be hard to know where to start, so here is a flowchart to help you pick t
 
 ### Getting Ready <Badge text="important" type="tip"/>
 
-
-<img src='../.vuepress/public/images/image66.png' title='This will have clickable links someday'></img>
+![alt text](../.vuepress/public/images/image66.png "This will have clickable links someday")
 
 ### Getting Down to Business <Badge text="important" type="tip"/>
 
-<img src='../.vuepress/public/images/image73.png' title='This will also have clickable links someday'></img>
-:::
+![alt text](../.vuepress/public/images/image73.png "This will also have clickable links someday")
 
 ## Getting Set Up <Badge text="important" type="tip"/>
 
