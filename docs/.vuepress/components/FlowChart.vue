@@ -31,7 +31,7 @@
 
                     <div class="category_examples">
                         <p v-html="messages.menu.example"></p>
-                        <p v-html="example" v-for="example in type.examples" class="example"></p>
+                        <p v-for="example in type.examples" class="example"><code>{{ example }}</code></p>
                     </div>
 
                     <div class="category_focus">
