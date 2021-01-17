@@ -3,7 +3,7 @@ import Contest from './components/Home/Contest'
 import Socials from './components/Home/Socials'
 import Footer from './components/Footer'
 import FlowChart from './components/FlowChart'
-import KismetNodes from './components/kismet/KismetSelect'
+import KismetNodes from './components/KismetSelect'
 
 export default ({
   Vue, // the version of Vue being used in the VuePress app
