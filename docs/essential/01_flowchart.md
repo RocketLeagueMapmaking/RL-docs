@@ -15,6 +15,10 @@ It can be hard to know where to start, so here is a flowchart to help you pick t
 
 <FlowChartComponent/>
 
+## Getting Set Up <Badge text="important" type="tip"/>
+
+Soon we will go over the tools and assets you need to get things done. But first, a few brief notes on common points of confusion.
+
 :::details Static Flowchart
 
 ### Getting Ready <Badge text="important" type="tip"/>
@@ -24,7 +28,3 @@ It can be hard to know where to start, so here is a flowchart to help you pick t
 ### Getting Down to Business <Badge text="important" type="tip"/>
 
 ![alt text](../.vuepress/public/images/image73.png "This will also have clickable links someday")
-
-## Getting Set Up <Badge text="important" type="tip"/>
-
-Soon we will go over the tools and assets you need to get things done. But first, a few brief notes on common points of confusion.
