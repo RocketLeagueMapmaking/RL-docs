@@ -15,7 +15,7 @@ It can be hard to know where to start, so here is a flowchart to help you pick t
 
 <FlowChartComponent/>
 
-:::details Old flowchart
+:::details Static Flowchart
 
 ### Getting Ready <Badge text="important" type="tip"/>
 
