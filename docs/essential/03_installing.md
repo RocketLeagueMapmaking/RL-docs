@@ -46,7 +46,7 @@ Ignore the extra options, and complete the install.
 
 If you used one of the All-in-One packages, you may skip ahead to [and start a UDK project](05_project_setup.html#starting-a-new-project). If you are manually setting up UDK, or just want to see what is happening behind the scenes with those packages, please continue.
 
-:::danger Manual installation
+:::danger Manual Installation
 If you are going to install UDK manually: don’t launch it, because we have some things to change.
 :::
 
