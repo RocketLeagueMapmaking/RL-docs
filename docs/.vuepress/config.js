@@ -158,7 +158,8 @@ module.exports = {
           '/guide/kismet/02_project',
           '/guide/kismet/03_trigger',
           '/guide/kismet/04_tagame',
-          '/guide/kismet/05_advanced'
+          '/guide/kismet/05_sound',
+          '/guide/kismet/06_advanced'
         ]
       },
 

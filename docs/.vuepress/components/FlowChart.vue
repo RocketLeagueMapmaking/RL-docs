@@ -330,12 +330,12 @@ export default{
                         {
                             question: 'Scores or Game Stats',
                             desc: 'Access to game information, or inserting your own game information',
-                            no: '<a href="../guide/kismet/04_advanced.html" target="_blank">Kismet - Advanced</a>'
+                            no: '<a href="../guide/kismet/06_advanced.html" target="_blank">Kismet - Advanced</a>'
                         },
                         {
                             question: 'Button Presses',
                             desc: 'A small description to add some text to the question!',
-                            no: '<a href="../guide/kismet/04_advanced.html" target="_blank">Kismet - Advanced</a>'
+                            no: '<a href="../guide/kismet/06_advanced.html" target="_blank">Kismet - Advanced</a>'
                         }
                     ]
                 },
