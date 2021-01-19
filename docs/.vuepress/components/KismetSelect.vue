@@ -1,33 +1,37 @@
 <template>
-    <div>
-        <h2>{{ title }}</h2>
-            <h3 v-html="actions.title"></h3>
-            <div v-for="node in actions.nodes" class="node">
-                <button @click="activate(actions.nodes.indexOf(node))" :class="{ active : active == actions.nodes.indexOf(node) }" class="collapsible">
-                    <span class="colored" v-html="node.span.text" :style="`background-color: ${node.span.color}`"></span> {{ node.text }}
-                </button>   
-                <div v-if="active === actions.nodes.indexOf(node)" class="content">
-                    <p>{{node.description}}</p>
-                    <div class="node-object"><hr>
-                        <p>Input links</p>
-                        <ul>
-                            <li v-for="item in node.properties.input" v-html="item"></li>
-                        </ul>
-                        <p>Output links</p>
-                        <ul>
-                            <li v-for="item in node.properties.output" v-html="item"></li>
-                        </ul>
-                        <p>Variable links</p>
-                        <ul>
-                            <li v-for="item in node.properties.output" v-html="item"></li>
-                        </ul><hr>
-                    </div>
-                    <ul>
-                        <li v-for="item in node.properties.notes" v-html="item"></li>
-                    </ul>
-                    <!-- image? -->
-                </div>
+    <div class="node">
+        <button @click="activate(0)" :class="{ active : active === 0 }" class="collapsible">
+            <span class="colored" v-html="Type" :style="`background-color: ${colors[types.indexOf(Type)]}`"></span> 
+            {{ Title }} 
+            <span class="folder" v-html="Folder"></span>
+        </button> 
+
+        <div v-if="active === 0 && (Image || InputLinks || OutputLinks || VariableLinks || description || Notes)" class="content">
+            <p>{{ Description }}</p>
+            <img v-if="Image" :src="`/images/kismet/${Image}.png`">
+            <div class="node-object" v-if="InputLinks || OutputLinks || VariableLinks">
+                <hr>
+                <p v-if="InputLinks">Input links</p>
+                <ul>
+                    <li v-for="link in InputLinks" v-html="link"></li>
+                </ul>
+                <p v-if="OutputLinks">Output links</p>
+                <ul>
+                    <li v-for="link in OutputLinks" v-html="link"></li>
+                </ul>
+                <p v-if="VariableLinks">Variable links</p>
+                <ul>
+                    <li v-for="link in VariableLinks" v-html="link"></li>
+                </ul>
+                <hr v-if="Notes">
             </div>
+            <ul>
+                <li v-for="link in Notes" v-html="link"></li>
+            </ul> 
+        </div>
+        <div v-if="active === 0 && (!Image && !InputLinks && !OutputLinks && !VariableLinks && !description && !Notes)" class="content">
+            <p v-html="errormessage"></p>
+        </div>
     </div>
 </template>
 
@@ -36,119 +40,40 @@
 // blue: #4F8CEE
 // green: #51D05C
 // orange: #C9AB35
+// array used for validation. If you want to change this, update also the types array in data() and add a color in the same index
+const types = ['New', 'Not working', 'Not documented','ACv3','ACv2','ACv1'];
+const Folders = ['TAGame','TAGame_decrypted'];
 
 export default {
-    props: ['title'],
+    props: {
+        Title: {
+            type: String,
+            required: true
+        },
+        Description: String,
+        Image: String,
+        Type:{
+            validator: function (value) {
+                return types.indexOf(value) !== -1
+            },
+            required: true
+        },
+        Folder: {
+            validator: function (value) {
+                return Folders.indexOf(value) !== -1
+            },
+        },
+        InputLinks: Array,
+        OutputLinks: Array,
+        VariableLinks: Array,
+        Notes: Array
+    },
     data(){
         return{
             active: -1,
-            colors:{
-                
-            },
-            actions:{
-                title: 'Actions',
-                nodes:[
-                    {
-                        text: 'Add Game Ball',
-                        description: 'Add a ball to the game',
-                        properties:{
-                        input:[
-                                'Input property'
-                        ],
-                        output: [
-                            'Output property'
-                        ],
-                        notes:[
-                            'A small note'
-                        ],
-                        },
-                      
-                            span:{
-                                color: '#E74343',
-                                text: 'Not documented'
-                            }
-                        },
-                        {
-                            text:"Another node",
-                            description: 'test',
-                            properties:{
-                                input:[
-                                        'Input property'
-                                ],
-                                output: [
-                                    'Output property'
-                                ],
-                                notes:[
-                                    'A small note'
-                                ],
-                            },
-                            span:{
-                                color: '#4F8CEE',
-                                text: 'New'
-                            }
-                        },
-                        {
-                            text:"Working kismet node",
-                            description: 'test',
-                            properties:{
-                                input:[
-                                        'Input property'
-                                ],
-                                output: [
-                                    'Output property'
-                                ],
-                                notes:[
-                                    'A small note'
-                                ],
-                            },
-                            span:{
-                                color: '#51D05C',
-                                text: 'ACv3'
-                            }
-                        },
-                        {
-                            text:"Get Game Ball",
-                            description: 'test',
-                            properties:{
-                                input:[
-                                        'Input property'
-                                ],
-                                output: [
-                                    'Output property'
-                                ],
-                                notes:[
-                                    'A small note'
-                                ],
-                            },
-                            span:{
-                                color: '#C9AB35',
-                                text: 'Not working'
-                            }
-                        },
-                        {
-                            text:"Kismet node",
-                            description: 'test',
-                            properties:{
-                                input:[
-                                    'Input property'
-                                ],
-                                output: [
-                                    'Output property'
-                                ],
-                                notes:[
-                                'A small note'
-                                ],
-                            },
-                            span:{
-                                    color: '#C9AB35',
-                                    text: 'Not working'
-                            },
-                        }
-                    ]
-            },
-            events:{
-
-            }
+            types: ['New', 'Not working', 'Not documented','ACv3','ACv2','ACv1'],
+            colors: ['#4F8CEE','#E74343','#C9AB35','#51D05C','#51D05C','#51D05C'],
+            errormessage: "Nothing has been added about this node"
         }
     },
     methods:{
@@ -353,8 +278,13 @@ export default {
   margin: 0px;
   transition: 0.5s;
 }
-.node-object{
-    // background-color: #333333;
-    // padding: 5px;
+.folder{
+    float: right;
+    color: #222;
+}
+@media screen and (max-width: 500px) {
+    .folder{
+        display: none;
+    }
 }
 </style>

@@ -17,10 +17,9 @@ export default ({
   Vue.component('SocialsComponent', Socials)
 
   Vue.component('FooterComponent', Footer)
+
   Vue.component('FlowChartComponent', FlowChart)
-
-
-  Vue.component('KismetComponent', KismetNodes)
+  Vue.component('KismetNode', KismetNodes)
 
 
 }
