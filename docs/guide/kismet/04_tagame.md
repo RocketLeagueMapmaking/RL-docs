@@ -12,12 +12,9 @@ Only the TAGame nodes are documentated on this page as they were added by Psyoni
 - [Events](https://docs.unrealengine.com/udk/Three/KismetReference.html#Events)
 
 :::warning UDK documentation: special cases
-Nodes that are not working:
-- All events that mention `mobile` since Rocket League is not on mobile
-- node
-
-Notes on other nodes:
-- `Console commands`: working commands are: `restartlevel`
+- All events that mention `mobile` are not working since Rocket League is not on mobile
+- All nodes beginning with an unreal command which starts with `set ` or `setnopec ` are disabled by Psyonix. This means that we can't use the node `Modify property`
+- All HUD events are not working because the render event node is disabled. For rendering images / animations you should use [flash and scaleform]()
 :::
 
 ## TAGame
@@ -29,15 +26,20 @@ Make sure that you have downloaded [the latest classes](https://github.com/Rocke
 ### Actions 
 ---
 
-<KismetNode Title="Add Game Ball" Type="Not documented"
-Description="Add a ball to the game" Image="add_game_ball" Folder="TAGame"
-:InputLinks="['test','test2']"
-:OutputLinks="['test','test2']"
-:VariableLinks="['test','test2']"
-:Notes="['test','test2']"
+<KismetNode 
+    Title="Add Game Ball" Status="Not documented" Image="add_game_ball"
+    Folder="TAGame" Type="Actions" 
+    Description="Add a ball to the game"  
+    :InputLinks="['test','test2']"
+    :OutputLinks="['test','test2']"
+    :VariableLinks="['test','test2']"
+    :Notes="['test','test2']"
 />
 
-<KismetNode Title="Apply Car Products" Type="Not documented" Folder="TAGame_decrypted"/>
+<KismetNode 
+    Title="Apply Car Products" Status="Not documented" 
+    Folder="TAGame_decrypted" Type="Actions" 
+/>
 
 ### Events
 ---

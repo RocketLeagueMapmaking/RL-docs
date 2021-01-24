@@ -13,30 +13,34 @@ On this page you can find some tips and tricks related to styling a page. Other 
 
 ### Kismet nodes
 ```md
-<KismetNode title="Kismet Node" type="Not documented" Folder='TAGame' Image="add_game_ball"
-description="Add a Kismet node to the documentation" 
-:InputLinks="['Add','Remove']"
-:OutputLinks="['Added','Removed']"
-:VariableLinks="['ball','Targets']"
-:Notes="['This node is synchronous','This nodes requires x or y']"
+<KismetNode 
+    Title="Kismet Node" Status="Not documented" Image="add_game_ball"
+    Folder="TAGame" Type="Actions"
+    Description="Add a Kismet node to the documentation" 
+    :InputLinks="['Add','Remove']"
+    :OutputLinks="['Added','Removed']"
+    :VariableLinks="['ball','Targets']"
+    :Notes="['This node is synchronous','This nodes requires x or y']"
 />
 ```
-<KismetNode title="Kismet Node" type="Not documented" Folder='TAGame' Image="add_game_ball"
-description="Add a Kismet node to the documentation" 
-:InputLinks="['Add','Remove']"
-:OutputLinks="['Added','Removed']"
-:VariableLinks="['ball','Targets']"
-:Notes="['This node is synchronous','This nodes requires x or y']"
+<KismetNode
+    Title="Kismet Node" Status="Not documented" Image="add_game_ball"
+    Folder="TAGame" Type="Actions"
+    Description="Add a Kismet node to the documentation" 
+    :InputLinks="['Add','Remove']"
+    :OutputLinks="['Added','Removed']"
+    :VariableLinks="['ball','Targets']"
+    :Notes="['This node is synchronous','This nodes requires x or y']"
 />
 
 *General properties:*
-* `title`: Name of the kismet node used in UDK 
+* `Title`: Name of the kismet node used in UDK 
     * Type: `String`
     * Required: `true`
-* `description`: Summary of what can be done with the kismet node 
+* `Description`: Summary of what can be done with the kismet node 
     * Type: `String`
     * Required: `false`
-* `type`: State of the kismet node
+* `Status`: State of the kismet node
     * Options: `Not documented`, `Not working`, `New`, `ACv3`, `ACv2`, `ACv1`
     * Type: `String`
     * Required: `true`
@@ -46,7 +50,11 @@ description="Add a Kismet node to the documentation"
 * `Folder`: The folder of the kismet node in UDK
     * Options: `TAGame`, `TAGame_decrypted`
     * Type: `String`
-    * Required: `false`
+    * Required: `true`
+* `Type`: Type of kismet node
+    * Options: `Actions`, `Events`
+    * Type: `String`
+    * Required: `true`    
 * `:Notes`: Tips and remarks about the kismet node
     * Type: `Array`
     * Required: `false`
@@ -66,6 +74,14 @@ To register an array as a property of a kismet node (or any other component) `:`
     * Type: `Array`
     * Required: `false`
 
+A not documentated node would then look like this:
+```md
+<KismetNode 
+    Title="Apply Car Products" Status="Not documented" 
+    Folder="TAGame_decrypted" Type="Actions" 
+/>
+```
+
 ## Vuepress assets
 
 ```md
@@ -84,6 +100,10 @@ This is a dangerous warning
 ::: details
 This is a details block
 :::
+
+::: warning Title
+This is a warning with a custom title
+:::
 ````
 
 ::: tip
@@ -100,6 +120,9 @@ This is a dangerous warning
 
 ::: details
 This is a details block
+:::
+::: warning Title
+This is a warning with a custom title
 :::
 ---
 ## Markdown
