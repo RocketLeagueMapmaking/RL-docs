@@ -112,6 +112,7 @@ module.exports = {
           '/guide/udk/10_boost',
           '/guide/udk/11_details',
           '/guide/udk/12_interlude_next',
+          '/guide/udk/21_map_settings'
           
         ]
       },
@@ -214,7 +215,8 @@ module.exports = {
           '/guide/misc/04_stacked_transparency',
           '/guide/misc/05_geometry_editor',
           '/guide/misc/06_bots',
-          '/guide/misc/07_ghostplugin'
+          '/guide/misc/07_ghostplugin',
+          '/guide/misc/08_custom_udk'
         ]
       }
     ],
