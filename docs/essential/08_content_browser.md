@@ -24,7 +24,7 @@ Resources for how to actually use UDK are few and far between (mainly because no
 
 ### Content Browser
 
-First off, you will want to open the Content Browser. If it is not already open, go to `View > Browser Windows > Content Browser`, or find the ![alt text](../.vuepress/public/images/image61.png) button on the top bar. Aside from the actual editor window, this is the single most useful window. If you ever minimize it, it goes to the lower left of your left monitor (which might not even be where UDK is).
+First off, you will want to open the Content Browser. If it is not already open, go to `View > Browser Windows > Content Browser`, use `Ctrl + Shift + F` or find the ![alt text](../.vuepress/public/images/image61.png) button on the top bar. Aside from the actual editor window, this is the single most useful window. If you ever minimize it, it goes to the lower left of your left monitor (which might not even be where UDK is).
 
 ![alt text](../.vuepress/public/images/image34.png "The browser of content")
 
