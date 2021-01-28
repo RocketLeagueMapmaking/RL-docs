@@ -44,8 +44,18 @@ We’re going to put a grass material on the ceiling, and a glass material on th
 
 In the [Content Browser](../../essential/08_content_browser), **search for “grass” within the [Park_P](../../essential/04_dummy_classes.html#park-p) package. It can also help to filter down to only Materials and Material Instances (Constant).** Remember to clear these filters when you need to search for something else. **Select `GrassAndBush_Mat`. Select the ceiling, and press F4 to bring up its properties. Search for “mater” and assign this to its first Materials slot using the green arrow.**
 
-:::tip
-To view how a material looks you can download [the Bibliothèque d'Alexandrie](../../resources/downloads.html#miscellaneous-downloads). By touching a cube, you will see the material name to grab from the Dummy Assets.
+:::tip Bibliothèque d'Alexandrie
+The library allows you to see the map's content and find the name of what you want to get. You can then report the name into UDK to find the material you're looking for in the right package! You can find the library [here](../../resources/downloads.html#miscellaneous).
+
+*How to use*
+
+It's the same process as testing a map. You can overwrite a map (e.g. Labs_Utopia_P) with a library file, start the game and go to freeplay on this map. \
+The library map is divided in 3 parts for now: The Particles on the left, the Materials in the middle and the Material Instances on the right. \
+If you drive into a particle cube, the particle effect will be triggered and you'll get the particles name. If you drive into a material cube, the material name will be displayed.
+Then go back to UDK, fully load the map package you want and write the name in the research bar.
+
+*TIP:*
+Use Bakkes Mod to spot the materials specifically made for the different teams (some particles/materials don't work)
 :::
 
 This will appear as basically a solid color in the editor. We are unable to use fully custom materials in Rocket League, which means that you just have to deal with this for now.
