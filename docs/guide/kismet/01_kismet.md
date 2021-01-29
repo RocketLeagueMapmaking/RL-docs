@@ -81,7 +81,7 @@ If you wish to completely abuse the game for things like Chaos Rumble or (the or
 |External Variable|Named variables of any type from an external sequence ([see Sequences](01_kismet.html#sequences))|
 |Float|Numbers with decimal precision, like speed or Z location|
 |Int|Numbers with integer precision, like number of players|
-|Matinee Data|Animation data (see [Matinee](../udk/17_matinee))|
+|Matinee Data|Animation data ([see Matinee](../udk/17_matinee))|
 |Named Variable|Named variables of any type|
 |Object|Objects in the map, like the ball|
 |Player|Players themselves|
@@ -119,7 +119,7 @@ There are a few key nodes to keep in mind when working with Sequences, as they e
 
 |Node|Used for...|
 |------|------|
-|Action > Event > Activate Remote Event|Triggering a Remote Event|
+|Action > Event > Activate Remote Event|Triggering a Remote Event (asynchronous)|
 |Event > Remote Event|Activating a Sequence when that event is triggered|
 
 
