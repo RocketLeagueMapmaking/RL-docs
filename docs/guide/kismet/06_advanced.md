@@ -8,6 +8,8 @@ title: Advanced Kismet
 <!-- Netcode plugin by Cinderblock and events that can be synchronysed across players -->
 ### Netcode plugin
 
+The [Netcode Plugin](https://bakkesplugins.com/plugins/view/166) by CinderBlock allows for two-way communication between hosts and clients. This is extremely powerful, and we have only scratched the surface of what it can do. Look forward to more information in the future as the community learns more about it.
+
 ## Kismet Library
 
 I encourage you to ask for help in Discord, or even to reach out to people who have made maps that have features you want to either copy or improve upon. As always, give people credit if you borrow their hard work.

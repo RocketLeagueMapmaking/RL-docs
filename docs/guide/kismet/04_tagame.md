@@ -1,27 +1,27 @@
 ---
 title: Documentation
 ---
-# Kismet Nodes
+# TAGame Kismet Nodes
 
 ## UDK
 
-Only the TAGame nodes are documentated on this page as they were added by Psyonix to UDK. Check the [matinee](../udk/17_matinee) and [particle system](../udk/11_details.html#particle-systems) pages if you want to learn more about these topics. For all the other nodes you can view the official [unreal kismet reference](https://docs.unrealengine.com/udk/Three/KismetReference.html#Unreal%20Kismet%20Reference) or per category:
+Nodes from the TAGame folder were added to UDK by Psyonix. Visit the [Matinee](../udk/17_matinee) and [Particle System](../udk/11_details.html#particle-systems) pages if you want to learn more about these topics. For all other nodes you can head to the official [Unreal Kismet Reference Home Page](https://docs.unrealengine.com/udk/Three/KismetReference.html#Unreal%20Kismet%20Reference), or view per category:
 - [Actions](https://docs.unrealengine.com/udk/Three/KismetReference.html#Actions)
 - [Conditions](https://docs.unrealengine.com/udk/Three/KismetReference.html#Conditions)
 - [Variables](https://docs.unrealengine.com/udk/Three/KismetReference.html#Variables)
 - [Events](https://docs.unrealengine.com/udk/Three/KismetReference.html#Events)
 
-:::warning UDK documentation: special cases
-- All events that mention `mobile` are not working since Rocket League is not on mobile
-- All nodes beginning with an unreal command which starts with `set ` or `setnopec ` are disabled by Psyonix. This means that we can't use the node `Modify property`
-- All HUD events are not working because the render event node is disabled. For rendering images / animations you should use [flash and scaleform]()
+:::warning UDK Documentation: Special Cases
+- All events that mention `mobile` do not work since Rocket League is not on mobile (yet?)
+- All nodes beginning with an Unreal Command starting with `set ` or `setnopec ` are disabled by Psyonix. This also breaks the node `Modify Property`
+- HUD events will not work because the Render Event node is disabled. For rendering images and animations you should use [Flash and Scaleform]()
 :::
 
 ## TAGame
 
 ### Updating
 
-Make sure that you have downloaded [the latest classes](https://github.com/RocketLeagueMapmaking/RL-Dummy-Classes) or you might not see all of the nodes displayed on this page in UDK. Copy the folders containing the classes into `{UDK}\Development\Src\` and windows should copy only the new files (otherwise press `skip existing files` when copying). To add the new classes to UDK you have to do a full recompile in Unreal frontend. **Don't forget to make backups when recompiling!**
+Make sure that you have downloaded [the latest Dummy Classes](https://github.com/RocketLeagueMapmaking/RL-Dummy-Classes), or you might not see all of the nodes displayed on this page. Copy the folders containing the classes into `{UDK}\Development\Src\` and Windows should copy only the new files. You will then have to run a Full Recompile in Unreal Frontend. **It's a good idea to make backups before recompiling.**
 
 ### Actions 
 ---

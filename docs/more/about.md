@@ -27,7 +27,7 @@ These guys will be referred to as friendly/wonderful/amazing modders, so please 
 |**ButterandCream** | Discord/Reddit Admin, Rocket Launcher Creator |
 |**Bakkes** | Bakkesmod Creator |
 |**glhglh** | Collision Channels, AlphaConsole Plugin, Foundational Discoveries |
-|**CinderBlock** | Bakkesmod |
+|**CinderBlock** | Bakkesmod Genius |
 |**Lethamyr** | Countless Custom Maps, New Features, and Publicity |
 |**KarlHeinzSchneider** | Collision Channels, Foundational Discoveries |
 |**wejrox/JimJoms** | Web Development, Video Tutorials, One-Stop-Chop-Shop |
