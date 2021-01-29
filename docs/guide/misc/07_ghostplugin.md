@@ -32,4 +32,6 @@ This plugin lets you record and race against ghosts of other players.
 
 ![alt text](../../.vuepress/public/images/ghostplugin_2.png "Teleportation is fun")
 
-5. That's it!
+5. If you would like to allow users to change the color of the ghost, copy and paste this kismet code from [the Kismet Library](https://github.com/RocketLeagueMapmaking/Kismet/blob/master/plugins/thanrek_ghostplugin_ghostColor.txt). Link the **New Group** input of the Matinee Node to the ghost Actor. Set the ghost's material to `wheel_hamsterwheel_holographic_SF.wheel_hamsterwheel_holographic.Wheel_HW_Hamster_SE_MAT`.
+
+6. That's it!
