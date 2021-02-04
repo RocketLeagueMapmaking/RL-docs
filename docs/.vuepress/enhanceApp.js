@@ -1,5 +1,6 @@
 import Hero from './components/Home/Hero'
 import Contest from './components/Home/Contest'
+import Contest2 from './components/Home/Contest2'
 import Socials from './components/Home/Socials'
 import Footer from './components/Footer'
 import FlowChart from './components/FlowChart'
@@ -12,6 +13,7 @@ export default ({
 }) => {
 
   Vue.component('HeroComponent', Hero)
+  Vue.component('Contest2Component', Contest2)
   Vue.component('ContestComponent', Contest)
   Vue.component('SocialsComponent', Socials)
 
