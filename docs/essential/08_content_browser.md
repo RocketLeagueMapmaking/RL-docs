@@ -24,9 +24,9 @@ Resources for how to actually use UDK are few and far between (mainly because no
 
 ### Content Browser
 
-First off, you will want to open the Content Browser. If it is not already open, go to `View > Browser Windows > Content Browser`, use `Ctrl + Shift + F` or find the ![alt text](../.vuepress/public/images/image61.png) button on the top bar. Aside from the actual editor window, this is the single most useful window. If you ever minimize it, it goes to the lower left of your left monitor (which might not even be where UDK is).
+First off, you will want to open the Content Browser. If it is not already open, go to `View > Browser Windows > Content Browser`, use `Ctrl + Shift + F`, or find the ![alt text](~@images/UDK/essential/image61.png) button on the top bar. Aside from the actual editor window, this is the single most useful window. If you ever minimize it, it goes to the lower left of your left monitor (which might not even be where UDK is).
 
-![alt text](../.vuepress/public/images/image34.png "The browser of content")
+![alt text](~@images/UDK/essential/image34.png "The browser of content")
 
 The first tab, `Content Browser`, is used to browse through UDK packages within the UDK install. The lower left panel allows you to jump between packages. In the upper middle, you can filter the visible content by type, and also search by name in the bar above. If something isn’t showing up that you believe should be there, check that there is no name filter and no type filter. If it is still not there, UDK may have dynamically unloaded it. Right click the package, and click Fully Load.
 
@@ -38,7 +38,7 @@ To make custom maps easier to use, **every mesh/material/actor used needs to be 
 
 The second most useful tab of the Content Browser is Scene. In here, you can select and modify properties of all Actors in the world.
 
-![alt text](../.vuepress/public/images/image196.png "The browser of scene actors")
+![alt text](~@images/UDK/essential/image196.png "The browser of scene actors")
 
 The Properties panel on the right has a search bar at the top, which is extremely valuable for finding the parameter you want to change. **The most common things you will find yourself changing are “location,” “rotation,” and “material”.** This window is great for selecting multiple actors within the scene, and also for editing actors you can’t click (as we’ll encounter in the [Dummy Assets](../guide/udk/15_dummy_assets.md) section much later.
 
@@ -46,7 +46,7 @@ The Properties panel on the right has a search bar at the top, which is extremel
 
 Remember the weird Rocket League Dummy Classes folders/files? This is where you can find their contents (given that you correctly made UDK aware of the folders).
 
-![alt text](../.vuepress/public/images/image105.png "The browser of actor classes")
+![alt text](~@images/UDK/essential/image105.png "The browser of actor classes")
 
 The easiest way to use this tab is to search for the type of actor that you need to add, then drag it from here into the 3d editor window. For example, each boost pad will need an FXActor_Boost_TA on it to function like we would expect. This is where you would find that.
 

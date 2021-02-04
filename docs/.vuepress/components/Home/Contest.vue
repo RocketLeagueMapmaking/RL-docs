@@ -9,7 +9,7 @@
     </div>
 
     <div class='guide-intro'>
-      <img src='../../public/images/image260.png' alt='Maptember madness'></img>
+      <img src='../../public/images/home/image260.png' alt='Maptember madness'></img>
     </div>
   </section>
 </template>

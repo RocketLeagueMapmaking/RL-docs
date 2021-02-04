@@ -12,17 +12,6 @@
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
 
-      <div class='card card-social'>
-        <h2>See More</h2>
-        <div class='socials-icons'>
-          <p>
-            <a href="https://www.twitch.tv/mrswaggly"><img src="../../public/images/twitch-brands.svg" alt=""></a>
-            <a href="https://twitter.com/RLMapMaking?s=20"><img src="../../public/images/twitter-square-brands.svg" alt=""></a>
-            <a href="https://discord.gg/PWu3ZWa"><img src="../../public/images/discord-brands.svg" alt=""></a>
-            <a href="https://www.youtube.com/channel/UCp6gkqadtgsaZmPnex9MNiA/featured"><img src="../../public/images/youtube-square-brands.svg" alt=""></a>
-          </p>
-        </div>
-      </div>
     </div>
   </section> 
 </template>

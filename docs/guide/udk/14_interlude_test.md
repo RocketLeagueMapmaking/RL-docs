@@ -11,7 +11,7 @@ Near the [beginning of the guide](..essential/05_project_setup.html#batch-script
 
 **I keep a copy of this inside each project folder within Maps.** This way, I can drag the map onto this script and instantly load it into Rocket League.
 
-![alt text](../../.vuepress/public/images/image172.png "Thin windows for thin margins of error")
+![alt text](~@images/UDK/basics/image172.png "Thin windows for thin margins of error")
 
 Additionally, I like to keep the project folder open in a thin window just to the right of UDK. This way, I don’t have to switch back and forth to reload the map after every little change.
 

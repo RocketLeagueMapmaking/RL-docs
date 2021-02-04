@@ -65,7 +65,7 @@ For ease of use, I copy this script into the folder of each of my in-progress ma
 
 When you run UDK Editor, you will be faced with a welcome splash screen and a few options.
 
-![alt text](../.vuepress/public/images/image251.png "A nice day to be a cube on a platform in an infinite void")
+![alt text](~@images/UDK/essential/image251.png "A nice day to be a cube on a platform in an infinite void")
 
 If you want to have an animated skysphere around your world, use one of the Lighting templates. If you just want an entirely clean slate, go with the Blank Map option.
 

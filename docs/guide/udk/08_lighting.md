@@ -19,16 +19,16 @@ Save the map, load into the game and check out those beautiful shadows!
 
 Gotcha again! UDK is very particular about lighting because it is heavily optimized for efficiency. One of the first commercial games made with UDK/Unreal Engine 3 was the original Gears of War. That came out on November 6, 2007 (yes, you’re reading that number correctly). The Xbox 360’s GPU has roughly 1/50th of the computing power of a modern high-end graphics card like the GTX 1080Ti. It’s only due to very clever optimizations that Gears of War still looks pretty good.
 
-![alt text](../../.vuepress/public/images/image166.png)
+![alt text](~@images/UDK/basics/image166.png)
 
 ## Build Lighting
 
 One of the key optimizations used by UDK is a strategy called Light Mapping. This is a non-realtime process (as in you run it before playing the game/level/map). Using a more sophisticated and better-looking lighting model (as in mathematical model), UDK calculates shadows, glows, and other light effects, then generates 2D textures (called Light Maps) which are applied on top of existing materials. They are great for our purposes, but the key feature is the last part of that sentence.
 
 
- ![alt text](../../.vuepress/public/images/image176.png)**Building lighting will force your map to refresh the behavior of all materials.** If shadows are not showing up, or certain parts are wildly miscolored, building lighting will attempt to fix all of that. Before uploading a map, it is always a good idea to rebuild the lighting so it looks finished.
+ ![alt text](~@images/UDK/basics/image176.png)**Building lighting will force your map to refresh the behavior of all materials.** If shadows are not showing up, or certain parts are wildly miscolored, building lighting will attempt to fix all of that. Before uploading a map, it is always a good idea to rebuild the lighting so it looks finished.
 
-![alt text](../../.vuepress/public/images/image210.png "Task Failed Successfully!")
+![alt text](~@images/UDK/basics/image210.png "Task Failed Successfully!")
 
 When you build, UDK is inevitably going to complain about some things. In general you can ignore Warnings, but Errors should be resolved before publishing your map.
 
@@ -48,13 +48,13 @@ These are the most common things you’ll see and how to fix them:
 ### Lightmass Importance Volume
 If you start with a blank map, you are guaranteed to see an intimidating warning at some point:
 
-![alt text](../../.vuepress/public/images/image90.png)
+![alt text](~@images/UDK/basics/image90.png)
 
 **Your map will still work just fine,** despite the Critical Error and red exclamation mark. But, as it grows in complexity, this is something you will want to implement.
 
 The Lightmass Importance Volume tells UDK (and Rocket League) which portion of the map is most important to make pretty. In our case, this is the portion where players will be.
 
-![alt text](../../.vuepress/public/images/image57.png)
+![alt text](~@images/UDK/essential/image57.png)
 
 A Lightmass Importance Volume may be created by resizing the CSG Brush to the size of the playing field, then adding a LightmassImportanceVolume from the Volumes menu. That will fix this error and give you a much speedier Build Lighting process.
 

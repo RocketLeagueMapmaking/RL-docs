@@ -11,7 +11,7 @@ UDK has a nice feature for our exact problem. Using existing StaticMesh geometry
 
 **Right click the floor > Create Blocking Volume > Auto Convex Collision...**
 
-![alt text](../../.vuepress/public/images/image75.png)
+![alt text](~@images/UDK/basics/image75.png)
 
 Change a few of the sliders so that the bounding box is more precise. We specifically want **Splits to be 0** so that it is one solid collision box rather than a nonsensical archipelago. 
 
@@ -25,7 +25,7 @@ Change a few of the sliders so that the bounding box is more precise. We specifi
 
 I personally find it much cleaner to collide with meshes themselves, rather than placing meshes and additional physics objects which are the same shapes. One reason you might prefer the Option 1 route would be to optimize for incredibly elaborate meshes (e.g. a Terra Cotta Army map or something). However, a flat plane is not an elaborate mesh, so I believe this is a better solution.
 
-![alt text](../../.vuepress/public/images/image88.png "The new hotness")
+![alt text](~@images/UDK/basics/image88.png "The new hotness")
 
 **Inside the Park_P dummy assets package, find a StaticMesh called `Collision_Floor`. Select the floor StaticMesh in the 3D viewer and open its properties. Search for “mesh.” Click the green arrow to trade out the floor’s Static Mesh Component for the new one.**
 
@@ -48,20 +48,20 @@ To get the best of both worlds - a mesh we can collide with that also looks the 
 This section will be a lightweight crash-course experience for both modeling and UV mapping. Please see the [Blender guide](../blender/01_blender) for more information.
 
 :::details Blender Crash Course
-![alt text](../../.vuepress/public/images/image150.png "UvvU")
+![alt text](~@images/UDK/basics/05_blender_course/image150.png "UvvU") 
 
 In Blender, **switch immediately to the UV Editing window layout on the top bar. The panel on the right is for editing 3D objects**, and the panel on the left is for managing how 2D textures map onto the 3D object.
 
-![alt text](../../.vuepress/public/images/image178.png "Plain old plane")
-![alt text](../../.vuepress/public/images/image155.png)
+![alt text](~@images/UDK/basics/05_blender_course/image178.png "Plain old plane")
+![alt text](~@images/UDK/basics/05_blender_course/image155.png)
 
 **In Object Mode (press Tab so that the cube goes back to gray), delete the Cube and add a Plane. Press N to reveal the side toolbar, and in the Item tab, adjust Dimensions so that X is 100 meters and Y is 115 meters.** This is roughly the size of the field in this weird Blender meters vs UDK units world that we live in.
 
-![alt text](../../.vuepress/public/images/image68.png "Big plane")
+![alt text](~@images/UDK/basics/05_blender_course/image68.png "Big plane")
 
 **Switch back to Edit Mode. Select the UV map in the left panel and scale it by something between 10 and 100 by typing “S 100 Enter”.** It can be helpful to make a dummy material that looks like the UDK placeholder material to get a clearer picture of what you’re doing with this step, but more on that later as well.
 
-![alt text](../../.vuepress/public/images/image77.png "For Best eXport...")
+![alt text](~@images/UDK/basics/05_blender_course/image77.png "For Best eXport...")
 
 **Exit Edit Mode. Go to File > Export > FBX. Change the settings as indicated. Export your FBX to a location where you can easily find it, but that won’t cause a huge mess when you have hundreds of these in the future.**
 :::
@@ -70,11 +70,11 @@ In Blender, **switch immediately to the UV Editing window layout on the top bar.
 
 Once the mesh is made, head back to UDK to import it into the map package. **Simply drag the FBX file onto the Content Browser window. Click OK (andmake sure you’re inside the right package).** You should see a new asset appear within the viewer portion.
 
-![alt text](../../.vuepress/public/images/image170.png "Get your asset in here")
+![alt text](~@images/UDK/basics/image170.png "Get your asset in here")
 
 UDK will kindly try to figure out how to collide with these objects. But, remember that Psyonix replaced the whole physics engine, meaning that these checkboxes are dead to us. **Double click the newly imported Static Mesh and change these settings:**
 
-![alt text](../../.vuepress/public/images/image47.png "We don’t want their collisions anyway")
+![alt text](~@images/UDK/basics/image47.png "We don’t want their collisions anyway")
 
 **Using the Static Mesh swap technique from [Option 2](05_collidable_collisions.html#option-2-swap-in-collision-floor), trade out the old floor for the new one.** If you are doing Options 1, 2, and 3 like me, you will also have to move this back to (0,0,0).
 

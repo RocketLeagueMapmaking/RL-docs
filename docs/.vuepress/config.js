@@ -6,6 +6,14 @@ module.exports = {
   // Only target browsers currently popular, avoiding polyfills and speeding up build time.
   // Disable if we want ES5 transpilation for IE.
   evergreen: true,
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@images': '/docs/.vuepress/public/images/',
+        '@icons': '/docs/.vuepress/public/icons/'
+      }
+    }
+  },
   head: [
     ['meta',{name:"viewport", content:"width=device-width,initial-scale=1,maximum-scale=5,minimal-ui"}],
     ['link', {rel: 'icon', href: '/icons/logo_rlmm_round_144.png'}],

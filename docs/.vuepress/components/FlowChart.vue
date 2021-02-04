@@ -87,14 +87,6 @@
             </div>
 
         </div>
-
-        <div class="extra">  
-            <div class="item" v-for="item in boxs">       
-                <h2 v-html="item.title"></h2>
-                <p v-html="item.desc"></p>
-                <a v-bind:href="item.button.link"><button v-html="item.button.text"></button></a>
-            </div>
-        </div>
     </div>
 </template>
 
