@@ -1,15 +1,7 @@
 ---
-title: 'Map Detail'
+title: 'Volumes'
 ---
 # UDK Basics
-
-## Map Detail
-
-The sky is the limit for what you can add to a map. Please take time to mess with anything that sounds interesting, and maybe you’ll invent a fun new mechanic for the game.
-
-## Cinematic Camera
-
-This is entirely bonus material, but you have complete control over the camera angle shown when loading into a multiplayer game. **Simply add a CameraActor and point it at your map.** It has to be above height 0, but otherwise can be anywhere.
 
 ## Volumes
 
@@ -42,7 +34,7 @@ Hopefully the latter two are self-explanatory. RBCC_Ball seems to be nearly iden
 
 To create objects which have these collision properties, open the Properties window of a StaticMeshActor or a BlockingVolume. **Set the same parameters for a normal collision (uncheck Disable All Rigid Body and check Block Rigid Body). Then, search for “rbc” and select one of the RBCC options from above.**
 
-# Custom Brushes - Geometry Edit Mode
+## Custom Brushes - Geometry Edit Mode
 
 The standard Brush shapes should cover 95% of Volume needs, but there are a few ways to create truly custom volume shapes.
 
@@ -70,7 +62,7 @@ If you wish to create additional geometry, switch to the `Extrude` mode.
 
 **Select a face by clicking on it, then use the move tool to extrude a new region of the brush.** Again, you will have to click the Undo button if you get it wrong.
 
-# Custom Brushes - Brush Import
+## Custom Brushes - Brush Import
 
 For truly custom brush shapes and precise control over the brush shape (not to mention repeatability and reusability), the best strategy is to make them in 3D modeling software such as Blender.
 
@@ -83,5 +75,3 @@ UDK is able to use **.DXF** files as inputs to its brush system. This is a filet
 **At the bottom of the Brush menu, click `Import...`**. Find your brush and import it. If you don't see it, try pressing `B` a few times to hide and unhide it.
 
 You are now able to add volumes in whatever wacky shapes you want! There might be reasons you want hollow TriggerVolumes, or GravityVolumes shaped exactly to fill parts of your map.
-
-## Particle systems <Badge text="not finished" type="warning"/>

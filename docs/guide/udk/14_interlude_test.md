@@ -7,7 +7,7 @@ If you’re like me, you never get anything right on the first try. You probably
 
 You do not need to close Rocket League to test changes to your map. You just need to overwrite the file it’s using and reload the map in game. I also recommend setting the game to either Borderless or Windowed mode in the Video settings so that the process of jumping in and out is less painful.
 
-Near the [beginning of the guide](../essential/windows.html#batch-script-for-quickly-testing-maps-bsfqtm), I provided a small batch (.bat) script for quickly testing maps
+Near the [beginning of the guide](..essential/05_project_setup.html#batch-script-for-quickly-testing-maps-bsfqtm), I provided a small batch (.bat) script for quickly testing maps
 
 **I keep a copy of this inside each project folder within Maps.** This way, I can drag the map onto this script and instantly load it into Rocket League.
 
