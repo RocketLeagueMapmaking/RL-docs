@@ -14,6 +14,8 @@ tags:
 
 <HeroComponent/>
 
+<Contest2Component/>
+
 <ContestComponent/>
 
 <SocialsComponent/>

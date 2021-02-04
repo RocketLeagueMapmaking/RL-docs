@@ -28,6 +28,10 @@ The terms Link/Connector/Connection are used somewhat interchangeably, but they 
 * `Ctrl+A A` - Zoom to all nodes (if you’re ever hopelessly lost in the void)
 * `C (with node(s) selected)` - Add comment block
 
+:::tip More Hotkeys
+It is possible to [add kismet nodes](https://docs.unrealengine.com/udk/Three/KismetUserGuide.html#Hotkeys) with your keyboard, and you can also [change the hotkeys](../misc/08_custom_udk.html#udk-custom-keys) as you prefer!
+:::
+
 ### Kismet Editor Window <Badge text="important" type="tip"/>
 
 ![alt text](../../.vuepress/public/images/image18.png "Nice and simple")
@@ -81,7 +85,7 @@ If you wish to completely abuse the game for things like Chaos Rumble or (the or
 |External Variable|Named variables of any type from an external sequence ([see Sequences](01_kismet.html#sequences))|
 |Float|Numbers with decimal precision, like speed or Z location|
 |Int|Numbers with integer precision, like number of players|
-|Matinee Data|Animation data ([see Matinee](../udk/17_matinee))|
+|Matinee Data|Animation data (see [Matinee](../udk/18_matinee))|
 |Named Variable|Named variables of any type|
 |Object|Objects in the map, like the ball|
 |Player|Players themselves|

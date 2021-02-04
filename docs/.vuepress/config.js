@@ -109,9 +109,11 @@ module.exports = {
           '/guide/udk/07_materials',
           '/guide/udk/08_lighting',
           '/guide/udk/09_game_items',
-          '/guide/udk/10_boost',
-          '/guide/udk/11_details',
-          '/guide/udk/12_interlude_next',
+          '/guide/udk/10_map_settings',
+          '/guide/udk/11_volumes',
+          '/guide/udk/12_boost',
+          '/guide/udk/13_interlude_next',
+          '/guide/udk/14_interlude_test'
           
         ]
       },
@@ -139,13 +141,13 @@ module.exports = {
         collapsable: true, 
         sidebarDepth: 1,    
         children: [
-          '/guide/udk/14_dummy_assets',
-          '/guide/udk/15_upgrading',
-          '/guide/udk/16_custom_material',
-          '/guide/udk/17_matinee',
-          '/guide/udk/18_kactors',
-          '/guide/udk/19_skeletal_mesh',
-          '/guide/udk/20_extra_modes'
+          '/guide/udk/15_dummy_assets',
+          '/guide/udk/16_upgrading',
+          '/guide/udk/17_custom_material',
+          '/guide/udk/18_matinee',
+          '/guide/udk/19_kactors',
+          '/guide/udk/20_skeletal_mesh',
+          '/guide/udk/21_extra_modes'
         ]
       },
 
@@ -216,7 +218,8 @@ module.exports = {
           '/guide/misc/04_stacked_transparency',
           '/guide/misc/05_geometry_editor',
           '/guide/misc/06_bots',
-          '/guide/misc/07_ghostplugin'
+          '/guide/misc/07_ghostplugin',
+          '/guide/misc/08_custom_udk'
         ]
       }
     ],
@@ -293,7 +296,7 @@ module.exports = {
               },
               {
                 text: 'UDK Advanced',
-                link: '/guide/udk/14_dummy_assets'
+                link: '/guide/udk/15_dummy_assets'
               },
               {
                 text: 'Kismet',

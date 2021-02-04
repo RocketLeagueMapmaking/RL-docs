@@ -15,4 +15,4 @@ Do you have experience with extra modes and want to share your knowledge? Check 
 
 ## Rumble <Badge text="not finished" type="warning"/>
 
-## Heetseeker <Badge text="not finished" type="warning"/>
+## Heatseeker <Badge text="not finished" type="warning"/>

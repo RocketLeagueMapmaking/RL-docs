@@ -1,13 +1,13 @@
 ---
-title: 'Game Items'
+title: 'Rocket League Match Items'
 ---
 # UDK Basics
 
-## Game Items
+## Rocket League Match Items
 
-So, you can make a pretty cool looking box. That’s more than half the battle. Sadly, Rocket League requires a little more detail for the map to be truly playable. This section will explain how to add interesting elements to the map, such as player spawns, goals, teleporters, and boost.
+So, you can make a pretty cool looking box. That’s more than half the battle. Sadly, Rocket League requires a little more detail for the map to be truly playable. The upcoming sections will explain how to add interesting elements to the map, such as player spawns, goals, teleporters, and boost.
 
-This section will reference many custom classes that are available from the Dummy Classes section above. **If you don’t see them in UDK, you may need to repeat those steps.**
+This section will reference many custom classes that are available from the Dummy Classes repository. **If you don’t see them in UDK, you may need to repeat those steps or reinstall UDK with an easy setup script.**
 
 ![alt text](../../.vuepress/public/images/image167.png "Next stop, Hollywood")
 
@@ -15,7 +15,7 @@ These custom actor classes may be found in the Actor Classes tab of the Content 
 
 ## Pylon_Soccar_TA
 
-The Pylon is an object which Rocket League needs to detect that this is a playable map. Without it, you will not be able to spawn a game ball, and a number of other features such as automatic team coloration on the map will likely not happen.
+The Pylon is an object which Rocket League needs to detect that this is a playable map. Without it you will not be able to spawn a game ball, so Rocket League will crash if you attempt to start a Local Match on a Pylonless map.
 
 ![alt text](../../.vuepress/public/images/image102.png "You must construct additional pylon_soccar_ta’s")
 
@@ -131,6 +131,7 @@ Open the Pylon_Soccar_TA’s Properties and Lock the window. ![alt text](../../.
 
 If you need to change the center of the field, it can be a bit complicated. **The ball will spawn at the lowest Z point of the Field Extent, but if that is set to 0, you can use the Field Center to spawn it higher or lower.** This kind of thing is done much more easily with Kismet, which will be in a later section.
 
+## Cinematic Camera
 
-
+This is entirely bonus material, but you have complete control over the camera angle shown when loading into a multiplayer game. **Simply add a CameraActor and point it at your map.** It has to be above height 0, but otherwise can be anywhere.
 

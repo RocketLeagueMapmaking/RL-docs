@@ -39,6 +39,7 @@ tags:
 * `I`  - Crazy glowy fog mode
 * `O` - Hide all wireframe volumes
 * `F` - Show/hide world fog
+* `Alt+W` - Show/hide static meshes
 * `G` - Game mode - Hides all 2d sprite actors (lights, etc) which will be invisible in game
 * `H` - Hide selected - Undo with Ctrl+H or the eye with an X in section 14
 * `Alt+G/H/J` - Change viewport to top/front/side orthographic mode
@@ -47,5 +48,13 @@ tags:
 * `C` - Do a weird telescope zoom in (also Numpad 3)
 * `B` - Show/hide CSG brush
 * `1` - Center viewport on 0,0,0
-* `Numpad +` - Center viewport on active object
+* `Numpad +` / `Home` - Center viewport on active object
 * `Alt+Number Row` - Change viewport render mode
+
+### Miscellaneous Hotkeys
+* `Ctrl+Shift+F` - Open the Content Browser
+* `L + Left Click` - Create a Point Light
+* `Ctrl+Tab` - Cycle through open windows
+* `Ctrl+Shift+C Ctrl+Shift+V` - Copy/Paste using the [Clip Pad]()
+* `Left Click + F9` - Take a screenshot. Screenshots are stored in \
+`{UDK Folder}/UDKGame/Screenshots/Win64/`

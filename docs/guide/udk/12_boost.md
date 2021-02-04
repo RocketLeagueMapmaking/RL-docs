@@ -75,8 +75,8 @@ Boost pickups on a standard Soccar map are at these locations. The ± symbol mea
 |Pad|0|±1024|
 |Pad|±1024|0|
 
-**Whenever you copy and paste a set of boost objects, the new `VehiclePickup_Boost_TA` will not have the FXActor assigned automatically. You must go in and manually reassociate them.**
+**Whenever you copy and paste a set of boost objects, the new `VehiclePickup_Boost_TA` will not have the FXActor assigned automatically. You must go in and manually reassociate them.** It's easiest to do this in the Scene tab of the Content Browser, which will do a better job of preserving your selection as you go along.
 
 ![alt text](../../.vuepress/public/images/image142.png "A heart in a box (see it?)")
 
-You may have noticed that the boost pads still have no static mesh under them. We can solve this in two ways: **Make our own in Blender, rip one out of the game, or use a library of Dummy Assets to borrow things from Rocket League itself.** All are absolutely worth learning about.
+You may have noticed that the boost pads still have no static mesh under them. We can solve this in several ways: **Make our own in Blender, rip one out of the game, or use a library of Dummy Assets to borrow things from Rocket League itself.** All are absolutely worth learning about.
