@@ -1,6 +1,6 @@
 {
   "name": "rocket_league_map_making",
-  "version": "0.1.0",
+  "version": "0.8.4",
   "description": "A website containing information pertaining to the creation, extension, debugging, and concepts of Rocket League map making.",
   "homepage": "http://rocketleaguemapmaking.com",
   "repository": {
@@ -15,25 +15,19 @@
   "author": "Lucas van Duijn",
   "license": "ISC",
   "dependencies": {
-    "@bbob/html": "^2.5.8",
-    "@bbob/preset-html5": "^2.5.8",
-    "@chenfengyuan/vue-carousel": "^1.0.5",
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-brands-svg-icons": "^5.15.1",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/vue-fontawesome": "^2.0.0",
-    "axios": "^0.20.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/vue-fontawesome": "^2.0.2",
+    "axios": "^0.21.1",
     "node-fetch": "^2.6.1",
     "vue": "^2.6.12",
     "vue-template-compiler": "^2.6.12",
-    "vue-tweet-embed": "^2.4.0",
-    "vue-twitter": "^0.1.0",
-    "vueperslides": "^2.10.8",
     "vuepress-theme-default-prefers-color-scheme": "^1.1.2"
   },
   "devDependencies": {
-    "@vuepress/plugin-pwa": "^1.7.1",
-    "vuepress": "^1.7.1",
+    "@vuepress/plugin-pwa": "^1.8.0",
+    "vuepress": "^1.8.0",
     "vuepress-plugin-seo": "^0.1.4"
   }
 }

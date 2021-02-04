@@ -123,7 +123,7 @@ There are a few key nodes to keep in mind when working with Sequences, as they e
 
 |Node|Used for...|
 |------|------|
-|Action > Event > Activate Remote Event|Triggering a Remote Event|
+|Action > Event > Activate Remote Event|Triggering a Remote Event (asynchronous)|
 |Event > Remote Event|Activating a Sequence when that event is triggered|
 
 
