@@ -281,7 +281,7 @@ export default{
                         {
                             question: 'Rocket League Assets',
                             desc: 'Objects from the game itself',
-                            no: '<a href="../guide/udk/14_dummy_assets.html" target="_blank">UDK Advanced - Dummy Assets</a>'
+                            no: '<a href="../guide/udk/15_dummy_assets.html" target="_blank">UDK Advanced - Dummy Assets</a>'
                         }
                     ]
                 },
@@ -301,7 +301,7 @@ export default{
                         {
                             question: 'Boost Pads',
                             desc: 'Everyone\'s favorite orange orbs',
-                            no: '<a href="../guide/udk/10_boost.html" target="_blank">UDK Basics - Boost</a>'
+                            no: '<a href="../guide/udk/12_boost.html" target="_blank">UDK Basics - Boost</a>'
                         },
                         {
                             question: 'Special Effects',
@@ -342,12 +342,12 @@ export default{
                         {
                             question: 'Custom Textures',
                             desc: 'Stone, wood, metal, slime, clouds, or any combination of those five',
-                            no: '<a href="../guide/udk/16_custom_material.html#custom-materials" target="_blank">UDK Advanced - Custom Materials</a>'
+                            no: '<a href="../guide/udk/17_custom_material.html#custom-materials" target="_blank">UDK Advanced - Custom Materials</a>'
                         },
                         {
                             question: 'Rocket League Materials',
                             desc: 'Assets from the game',
-                            no: '<a href="../guide/udk/14_dummy_assets.html#dummy-materials" target="_blank">UDK Advanced - Dummy Assets</a>'
+                            no: '<a href="../guide/udk/15_dummy_assets.html#dummy-materials" target="_blank">UDK Advanced - Dummy Assets</a>'
                         },
                         {
                             question: 'Multiple Materials on One Mesh',
@@ -372,17 +372,17 @@ export default{
                         {
                             question: 'Simple Loops',
                             desc: 'Spinning fans or sailing boats',
-                            no: '<a href="../guide/udk/17_matinee.html#matinee" target="_blank">UDK Advanced - Matinee</a>'
+                            no: '<a href="../guide/udk/18_matinee.html#matinee" target="_blank">UDK Advanced - Matinee</a>'
                         },
                         {
                             question: 'Moving Collisions',
                             desc: 'Moving platforms or swinging hammers',
-                            no: '<a href="../guide/udk/18_kactors.html" target="_blank">UDK Advanced - KActors</a>'
+                            no: '<a href="../guide/udk/19_kactors.html" target="_blank">UDK Advanced - KActors</a>'
                         },
                         {
                             question: 'Movable Objects',
                             desc: 'Breakable walls or fake game balls',
-                            no: '<a href="../guide/udk/18_kactors.html" target="_blank">UDK Advanced - KActors</a>'
+                            no: '<a href="../guide/udk/19_kactors.html" target="_blank">UDK Advanced - KActors</a>'
                         }
                     ]
                 }

@@ -41,7 +41,7 @@ This website has no advertisements so you can focus on the important stuff. If y
 ## Cheat Sheets
 Portions of these guides have been condensed into brief, single-page references, which may be found in the [Cheat Sheets](../cheatsheet) section. Refer to them when you just need a quick reminder.
 
-:::warning Bounty Board
+## Bounty Board
 These are some of the great unsolved mysteries of Rocket League Mapmaking. Contact us if you think you have cracked one of these mysteries:
 * Non-kismet code
 * Unlimited map size (in multiplayer)
@@ -49,25 +49,4 @@ These are some of the great unsolved mysteries of Rocket League Mapmaking. Conta
 * Custom (background) music / sounds (in-game)
 * Non-braindead bots
 
-Have you discovered a new mystery? Share it and it can go up here!
-:::
-
-<!-- ## Shortcuts <Badge text="beta" type="warning"/>
-
-To save some time, you can jump to the following sections:
-* [Boost](/udk/10_boost)
-* [Collisions](/udk/05_collidable_collisions)
-* [Dummy Assets](/udk/14_dummy_asssets)
-* [KActors](/udk/18_kactors)
-* [Lighting](/udk/08_lighting)
-* [Map Models]()
-* [Materials](/udk/07_materials)
-* [Multiplayer](/multiplayer/02_playing)
-* [Quick Testing](/udk/13_interlude_test)
-* [Soccar setup]()
-* [StickyWalls](../essential/09_sticky_walls.md)
-* [Template]()
-* [UDK Basics](../essential/06_udk_intro)
-* [UDK Tips](owl)
-* [UV Mapping](../modeling/06_uv) -->
-
+Have you discovered a confounding new mystery? Let us know and we'll add it here.

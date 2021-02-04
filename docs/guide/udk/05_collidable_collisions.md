@@ -47,7 +47,7 @@ To get the best of both worlds - a mesh we can collide with that also looks the 
 
 This section will be a lightweight crash-course experience for both modeling and UV mapping. Please see the [Blender guide](../blender/01_blender) for more information.
 
-:::details Crash course blender
+:::details Blender Crash Course
 ![alt text](~@images/UDK/basics/05_blender_course/image150.png "UvvU") 
 
 In Blender, **switch immediately to the UV Editing window layout on the top bar. The panel on the right is for editing 3D objects**, and the panel on the left is for managing how 2D textures map onto the 3D object.
@@ -68,14 +68,14 @@ In Blender, **switch immediately to the UV Editing window layout on the top bar.
 
 ### Importing into UDK <Badge text="important" type="tip"/>
 
-When we have made our mesh, we head back to UDK to import this Static Mesh into the map package. **To do this, simply drag the FBX file onto the Content Browser window. Click OK (make sure you’re already inside the right Package).** You should see a new asset within the viewer portion.
+Once the mesh is made, head back to UDK to import it into the map package. **Simply drag the FBX file onto the Content Browser window. Click OK (andmake sure you’re inside the right package).** You should see a new asset appear within the viewer portion.
 
 ![alt text](~@images/UDK/basics/image170.png "Get your asset in here")
 
-UDK will kindly try to figure out how to collide with these objects. But, remember that Psyonix replaced the whole physics engine, meaning that these checkboxes are dead to us. **Double click the newly imported Static Mesh and change these settings.**
+UDK will kindly try to figure out how to collide with these objects. But, remember that Psyonix replaced the whole physics engine, meaning that these checkboxes are dead to us. **Double click the newly imported Static Mesh and change these settings:**
 
 ![alt text](~@images/UDK/basics/image47.png "We don’t want their collisions anyway")
 
 **Using the Static Mesh swap technique from [Option 2](05_collidable_collisions.html#option-2-swap-in-collision-floor), trade out the old floor for the new one.** If you are doing Options 1, 2, and 3 like me, you will also have to move this back to (0,0,0).
 
-Save all, load it, and test it out!
+**Save all, load it, and test it out!**
