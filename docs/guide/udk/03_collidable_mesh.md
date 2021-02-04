@@ -24,13 +24,13 @@ Unchecking “Disable All Rigid Body” allows for this object to have collision
 | “loca” |   Y |   0 | 
 | “loca” |   Z |     0 | 
 
-**Alternatively, right click the Move tool on the top toolbar:** ![alt text](../../.vuepress/public/images/image76.png)
+**Alternatively, right click the Move tool on the top toolbar:** ![alt text](~@images/UDK/essential/image76.png)
 
 A small window will pop up. **Enter 0, 0, and 0, and make sure Relative is unchecked.** With Relative unchecked, you **move the object to this location.** With Relative checked, you **move an object by this amount.**
 
 This same strategy applies to all of the tools shown in this section. It’s a very powerful and essential ability that’s hidden in a very hard-to-find way.
 
-![alt text](../../.vuepress/public/images/image136.png "Let’s get sticky, together")
+![alt text](~@images/UDK/basics/image136.png "Let’s get sticky, together")
 
 Lastly, we need to apply the `StickyWalls™` material to the floor. **Select the floor, press F4 to view its Properties window. Search for “phys” and you will see Phys Material Override. Select the `StickyWalls™` Physical Material within the Content Browser. Press the “Use selected object” green arrow to apply `StickyWalls™` to the StaticMeshActor.**
 
@@ -58,7 +58,7 @@ Inside the Properties windows for the `Pylon_Soccar_TA` and `PlayerStart_TA`:
 
 **Because these are based on Paths, you will need to Build Paths before this is playable. Better yet, do Build > Build All.**
 
-![alt text](../../.vuepress/public/images/image130.png "The next big hit")
+![alt text](~@images/UDK/basics/image130.png "The next big hit")
 
 There will be a few warnings when the build completes, but we can clear those up later.
 

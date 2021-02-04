@@ -19,7 +19,7 @@
 .headpage{
     height: calc(100vh - 3.6rem);
     background-color: #2d2d2d;
-    background-image: linear-gradient(180deg, rgba(0, 134, 29, 0.33) 0%, #000000 100%), url('../../public/images/rsz_home-stadium.png');
+    background-image: linear-gradient(180deg, rgba(0, 134, 29, 0.33) 0%, #000000 100%), url('../../public/images/home/rsz_home-stadium.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

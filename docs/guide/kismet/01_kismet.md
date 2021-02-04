@@ -30,20 +30,20 @@ The terms Link/Connector/Connection are used somewhat interchangeably, but they 
 
 ### Kismet Editor Window <Badge text="important" type="tip"/>
 
-![alt text](../../.vuepress/public/images/image18.png "Nice and simple")
+![alt text](~@images/kismet/guide/image18.png "Nice and simple")
 
 1 - Toolbar - Various useful-ish functions, all in one place:
- - ![alt text](../../.vuepress/public/images/image87.png) Go back to the previous sequence
- - ![alt text](../../.vuepress/public/images/image242.png) Go forward to the returned-from sequence
- - ![alt text](../../.vuepress/public/images/image154.png) Go up one sequence level
- - ![alt text](../../.vuepress/public/images/image62.png) Rename the current sequence
- - ![alt text](../../.vuepress/public/images/image188.png) Zoom to selected (`A`)
- - ![alt text](../../.vuepress/public/images/image208.png) Hide node’s unused connectors (also in a node’s right click menu)
- - ![alt text](../../.vuepress/public/images/image19.png) Reveal all of node’s connectors (also in a node’s right click menu)
- - ![alt text](../../.vuepress/public/images/image17.png) Search for nodes to place
- - ![alt text](../../.vuepress/public/images/image36.png) Search for nodes already in editor
- - ![alt text](../../.vuepress/public/images/image182.png) Update the list of nodes
- - ![alt text](../../.vuepress/public/images/image249.png) Open a second Kismet window
+ - ![alt text](~@images/kismet/guide/image87.png) Go back to the previous sequence
+ - ![alt text](~@images/kismet/guide/image242.png) Go forward to the returned-from sequence
+ - ![alt text](~@images/kismet/guide/image154.png) Go up one sequence level
+ - ![alt text](~@images/kismet/guide/image62.png) Rename the current sequence
+ - ![alt text](~@images/kismet/guide/image188.png) Zoom to selected (`A`)
+ - ![alt text](~@images/kismet/guide/image208.png) Hide node’s unused connectors (also in a node’s right click menu)
+ - ![alt text](~@images/kismet/guide/image19.png) Reveal all of node’s connectors (also in a node’s right click menu)
+ - ![alt text](~@images/kismet/guide/image17.png) Search for nodes to place
+ - ![alt text](~@images/kismet/guide/image36.png) Search for nodes already in editor
+ - ![alt text](~@images/kismet/guide/image182.png) Update the list of nodes
+ - ![alt text](~@images/kismet/guide/image249.png) Open a second Kismet window
 
 2 - Node Editor - Place, move, and interconnect nodes
 
