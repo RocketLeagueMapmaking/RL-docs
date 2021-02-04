@@ -51,9 +51,10 @@ tags:
 * `Numpad +` / `Home` - Center viewport on active object
 * `Alt+Number Row` - Change viewport render mode
 
-### Miscellaneous hotkeys
-* `L + Left Click` - create a pointlight
+### Miscellaneous Hotkeys
+* `Ctrl+Shift+F` - Open the Content Browser
+* `L + Left Click` - Create a Point Light
 * `Ctrl+Tab` - Cycle through open windows
-* `Ctrl+Shift+C Ctrl+Shift+V` - Copy/Paste using the [clip pad]()
-* `Left Click + F9` - take a screenshot. Screenshots are stored in \
+* `Ctrl+Shift+C Ctrl+Shift+V` - Copy/Paste using the [Clip Pad]()
+* `Left Click + F9` - Take a screenshot. Screenshots are stored in \
 `{UDK Folder}/UDKGame/Screenshots/Win64/`

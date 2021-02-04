@@ -23,6 +23,7 @@ Blender probably has the most hotkeys of any software in existence, since they a
 * `Ctrl + S` - Save! - Blender has gotten much, much more stable over the years, but still save often
 * `Tab` - Toggle Edit/Object Modes
 * `Z` - Viewport modes wheel
+* `Alt + Z` - Toggle X-ray view
 * `Shift + Space` - Favorite shortcuts menu
 * `A` - Select all
 * `Alt + A` / `A A` - Deselect all

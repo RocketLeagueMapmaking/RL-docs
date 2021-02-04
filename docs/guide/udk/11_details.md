@@ -40,25 +40,48 @@ If the UDK setup process went correctly, there should be three new entries in ad
 
 Hopefully the latter two are self-explanatory. RBCC_Ball seems to be nearly identical to the default, but perhaps with greater precision applied to the collision calculations.
 
-
 To create objects which have these collision properties, open the Properties window of a StaticMeshActor or a BlockingVolume. **Set the same parameters for a normal collision (uncheck Disable All Rigid Body and check Block Rigid Body). Then, search for “rbc” and select one of the RBCC options from above.**
 
-# Custom Volume Shapes
+# Custom Brushes - Geometry Edit Mode
 
-The standard Brush shapes should cover 99.5% of Volume needs, but there is a workaround to get a truly custom Volume shape.
+The standard Brush shapes should cover 95% of Volume needs, but there are a few ways to create truly custom volume shapes.
 
-![alt text](../../.vuepress/public/images/image171.png "Unblocking the potential of custom volumes")
+The first is using the Geometry Edit mode that is built into UDK. After using this extremely impressive and capable tool, you will never want to use Blender again.
 
-:::warning SAVE
-First, save your map. UDK likes to crash when doing this process on complex objects.
-:::
+![](../../.vuepress/public/images/custombrushes_step1.png "Brush yourself off")
 
-**Add a `StaticMeshActor` with your desired shape. Right click, select Create Blocking Volume, and then Auto Convex Collision…**
+**Right Click the default shape closest to your target shape.** This will bring up a window with a few adjustable parameters. The most important value is the number of Vertices/Sides/Faces so that you don't have to create vertices/sides/faces yourself later.
 
-![alt text](../../.vuepress/public/images/image134.png "Unblocking the potential of custom volumes")
+Make sure the brush is visible by pressing `B`. It may overlap existing volumes or geometry.
 
-After selecting the Auto Convex Collision, a small popup will appear. `Depth` refers to the precision of the shape around the object. `Max Hull Verts` refers to the number of points the collision will have. `Allow Splits` means that the result will actually be made of distinct pieces. This should be no problem for a TriggerVolume (which a player or ball merely needs to touch to interact with), but it will be problematic for a GoalVolume (which has to fully contain the ball to score a goal).
+![](../../.vuepress/public/images/custombrushes_step2.png "Blender 20.0")
 
-![alt text](../../.vuepress/public/images/image43.png "Trigger warning")
+**Enter Geometry Mode with this button in the top left of the UDK window (or press Shift+2).** This will reveal a small Geometry Tools window with a few different modes of operation. Generally, you will only need `Edit` and `Extrude` to get the maximum utility out of this.
+
+Clicking on the brush, you should see an array of vertices that respond to left clicks. `Ctrl + Left click` will select multiple vertices. Or, if you want to do some hand stretches, `Ctrl + Shift + Alt + Left click drag` will perform a box select.
+
+![](../../.vuepress/public/images/custombrushes_step3.png "The sky is the limit (the sky is a sphere in UDK)")
+
+Move, rotate, and scale it to your needs! **Remember that `Ctrl + Z` does not work in this mode. You will have to click the Undo button on the top toolbar.**
+
+If you wish to create additional geometry, switch to the `Extrude` mode.
+
+![](../../.vuepress/public/images/custombrushes_step4.png "Extra excellent extrusions")
+
+**Select a face by clicking on it, then use the move tool to extrude a new region of the brush.** Again, you will have to click the Undo button if you get it wrong.
+
+# Custom Brushes - Brush Import
+
+For truly custom brush shapes and precise control over the brush shape (not to mention repeatability and reusability), the best strategy is to make them in 3D modeling software such as Blender.
+
+![](../../.vuepress/public/images/custombrushes_step5.png "Suzanne the Paintbrush")
+
+UDK is able to use **.DXF** files as inputs to its brush system. This is a filetype originally created for AutoCAD, but is a widely used standard supported by most 3D software. For whatever reason, Blender's .DXF exporter produces very small models, so you should **scale brushes by 100 before exporting.**
+
+![](../../.vuepress/public/images/custombrushes_step6.png "Import ant")
+
+**At the bottom of the Brush menu, click `Import...`**. Find your brush and import it. If you don't see it, try pressing `B` a few times to hide and unhide it.
+
+You are now able to add volumes in whatever wacky shapes you want! There might be reasons you want hollow TriggerVolumes, or GravityVolumes shaped exactly to fill parts of your map.
 
 ## Particle systems <Badge text="not finished" type="warning"/>

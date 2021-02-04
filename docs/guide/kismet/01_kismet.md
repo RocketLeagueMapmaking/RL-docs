@@ -28,8 +28,8 @@ The terms Link/Connector/Connection are used somewhat interchangeably, but they 
 * `Ctrl+A A` - Zoom to all nodes (if you’re ever hopelessly lost in the void)
 * `C (with node(s) selected)` - Add comment block
 
-:::tip More hotkeys
-With some hotkeys you can [add kismet nodes](https://docs.unrealengine.com/udk/Three/KismetUserGuide.html#Hotkeys) with your keyboard and you can also [change the hotkeys](../misc/08_custom_udk.html#udk-custom-keys) to match your preference!
+:::tip More Hotkeys
+It is possible to [add kismet nodes](https://docs.unrealengine.com/udk/Three/KismetUserGuide.html#Hotkeys) with your keyboard, and you can also [change the hotkeys](../misc/08_custom_udk.html#udk-custom-keys) as you prefer!
 :::
 
 ### Kismet Editor Window <Badge text="important" type="tip"/>
