@@ -27,7 +27,7 @@ RL will not crash anymore if you load exhibition or local match
 **Hop into Training and enjoy! (Note - RL will crash if you load an Exhibition or Local match)** -->
 **Hop into Training and enjoy!**
 
-## Modding experience
+## A Humble Apology
 
 ![alt text](../../.vuepress/public/images/image49.jpg "I’m sorry")
 
