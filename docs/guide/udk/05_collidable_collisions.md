@@ -7,7 +7,7 @@ title: 'Collidable Collisions'
 
 UDK has a nice feature for our exact problem. Using existing StaticMesh geometry, it can create a brush which has the same shape and then instantly create a BlockingVolume.
 
-**Save now (File > Save All, not Ctrl+S), if you haven’t in a while. UDK likes to crash when doing this process.**
+**Save now (File > Save Current Level, not Ctrl+S), if you haven’t in a while. UDK likes to crash when doing this process.**
 
 **Right click the floor > Create Blocking Volume > Auto Convex Collision...**
 
@@ -19,7 +19,7 @@ Change a few of the sliders so that the bounding box is more precise. We specifi
 
 **Don’t forget to apply the `StickyWalls©` Physical Material to the correct slot of the new collision box.** If you don’t have `StickyWalls©` on the ground, you’ll find yourself getting airborne much easier (which could be desirable for certain maps, but not this one). The brush is in maroon, and you will have to move it before you can select the newly created collision box. Or, you could select the BlockingVolume in the Scene tab of the Content Browser. **If it isn’t in the list, Save All should make it show up.**
 
-**Save All and update the renamed map inside `{CookedPCConsole}`. You have a working floor.**
+**Save Current Level and update the renamed map inside `{CookedPCConsole}`. You have a working floor.**
 
 ## Option 2 - Swap in Collision_Floor
 
@@ -78,4 +78,4 @@ UDK will kindly try to figure out how to collide with these objects. But, rememb
 
 **Using the Static Mesh swap technique from [Option 2](05_collidable_collisions.html#option-2-swap-in-collision-floor), trade out the old floor for the new one.** If you are doing Options 1, 2, and 3 like me, you will also have to move this back to (0,0,0).
 
-**Save all, load it, and test it out!**
+**Save Current Level, load it, and test it out!**

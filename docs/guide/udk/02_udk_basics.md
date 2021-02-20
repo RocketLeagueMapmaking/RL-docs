@@ -23,13 +23,13 @@ I am starting with a completely blank map to be thorough. **You don’t have to*
 
 #### Name Your Project <Badge text="important" type="tip"/>
 
-Go to File > Save All and pick a good name for the project. Mine is called CeilingGoal. It is saved inside `{UDK Folder}\UDKGame\Content\Maps\CeilingGoal\.` 
+Go to File > Save Current and pick a good name for the project. Mine is called CeilingGoal. It is saved inside `{UDK Folder}\UDKGame\Content\Maps\CeilingGoal\.` 
 
 :::warning
 Many things will not work properly if you have spaces in the project name, so either use camelCase, snake_case, or what3ver_MAKESxSENSE-toYou.
 :::
 
-[Here](https://drive.google.com/file/d/1_SRltyPZXlqwuA4s2rHA5H8GgMOiSqk-/view?usp=sharing) is another set of meshes to get you going. I fine-tuned the UVs so that they look reasonably good with no materials. You may use these or the ones inside Park_P.upk.
+[Here](https://drive.google.com/file/d/1_SRltyPZXlqwuA4s2rHA5H8GgMOiSqk-/view?usp=sharing) is another set of meshes to get you going. I fine-tuned the UVs so that they look reasonably good with no materials. You may use these or the ones inside Park_P.upk. If your UDK setup has the fully Dummy Assets package, this will be inside `{UDK Folder}\UDKGame\Content\DummyAssets\Maps\BeckwithPark` 
 
 ### Project Settings
 

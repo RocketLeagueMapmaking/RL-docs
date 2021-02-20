@@ -9,7 +9,7 @@ tags:
 
 ![alt text](~@images/UDK/essential/dangerous.png "Also dangerous to take this")
 
-## Getting started
+## Getting Started
 
 **This is not going to be easy, but it will be rewarding if you see it through.**
 **I believe in you.**
@@ -24,4 +24,4 @@ Join the [Rocket League Mapmaking Discord Server](https://discord.gg/PWu3ZWa) to
 
 ## Feedback
 
-The whole website can be found [on github](https://github.com/RocketLeagueMapmaking/RL-docs) and we <3 improvements and corrections (or send a message in our discord server with some feedback). If you want to report incorrect documentation, please open an issue on our [issue tracker](https://github.com/RocketLeagueMapmaking/RL-docs/issues)
+The whole website can be found [on GitHub](https://github.com/RocketLeagueMapmaking/RL-docs) and we <3 improvements and corrections (or drop a message in the Discord server with some feedback). If you want to report incorrect documentation, please open an issue on our [issue tracker](https://github.com/RocketLeagueMapmaking/RL-docs/issues)

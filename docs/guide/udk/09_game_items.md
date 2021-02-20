@@ -62,7 +62,7 @@ If you want to create a set of standard Soccar spawns, **duplicate (Ctrl+D) this
 If you have been following along, you might have had the idea to get clever and use the Transform > Mirror X Axis tool. This works for getting them to the correct location, **but Mirroring across an axis also sets the scale in that axis to negative.** What this means for a spawn point is that you might spawn backward or upside down. If you do choose to use Mirror, reset all of the Scale options to 1 and then fix the rotation. In the end, you won’t save any time by using it.
 
 :::tip Demo Spawn Points
-If you add spawnpoints after the 5 above, they will be used **only** after someone is demolished
+If you add spawnpoints after the 5 above, they will be used **only** after someone is demolished. Remember to also uncheck the box for `Primary Start`.
 :::
 
 ## GoalVolume_TA

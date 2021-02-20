@@ -24,6 +24,7 @@ The terms Link/Connector/Connection are used somewhat interchangeably, but they 
 * `Alt + Left click` - Destroy connector between nodes
 * `Ctrl + Left click` - Select multiple nodes
 * `Ctrl + Left click + Drag` - Move node(s)
+* `Ctrl + Alt + Left click + Drag` - Box select nodes
 * `A` - Zoom to fit selection
 * `Ctrl+A A` - Zoom to all nodes (if you’re ever hopelessly lost in the void)
 * `C (with node(s) selected)` - Add comment block

@@ -50,7 +50,7 @@ Make sure the brush is visible by pressing `B`. It may overlap existing volumes 
 
 **Enter Geometry Mode with this button in the top left of the UDK window (or press Shift+2).** This will reveal a small Geometry Tools window with a few different modes of operation. Generally, you will only need `Edit` and `Extrude` to get the maximum utility out of this.
 
-Clicking on the brush, you should see an array of vertices that respond to left clicks. `Ctrl + Left click` will select multiple vertices. Or, if you want to do some hand stretches, `Ctrl + Shift + Alt + Left click drag` will perform a box select.
+Clicking on the brush, you should see an array of vertices that respond to left clicks. `Ctrl + Left click` will select multiple vertices. Or, if you want to do some hand stretches, `Ctrl + Alt + Left click drag` will perform a box select.
 
 ![](../../.vuepress/public/images/custombrushes_step3.png "The sky is the limit (the sky is a sphere in UDK)")
 

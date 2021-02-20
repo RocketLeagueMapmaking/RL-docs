@@ -62,6 +62,6 @@ Inside the Properties windows for the `Pylon_Soccar_TA` and `PlayerStart_TA`:
 
 There will be a few warnings when the build completes, but we can clear those up later.
 
-**File > Save All. Let’s play.**
+**File > Save Current Level. Let’s play.**
 
 
