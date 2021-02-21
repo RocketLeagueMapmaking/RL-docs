@@ -211,7 +211,10 @@ module.exports = {
         collapsable: true, 
         sidebarDepth: 1,    
         children: [
-          '/guide/decryption/01_decryption'
+          '/guide/decryption/',
+          '/guide/decryption/01_assets',
+          '/guide/decryption/02_classes',
+          '/guide/decryption/03_sound'
         ]
       },
 
