@@ -9,6 +9,8 @@ tags:
 More Recent/Thorough Guides At The Top
 
 ## 2021
+
+* [Shark's map making tutorials]()
 * [Plumato's How to Play Steam Workshop Maps](https://youtu.be/wO_ApfzdLSM)
 
 ## 2020

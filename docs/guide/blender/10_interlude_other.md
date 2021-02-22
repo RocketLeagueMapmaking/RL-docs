@@ -13,6 +13,10 @@ Blender isn’t the only way to create 3D models. If you already have experience
 
 There are a number of websites where artists make 3D assets available for download. Most of these will not be too useful, because you are hopefully looking for meshes and materials specific to your map idea. Furthermore, most cost real amounts of money.
 
+:::tip Sketchfab Map making assets
+The map making community now has [a collection on SketchFab](https://sketchfab.com/rocketleaguemapmaking/collections) with a lot of 3D models which you can use in your maps. [Here](https://docs.google.com/document/d/1Y7dMsIFrcojLzzxvBCm4rlTr_07rRi7Q5v90tqq5crA/edit?usp=sharing) is a tutorial on how to upload meshes to the shared SketchFab account.
+:::
+
 ## Unreal Marketplace
 Epic Games, the parent company of Psyonix and creator of Unreal Engine, integrated a marketplace into Unreal Engine 4 for easy content sharing between game developers. There is an impressive amount of content available there both for free and for money. For example, Epic made public [all of the assets for its game Paragon](https://www.unrealengine.com/en-US/paragon)
 However, these assets are .UASSET files, meaning that you will have to first place them into an Unreal Engine 4 project and then [export them as .FBX files](https://www.youtube.com/watch?v=k5B7UOAT51E)

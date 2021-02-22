@@ -11,6 +11,8 @@ Anything you would like to see encapsulated as a Cheat Sheet? [Contact us](../mo
 
 ## General UDK Tips and Tricks <Badge text="not finished" type="warning"/>
 
+Some of these tips and more useful answers are also in the `!faq` command in the discord server. You can also [send a dm to the swagbot]().
+
 * Transparent materials select
 * Right click add
 * Content browser stuffs
