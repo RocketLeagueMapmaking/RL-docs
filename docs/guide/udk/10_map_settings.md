@@ -20,9 +20,9 @@ The World Info window from the `View` menu offers useful settings for the map as
 
 Some of the most useful Post Process settings are `Scene Desaturation`, `Scene Colorize`, and a combination of `Scene High Lights`, `Scene Mid Tones`, and `Scene Shadows`. I encourage you to make sense of the lights/tones/shadows numbers yourself, because they can feel a little weird and only you know the look you are hoping to achieve.
 
-### MapInfo_TA
+## Map Info <Badge text="not finished" type="warning"/>
 
-![alt text](../../.vuepress/public/images/newmapinfo.png "Very informative, much TA")
+![alt text](~@images/UDK/basics/newmapinfo.png "Very informative, much TA")
 
 As with other parts of this process, UDK and/or Rocket League will supply default parameters if you do not. To create a new MapInfo_TA object associated with your map, **open World Properties from the View menu. Search for `info`, then click the blue dropdown arrow at the right edge of the window and select `MapInfo_TA`.** This will create a new region with all of the adjustable parameters inside `MapInfo_TA`:
 
@@ -38,15 +38,29 @@ The most powerful setting inside of Map Info is the MFT dropdown. `MFT_XY` mirro
 
 Similarly, the XYRotation setting may be used for some great effects. To spawn all players in a line facing the same direction, you would use one of `MFT_X` or `MFT_Y` (depending on the map orientation) and set the rotation to 0.
 
-<!-- |Auto cam| |
+|Auto cam| |
 |------|-----|
-| | |
+| Map Reset Start Rotation | |
+| Map Reset Start Height | |
+| Map Reset Start Distance | |
+| Max Wait Time Till Ball Hit | |
+| Goal Scored Distance | |
+| Max Goal YZoom Out Distance | |
+| Max Goal XZoom Out Distance | |
+| Count Down FOV | |
+| Back Away From Wall Distance | |
 
 |Spectator| |
 |------|------|
-| | |
+| Pylon Extent Override | |
 
 |Sound| |
 |------|------|
-| arena sound settings |plays sound when a certain event happens. You can choose from one of [the existing arena sound settings]() | -->
+| Arena Sound Settings | Plays sound when a certain event happens. Class of [`ArenaSoundSettings_TA`]() | 
+| Crowd Sounds | Sounds made by the crowd. Class of [`CrowdSounds_TA`]() |
+| Crowd Actors | |
+| Play Global Crowd Sounds | |
 
+## Game Info <Badge text="not finished" type="warning"/>
+
+## Arena sounds <Badge text="not finished" type="warning"/>
