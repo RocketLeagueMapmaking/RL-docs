@@ -13,6 +13,18 @@ If you installed UDK with (a future version of) the [quick setup script](https:/
 This page is written for the International (American English - `INT`) version of UDK. You can change your language in `Preferences` > `Editor Language` or replace `INT` with the code for your language
 :::
 
+## Command line arguments <Badge text="not finished" type="warning"/>
+
+To use command line arguments open a command line window and `cd {UDK Folder}/Binaries/win32/` and you can run the following command:
+```
+UDK.exe ARG
+```
+- `ARG`: option to start UDK. No option will open the UDKGame.
+    - `editor` for opening the UDK editor 
+    - `make -full` to fully recompile
+
+The full list of arguments can be found in the [UDK documentation](https://docs.unrealengine.com/udk/Three/CommandLineArguments.html)
+
 ## Splash Screen
 
 To replace the UDK splash screen with your own image, save the image as a `.bmp` file (preferably with a size of 650*375), rename the image to `EdSplash` and replace the standard splash screen in \

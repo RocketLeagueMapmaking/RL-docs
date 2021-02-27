@@ -5,12 +5,12 @@ title: 'Testing'
 
 ## Testing the Map
 
-As mentioned in a few other places, the quickest and easiest way to test a map is to overwrite a default map in Rocket League with your own. A number of guides tell you to overwrite `Labs_Underpass_P.upk`, but that is a bad idea because that map is currently in the rotation for Rumble. **Instead, overwrite `Labs_Utopia_P.upk` because the map is weird and unused.**
+As mentioned in a few other places, a quick and easy way to test a map is to overwrite a default map in Rocket League with your own. A number of guides tell you to overwrite `Labs_Underpass_P.upk`, but that is a bad idea because that map is currently in the rotation for Rumble. **Instead, overwrite `Labs_Utopia_P.upk` because the map is weird and unused.**
 
 **Be sure to create a backup, however. You never know when you might need it.** What if you want to play online after working on mods, in the map you just overwrote? Well, say hello to the banhammer. Jk. But not really. You will receive a 5+ minute timeout if the Rocket League servers detect the modified game files in an online multiplayer game. **Psyonix has [stated that it welcomes and encourages mods](../../more/psyonix), so in general there is absolutely nothing to be afraid of.**
 
-:::tip Testing multiplayer
-You can test multiplayer on one computer using [this guide](https://steamcommunity.com/sharedfiles/filedetails/?id=311943358) if you have two steam accounts with rocket league. Or ask someone to [join your map](../multiplayer/01_multiplayer.html#testing-multiplayer)
+:::tip Map loader plugin
+[Map loader](https://bakkesplugins.com/plugins/view/187) is a bakkesmod plugin made by Thanrek which has the option to automatically reload your map in Rocket League when you save it in UDK. This way you can see the changes you make in UDK almost live in the game! 
 :::
 
 :::warning Make backups
@@ -22,10 +22,8 @@ For the multiplayer reason, **it is important, first and foremost, to create a b
 If worst comes to worst and you’ve ruined everything, you can always uninstall and reinstall Rocket League. A less drastic measure is to, in Steam, right click on Rocket League > Properties > Local Files > Verify Integrity of Game Cache.
 
 **Copy and paste your `{YourMapNameHere}.udk` file into `{CookedPCConsole}`. Rename it to `Labs_Utopia_P.upk` (note that the file extension changes from .udk to .upk). Alternatively, use the BSFQTM script from earlier in the guide.**
-<!-- 
-RL will not crash anymore if you load exhibition or local match
-**Hop into Training and enjoy! (Note - RL will crash if you load an Exhibition or Local match)** -->
-**Hop into Training and enjoy!**
+
+**Hop into Training and enjoy!** (an exhibition or local match will crash the game if a map is missing a [Pylon_Soccar_TA](09_game_items))
 
 ## A Humble Apology
 
@@ -50,6 +48,10 @@ You do not need to close Rocket League to test changes to your map. You just nee
 Near the [beginning of the guide](../essential/windows.html#batch-script-for-quickly-testing-maps-bsfqtm), I provided a small batch (.bat) script for quickly testing maps
 
 **I keep a copy of this inside each project folder within Maps.** This way, I can drag the map onto this script and instantly load it into Rocket League.
+
+:::tip Testing multiplayer
+You can test multiplayer on one computer using [this guide](https://steamcommunity.com/sharedfiles/filedetails/?id=311943358) if you have two steam accounts with rocket league. Or ask someone to [join your map](../multiplayer/01_multiplayer.html#testing-multiplayer)
+:::
 
 ![alt text](~@images/UDK/basics/image172.png "Thin windows for thin margins of error")
 

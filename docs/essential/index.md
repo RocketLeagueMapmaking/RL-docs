@@ -22,6 +22,15 @@ Please make sure that everything in this section has been completed before ventu
 
 Join the [Rocket League Mapmaking Discord Server](https://discord.gg/PWu3ZWa) to chat with the community!
 
+## Map making tutorials
+
+There are a few tutorial series on making workshop maps that can help you follow this guide:
+
+- [Shark's map making tutorials](https://youtube.com/playlist?list=PLIomqmQFYkVTl2FI2YBGzGuUZWSvZnS9d) (2021)
+- [Wejrox's RL Modding Series](https://www.youtube.com/watch?v=U8dx2IZNvZc&index=1&list=PLvhilV-QKVLQVtH_sxbcfQ-Mct-GBBVb9) (2016)
+
+A full list of all community guides and tutorials can be found on [this page](../resources/guides)
+
 ## Feedback
 
 The whole website can be found [on github](https://github.com/RocketLeagueMapmaking/RL-docs) and we <3 improvements and corrections (or send a message in our discord server with some feedback). If you want to report incorrect documentation, please open an issue on our [issue tracker](https://github.com/RocketLeagueMapmaking/RL-docs/issues)

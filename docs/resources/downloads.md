@@ -17,7 +17,7 @@ This a list of useful things in order of importance:
 * [Blender](https://www.blender.org/), wonderful 3D software
 * [Rocket League Dummy Classes](https://github.com/RocketLeagueMapmaking/RL-Dummy-Classes)
 * [Paint.net](http://www.getpaint.net/download.html#download) or [GIMP](https://www.gimp.org/downloads/), full-featured image editors
-* [Rocket League UPK Decryptor](./downloads.html#more-downloads) and [UE Viewer](./downloads.html#more-downloads) to decrypt RL assets
+* [Rocket League UPK Decryptor](./downloads.html#decryption) and [UE Viewer](./downloads.html#decryption) to decrypt RL assets
 * [Park_P Dummy Assets](https://drive.google.com/open?id=1rpQzqHgoRgpOBSHEpeDwvRtG3sYUXacl)
 
 ### Installer packages
@@ -42,6 +42,7 @@ These upk files are placed in `{UDK Folder}/UDKGame/Content/`
 
 * [Bibliothèque d'Alexandrie v1](https://drive.google.com/drive/folders/1m0opoXAToFngyBUjudwqui0KiI_uG5en?usp=sharing)
 * [JimJoms' C/C++ header to UnrealScript (UDK) converter](https://github.com/wejrox/HeaderToUS)
+* [DokterBotti's local gravity assistent](https://github.com/DoktorBotti/RL_LocalGravityAssistant)
 * [Autodesk FBX Converter Tool](https://www.autodesk.com/developer-network/platform-technologies/fbx-converter-archives)
 * [Workshop texture package](https://drive.google.com/file/d/1jklpjfEu4Yw97cjYaMDWRx8H2XFyji6U/view?usp=sharing)
 
@@ -94,9 +95,10 @@ Template maps for a [custom main menu]()
 ### Interfaces <Badge text="not finished" type="warning"/>
 
 * [Ecrase-Patate's Timer]()
+* [Ecrase-Patate's Psyonix Logo]()
 
 ### Fonts
 
 * [Michroma](https://drive.google.com/file/d/12rH2u7Xst4sbEgmwCwgAIudaSXa0yj9U/view?usp=sharing) - used for in-game HUD stuff, namely the scoreboard and boost meter
 * [Futura Bold](https://drive.google.com/file/d/1GMyFXe1SHskyXjxrYe7-AorAwVUivTwN/view?usp=sharing) - used for Rocket League logo (99% the same)
-* Liberation mono
+* [Liberation mono](https://drive.google.com/drive/folders/1Tc7YM9PoyUmt3qsHpxwDi1qIC4xQTVAV?usp=sharing)

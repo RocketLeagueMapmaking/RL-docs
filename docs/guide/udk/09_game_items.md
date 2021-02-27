@@ -135,3 +135,7 @@ If you need to change the center of the field, it can be a bit complicated. **Th
 
 This is entirely bonus material, but you have complete control over the camera angle shown when loading into a multiplayer game. **Simply add a CameraActor and point it at your map.** It has to be above height 0, but otherwise can be anywhere.
 
+## Ball indicator <Badge text="not finished" type="warning"/>
+
+## Goal indicators <Badge text="not finished" type="warning"/>
+

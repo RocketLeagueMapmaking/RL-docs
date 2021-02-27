@@ -18,9 +18,9 @@ The whole line would then look like this:
 -nomovie -AllowBackgroundAudio -high -dev -log -autodebug
 ```
 
-## Command line options <Badge text="beta" type="warning"/>
+## Command line arguments <Badge text="beta" type="warning"/>
 
-With command line options, you can configure the start of Rocket League. To open Rocket League with a command line option, open a command line window, `cd <path to your rocketleague.exe folder>` and run the following example command:
+With command line arguments, you can configure the start of Rocket League. To open Rocket League with a command line option, open a command line window, `cd <path to your rocketleague.exe folder>` and run the following example command:
 ```
 RocketLeague.exe DEFAULTMAP=Labs_Underpass_P?Game=TAGame.GameInfo_Tutorial_TA?Aerial?Hard?
 ```
@@ -38,7 +38,7 @@ Note that you can place after the match options all your preferred startup optio
     - `CollisionTest`: ???
     - `FTE`: ???
     - `Football`: Gridiron match
-    - `GFxMenu`: menu?
+    - `GFxMenu`: menu
     - `GameEditor`: ???
     - `GodBall`: heatseeker match
     - `Hockey`: snowday match
