@@ -15,5 +15,9 @@ ItsBrank has created [a mini-modding guide](https://docs.google.com/document/d/1
 
 To get started with decrypting the assets, you will need some tools. Each tool has a different focus to extract a certain type of asset. They can be installed in the Map making or in the Rocket League mods discord server with the RLAESKeyBot bot. 
 
-* UE Viewer (or uModel): used for [decrypting and exporting assets](01_assets)
+* uModel (or UE Viewer): used for [decrypting and exporting assets](01_assets)
 * UE Explorer: used for [decrypting classes](02_classes)
+
+:::warning uModel win32
+There are 2 versions of uModel, one from the RLAESKeyBot bot and [the win32 version](). If you can't open something try it again with the other version
+:::

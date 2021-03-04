@@ -327,7 +327,7 @@ module.exports = {
               },
               {
                 text: 'Decryption',
-                link: '/guide/decryption/01_decryption'
+                link: '/guide/decryption/'
               },
               {
                 text: 'Miscellaneous',
