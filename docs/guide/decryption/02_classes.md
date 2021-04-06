@@ -27,6 +27,51 @@ Almost every file that starts with: `SeqAct_` (action), `SeqCon_` (condition), `
 
 ## Recompiling
 
-When you have added a new class or changed an existing node, you have to recompile it before UDK can recognize it. This can be done by using Unreal Frontend, in the menu click `script` > `Full recompile`. If you see at the bottom of the logs `COMMANDLET 'UDK.exe make -full' SUCCEEDED`, the recompile was succesful and you can open UDK.
+When you have added a new class or changed an existing node, you have to recompile it before UDK can recognize it. This can be done by using Unreal Frontend, in the menu click `script` > `Full recompile`, or by [starting UDK with the `make -full` arguments](). If you see at the bottom of the logs `COMMANDLET 'UDK.exe make -full' SUCCEEDED`, the recompile was succesful and you can open UDK.
 
 ![](~@images/decryption/recompile.png "Task failed succesfully!")
+
+## Compile issues
+
+This list is only discussing a small list of errors and warnings that might not be clearly described in the compile logs or in the [Unreal Wiki compiler errors overview](https://wiki.beyondunreal.com/Compiler_errors_overview)
+
+### Errors
+
+- `Error, BEGIN OBJECT: The component name {Variable} is already used (if you want to override the component, don't specify a class)`.
+The variable has already been declared in the current or parent class. You can remove the `Class={VariableClass}` in the object and UDK will recompile this variable. 
+
+- `Error, Unrecognized type '{Variable}'`
+Add the structure in the _Types file in that package
+
+### Warnings
+
+- `Warning, ImportText ({Variable}): Unknown member {Property} in: ....`
+Update the structures in the _Types file in that package
+
+- `Warning, Invalid property value in defaults:         {Property}=none`
+Comment/delete that property as it has the same value as the default value as that property and thus does not need to be specified again
+
+- `Warning, Import failed for '{Property}': property is config ....` / `property is localized ....`
+This property needs to be specified in a .ini file and a default property does not need to be specified
+
+- `Warning, ImportText ({Property}: Missing opening parenthesis: 0`
+Comment/delete that property as it has the same value as the default value as that property and thus does not need to be specified again
+
+- `Warning, ComponentProperty {Package}.{ParentClass}:{Variable}: unresolved reference to '{VariableClass}'Default{Class}.{Property}''`
+UDK can't find the default objects, so change:
+`{Variable}={VariableClass}'Default{Class}.{Property}'`
+to:
+```uc
+begin object name={Property} Class={VariableClass}
+end object
+{Variable}={Property}
+```
+
+- `Warning, Unknown property in defaults:     {Variable}={Value} (looked in {ObjectClass})`
+This error is probably shown when you have this code:
+```uc
+begin object name={Variable} Class={ObjectClass}
+object end
+{Variable}={Value}
+``` 
+To remove this warning change `object end` to `end object`

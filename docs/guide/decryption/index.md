@@ -18,6 +18,14 @@ To get started with decrypting the assets, you will need some tools. Each tool h
 * uModel (or UE Viewer): used for [decrypting and exporting assets](01_assets)
 * UE Explorer: used for [decrypting classes](02_classes)
 
-:::warning uModel win32
+:::tip uModel win32
 There are 2 versions of uModel, one from the RLAESKeyBot bot and [the win32 version](). If you can't open something try it again with the other version
 :::
+
+## Logs
+
+As you will probably break something in UDK (or Rocket League) the logs might help you with figuring out the reason of the crash. The logs are located in:
+* `{UDK Folder}/UDKGame/Logs/` for UDK
+* `/documents/My Games/Rocket League/TAGame/Logs/` for Rocket League
+
+Additionaly, you will find `.dmp` files in the logs folder which you send to BakkesBot with the .dmp command to view the content of that file
