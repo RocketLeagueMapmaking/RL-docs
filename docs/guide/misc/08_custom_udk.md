@@ -3,27 +3,28 @@ title: Customize UDK
 tags:
     - UDK editor
     - Customize
-    - custom toolbar
 ---
 # Miscellaneous
 
 If you installed UDK with (a future version of) the [quick setup script](https://github.com/RocketLeagueMapmaking/UDK_RL_Setup), you may have already opted for some of these changes. Future tools will also streamline this process. Feel free to adjust them to your own preferences, since changing these settings will not require a full recompile. 
 
-:::tip Language
 This page is written for the International (American English - `INT`) version of UDK. You can change your language in `Preferences` > `Editor Language` or replace `INT` with the code for your language
-:::
 
-## Command line arguments <Badge text="not finished" type="warning"/>
+## Command line arguments
 
 To use command line arguments open a command line window and `cd {UDK Folder}/Binaries/win32/` and you can run the following command:
 ```
-UDK.exe ARG
+UDK.exe ARGUMENT
 ```
-- `ARG`: option to start UDK. No option will open the UDKGame.
+- `ARGUMENT`: option to start UDK. No option will open the UDKGame.
     - `editor` for opening the UDK editor 
-    - `make -full` to fully recompile
+    - `make -full` to fully recompile all scripts
 
 The full list of arguments can be found in the [UDK documentation](https://docs.unrealengine.com/udk/Three/CommandLineArguments.html)
+
+:::tip Logs
+You can add the `-logs` startup option to launch an additional window for UDK logs in real-time or in the menu: `View` > `Browser Windows` > `Logs`
+:::
 
 ## Splash Screen
 
@@ -40,7 +41,7 @@ If you have disabled the Welcome screen, you can access it in the `Help` menu. C
 - In `{UDK Folder}\Engine\Localization\INT\UnrealEd.int` you can change the text above the title by replacing `WelcomeScreen_Title` (line 71)
 
 :::warning Changing URLs
-For now we are unable to change the URLs. If you solve it, please let us know!
+URLs are bound to keys that can't be changed without having the source code of UDK
 :::
 
 ## Map Templates
@@ -58,40 +59,43 @@ You can replace the UDK templates with (your own) custom maps templates. Try to 
 9. Double click on the TemplateMapMetadata package for your template map, select your image from the content browser and add the image as a thumbnail
 10. Save the package again and exit UDK
 11. Open `{UDK Folder}/Engine/Localization/INT/EditorMapTemplates.int` and add the following line (replacing `MapTemplateName` with your own template name):
-```int
+```
 MapTemplateName=This is what you see in UDK
 ```
 12. Save the file, close it and open UDK. You should see your own template!
 
 <!-- more than 6 templates? -->
 
-## UDK Tips
+## Custom Hotkeys
 
-In `{UDK Folder}\Engine\Localization\INT\EditorTips.int` you can set your own UDK or mapmaking tips by replacing the text after `Tip_xxxxx=`. Place `\n` for a single line break. 
-```int
-Tip_00001=Did you know you can replace the current tips with your own?\n\nLearn how at https://rocketleaguemapmaking.com/guide/misc/08_custom_udk.html!
-```
-<!-- more than 50 tips? -->
+### 3d viewport
 
-## Documentation <Badge text="not finished" type="warning"/>
+In `{UDK Folder}\Engine\Config\BaseInput.ini` you can edit the standard hotkeys for the 3d viewport or add your own hotkeys. The list of commands are listed under `[UnrealEd.EditorViewportInput]`. Surprisingly there is a page in the documentation for [all console commands](https://docs.unrealengine.com/udk/Three/EditorConsoleCommands.html#Editor%20Mode%20Commands). 
 
-The [Content Browser](../../essential/08_content_browser.html#content-browser) has a tab for documentation, which you can fill with your own useful links by editing the file `{UDK Folder}\Engine\EditorResources\UDKOffline.html`
-
-* [Example Page]()
-
-## UDK Custom Hotkeys
-
-#### Kismet <Badge text="not finished" type="warning"/>
+### Kismet
 
 In `{UDK Folder}\UDKGame\Config\UDKEditor.ini` you can edit [the standard hotkeys](https://docs.unrealengine.com/udk/Three/KismetUserGuide.html#Hotkeys) or add your own hotkeys. **Make sure your hotkey doesn't clash with [an existing kismet view hotkey](../kismet/01_kismet.html#the-hottest-hotkeys)!**
 
-* [Hotkeys Example]()
-
-#### Matinee
+### Matinee
 
 In the Matinee window you may also set your own hotkeys by going to `Edit` > `Configure Keyboard Shortcuts`. You can also just configure them in the same file as the kismet hotkeys (on lines 190-227).
 
-## Menu <Badge text="not finished" type="warning"/>
+## Startup Tips
+
+In `{UDK Folder}\Engine\Localization\INT\EditorTips.int` you can set your own UDK or mapmaking tips by replacing the text after `Tip_xxxxx=`. Place `\n` for a single line break. 
+```
+Tip_00001=Did you know you can replace the current tips with your own?\n\nLearn how at https://rocketleaguemapmaking.com/guide/misc/08_custom_udk.html!
+```
+You can create more than 50 startup tips (you're 'limited' to 10 000 tips)
+
+## Documentation
+
+The [Content Browser](../../essential/08_content_browser) has a tab for documentation, which you can fill with your own useful links by editing the file `{UDK Folder}\Engine\EditorResources\UDKOffline.html`
+
+## Text
+
+You can change the text of almost any message or button (including the `Save all` button) in  
+`{UDK Folder}\Engine\Localization\INT\UnrealEd.int`
 
 ## More
 
