@@ -65,6 +65,15 @@ If you have been following along, you might have had the idea to get clever and 
 If you add spawnpoints after the 5 above, they will be used **only** after someone is demolished
 :::
 
+Here are the standard Soccar demo spawns:
+
+|Number|X|Y|Z|Roll|Pitch|Yaw|
+|------|------|------|------|------|------|------|
+|1|2688|4608|83|0|0|-90|
+|2|2304|4608|83|0|0|-90|
+|3|-2688|4608|83|0|0|-90|
+|4|-2304|4608|83|0|0|-90|
+
 ## GoalVolume_TA
 
 Surprisingly, one key detail of most multiplayer maps is a goal for each team to score on. Goals are very easy to add once the rest of the map is in place. 
