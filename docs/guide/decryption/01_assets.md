@@ -13,7 +13,7 @@ To view assets from Rocket League you need to change some values in the startup 
 
 ![](~@images/decryption/umodel_start.png)
 
-```
+```sh
 umodel.exe -game=rocketleague -path="C:\Program Files (x86)\Steam\steamapps\common\rocketleague\TAGame\CookedPCConsole"
 ```
 

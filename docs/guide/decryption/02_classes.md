@@ -3,15 +3,16 @@ title: Classes
 ---
 # Decyption
 
-With UE Explorer you can update or add new classes to [the dummy classes](../../essential/04_dummy_classes). These classes are used for [kismet nodes](../kismet/04_tagame) and [archetypes](). If you can't open a new package you are missing the keys for that package in `keys.txt`.
+With UE Explorer or the AssetExtraction tool you can update or add new classes to [the dummy classes](../../essential/04_dummy_classes). These classes can be used for [kismet nodes](../kismet/04_tagame). If you can't open a new package you are missing the keys for that package in `keys.txt`.
 
 ## Packages
 
 There are a few packages in the `{CookedPCConsole}` folder that can be used for extracting classes:
+
 - `AkAudio.upk`: contains classes related to [sound](../kismet/05_sound)
 - `Core.upk`: contains all the base classes. These are used in almost every other package
 - `Engine.upk`: contains basic classes used mostly in `ProjectX.upk` and `TAGame.upk`
-- `GfxUI.upk`: contains classes related to [interfaces]()
+- `GfxUI.upk`: contains classes related to interfaces
 - `ipDrv.upk`: contains classes related to the servers and more online classes
 - `OnlineSubsystemEOS.upk`: contains classes related to authentication and online interfaces
 - `OnlineSubsystemSteamworks.upk`: contains classes related to Steam and the workshop
@@ -19,7 +20,7 @@ There are a few packages in the `{CookedPCConsole}` folder that can be used for 
 - `TAGame.upk`: contains classes and [kismet nodes](../kismet/04_tagame) mostly used in map making
 - `WinDrv.upk`: contains a few classes related to http requests
 
-Another file that's useful is `Startup.upk`, this contains packages for boosts, FXActors and more. Every package mentioned in the list above has it's own folder in `{UDK Folder}/Development/Src/`. 
+Another file that's useful is `Startup.upk`, this contains packages for boosts, FXActors and more. Every package mentioned in the list above has it's own folder in `{UDK Folder}/Development/Src/`.
 
 ## Kismet nodes
 
@@ -27,7 +28,7 @@ Almost every file that starts with: `SeqAct_` (action), `SeqCon_` (condition), `
 
 ## Recompiling
 
-When you have added a new class or changed an existing node, you have to recompile it before UDK can recognize it. This can be done by using Unreal Frontend, in the menu click `script` > `Full recompile`, or by [starting UDK with the `make -full` arguments](). If you see at the bottom of the logs `COMMANDLET 'UDK.exe make -full' SUCCEEDED`, the recompile was succesful and you can open UDK.
+When you have added a new class or changed an existing node, you have to recompile it before UDK can recognize it. This can be done by using Unreal Frontend, in the menu click `script` > `Full recompile`, or by starting UDK with the `make -full` arguments. If you see at the bottom of the logs `COMMANDLET 'UDK.exe make -full' SUCCEEDED`, the recompile was successful and you can open UDK.
 
 ![](~@images/decryption/recompile.png "Task failed succesfully!")
 
@@ -61,6 +62,7 @@ Comment/delete that property as it has the same value as the default value as th
 UDK can't find the default objects, so change:
 `{Variable}={VariableClass}'Default{Class}.{Property}'`
 to:
+
 ```uc
 begin object name={Property} Class={VariableClass}
 end object
@@ -69,9 +71,11 @@ end object
 
 - `Warning, Unknown property in defaults:     {Variable}={Value} (looked in {ObjectClass})`
 This error is probably shown when you have this code:
+
 ```uc
 begin object name={Variable} Class={ObjectClass}
 object end
 {Variable}={Value}
-``` 
+```
+
 To remove this warning change `object end` to `end object`
