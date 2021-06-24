@@ -21,12 +21,8 @@ To get started with decrypting the assets, you will need some tools. Each tool h
 
 * uModel (or UE Viewer): used for [decrypting and exporting assets](01_assets)
 * UE Explorer: used for [decrypting classes](02_classes)
-* RLUPKTool ([source](https://github.com/Martinii89/RLUPKT/tree/master)): used for [decrypting upks](04_packages)
+* RLUPKTool ([source](https://github.com/Martinii89/RLUPKT/tree/master)): used for [decrypting `.upk` packages](04_packages)
 * AssetExtraction ([source](https://github.com/Martinii89/Unreal-Library/tree/master/AssetExtraction)): used for [extracting classes](02_classes), exporting world information and object properties
-
-:::tip uModel
-There are 2 versions of uModel. Depending on your version you need to use `-path=rocketleague` or `-path=rocket`
-:::
 
 ## Logs
 
@@ -35,4 +31,4 @@ As you will probably break something in UDK (or Rocket League) the logs might he
 * `{UDK Folder}/UDKGame/Logs/` for UDK
 * `/documents/My Games/Rocket League/TAGame/Logs/` for Rocket League
 
-Additionaly, you will find `.dmp` files in the logs folder which you send to BakkesBot with the .dmp command to view the content of that file
+Additionally, you will find `.dmp` files in the logs folder which you send to BakkesBot with the .dmp command to view the content of that file
