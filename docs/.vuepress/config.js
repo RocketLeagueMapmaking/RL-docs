@@ -214,7 +214,8 @@ module.exports = {
           '/guide/decryption/',
           '/guide/decryption/01_assets',
           '/guide/decryption/02_classes',
-          '/guide/decryption/03_sound'
+          '/guide/decryption/03_sound',
+          '/guide/decryption/04_packages'
         ]
       },
 
