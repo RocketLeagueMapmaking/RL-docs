@@ -19,7 +19,7 @@ UDK is for Unreal Engine 3. Unreal Engine 4 was first released in 2014, and it�
 
 ## File Extensions
 
-![alt text](~@images/UDK/essential/clarification_extensions.png "Don't not not hide")
+![alt text](/images/UDK/essential/clarification_extensions.png "Don't not not hide")
 
 I highly recommend disabling the option to “hide file extensions for known types” on Windows so that you actually know what files you are operating with. **Search for File Explorer Options in the Start Menu. Go to the View tab. Uncheck “Hide Extensions for known file types.”**
 

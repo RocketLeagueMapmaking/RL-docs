@@ -9,8 +9,8 @@ Now that you are familiar with the way that UV maps work, it’s important to di
 
 If you have played older 3D games (c. 2000), the concept of a texel will instantly be familiar. Minecraft is another fine example, but that style is done with more intentionality.
 
-![alt text](~@images/Blender/basics/image97.png "Old school cool")
-![alt text](~@images/Blender/basics/image63.png "New school cool")
+![alt text](/images/Blender/basics/image97.png "Old school cool")
+![alt text](/images/Blender/basics/image63.png "New school cool")
 
 A texel is the screen space covered by one pixel of a texture when that texture is applied to a 3D mesh. Sometimes the definition is slightly looser, referring to regions of the texture and how they map to what is seen by the player.
 

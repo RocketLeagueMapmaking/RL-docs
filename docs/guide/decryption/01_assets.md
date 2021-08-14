@@ -5,13 +5,13 @@ title: Assets
 
 With uModel you can view meshes and materials and export them so you can use them in your maps. To view all the hotkeys press `H`.
 
-![](~@images/decryption/image222.png)
+![](/images/decryption/image222.png)
 
 ## Start-up options
 
 To view assets from Rocket League you need to change some values in the start-up options. You can also use a `.bat` script or shortcut to open it faster. Change `-path` to the `{CookedPCConsole}` folder.
 
-![](~@images/decryption/umodel_start.png)
+![](/images/decryption/umodel_start.png)
 
 ```sh
 umodel.exe -game=rocketleague -path="{CookedPCConsole}"
@@ -25,7 +25,7 @@ There are 2 versions of uModel. Depending on your version you need to use `-game
 
 To export a single object you can press `Ctrl+X` or `Tools > Export current` in the top menu when viewing it. This will show a export settings window. Here you can choose the export location for the assets, but most of it can be left on the default values.
 
-![](~@images/decryption/umodel_export.png)
+![](/images/decryption/umodel_export.png)
 
 To export a whole package, `right click > Export` or press the `Export` in the bottom menu with the package selected.
 
