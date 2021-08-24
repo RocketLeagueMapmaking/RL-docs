@@ -27,21 +27,21 @@ Recall that the word “Cooked” refers to the fact that these packages have be
 
 Most map names should be obvious, especially with the renamed folders. Here is a list of some key names used in UDK/UPK files versus what you will encounter in the game:
 
-|UPK/UDK item named this...|Becomes this in the game...|
-|------|------|
-|_P|The playable portion of the map|
-|_OOB|The out-of-bounds portion of the map|
-|_SFX|Sound effects|
-|_MapImage_SF|Thumbnail (e.g. when browsing Training)|
-|Park|Beckwith Park|
-|Stadium|DFH Stadium|
-|EuroStadium|Mannfield|
-|TrainStation|Urban Central|
-|Underwater|AquaDome|
-|Farm|Farmstead|
-|CS|Champion’s Field|
-|ShatterShot|Dropshot|
-|HoopsStadium|Dunk House|
+| UPK/UDK item named this... | Becomes this in the game...             |
+| -------------------------- | --------------------------------------- |
+| _P                         | The playable portion of the map         |
+| _OOB                       | The out-of-bounds portion of the map    |
+| _SFX                       | Sound effects                           |
+| _MapImage_SF               | Thumbnail (e.g. when browsing Training) |
+| Park                       | Beckwith Park                           |
+| Stadium                    | DFH Stadium                             |
+| EuroStadium                | Mannfield                               |
+| TrainStation               | Urban Central                           |
+| Underwater                 | AquaDome                                |
+| Farm                       | Farmstead                               |
+| CS                         | Champion’s Field                        |
+| ShatterShot                | Dropshot                                |
+| HoopsStadium               | Dunk House                              |
 
 :::warning Utopia
 Also keep in mind that there is a stadium named `Utopia Stadium` (the idyllic coliseum with the globe fountain) as well as a Rocket Labs map named `Utopia Retro` (the donut). **For testing, we will continue to overwrite the donut Utopia.**

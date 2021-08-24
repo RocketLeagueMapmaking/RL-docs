@@ -19,8 +19,9 @@ The reason for building a map in pieces is that Rocket League (and UDK in genera
 
 Because of surface normals, any map pieces which have no thickness will be invisible when viewed from the back side. Make sure that all surface normals are correct when viewed from where the player will be.
 
-:::tip TIPS 
+:::tip TIPS
 **There are a handful of tricks to make the map assembly process much, much easier:**
+
 * For symmetrical maps, place one piece where it needs to be. Ctrl+C and Ctrl+V will create a copy in exactly the same location. **Right click, then Transform > Mirror X/Y Axis.**
 * If you wish to edit properties on multiple objects at the same time, **you can** (and should). Either `Ctrl+click` them in the 3D Editor window, or Ctrl+click or Shift+click them in the Scene tab of the Content Browser. Then press `F4`.
 * Occasionally (and inexplicably) you won’t be able to place meshes by dragging them out of the Content Browser window. To get around this, **select the mesh in the Content Browser window, then right click in the 3D Editor. Select “Add {MeshName} Here”.**

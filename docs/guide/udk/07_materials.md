@@ -69,15 +69,3 @@ Next, select the floor. **Assign it a material called `HexGlass_Mat`**.
 ![alt text](/images/UDK/basics/image95.jpg "It’s almost decent!")
 
 Well, it looks pretty good, but it needs a little je ne sais quoi. Let’s get to one of the most neglected aspects of map design: Lighting!
-
-
-
-
-
-
-
-
-
-
-
-

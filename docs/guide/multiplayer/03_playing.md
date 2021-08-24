@@ -28,17 +28,19 @@ The easiest way to host and play custom maps with others is to use the Rocket Pl
 4. Create and join a match
 :::details For the host 
 The host will use the left side of Rocket Plugin:
-- Arena: 
+
+- Arena:
     - `Workshop maps`: checked
     - Dropdown list: select the workshop map
 - Change mutators and team settings (optional)
 - Advanced settings:
-    - `Password` (optional): set a password 
+    - `Password` (optional): set a password
 
 Click host
 :::
-:::details For the players 
+:::details For the players
 Players use the right side of Rocket Plugin:
+
 - IP adress: IPv4 adress in the VPN or given by the host
 - Port: 7777 or given by the host
 - `Password` (optional): given by the host
@@ -48,6 +50,7 @@ Click join
 :::
 
 :::warning FAQ and Troubleshooting
+
 - Check if you can ping each other in the VPN
 - If you get an `password doesn't match` error, create a new Local Match and delete the password. Rocket Plugin uses the password from your latest private match
 - Using the VPN avoids showing your real IP address
@@ -60,7 +63,7 @@ Click join
 You can also use [RLLobby](https://bakkesplugins.com/plugins/view/82) as this is easier for people to join, but there are some extra steps required for the host
 :::
 
-## In-game 
+## In-game
 
 The easiest way to play Workshop maps in single player **on Steam**:
 
@@ -81,6 +84,7 @@ If the map is missing some functionality or behaves different than expected in f
 To play Workshop maps in single player or multiplayer, you can replace an existing map with a Workshop map. **Make sure you replace the correct map and the Workshop map is in the correct folder, otherwise you will likely get a content mismatch error**  
 
 Some map swappers are:
+
 - [Lethamyr's Custom Map Loader](https://lethamyr.com/set-up-custom-maps)
 - [Mr. Swaggles' BSFQTM](../../essential/05_project_setup.html#batch-script-for-quickly-testing-maps-bsfqtm) 
 
@@ -89,5 +93,3 @@ To download maps for Epic, paste the URL of the workshop map into [steamworkshop
 ## Community Workshop Games Discord
 
 There is an entire community based around testing, playing, and even hosting tournaments on custom maps. The [Community Workshop Games](https://discord.gg/WNfN5ky) server is run by BalancedWaffles and is a wonderful place. If you're stuck on a part of this setup process, a number of people there will gladly help out.
-
-

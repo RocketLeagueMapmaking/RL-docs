@@ -47,5 +47,4 @@ Because this is going to be based on the default soccar map, the initial assets 
 
 Inside the Content Browser viewer section, there are a number of assets called Field_something and Goal_something. These are the pieces we’ll start with. But first, we’ll just make an empty platform with a single wall.
 
-
 **Find the static mesh named ConcreteBase, and drag it into the 3D editor.** This will be the floor. Once it is in the scene, **either right click it and select Properties at the top, or press F4.**

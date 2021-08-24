@@ -19,4 +19,4 @@ A similar and related concept is the LOD system, or Level of Detail. This same p
 
 ### Optimization <Badge text="not finished" type="warning"/>
 
-This has not been explored much by the custom mapmaking scene, but it could be a crucial step in optimizing the performace of a complicated map.
+This has not been explored much by the custom mapmaking scene, but it could be a crucial step in optimizing the performance of a complicated map.

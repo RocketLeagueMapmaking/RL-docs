@@ -22,40 +22,40 @@ I will kindly refer you to [Derzo’s Spreadsheet](https://docs.google.com/sprea
 
 **For ___ Channel rows, “Texture” means that it will accept an image. “Vector” means it may only be a solid color. Rows in bold (in this table) are the most important:**
 
-|Column Name|What it means|
-|------|------|
-| Material|The name of the material|
-| **Package**|The package it may be found in. Avoid Red packages if you don’t want to force/require people to put extra .upks into their game.|
-| RenderMode|The general lighting property. Lit materials will have shading. Unlit will not be affected by lights. Translucent may be see-through (i.e. have an alpha channel)|
-| **Diffuse Channel**|The color of the material|
-| Emissive Channel|The areas which emit light (i.e. unaffected by other lighting)|
-| Normal Channel|Bumps and small surface details (also called a normal map)|
-| Specular Channel|The areas which will be shiny|
-| **Opacity Channel**|The areas which will be solid or see through (also called an alpha map)|
-| TwoSided|Faces with this material can be seen from the anti-normal side|
-| MasterOnly|Material instances (customizations) will not work|
-| Special|Something that makes this material notable|
-| Skeletal|This material can go on a skeletal mesh (like a walking character)|
-| Fractured|This material can go on objects which break apart|
-| ParticleSprite|This material can go on individual particles|
-| BeamTrails|This material can go on effect trails|
-| ParticleSubUV|This material can do something extra cool with particles, probably|
-| StaticLighting|This material accepts static lighting|
-| FluidSurface|This material can go on a fluid surface|
-| MaterialEffect|This material can be used as an effect|
+| Column Name         | What it means                                                                                                                                                     |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Material            | The name of the material                                                                                                                                          |
+| **Package**         | The package it may be found in. Avoid Red packages if you don’t want to force/require people to put extra .upks into their game.                                  |
+| RenderMode          | The general lighting property. Lit materials will have shading. Unlit will not be affected by lights. Translucent may be see-through (i.e. have an alpha channel) |
+| **Diffuse Channel** | The color of the material                                                                                                                                         |
+| Emissive Channel    | The areas which emit light (i.e. unaffected by other lighting)                                                                                                    |
+| Normal Channel      | Bumps and small surface details (also called a normal map)                                                                                                        |
+| Specular Channel    | The areas which will be shiny                                                                                                                                     |
+| **Opacity Channel** | The areas which will be solid or see through (also called an alpha map)                                                                                           |
+| TwoSided            | Faces with this material can be seen from the anti-normal side                                                                                                    |
+| MasterOnly          | Material instances (customizations) will not work                                                                                                                 |
+| Special             | Something that makes this material notable                                                                                                                        |
+| Skeletal            | This material can go on a skeletal mesh (like a walking character)                                                                                                |
+| Fractured           | This material can go on objects which break apart                                                                                                                 |
+| ParticleSprite      | This material can go on individual particles                                                                                                                      |
+| BeamTrails          | This material can go on effect trails                                                                                                                             |
+| ParticleSubUV       | This material can do something extra cool with particles, probably                                                                                                |
+| StaticLighting      | This material accepts static lighting                                                                                                                             |
+| FluidSurface        | This material can go on a fluid surface                                                                                                                           |
+| MaterialEffect      | This material can be used as an effect                                                                                                                            |
 
 As you can hopefully see, rows with more green boxes are better. **Rows with a red box under “Package” should be avoided, otherwise you will need to mention and refer people to the “Workshop Textures” setup on the page for your map.**
 
 This leaves us with a few key options for creating custom materials. All of these may be found within the package `Engine > Content > EngineDebugMaterials`:
 
-|Name|Useful for|
-|------|------|
-|LevelColorationLitMaterial|Solid colors with shading based on world lighting|
-|LevelColorationUnlitMaterial|Solid colors with no shading (i.e. a truly solid color)|
-|TerainCollisionMaterial|Solid colors with adjustable transparency|
-|**TexturePaint_2Tex_Color**|**Most textured custom materials**|
-|VertexPaint_2Tex_Color|Textured custom materials with vertex color|
-|VertexPaint_4Tex|Same, but with more texture slots|
+| Name                         | Useful for                                              |
+| ---------------------------- | ------------------------------------------------------- |
+| LevelColorationLitMaterial   | Solid colors with shading based on world lighting       |
+| LevelColorationUnlitMaterial | Solid colors with no shading (i.e. a truly solid color) |
+| TerainCollisionMaterial      | Solid colors with adjustable transparency               |
+| **TexturePaint_2Tex_Color**  | **Most textured custom materials**                      |
+| VertexPaint_2Tex_Color       | Textured custom materials with vertex color             |
+| VertexPaint_4Tex             | Same, but with more texture slots                       |
 
 The VertexPaint materials are unlikely to be any more useful than TexturePaint_2Tex_Color, but you are welcome to use them. Vertex painting is a way to colorize materials based on which part of the mesh they cover, but its usefulness is complicated when talking about Rocket League mapmaking.
 
