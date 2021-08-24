@@ -30,5 +30,5 @@ title: Modding Network
 
 ## Github
 
-* [Rocket League Map Making](https://github.com/RocketLeagueMapmaking) 
+* [Rocket League Map Making](https://github.com/RocketLeagueMapmaking)
 * [RLBot](https://github.com/RLBot)

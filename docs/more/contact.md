@@ -4,8 +4,6 @@ editLink: false
 ---
 # Contact and Socials
 
-<!-- form -->
-
 If you have any question or ideas, you can contact us via:
 
 * Discord: [Rocket League Mapmaking Server](https://discord.gg/PWu3ZWa) (for probably a fast response)

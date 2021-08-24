@@ -5,6 +5,7 @@ sidebar: auto
 # Assets guide
 
 On this page you will find some tips and tricks related to styling a page. Other useful pages are:
+
 - [Markdown-it examples](https://markdown-it.github.io/) (some examples are in [#markdown](assets.html#markdown))
 - [Vuepress markdown documentation](https://vuepress.vuejs.org/guide/markdown.html) 
 - [Source code of this page](https://github.com/RocketLeagueMapmaking/RL-docs/blob/master/docs/assets.md)
@@ -12,6 +13,7 @@ On this page you will find some tips and tricks related to styling a page. Other
 ## RLMM Assets
 
 ### Kismet nodes
+
 ```md
 <KismetNode 
     Title="Kismet Node" Status="Not documented" Image="add_game_ball"
@@ -23,6 +25,7 @@ On this page you will find some tips and tricks related to styling a page. Other
     :Notes="['This node is synchronous','This nodes requires x or y']"
 />
 ```
+
 <KismetNode
     Title="Kismet Node" Status="Not documented" Image="add_game_ball"
     Folder="TAGame" Type="Actions"
@@ -34,6 +37,7 @@ On this page you will find some tips and tricks related to styling a page. Other
 />
 
 *General properties:*
+
 * `Title`: Name of the kismet node used in UDK 
     * Type: `String`
     * Required: `true`
@@ -60,10 +64,11 @@ On this page you will find some tips and tricks related to styling a page. Other
     * Required: `false`
 
 :::warning Semicolon
-To register an array as a property of a kismet node (or any other component) `:` or `v-bind:` must be placed before the name of the array. 
+To register an array as a property of a kismet node (or any other component) `:` or `v-bind:` must be placed before the name of the array.
 :::
 
 *Values:*
+
 * `:InputLinks`: All items on the left side of a kismet node (except for `in`)
     * Type: `Array`
     * Required: `false`
@@ -75,6 +80,7 @@ To register an array as a property of a kismet node (or any other component) `:`
     * Required: `false`
 
 A not documentated node would then look like this:
+
 ```md
 <KismetNode 
     Title="Apply Car Products" Status="Not documented" 
@@ -125,6 +131,7 @@ This is a details block
 This is a warning with a custom title
 :::
 ---
+
 ## Markdown
 
 ### Text
@@ -180,10 +187,12 @@ console.log(guide)
 ```
 
 With no language specified:
+
 ```
 no syntax highlights
 // rest of text
 ```
+
 With lines highlighted:
 
 ```javascript{1}

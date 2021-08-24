@@ -27,17 +27,16 @@ If the Pylon is too high or too low, **the map will be unplayable because this i
 
 Player spawn points will fight you at every turn, but don’t forget that you are the boss. Similar to the `Pylon_Soccar_TA`, it’s easiest to add them from the Actors tab of the Content Browser.
 
-
 Place a `PlayerStart_TA` into the map. Bring up the Properties window and set these values:
 
-|Search for|Change the line(s)|To this value|
-|------|------|------|
-|“team”|Team Index|1|
-|“dest”|Destination Only|True|
-|“draw”|Draw Scale|5|
-|“loc”|X|0|
-|“loc”|Y|4608*|
-|“loc”|Z|83|
+| Search for | Change the line(s) | To this value |
+| ---------- | ------------------ | ------------- |
+| “team”     | Team Index         | 1             |
+| “dest”     | Destination Only   | True          |
+| “draw”     | Draw Scale         | 5             |
+| “loc”      | X                  | 0             |
+| “loc”      | Y                  | 4608*         |
+| “loc”      | Z                  | 83            |
 
 The Team Index value is not required to be 1 (Blue team), but it helps avoid confusion because these will be the Blue team’s spawn points.
 
@@ -49,34 +48,30 @@ Because the game will be played along the Y axis (using the default setup of Pyl
 
 If you want to create a set of standard Soccar spawns, **duplicate (Ctrl+D) this PlayerStart_TA four times. Set the following locations and rotations:**
 
-
-|Number|X|Y|Z|Roll|Pitch|Yaw|
-|------|------|------|------|------|------|------|
-|1|0|4608|83|0|0|-90|
-|2|256|3840|83|0|0|-90|
-|3|-256|3840|83|0|0|-90|
-|4|2040|2560|83|0|0|225|
-|5|-2040|2560|83|0|0|-45|
-
+| Number | X     | Y    | Z   | Roll | Pitch | Yaw |
+| ------ | ----- | ---- | --- | ---- | ----- | --- |
+| 1      | 0     | 4608 | 83  | 0    | 0     | -90 |
+| 2      | 256   | 3840 | 83  | 0    | 0     | -90 |
+| 3      | -256  | 3840 | 83  | 0    | 0     | -90 |
+| 4      | 2040  | 2560 | 83  | 0    | 0     | 225 |
+| 5      | -2040 | 2560 | 83  | 0    | 0     | -45 |
 
 If you have been following along, you might have had the idea to get clever and use the Transform > Mirror X Axis tool. This works for getting them to the correct location, **but Mirroring across an axis also sets the scale in that axis to negative.** What this means for a spawn point is that you might spawn backward or upside down. If you do choose to use Mirror, reset all of the Scale options to 1 and then fix the rotation. In the end, you won’t save any time by using it.
 
-:::tip Demo Spawn Points
-If you add spawnpoints after the 5 above, they will be used **only** after someone is demolished
-:::
+## Demo Spawn Points
 
-Here are the standard Soccar demo spawns:
+If you add spawnpoints after the 5 above, they will be used **only** after someone is demolished. Here are the standard Soccar demo spawns:
 
-|Number|X|Y|Z|Roll|Pitch|Yaw|
-|------|------|------|------|------|------|------|
-|1|2688|4608|83|0|0|-90|
-|2|2304|4608|83|0|0|-90|
-|3|-2688|4608|83|0|0|-90|
-|4|-2304|4608|83|0|0|-90|
+| Number | X     | Y    | Z   | Roll | Pitch | Yaw |
+| ------ | ----- | ---- | --- | ---- | ----- | --- |
+| 1      | 2688  | 4608 | 83  | 0    | 0     | -90 |
+| 2      | 2304  | 4608 | 83  | 0    | 0     | -90 |
+| 3      | -2688 | 4608 | 83  | 0    | 0     | -90 |
+| 4      | -2304 | 4608 | 83  | 0    | 0     | -90 |
 
 ## GoalVolume_TA
 
-Surprisingly, one key detail of most multiplayer maps is a goal for each team to score on. Goals are very easy to add once the rest of the map is in place. 
+Surprisingly, one key detail of most multiplayer maps is a goal for each team to score on. Goals are very easy to add once the rest of the map is in place.
 :::warning
 Finish this whole Goal Volume section before testing, otherwise you’ll probably crash Rocket League.
 :::
@@ -98,7 +93,6 @@ Also keep in mind that the ball must be 100% inside this volume for a goal to ha
 
 Rocket League expects each goal to have an orientation in 3D space as well. This is mainly to calculate the velocity of the ball when it’s scored, and to orient/situate goal explosions like the Twin Dragons or Overgrowth. The goals will work just fine without them, but you get additional control by doing this step. **Right click somewhere in the goal geometry. Go to Add Actor > Add Path Node. Center this PathNode on the mouth of the goal and fix its rotation so that it points out of the goal.** Keep the Draw Scale of this PathNode at 1… unless you want hilarious and enormous goal explosions.
 
-
 You may have also noticed that you cannot set the location of this volume from its properties, meaning that you have to rely on the move tool in the 3D Editor Window. Here are two handy tricks to move it:
 
 * Right click on the Move tool on the top bar and type in numbers. “Relative” means that you move it by that amount.
@@ -109,7 +103,6 @@ You may have also noticed that you cannot set the location of this volume from i
 
 **Bring up the Properties window of the Goal Volume and Lock the window to keep it visible. Select the Path Node and click Use selected object for the Goal Orientation.**
 
-
 **Select the Goal Volume and Path Node and create a copy with Ctrl+C, Ctrl+V. Move them to the other side of the map. You may need to manually reassign the Goal Orientation Path Node of the copied goal.**
 
 ![alt text](~@images/UDK/basics/image197.png "Orange -> O -> 0. Blue -> Cold -> Negative")
@@ -118,11 +111,10 @@ Additionally, you may need to type “GoalIndicator_TA” in the Goal Indicator 
 
 Lastly, one of the goals needs to be for Orange Team, and one needs to be for Blue Team. **When Rocket League sees a Pylon_Soccar_TA with default settings, it sets up the game to be played along the Y axis (e.g. goals at +5000Y and -5000Y). Also keep in mind that a “team’s goal” is the one that it is trying to score on (i.e. getting the ball there gives that team a point).**
 
-
-|Team|Team Num|Y Location of Team’s Goal|
-|------|------|------|
-|Orange|0|Positive|
-|Blue|1|Negative|
+| Team   | Team Num | Y Location of Team’s Goal |
+| ------ | -------- | ------------------------- |
+| Orange | 0        | Positive                  |
+| Blue   | 1        | Negative                  |
 
 **Set up the goals like this, then Build Paths (or Build All). Save, load the map, and make sure that you can score in both goals. In Training, you are considered to be on Blue Team (team 1).**
 
@@ -143,4 +135,3 @@ If you need to change the center of the field, it can be a bit complicated. **Th
 ## Cinematic Camera
 
 This is entirely bonus material, but you have complete control over the camera angle shown when loading into a multiplayer game. **Simply add a CameraActor and point it at your map.** It has to be above height 0, but otherwise can be anywhere.
-

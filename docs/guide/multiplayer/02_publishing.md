@@ -34,6 +34,7 @@ It’s best to keep this outside of the UDK project folder so that you don’t g
 ![alt text](~@images/multiplayer/image214.png "Nobody ever complains that their computer is too well organized")
 
 **Copy and paste the .udk file into this new folder. Two files will need to accompany the .udk upload:**
+
 * [a preview image](02_publishing.html#creating-a-preview-image)
 * [a .vdf file](02_publishing.html#vdf-file)
 
@@ -42,6 +43,7 @@ For the thumbnail image, you may either use a scaled down image at a 16:9 ratio 
 ## .vdf file
 
 Next, create a new text file and change the file extension to .vdf. This is a Valve Description File (probably) which contains the info Steam needs to properly offer your map to people on the workshop. Open it in your favorite text editor. Insert this:
+
 ```
 "workshopitem"
 {
@@ -55,6 +57,7 @@ Next, create a new text file and change the file extension to .vdf. This is a Va
     "changenote"		"v2 - a description of what you did, for posterity's sake"
 }
 ```
+
 | Field name| Explanation | 
 |-|-|
 | appid | **needs to be 252950** like I've shown here. That is the code that corresponds to Rocket League, as you can see at the end of its [Steam URL](http://store.steampowered.com/app/252950/) |
@@ -79,14 +82,18 @@ If you don’t have SteamGuard enabled, ignore the third argument. You should se
 Copy the full path of your .vdf file from the file explorer window. In this example, that is `C:\UDK\RLMM\UDKGame\Content\Maps\SteamWorkshop\YourMap\`
 
 In SteamCMD, type:
-```
+
+```sh
 workshop_build_item
 ```
-And then right click to paste what you copied, and add \YourMap.vdf. 
+
+And then right click to paste what you copied, and add `\YourMap.vdf`.
 The full command should look like:
-```
+
+```sh
 workshop_build_item C:\UDK\RLMM\UDKGame\Content\Maps\SteamWorkshop\YourMap\YourMap.vdf
 ```
+
 Now, check your Workshop page to see if it uploaded. If SteamCMD thinks it did, then it did.
 
 Type `quit` to close SteamCMD. You almost certainly have to restart Steam before you can properly launch a game. It typically tells me that "Steam will be unable to sync resources with the Steam Cloud" or something, which is probably due to the fact I was just logged in twice on the same computer which makes Steam hurt itself in confusion.
@@ -96,7 +103,3 @@ Be sure to Subscribe to your own map, and look for it under the Extras section i
 :::tip
 You can follow this same process to update your maps. The “changenote” field is great to keep track of what has changed, in case people are curious.
 :::
-
-
-
-
