@@ -164,7 +164,7 @@ Line:
 ```md
 Images :
 ![alt text](https://rocketleague.com/image.png) // absolute path
-![alt text](~@images/) // relative path, points towards the /docs/.vuepress/public/images/ folder
+![alt text](/images/) // relative path, points towards the /docs/.vuepress/public/images/ folder
 
 Images with text:
 ![alt text](/image.png "Hover over the image to see me")

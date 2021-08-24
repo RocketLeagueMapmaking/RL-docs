@@ -7,7 +7,7 @@ tags:
 
 # Mapmaking Essentials
 
-![alt text](~@images/UDK/essential/dangerous.png "Also dangerous to take this")
+![alt text](/images/UDK/essential/dangerous.png "Also dangerous to take this")
 
 ## Getting started
 

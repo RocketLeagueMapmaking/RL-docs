@@ -17,7 +17,7 @@ You can test multiplayer on one computer using [this guide](https://steamcommuni
 For the multiplayer reason, **it is important, first and foremost, to create a backup of whatever you overwrite. Keep it secret. Keep it safe.**
 :::
 
-![alt text](~@images/UDK/basics/image229.png "May it be a light for you in dark places, when all other lights go out.")
+![alt text](/images/UDK/basics/image229.png "May it be a light for you in dark places, when all other lights go out.")
 
 If worst comes to worst and you’ve ruined everything, you can always uninstall and reinstall Rocket League. A less drastic measure is to, in Steam, right click on Rocket League > Properties > Local Files > Verify Integrity of Game Cache.
 
@@ -27,7 +27,7 @@ If worst comes to worst and you’ve ruined everything, you can always uninstall
 
 ## A Humble Apology
 
-![alt text](~@images/UDK/basics/image49.jpg "I’m sorry")
+![alt text](/images/UDK/basics/image49.jpg "I’m sorry")
 
 Alright, I’m sorry that I did that to you. But, it’s not a true modding experience if everything goes right the first time. **You and the ball will fall through the map, and no property you change can fix that.**
 
@@ -49,7 +49,7 @@ Near the [beginning of the guide](../essential/windows.html#batch-script-for-qui
 
 **I keep a copy of this inside each project folder within Maps.** This way, I can drag the map onto this script and instantly load it into Rocket League.
 
-![alt text](~@images/UDK/basics/image172.png "Thin windows for thin margins of error")
+![alt text](/images/UDK/basics/image172.png "Thin windows for thin margins of error")
 
 Additionally, I like to keep the project folder open in a thin window just to the right of UDK. This way, I don’t have to switch back and forth to reload the map after every little change.
 
