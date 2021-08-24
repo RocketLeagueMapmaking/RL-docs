@@ -19,15 +19,15 @@ This will be explored in much more detail in the [Custom Materials section](17_c
 
 To create a plain old solid color, you will follow most of the exact same steps as creating a full custom, textured material, just without the part where you use a custom texture.
 
-![alt text](~@images/UDK/basics/image79.png)
-![alt text](~@images/UDK/basics/image202.png "UDK shows its true colors")
+![alt text](/images/UDK/basics/image79.png)
+![alt text](/images/UDK/basics/image202.png "UDK shows its true colors")
 
 **In the Content Browser, find the material called `LevelColorationLitMaterial` inside Engine > Content > EngineDebugMaterials. Right click it, and select “Create New Material Instance (Constant)...” In the popup window, type or select your map package. “Grouping” is a sub-package location for this object (not required, but can be useful). Give it an obvious and unique name, then click OK.**
 
 A Material is a model of all the ways that the surface of an object will interact with light. This includes color, shininess, transparency, subsurface scattering, anisotropy, and a whole list of other features. A Material Instance uses the same underlying material properties of its base, but allows you to modify certain exposed parameters (in this case, the color).  The Content Browser should jump to this newly created material, which is inside your own map package. Make sure that it’s where it should be.
 
-![alt text](~@images/UDK/basics/image31.png "I’m blue da ba dee da ba daa")
-![alt text](~@images/UDK/basics/image164.png)
+![alt text](/images/UDK/basics/image31.png "I’m blue da ba dee da ba daa")
+![alt text](/images/UDK/basics/image164.png)
 
 **Double click the Material Instance, and you will bring up the Material Instance Editor. Find the Color parameter in the left panel. Change the color to your choice. Click the checkbox to overwrite the default color with what you have picked (i.e. to actually change the color).** The preview ball will change, as will any objects in your map that are already using this.
 
@@ -39,8 +39,8 @@ If you want to make a material that will always stay exactly the color you pick,
 
 We’re going to put a grass material on the ceiling, and a glass material on the floor. The walls will be something wild.
 
-![alt text](~@images/UDK/basics/image108.png)
-![alt text](~@images/UDK/basics/image169.png "Material possessions")
+![alt text](/images/UDK/basics/image108.png)
+![alt text](/images/UDK/basics/image169.png "Material possessions")
 
 In the [Content Browser](../../essential/08_content_browser), **search for “grass” within the [Park_P](../../essential/04_dummy_classes.html#park-p) package. It can also help to filter down to only Materials and Material Instances (Constant).** Remember to clear these filters when you need to search for something else. **Select `GrassAndBush_Mat`. Select the ceiling, and press F4 to bring up its properties. Search for “mater” and assign this to its first Materials slot using the green arrow.**
 
@@ -66,7 +66,7 @@ Next, select the floor. **Assign it a material called `HexGlass_Mat`**.
 
 **Save the map and test it out!**
 
-![alt text](~@images/UDK/basics/image95.jpg "It’s almost decent!")
+![alt text](/images/UDK/basics/image95.jpg "It’s almost decent!")
 
 Well, it looks pretty good, but it needs a little je ne sais quoi. Let’s get to one of the most neglected aspects of map design: Lighting!
 

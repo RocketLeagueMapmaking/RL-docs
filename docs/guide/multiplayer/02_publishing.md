@@ -31,7 +31,7 @@ First, you should prepare a separate folder for Workshop uploads. This way you c
 It’s best to keep this outside of the UDK project folder so that you don’t get duplicate package warnings when you start UDK.
 :::
 
-![alt text](~@images/multiplayer/image214.png "Nobody ever complains that their computer is too well organized")
+![alt text](/images/multiplayer/image214.png "Nobody ever complains that their computer is too well organized")
 
 **Copy and paste the .udk file into this new folder. Two files will need to accompany the .udk upload:**
 * [a preview image](02_publishing.html#creating-a-preview-image)

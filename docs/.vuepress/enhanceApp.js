@@ -12,16 +12,17 @@ export default ({
   router, // the router instance for the app
   siteData // site metadata
 }) => {
+  const components = [
+    ['HeroComponent', Hero],
+    ['Contest2Component', Contest2],
+    ['ContestComponent', Contest],
+    ['SocialsComponent', Socials],
+    ['FooterComponent', Footer],
+    ['FlowChartComponent', FlowChart],
+    ['KismetNode', KismetNodes]
+  ]
 
-  Vue.component('HeroComponent', Hero)
-  Vue.component('Contest2Component', Contest2)
-  Vue.component('ContestComponent', Contest)
-  Vue.component('SocialsComponent', Socials)
-
-  Vue.component('FooterComponent', Footer)
-
-  Vue.component('FlowChartComponent', FlowChart)
-  Vue.component('KismetNode', KismetNodes)
-
-
+  for (const component of components) {
+    Vue.component(component[0], component[1])
+  }
 }

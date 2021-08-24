@@ -14,7 +14,7 @@ These are UDK-ready classes with the same names and properties as the customized
 The download may be found under [Downloads.](../resources/downloads.html#setup)
 If you feel like using git, you can run git clone within the UDK folder. Downloading the .zip file is totally fine too.
 
-![alt text](~@images/UDK/essential/dummyclasses_location.png "Lots of goodies")
+![alt text](/images/UDK/essential/dummyclasses_location.png "Lots of goodies")
 
 Extract the .zip, and paste the four folders alongside all of the others in
 `{UDK Folder}\Development\Src`
@@ -143,7 +143,7 @@ If you ever change these files in the future, you will need to recompile again.
 
 In `{UDK Folder}\Binaries\`, run `UnrealFrontend.exe`. 
 
-![alt text](~@images/UDK/essential/image81.png "Because you bake a cake before you ship it... thanks TJ")
+![alt text](/images/UDK/essential/image81.png "Because you bake a cake before you ship it... thanks TJ")
 
 **Click Script and run Full Recompile.** Close it after it finishes, and now you’re allowed to start.
 ...almost
