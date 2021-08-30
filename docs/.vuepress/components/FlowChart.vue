@@ -301,7 +301,7 @@ export default{
                         {
                             question: 'Boost Pads',
                             desc: 'Everyone\'s favorite orange orbs',
-                            no: '<a href="../guide/udk/12_boost.html" target="_blank">UDK Basics - Boost</a>'
+                            no: '<a href="../guide/udk/18_boost.html" target="_blank">UDK Basics - Boost</a>'
                         },
                         {
                             question: 'Special Effects',
@@ -342,7 +342,7 @@ export default{
                         {
                             question: 'Custom Textures',
                             desc: 'Stone, wood, metal, slime, clouds, or any combination of those five',
-                            no: '<a href="../guide/udk/17_custom_material.html#custom-materials" target="_blank">UDK Advanced - Custom Materials</a>'
+                            no: '<a href="../guide/udk/16_custom_material.html#custom-materials" target="_blank">UDK Advanced - Custom Materials</a>'
                         },
                         {
                             question: 'Rocket League Materials',

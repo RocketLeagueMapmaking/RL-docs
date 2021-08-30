@@ -119,9 +119,8 @@ module.exports = {
           '/guide/udk/09_game_items',
           '/guide/udk/10_map_settings',
           '/guide/udk/11_volumes',
-          '/guide/udk/12_boost',
-          '/guide/udk/13_interlude_next',
-          '/guide/udk/14_interlude_test'
+          '/guide/udk/12_interlude_next',
+          '/guide/udk/13_interlude_test'
           
         ]
       },
@@ -149,9 +148,10 @@ module.exports = {
         collapsable: true, 
         sidebarDepth: 1,    
         children: [
-          '/guide/udk/15_dummy_assets',
-          '/guide/udk/16_upgrading',
-          '/guide/udk/17_custom_material',
+          '/guide/udk/14_dummy_assets',
+          '/guide/udk/15_upgrading',
+          '/guide/udk/16_custom_material',
+          '/guide/udk/17_boost',
           '/guide/udk/18_matinee',
           '/guide/udk/19_kactors',
           '/guide/udk/20_skeletal_mesh',

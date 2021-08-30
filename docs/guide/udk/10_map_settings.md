@@ -38,6 +38,12 @@ The most powerful setting inside of Map Info is the MFT dropdown. `MFT_XY` mirro
 
 Similarly, the XYRotation setting may be used for some great effects. To spawn all players in a line facing the same direction, you would use one of `MFT_X` or `MFT_Y` (depending on the map orientation) and set the rotation to 0.
 
+## Scene Capture Cube Map Actor
+
+![alt text](../../.vuepress/public/images/UDK/basics/scenecapturecubemapactor.jpg "A time for reflection")
+
+
+
 <!-- |Auto cam| |
 |------|-----|
 | | |

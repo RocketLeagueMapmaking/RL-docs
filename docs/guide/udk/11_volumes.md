@@ -75,3 +75,5 @@ UDK is able to use **.DXF** files as inputs to its brush system. This is a filet
 **At the bottom of the Brush menu, click `Import...`**. Find your brush and import it. If you don't see it, try pressing `B` a few times to hide and unhide it.
 
 You are now able to add volumes in whatever wacky shapes you want! There might be reasons you want hollow TriggerVolumes, or GravityVolumes shaped exactly to fill parts of your map.
+
+There are still a few unsolved mysteries with volumes created this way, especially for creating a custom GoalVolume_TA. Specific shapes may prove more stubborn than others, so use at your own risk!

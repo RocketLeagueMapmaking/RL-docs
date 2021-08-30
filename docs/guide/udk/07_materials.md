@@ -3,7 +3,7 @@ title: 'Materials'
 ---
 # UDK Basics
 
-As will be explained in painful amounts of detail in the [Blender sections](../blender/01_blender) (should you choose to read them), materials are a way to handle all of the visual properties of a mesh. For right now, we’re just going to use existing materials and not really worry about what they’re made of. To make your own, see the [Custom Materials section](17_custom_material).
+As will be explained in painful amounts of detail in the [Blender sections](../blender/01_blender) (should you choose to read them), materials are a way to handle all of the visual properties of a mesh. For right now, we’re just going to use existing materials and not really worry about what they’re made of. To make your own, see the [Custom Materials section](16_custom_material).
 
 ## Built-In Materials
 
@@ -13,7 +13,7 @@ However, not all of these are created equal. Rocket League has a package which i
 
 A lovely modder by the name of Derzo put together [this spreadsheet](https://docs.google.com/spreadsheets/d/1KLs5r_sUn3W6rLrw_xQJbEK-LOmxCiBRfo9_XI79Kng), which explains the situation with all of UDK’s standard materials. 
 
-This will be explored in much more detail in the [Custom Materials section](17_custom_material).
+This will be explored in much more detail in the [Custom Materials section](16_custom_material).
 
 ## Making a Solid Color Material
 
