@@ -7,6 +7,4 @@ node_modules
 /docs/.vuepress/dist/
 
 # Do not commit API keys
-data.env.*
-
-
+.env

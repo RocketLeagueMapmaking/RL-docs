@@ -7,7 +7,7 @@ This page describes settings applied at the map level to give different effects.
 
 ## World Info
 
-The World Info window from the `View` menu offers useful settings for the map as a whole, such as ambient sound and brightness. 
+The World Info window from the `View` menu offers useful settings for the map as a whole, such as ambient sound and brightness.
 
 | Option                          | Description                                  |
 | ------------------------------- | -------------------------------------------- |

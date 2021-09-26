@@ -1,7 +1,7 @@
 ---
 title: Multiplayer
 ---
-# Multiplayer 
+# Multiplayer
 
 ## Testing Multiplayer
 

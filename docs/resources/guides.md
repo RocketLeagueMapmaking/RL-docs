@@ -19,7 +19,7 @@ More Recent/Thorough Guides At The Top
 * [Ardivee's Rocket League Tools Modding Wiki](https://rocketleaguemoddingwiki.github.io/index.html)
 * [Renaiku's Rocket League Modding Wiki](https://rocketleaguemoddingwiki.github.io/index.html)
 * [RLBot Useful Game Values](https://github.com/RLBot/RLBot/wiki/Useful-Game-Values)
-* [Leth's How to Play Custom RL Maps With Friends](https://www.youtube.com/watch?v=vfIIa2cUZSE) 
+* [Leth's How to Play Custom RL Maps With Friends](https://www.youtube.com/watch?v=vfIIa2cUZSE)
 
 ## 2019
 

@@ -58,4 +58,3 @@ tags:
 * `Ctrl+Tab` - Cycle through open windows
 * `Ctrl+Shift+C Ctrl+Shift+V` - Copy/Paste using the clip Pad
 * `Left Click + F9` - Take a screenshot
-`{UDK Folder}/UDKGame/Screenshots/Win64/`

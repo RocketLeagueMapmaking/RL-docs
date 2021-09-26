@@ -48,6 +48,7 @@ This a list of useful things in order of importance:
 ### More Dummy assets
 
 :::tip How to use the assets
+
 * For maps that are not yet in the dummy assets folder: just unzip and paste it alongside the rest of the Dummy Assets maps
 * For maps that are already in the dummy assets folder: delete that map's folder and paste the new one
 :::

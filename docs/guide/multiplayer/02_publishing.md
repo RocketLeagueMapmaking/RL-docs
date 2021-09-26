@@ -9,11 +9,10 @@ This process works perfectly on the Steam version of Rocket League. As of Novemb
 
 ## Psyonix Uploader Tool
 
-When Psyonix announced Steam Workshop support in 2017, they proudly touted their Workshop Uploader program which can instantly create a Steam Workshop page for your new map. 
+When Psyonix announced Steam Workshop support in 2017, they proudly touted their Workshop Uploader program which can instantly create a Steam Workshop page for your new map.
 **However, it, uh… sucks.**
 
 WorkshopUploader.exe may be found two layers up from {CookedPCConsole}, inside the folder Binaries. If you can get it to work, then I’m happy for you.
-
 
 ## Creating a Preview Image
 
@@ -25,7 +24,7 @@ On the Steam Workshop page for a published map, the preview images are locked in
 
 The real way to get things done is with an official Valve program called SteamCMD. The support page may be found [here](https://developer.valvesoftware.com/wiki/SteamCMD). **Install it as the guide describes.** I recommend putting it within the Steam Program Files folder just to consolidate things.
 
-First, you should prepare a separate folder for Workshop uploads. This way you can track the versions you upload and have better compartmentalization. 
+First, you should prepare a separate folder for Workshop uploads. This way you can track the versions you upload and have better compartmentalization.
 
 :::warning
 It’s best to keep this outside of the UDK project folder so that you don’t get duplicate package warnings when you start UDK.
@@ -47,18 +46,18 @@ Next, create a new text file and change the file extension to .vdf. This is a Va
 ```
 "workshopitem"
 {
-    "appid"		"252950"
-    "publishedfileid"		"0"
-    "contentfolder"		"C:\UDK\RLMM\UDKGame\Content\Maps\SteamWorkshop\YourMap"
-    "previewfile"		"C:\UDK\RLMM\UDKGame\Content\Maps\SteamWorkshop\YourMap\preview.jpg"
-    "visibility"		"0"
-    "title"		"YourMap v2"
-    "description"		"A description of your map. You can change this easily in Steam"
-    "changenote"		"v2 - a description of what you did, for posterity's sake"
+    "appid"  "252950"
+    "publishedfileid"  "0"
+    "contentfolder"  "C:\UDK\RLMM\UDKGame\Content\Maps\SteamWorkshop\YourMap"
+    "previewfile"  "C:\UDK\RLMM\UDKGame\Content\Maps\SteamWorkshop\YourMap\preview.jpg"
+    "visibility"  "0"
+    "title"  "YourMap v2"
+    "description"  "A description of your map. You can change this easily in Steam"
+    "changenote"  "v2 - a description of what you did, for posterity's sake"
 }
 ```
 
-| Field name| Explanation | 
+| Field name| Explanation |
 |-|-|
 | appid | **needs to be 252950** like I've shown here. That is the code that corresponds to Rocket League, as you can see at the end of its [Steam URL](http://store.steampowered.com/app/252950/) |
 | publishedfileid  | the unique ID tied to your item and profile. Only the contributors to an item have access to modify that Workshop item. You can see the number at the end of the workshop page's URL: [http://steamcommunity.com/sharedfiles/filedetails/?id=814858208](http://steamcommunity.com/sharedfiles/filedetails/?id=814858208) (shameless plug). For the initial upload, this needs to be '0'. SteamCMD will automatically change it to the correct value after your first upload.|  
@@ -68,7 +67,7 @@ Hopefully the rest of the fields are self-explanatory.
 
 ## SteamCMD Upload
 
-Now, run SteamCMD. You will have to close Rocket League, and it’s probably simpler to log out of Steam as well. I also recommend disconnecting your controller, because it tends to show up only as player 2 after running SteamCMD. 
+Now, run SteamCMD. You will have to close Rocket League, and it’s probably simpler to log out of Steam as well. I also recommend disconnecting your controller, because it tends to show up only as player 2 after running SteamCMD.
 
 :::warning
 Make sure you aren’t streaming or capturing video, because you’re about to type your password in plain sight.

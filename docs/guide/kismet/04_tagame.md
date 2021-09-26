@@ -25,7 +25,7 @@ Nodes from the TAGame folder were added to UDK by Psyonix. Visit the [Matinee](.
 
 Make sure that you have downloaded [the latest Dummy Classes](https://github.com/RocketLeagueMapmaking/RL-Dummy-Classes), or you might not see all of the nodes displayed on this page. Copy the folders containing the classes into `{UDK}\Development\Src\` and Windows should copy only the new files. You will then have to run a Full Recompile in Unreal Frontend. **It's a good idea to make backups before recompiling.**
 
-### Actions 
+### Actions
 
 ---
 
@@ -39,7 +39,11 @@ Make sure that you have downloaded [the latest Dummy Classes](https://github.com
     :Notes="['test','test2']"
 />
 
-<KismetNode 
+<KismetNode
     Title="Apply Car Products" Status="Not documented"
     Folder="TAGame_decrypted" Type="Actions"
 />
+
+### Events
+
+---

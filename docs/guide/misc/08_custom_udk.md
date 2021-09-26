@@ -7,7 +7,7 @@ tags:
 ---
 # Miscellaneous
 
-If you installed UDK with (a future version of) the [quick setup script](https://github.com/RocketLeagueMapmaking/UDK_RL_Setup), you may have already opted for some of these changes. Future tools will also streamline this process. Feel free to adjust them to your own preferences, since changing these settings will not require a full recompile. 
+If you installed UDK with (a future version of) the [quick setup script](https://github.com/RocketLeagueMapmaking/UDK_RL_Setup), you may have already opted for some of these changes. Future tools will also streamline this process. Feel free to adjust them to your own preferences, since changing these settings will not require a full recompile.
 
 :::tip Language
 This page is written for the International (American English - `INT`) version of UDK. You can change your language in `Preferences` > `Editor Language` or replace `INT` with the code for your language
@@ -52,7 +52,7 @@ You can replace the UDK templates with (your own) custom maps templates. Try to 
 MapTemplateName=This is what you see in UDK
 ```
 
-12.  Save the file, close it and open UDK. You should see your own template!
+12. Save the file, close it and open UDK. You should see your own template!
 
 <!-- more than 6 templates? -->
 

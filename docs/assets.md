@@ -7,7 +7,7 @@ sidebar: auto
 On this page you will find some tips and tricks related to styling a page. Other useful pages are:
 
 - [Markdown-it examples](https://markdown-it.github.io/) (some examples are in [#markdown](assets.html#markdown))
-- [Vuepress markdown documentation](https://vuepress.vuejs.org/guide/markdown.html) 
+- [Vuepress markdown documentation](https://vuepress.vuejs.org/guide/markdown.html)
 - [Source code of this page](https://github.com/RocketLeagueMapmaking/RL-docs/blob/master/docs/assets.md)
 
 ## RLMM Assets
@@ -29,7 +29,7 @@ On this page you will find some tips and tricks related to styling a page. Other
 <KismetNode
     Title="Kismet Node" Status="Not documented" Image="add_game_ball"
     Folder="TAGame" Type="Actions"
-    Description="Add a Kismet node to the documentation" 
+    Description="Add a Kismet node to the documentation"
     :InputLinks="['Add','Remove']"
     :OutputLinks="['Added','Removed']"
     :VariableLinks="['ball','Targets']"
@@ -38,30 +38,30 @@ On this page you will find some tips and tricks related to styling a page. Other
 
 *General properties:*
 
-* `Title`: Name of the kismet node used in UDK 
-    * Type: `String`
-    * Required: `true`
-* `Description`: Summary of what can be done with the kismet node 
-    * Type: `String`
-    * Required: `false`
-* `Status`: State of the kismet node
-    * Options: `Not documented`, `Not working`, `New`, `ACv3`, `ACv2`, `ACv1`
-    * Type: `String`
-    * Required: `true`
-* `Image`: An image of the kismet node. **The image (.png) must be placed in `docs/.vuepress/public/images/kismet/`**
-    * Type: `String` - image name
-    * Required: `false`
-* `Folder`: The folder of the kismet node in UDK
-    * Options: `TAGame`, `TAGame_decrypted`
-    * Type: `String`
-    * Required: `true`
-* `Type`: Type of kismet node
-    * Options: `Actions`, `Events`
-    * Type: `String`
-    * Required: `true`    
-* `:Notes`: Tips and remarks about the kismet node
-    * Type: `Array`
-    * Required: `false`
+- `Title`: Name of the kismet node used in UDK
+  - Type: `String`
+  - Required: `true`
+- `Description`: Summary of what can be done with the kismet node
+  - Type: `String`
+  - Required: `false`
+- `Status`: State of the kismet node
+  - Options: `Not documented`, `Not working`, `New`, `ACv3`, `ACv2`, `ACv1`
+  - Type: `String`
+  - Required: `true`
+- `Image`: An image of the kismet node. **The image (.png) must be placed in `docs/.vuepress/public/images/kismet/`**
+  - Type: `String` - image name
+  - Required: `false`
+- `Folder`: The folder of the kismet node in UDK
+  - Options: `TAGame`, `TAGame_decrypted`
+  - Type: `String`
+  - Required: `true`
+- `Type`: Type of kismet node
+  - Options: `Actions`, `Events`
+  - Type: `String`
+  - Required: `true`
+- `:Notes`: Tips and remarks about the kismet node
+  - Type: `Array`
+  - Required: `false`
 
 :::warning Semicolon
 To register an array as a property of a kismet node (or any other component) `:` or `v-bind:` must be placed before the name of the array.
@@ -69,15 +69,15 @@ To register an array as a property of a kismet node (or any other component) `:`
 
 *Values:*
 
-* `:InputLinks`: All items on the left side of a kismet node (except for `in`)
-    * Type: `Array`
-    * Required: `false`
-* `:OutputLinks`: All items on the right side of a kismet node (except for `out`)
-    * Type: `Array`
-    * Required: `false`
-* `:InputLinks`: All variables of a kismet node
-    * Type: `Array`
-    * Required: `false`
+- `:InputLinks`: All items on the left side of a kismet node (except for `in`)
+  - Type: `Array`
+  - Required: `false`
+- `:OutputLinks`: All items on the right side of a kismet node (except for `out`)
+  - Type: `Array`
+  - Required: `false`
+- `:InputLinks`: All variables of a kismet node
+  - Type: `Array`
+  - Required: `false`
 
 A not documentated node would then look like this:
 

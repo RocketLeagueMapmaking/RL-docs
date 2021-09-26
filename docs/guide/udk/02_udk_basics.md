@@ -23,7 +23,7 @@ I am starting with a completely blank map to be thorough. **You don’t have to*
 
 #### Name Your Project <Badge text="important" type="tip"/>
 
-Go to File > Save All and pick a good name for the project. Mine is called CeilingGoal. It is saved inside `{UDK Folder}\UDKGame\Content\Maps\CeilingGoal\.` 
+Go to File > Save All and pick a good name for the project. Mine is called CeilingGoal. It is saved inside `{UDK Folder}\UDKGame\Content\Maps\CeilingGoal\.`
 
 :::warning
 Many things will not work properly if you have spaces in the project name, so either use camelCase, snake_case, or what3ver_MAKESxSENSE-toYou.

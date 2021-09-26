@@ -2,32 +2,45 @@
   "name": "rocket_league_map_making",
   "version": "0.8.4",
   "description": "A website containing information pertaining to the creation, extension, debugging, and concepts of Rocket League map making.",
+  "author": "RLMM",
+  "license": "ISC",
   "homepage": "http://rocketleaguemapmaking.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/webbuildlucas/RL-docs.git"
+    "url": "https://github.com/rocketleaguemapmaking/RL-docs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rocketleaguemapmaking/RL-docs/issues"
   },
   "scripts": {
     "docs:build": "vuepress build docs",
     "docs:dev": "vuepress dev docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint docs/.vuepress/ --ext .js,.ts,.vue",
+    "lint:fix": "npm run lint -- --fix",
+    "lint-markdown": "npx markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
+    "lint-markdown:fix": "npx markdownlint-cli2-fix \"**/*.md\" \"#node_modules\""
   },
-  "author": "Lucas van Duijn",
-  "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/vue-fontawesome": "^2.0.2",
-    "axios": "^0.21.1",
     "node-fetch": "^2.6.1",
-    "vue": "^2.6.12",
-    "vue-template-compiler": "^2.6.12",
+    "vue": "^2.6.14",
+    "vue-template-compiler": "^2.6.14",
     "vuepress-theme-default-prefers-color-scheme": "^1.1.2"
   },
   "devDependencies": {
-    "@vuepress/plugin-pwa": "^1.8.0",
-    "vuepress": "^1.8.0",
+    "@vuepress/plugin-pwa": "^1.8.2",
+    "eslint": "^7.29.0",
+    "eslint-plugin-vue": "^7.12.1",
+    "markdownlint-cli2": "^0.3.1",
+    "vuepress": "^1.8.2",
     "vuepress-plugin-seo": "^0.1.4"
   }
 }

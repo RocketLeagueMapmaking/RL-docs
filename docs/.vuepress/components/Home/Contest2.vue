@@ -1,15 +1,21 @@
 <template>
-  <section class='guide-part'>
-    <div class='guide-text'>
-      <h1 class="section-title"><span> Mapmaking Contest 2 </span> <br> Old is New </h1>
+  <section class="guide-part">
+    <div class="guide-text">
+      <h1 class="section-title">
+        <span> Mapmaking Contest 2 </span> <br> Old is New
+      </h1>
       <div class="guide-part-body">
-        <p> From November 2020 until just after the new year, we had our second mapmaking contest. $550 in prizes went to <a href=https://imgur.com/gallery/TElpGKG>nine amazing maps</a> as judged by a panel and by the Rocket League Community. Stay tuned for more in the future!
+        <p>
+          From November 2020 until just after the new year, we had our second mapmaking contest. $550 in prizes went to <a href="https://imgur.com/gallery/TElpGKG">nine amazing maps</a> as judged by a panel and by the Rocket League Community. Stay tuned for more in the future!
         </p>
       </div>
     </div>
 
-    <div class='guide-intro'>
-      <img src='../../public/images/rlmmc2.png' alt='Old is New'></img>
+    <div class="guide-intro">
+      <img
+        src="../../public/images/rlmmc2.png"
+        alt="Old is New"
+      >
     </div>
   </section>
 </template>
