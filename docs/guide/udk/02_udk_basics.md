@@ -23,7 +23,7 @@ I am starting with a completely blank map to be thorough. **You don’t have to*
 
 #### Name Your Project <Badge text="important" type="tip"/>
 
-Go to File > Save All and pick a good name for the project. Mine is called CeilingGoal. It is saved inside `{UDK Folder}\UDKGame\Content\Maps\CeilingGoal\.` 
+Go to File > Save All and pick a good name for the project. Mine is called CeilingGoal. It is saved inside `{UDK Folder}\UDKGame\Content\Maps\CeilingGoal\.`
 
 :::warning
 Many things will not work properly if you have spaces in the project name, so either use camelCase, snake_case, or what3ver_MAKESxSENSE-toYou.
@@ -46,6 +46,5 @@ Because this is going to be based on the default soccar map, the initial assets 
 ![alt text](/images/UDK/basics/image22.png "All the makings of a delicious new map")
 
 Inside the Content Browser viewer section, there are a number of assets called Field_something and Goal_something. These are the pieces we’ll start with. But first, we’ll just make an empty platform with a single wall.
-
 
 **Find the static mesh named ConcreteBase, and drag it into the 3D editor.** This will be the floor. Once it is in the scene, **either right click it and select Properties at the top, or press F4.**

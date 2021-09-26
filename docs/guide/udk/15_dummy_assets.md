@@ -1,7 +1,7 @@
 ---
 title: Dummy Assets
 ---
-# UDK Advanced 
+# UDK Advanced
 
 ## Dummy Assets
 
@@ -17,7 +17,7 @@ Just name it correctly.
 
 **Click that friendly green button and place this .zip in the same location as the Park_P.upk file that you have been working with. Extract it, then look for it in UDK.**
 
-It’s also worth mentioning that there will be a name clash between the pre-existing Park_P.upk and the new one inside the Dummy Assets folder. **If you would like to keep using your less-dummified Park_P.upk, you will need to move, rename, or delete the one inside DummyAssets/Maps/BeckwithPark.** 
+It’s also worth mentioning that there will be a name clash between the pre-existing Park_P.upk and the new one inside the Dummy Assets folder. **If you would like to keep using your less-dummified Park_P.upk, you will need to move, rename, or delete the one inside DummyAssets/Maps/BeckwithPark.**
 
 ## How Dummy Assets Work
 
@@ -47,7 +47,7 @@ Most map names should be obvious, especially with the renamed folders. Here is a
 Also keep in mind that there is a stadium named `Utopia Stadium` (the idyllic coliseum with the globe fountain) as well as a Rocket Labs map named `Utopia Retro` (the donut). **For testing, we will continue to overwrite the donut Utopia.**
 :::
 
-One confusing aspect of all of this is that Rocket League does a fair amount of asset sharing internally anyway. Materials within the Stadium_OOB.upk package might get reused in Park_Night_P.upk, **but this is the whole reason that this strategy works.** Rocket League will check in all of the packages within `CookedPCConsole` for the meshes, materials, textures, and whatever else you reference within your map. 
+One confusing aspect of all of this is that Rocket League does a fair amount of asset sharing internally anyway. Materials within the Stadium_OOB.upk package might get reused in Park_Night_P.upk, **but this is the whole reason that this strategy works.** Rocket League will check in all of the packages within `CookedPCConsole` for the meshes, materials, textures, and whatever else you reference within your map.
 
 :::danger NOTE
 **It is important that all NEW assets (meshes, materials, textures) for your map live specifically within the map package itself and not a supporting .UPK or .UDK file like Generic or Simplicity. Dummy Assets should stay exactly where they are.**
@@ -56,6 +56,7 @@ One confusing aspect of all of this is that Rocket League does a fair amount of 
 A powerful workflow is to create packages of reusable assets, then copy them into the specific map project and reassociate the meshes in the map with the new package. This also spares you from UDK's "smart unloading" feature, where it will remove any objects from a package which appear "unused," even if you literally just added it and saved.
 
 ## Dummy Static Meshes
+
 As mentioned, these are essentially blank objects. You will find meshes with no vertices, materials with no visibility, and textures with no pixels. Therefore, you should take a few extra steps when building a map with them. **There is also going to be a lot of trial and error involved, so be patient.**
 
 ![alt text](/images/UDK/advanced/image78.png "Locked and loaded and ready to get dumb")
@@ -78,6 +79,7 @@ As mentioned, these are essentially blank objects. You will find meshes with no 
 Generally, when rebuilding a map purely with these assets, you will need to place a mesh both for visibility and for collisions. **Dummy Assets are more useful as world detail and for materials.**
 
 ## Dummy Materials
+
 Dummy materials work in the same way, but must be applied using the friendly green arrow.
 
 ![alt text](/images/UDK/advanced/image163.png "Filter to Material Instances and Materials, then click dat arrow")

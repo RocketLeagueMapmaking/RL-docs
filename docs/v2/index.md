@@ -5,7 +5,7 @@ editLink: false
 
 # Rocket League Mapmaking v2
 
-As of right now, Psyonix hasn't announced anything about custom maps support. It will probably take some time, but when they do you can find a guide here. 
+As of right now, Psyonix hasn't announced anything about custom maps support. It will probably take some time, but when they do you can find a guide here.
 
 :::tip Documentation
 [Click here](/guide/) to return to the documentation

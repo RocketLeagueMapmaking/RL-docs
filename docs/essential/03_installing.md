@@ -19,7 +19,6 @@ This script is meant to hold your hand through the entire setup process, take ca
 
 * [GitHub Link](https://github.com/RocketLeagueMapmaking/UDK_RL_Setup)
 
-
 ### Newk’s UDK Simple Setup
 
 To download this, you will need to make an account with RocketLeagueMods.com, our little corner of the VideoGameMods network. Newk’s package supplies detailed instructions for installing UDK 2015, and provides a huge set of resources to get going quickly. Refer to the section below to install UDK properly.
@@ -40,7 +39,7 @@ In the Project Name field, enter a good name for your project. I call mine RLMM 
 
 Twiddle your thumbs for a few minutes as it installs prerequisites and then installs UDK.
 
-Ignore the extra options, and complete the install. 
+Ignore the extra options, and complete the install.
 
 ## Things to Change
 

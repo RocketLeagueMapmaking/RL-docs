@@ -31,7 +31,7 @@ tags:
 
 New, load, save, etc. No surprises here.
 
-### 3 - Editor Window Options	
+### 3 - Editor Window Options
 
 ![alt text](/images/UDK/essential/image76.png)
 
@@ -109,17 +109,17 @@ These are rather self-explanatory if you mouse over them. Probably the most impo
 
 These are general readouts of what UDK thinks of your project. In general, it won’t think too highly of it, but we don’t think too highly of UDK either.
 
-### 16 - Editor Window Draw Scale	
+### 16 - Editor Window Draw Scale
 
 ![alt text](/images/UDK/essential/image54.png)
 
 You should probably leave these alone, but you can try messing with them for fun.
-### 17 - Grid and Snapping Options	
+
+### 17 - Grid and Snapping Options
 
 ![alt text](/images/UDK/essential/image138.png)
 
 Sometimes you may want to move or rotate an object by much smaller increments. For some reason, the lower right corner is where these options belong.
-
 
 ## Properties Window <Badge text="important" type="tip"/>
 

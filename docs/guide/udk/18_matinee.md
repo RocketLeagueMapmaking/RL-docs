@@ -1,6 +1,6 @@
 ---
 title: Matinee
 ---
-# UDK Advanced 
+# UDK Advanced
 
 ## Matinee <Badge text="not finished" type="warning"/>

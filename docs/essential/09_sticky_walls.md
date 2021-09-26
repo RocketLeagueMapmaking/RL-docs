@@ -12,7 +12,6 @@ In the popup window, **change Package to whatever name you want.** Grouping is a
 
 For name, write `StickyWalls` or `Sticky` or anything that makes sense to you. This is a material property that we are going to assign to all driveable surfaces in the game so that the car behaves as expected while on them.
 
-
 **Lastly, under Factory, select `PhysicalMaterial`.** This is the type of object we are creating.
 After you click OK, you will see a new PhysicalMaterial within the Content Browser
 

@@ -11,7 +11,7 @@ UDK supplies a number of materials which are great for testing things out. The d
 
 However, not all of these are created equal. Rocket League has a package which is a consolidated subset of the UDK built-in materials. In other words, not all of these will work unless you copy extra .upks into `{CookedPCConsole}`. Since we can’t force people who play on our maps to do this extra step, the best practice is to not use them.
 
-A lovely modder by the name of Derzo put together [this spreadsheet](https://docs.google.com/spreadsheets/d/1KLs5r_sUn3W6rLrw_xQJbEK-LOmxCiBRfo9_XI79Kng), which explains the situation with all of UDK’s standard materials. 
+A lovely modder by the name of Derzo put together [this spreadsheet](https://docs.google.com/spreadsheets/d/1KLs5r_sUn3W6rLrw_xQJbEK-LOmxCiBRfo9_XI79Kng), which explains the situation with all of UDK’s standard materials.
 
 This will be explored in much more detail in the [Custom Materials section](17_custom_material).
 
@@ -69,15 +69,3 @@ Next, select the floor. **Assign it a material called `HexGlass_Mat`**.
 ![alt text](/images/UDK/basics/image95.jpg "It’s almost decent!")
 
 Well, it looks pretty good, but it needs a little je ne sais quoi. Let’s get to one of the most neglected aspects of map design: Lighting!
-
-
-
-
-
-
-
-
-
-
-
-

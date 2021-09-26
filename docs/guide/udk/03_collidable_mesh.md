@@ -20,9 +20,9 @@ Unchecking “Disable All Rigid Body” allows for this object to have collision
 **Center the mesh to the world origin:**
 | Search for  | Change the line(s)  | To this value |
 | ------------- |:-------------:| -----:|
-| “loca”  |   X |   0 | 
-| “loca” |   Y |   0 | 
-| “loca” |   Z |     0 | 
+| “loca”  |   X |   0 |
+| “loca” |   Y |   0 |
+| “loca” |   Z |     0 |
 
 **Alternatively, right click the Move tool on the top toolbar:** ![alt text](/images/UDK/essential/image76.png)
 
@@ -63,5 +63,3 @@ Inside the Properties windows for the `Pylon_Soccar_TA` and `PlayerStart_TA`:
 There will be a few warnings when the build completes, but we can clear those up later.
 
 **File > Save All. Let’s play.**
-
-

@@ -1,7 +1,7 @@
 ---
 title: Custom Materials
 ---
-# UDK Advanced 
+# UDK Advanced
 
 ## Custom Materials
 
@@ -18,6 +18,7 @@ title: Custom Materials
 Instead, we have to rely on `Material Instances`. As mentioned briefly in a previous section, Material Instances are copies of a base material which allow for customization of certain parameters. This idea is widespread through UDK, Unreal Engine, and programming in general. To use a C++ description, this is equivalent to passing arguments into the constructor of a class.
 
 ## Available Base Materials Within Startup.upk
+
 I will kindly refer you to [Derzo’s Spreadsheet](https://docs.google.com/spreadsheets/d/1KLs5r_sUn3W6rLrw_xQJbEK-LOmxCiBRfo9_XI79Kng/), which outlines all of the available options.
 
 **For ___ Channel rows, “Texture” means that it will accept an image. “Vector” means it may only be a solid color. Rows in bold (in this table) are the most important:**
@@ -60,6 +61,7 @@ This leaves us with a few key options for creating custom materials. All of thes
 The VertexPaint materials are unlikely to be any more useful than TexturePaint_2Tex_Color, but you are welcome to use them. Vertex painting is a way to colorize materials based on which part of the mesh they cover, but its usefulness is complicated when talking about Rocket League mapmaking.
 
 ## Creating a TexturePaint_2Tex_Color Material Instance
+
 This material is the chosen one when it comes to custom materials for Rocket League maps. Now to get down to business.
 
 ![alt text](/images/UDK/advanced/image41.png "Yes")
@@ -75,6 +77,7 @@ This material is the chosen one when it comes to custom materials for Rocket Lea
 An uninspiring gray sphere will show up in a popup window, and the Content Browser will switch packages to highlight the new creation. **Double check that this exists within your map project.**
 
 ## Material Channels
+
 A Material Instance, as mentioned, has a number of parameters which may be customized. In the case of a material based on TexturePaint_2Tex_Color, we are able to control the Diffuse channel (color), Emissive channel (brightness of light emitted), Normal channel (surface displacement to add detail), and Spec(ular) channel (shininess), **all with textures.**
 
 In this context, “Channel” simply refers to a property of the material. Red, Green, and Blue are often referred to as the Red channel, Green channel, and Blue channel in image editing software. Consider this render from the game EVE Online:
@@ -89,7 +92,7 @@ Not every material in the game will need to have this much detail (obviously), b
 
 ![alt text](/images/UDK/advanced/image114.png "Fur Elise")
 
-I will be using this stupid fur texture that I stole from the internet. You are welcome to copy it from here, or work with any other texture you like. 
+I will be using this stupid fur texture that I stole from the internet. You are welcome to copy it from here, or work with any other texture you like.
 :::warning Give credits
 **Many websites want to charge you to use their images and textures. Often these are higher quality, but there are enough free resources available that you should have all you need. Give credit where credit is due if you use something which obviously had a lot of work put into it.**
 :::

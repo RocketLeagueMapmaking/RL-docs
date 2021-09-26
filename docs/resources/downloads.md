@@ -20,8 +20,8 @@ This a list of useful things in order of importance:
 * [Rocket League UPK Decryptor](./downloads.html#more-downloads) and [UE Viewer](./downloads.html#more-downloads) to decrypt RL assets
 * [Park_P Dummy Assets](https://drive.google.com/open?id=1rpQzqHgoRgpOBSHEpeDwvRtG3sYUXacl)
 
-
 ### Miscellaneous
+
 * [Bibliothèque d'Alexandrie v1](https://drive.google.com/drive/folders/1m0opoXAToFngyBUjudwqui0KiI_uG5en?usp=sharing)
 * [UE Viewer](http://www.gildor.org/en/projects/umodel#files)
 * [Rocket League UPK Decryptor](https://www.reddit.com/r/RocketLeague/comments/3v9d10/rocket_league_upk_decryptor_datamined_car_hitbox/?st=iti85t6x&sh=ad0687b1)
@@ -31,10 +31,9 @@ This a list of useful things in order of importance:
 * [Workshop texture package](https://drive.google.com/file/d/1jklpjfEu4Yw97cjYaMDWRx8H2XFyji6U/view?usp=sharing)
 
 [All-In-One Installer Packages](../essential/03_installing.html#all-in-one-packages):
+
 * [RocketLeagueMapmaking UDK RL Setup Script](https://github.com/Dasoccerguy/RocketLeagueMapMaking)
 * [Newk’s UDK Simple Setup](https://rocketleaguemods.com/mods/udk-2015-simple-setup/)
-
-
 
 ## Assets
 
@@ -49,6 +48,7 @@ This a list of useful things in order of importance:
 ### More Dummy assets
 
 :::tip How to use the assets
+
 * For maps that are not yet in the dummy assets folder: just unzip and paste it alongside the rest of the Dummy Assets maps
 * For maps that are already in the dummy assets folder: delete that map's folder and paste the new one
 :::
@@ -75,7 +75,6 @@ This a list of useful things in order of importance:
 * [Park_P Recreation](https://steamcommunity.com/sharedfiles/filedetails/?id=2325477336)
 * [Simplicity_v5](https://drive.google.com/file/d/1byF7HAl7GTJcaw1nrTq-U9EYt1fCK5Zy/view?usp=sharing)
 * [Hoops Template](https://steamcommunity.com/sharedfiles/filedetails/?id=2098030363)
-
 
 ### Fonts
 

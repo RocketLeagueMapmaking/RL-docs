@@ -7,7 +7,7 @@ This page describes settings applied at the map level to give different effects.
 
 ## World Info
 
-The World Info window from the `View` menu offers useful settings for the map as a whole, such as ambient sound and brightness. 
+The World Info window from the `View` menu offers useful settings for the map as a whole, such as ambient sound and brightness.
 
 |Option| Description|
 |------|------|
@@ -49,4 +49,3 @@ Similarly, the XYRotation setting may be used for some great effects. To spawn a
 |Sound| |
 |------|------|
 | arena sound settings |plays sound when a certain event happens. You can choose from one of [the existing arena sound settings]() | -->
-

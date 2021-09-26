@@ -4,6 +4,7 @@ title: Introduction
 # Blender Basics
 
 ## Key Terms <Badge text="important" type="tip"/>
+
 * `Mesh` - A 3D object made of vertices, edges, and faces
 * `Vertex` - A point defining a mesh
 * `Edge` - A straight line connecting two vertices

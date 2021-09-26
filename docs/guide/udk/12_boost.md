@@ -44,7 +44,6 @@ Next, there are some properties to set within the boost pill’s VehiclePickup_B
 
 To create a boost pad, follow the same steps. However, you will notice that there is no mesh called “Boostpad_Small.” Psyonix instead chose to use objects which are groupings of several small boost pads. **For now, just add the VehiclePickup_Boost_TA and the FXActor_Boost_TA**. Note that it is also lower than the pill pickup.
 
-
 **Set these values for the boost pad’s VehiclePickup_Boost_TA:**
 
 |Search for|Change the line(s)|To this value|
@@ -55,9 +54,7 @@ To create a boost pad, follow the same steps. However, you will notice that ther
 
 **Remember to assign the `FXActor_Boost_TA` to the `FXActor` slot as well.**
 
-
 Luckily, boost pickups behave better when mirroring than spawnpoints do. To create the other boost pills, **select the stack of objects, copy and paste them, then edit their X and Y locations at the same time in the Properties window. Alternatively, copy and paste these objects, right click, and select Transform > Mirror X/Y Axis.**
-
 
 Boost pickups on a standard Soccar map are at these locations. The ± symbol means that there is a pad at both +X and -X, or +Y and -Y, so placing the pickups listed below and mirroring them will make a complete set:
 

@@ -13,7 +13,7 @@ UDK has a nice feature for our exact problem. Using existing StaticMesh geometry
 
 ![alt text](/images/UDK/basics/image75.png)
 
-Change a few of the sliders so that the bounding box is more precise. We specifically want **Splits to be 0** so that it is one solid collision box rather than a nonsensical archipelago. 
+Change a few of the sliders so that the bounding box is more precise. We specifically want **Splits to be 0** so that it is one solid collision box rather than a nonsensical archipelago.
 
 **Click Apply to set the brush to this shape, and then New Volume to spawn a BlockingVolume.**
 
@@ -48,7 +48,7 @@ To get the best of both worlds - a mesh we can collide with that also looks the 
 This section will be a lightweight crash-course experience for both modeling and UV mapping. Please see the [Blender guide](../blender/01_blender) for more information.
 
 :::details Blender Crash Course
-![alt text](/images/UDK/basics/05_blender_course/image150.png "UvvU") 
+![alt text](/images/UDK/basics/05_blender_course/image150.png "UvvU")
 
 In Blender, **switch immediately to the UV Editing window layout on the top bar. The panel on the right is for editing 3D objects**, and the panel on the left is for managing how 2D textures map onto the 3D object.
 

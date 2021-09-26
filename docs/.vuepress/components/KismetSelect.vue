@@ -1,38 +1,81 @@
 <template>
-    <div class="node">
-        <button @click="activate(0)" :class="{ active : active === 0 }" class="collapsible">
-            <span class="colored" v-html="Status" :style="`background-color: ${status.colors[status.list.indexOf(Status)]}`"></span> 
-            {{ Title }} 
-            <span class="folder" v-html="Folder"></span>
-        </button> 
+  <div class="node">
+    <button
+      :class="{ active : active === 0 }"
+      class="collapsible"
+      @click="activate(0)"
+    >
+      <span
+        class="colored"
+        :style="`background-color: ${status.colors[status.list.indexOf(Status)]}`"
+      > {{ Status }} </span> 
+      {{ Title }} 
+      <span class="folder"> {{ Folder }} </span>
+    </button> 
 
-        <div v-if="active === 0 && (Image || InputLinks || OutputLinks || VariableLinks || Description || Notes)" class="content">
-            <p v-if="Description" v-html="Description"></p>
-            <img v-if="Image" :src="`/images/kismet/${Type}/${Folder}/${Image}.png`">
-            <div class="node-object" v-if="InputLinks || OutputLinks || VariableLinks">
-                <hr>
-                <p v-if="InputLinks">Input links</p>
-                <ul>
-                    <li v-for="link in InputLinks" v-html="link"></li>
-                </ul>
-                <p v-if="OutputLinks">Output links</p>
-                <ul>
-                    <li v-for="link in OutputLinks" v-html="link"></li>
-                </ul>
-                <p v-if="VariableLinks">Variable links</p>
-                <ul>
-                    <li v-for="link in VariableLinks" v-html="link"></li>
-                </ul>
-                <hr v-if="Notes">
-            </div>
-            <ul>
-                <li v-for="link in Notes" v-html="link"></li>
-            </ul> 
-        </div>
-        <div v-if="active === 0 && (!Image && !InputLinks && !OutputLinks && !VariableLinks && !Description && !Notes)" class="content">
-            <p v-html="error.message"></p>
-        </div>
+    <div
+      v-if="active === 0 && hasProperty"
+      class="content"
+    >
+      <p v-if="Description">
+        {{ Description }}
+      </p>
+      <img
+        v-if="Image"
+        :src="`/images/kismet/${Type}/${Folder}/${Image}.png`"
+      >
+      <div
+        v-if="InputLinks || OutputLinks || VariableLinks"
+        class="node-object"
+      >
+        <hr>
+        <p v-if="InputLinks">
+          Input links
+        </p>
+        <ul>
+          <li
+            v-for="link in InputLinks"
+            :key="link"
+          > {{ link }} </li>
+        </ul>
+        <p v-if="OutputLinks">
+          Output links
+        </p>
+        <ul>
+          <li
+            v-for="link in OutputLinks"
+            :key="link"
+          > {{ link }} </li>
+        </ul>
+        <p v-if="VariableLinks">
+          Variable links
+        </p>
+        <ul>
+          <li
+            v-for="link in VariableLinks"
+            :key="link"
+          >
+            {{ link }}
+          </li>
+        </ul>
+        <hr v-if="Notes">
+      </div>
+      <ul>
+        <li
+          v-for="link in Notes"
+          :key="link"
+        >
+          {{ link }}
+        </li>
+      </ul> 
     </div>
+    <div
+      v-if="active === 0 && !hasProperty"
+      class="content"
+    >
+      <p> {{ error.message }} </p>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -41,8 +84,8 @@
 // green: #51D05C
 // orange: #C9AB35
 // array used for validation. If you want to change this, update also the status array in data() and add a color in the same index
-const StatusList = ['New', 'Not working', 'Not documented', 'ACv3', 'ACv2', 'ACv1'];
-const Folders = ['TAGame', 'TAGame_decrypted'];
+const StatusList = ['New', 'Not working', 'Not documented', 'ACv3', 'ACv2', 'ACv1']
+const Folders = ['TAGame', 'TAGame_decrypted']
 const Types = ['Actions', 'Events']
 
 export default {
@@ -79,22 +122,23 @@ export default {
         VariableLinks: Array,
         Notes: Array
     },
-    data(){
-        return{
+    data () {
+        return {
             active: -1,
             status: {
                 list: ['New', 'Not working', 'Not documented','ACv3','ACv2','ACv1'],
                 colors: ['#4F8CEE','#E74343','#C9AB35','#51D05C','#51D05C','#51D05C'],
             },
             error: {
-                message: "Nothing has been added about this node"
-            }
+                message: 'Nothing has been added about this node'
+            },
+            hasProperty: !!this.Image || !!this.OutputLinks || !!this.InputLinks || !!this.Notes || !!this.VariableLinks || !!this.Description
         }
     },
     methods:{
         activate(node){
             if(this.active !== node){
-                this.active = node;
+                this.active = node
             }else{
                 this.active = -1
             }

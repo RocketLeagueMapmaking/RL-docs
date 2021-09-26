@@ -25,7 +25,7 @@ In older 3D games, due to hardware limitations, textures were very low resolutio
 * Will this object be moving or static?
 
 :::warning NOTE
-UDK will only accept perfectly square .TGA textures, and prefers that the resolution is a power of 2 for reasons discussed below. 
+UDK will only accept perfectly square .TGA textures, and prefers that the resolution is a power of 2 for reasons discussed below.
 :::
 The following table contains some guidelines, with the previous questions in mind:
 

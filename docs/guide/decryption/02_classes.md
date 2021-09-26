@@ -39,7 +39,7 @@ This list is only discussing a small list of errors and warnings that might not 
 ### Errors
 
 - `Error, BEGIN OBJECT: The component name {Variable} is already used (if you want to override the component, don't specify a class)`.
-The variable has already been declared in the current or parent class. You can remove the `Class={VariableClass}` in the object and UDK will recompile this variable. 
+The variable has already been declared in the current or parent class. You can remove the `Class={VariableClass}` in the object and UDK will recompile this variable.
 
 - `Error, Unrecognized type '{Variable}'`
 Add the structure in the _Types file in that package
