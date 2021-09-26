@@ -82,14 +82,14 @@ Copy the full path of your .vdf file from the file explorer window. In this exam
 
 In SteamCMD, type:
 
-```
+```sh
 workshop_build_item
 ```
 
-And then right click to paste what you copied, and add \YourMap.vdf.
+And then right click to paste what you copied, and add `\YourMap.vdf`.
 The full command should look like:
 
-```
+```sh
 workshop_build_item C:\UDK\RLMM\UDKGame\Content\Maps\SteamWorkshop\YourMap\YourMap.vdf
 ```
 

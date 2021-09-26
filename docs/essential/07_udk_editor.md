@@ -119,6 +119,8 @@ You should probably leave these alone, but you can try messing with them for fun
 
 ![alt text](/images/UDK/essential/image138.png)
 
+![alt text](/images/UDK/essential/image138.png)
+
 Sometimes you may want to move or rotate an object by much smaller increments. For some reason, the lower right corner is where these options belong.
 
 ## Properties Window <Badge text="important" type="tip"/>

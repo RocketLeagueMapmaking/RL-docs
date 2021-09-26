@@ -25,7 +25,8 @@ Gotcha again! UDK is very particular about lighting because it is heavily optimi
 
 One of the key optimizations used by UDK is a strategy called Light Mapping. This is a non-realtime process (as in you run it before playing the game/level/map). Using a more sophisticated and better-looking lighting model (as in mathematical model), UDK calculates shadows, glows, and other light effects, then generates 2D textures (called Light Maps) which are applied on top of existing materials. They are great for our purposes, but the key feature is the last part of that sentence.
 
- ![alt text](/images/UDK/basics/image176.png)**Building lighting will force your map to refresh the behavior of all materials.** If shadows are not showing up, or certain parts are wildly miscolored, building lighting will attempt to fix all of that. Before uploading a map, it is always a good idea to rebuild the lighting so it looks finished.
+![alt text](/images/UDK/basics/image176.png)
+**Building lighting will force your map to refresh the behavior of all materials.** If shadows are not showing up, or certain parts are wildly miscolored, building lighting will attempt to fix all of that. Before uploading a map, it is always a good idea to rebuild the lighting so it looks finished.
 
 ![alt text](/images/UDK/basics/image210.png "Task Failed Successfully!")
 
@@ -34,15 +35,15 @@ When you build, UDK is inevitably going to complain about some things. In genera
 ### Errors
 
 These are the most common things you’ll see and how to fix them:
-|Message/Error|Fix|
-| ------------- |-------|
-|“Maps not built with production lighting|Select “Production” in lighting build options (this makes it take much longer)|
-|“No importance volume found”|Add a “Lightmass Importance Volume” around the portion of your map the players will see up close|
-|“Object has overlapping UVs”|Ignore since you probably did this intentionally. They can sometimes result in lighting artifacts.|
-|“StaticMesh has invalid LightMapCoordinateIndex”|UDK wants a second UV map layer specifically for the LightMap. It’s generally not worthwhile.|
-|Object is completely black|Disable “Use Precomputed Shadows” in its properties to exclude it from lightmapping|
-|Object has really weird “shadows”|Enable “Override Light Map Res” in properties and set “Overridden Light Map Res” to 128, 256, 512, or 1024|
-|Object flickers|Check that you don’t have duplicate objects in the same location. Check that the mesh doesn’t have duplicate faces in the same location.|
+| Message/Error                                    | Fix                                                                                                                                      |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| “Maps not built with production lighting         | Select “Production” in lighting build options (this makes it take much longer)                                                           |
+| “No importance volume found”                     | Add a “Lightmass Importance Volume” around the portion of your map the players will see up close                                         |
+| “Object has overlapping UVs”                     | Ignore since you probably did this intentionally. They can sometimes result in lighting artifacts.                                       |
+| “StaticMesh has invalid LightMapCoordinateIndex” | UDK wants a second UV map layer specifically for the LightMap. It’s generally not worthwhile.                                            |
+| Object is completely black                       | Disable “Use Precomputed Shadows” in its properties to exclude it from lightmapping                                                      |
+| Object has really weird “shadows”                | Enable “Override Light Map Res” in properties and set “Overridden Light Map Res” to 128, 256, 512, or 1024                               |
+| Object flickers                                  | Check that you don’t have duplicate objects in the same location. Check that the mesh doesn’t have duplicate faces in the same location. |
 
 ### Lightmass Importance Volume
 
@@ -62,10 +63,10 @@ A Lightmass Importance Volume may be created by resizing the CSG Brush to the si
 
 As mentioned above, start with a DirectionalLight. Place this above your map. If you want more interesting shadows, you may rotate it.
 
-|Search for|Change the line(s)|To this value|
-|-------|------|------|
-|“bri”|Brightness|0.5 to 3|
-|“mod”|Mod Shadow Color| #999999 (grey)|
+| Search for | Change the line(s) | To this value  |
+| ---------- | ------------------ | -------------- |
+| “bri”      | Brightness         | 0.5 to 3       |
+| “mod”      | Mod Shadow Color   | #999999 (grey) |
 
 There’s a whole slew of other settings that you should play around with, but these two will instantly improve the lighting and look of the map.
 

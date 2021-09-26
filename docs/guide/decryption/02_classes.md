@@ -1,7 +1,8 @@
 ---
 title: Classes
 ---
-# Decyption
+
+# Decryption
 
 With UE Explorer or the AssetExtraction tool you can update or add new classes to [the dummy classes](../../essential/04_dummy_classes). These classes can be used for [kismet nodes](../kismet/04_tagame). If you can't open a new package you are missing the keys for that package in `keys.txt`.
 
@@ -30,7 +31,7 @@ Almost every file that starts with: `SeqAct_` (action), `SeqCon_` (condition), `
 
 When you have added a new class or changed an existing node, you have to recompile it before UDK can recognize it. This can be done by using Unreal Frontend, in the menu click `script` > `Full recompile`, or by starting UDK with the `make -full` arguments. If you see at the bottom of the logs `COMMANDLET 'UDK.exe make -full' SUCCEEDED`, the recompile was successful and you can open UDK.
 
-![](/images/decryption/recompile.png "Task failed succesfully!")
+!['example of recompile errors in Unreal Frontend'](/images/decryption/recompile.png "Task failed succesfully!")
 
 ## Compile issues
 

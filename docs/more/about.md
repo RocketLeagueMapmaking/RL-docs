@@ -21,30 +21,28 @@ Who am I? I have a few names, depending on where you find me: Mr. Swaggles in Ro
 
 These guys will be referred to as friendly/wonderful/amazing modders, so please thank them if you get a chance. Send a message if we didn’t give you credit for discovering something, and we’ll add you.
 
-| | |
-|-|-|
-|**whynotsteven** | RL Modding Founder, The OG |
-|**ButterandCream** | Discord/Reddit Admin, Rocket Launcher Creator |
-|**Bakkes** | Bakkesmod Creator |
-|**glhglh** | Collision Channels, AlphaConsole Plugin, Foundational Discoveries |
-|**CinderBlock** | Bakkesmod Genius |
-|**Lethamyr** | Countless Custom Maps, New Features, and Publicity |
-|**KarlHeinzSchneider** | Collision Channels, Foundational Discoveries |
-|**wejrox/JimJoms** | Web Development, Video Tutorials, One-Stop-Chop-Shop |
-|**Derzo** | Fixed Collisions, Guides, Custom Materials, In-Game Assets |
-|**Stanbroek** | Advanced Map and Kismet Techniques, Creator of Rocket Plugin |
-|**Thanrek** | Advanced Map and Kismet Techniques |
-|**French Fries** | Foundational Dribbling Challenge Maps |
-|**dmc** | Foundational Challenge Maps |
-|**Dreale** | Foundational Parkour Challenge Maps |
-|**Ardivee** | Boost, Mapmaking Techniques |
-|**Eliot** | UE Explorer Program |
-|**Martinn** | UPK Decryptor, Dummy Assets, Bakkesmod Work |
-|**LiveDimensions** | Tech Support |
-|**tj** | Kismet Library |
-|**Ecrase-Patate** | Kismet Support |
-|**MrPhil** | Dynamic Mesh Actors, New Kismet Nodes |
-|**Newk** | New Kismet Nodes |
-|**ghostrider-05** | RocketLeagueMapmaking.com |
-
-<!-- | | | -->
+|                        |                                                                   |
+| ---------------------- | ----------------------------------------------------------------- |
+| **whynotsteven**       | RL Modding Founder, The OG                                        |
+| **ButterandCream**     | Discord/Reddit Admin, Rocket Launcher Creator                     |
+| **Bakkes**             | Bakkesmod Creator                                                 |
+| **glhglh**             | Collision Channels, AlphaConsole Plugin, Foundational Discoveries |
+| **CinderBlock**        | Bakkesmod Genius                                                  |
+| **Lethamyr**           | Countless Custom Maps, New Features, and Publicity                |
+| **KarlHeinzSchneider** | Collision Channels, Foundational Discoveries                      |
+| **wejrox/JimJoms**     | Web Development, Video Tutorials, One-Stop-Chop-Shop              |
+| **Derzo**              | Fixed Collisions, Guides, Custom Materials, In-Game Assets        |
+| **Stanbroek**          | Advanced Map and Kismet Techniques, Creator of Rocket Plugin      |
+| **Thanrek**            | Advanced Map and Kismet Techniques                                |
+| **French Fries**       | Foundational Dribbling Challenge Maps                             |
+| **dmc**                | Foundational Challenge Maps                                       |
+| **Dreale**             | Foundational Parkour Challenge Maps                               |
+| **Ardivee**            | Boost, Mapmaking Techniques                                       |
+| **Eliot**              | UE Explorer Program                                               |
+| **Martinn**            | UPK Decryptor, Dummy Assets, Bakkesmod Work                       |
+| **LiveDimensions**     | Tech Support                                                      |
+| **tj**                 | Kismet Library                                                    |
+| **Ecrase-Patate**      | Kismet Support                                                    |
+| **MrPhil**             | Dynamic Mesh Actors, New Kismet Nodes                             |
+| **Newk**               | New Kismet Nodes                                                  |
+| **ghostrider-05**      | RocketLeagueMapmaking.com                                         |

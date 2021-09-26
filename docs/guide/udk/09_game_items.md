@@ -29,14 +29,14 @@ Player spawn points will fight you at every turn, but don’t forget that you ar
 
 Place a `PlayerStart_TA` into the map. Bring up the Properties window and set these values:
 
-|Search for|Change the line(s)|To this value|
-|------|------|------|
-|“team”|Team Index|1|
-|“dest”|Destination Only|True|
-|“draw”|Draw Scale|5|
-|“loc”|X|0|
-|“loc”|Y|4608*|
-|“loc”|Z|83|
+| Search for | Change the line(s) | To this value |
+| ---------- | ------------------ | ------------- |
+| “team”     | Team Index         | 1             |
+| “dest”     | Destination Only   | True          |
+| “draw”     | Draw Scale         | 5             |
+| “loc”      | X                  | 0             |
+| “loc”      | Y                  | 4608*         |
+| “loc”      | Z                  | 83            |
 
 The Team Index value is not required to be 1 (Blue team), but it helps avoid confusion because these will be the Blue team’s spawn points.
 
@@ -48,19 +48,26 @@ Because the game will be played along the Y axis (using the default setup of Pyl
 
 If you want to create a set of standard Soccar spawns, **duplicate (Ctrl+D) this PlayerStart_TA four times. Set the following locations and rotations:**
 
-|Number|X|Y|Z|Roll|Pitch|Yaw|
-|------|------|------|------|------|------|------|
-|1|0|4608|83|0|0|-90|
-|2|256|3840|83|0|0|-90|
-|3|-256|3840|83|0|0|-90|
-|4|2040|2560|83|0|0|225|
-|5|-2040|2560|83|0|0|-45|
+| Number | X     | Y    | Z   | Roll | Pitch | Yaw |
+| ------ | ----- | ---- | --- | ---- | ----- | --- |
+| 1      | 0     | 4608 | 83  | 0    | 0     | -90 |
+| 2      | 256   | 3840 | 83  | 0    | 0     | -90 |
+| 3      | -256  | 3840 | 83  | 0    | 0     | -90 |
+| 4      | 2040  | 2560 | 83  | 0    | 0     | 225 |
+| 5      | -2040 | 2560 | 83  | 0    | 0     | -45 |
 
 If you have been following along, you might have had the idea to get clever and use the Transform > Mirror X Axis tool. This works for getting them to the correct location, **but Mirroring across an axis also sets the scale in that axis to negative.** What this means for a spawn point is that you might spawn backward or upside down. If you do choose to use Mirror, reset all of the Scale options to 1 and then fix the rotation. In the end, you won’t save any time by using it.
 
-:::tip Demo Spawn Points
-If you add spawnpoints after the 5 above, they will be used **only** after someone is demolished
-:::
+## Demo Spawn Points
+
+If you add spawnpoints after the 5 above, they will be used **only** after someone is demolished. Here are the standard Soccar demo spawns:
+
+| Number | X     | Y    | Z   | Roll | Pitch | Yaw |
+| ------ | ----- | ---- | --- | ---- | ----- | --- |
+| 1      | 2688  | 4608 | 83  | 0    | 0     | -90 |
+| 2      | 2304  | 4608 | 83  | 0    | 0     | -90 |
+| 3      | -2688 | 4608 | 83  | 0    | 0     | -90 |
+| 4      | -2304 | 4608 | 83  | 0    | 0     | -90 |
 
 ## GoalVolume_TA
 
@@ -104,10 +111,10 @@ Additionally, you may need to type “GoalIndicator_TA” in the Goal Indicator 
 
 Lastly, one of the goals needs to be for Orange Team, and one needs to be for Blue Team. **When Rocket League sees a Pylon_Soccar_TA with default settings, it sets up the game to be played along the Y axis (e.g. goals at +5000Y and -5000Y). Also keep in mind that a “team’s goal” is the one that it is trying to score on (i.e. getting the ball there gives that team a point).**
 
-|Team|Team Num|Y Location of Team’s Goal|
-|------|------|------|
-|Orange|0|Positive|
-|Blue|1|Negative|
+| Team   | Team Num | Y Location of Team’s Goal |
+| ------ | -------- | ------------------------- |
+| Orange | 0        | Positive                  |
+| Blue   | 1        | Negative                  |
 
 **Set up the goals like this, then Build Paths (or Build All). Save, load the map, and make sure that you can score in both goals. In Training, you are considered to be on Blue Team (team 1).**
 

@@ -7,22 +7,22 @@ title: 'Collidable Mesh'
 
 **To make a collidable mesh, you need to set these Properties:**
 
-| Search for  | Change the line(s)  | To this value |
-| ------------- |:-------------:| -----:|
-| “rigi”  | Disable All Rigid Body  | Unchecked |
-| “rigi”  | Block Rigid Body    | Checked |
-| “acc”   | Accepts Dynamic Decals  | Checked |
-| “coll”  | Collision Type  | COLLIDE_BlockAll |
-| “rbc”   | RBChannel   | RBCC_Default |
+| Search for |   Change the line(s)   |    To this value |
+| ---------- | :--------------------: | ---------------: |
+| “rigi”     | Disable All Rigid Body |        Unchecked |
+| “rigi”     |    Block Rigid Body    |          Checked |
+| “acc”      | Accepts Dynamic Decals |          Checked |
+| “coll”     |     Collision Type     | COLLIDE_BlockAll |
+| “rbc”      |       RBChannel        |     RBCC_Default |
 
 Unchecking “Disable All Rigid Body” allows for this object to have collisions. “Block Rigid Body” allows for it to collide with other solid objects. “Accepts Dynamic Decals” allows Rocket League to draw the ball indicator circle on this mesh, which is typically what you want. “Collision Type” allows for this object to collide with certain types of actors, but is largely overruled by RBChannel. “RBChannel” allows for objects which block only the ball or only the player (as examples), with the default option to block everything. **Some of these are the default settings, but they are good to verify anyway.**
 
 **Center the mesh to the world origin:**
-| Search for  | Change the line(s)  | To this value |
-| ------------- |:-------------:| -----:|
-| “loca”  |   X |   0 |
-| “loca” |   Y |   0 |
-| “loca” |   Z |     0 |
+| Search for | Change the line(s) | To this value |
+| ---------- | :----------------: | ------------: |
+| “loca”     |         X          |             0 |
+| “loca”     |         Y          |             0 |
+| “loca”     |         Z          |             0 |
 
 **Alternatively, right click the Move tool on the top toolbar:** ![alt text](/images/UDK/essential/image76.png)
 
@@ -39,9 +39,9 @@ Next, look for `Field_STD_Collision_Corner`, and place it into the map. Adjust i
 If you used one of the templates, you will have a light already. If not, **right click anywhere in the 3D editor > Add Actor > Add Light (Point). Right click the added light > Convert Light > DirectionalLights > DirectionalLight. Position it somewhere above the map.**
 
 Inside its properties:
-|  | | |
-| ------------- |:-------------:| -----:|
-| “draw”|Draw Scale|5 |
+|        |            |      |
+| ------ | :--------: | ---: |
+| “draw” | Draw Scale |    5 |
 
 This makes it a little easier to see.
 
@@ -49,12 +49,12 @@ You will also need to add a spawn point and an object that tells Rocket League t
 
 Inside the Properties windows for the `Pylon_Soccar_TA` and `PlayerStart_TA`:
 
-|Search for|Change the line(s)|To this value|
-| ------------- |:-------------:| -----:|
-|“loca”|X|0 (-500 for PlayerStart_TA)|
-|“loca”|Y|0|
-|“loca”|Z|60|
-|“draw”|Draw Scale|5 (it will clamp to 3.202685)|
+| Search for | Change the line(s) |                 To this value |
+| ---------- | :----------------: | ----------------------------: |
+| “loca”     |         X          |   0 (-500 for PlayerStart_TA) |
+| “loca”     |         Y          |                             0 |
+| “loca”     |         Z          |                            60 |
+| “draw”     |     Draw Scale     | 5 (it will clamp to 3.202685) |
 
 **Because these are based on Paths, you will need to Build Paths before this is playable. Better yet, do Build > Build All.**
 

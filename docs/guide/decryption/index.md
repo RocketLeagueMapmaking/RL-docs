@@ -7,7 +7,9 @@ Decrypting assets from the game is great for discovering new techniques or clean
 
 > **Rocket League mapmaking techniques cannot be used to give you a competitive advantage in the game, and any attempts at that are directly against the [EULA](../../more/psyonix).** Please play nice and play by the rules, and you have nothing to fear.
 
+:::tip uMod
 uMod is outdated and it doesn't work anymore since the DX11 update. It was used for extracting textures and applying them in-game. You can use the Alphaconsole plugin for bakkesmod and uModel now to replace uMod.
+:::
 
 ItsBrank has created [a mini-modding guide](https://docs.google.com/document/d/1-o-7AojY1j4_5i0gj5LmI6hDhJL9VZg0IW40KL7objQ/edit#heading=h.v08ltc525arh) which includes converting Rocket League sounds and exporting UPK files.
 

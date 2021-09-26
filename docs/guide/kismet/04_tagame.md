@@ -15,8 +15,8 @@ Nodes from the TAGame folder were added to UDK by Psyonix. Visit the [Matinee](.
 :::warning UDK Documentation: Special Cases
 
 - All events that mention `mobile` do not work since Rocket League is not on mobile (yet?)
-- All nodes beginning with an Unreal Command starting with `set` or `setnopec` are disabled by Psyonix. This also breaks the node `Modify Property`
-- HUD events will not work because the Render Event node is disabled. For rendering images and animations you should use [Flash and Scaleform]()
+- More nodes, such as `Modify Property`, are also disabled
+- HUD events will not work because the Render Event node is disabled. For rendering images and animations you should use Flash and Scaleform
 :::
 
 ## TAGame

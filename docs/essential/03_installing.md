@@ -48,26 +48,3 @@ If you used one of the All-in-One packages, you may skip ahead to [and start a U
 :::danger Manual Installation
 If you are going to install UDK manually: don’t launch it, because we have some things to change.
 :::
-
-<!-- ## Install locations <Badge text="not finished" type="warning"/>
-
-To make this guide more customizable, you can enter here your install locations. 
-
-:::warning NOT MANDATORY
-You don't have to fill this form. If you choose not to do it, the UDK folder will be {UDKfolder}, etc
-:::
- <script>
-
-</script>
-<form>
-<label>UDK folder</label><br>
-<input required type='text' placeholder='C:\UDK' id='save_udk'><br>
-<label>Rocket league folder</label><br>
-<input required type='text' placeholder='C:\Games\SteamApps\common\rocketleague' id='save_rl'><br>
-<label>Project name</label><br>
-<input required type='text' placeholder='RLMM' id='save_projectName'><br>
-<label>CookedPCConsole</label><br>
-<input required type='text' placeholder='C:\Games\SteamApps\common\rocketleague\TAGame\CookedPCConsole' id='save_cookedpc'><br>
-<input type= 'submit' value='save'>
-</form>
- -->
