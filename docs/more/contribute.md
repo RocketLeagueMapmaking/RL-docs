@@ -7,9 +7,9 @@ tags:
 
 # Contribute
 
-Thank you for helping us to try to create a complete guide for Rocket League Mapmaking. Contribute enough, and you will secure a place in the [special thanks](../more/about.md#special-thanks).
+Thank you for helping us to try to create a complete guide for Rocket League Mapmaking. Contribute enough, and you will secure a place in the [Special Thanks](../more/about.md#special-thanks).
 
-If you have ideas for the website, you can reach us [here](../more/contact.md) or on [github discussions](https://github.com/RocketLeagueMapmaking/RL-docs/discussions)
+If you have ideas for the website, you can reach us [here](../more/contact.md) or via [GitHub discussions](https://github.com/RocketLeagueMapmaking/RL-docs/discussions)
 
 ## Financial Contribution
 
@@ -22,22 +22,22 @@ If you want to add money to a prize pool for a contest, say so in the descriptio
 
 ## This Guide
 
-You may contribute by editing a page or suggesting new content. Visit [the Kismet Snippet Library](https://github.com/RocketLeagueMapmaking/Kismet) for adding your own snippet.
+You may contribute by editing a page or suggesting new content. Visit [the Kismet Snippet Library](https://github.com/RocketLeagueMapmaking/Kismet) to add your own snippet.
 
-:::tip Looking for volunteers
-Do you want to help improve this guide (or want your own (RL related) website)? Contact me on discord (ghostrider-05#8461) and we can make some awesome features! (Experience with `Vue.js` is a plus)
+:::tip Looking For Volunteers
+Do you want to help improve this guide (or want your own (RL related) website)? Contact me on Discord (ghostrider-05#8461) and we can make some awesome features! (Experience with `Vue.js` is a plus)
 :::
 
 ### Edit Existing Content
 
-To edit an existing page, click the link in the footer: `Edit this page on GitHub`. By clicking on this link github will create a fork based on the main branch. Follow all instructions in the section [Add new content](./contribute.md#add-new-content) to make sure your changes are accepted.
+To edit an existing page, click the link in the footer: `Edit this page on GitHub`. Github will create a fork from the main branch. Follow all instructions in the [Add New Content](./contribute.md#add-new-content) section to make sure your changes are accepted.
 
 ### Suggest New Content
 
-Requests may be as simple as "add a section about a special mode", or "add a page about a specific kismet node". We'll do our best to fulfill all requests, as long as they're reasonable. Github discussions can also be used for more general questions and/or suggestions.
+Requests may be as simple as "add a section about a special mode," or "add a page about a specific kismet node." We'll do our best to fulfill all requests, as long as they're reasonable. GitHub discussions can also be used for more general questions and/or suggestions.
 
-1. Make sure that you've looked at the [existing issues](https://github.com/RocketLeagueMapmaking/RL-docs/issues), [FAQ](../faq.md/), [future content](../../more/roadmap.md#upcoming-content), and [bounty board](./contribute.md#this-guide) before making a request. It might already exist!
-2. Make a request; [create a new issue.](https://github.com/RocketLeagueMapmaking/RL-docs/issues) and select a template.
+1. Make sure that you've looked at the [Existing Issues](https://github.com/RocketLeagueMapmaking/RL-docs/issues), [FAQ](../faq.md/), [Future Content](../../more/roadmap.md#upcoming-content), and [Bounty Board](./contribute.md#this-guide) before making a request. It might already exist!
+2. Make a request, [create a new issue.](https://github.com/RocketLeagueMapmaking/RL-docs/issues) and select a template.
 3. Title it appropriately, and let us know exactly what you mean inside the issue description.
 
 ### Add New Content
