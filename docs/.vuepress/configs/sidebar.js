@@ -59,7 +59,7 @@ module.exports = {
             children: [
                 '/guide/udk/00_start',
                 '/guide/udk/01_csg',
-                '/guide/udk/02_udk_basics',
+                '/guide/udk/02_starting_a_map',
                 '/guide/udk/03_collidable_mesh',
                 '/guide/udk/04_map_test',
                 '/guide/udk/05_collidable_collisions',

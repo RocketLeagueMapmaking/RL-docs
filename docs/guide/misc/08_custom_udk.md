@@ -18,7 +18,7 @@ This page is written for the International (American English - `INT`) version of
 To replace the UDK splash screen with your own image, save the image as a `.bmp` file (preferably with a size of 650*375), rename the image to `EdSplash` and replace the standard splash screen in \
 `{UDK Folder}/UDKGame/Splash/PC/`
 
-![](../../.vuepress/public/images/UDK/shark_UDK_splash.png "Nominee for best splash screen?")
+![](/images/UDK/shark_UDK_splash.png "Nominee for best splash screen?")
 
 ## Welcome Screen
 
@@ -67,13 +67,13 @@ Tip_00001=Did you know you can replace the current tips with your own?\n\nLearn 
 
 ## Documentation
 
-The [Content Browser](../../essential/08_content_browser.html#content-browser) has a tab for documentation, which you can fill with your own useful links by editing the file `{UDK Folder}\Engine\EditorResources\UDKOffline.html`
+The [Content Browser](../../essential/08_content_browser.md#content-browser) has a tab for documentation, which you can fill with your own useful links by editing the file `{UDK Folder}\Engine\EditorResources\UDKOffline.html`
 
 ## UDK Custom Hotkeys
 
 ### Kismet
 
-In `{UDK Folder}\UDKGame\Config\UDKEditor.ini` you can edit [the standard hotkeys](https://docs.unrealengine.com/udk/Three/KismetUserGuide.html#Hotkeys) or add your own hotkeys. **Make sure your hotkey doesn't clash with [an existing kismet view hotkey](../kismet/01_kismet.html#the-hottest-hotkeys)!**
+In `{UDK Folder}\UDKGame\Config\UDKEditor.ini` you can edit [the standard hotkeys](https://docs.unrealengine.com/udk/Three/KismetUserGuide.html#Hotkeys) or add your own hotkeys. **Make sure your hotkey doesn't clash with [an existing kismet view hotkey](../kismet/01_kismet.md#the-hottest-hotkeys)!**
 
 ### Matinee
 

@@ -39,9 +39,9 @@ Next, look for `Field_STD_Collision_Corner`, and place it into the map. Adjust i
 If you used one of the templates, you will have a light already. If not, **right click anywhere in the 3D editor > Add Actor > Add Light (Point). Right click the added light > Convert Light > DirectionalLights > DirectionalLight. Position it somewhere above the map.**
 
 Inside its properties:
-|        |            |      |
-| ------ | :--------: | ---: |
-| “draw” | Draw Scale |    5 |
+| Search for | Change the line(s) | To this value |
+| ---------- | :----------------: | ------------: |
+| “draw”     |     Draw Scale     |             5 |
 
 This makes it a little easier to see.
 
@@ -64,4 +64,6 @@ There will be a few warnings when the build completes, but we can clear those up
 
 **File > Save Current Level. Let’s play.**
 
-
+:::warning
+You might be tempted to click File > Save All. This can cause Dummy Asset packages to become corrupted, which is something that can confuse even the most experienced mapmakers. The earlier you can develop the muscle memory of using **File > Save Current Level**, the better.
+:::

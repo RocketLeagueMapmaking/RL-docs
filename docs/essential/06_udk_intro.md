@@ -21,7 +21,7 @@ tags:
 
 **Hidden functions will show up when you right click many of the buttons around UDK.**
 
-**Additionally, a treasure trove of options will show up when you right click an Actor in the Editor Window. See [the Properties Window](./07_udk_editor.html#properties-window) section.**
+**Additionally, a treasure trove of options will show up when you right click an Actor in the Editor Window. See [the Properties Window](./07_udk_editor.md#properties-window) section.**
 
 ### Navigating Around
 

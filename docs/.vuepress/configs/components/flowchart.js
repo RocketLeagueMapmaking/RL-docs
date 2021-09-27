@@ -133,7 +133,7 @@ const types = [
             {
                 question: 'Ground and Collisions',
                 desc: 'Surfaces for the player to drive on',
-                no: '<a href="../guide/udk/02_udk_basics.html#starting-a-map" target="_blank">UDK Basics - Starting a Map</a>'
+                no: '<a href="../guide/udk/02_starting_a_map.html#starting-a-map" target="_blank">UDK Basics - Starting a Map</a>'
             },
             {
                 question: 'Obstacles',

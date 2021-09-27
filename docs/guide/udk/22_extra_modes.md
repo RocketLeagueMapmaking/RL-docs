@@ -4,7 +4,7 @@ title: Extra Modes
 # UDK Advanced
 
 :::tip
-Do you have experience with extra modes and want to share your knowledge? Check the [contribution guide.](../../more/contribute)
+Do you have experience with extra modes and want to share your knowledge? Check the [contribution guide.](../../more/contribute.md)
 :::
 
 ## Hoops <Badge text="not finished" type="warning"/>

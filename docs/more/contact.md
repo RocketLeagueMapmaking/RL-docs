@@ -13,6 +13,6 @@ If you have any question or ideas, you can contact us via:
 
 ## Content Requests
 
-Since this guide has been made specifically for mapmaking, we will not add guides for [other tools](../faq/). We will, of course, make additions to the current pages and add new ones about everything related to mapmaking.
+Since this guide has been made specifically for mapmaking, we will not add many guides for [other tools](../faq.md). We will, of course, make additions to the current pages and add new ones about everything related to mapmaking.
 
-[Click here](contribute) to learn how to request more content.
+[Click here](contribute.md) to learn how to request more content.
