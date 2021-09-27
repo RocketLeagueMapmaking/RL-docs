@@ -7,14 +7,12 @@ If you’re like me, you never get anything right on the first try. You probably
 
 You do not need to close Rocket League to test changes to your map. You just need to overwrite the file it’s using and reload the map in game. I also recommend setting the game to either Borderless or Windowed mode in the Video settings so that the process of jumping in and out is less painful.
 
-Near the [beginning of the guide](..essential/05_project_setup.html#batch-script-for-quickly-testing-maps-bsfqtm), I provided a small batch (.bat) script for quickly testing maps
+Near the [beginning of the guide](..essential/05_project_setup.html#batch-script-for-quickly-testing-maps-bsfqtm), I provided a small batch (.bat) script for quickly testing maps. **Keeping a copy of this inside each project folder within Maps will save you hours in the long run.**
 
-**I keep a copy of this inside each project folder within Maps.** This way, I can drag the map onto this script and instantly load it into Rocket League.
+Or **set one instance of this script as the default program for opening .udk and .upk files.** This way, you only have to double-click any .udk file anywhere in your files to replace one of the in-game maps. Just think of the time savings.
 
-![alt text](/images/UDK/basics/image172.png "Thin windows for thin margins of error")
-
-Additionally, I like to keep the project folder open in a thin window just to the right of UDK. This way, I don’t have to switch back and forth to reload the map after every little change.
+![alt text](/images/UDK/basics/image172.png "1337-h4x.bat")
 
 **You do not need to Build All unless you have added/changed PathNodes or Spawns, need to fix lighting, or you want to publish your map. Skipping this step saves huge amounts of time.**
 
-It is possible to go from re-exporting a mesh from Blender to driving on it in under 10 seconds.
+It is possible to go from re-exporting a mesh from Blender to driving on it in under 10 seconds. Do your future self a favor and set up a nice workflow :).
