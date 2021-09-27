@@ -35,14 +35,18 @@ You'll likely require assistance at some point in your journey. Please check the
 ## Support Us
 
 This website has no advertisements so you can focus on the important stuff. If you want to support us with content, ideas, or simply money (for contests), we would greatly appreciate it!
+
 * [Contribute to this guide](../more/contribute.html#this-guide)
 * [Donate (for future contests)](../more/contribute.html#financial-contribution)
 
 ## Cheat Sheets
+
 Portions of these guides have been condensed into brief, single-page references, which may be found in the [Cheat Sheets](../cheatsheet) section. Refer to them when you just need a quick reminder.
 
 ## Bounty Board
+
 These are some of the great unsolved mysteries of Rocket League Mapmaking. Contact us if you think you have cracked one of these mysteries:
+
 * Non-kismet code
 * Unlimited map size (in multiplayer)
 * Truly custom materials (not MIC)

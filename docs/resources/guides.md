@@ -9,6 +9,7 @@ tags:
 More Recent/Thorough Guides At The Top
 
 ## 2021
+
 * [Plumato's How to Play Steam Workshop Maps](https://youtu.be/wO_ApfzdLSM)
 
 ## 2020
@@ -18,7 +19,7 @@ More Recent/Thorough Guides At The Top
 * [Ardivee's Rocket League Tools Modding Wiki](https://rocketleaguemoddingwiki.github.io/index.html)
 * [Renaiku's Rocket League Modding Wiki](https://rocketleaguemoddingwiki.github.io/index.html)
 * [RLBot Useful Game Values](https://github.com/RLBot/RLBot/wiki/Useful-Game-Values)
-* [Leth's How to Play Custom RL Maps With Friends](https://www.youtube.com/watch?v=vfIIa2cUZSE) 
+* [Leth's How to Play Custom RL Maps With Friends](https://www.youtube.com/watch?v=vfIIa2cUZSE)
 
 ## 2019
 
@@ -41,4 +42,3 @@ More Recent/Thorough Guides At The Top
 * [Thanrek's Not So Ultimate Modding Guide](https://docs.google.com/document/d/1rZU_kDCLdgioF9jeuYipJ14-KulxLqOEXpZY8KPiuSQ/pub)
 * [Wejrox's RL Modding Series](https://www.youtube.com/watch?v=U8dx2IZNvZc&index=1&list=PLvhilV-QKVLQVtH_sxbcfQ-Mct-GBBVb9)
 * [Wascy's turorial on collectible pixel-art](https://www.youtube.com/watch?v=lg_MHpDOB3U)
-

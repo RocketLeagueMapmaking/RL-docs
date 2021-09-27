@@ -4,5 +4,5 @@ title: Resources
 # Resources
 
 ## Links for everything
-Lorem ipsum yada yada
 
+Lorem ipsum yada yada

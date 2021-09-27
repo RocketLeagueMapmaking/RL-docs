@@ -70,6 +70,7 @@ Tags:
 
 Answered by:
 :::
+
 ## Rocket League Mods Discord <Badge text="not finished" type="warning"/>
 
 :::details How do I use Rocket Launcher?
@@ -104,6 +105,7 @@ Tags:
 
 Answered by:
 :::
+
 ## UDK <Badge text="not finished" type="warning"/>
 
 :::details Where do I download UDK?
@@ -130,6 +132,7 @@ Tags:
 
 Answered by:
 :::
+
 ## Mapmaking <Badge text="not finished" type="warning"/>
 
 :::details What are Dummy Assets?
@@ -148,7 +151,8 @@ Tags:
 
 Answered by:
 :::
-## Uploading, Sharing, Playing 
+
+## Uploading, Sharing, Playing
 
 :::details How do I test my maps?
 

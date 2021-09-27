@@ -7,9 +7,10 @@ Blender is a wonderful program, though it is also an extremely complicated one. 
 
 **This guide will show images and hotkeys for Blender 2.8.2 (the current version as of May 14, 2020).** If you want to use a different version, be my guest. I have used Blender for over 15 years, and I’ve always tried to stay up to date because they are constantly rolling out incredible new features. I recommend you do too.
 
-There are some great resources out on the world wide web, and some extremely dedicated YouTubers and communities. 
+There are some great resources out on the world wide web, and some extremely dedicated YouTubers and communities.
 
 :::tip Here’s a list of places you can go for help:
+
 * [Blender Subreddit](https://www.reddit.com/r/blender/)
 * [Blender Stack Exchange](https://blender.stackexchange.com/)
 * [Blender Artists](https://blenderartists.org/)
@@ -23,4 +24,3 @@ Recall this bit of sage advice [from earlier in the guide](../../essential/07_ud
 
 > Try going into an empty project and just pressing literally every button and every key combo you can think of. You’ll learn tons of things about this program. This is also my best piece of advice for learning Blender.
 **Don’t be afraid of buttons in software.**
-

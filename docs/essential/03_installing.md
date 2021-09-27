@@ -19,7 +19,6 @@ This script is meant to hold your hand through the entire setup process, take ca
 
 * [GitHub Link](https://github.com/RocketLeagueMapmaking/UDK_RL_Setup)
 
-
 ### Newk’s UDK Simple Setup
 
 To download this, you will need to make an account with RocketLeagueMods.com, our little corner of the VideoGameMods network. Newk’s package supplies detailed instructions for installing UDK 2015, and provides a huge set of resources to get going quickly. Refer to the section below to install UDK properly.
@@ -30,17 +29,17 @@ To download this, you will need to make an account with RocketLeagueMods.com, ou
 
 After you [download the UDK 2015 Installer](../resources/downloads.html#setup) from my Drive (or any other friendly modder’s secret stash), double click it to start the install process. Accept the TOS.
 
-![alt text](~@images/UDK/essential/image149.png "UT Sample Game will cause great sadness")
+![alt text](/images/UDK/essential/image149.png "UT Sample Game will cause great sadness")
 
 **Install with an Empty Game.** The Sample Game has lots of cool things, but they’re completely irrelevant to Rocket League and will only cause trouble. Sorry.
 
-![alt text](~@images/UDK/essential/image243.png "Or whatever you wanna name it")
+![alt text](/images/UDK/essential/image243.png "Or whatever you wanna name it")
 
 In the Project Name field, enter a good name for your project. I call mine RLMM (Rocket League MapMaking) but yours will be referred to as `{ProjectName}` in this guide. Additionally, this folder will be called `{UDK Folder}` for the rest of this guide.
 
 Twiddle your thumbs for a few minutes as it installs prerequisites and then installs UDK.
 
-Ignore the extra options, and complete the install. 
+Ignore the extra options, and complete the install.
 
 ## Things to Change
 
@@ -49,26 +48,3 @@ If you used one of the All-in-One packages, you may skip ahead to [and start a U
 :::danger Manual Installation
 If you are going to install UDK manually: don’t launch it, because we have some things to change.
 :::
-
-<!-- ## Install locations <Badge text="not finished" type="warning"/>
-
-To make this guide more customizable, you can enter here your install locations. 
-
-:::warning NOT MANDATORY
-You don't have to fill this form. If you choose not to do it, the UDK folder will be {UDKfolder}, etc
-:::
- <script>
-
-</script>
-<form>
-<label>UDK folder</label><br>
-<input required type='text' placeholder='C:\UDK' id='save_udk'><br>
-<label>Rocket league folder</label><br>
-<input required type='text' placeholder='C:\Games\SteamApps\common\rocketleague' id='save_rl'><br>
-<label>Project name</label><br>
-<input required type='text' placeholder='RLMM' id='save_projectName'><br>
-<label>CookedPCConsole</label><br>
-<input required type='text' placeholder='C:\Games\SteamApps\common\rocketleague\TAGame\CookedPCConsole' id='save_cookedpc'><br>
-<input type= 'submit' value='save'>
-</form>
- -->

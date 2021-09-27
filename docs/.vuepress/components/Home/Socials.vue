@@ -1,17 +1,41 @@
 <template>
- <section class='socials'> 
-    <h1 class="section-title"> <span>Social</span><br>Media</h1>
+  <section class="socials"> 
+    <h1 class="section-title">
+      <span>Social</span><br>Media
+    </h1>
 
-    <div class='social-part'>
-      <div class='card'>
-        <iframe title='RLMM Youtube highlight' width="100%" height="315" src="https://www.youtube.com/embed/Umsn9ILID3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style='margin:20px;'></iframe>
+    <div class="social-part">
+      <div class="card">
+        <iframe
+          title="RLMM Youtube highlight"
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/Umsn9ILID3A"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          style="margin:20px;"
+        />
       </div>
 
-      <div class='card'>
-        <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">If anyone can make this happen, it&#39;ll be Lethamyr. Keep fighting the good fight! <a href="https://t.co/zbXdfAGaCa">https://t.co/zbXdfAGaCa</a></p>&mdash; Rocket League MapMaking (@RLMapMaking) <a href="https://twitter.com/RLMapMaking/status/1320128052374822912?ref_src=twsrc%5Etfw">October 24, 2020</a></blockquote> 
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <div class="card">
+        <blockquote
+          class="twitter-tweet"
+          data-theme="dark"
+        >
+          <p
+            lang="en"
+            dir="ltr"
+          >
+            If anyone can make this happen, it&#39;ll be Lethamyr. Keep fighting the good fight! <a href="https://t.co/zbXdfAGaCa">https://t.co/zbXdfAGaCa</a>
+          </p>&mdash; Rocket League MapMaking (@RLMapMaking) <a href="https://twitter.com/RLMapMaking/status/1320128052374822912?ref_src=twsrc%5Etfw">October 24, 2020</a>
+        </blockquote> 
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        />
       </div>
-
     </div>
   </section> 
 </template>
