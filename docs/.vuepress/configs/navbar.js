@@ -31,7 +31,7 @@ module.exports = [
                     },
                     {
                         text: 'UDK Advanced',
-                        link: '/guide/udk/15_dummy_assets'
+                        link: '/guide/udk/14_dummy_assets'
                     },
                     {
                         text: 'Kismet',
