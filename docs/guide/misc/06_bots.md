@@ -1,8 +1,7 @@
 ---
 title: Bots
 ---
-
-# Miscellaneous <Badge text="not finished" type="warning"/>
+# Bots <Badge text="not finished" type="warning"/>
 
 ## Psyonix Bots
 

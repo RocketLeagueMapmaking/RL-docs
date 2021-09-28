@@ -1,9 +1,9 @@
 ---
 title: 'Materials'
 ---
-# UDK Basics
+# Materials
 
-As will be explained in painful amounts of detail in the [Blender sections](../blender/01_blender.md) (should you choose to read them), materials are a way to handle all of the visual properties of a mesh. For right now, we’re just going to use existing materials and not really worry about what they’re made of. To make your own, see the [Custom Materials section](16_custom_material.md).
+As will be explained in painful amounts of detail in the [Blender sections](../blender/01_blender.md) (should you choose to read them), materials are a way to handle all of the visual properties of a mesh. For right now, we’re just going to use existing materials and not really worry about what they’re made of. To make your own, see the [Custom Materials section](17_custom_material.md).
 
 ## Built-In Materials
 
@@ -13,7 +13,7 @@ However, not all of these are created equal. Rocket League has a package which i
 
 A lovely modder by the name of Derzo put together [this spreadsheet](https://docs.google.com/spreadsheets/d/1KLs5r_sUn3W6rLrw_xQJbEK-LOmxCiBRfo9_XI79Kng), which explains the situation with all of UDK’s standard materials.
 
-This will be explored in much more detail in the [Custom Materials section](16_custom_material.md).
+This will be explored in much more detail in the [Custom Materials section](17_custom_material.md).
 
 ## Making a Solid Color Material
 
@@ -35,7 +35,7 @@ A Material is a model of all the ways that the surface of an object will interac
 
 If you want to make a material that will always stay exactly the color you pick, regardless of lighting, use LevelColorationUnlitMaterial as the base. This can be useful for indicators, text, outlines/trim, or surreal effects.
 
-## Package Materials
+## Premade Materials
 
 We’re going to put a grass material on the ceiling, and a glass material on the floor. The walls will be something wild.
 

@@ -1,9 +1,7 @@
 ---
 title: TriggerVolumes
 ---
-# Kismet
-
-## TriggerVolumes
+# TriggerVolumes
 
 For some reason, UDK requires that you add TriggerVolume Touch Events in a different way from every other node. :shrug_emoji:
 

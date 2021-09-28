@@ -15,4 +15,4 @@ If you have any question or ideas, you can contact us via:
 
 Since this guide has been made specifically for mapmaking, we will not add many guides for [other tools](../faq.md). We will, of course, make additions to the current pages and add new ones about everything related to mapmaking.
 
-[Click here](contribute.md) to learn how to request more content.
+[Click Here](contribute.md) to learn how to request more content.

@@ -1,15 +1,13 @@
 ---
 title: Kismet
 ---
-# Kismet
-
-## Overview
+# Kismet Overview
 
 Kismet is a node-based programming system that presents a “cleaner” and “easier to use” interface than you would get writing your own code. Logical blocks take the place of code classes and functions, and lines on the page indicate data and program flow.
 
 Kismet, much like the [CSG tools](../udk/01_csg.md), is not meant to be used to program a whole game. It is meant more as a tool for cheap and dirty testing, but in this case it is the only option we appear to have.
 
-### Key Terms
+## Key Terms
 
 * `Node` - A Kismet code snippet, represented by a shape with labels on it
 * `Sequence` - A set of Kismet nodes packaged to appear as a single node
@@ -19,7 +17,7 @@ Kismet, much like the [CSG tools](../udk/01_csg.md), is not meant to be used to 
 
 The terms Link/Connector/Connection are used somewhat interchangeably, but they are closely related.
 
-### The Hottest Hotkeys
+## The Hottest Hotkeys
 
 * `Left click` - Pan around the Editor
 * `Right click` - Add nodes to the Editor
@@ -36,7 +34,7 @@ The terms Link/Connector/Connection are used somewhat interchangeably, but they 
 It is possible to [add kismet nodes](https://docs.unrealengine.com/udk/Three/KismetUserGuide.html#Hotkeys) with your keyboard, and you can also [change the hotkeys](../misc/08_custom_udk.md#udk-custom-keys) as you prefer!
 :::
 
-### Kismet Editor Window <Badge text="important" type="tip"/>
+## Kismet Editor Window <Badge text="important" type="tip"/>
 
 ![alt text](/images/kismet/guide/image18.png "Nice and simple")
 
@@ -90,7 +88,7 @@ If you wish to completely abuse the game for things like Chaos Rumble or (the or
 | External Variable | Named variables of any type from an external sequence ([see Sequences](01_kismet.md#sequences)) |
 | Float             | Numbers with decimal precision, like speed or Z location                                          |
 | Int               | Numbers with integer precision, like number of players                                            |
-| Matinee Data      | Animation data (see [Matinee](../udk/20_matinee.md))                                                 |
+| Matinee Data      | Animation data (see [Matinee](../udk/21_matinee.md))                                                 |
 | Named Variable    | Named variables of any type                                                                       |
 | Object            | Objects in the map, like the ball                                                                 |
 | Player            | Players themselves                                                                                |

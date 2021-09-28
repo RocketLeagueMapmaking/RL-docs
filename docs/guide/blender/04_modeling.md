@@ -1,9 +1,7 @@
 ---
 title: Modeling
 ---
-# Blender Basics
-
-## Modeling
+# Modeling
 
 You can make anything in Blender, given enough dedication and time. This guide is both impatient and rushed, so we will get straight to cranking out map assets.
 

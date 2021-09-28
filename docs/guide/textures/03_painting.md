@@ -1,6 +1,4 @@
 ---
 title: Texture Painting
 ---
-# Textures <Badge text="not finished" type="warning"/>
-
-## Texture Painting
+# Texture Painting <Badge text="not finished" type="warning"/>

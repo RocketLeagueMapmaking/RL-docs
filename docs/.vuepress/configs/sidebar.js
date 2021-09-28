@@ -98,14 +98,15 @@ module.exports = {
             sidebarDepth: 1,    
             children: [
                 '/guide/udk/14_dummy_assets',
-                '/guide/udk/15_upgrading',
-                '/guide/udk/16_custom_material',
-                '/guide/udk/17_archetypes',
-                '/guide/udk/18_boost',
-                '/guide/udk/19_kactors',
-                '/guide/udk/20_matinee',
-                '/guide/udk/21_skeletal_mesh',
-                '/guide/udk/22_extra_modes'
+                '/guide/udk/15_udk_meshes',
+                '/guide/udk/16_lightmaps',
+                '/guide/udk/17_custom_material',
+                '/guide/udk/18_archetypes',
+                '/guide/udk/19_boost',
+                '/guide/udk/20_kactors',
+                '/guide/udk/21_matinee',
+                '/guide/udk/22_skeletal_mesh',
+                '/guide/udk/23_extra_modes'
             ]
         },
 

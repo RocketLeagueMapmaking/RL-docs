@@ -1,9 +1,7 @@
 ---
 title: Texture Resolution
 ---
-# Blender Basics
-
-## Texture Resolution
+# Texture Resolution
 
 Now that you are familiar with the way that UV maps work, it’s important to discuss the textures themselves.
 

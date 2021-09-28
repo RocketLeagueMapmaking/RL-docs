@@ -1,9 +1,7 @@
 ---
 title: The Owl
 ---
-# UDK Basics
-
-## Draw The Rest Of The F***ing Owl
+# Draw The Rest Of The F***ing Owl
 
 ![alt text](/images/UDK/basics/image89.png "How to make a Rocket League map in 3 minutes!")
 

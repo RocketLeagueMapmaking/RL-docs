@@ -1,9 +1,7 @@
 ---
 title: 'Rocket League Match Items'
 ---
-# UDK Basics
-
-## Rocket League Match Items
+# Rocket League Match Items
 
 So, you can make a pretty cool looking box. That’s more than half the battle. Sadly, Rocket League requires a little more detail for the map to be truly playable. The upcoming sections will explain how to add interesting elements to the map, such as player spawns, goals, teleporters, and boost.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Lighting'
 ---
-# UDK Basics
+# Lighting
 
 A properly lit map can make all the difference. You want to show off all of your hard work, but UDK really doesn’t want to let you do that most of the time.
 

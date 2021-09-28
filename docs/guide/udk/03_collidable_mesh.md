@@ -1,9 +1,9 @@
 ---
-title: 'Collidable Mesh'
+title: 'Collidable Meshes'
 ---
-# UDK Basics
+# Collidable Meshes <Badge text="important" type="tip"/>
 
-## Collidable Meshes <Badge text="important" type="tip"/>
+## Settings
 
 **To make a collidable mesh, you need to set these Properties:**
 
@@ -44,6 +44,8 @@ Inside its properties:
 | “draw”     |     Draw Scale     |             5 |
 
 This makes it a little easier to see.
+
+## Playable Map Essentials
 
 You will also need to add a spawn point and an object that tells Rocket League that this is a playable map. These may be found inside the Actor Classes tab of the Content Browser. **First, search for “pylon” and add a `Pylon_Soccar_TA` to the map by dragging it from here into the 3d view. Next, search for “player” and add a `PlayerStart_TA` to the map.**
 

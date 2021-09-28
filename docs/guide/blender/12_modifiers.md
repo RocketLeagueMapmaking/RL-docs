@@ -1,6 +1,5 @@
 ---
 title: Modifiers
 ---
-# Blender Advanced <Badge text="not finished" type="warning"/>
+# Modifiers <Badge text="not finished" type="warning"/>
 
-## Modifiers

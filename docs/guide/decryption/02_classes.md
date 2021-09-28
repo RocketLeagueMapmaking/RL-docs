@@ -1,8 +1,7 @@
 ---
 title: Classes
 ---
-
-# Decryption
+# Classes
 
 With UE Explorer or the AssetExtraction tool you can update or add new classes to [the dummy classes](../../essential/04_dummy_classes.md). These classes can be used for [kismet nodes](../kismet/04_tagame.md). If you can't open a new package you are missing the keys for that package in `keys.txt`.
 

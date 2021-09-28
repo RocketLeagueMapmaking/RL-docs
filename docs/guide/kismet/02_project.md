@@ -1,9 +1,7 @@
 ---
 title: Adding Kismet
 ---
-# Kismet
-
-## Adding Kismet to the Project <Badge text="important" type="tip"/>
+# Adding Kismet to the Project <Badge text="important" type="tip"/>
 
 The Kismet editor is accessible from the top toolbar. A small K button will bring up a popup window. Much like the Content Browser, this window will hide in the corner of your screen if minimized.
 

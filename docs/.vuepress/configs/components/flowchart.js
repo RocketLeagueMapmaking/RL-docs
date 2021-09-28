@@ -249,12 +249,12 @@ const types = [
             {
                 question: 'Moving Collisions',
                 desc: 'Moving platforms or swinging hammers',
-                no: '<a href="../guide/udk/19_kactors.html" target="_blank">UDK Advanced - KActors</a>'
+                no: '<a href="../guide/udk/20_kactors.html" target="_blank">UDK Advanced - KActors</a>'
             },
             {
                 question: 'Movable Objects',
                 desc: 'Breakable walls or fake game balls',
-                no: '<a href="../guide/udk/19_kactors.html" target="_blank">UDK Advanced - KActors</a>'
+                no: '<a href="../guide/udk/20_kactors.html" target="_blank">UDK Advanced - KActors</a>'
             }
         ]
     }

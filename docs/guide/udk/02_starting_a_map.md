@@ -1,9 +1,7 @@
 ---
 title: 'Starting a Map'
 ---
-# UDK Basics
-
-## Starting a Map
+# Starting a Map
 
 This is the point in the guide where things have to go a little non-linear. You may need to jump forward to [Blender sections](../blender/01_blender.md), then back to [Material sections](../textures/01_textures.md), then back to this for it all to make sense.
 
@@ -11,9 +9,7 @@ This is the point in the guide where things have to go a little non-linear. You 
 From here until the end, this guide will focus on creating a custom map from scratch. Have you already decided what you want to make? [This flowchart](../../essential/01_flowchart.md) should help you pick which sections to focus on.
 :::
 
-## Getting Going
-
-### Project Information
+## Project Information
 
 First, it’s a good idea to sketch out your idea somewhere, be it a sticky note, whiteboard, or inside Paint. Here is my (dumb) idea for a map. It’s like a standar Soccar map, but the goals are on the ceiling, and boost is on the walls. Players can’t enter the goals because I say so.
 
@@ -21,7 +17,7 @@ First, it’s a good idea to sketch out your idea somewhere, be it a sticky note
 
 I am starting with a completely blank map to be thorough. **You don’t have to**. However, there are still a few gotchas if you use one of the non-blank maps. Keep an eye out for compasses if you skip ahead quickly.
 
-### Name Your Project <Badge text="important" type="tip"/>
+## Name Your Project <Badge text="important" type="tip"/>
 
 **Go to File > Save Current Level** and pick a good name for the project. Mine is called CeilingGoal. It is saved inside `{UDK Folder}\UDKGame\Content\Maps\CeilingGoal\`. 
 
@@ -31,7 +27,7 @@ Many things will not work properly if you have spaces in the project name, so ei
 
 [Here](https://drive.google.com/file/d/1_SRltyPZXlqwuA4s2rHA5H8GgMOiSqk-/view?usp=sharing) is another set of meshes to get you going. I fine-tuned the UVs so that they look reasonably good with no materials. You may use these or the ones inside Park_P.upk. If your UDK setup has the fully Dummy Assets package, this will be inside `{UDK Folder}\UDKGame\Content\DummyAssets\Maps\BeckwithPark` 
 
-### Project Settings
+## Project Settings
 
 First, there are a few World properties to tweak. Open World Properties from the View menu. Search for “kill” and then change Kill Z to something like -3000 and Soft Kill to -2500. Kill Z is the height at which you die, and Soft Kill is where your camera stops as you fall to your death. These just need to be substantially below the playing field.
 

@@ -5,7 +5,7 @@ tags:
     - Customize
     - custom toolbar
 ---
-# Miscellaneous
+# Customized UDK
 
 If you installed UDK with (a future version of) the [quick setup script](https://github.com/RocketLeagueMapmaking/UDK_RL_Setup), you may have already opted for some of these changes. Future tools will also streamline this process. Feel free to adjust them to your own preferences, since changing these settings will not require a full recompile.
 

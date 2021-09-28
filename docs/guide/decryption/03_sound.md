@@ -1,9 +1,7 @@
 ---
 title: Sound
 ---
-# Decryption
-
-## Music
+# Sound
 
 If you've ever opened CookedPCConsole and sorted by alphabetical, you've seen a long list of files named with seemingly random numbers. Those are all of the songs that play on the main menu!
 

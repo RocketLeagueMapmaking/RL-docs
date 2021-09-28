@@ -1,9 +1,7 @@
 ---
 title: UV Unwrapping
 ---
-# Blender Basics
-
-## UV Unwrapping
+# UV Unwrapping
 
 Unwrapping is the process by which you convert a 3D mesh into a 2D projection. In Blender, this is done with the `U` hotkey while in Edit Mode. Most default meshes come with a premade UV map, but you will likely have to re-unwrap any meshes you create or modify yourself. However, you can probably see the fundamental problem with unwrapping a closed 3D object. Where do you open it?
 

@@ -2,7 +2,7 @@
 title: CSG
 ---
 
-# UDK Basics
+# Constructive Solid Geometry
 
 ![alt text](/images/UDK/basics/image104.png "You vs the map she tells you not to worry about")
 

@@ -1,9 +1,7 @@
 ---
 title: FBX Export
 ---
-# Blender Basics
-
-## FBX Export
+# FBX Export
 
 UDK’s preferred file format is called FBX, as you have probably figured out by now. **Any assets you intend to use in UDK must be exported in this format** (you can use the [autodesk FBX converter](https://www.autodesk.com/developer-network/platform-technologies/fbx-converter-archives) if you do not have the option to convert your meshes to FBX).
 
