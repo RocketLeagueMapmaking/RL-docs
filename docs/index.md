@@ -20,4 +20,10 @@ tags:
 
 <SocialsComponent/>
 
----
+<style scoped>
+.theme-default-content:not(.custom) {
+  background-color: #000000;
+  max-width: 100%;
+  margin: 0px; padding: 0px;
+}
+</style>

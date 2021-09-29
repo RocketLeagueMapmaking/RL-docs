@@ -98,10 +98,10 @@ module.exports = {
             sidebarDepth: 1,    
             children: [
                 '/guide/udk/14_dummy_assets',
-                '/guide/udk/15_udk_meshes',
-                '/guide/udk/16_lightmaps',
+                '/guide/udk/15_archetypes',
+                '/guide/udk/16_udk_meshes',
                 '/guide/udk/17_custom_material',
-                '/guide/udk/18_archetypes',
+                '/guide/udk/18_lightmaps',
                 '/guide/udk/19_boost',
                 '/guide/udk/20_kactors',
                 '/guide/udk/21_matinee',
