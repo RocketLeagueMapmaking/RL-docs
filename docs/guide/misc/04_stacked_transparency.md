@@ -1,6 +1,4 @@
 ---
 title: Stacked Transparency
 ---
-# Miscellaneous <Badge text="not finished" type="warning"/>
-
-## Stacked Transparency
+# Stacked Transparency <Badge text="not finished" type="warning"/>

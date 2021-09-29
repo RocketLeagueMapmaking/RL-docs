@@ -133,7 +133,7 @@ const types = [
             {
                 question: 'Ground and Collisions',
                 desc: 'Surfaces for the player to drive on',
-                no: '<a href="../guide/udk/02_udk_basics.html#starting-a-map" target="_blank">UDK Basics - Starting a Map</a>'
+                no: '<a href="../guide/udk/02_starting_a_map.html#starting-a-map" target="_blank">UDK Basics - Starting a Map</a>'
             },
             {
                 question: 'Obstacles',
@@ -249,12 +249,12 @@ const types = [
             {
                 question: 'Moving Collisions',
                 desc: 'Moving platforms or swinging hammers',
-                no: '<a href="../guide/udk/19_kactors.html" target="_blank">UDK Advanced - KActors</a>'
+                no: '<a href="../guide/udk/20_kactors.html" target="_blank">UDK Advanced - KActors</a>'
             },
             {
                 question: 'Movable Objects',
                 desc: 'Breakable walls or fake game balls',
-                no: '<a href="../guide/udk/19_kactors.html" target="_blank">UDK Advanced - KActors</a>'
+                no: '<a href="../guide/udk/20_kactors.html" target="_blank">UDK Advanced - KActors</a>'
             }
         ]
     }

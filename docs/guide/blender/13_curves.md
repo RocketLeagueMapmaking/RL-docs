@@ -1,6 +1,4 @@
 ---
-title: Curves
+title: Curve Modeling
 ---
-# Blender Advanced <Badge text="not finished" type="warning"/>
-
-## Curves
+# Curve Modeling <Badge text="not finished" type="warning"/>

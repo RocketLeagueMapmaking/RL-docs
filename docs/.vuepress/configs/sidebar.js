@@ -59,7 +59,7 @@ module.exports = {
             children: [
                 '/guide/udk/00_start',
                 '/guide/udk/01_csg',
-                '/guide/udk/02_udk_basics',
+                '/guide/udk/02_starting_a_map',
                 '/guide/udk/03_collidable_mesh',
                 '/guide/udk/04_map_test',
                 '/guide/udk/05_collidable_collisions',
@@ -69,9 +69,8 @@ module.exports = {
                 '/guide/udk/09_game_items',
                 '/guide/udk/10_map_settings',
                 '/guide/udk/11_volumes',
-                '/guide/udk/12_boost',
-                '/guide/udk/13_interlude_next',
-                '/guide/udk/14_interlude_test'
+                '/guide/udk/12_interlude_next',
+                '/guide/udk/13_interlude_test'
             ]
         },
 
@@ -98,13 +97,16 @@ module.exports = {
             collapsable: true, 
             sidebarDepth: 1,    
             children: [
-                '/guide/udk/15_dummy_assets',
-                '/guide/udk/16_upgrading',
+                '/guide/udk/14_dummy_assets',
+                '/guide/udk/15_archetypes',
+                '/guide/udk/16_udk_meshes',
                 '/guide/udk/17_custom_material',
-                '/guide/udk/18_matinee',
-                '/guide/udk/19_kactors',
-                '/guide/udk/20_skeletal_mesh',
-                '/guide/udk/21_extra_modes'
+                '/guide/udk/18_lightmaps',
+                '/guide/udk/19_boost',
+                '/guide/udk/20_kactors',
+                '/guide/udk/21_matinee',
+                '/guide/udk/22_skeletal_mesh',
+                '/guide/udk/23_extra_modes'
             ]
         },
 

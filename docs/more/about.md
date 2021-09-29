@@ -32,7 +32,7 @@ These guys will be referred to as friendly/wonderful/amazing modders, so please 
 | **KarlHeinzSchneider** | Collision Channels, Foundational Discoveries                      |
 | **wejrox/JimJoms**     | Web Development, Video Tutorials, One-Stop-Chop-Shop              |
 | **Derzo**              | Fixed Collisions, Guides, Custom Materials, In-Game Assets        |
-| **Stanbroek**          | Advanced Map and Kismet Techniques, Creator of Rocket Plugin      |
+| **Stanbroek**          | Advanced Map and Kismet Techniques, Rocket Plugin                 |
 | **Thanrek**            | Advanced Map and Kismet Techniques                                |
 | **French Fries**       | Foundational Dribbling Challenge Maps                             |
 | **dmc**                | Foundational Challenge Maps                                       |
@@ -41,8 +41,11 @@ These guys will be referred to as friendly/wonderful/amazing modders, so please 
 | **Eliot**              | UE Explorer Program                                               |
 | **Martinn**            | UPK Decryptor, Dummy Assets, Bakkesmod Work                       |
 | **LiveDimensions**     | Tech Support                                                      |
-| **tj**                 | Kismet Library                                                    |
-| **Ecrase-Patate**      | Kismet Support                                                    |
-| **MrPhil**             | Dynamic Mesh Actors, New Kismet Nodes                             |
+| **tj**                 | RocketLeagueMapmaking GitHub Team                                 |
+| **Ecrase-Patate**      | Kismet Wizard                                                     |
+| **MrPhil**             | Dynamic Mesh Actors, New Kismet Nodes, Support, Website Content   |
 | **Newk**               | New Kismet Nodes                                                  |
+| **GroovyUnicyclist**   | Discord Moderator                                                 |
+| **BalancedWaffle**     | Community Workshop Games Founder                                  |
+| **JetFox**             | Rocket Host Plugin, Map Hosting                                   |
 | **ghostrider-05**      | RocketLeagueMapmaking.com                                         |

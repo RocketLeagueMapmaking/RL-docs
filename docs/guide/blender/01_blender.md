@@ -20,7 +20,7 @@ There are some great resources out on the world wide web, and some extremely ded
 
 And of course, I and others would be happy to help you out in Discord.
 
-Recall this bit of sage advice [from earlier in the guide](../../essential/07_udk_editor.html#general-advice):
+Recall this bit of sage advice [from earlier in the guide](../../essential/07_udk_editor.md#general-advice):
 
 > Try going into an empty project and just pressing literally every button and every key combo you can think of. You’ll learn tons of things about this program. This is also my best piece of advice for learning Blender.
 **Don’t be afraid of buttons in software.**

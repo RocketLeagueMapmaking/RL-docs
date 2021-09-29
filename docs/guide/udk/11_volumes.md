@@ -1,9 +1,7 @@
 ---
 title: 'Volumes'
 ---
-# UDK Basics
-
-## Volumes
+# Volumes
 
 Often times you will want to trigger events when a player enters a certain area. On a Rings-style aerial control training course, maybe you want to teleport the player back to the last checkpoint if they miss a ring. Perhaps you want to change the lighting of the map in some sort of control panel.
 
@@ -41,37 +39,41 @@ The standard Brush shapes should cover 95% of Volume needs, but there are a few 
 
 The first is using the Geometry Edit mode that is built into UDK. After using this extremely impressive and capable tool, you will never want to use Blender again.
 
-![](../../.vuepress/public/images/custombrushes_step1.png "Brush yourself off")
+![](/images/custombrushes_step1.png "Brush yourself off")
 
 **Right Click the default shape closest to your target shape.** This will bring up a window with a few adjustable parameters. The most important value is the number of Vertices/Sides/Faces so that you don't have to create vertices/sides/faces yourself later.
 
 Make sure the brush is visible by pressing `B`. It may overlap existing volumes or geometry.
 
-![](../../.vuepress/public/images/custombrushes_step2.png "Blender 20.0")
+![](/images/custombrushes_step2.png "Blender 20.0")
 
 **Enter Geometry Mode with this button in the top left of the UDK window (or press Shift+2).** This will reveal a small Geometry Tools window with a few different modes of operation. Generally, you will only need `Edit` and `Extrude` to get the maximum utility out of this.
 
-Clicking on the brush, you should see an array of vertices that respond to left clicks. `Ctrl + Left click` will select multiple vertices. Or, if you want to do some hand stretches, `Ctrl + Shift + Alt + Left click drag` will perform a box select.
+Clicking on the brush, you should see an array of vertices that respond to left clicks. `Ctrl + Left click` will select multiple vertices. Or, if you want to do some hand stretches, `Ctrl + Alt + Left click drag` will perform a box select.
 
-![](../../.vuepress/public/images/custombrushes_step3.png "The sky is the limit (the sky is a sphere in UDK)")
+![](/images/custombrushes_step3.png "The sky is the limit (the sky is a sphere in UDK)")
 
 Move, rotate, and scale it to your needs! **Remember that `Ctrl + Z` does not work in this mode. You will have to click the Undo button on the top toolbar.**
 
 If you wish to create additional geometry, switch to the `Extrude` mode.
 
-![](../../.vuepress/public/images/custombrushes_step4.png "Extra excellent extrusions")
+![](/images/custombrushes_step4.png "Extra excellent extrusions")
 
 **Select a face by clicking on it, then use the move tool to extrude a new region of the brush.** Again, you will have to click the Undo button if you get it wrong.
 
 ## Custom Brushes - Brush Import
 
+:::warning
+Your mileage may vary with custom brushes. At the moment they have a number of poorly understood quirks.
+:::
+
 For truly custom brush shapes and precise control over the brush shape (not to mention repeatability and reusability), the best strategy is to make them in 3D modeling software such as Blender.
 
-![](../../.vuepress/public/images/custombrushes_step5.png "Suzanne the Paintbrush")
+![](/images/custombrushes_step5.png "Suzanne the Paintbrush")
 
 UDK is able to use **.DXF** files as inputs to its brush system. This is a filetype originally created for AutoCAD, but is a widely used standard supported by most 3D software. For whatever reason, Blender's .DXF exporter produces very small models, so you should **scale brushes by 100 before exporting.**
 
-![](../../.vuepress/public/images/custombrushes_step6.png "Import ant")
+![](/images/custombrushes_step6.png "Import ant")
 
 **At the bottom of the Brush menu, click `Import...`**. Find your brush and import it. If you don't see it, try pressing `B` a few times to hide and unhide it.
 

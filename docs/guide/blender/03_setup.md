@@ -1,9 +1,7 @@
 ---
 title: Blender Window
 ---
-# Blender Basics
-
-## Blender Setup
+# Blender Setup
 
 There are a few user defaults which are good to change if you are just installing Blender. These are three things you should absolutely adjust, but feel free to tinker with as many others as you want. Go to `Edit > Preferences`:
 

@@ -1,7 +1,7 @@
 ---
 title: Introduction
 ---
-# Blender Basics
+# Introduction
 
 ## Key Terms <Badge text="important" type="tip"/>
 

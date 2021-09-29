@@ -15,7 +15,7 @@ tags:
 
 ![alt text](/images/UDK/essential/image230.png)
 
-* File - Contains what you would expect. **However, CTRL+S IS NOT SAVE. To save, you have to manually click Save. Save All will save any external packages you have also modified. Save Current Level is typically the best choice.**
+* File - Contains what you would expect. **However, CTRL+S IS NOT SAVE. To save, you have to manually click Save. Save All will save any external packages you have also modified (and can cause UDK to crash). Save Current Level is typically the right choice.**
 * Edit - Everything in this menu may also be found in the various toolbars.
 * View - **`Browser Windows > Content Browser` to open the Content Browser if you close it.** The options through the middle are reasonably self-explanatory. But, I would like to highlight the `New Viewport` and `Viewport Configuration` options at the bottom. These allow you to have multiple views open, which is a workflow that some people are more comfortable with. **To eliminate part of a split viewport, resize it to 0.**
 * Brush - These options are all found in section 11 of the GUI. They build geometry in the viewer.
@@ -47,7 +47,7 @@ This can be nice to select specific items which may be buried or misplaced.
 
 ![alt text](/images/UDK/essential/image61.png)
 
-These bring up the [Content Browser](08_content_browser.md), [Kismet](../guide/kismet/01_kismet), and [Matinee](../guide/udk/18_matinee) windows. Each of these will be explained in painful amounts of (relevant) detail in their own sections.
+These bring up the [Content Browser](08_content_browser.md), [Kismet](../guide/kismet/01_kismet.md), and [Matinee](../guide/udk/21_matinee.md) windows. Each of these will be explained in painful amounts of (relevant) detail in their own sections.
 
 ### 6 - Editor Visibility Options
 

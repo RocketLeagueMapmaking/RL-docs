@@ -20,7 +20,7 @@ I use Windows 10 and the Steam version of Rocket League, so please keep that in 
     * Several of my modded maps live inside `\mods`, a folder I created
 `C:\Games\SteamApps\common\rocketleague\TAGame\CookedPCConsole` will be referred to as `{CookedPCConsole}` for simplicity.
 
-* As mentioned in the [UDK install process](03_installing), everything will live inside `{UDK Folder}`
+* As mentioned in the [UDK install process](03_installing.md), everything will live inside `{UDK Folder}`
   * **Each individual custom map should live inside a folder within `{UDK Folder}\UDKGame\Content\Maps\`**
   * In addition to these folders, I highly highly recommend making two Windows File Explorer shortcuts, or bookmarking these locations
     * One that points to `{CookedPCConsole}`
@@ -29,7 +29,7 @@ I use Windows 10 and the Steam version of Rocket League, so please keep that in 
 
 * Within `C:\UDK\` I also have a folder named `Assets`. This is where I keep Blender projects, exported meshes, custom textures, screenshots, and whatever else (each within a categorized folder) that I might want to have easy access to.
 * Also within `C:\UDK\` I keep a folder called `Workshop`, within which I have a folder for each map. See the section titled Publishing a Map for more information.
-* All other programs and utilities, like [UE Viewer](../resources/downloads), [Bakkesmod](https://bakkesmod.com), and [miscellaneous downloads](../resources/downloads), live in their own folder outside of the UDK install. You can keep them here too if that makes more sense.
+* All other programs and utilities, like [UE Viewer](../resources/downloads.md), [Bakkesmod](https://bakkesmod.com), and [miscellaneous downloads](../resources/downloads.md), live in their own folder outside of the UDK install. You can keep them here too if that makes more sense.
 
 ::: tip
 I highly recommend creating folder shortcuts between all of these places, because it’s easy to get lost. It also gets tiresome navigating folders all day.

@@ -1,6 +1,4 @@
 ---
 title: Armatures and Animation
 ---
-# Blender Advanced <Badge text="not finished" type="warning"/>
-
-## Armatures and Animation
+# Armatures and Animation <Badge text="not finished" type="warning"/>

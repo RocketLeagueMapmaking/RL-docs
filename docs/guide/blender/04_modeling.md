@@ -1,9 +1,7 @@
 ---
 title: Modeling
 ---
-# Blender Basics
-
-## Modeling
+# Modeling
 
 You can make anything in Blender, given enough dedication and time. This guide is both impatient and rushed, so we will get straight to cranking out map assets.
 
@@ -11,7 +9,7 @@ Let’s start with easy assets for a skate park. We’ll make a box ramp, a half
 
 ## Modeling Examples
 
-The following examples showcase some Blender mesh modeling. I recognize that written guides are not for everyone, especially on topics like this, so I will kindly refer you to [these helpful resources](01_blender) for more tutorials and help.
+The following examples showcase some Blender mesh modeling. I recognize that written guides are not for everyone, especially on topics like this, so I will kindly refer you to [these helpful resources](01_blender.md) for more tutorials and help.
 
 :::details Simple Mesh - Box Ramp
 ![alt text](/images/Blender/basics/04_modeling/image177.png "These are healthy X-Rays")
@@ -218,7 +216,7 @@ Now, let’s make the hand do something interesting. **Move the 3D cursor to the
 
 ## Key Takeaways <Badge text="important" type="tip"/>
 
-- [Hotkeys](02_intro.html#the-hottest-hotkeys) are your best friends
+- [Hotkeys](02_intro.md#the-hottest-hotkeys) are your best friends
 - Start with a base mesh that makes your life easier
 - Ring select (`Alt + Click`), Box select (`B`), and Circle select (`C`) are wonderful
 - Make the most of the 3D cursor

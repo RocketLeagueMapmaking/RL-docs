@@ -1,9 +1,7 @@
 ---
 title: Hello Textures
 ---
-# Textures <Badge text="not finished" type="warning"/>
-
-## Hello Textures
+# Hello Textures <Badge text="not finished" type="warning"/>
 
 :::tip Places to find textures
 If you are looking for textures, [this document](https://docs.google.com/document/d/1Gr4bnvXShuU84qlkA7wPdmFjQrmFj-gSudfFsW1QdIE/edit?usp=sharing) created by Simple Shark might be able to help you.

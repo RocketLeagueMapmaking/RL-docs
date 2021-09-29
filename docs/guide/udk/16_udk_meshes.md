@@ -1,9 +1,19 @@
 ---
-title: Upgrading Meshes
+title: Meshes in UDK
 ---
-# UDK Advanced
+# Meshes in UDK <Badge text="not finished" type="warning"/>
 
-## Upgrading Meshes
+This will be a scatterbrained collection of notes and warnings about meshes in UDK. 
+
+## Limitations of UDK <Badge text="not finished" type="warning"/>
+
+* Vertex limit
+* UV maps and vertex limit
+* Non-planar faces
+* Empty material channels
+* Material channels and ball indicator
+
+## Rapid Iteration
 
 In the mapmaking process, if you get something right the first time, you’re probably not trying hard enough. This is absolutely true for meshes and materials, which may even need to be retouched after the map is published.
 
@@ -20,3 +30,4 @@ Alternatively, you may set certain paths which UDK will monitor for file updates
 ## Workflow Advice
 
 Because you will want to playtest your map as you build it, I highly recommend creating placeholder meshes which have the right shape. As you finesse that, you can add more detail and replace these with more interesting meshes. Along those lines, don't worry about UV unwrapping the first versions of your meshes, unless their materials need to be set a certain way for gameplay purposes. **You'll be much happier with your map if you playtest it as you work on it.**
+

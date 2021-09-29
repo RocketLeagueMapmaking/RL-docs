@@ -40,7 +40,7 @@ The second most useful tab of the Content Browser is Scene. In here, you can sel
 
 ![alt text](/images/UDK/essential/image196.png "The browser of scene actors")
 
-The Properties panel on the right has a search bar at the top, which is extremely valuable for finding the parameter you want to change. **The most common things you will find yourself changing are “location,” “rotation,” and “material”.** This window is great for selecting multiple actors within the scene, and also for editing actors you can’t click (as we’ll encounter in the [Dummy Assets](../guide/udk/15_dummy_assets.md) section much later.
+The Properties panel on the right has a search bar at the top, which is extremely valuable for finding the parameter you want to change. **The most common things you will find yourself changing are “location,” “rotation,” and “material”.** This window is great for selecting multiple actors within the scene, and also for editing actors you can’t click (as we’ll encounter in the [Dummy Assets](../guide/udk/14_dummy_assets.md) section much later.
 
 ### Actor Classes
 

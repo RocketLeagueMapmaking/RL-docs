@@ -1,9 +1,7 @@
 ---
 title: 'Rocket League Match Items'
 ---
-# UDK Basics
-
-## Rocket League Match Items
+# Rocket League Match Items
 
 So, you can make a pretty cool looking box. That’s more than half the battle. Sadly, Rocket League requires a little more detail for the map to be truly playable. The upcoming sections will explain how to add interesting elements to the map, such as player spawns, goals, teleporters, and boost.
 
@@ -60,7 +58,7 @@ If you have been following along, you might have had the idea to get clever and 
 
 ## Demo Spawn Points
 
-If you add spawnpoints after the 5 above, they will be used **only** after someone is demolished. Here are the standard Soccar demo spawns:
+If you add spawnpoints after the 5 above, they will be used **only** after someone is demolished. Remember to also uncheck the box for `Primary Start`. Here are the standard Soccar demo spawns:
 
 | Number | X     | Y    | Z   | Roll | Pitch | Yaw |
 | ------ | ----- | ---- | --- | ---- | ----- | --- |

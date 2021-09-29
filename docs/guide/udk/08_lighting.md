@@ -1,7 +1,7 @@
 ---
 title: 'Lighting'
 ---
-# UDK Basics
+# Lighting
 
 A properly lit map can make all the difference. You want to show off all of your hard work, but UDK really doesn’t want to let you do that most of the time.
 
@@ -72,4 +72,4 @@ There’s a whole slew of other settings that you should play around with, but t
 
 Additionally, you might want to add a second DirectionalLight pointing upward. The underside of the ball and the ceiling tend to be very dark (especially if the ceiling uses an opaque material). You can use this trick to add light to walls as well, if needed. Set these lights to much lower brightnesses, like 0.2.
 
-Point lights, Spotlights, and others can be used for interesting effects, but the only way to know if they’re right for your idea is to try them out. Remember that you will need the Toggleable or Dynamic versions if you want to control them with [Kismet](../kismet/01_kismet).
+Point lights, Spotlights, and others can be used for interesting effects, but the only way to know if they’re right for your idea is to try them out. Remember that you will need the Toggleable or Dynamic versions if you want to control them with [Kismet](../kismet/01_kismet.md).

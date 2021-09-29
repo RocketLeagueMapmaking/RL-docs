@@ -27,7 +27,7 @@ To download this, you will need to make an account with RocketLeagueMods.com, ou
 
 ## Running the Installer
 
-After you [download the UDK 2015 Installer](../resources/downloads.html#setup) from my Drive (or any other friendly modder’s secret stash), double click it to start the install process. Accept the TOS.
+After you [download the UDK 2015 Installer](../resources/downloads.md#setup) from my Drive (or any other friendly modder’s secret stash), double click it to start the install process. Accept the TOS.
 
 ![alt text](/images/UDK/essential/image149.png "UT Sample Game will cause great sadness")
 
@@ -43,7 +43,7 @@ Ignore the extra options, and complete the install.
 
 ## Things to Change
 
-If you used one of the All-in-One packages, you may skip ahead to [and start a UDK project](05_project_setup.html#starting-a-new-project). If you are manually setting up UDK, or just want to see what is happening behind the scenes with those packages, please continue.
+If you used one of the All-in-One packages, you may skip ahead to [and start a UDK project](05_project_setup.md#starting-a-new-project). If you are manually setting up UDK, or just want to see what is happening behind the scenes with those packages, please continue.
 
 :::danger Manual Installation
 If you are going to install UDK manually: don’t launch it, because we have some things to change.

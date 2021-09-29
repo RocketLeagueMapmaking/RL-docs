@@ -11,7 +11,7 @@ Thanks to the work of dedicated modders, there is a repository of wonderful Dumm
 
 These are UDK-ready classes with the same names and properties as the customized classes that were created by Psyonix developers for Rocket League. They allow us to drop in objects which have advanced functionality, such as goals and boost pads.
 
-The download may be found under [Downloads.](../resources/downloads.html#setup)
+The download may be found under [Downloads.](../resources/downloads.md#setup)
 If you feel like using git, you can run git clone within the UDK folder. Downloading the .zip file is totally fine too.
 
 ![alt text](/images/UDK/essential/dummyclasses_location.png "Lots of goodies")
@@ -169,8 +169,8 @@ In `{UDK Folder}\Binaries\`, run `UnrealFrontend.exe`.
 
 Thanks to the hard work of friendly modders, there is an extremely useful UDK Package (.UPK) which contains a number of assets ripped from the game. They allow you to build your map with pieces and materials that are already in the game. However, the important thing is that they have the exact same name as the in-game assets. More on this aspect of things later.
 
-You can find the download [Here.](../resources/downloads.html#park-p-dummy-assets)
+You can find the download [Here.](../resources/downloads.md#park-p-dummy-assets)
 
 **Place this into `{UDK Folder}\UDKGame\Content\`** alongside the various other files. UDK will recognize it here and make its contents available to you.
 
-[A later section](../guide/udk/15_dummy_assets.md) of this guide will show you how to use any resource from any map, but this is more than enough to get started with.
+[A later section](../guide/udk/14_dummy_assets.md) of this guide will show you how to use any resource from any map, but this is more than enough to get started with.
