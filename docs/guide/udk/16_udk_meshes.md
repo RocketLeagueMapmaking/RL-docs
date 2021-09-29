@@ -5,9 +5,13 @@ title: Meshes in UDK
 
 This will be a scatterbrained collection of notes and warnings about meshes in UDK. 
 
-## Limitations of UDK 
+## Limitations of UDK <Badge text="not finished" type="warning"/>
 
-Stuff here!
+* Vertex limit
+* UV maps and vertex limit
+* Non-planar faces
+* Empty material channels
+* Material channels and ball indicator
 
 ## Rapid Iteration
 
