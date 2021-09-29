@@ -3,12 +3,13 @@ title: Publishing
 ---
 # Publishing
 
-This process works perfectly on the Steam version of Rocket League. As of November 1, 2020, the process for playing custom maps on the Epic version is still messy and weird.
+This process works perfectly on the Steam version of Rocket League. If you do not own Rocket League on Steam but wish to publish a map on Steam, please reach out to Mr. Swaggles in the Discord. Alternatively, you can place your map in Google Drive or Dropbox and share it that way, but you will have difficulties reaching a wide audience.
+
+JetFox has been working to make a standalone hosting site that vastly simplifies and streamlines the process of hosting and downloading maps. As of September 28, 2021, the site is still in development but is very promising: [RLMaps](http://usa2.rocketleaguemaps.tk/view.php?mapid=133).
 
 ## Psyonix Uploader Tool
 
-When Psyonix announced Steam Workshop support in 2017, they proudly touted their Workshop Uploader program which can instantly create a Steam Workshop page for your new map.
-**However, it, uh… sucks.**
+When Psyonix announced Steam Workshop support in 2016, they proudly touted their Workshop Uploader program which can instantly create a Steam Workshop page for your new map. **However, it, uh… sucks.**
 
 WorkshopUploader.exe may be found two layers up from {CookedPCConsole}, inside the folder Binaries. If you can get it to work, then I’m happy for you.
 
@@ -36,6 +37,10 @@ It’s best to keep this outside of the UDK project folder so that you don’t g
 * [a .vdf file](02_publishing.md#vdf-file)
 
 For the thumbnail image, you may either use a scaled down image at a 16:9 ratio (i.e. a 1920x1080 screenshot scaled to ~⅓ size) or a square image (512x512 or smaller). Make it eye-catching so that you rake in those juicy downloads.
+
+:::warning
+Sometimes Steam will reject your upload with minimal information. The only 100% effective solution I have found is to reduce the file size of the thumbnail to less than 50 kB. To do this you will need a program with a compression slider for .jpgs.
+:::
 
 ## .vdf file
 

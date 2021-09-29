@@ -31,4 +31,16 @@ If you see that your mesh has holes in it when you place it in UDK, there are tw
 
 ## .UPK Package <Badge text="important" type="tip"/>
 
-If you do not see your mesh at all in Rocket League, make sure that you have imported the mesh into the **same package in the Content Browser as the map you are working on** (e.g. CeilingGoal). Rocket League expects all (your own) assets for a custom map to be within the same .UPK package (you don't have to bring [Dummy assets](../udk/14_dummy_assets.md) materials into your own package).
+If you do not see your mesh at all in Rocket League, make sure that you have imported the mesh into the **same package in the Content Browser as the map you are working on** (e.g. CeilingGoal). Rocket League expects all (your own) assets for a custom map to be within the same .UPK package. Do not bring [Dummy Assets](../udk/14_dummy_assets.md) into your own package, however.
+
+## Normals <Badge text="not finished" type="warning"/>
+
+Stuff about lightmaps goes here, written in an informative yet cheerful way. This may end up becoming its own page because it is that important.
+
+* Normals in the editor
+* Vertex normals and shading
+* Face normals
+* Clear custom split normals
+* Set smooth
+* Angle-based smoothing
+* Explicit normals on import

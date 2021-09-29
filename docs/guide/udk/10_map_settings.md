@@ -40,9 +40,26 @@ Similarly, the XYRotation setting may be used for some great effects. To spawn a
 
 ## Scene Capture Cube Map Actor
 
+Why does your car look different on different maps? Lighting is a large part of that, but an object that plays perhaps an even bigger role is called the Scene Capture Cube Map Actor, which can be added to the scene from the Actor Classes tab.
+
 ![alt text](/images/UDK/basics/scenecapturecubemapactor.jpg "A time for reflection")
 
+What a mouthful. Essentially this object is a camera that can see in every direction. But instead of showing the player or being the viewpoint for a cinematic, it generates a set of 6 images (arranged in a cube) that reflective surfaces will show. Since Rocket League is very metallic and shiny in general, this affects a lot of surfaces.
 
+![alt text](/images/UDK/basics/mapsettings_sccma.jpg "Capture deez cubez")
+
+The key to making it appear is to **assign Grass_Textures.GrassCube to the Texture Target field.** This allows the output of the `SceneCaptureCubeMapActor` to be displayed in the level. All other settings inside its properties are up to your artistic tastes, but here are explanations of the most important ones:
+
+| SceneCaptureCubeMapActor |                                             |
+| ------------------------ | ------------------------------------------- |
+| Texture Target           | Set to `TextureRenderTargetCube'Grass_Textures.GrassCube'`        |
+| Near Plane               | Anything closer than this will not be captured in the cubemap |
+| Far Plane                | Anything further "" (setting this too high will tank performance) |
+| Clear Color              | The color of any gaps created by the Near/Far Plane settings |
+| Frame Rate               | Setting this too high will tank the performance of your map |
+| Post Process             | See below  |
+
+The **PostProcess** dummy asset package has a number of preconfigured post-processing chains which apply different levels of blur or color filters to the cubemap. These can also be applied to the map as a whole by setting the **World Post Process Chain inside World Properties.**
 
 <!-- |Auto cam| |
 |------|-----|

@@ -15,6 +15,16 @@ Find more information about mipmaps within UDK in the [Custom Materials](../udk/
 
 A similar and related concept is the LOD system, or Level of Detail. This same process and line of thinking is applied to the meshes themselves, including the “LOD popping” phenomenon. UDK allows for multiple meshes to be related to one another, and dynamically trades them out as the player gets nearer or farther.
 
-### Optimization <Badge text="not finished" type="warning"/>
+## Optimization <Badge text="not finished" type="warning"/>
 
 This has not been explored much by the custom mapmaking scene, but it could be a crucial step in optimizing the performance of a complicated map.
+
+Here are some general steps you can take to improve the performance of a map:
+
+* Use Dummy Asset materials
+* Use Dummy Asset static meshes for background elements
+* Reuse the same static mesh for duplicate objects rather than having separate models
+* Reduce the polygon count of custom models
+* Reduce the texture resolution for custom materials
+* Use precomputed (built) lighting where possible
+* Reduce the speed of kismet loops
