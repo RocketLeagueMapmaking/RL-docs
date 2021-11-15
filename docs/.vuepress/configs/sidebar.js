@@ -202,6 +202,31 @@ module.exports = {
         }
     ],
 
+    '/resources/references/': [
+        {
+          title: 'References',
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [
+            'guide',
+            'psyonix',
+            'ue5'
+          ]
+        }
+      ],
+    
+    '/ue5/': [
+        {
+            title: 'UE5',
+            collapsable: false,
+            sidebarDepth: 1,
+            children: [
+                '',
+                'comparison'
+            ]
+        }
+    ],
+
     '/cheatsheet/': [
         {
             title: 'Cheat Sheets',   

@@ -22,7 +22,6 @@ This a list of useful things in order of importance:
 
 ### Miscellaneous
 
-* [Bibliothèque d'Alexandrie v1](https://drive.google.com/drive/folders/1m0opoXAToFngyBUjudwqui0KiI_uG5en?usp=sharing)
 * [UE Viewer](http://www.gildor.org/en/projects/umodel#files)
 * [Rocket League UPK Decryptor](https://www.reddit.com/r/RocketLeague/comments/3v9d10/rocket_league_upk_decryptor_datamined_car_hitbox/?st=iti85t6x&sh=ad0687b1)
 * [JimJoms' C/C++ header to UnrealScript (UDK) converter](https://github.com/wejrox/HeaderToUS)
@@ -80,3 +79,4 @@ This a list of useful things in order of importance:
 
 * [Michroma](https://drive.google.com/file/d/12rH2u7Xst4sbEgmwCwgAIudaSXa0yj9U/view?usp=sharing) - used for in-game HUD stuff, namely the scoreboard and boost meter
 * [Futura Bold](https://drive.google.com/file/d/1GMyFXe1SHskyXjxrYe7-AorAwVUivTwN/view?usp=sharing) - used for Rocket League logo (99% the same)
+* [Liberation mono](https://drive.google.com/drive/folders/1Tc7YM9PoyUmt3qsHpxwDi1qIC4xQTVAV?usp=sharing)
