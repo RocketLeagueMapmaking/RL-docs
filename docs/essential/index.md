@@ -7,7 +7,9 @@ tags:
 
 # Mapmaking Essentials
 
-![alt text](/images/UDK/essential/dangerous.png "Also dangerous to take this")
+<CaptionImage src='/images/UDK/essential/dangerous.png' caption="It's also dangerous to take this" width="70%"/>
+
+![CaptionImage](/images/UDK/essential/dangerous.png "It's also dangerous to take this")
 
 ## Getting Started
 

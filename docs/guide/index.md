@@ -8,11 +8,11 @@ tags:
 
 ## Essentials Guide
 
-If you're reading this, hopefully you have completed all of the steps in the [Essentials section](../essential/index.md):
+If you're reading this, hopefully you have completed all of the steps in the [Essentials Section](../essential/index.md):
 
 * Installed UDK 2015
 * Added Dummy Classes to UDK install
-* Installed 3D software, like Blender
+* Installed 3D modeling software, like Blender
 * Installed image editing software, like Paint.net
 * Created a StickyWalls Physical Material
 

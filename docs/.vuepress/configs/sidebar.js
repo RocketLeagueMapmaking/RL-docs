@@ -45,7 +45,7 @@ module.exports = {
     '/guide/': [
         {
             title: 'Information',  
-            collapsable: false, 
+            collapsable: true, 
             sidebarDepth: 1,    
             children: [
                 ''
