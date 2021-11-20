@@ -18,8 +18,6 @@ tags:
 
 <ContestComponent count="" title="Maptember Madness" src="/images/home/image260.png" gallery="https://imgur.com/gallery/TElpGKG" text="In September 2020, Rocket League Mapmaking kicked off a contest featuring $550 in prize money. These prizes went to seven very deserving maps as judged by a panel and by the Rocket League Community. Keep an eye out for future contests!"/>
 
-[//]: # <SocialsComponent/>
-
 <style scoped>
 .theme-default-content:not(.custom) {
   background-color: #000000;
