@@ -5,7 +5,7 @@ tags:
   - references
 ---
 
-# References
+# Guide
 
 * [Derzo's Custom Materials Spreadsheet](https://docs.google.com/spreadsheets/d/1KLs5r_sUn3W6rLrw_xQJbEK-LOmxCiBRfo9_XI79Kng)
 * [Kismet Snippet Library](https://github.com/RocketLeagueMapmaking/Kismet)
