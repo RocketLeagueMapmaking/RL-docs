@@ -70,8 +70,8 @@ module.exports = [
                 link: '/resources/downloads'
             },
             {
-                text: 'Kismet Library',
-                link: 'https://github.com/RocketLeagueMapmaking/Kismet'
+                text: 'Community Tools',
+                link: '/resources/tools'
             },
             {
                 text: 'Other Guides',
@@ -79,7 +79,7 @@ module.exports = [
             },
             {
                 text: 'References',
-                link: '/resources/references'
+                link: '/resources/references/guide'
             },
             {
                 text: 'Modding Network',
@@ -108,8 +108,8 @@ module.exports = [
                 link: '/more/contribute'
             },
             {
-                text: 'Psyonix Links',
-                link: '/more/psyonix'
+                text: 'UE5',
+                link: '/ue5/'
             }
         ]
     }

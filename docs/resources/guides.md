@@ -10,7 +10,10 @@ More Recent/Thorough Guides At The Top
 
 ## 2021
 
+* [Simple Shark's RLMM Tutorial Series](https://www.youtube.com/playlist?list=PLIomqmQFYkVTl2FI2YBGzGuUZWSvZnS9d)
 * [Plumato's How to Play Steam Workshop Maps](https://youtu.be/wO_ApfzdLSM)
+* [CodeRed's How to Make a Rocket League Map](https://www.youtube.com/watch?v=3RODPYNN1u8)
+* [World of Level Design](https://www.worldofleveldesign.com/categories/cat-udk.php)
 
 ## 2020
 
