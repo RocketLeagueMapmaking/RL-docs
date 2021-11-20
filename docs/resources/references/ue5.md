@@ -4,12 +4,12 @@ title: UE5
 
 # UE5 References
 
-* [a list of Psyonix statements about UE5](psyonix.html#statements-about-ue5)
+* [A list of statements from Psyonix about UE5](psyonix.html#statements-about-ue5)
 
 ## Videos
 
 :::tip List
-This list only mentions some videos from Rocket League modders / map makers, for more videos search on [YouTube](https://www.youtube.com/results?search_query=rocket+league+ue5)
+This is a partial list of some videos from Rocket League modders and map makers. For more videos, check [YouTube.](https://www.youtube.com/results?search_query=rocket+league+ue5)
 :::
 
 * [HalfwayDead - This update could make or break Rocket League.](https://www.youtube.com/watch?v=h_UbuSrVrgI)

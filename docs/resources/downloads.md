@@ -40,6 +40,9 @@ This a list of useful things in order of importance:
 
 [GitHub](https://github.com/Martinii89/RL_DummyAssets)
 
+### Rocket League Mapmaking Sketchfab
+[Community Library](https://sketchfab.com/rocketleaguemapmaking/models)
+
 ### JimJoms' One Stop Chop Shop
 
 [Google Drive](https://drive.google.com/drive/folders/0B1VfmKjZuD8OYVlURld3ZFhTRk0)
@@ -61,7 +64,7 @@ This a list of useful things in order of importance:
 * [Mr. Swaggles' Simplicity](https://drive.google.com/file/d/1_SRltyPZXlqwuA4s2rHA5H8GgMOiSqk-/view?usp=sharing)
 * [Lazord's basic pieces for Assembly](https://drive.google.com/file/d/1RVUngLPzipSE1zSw1Wp8SX7bBfb73hBS/view?usp=sharing)
 * [Panic's Air Race Rings](https://drive.google.com/file/d/1xjLiQAIps3FzfEBZvdRQUSQqzCfyL5nR/view?usp=sharing)
-* [Octane car](https://drive.google.com/file/d/1zcEJRFviKcRmLGUM1AuhmqWCXzMzZJlJ/view?usp=sharing)
+* [Octane Car](https://drive.google.com/file/d/1zcEJRFviKcRmLGUM1AuhmqWCXzMzZJlJ/view?usp=sharing)
 * [Small](https://drive.google.com/file/d/1zOUtawruKujdrkYubN8fDhd-bENRYpCY/view?usp=sharing) and [large](https://drive.google.com/file/d/1_IWsfkBGnjD_E46P_vWGK56hsRxZ-JOa/view?usp=sharing) boostpads
 * [HoopsFloor_Clean](https://drive.google.com/file/d/1IgdR1_6jnBHw3ZB34DKHr6FUKlamkl2r/view?usp=sharing). This is a fine-tuned version of the hoops floor, with the lines physically extruded. Because of that, you need to use a flat surface like `HoopsFloor_Coll` for the collision geometry.
 * [HoopsFloor_Coll](https://drive.google.com/file/d/1bCouWyxO8i17fiyH97S-yB1iFHJW8Fgy/view?usp=sharing). Don't forget to put the StickyWalls physical material on this mesh, and use the setting "Hidden Game" to make it invisible.
@@ -79,4 +82,4 @@ This a list of useful things in order of importance:
 
 * [Michroma](https://drive.google.com/file/d/12rH2u7Xst4sbEgmwCwgAIudaSXa0yj9U/view?usp=sharing) - used for in-game HUD stuff, namely the scoreboard and boost meter
 * [Futura Bold](https://drive.google.com/file/d/1GMyFXe1SHskyXjxrYe7-AorAwVUivTwN/view?usp=sharing) - used for Rocket League logo (99% the same)
-* [Liberation mono](https://drive.google.com/drive/folders/1Tc7YM9PoyUmt3qsHpxwDi1qIC4xQTVAV?usp=sharing)
+* [Liberation Mono](https://drive.google.com/drive/folders/1Tc7YM9PoyUmt3qsHpxwDi1qIC4xQTVAV?usp=sharing)

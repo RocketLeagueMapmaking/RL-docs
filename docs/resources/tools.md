@@ -2,12 +2,15 @@
 title: Tools
 ---
 
-# Community tools
+# Community Tools
 
-## Bakkesmod plugins
+## Bakkesmod Plugins
 
-- [Map loader by Thanrek](https://bakkesplugins.com/plugins/view/187)
+- [Rocket Plugin by Stanbroek](https://bakkesplugins.com/plugins/view/26)
+- [Rocket Host by JetFox](https://bakkesplugins.com/plugins/view/216)
+- [Map Loader by Thanrek](https://bakkesplugins.com/plugins/view/187)
 - [Netcode by CinderBlock](https://bakkesplugins.com/plugins/view/166)
+- [Workshop Map Loader & Downloader by Vync_](https://bakkesplugins.com/plugins/view/223)
 
 ## Bibliothèque d'Alexandrie
 
@@ -29,9 +32,9 @@ Export objects, locations and more from Blender into UDK. For a list of supporte
 
 A place for useful kismet snippets to copy and paste into your project
 
-## Local gravity assistant
+## Local Gravity Assistant
 
-By DokterBotti
+By DoktorBotti
 
 DoktorBotti has created an awesome tool for making complex gravity situations with [a tutorial](https://youtu.be/U35d40LHH14) on how to make your own gravity fields. If you want to know how it works, you can take a look at [the source code](https://github.com/DoktorBotti/RL_LocalGravityAssistant).
 
@@ -43,10 +46,10 @@ By MrPhil
 
 The UDK Object Generator allows to generate objects from a map file in a text format. This text can be pasted directly into UDK as long as you have the dummy assets.
 
-## UPK browser
+## UPK Browser
 
 By Martinn
 
-- [Discord channel](https://discord.com/channels/711882968200904715/905241631815499807)
+- [Discord Channel](https://discord.com/channels/711882968200904715/905241631815499807)
 
 A tool made to simplify the process of finding the correct dummy assets by browsing the assets in the game. Some features are changing materials, load / spawn objects/FXActors and more.

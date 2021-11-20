@@ -2,34 +2,34 @@
 title: UDK vs UE5
 ---
 
-# UDK/UE4/UE5 overview
+# UDK/UE4/UE5 Overview
 
 ## Background info - UDK
 
-* Currently we use Unreal Engine 3 ([about](https://en.wikipedia.org/wiki/List_of_Unreal_Engine_games#Unreal_Engine_3)) and a tool called UDK (Unreal Development Kit). UDK was first released in 2006, with the final update in 2015
+* Currently we use [Unreal Engine 3](https://en.wikipedia.org/wiki/List_of_Unreal_Engine_games#Unreal_Engine_3) in a tool called UDK (Unreal Development Kit). UDK was first released in 2006, with the final update in 2015
 * UDK is not user friendly, with very few hotkeys, an outdated look, no collaboration features, and is just generally from a different era of software.
 * Limitations on detail, file size, lots of inefficiencies
 
-## Background info - UE5
+## Background Info - UE5
 
 * Has not been fully released yet, planned for release in early 2022, so more features will be implemented and figured out
-* For now, assumptions basically have to come from how UE4 works. UE3 -> UE4 was a tremendous change to almost everything, but UE5 is a continuation of UE4’s direction
+* For now, assumptions basically have to come from how UE4 works. UE3 to UE4 was a tremendous change to almost everything, but UE5 is a continuation of UE4’s direction
 * Much more modern, streamlined, capable, efficient, good-looking, etc
 
 ## Modding - UDK
 
 ### UPK files
 
-* We take advantage of the fact that games are not monolithic packages, but rather made up of UPK files or “Unreal PacKages.” We can pull a “man-in-the-middle” type hack to simply replace these files and the game has no idea.
+* We take advantage of the fact that games are not monolithic packages, but rather made up of UPK files or “**U**nreal **P**ac**K**ages.” We can pull a “man-in-the-middle” type hack to simply replace these files and the game has no idea.
 * Easier to decrypt and gain access to these files because there is one per object/car/map. Modders have rebuilt a library of the name and type of everything in the game, which allows us to reference them and add them to our own maps (e.g. background skyscraper models, sky textures, sand material from Wasteland, alpha boost)
 * We have essentially complete control over everything that happens inside the .upk file because we are creating it with the full UDK program.
 
-### Bakkesmod and memory access modding
+### Bakkesmod and Memory Access Modding
 
-* Bakkesmod, AlphaConsole, RLBot, other mods which shall not be named, all use a technique of reading data directly from the computer’s memory and modifying it
-* The mods I named have been approved and actually worked on by Psyonix so to provide boundaries for what they are allowed to access, manipulate, etc.
+* Bakkesmod, AlphaConsole, RLBot, and other mods which shall not be named all use a technique of reading data directly from the computer’s memory and modifying it
+* The mods I did name have been approved and actually worked on by Psyonix so to provide boundaries for what they are allowed to access, manipulate, etc.
 * One of the most powerful plugins for modders is called the Netcode plugin. Netcode is a general term for code which deals with user data being transmitted. The Netcode plugin allows players’ games to send data directly to each other instead of to a Psyonix server, allowing modders to send information that doesn’t exist in the game (e.g. how many apples you’ve caught in your basket, how much money you have in the game, if you’ve been hit by a love arrow, etc)
-* Complicated maps like Among Us, Battle Royale, Rumble 2.0, Fall Guys all depend on the Netcode plugin to run, standard maps do not
+* Complicated maps like Among Us, Battle Royale, Rumble 2.0, Fall Guys all depend on the Netcode plugin to run, while standard maps do not
 
 ### Distribution
 
@@ -45,7 +45,7 @@ title: UDK vs UE5
 * [Mods are done as official plugins](http://www.tomlooman.com/add-mod-support-to-your-unreal-engine-4-game/), which have to be permitted by the game and added into the appropriate plugin folder
 * [https://mod.io/](https://mod.io/) and other frameworks can also be integrated into UE4/UE5 games, but that’s the sticking point – they have to be intentionally allowed by the game developer
 
-### Memory access modding
+### Memory Access Modding
 
 * This technique should always be possible, but it’s technically against the TOS/EULA of most games because it involves reverse-engineering the game’s code
 * Very tedious and time consuming to map out the memory space of a game, easy for the developers to make it much harder than it already is with simple tricks or encryption

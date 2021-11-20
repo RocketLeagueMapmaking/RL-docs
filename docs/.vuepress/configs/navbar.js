@@ -70,7 +70,7 @@ module.exports = [
                 link: '/resources/downloads'
             },
             {
-                text: 'Community tools',
+                text: 'Community Tools',
                 link: '/resources/tools'
             },
             {
