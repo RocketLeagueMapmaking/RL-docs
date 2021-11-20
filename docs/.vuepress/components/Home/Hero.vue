@@ -8,7 +8,7 @@
             <br>
             <a class='second-link' href="/guide/udk/00_start.html">Explore the Documentation</a>
             <br>
-            <a class='first-link' href="/more/contribute">Get Involved</a>
+            <a class='first-link' href="/more/contribute.html">Get Involved</a>
             <br>
             <a class='second-link' href="https://steamcommunity.com/app/252950/workshop/">Browse the Maps</a>
         </h3> 

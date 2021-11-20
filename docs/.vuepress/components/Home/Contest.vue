@@ -2,23 +2,40 @@
   <section class="guide-part">
     <div class="guide-text">
       <h1 class="section-title">
-        <span> Maptember </span> <br> Madness
+        <span> Mapmaking Contest {{ count }}</span> <br> {{ title }}
       </h1>
       <div class="guide-part-body">
         <p>
-          In September 2020, Rocket League Mapmaking kicked off a contest featuring $550 in prize money. These prizes went to <a href="https://imgur.com/gallery/TElpGKG">seven very deserving maps</a> as judged by a panel and by the Rocket League Community. Keep an eye out for future contests!
+          {{ text }}
         </p>
+        <h3>
+          <a :ref="gallery">Contest Results</a>
+        </h3>
       </div>
     </div>
 
     <div class="guide-intro">
-      <img
-        src="../../public/images/home/image260.png"
-        alt="Maptember madness"
-      >
+      <img :src="src" alt=""/>
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  props: {count: String,
+          title: String,
+          src: String,
+          gallery: String,
+          text: String
+          },
+  computed: {
+    imagesrc () {
+      return  this.src
+    }
+  }
+}
+
+</script>
 
 <style lang="stylus">
 .guide-part{
@@ -39,7 +56,11 @@
     padding-right: 5vw;
 }
 .guide-intro img{
-  max-width: 600px !important;
+    display: block;
+    max-width:600px;
+    max-height:300px;
+    width: auto;
+    height: auto;
 }
 .section-title{
     text-transform: uppercase;
@@ -48,8 +69,13 @@
     margin-bottom: 24px;
 }
 .section-title span{
-    color: #00861D;
+    color: #1CA010;
     font-size: 26px;
+}
+.guide-part h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #1CA010;
 }
 
 @media screen and (max-width: 600px) {
@@ -58,9 +84,6 @@
     }
   .guide-part{
     flex-direction: column;
-  }
-  .guide-intro img{
-    max-width: 90vw !important
   }
 }
 
