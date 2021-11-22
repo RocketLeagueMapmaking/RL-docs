@@ -1,14 +1,13 @@
 <template>
-  <figure align='center' style="border: 2px solid #3E3B3B; background: #3E3B3B">
-    <img :src="imagesrc" :width="width" alt=""/>
-    <hr>
-    <figcaption color: white; margin-top: -0.1rem><i><small>{{ caption }}</small></i></figcaption>
+  <figure align='center'>
+    <img :src="imagesrc" alt=""/>
+    <figcaption><i><small>{{ caption }}</small></i></figcaption>
   </figure>
 </template>
 
 <script>
 export default {
-  props: ['src', 'caption', 'width'],
+  props: ['src', 'caption'],
   computed: {
     imagesrc () {
       return  this.src
@@ -16,3 +15,31 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+img {
+  vertical-align: middle;
+  object-fit: cover;
+}
+ 
+ hr.divider { 
+  margin: 0em;
+  border-width: 2px;
+} 
+
+figcaption {
+  color: white;
+  vertical-align: 'center';
+  margin: 0;
+  padding: 0; 
+}
+
+figure {
+  background: #333333;
+  border-left-width: 0.5rem;
+  border-left-style: solid;
+  border-color: #062604;
+  border-right-width: 0.5rem;
+  border-right-style: solid;
+}
+</style>

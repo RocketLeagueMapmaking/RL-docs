@@ -7,9 +7,7 @@ tags:
 
 # Mapmaking Essentials
 
-<CaptionImage src='/images/UDK/essential/dangerous.png' caption="It's also dangerous to take this" width="70%"/>
-
-![CaptionImage](/images/UDK/essential/dangerous.png "It's also dangerous to take this")
+<CaptionImageComponent src='/images/UDK/essential/dangerous.png' caption="It's also dangerous to take this"/>
 
 ## Getting Started
 

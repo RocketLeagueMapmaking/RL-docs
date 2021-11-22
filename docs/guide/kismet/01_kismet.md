@@ -36,21 +36,21 @@ It is possible to [add kismet nodes](https://docs.unrealengine.com/udk/Three/Kis
 
 ## Kismet Editor Window <Badge text="important" type="tip"/>
 
-![alt text](/images/kismet/guide/image18.png "Nice and simple")
+<CaptionImageComponent src=/images/kismet/guide/image18.png caption="Nice and simple"/>
 
 1 - Toolbar - Various useful-ish functions, all in one place:
 
-* ![alt text](/images/kismet/guide/image87.png) Go back to the previous sequence
-* ![alt text](/images/kismet/guide/image242.png) Go forward to the returned-from sequence
-* ![alt text](/images/kismet/guide/image154.png) Go up one sequence level
-* ![alt text](/images/kismet/guide/image62.png) Rename the current sequence
-* ![alt text](/images/kismet/guide/image188.png) Zoom to selected (`A`)
-* ![alt text](/images/kismet/guide/image208.png) Hide node’s unused connectors (also in a node’s right click menu)
-* ![alt text](/images/kismet/guide/image19.png) Reveal all of node’s connectors (also in a node’s right click menu)
-* ![alt text](/images/kismet/guide/image17.png) Search for nodes to place
-* ![alt text](/images/kismet/guide/image36.png) Search for nodes already in editor
-* ![alt text](/images/kismet/guide/image182.png) Update the list of nodes
-* ![alt text](/images/kismet/guide/image249.png) Open a second Kismet window
+* <CaptionImageComponent src=/images/kismet/guide/image87.png/> Go back to the previous sequence
+* <CaptionImageComponent src=/images/kismet/guide/image242.png/> Go forward to the returned-from sequence
+* <CaptionImageComponent src=/images/kismet/guide/image154.png/> Go up one sequence level
+* <CaptionImageComponent src=/images/kismet/guide/image62.png/> Rename the current sequence
+* <CaptionImageComponent src=/images/kismet/guide/image188.png/> Zoom to selected (`A`)
+* <CaptionImageComponent src=/images/kismet/guide/image208.png/> Hide node’s unused connectors (also in a node’s right click menu)
+* <CaptionImageComponent src=/images/kismet/guide/image19.png/> Reveal all of node’s connectors (also in a node’s right click menu)
+* <CaptionImageComponent src=/images/kismet/guide/image17.png/> Search for nodes to place
+* <CaptionImageComponent src=/images/kismet/guide/image36.png/> Search for nodes already in editor
+* <CaptionImageComponent src=/images/kismet/guide/image182.png/> Update the list of nodes
+* <CaptionImageComponent src=/images/kismet/guide/image249.png/> Open a second Kismet window
 
 2 - Node Editor - Place, move, and interconnect nodes
 

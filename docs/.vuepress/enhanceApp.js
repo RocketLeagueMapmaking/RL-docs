@@ -2,6 +2,8 @@ import Hero from './components/Home/Hero'
 import Contest from './components/Home/Contest'
 import Socials from './components/Home/Socials'
 
+import CaptionImage from './components/CaptionImage'
+import InlineImage from './components/InlineImage'
 import Footer from './components/Footer'
 import FlowChart from './components/FlowChart'
 import KismetNodes from './components/KismetSelect'
@@ -15,7 +17,9 @@ export default ({
         ['SocialsComponent', Socials],
         ['FooterComponent', Footer],
         ['FlowChartComponent', FlowChart],
-        ['KismetNode', KismetNodes]
+        ['KismetNode', KismetNodes],
+        ['CaptionImageComponent', CaptionImage],
+        ['InlineImageComponent', InlineImage]
     ]
 
     for (const component of components) {

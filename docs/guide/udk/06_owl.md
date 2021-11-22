@@ -3,17 +3,17 @@ title: The Owl
 ---
 # Draw The Rest Of The F***ing Owl
 
-![alt text](/images/UDK/basics/image89.png "How to make a Rocket League map in 3 minutes!")
+<CaptionImageComponent src=/images/UDK/basics/image89.png caption="How to make a Rocket League map in 3 minutes!"/>
 
 Now that we have the fundamentals all in place, the rest of the map can come together very quickly. For brevity, I am going to skip over the modeling steps, but that will be explained [here](../blender/01_blender.md).
 
-![alt text](/images/UDK/basics/image209.png "Boring old, lame old blue and white map pieces")
+<CaptionImageComponent src=/images/UDK/basics/image209.png caption="Boring old, lame old blue and white map pieces"/>
 
 I have [a library of default map pieces](../../resources/downloads.md#default-map-pieces) (FBX files) with adjusted UV maps so that they look acceptable with no assigned material. All of these have an object origin offset, meaning all I have to do is place them into the world at (0,0,0) and they all line up. **Note that a Soccar game is played along the Y axis.**
 
 The reason for building a map in pieces is that Rocket League (and UDK in general) does not like spawning you inside of objects. By building it like this, you ensure that the game does not consider you “inside” of anything.
 
-![alt text](/images/UDK/basics/image109.png "That was easy!")
+<CaptionImageComponent src=/images/UDK/basics/image109.png caption="That was easy!"/>
 
 Because of surface normals, any map pieces which have no thickness will be invisible when viewed from the back side. Make sure that all surface normals are correct when viewed from where the player will be.
 
@@ -31,7 +31,7 @@ Because of surface normals, any map pieces which have no thickness will be invis
 
 Once all meshes are in the scene, lighting will need to be rebuilt from the Build menu. This will fix most of the visual artifacts and make the map much more playable.
 
-![alt text](/images/UDK/basics/image174.jpg "notbad_4_final_final.jpg")
+<CaptionImageComponent src=/images/UDK/basics/image174.jpg caption="notbad_4_final_final2.jpg"/>
 
 Try to be as thorough as you can be when testing your map. It only takes one missed collision setting or unset StickyWalls® to ruin the whole experience.
 

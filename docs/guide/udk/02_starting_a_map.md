@@ -13,7 +13,7 @@ From here until the end, this guide will focus on creating a custom map from scr
 
 First, it’s a good idea to sketch out your idea somewhere, be it a sticky note, whiteboard, or inside Paint. Here is my (dumb) idea for a map. It’s like a standar Soccar map, but the goals are on the ceiling, and boost is on the walls. Players can’t enter the goals because I say so.
 
-![alt text](/images/UDK/basics/image212.png "Speaking of using paint...")
+<CaptionImageComponent src=/images/UDK/basics/image212.png caption="Speaking of using paint..."/>
 
 I am starting with a completely blank map to be thorough. **You don’t have to**. However, there are still a few gotchas if you use one of the non-blank maps. Keep an eye out for compasses if you skip ahead quickly.
 
@@ -33,13 +33,13 @@ First, there are a few World properties to tweak. Open World Properties from the
 
 #### Include Stickywalls <Badge text="important" type="tip"/>
 
-![alt text](/images/UDK/basics/image27.png "It sticks with you")
+<CaptionImageComponent src=/images/UDK/basics/image27.png caption="It sticks with you"/>
 
 Next, we are going to include [StickyWalls®](../../essential/09_sticky_walls.md) in this project. **Right click and Fully Load the Generic package. Right click StickyWalls and do “Create a copy…” Select your new map in the Package dropdown (or type it exactly). Click OK. If this fails, make sure that your project name does not have spaces.**
 
 Because this is going to be based on the default soccar map, the initial assets are almost all ready to go. **In the [Content Browser](../../essential/08_content_browser.md), right click Park_P and select Fully Load.** Filter to Static Meshes only in the Object Type selector.
 
-![alt text](/images/UDK/basics/image22.png "All the makings of a delicious new map")
+<CaptionImageComponent src=/images/UDK/basics/image22.png caption="All the makings of a delicious new map"/>
 
 :::warning
 If everything inside Park_P is colored boxes with "Archetype" or "Material" written on them, fear not. [Download this version instead and replace Park_P.upk](https://drive.google.com/file/d/1rpQzqHgoRgpOBSHEpeDwvRtG3sYUXacl/view). You will need to restart UDK any time you mess with the Dummy Assets files.

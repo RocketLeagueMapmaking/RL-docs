@@ -7,7 +7,7 @@ So, you can make a pretty cool looking box. That’s more than half the battle. 
 
 This section will reference many custom classes that are available from the Dummy Classes repository. **If you don’t see them in UDK, you may need to repeat those steps or reinstall UDK with an easy setup script.**
 
-![alt text](/images/UDK/basics/image167.png "Next stop, Hollywood")
+<CaptionImageComponent src=/images/UDK/basics/image167.png caption="Next stop, Hollywood"/>
 
 These custom actor classes may be found in the Actor Classes tab of the Content Browser window. **To add them, simply click the item and drag it into the 3D Editor window. If that doesn’t work, left click it in the Actor Classes window, then right click in the 3D Editor and select “Add {ClassName} Here”.**
 
@@ -15,7 +15,7 @@ These custom actor classes may be found in the Actor Classes tab of the Content 
 
 The Pylon is an object which Rocket League needs to detect that this is a playable map. Without it you will not be able to spawn a game ball, so Rocket League will crash if you attempt to start a Local Match on a Pylonless map.
 
-![alt text](/images/UDK/basics/image102.png "You must construct additional pylon_soccar_ta’s")
+<CaptionImageComponent src=/images/UDK/basics/image102.png caption="You must construct additional pylon_soccar_ta’s"/>
 
 Place the `Pylon_Soccar_TA` at the center of the playing field (ideally near (0,0,0)). Inside its properties, **change Draw Scale to 5. UDK will clamp it to 3.202685, which is fine. Position it so that it appears roughly as shown in the picture above, where the bottom is partially in the ground.** This should correspond to a Z height of roughly 50.
 
@@ -74,7 +74,7 @@ Surprisingly, one key detail of most multiplayer maps is a goal for each team to
 Finish this whole Goal Volume section before testing, otherwise you’ll probably crash Rocket League.
 :::
 
-![alt text](/images/UDK/basics/image71.png "“If you want to be happy, set a goal that commands your thoughts, liberates your energy, and inspires your hopes” - Andrew Carnegie")
+<CaptionImageComponent src=/images/UDK/basics/image71.png caption="“If you want to be happy, set a goal that commands your thoughts, liberates your energy, and inspires your hopes” - Andrew Carnegie"/>
 
 **Set the brush to the goal shape you want. A standard Soccar goal is roughly 1800x880x650 (X,Y,Z) Unreal units. Position it where you want the goal to be, then add a GoalVolume_TA from the Volumes list.**
 
@@ -86,8 +86,8 @@ There are 3 reasons you might not see the Goal Volume right after you add it:
 
 Also keep in mind that the ball must be 100% inside this volume for a goal to happen, **so it’s necessary to make the Goal Volume bigger than the surrounding geometry.** You can always resize it using the scale tool (specifically Non-Uniform Scaling mode).
 
-![alt text](/images/UDK/basics/image74.png)
-![alt text](/images/UDK/basics/image140.png "Fight the system / Find the path")
+<CaptionImageComponent src=/images/UDK/basics/image74.png/>
+<CaptionImageComponent src=/images/UDK/basics/image140.png caption="Fight the system / Find the path"/>
 
 Rocket League expects each goal to have an orientation in 3D space as well. This is mainly to calculate the velocity of the ball when it’s scored, and to orient/situate goal explosions like the Twin Dragons or Overgrowth. The goals will work just fine without them, but you get additional control by doing this step. **Right click somewhere in the goal geometry. Go to Add Actor > Add Path Node. Center this PathNode on the mouth of the goal and fix its rotation so that it points out of the goal.** Keep the Draw Scale of this PathNode at 1… unless you want hilarious and enormous goal explosions.
 
@@ -95,15 +95,15 @@ You may have also noticed that you cannot set the location of this volume from i
 
 * Right click on the Move tool on the top bar and type in numbers. “Relative” means that you move it by that amount.
 * Adjust the grid snap size in the very bottom right to a smaller number (or disable it if you’re brave). This way you can get the placement just right.
-![alt text](/images/UDK/basics/image60.png)
+<CaptionImageComponent src=/images/UDK/basics/image60.png/>
 
-![alt text](/images/UDK/basics/image211.png "Lock and load")
+<CaptionImageComponent src=/images/UDK/basics/image211.png caption="Lock and load"/>
 
 **Bring up the Properties window of the Goal Volume and Lock the window to keep it visible. Select the Path Node and click Use selected object for the Goal Orientation.**
 
 **Select the Goal Volume and Path Node and create a copy with Ctrl+C, Ctrl+V. Move them to the other side of the map. You may need to manually reassign the Goal Orientation Path Node of the copied goal.**
 
-![alt text](/images/UDK/basics/image197.png "Orange -> O -> 0. Blue -> Cold -> Negative")
+<CaptionImageComponent src=/images/UDK/basics/image197.png caption="Orange -> O -> 0. Blue -> Cold -> Negative"/>
 
 Additionally, you may need to type “GoalIndicator_TA” in the Goal Indicator Archetype field, if your game crashes when scoring a goal. Checking the box for No Goal Indicator should also prevent crashing
 
@@ -120,9 +120,9 @@ Lastly, one of the goals needs to be for Orange Team, and one needs to be for Bl
 
 At this point, the map should be playable in Training by yourself. To make it playable as a multiplayer map, the Pylon_Soccar_TA needs to be made aware of all these new additions.
 
-Open the Pylon_Soccar_TA’s Properties and Lock the window. ![alt text](/images/UDK/basics/image48.png)
+Open the Pylon_Soccar_TA’s Properties and Lock the window. <CaptionImageComponent src=/images/UDK/basics/image48.png/>
 
-![alt text](/images/UDK/basics/image93.png "The Green Arrow is now your favorite superhero")
+<CaptionImageComponent src=/images/UDK/basics/image93.png caption="The Green Arrow is now your favorite superhero"/>
 
 **Click each of the PlayerStart_TA’s, then click the green arrow next to the Spawn Points field in the Pylon_Soccar_TA’s Properties.** Each time you click, the new one should get added to the bottom of the list.
 

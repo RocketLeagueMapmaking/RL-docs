@@ -5,7 +5,7 @@ title: Adding Kismet
 
 The Kismet editor is accessible from the top toolbar. A small K button will bring up a popup window. Much like the Content Browser, this window will hide in the corner of your screen if minimized.
 
-![alt text](/images/kismet/guide/image238.png "It was fate...")
+<CaptionImageComponent src=/images/kismet/guide/image238.png caption="It was fate..."/>
 
 We will set up a simple Hello World printout when you load the map.
 
@@ -13,7 +13,7 @@ We will set up a simple Hello World printout when you load the map.
 
 **Click the Lightbulb on the toolbar, and search for “draw.” Select the Draw Text ACTION (not the Event) and click Create.**
 
-![alt text](/images/kismet/guide/image126.png "Hello World")
+<CaptionImageComponent src=/images/kismet/guide/image126.png caption="Hello World"/>
 
 **Connect the Loaded and Visible connector to the Show input of the Draw Text action. Inside the Properties panel, change “Display Time Seconds” to 3. Change “Message Text” to Hello World.**
 

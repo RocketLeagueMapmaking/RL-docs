@@ -5,15 +5,15 @@ title: Blender Window
 
 There are a few user defaults which are good to change if you are just installing Blender. These are three things you should absolutely adjust, but feel free to tinker with as many others as you want. Go to `Edit > Preferences`:
 
-![alt text](/images/Blender/basics/image219.png "QOL is a big deal")
+<CaptionImageComponent src=/images/Blender/basics/image219.png caption="QOL is a big deal"/>
 
 **Under Navigation, turn off Auto Perspective.** With this enabled, the view will switch to perspective mode every time you manually rotate the camera. This should never be the default mode :contemplativeDisappointedFace:
 
-![alt text](/images/Blender/basics/image37.png "Thank me later")
+<CaptionImageComponent src=/images/Blender/basics/image37.png caption="Thank me later"/>
 
 **Under System, increase Undo Steps to a much bigger number than 32.** This will save your life one day.
 
-![alt text](/images/Blender/basics/image55.png "Gotta have FBX")
+<CaptionImageComponent src=/images/Blender/basics/image55.png caption="Gotta have FBX"/>
 
 **Under Add-ons, enable the FBX Importer/Exporter.** We need this to create assets for UDK and Rocket League.
 
@@ -21,7 +21,7 @@ There are a few user defaults which are good to change if you are just installin
 
 ## The Window
 
-![alt text](/images/Blender/basics/image151.png "Beautiful Blender and the Billion Buttons")
+<CaptionImageComponent src=/images/Blender/basics/image151.png caption="Beautiful Blender and the Billion Buttons"/>
 
 ### 1 - Menus
 

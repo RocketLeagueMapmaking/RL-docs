@@ -11,7 +11,7 @@ Near the [beginning of the guide](..essential/05_project_setup.md#batch-script-f
 
 Or **set one instance of this script as the default program for opening .udk and .upk files.** This way, you only have to double-click any .udk file anywhere in your files to replace one of the in-game maps. Just think of the time savings.
 
-![alt text](/images/UDK/basics/image172.png "1337-h4x.bat")
+<CaptionImageComponent src=/images/UDK/basics/image172.png caption="1337-h4x.bat"/>
 
 **You do not need to Build All unless you have added/changed PathNodes or Spawns, need to fix lighting, or you want to publish your map. Skipping this step saves huge amounts of time.**
 

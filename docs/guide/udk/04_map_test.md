@@ -15,7 +15,7 @@ You can test multiplayer on one computer using [this guide](https://steamcommuni
 For the multiplayer reason, **it is important, first and foremost, to create a backup of whatever you overwrite. Keep it secret. Keep it safe.**
 :::
 
-![alt text](/images/UDK/basics/image229.png "May it be a light for you in dark places, when all other lights go out.")
+<CaptionImageComponent src=/images/UDK/basics/image229.png caption="May it be a light for you in dark places, when all other lights go out."/>
 
 If worst comes to worst and you’ve ruined everything, you can always uninstall and reinstall Rocket League. A less drastic measure is to, in Steam, right click on Rocket League > Properties > Local Files > Verify Integrity of Game Cache.
 
@@ -25,7 +25,7 @@ If worst comes to worst and you’ve ruined everything, you can always uninstall
 
 ## A Humble Apology
 
-![alt text](/images/UDK/basics/image49.jpg "I’m sorry")
+<CaptionImageComponent src=/images/UDK/basics/image49.jpg caption="I’m sorry"/>
 
 Alright, I’m sorry that I did that to you. But, it’s not a true modding experience if everything goes right the first time. **You and the ball will fall through the map, and no property you change can fix that.**
 
