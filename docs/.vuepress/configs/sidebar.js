@@ -193,11 +193,35 @@ module.exports = {
             collapsable: false, 
             sidebarDepth: 1,    
             children: [
-                'contact',
                 'about',
+                'contact',
                 'roadmap',
-                'contribute',
-                'psyonix'
+                'contribute'
+            ]
+        }
+    ],
+
+    '/resources/references/': [
+        {
+          title: 'References',
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [
+            'guide',
+            'psyonix',
+            'ue5'
+          ]
+        }
+      ],
+    
+    '/ue5/': [
+        {
+            title: 'UE5',
+            collapsable: false,
+            sidebarDepth: 1,
+            children: [
+                '',
+                'comparison'
             ]
         }
     ],

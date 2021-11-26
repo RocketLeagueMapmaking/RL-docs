@@ -22,7 +22,6 @@ This a list of useful things in order of importance:
 
 ### Miscellaneous
 
-* [Bibliothèque d'Alexandrie v1](https://drive.google.com/drive/folders/1m0opoXAToFngyBUjudwqui0KiI_uG5en?usp=sharing)
 * [UE Viewer](http://www.gildor.org/en/projects/umodel#files)
 * [Rocket League UPK Decryptor](https://www.reddit.com/r/RocketLeague/comments/3v9d10/rocket_league_upk_decryptor_datamined_car_hitbox/?st=iti85t6x&sh=ad0687b1)
 * [JimJoms' C/C++ header to UnrealScript (UDK) converter](https://github.com/wejrox/HeaderToUS)
@@ -40,6 +39,9 @@ This a list of useful things in order of importance:
 ### Full Game Dummy Assets
 
 [GitHub](https://github.com/Martinii89/RL_DummyAssets)
+
+### Rocket League Mapmaking Sketchfab
+[Community Library](https://sketchfab.com/rocketleaguemapmaking/models)
 
 ### JimJoms' One Stop Chop Shop
 
@@ -62,7 +64,7 @@ This a list of useful things in order of importance:
 * [Mr. Swaggles' Simplicity](https://drive.google.com/file/d/1_SRltyPZXlqwuA4s2rHA5H8GgMOiSqk-/view?usp=sharing)
 * [Lazord's basic pieces for Assembly](https://drive.google.com/file/d/1RVUngLPzipSE1zSw1Wp8SX7bBfb73hBS/view?usp=sharing)
 * [Panic's Air Race Rings](https://drive.google.com/file/d/1xjLiQAIps3FzfEBZvdRQUSQqzCfyL5nR/view?usp=sharing)
-* [Octane car](https://drive.google.com/file/d/1zcEJRFviKcRmLGUM1AuhmqWCXzMzZJlJ/view?usp=sharing)
+* [Octane Car](https://drive.google.com/file/d/1zcEJRFviKcRmLGUM1AuhmqWCXzMzZJlJ/view?usp=sharing)
 * [Small](https://drive.google.com/file/d/1zOUtawruKujdrkYubN8fDhd-bENRYpCY/view?usp=sharing) and [large](https://drive.google.com/file/d/1_IWsfkBGnjD_E46P_vWGK56hsRxZ-JOa/view?usp=sharing) boostpads
 * [HoopsFloor_Clean](https://drive.google.com/file/d/1IgdR1_6jnBHw3ZB34DKHr6FUKlamkl2r/view?usp=sharing). This is a fine-tuned version of the hoops floor, with the lines physically extruded. Because of that, you need to use a flat surface like `HoopsFloor_Coll` for the collision geometry.
 * [HoopsFloor_Coll](https://drive.google.com/file/d/1bCouWyxO8i17fiyH97S-yB1iFHJW8Fgy/view?usp=sharing). Don't forget to put the StickyWalls physical material on this mesh, and use the setting "Hidden Game" to make it invisible.
@@ -80,3 +82,4 @@ This a list of useful things in order of importance:
 
 * [Michroma](https://drive.google.com/file/d/12rH2u7Xst4sbEgmwCwgAIudaSXa0yj9U/view?usp=sharing) - used for in-game HUD stuff, namely the scoreboard and boost meter
 * [Futura Bold](https://drive.google.com/file/d/1GMyFXe1SHskyXjxrYe7-AorAwVUivTwN/view?usp=sharing) - used for Rocket League logo (99% the same)
+* [Liberation Mono](https://drive.google.com/drive/folders/1Tc7YM9PoyUmt3qsHpxwDi1qIC4xQTVAV?usp=sharing)
