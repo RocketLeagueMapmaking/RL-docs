@@ -26,20 +26,20 @@ These guys will be referred to as friendly/wonderful/amazing modders, so please 
 | **whynotsteven**       | RL Modding Founder, The OG                                        |
 | **ButterandCream**     | Discord/Reddit Admin, Rocket Launcher Creator                     |
 | **Bakkes**             | Bakkesmod Creator                                                 |
-| **glhglh**             | Collision Channels, AlphaConsole Plugin, Foundational Discoveries |
+| **glhglh**             | AlphaConsole Plugin, Collisions, Foundational Discoveries         |
 | **CinderBlock**        | Bakkesmod Genius                                                  |
 | **Lethamyr**           | Countless Custom Maps, New Features, and Publicity                |
 | **KarlHeinzSchneider** | Collision Channels, Foundational Discoveries                      |
 | **wejrox/JimJoms**     | Web Development, Video Tutorials, One-Stop-Chop-Shop              |
 | **Derzo**              | Fixed Collisions, Guides, Custom Materials, In-Game Assets        |
-| **Stanbroek**          | Advanced Map and Kismet Techniques, Rocket Plugin                 |
+| **Stanbroek**          | Rocket Plugin, Advanced Map and Kismet Techniques                 |
 | **Thanrek**            | Advanced Map and Kismet Techniques                                |
 | **French Fries**       | Foundational Dribbling Challenge Maps                             |
 | **dmc**                | Foundational Challenge Maps                                       |
 | **Dreale**             | Foundational Parkour Challenge Maps                               |
 | **Ardivee**            | Boost, Mapmaking Techniques                                       |
 | **Eliot**              | UE Explorer Program                                               |
-| **Martinn**            | UPK Decryptor, Dummy Assets, Bakkesmod Work                       |
+| **Martinn**            | UPK Decryptor, Dummy Assets, Bakkesmod Work, Numerous Plugins     |
 | **LiveDimensions**     | Tech Support                                                      |
 | **tj**                 | RocketLeagueMapmaking GitHub Team                                 |
 | **Ecrase-Patate**      | Kismet Wizard                                                     |
@@ -48,4 +48,5 @@ These guys will be referred to as friendly/wonderful/amazing modders, so please 
 | **GroovyUnicyclist**   | Discord Moderator                                                 |
 | **BalancedWaffle**     | Community Workshop Games Founder                                  |
 | **JetFox**             | Rocket Host Plugin, Map Hosting                                   |
+| **Simple Shark**       | Countless Custom Maps, Netcode Plugin and Flash Tutorials         |
 | **ghostrider-05**      | RocketLeagueMapmaking.com                                         |
