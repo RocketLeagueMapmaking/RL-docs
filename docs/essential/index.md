@@ -24,7 +24,7 @@ Join the [Rocket League Mapmaking Discord Server](https://discord.gg/PWu3ZWa) to
 
 ## Epic Games
 
-The process for making a custom map is almost the same for Epic Games as Steam. For example, the file paths for installing and using tools are different. Another difference is the process of [publishing a map](../multiplayer/02_publishing).
+**Custom maps can be made with the Epic Games Launcher version of Rocket League,** with only slight differences. For example, the file paths for various tools may change. The process of [publishing a map](../multiplayer/02_publishing.md) is the only notable difference.
 
 ## Feedback
 
