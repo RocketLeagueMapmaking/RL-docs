@@ -9,16 +9,12 @@ tags:
 
 If you installed UDK with (a future version of) the [quick setup script](https://github.com/RocketLeagueMapmaking/UDK_RL_Setup), you may have already opted for some of these changes. Future tools will also streamline this process. Feel free to adjust them to your own preferences, since changing these settings will not require a full recompile.
 
-:::tip Language
-This page is written for the International (American English - `INT`) version of UDK. You can change your language in `Preferences` > `Editor Language` or replace `INT` with the code for your language
-:::
-
 ## Splash Screen
 
 To replace the UDK splash screen with your own image, save the image as a `.bmp` file (preferably with a size of 650*375), rename the image to `EdSplash` and replace the standard splash screen in \
 `{UDK Folder}/UDKGame/Splash/PC/`
 
-![](/images/UDK/shark_UDK_splash.png "Nominee for best splash screen?")
+![""](/images/UDK/shark_UDK_splash.png "Nominee for best splash screen?")
 
 ## Welcome Screen
 
@@ -29,7 +25,7 @@ If you have disabled the Welcome screen, you can access it in the `Help` menu. C
 - In `{UDK Folder}\Engine\Localization\INT\UnrealEd.int` you can change the text above the title by replacing `WelcomeScreen_Title` (line 71)
 
 :::warning Changing URLs
-For now we are unable to change the URLs. If you solve it, please let us know!
+URLs are bound to keys that can't be changed without having the source code of UDK
 :::
 
 ## Map Templates
@@ -48,7 +44,7 @@ You can replace the UDK templates with (your own) custom maps templates. Try to 
 10. Save the package again and exit UDK
 11. Open `{UDK Folder}/Engine/Localization/INT/EditorMapTemplates.int` and add the following line (replacing `MapTemplateName` with your own template name):
 
-```int
+```txt
 MapTemplateName=This is what you see in UDK
 ```
 
@@ -58,12 +54,11 @@ MapTemplateName=This is what you see in UDK
 
 ## UDK Tips
 
-In `{UDK Folder}\Engine\Localization\INT\EditorTips.int` you can set your own UDK or mapmaking tips by replacing the text after `Tip_xxxxx=`. Place `\n` for a single line break.
+In `{UDK Folder}\Engine\Localization\INT\EditorTips.int` you can set your own UDK or mapmaking tips by replacing the text after `Tip_xxxxx=`. Place `\n` for a single line break. You can create up to 10000 start-up tips.
 
-```int
+```txt
 Tip_00001=Did you know you can replace the current tips with your own?\n\nLearn how at https://rocketleaguemapmaking.com/guide/misc/08_custom_udk.html!
 ```
-<!-- more than 50 tips? -->
 
 ## Documentation
 
@@ -71,9 +66,22 @@ The [Content Browser](../../essential/08_content_browser.md#content-browser) has
 
 ## UDK Custom Hotkeys
 
+### Editor
+
+In `{UDK Folder}\Engine\Config\BaseInput.ini` you can edit the standard hotkeys for the 3d viewport or add your own hotkeys. The list of commands are listed under `[UnrealEd.EditorViewportInput]`. Surprisingly there is a page in the documentation for [all console commands](https://docs.unrealengine.com/udk/Three/EditorConsoleCommands.html#Editor%20Mode%20Commands).
+
 ### Kismet
 
-In `{UDK Folder}\UDKGame\Config\UDKEditor.ini` you can edit [the standard hotkeys](https://docs.unrealengine.com/udk/Three/KismetUserGuide.html#Hotkeys) or add your own hotkeys. **Make sure your hotkey doesn't clash with [an existing kismet view hotkey](../kismet/01_kismet.md#the-hottest-hotkeys)!**
+In `{UDK Folder}\UDKGame\Config\UDKEditor.ini` you can edit [the standard hotkeys](https://docs.unrealengine.com/udk/Three/KismetUserGuide.html#Hotkeys) or add your own hotkeys. **Make sure your hotkey doesn't clash with [an existing kismet view hotkey](../kismet/01_kismet.html#the-hottest-hotkeys)!**
+
+:::tip Node color
+You can change the color of the kismet node by specifying the `ObjColor` property:
+
+```txt
+ObjColor=(R=0,G=63,B=127,A=255)
+```
+
+:::
 
 ### Matinee
 
@@ -81,6 +89,34 @@ In the Matinee window you may also set your own hotkeys by going to `Edit` > `Co
 
 ## Menu
 
+### Text
+
+You can change the text of almost any message or button (including the `Save all` button) in  
+`{UDK Folder}\Engine\Localization\INT\UnrealEd.int`
+
+### Context menu
+
+You can add (or remove) your own favorite classes in the right click > add actors menu. For class `MyClass`, add the class `ActorFactoryMyClass` in a source folder:
+
+```uc
+// /Development/src/MyMod/Classes/ActorFactoryMyClass.uc
+
+class ActorFactoryDynamicMesh extends ActorFactory
+    config(Editor)
+    collapsecategories
+    hidecategories(Object)
+    native; 
+
+defaultproperties
+{ 
+    MenuName="Add MyClass"
+    NewActorClass=class'MyClass'
+    bShowInEditorQuickMenu=false
+}
+```
+
+By setting `bShowInEditorQuickMenu=true` you can move `MyClass` from `add actors > templates > MyClass` to the most-used actors in `add actors > MyClass`.
+
 ## More
 
-If you are willing to dive into the config files and source code of UDK to discover more tricks, please share anything interesting that you find! Let's hope Psyonix uses UE5 to make Rocket League 2...
+If you are willing to dive into the config files and source code of UDK to discover more tricks, please share anything interesting that you find! Let's wait until Psyonix uses [UE5](../../ue5/) to make Rocket League
