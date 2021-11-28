@@ -228,7 +228,7 @@ module.exports = {
 
     '/cheatsheet/': [
         {
-            title: 'Cheat Sheets',   
+            title: 'Cheatsheets',   
             collapsable: false, 
             sidebarDepth: 1,    
             children: [
@@ -244,7 +244,8 @@ module.exports = {
                 '09_map_models',
                 '10_multiplayer',
                 '11_soccar',
-                '12_uvmaps'
+                '12_uvmaps',
+                '13_cleanmeshes'
             ]
         }
     ]

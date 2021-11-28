@@ -39,9 +39,9 @@ This website has no advertisements so you can focus on the important stuff. If y
 * [Contribute to this guide](../more/contribute.md#this-guide)
 * [Donate (for future contests)](../more/contribute.md#financial-contribution)
 
-## Cheat Sheets
+## Cheatsheets
 
-Portions of these guides have been condensed into brief, single-page references, which may be found in the [Cheat Sheets](../cheatsheet.md) section. Refer to them when you just need a quick reminder.
+Portions of these guides have been condensed into brief, single-page references, which may be found in the [Cheatsheets](../cheatsheet.md) section. Refer to them when you just need a quick reminder.
 
 ## Bounty Board
 

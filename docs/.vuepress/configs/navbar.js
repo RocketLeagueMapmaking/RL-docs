@@ -15,6 +15,10 @@ module.exports = [
                 link: '/cheatsheet/index'
             },
             {
+                text: 'Tips and Tricks',
+                link: '/tipstricks/index'
+            },
+            {
                 text: 'Guides',
                 items: [
                     {

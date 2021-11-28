@@ -1,9 +1,7 @@
 ---
 title: Materials
 ---
-# Cheat Sheets <Badge text="not finished" type="warning"/>
-
-## Materials
+# Materials
 
 This page will be updated soon!
 
