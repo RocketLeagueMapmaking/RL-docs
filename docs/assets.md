@@ -127,9 +127,11 @@ This is a dangerous warning
 ::: details
 This is a details block
 :::
+
 ::: warning Title
 This is a warning with a custom title
 :::
+
 ---
 
 ## Markdown
@@ -188,7 +190,7 @@ console.log(guide)
 
 With no language specified:
 
-```
+```txt
 no syntax highlights
 // rest of text
 ```
