@@ -1,4 +1,4 @@
-const questions = [
+const setupQuestions = [
     {
         question: 'Do you have UDK installed?',
         desc: '<b>UDK</b>, or the <b>Unreal Development Kit</b>, is the program used to create games in Unreal Engine 3. Since Rocket League is made with this tool, we have to use it too.',
@@ -83,7 +83,7 @@ const questions = [
     }
 ]
 
-const typeofmaps = [
+const mapCategories = [
     {
         category: 'Challenge Map',
         description: 'A test of mechanical control',
@@ -126,7 +126,7 @@ const typeofmaps = [
     }
 ]
 
-const types = [
+const followupQuestions = [
     {
         name: 'Meshes',
         data: [{},
@@ -261,7 +261,7 @@ const types = [
 ]
 
 module.exports = {
-    types,
-    typeofmaps,
-    questions
+    setupQuestions,
+    mapCategories,
+    followupQuestions
 }

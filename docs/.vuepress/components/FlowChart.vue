@@ -11,7 +11,7 @@
         <h1>
           {{ messages.begin.title }}
         </h1>
-        <p> {{ messages.begin.text }} </p>
+        <p v-html="messages.begin.text"></p>
         <button
           class="begin_message"
           @click="reset = !reset"
@@ -22,15 +22,15 @@
 
       <!-- Set-up questions -->
       <div
-        v-for="question in questions"
-        :key="question"
+        v-for="question in setupQuestions"
+        :key="question.question"
         class="question"
       >
-        <div v-if="!reset && !end && progress === questions.indexOf(question)">
+        <div v-if="!reset && !end && progress === setupQuestions.indexOf(question)">
           <p class="ask">
             {{ question.question }}
           </p>
-          <p> {{ question.desc }} </p>
+          <p v-html="question.desc"> <!---{{ question.desc }}--> </p>
         
           <div class="mobile-btn">
             <button
@@ -50,14 +50,14 @@
       </div>
 
       <!-- Select map type -->
-      <div v-if="progress === questions.length">
+      <div v-if="progress === setupQuestions.length">
         <p> {{ messages.ready }} </p>
         <div
-          v-for="type in typeofmaps"
-          :key="type"
+          v-for="type in mapCategories"
+          :key="type.category"
           class="category"
         >
-          <div v-if="slides.current === typeofmaps.indexOf(type)">
+          <div v-if="slides.current === mapCategories.indexOf(type)">
             <h2> {{ type.category }} </h2>
             <p> {{ type.description }} </p>
 
@@ -90,9 +90,9 @@
       <!-- 2nd series Questions -->
       <div
         v-for="question in active.data"
-        :key="question"
+        :key="question.question"
       >
-        <div v-if="(active !== 0 && !end && !reset) && active.data.indexOf(question) > 0 && progress === questions.length + active.data.indexOf(question)">
+        <div v-if="(active !== 0 && !end && !reset) && active.data.indexOf(question) > 0 && progress === setupQuestions.length + active.data.indexOf(question)">
           <p class="ask">
             {{ `${messages.menu.question} ${question.question}?` }}
           </p>
@@ -115,78 +115,62 @@
       </div>
 
       <!-- Reached the end -->
-      <div v-if="active !== 0 && progress === (questions.length + active.data.length)">
+      <div v-if="active !== 0 && progress === (setupQuestions.length + active.data.length)">
         <p> {{ messages.end }} </p>
       </div>
             
       <!-- Question answers -->
       <div v-if="end">
-        <div v-if="progress < questions.length">
-          <p> {{ questions[progress].no }} </p>
+        <div v-if="progress < setupQuestions.length">
+          <p v-html="setupQuestions[progress].no"></p>
         </div>
-        <div v-if="active !== 0 && questions.length < progress < (questions.length + active.data.length)">
-          <p class="answer">
-            {{ active.data[progress - questions.length].no }}
-          </p>
+        <div v-if="active !== 0 && setupQuestions.length < progress < (setupQuestions.length + active.data.length)">
+          <p class="answer" v-html="active.data[progress - setupQuestions.length].no"></p>
         </div>
       </div>
 
       <!-- Buttons -->
       <div class="buttons">
         <button
-          v-if="progress === questions.length && slides.current === 0"
-          :disabled="true"
-          class="menu-button"
-        >
-          {{ buttons.prev }}
-        </button>
-
-        <button
-          v-if="progress === questions.length && slides.current > 0"
+          v-if="progress === setupQuestions.length && slides.current >= 0"
+          :disabled="slides.current === 0"
           class="menu-button"
           @click="slides.current -= 1"
         >
-          {{ buttons.prev }}
+          <span class="iconify" :data-icon="buttons.prev" ></span>
         </button>
 
         <button
-          v-if="progress === questions.length && (slides.current + 1) < typeofmaps.length"
+          v-if="progress === setupQuestions.length && (slides.current + 1) < mapCategories.length"
           class="menu-button"
+          :disabled="(slides.current + 1) === mapCategories.length"
           @click="slides.current += 1; slides.prev = false"
         >
-          {{ buttons.next }}
+          <span class="iconify" :data-icon="buttons.next" ></span>
         </button>   
-               
-        <button
-          v-if="progress === questions.length && (slides.current + 1) === typeofmaps.length"
-          :disabled="true"
-          class="menu-button"
-        >
-          {{ buttons.next }}
-        </button>
                 
         <button
           v-if="!end && !reset && progress === 0"
           :disabled="true"
           class="menu-button"
         >
-          {{ buttons.back }}
+          <span class="iconify" :data-icon="buttons.back" ></span>
         </button>
         
         <button
-          v-if="!end && progress > 0 && progress !== questions.length + 1 && progress !== questions.length"
+          v-if="!end && progress > 0 && progress !== setupQuestions.length + 1 && progress !== setupQuestions.length"
           class="menu-button"
           @click="progress -= 1"
         >
-          {{ buttons.back }}
+          <span class="iconify" :data-icon="buttons.back" ></span>
         </button>
 
         <button
-          v-if="!end && progress > questions.length"
+          v-if="!end && progress > setupQuestions.length"
           class="menu-button"
-          @click="progress = questions.length"
+          @click="progress = setupQuestions.length"
         >
-          {{ buttons.menu }}
+          <span class="iconify" :data-icon="buttons.menu" ></span>
         </button>
 
         <button
@@ -195,7 +179,7 @@
           class="returnbutton"
           @click="end = !end"
         >
-          {{ buttons.return }}
+          <span class="iconify" :data-icon="buttons.return" data-rotate="90deg" title="Return" ></span>
         </button>
 
         <button
@@ -203,7 +187,7 @@
           class="resetbutton"
           @click="reset = !reset; end = !end; progress = 0; slides.current = 0"
         >
-          {{ buttons.reset }}
+          <span class="iconify" :data-icon="buttons.reset" title="Restart" ></span>
         </button>
 
         <button
@@ -211,7 +195,7 @@
           class="resetbutton"
           @click="reset = !reset; progress = 0; slides.current = 0"
         >
-          {{ buttons.reset }}
+          <span class="iconify" :data-icon="buttons.reset" ></span>
         </button>
       </div>
     </div>
@@ -219,9 +203,10 @@
 </template>
 
 <script>
+import markdownIt from 'markdown-it'
 import { flowChart } from '../configs/index.js'
 
-const { questions, types, typeofmaps } = flowChart
+const { followupQuestions, mapCategories, setupQuestions } = flowChart
 
 export default{
     data(){
@@ -250,18 +235,18 @@ export default{
                 }
             },
             buttons: {
-                back: '<span class="iconify" data-inline="false" data-icon="fa-solid:angle-left" style="color: #ffffff; font-size: 40px;"></span>',
-                menu: '<span class="iconify" data-inline="false" data-icon="fa-solid:angle-double-left" style="color: #ffffff; font-size: 40px;"></span>',
-                reset: '<span class="iconify" data-inline="false" data-icon="fa-solid:undo-alt" title="Restart" style="color: #ffffff; font-size: 40px;"></span>',
-                return: '<span class="iconify" data-inline="false" data-icon="fa-solid:level-down-alt" data-rotate="90deg" title="Return" style="color: #ffffff; font-size: 40px;"></span>',
+                back: 'fa-solid:angle-left',
+                menu: 'fa-solid:angle-double-left',
+                reset: 'fa-solid:undo-alt',
+                return: 'fa-solid:level-down-alt',
                 yes: 'yes',
                 no: 'no',
-                prev: '<span class="iconify" data-inline="false" data-icon="fa-solid:caret-left" style="color: #ffffff; font-size: 40px;"></span>',
-                next: '<span class="iconify" data-inline="false" data-icon="fa-solid:caret-right" style="color: #ffffff; font-size: 40px;"></span>'
+                prev: 'fa-solid:caret-left',
+                next: 'fa-solid:caret-right'
             },
-            questions,
-            types,
-            typeofmaps
+            setupQuestions,
+            mapCategories,
+            followupQuestions
         }
     }
 }
@@ -343,6 +328,11 @@ button:hover, .item a button:hover{
 }
 button:disabled, button[disabled]{
     background-color: btn-disabled
+}
+
+.iconify {
+  color: #ffffff; 
+  font-size: 40px;
 }
 
 // Text
