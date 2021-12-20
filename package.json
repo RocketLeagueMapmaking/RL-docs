@@ -22,7 +22,7 @@
     "lint-markdown:fix": "npx markdownlint-cli2-fix \"**/*.md\" \"#node_modules\""
   },
   "engines": {
-    "node": ">=14.0.0",
+    "node": ">= 12.22.0 || >=14.0.0 || >=16.0.0",
     "npm": ">=7.0.0"
   },
   "dependencies": {

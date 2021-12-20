@@ -31,10 +31,10 @@ The project utilises `vuepress` in order to create pages for our documentation, 
 
 ## Dependencies
 
-1. Install [Node v10+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (or later).
+1. Install [Node v12+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (or later).
 
-- `node --version` should show at least `v10.15.3`. Lower versions have not been tested but may also work.
-- `npm --version` should show at least `6.9.0`. Lower versions have not been tested but may also work.
+- `node --version` should show at least `v12.22.0`. Lower versions have not been tested but may also work.
+- `npm --version` should show at least `7.0.0`. Lower versions have not been tested but may also work.
 
 2. Clone the repository to your machine.
 3. Execute `npm install` from the root of the repository.
