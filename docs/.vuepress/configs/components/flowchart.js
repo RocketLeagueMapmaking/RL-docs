@@ -129,7 +129,7 @@ const mapCategories = [
 const followupQuestions = [
     {
         name: 'Meshes',
-        data: [{},
+        data: [
             {
                 question: 'Ground and Collisions',
                 desc: 'Surfaces for the player to drive on',
@@ -159,7 +159,7 @@ const followupQuestions = [
     },
     {
         name: 'Detail',
-        data: [{},
+        data: [
             {
                 question: 'Player / Ball Spawns',
                 desc: 'It\'s nice to be able to exist',
@@ -185,7 +185,7 @@ const followupQuestions = [
     },
     {
         name: 'Kismet',
-        data: [{},
+        data: [
             {
                 question: 'Triggers or Checkpoints',
                 desc: 'Logic to add meaningful features',
@@ -198,14 +198,14 @@ const followupQuestions = [
             },
             {
                 question: 'Button Presses',
-                desc: 'A small description to add some text to the question!',
+                desc: 'React to interactions from the player!',
                 no: '<a href="../guide/kismet/06_advanced.html" target="_blank">Kismet - Advanced</a>'
             }
         ]
     },
     {
         name: 'Materials',
-        data: [{},
+        data: [
             {
                 question: 'Solid Colors',
                 desc: 'Brought to you by Roy G. Biv',
@@ -230,7 +230,7 @@ const followupQuestions = [
     },
     {
         name: 'Bakkesmod',
-        data: [{},
+        data: [
             {
                 question: 'Fully Custom Car or Ball Behavior',
                 desc: 'Cars that levitate, balls that teleport',
@@ -240,7 +240,7 @@ const followupQuestions = [
     },
     {
         name: 'Animations',
-        data: [{},
+        data: [
             {
                 question: 'Simple Loops',
                 desc: 'Spinning fans or sailing boats',
