@@ -26,7 +26,7 @@
     "npm": ">=7.0.0"
   },
   "dependencies": {
-    "node-fetch": "^2.6.5",
+    "node-fetch": "^2.6.6",
     "vue": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
     "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
@@ -35,7 +35,7 @@
     "eslint": "^8.5.0",
     "eslint-plugin-vue": "^8.2.0",
     "markdownlint-cli2": "^0.3.2",
-    "vuepress": "^1.9.1",
+    "vuepress": "^1.9.4",
     "vuepress-plugin-seo": "^0.1.4"
   }
 }
