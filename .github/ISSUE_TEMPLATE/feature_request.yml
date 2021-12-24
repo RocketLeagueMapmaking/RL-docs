@@ -6,6 +6,7 @@ body:
     attributes:
       value: |
         Use the suggestion channel in Discord for non-website related features: https://discord.gg/PWu3ZWa
+        [Create a discussion](https://github.com/RocketLeagueMapmaking/RL-docs/discussions/new) for questions / discussions about the website
   - type: textarea
     id: description
     attributes:
