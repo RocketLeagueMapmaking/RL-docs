@@ -136,6 +136,35 @@ enum ERBCollisionChannel
 };
 ```
 
+Additionally, update `RBCollisionChannelContainer` (line ~401) to have `Ball`, `VehicleBlocker` and `BallBlocker` so it looks like this:
+
+```unrealscript{10-12}
+struct RBCollisionChannelContainer
+{
+    var() const bool Default;
+    var const bool Nothing; // This is reserved to allow an object to opt-out of all collisions, and should not be set.
+    var() const bool Pawn;
+    var() const bool Vehicle;
+    var() const bool Water;
+    var() const bool GameplayPhysics;
+    var() const bool EffectPhysics;
+    var() const bool Ball;
+    var() const bool VehicleBlocker;
+    var() const bool BallBlocker;
+    var() const bool Untitled1;
+    var() const bool Untitled2;
+    var() const bool Untitled3;
+    var() const bool Untitled4;
+    var() const bool Cloth;
+    var() const bool FluidDrain;
+    var() const bool SoftBody;
+    var() const bool FracturedMeshPart;
+    var() const bool BlockingVolume;
+    var() const bool DeadPawn;
+    var() const bool Clothing;
+    var() const bool ClothingCollision;
+};
+
 This allows us to give objects different collision channels for different behaviors. VehicleBlocker objects allow the ball through, but not the player. BallBlocker is the reverse. And Ball is… like the ball.
 
 **Lastly, in `Actor.uc`** go to this line:
@@ -174,3 +203,4 @@ You can find the download [Here.](../resources/downloads.md#park-p-dummy-assets)
 **Place this into `{UDK Folder}\UDKGame\Content\`** alongside the various other files. UDK will recognize it here and make its contents available to you.
 
 [A later section](../guide/udk/14_dummy_assets.md) of this guide will show you how to use any resource from any map, but this is more than enough to get started with.
+
