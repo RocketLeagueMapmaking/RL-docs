@@ -5,6 +5,7 @@ tags:
   - guide
   - hello
 ---
+
 # Dummy Classes
 
 Thanks to the work of dedicated modders, there is a repository of wonderful Dummy Classes available to you.
@@ -164,8 +165,21 @@ struct RBCollisionChannelContainer
     var() const bool Clothing;
     var() const bool ClothingCollision;
 };
+```
 
 This allows us to give objects different collision channels for different behaviors. VehicleBlocker objects allow the ball through, but not the player. BallBlocker is the reverse. And Ball is… like the ball.
+
+On line ~180, update
+
+```unrealscript
+var() bool bUseAsOccluder;
+```
+
+to
+
+```unrealscript
+var(Rendering) bool bUseAsOccluder;
+```
 
 **Lastly, in `Actor.uc`** go to this line:
 
@@ -203,4 +217,3 @@ You can find the download [Here.](../resources/downloads.md#park-p-dummy-assets)
 **Place this into `{UDK Folder}\UDKGame\Content\`** alongside the various other files. UDK will recognize it here and make its contents available to you.
 
 [A later section](../guide/udk/14_dummy_assets.md) of this guide will show you how to use any resource from any map, but this is more than enough to get started with.
-
