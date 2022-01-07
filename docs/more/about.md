@@ -15,7 +15,7 @@ First off, a sincere thanks to all of you for using this guide in its various fo
 
 ## Bio - Mr. Swaggles
 
-Who am I? I have a few names, depending on where you find me: Mr. Swaggles in Rocket League, Dasoccerguy in DMs or other places, and Dr. Swaggles for smurfing/testing. I have used Blender since 2003, though only for hobby-level projects. I consider myself very competent with Blender, but I am by no means a professional and I still have much to learn. I have been playing Rocket League since one week after release, and I can safely say that it is my favorite game ever. Most often you’ll find me shooting some Hoops.
+Who am I? I have a few names, depending on where you find me: Mr. Swaggles in Rocket League, Dasoccerguy in DMs or other places, and Dr. Swaggles for smurfing/testing. I have used Blender since 2003, though only for hobby-level projects. I consider myself very competent with Blender, but I am by no means a professional and still have much to learn. I have been playing Rocket League since one week after release, and I can safely say that it is my favorite game ever. Most often you’ll find me shooting some Hoops.
 
 ## Special Thanks
 
