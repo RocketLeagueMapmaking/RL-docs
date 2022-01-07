@@ -1,7 +1,5 @@
 # Overview
 
-This page is only for adding new content, the expanded page can be found [here](https://rocketleaguemapmaking.com/recourses/contribute.html).
-
 Contribution should be performed through a number of simple steps:
 
 1. Find an issue to fix.
@@ -23,7 +21,7 @@ We have some minor style requirements for documentation additions:
 - If you are adding image resources:
   - pay attention to their file size: images above 5MB will not be accepted, and anything above 1MB should be reviewed.
   - Images should be added in `/docs/.vuepress/public/images` and icons in `/docs/.vuepress/public/icons`
-- Create an issue for small contributions (such as fixing typos or broken links)
+- [Create an issue](https://github.com/rocketleaguemapmaking/RL-docs/issues/new/choose) for small contributions (such as fixing typos or broken links)
 
 # Development and local testing
 
@@ -51,4 +49,4 @@ Vuepress makes use of [Vue components](https://vuepress.vuejs.org/guide/using-vu
 - Components are placed inside `/docs/.vuepress/components/`
 - Components are registered globally in `/docs/.vuepress/public/enhanceApp.js`.
 
-**Make sure a custom component’s name either contains a hyphen or is in PascalCase. Otherwise it will be treated as an inline element and wrapped inside a `<p>` tag, which will lead to hydration mismatch because `<p>` does not allow block elements to be placed inside it.** Read more about it [here](https://vuejs.org/v2/guide/components-registration.html#Component-Names).
+**Make sure a custom component’s name either contains a hyphen or is in PascalCase. Otherwise it will be treated as an inline element and wrapped inside a `<p>` tag, which will lead to hydration mismatch because `<p>` does not allow block elements to be placed inside it.** Read more about it [in the Vue documentation](https://vuejs.org/v2/guide/components-registration.html#Component-Names).
