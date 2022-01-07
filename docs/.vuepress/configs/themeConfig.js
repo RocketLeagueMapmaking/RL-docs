@@ -2,7 +2,7 @@ const nav = require('./navbar.js')
 const sidebar = require('./sidebar.js')
 
 module.exports = {
-    defaultTheme: 'dark',
+    overrideTheme: 'dark',
     logo: '/icons/logo_rlmm_round_144.png',
     lastUpdated: 'Last updated',
     searchPlaceholder: 'Search...',

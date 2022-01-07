@@ -16,50 +16,50 @@ On this page you will find some tips and tricks related to styling a page. Other
 
 ```md
 <KismetNode 
-    Title="Kismet Node" Status="Not documented" Image="add_game_ball"
-    Folder="TAGame" Type="Actions"
-    Description="Add a Kismet node to the documentation" 
-    :InputLinks="['Add','Remove']"
-    :OutputLinks="['Added','Removed']"
-    :VariableLinks="['ball','Targets']"
-    :Notes="['This node is synchronous','This nodes requires x or y']"
+    title="Kismet Node" status="Not documented" image="add_game_ball"
+    folder="TAGame" type="Actions"
+    description="Add a Kismet node to the documentation" 
+    :inputLinks="['Add','Remove']"
+    :outputLinks="['Added','Removed']"
+    :variableLinks="['ball','Targets']"
+    :notes="['This node is synchronous','This nodes requires x or y']"
 />
 ```
 
 <KismetNode
-    Title="Kismet Node" Status="Not documented" Image="add_game_ball"
-    Folder="TAGame" Type="Actions"
-    Description="Add a Kismet node to the documentation"
-    :InputLinks="['Add','Remove']"
-    :OutputLinks="['Added','Removed']"
-    :VariableLinks="['ball','Targets']"
-    :Notes="['This node is synchronous','This nodes requires x or y']"
+    title="Kismet Node" status="Not documented" image="add_game_ball"
+    folder="TAGame" type="Actions"
+    description="Add a Kismet node to the documentation"
+    :inputLinks="['Add','Remove']"
+    :outputLinks="['Added','Removed']"
+    :variableLinks="['ball','Targets']"
+    :notes="['This node is synchronous','This nodes requires x or y']"
 />
 
 *General properties:*
 
-- `Title`: Name of the kismet node used in UDK
+- `title`: Name of the kismet node used in UDK
   - Type: `String`
   - Required: `true`
-- `Description`: Summary of what can be done with the kismet node
+- `description`: Summary of what can be done with the kismet node
   - Type: `String`
   - Required: `false`
-- `Status`: State of the kismet node
+- `status`: State of the kismet node
   - Options: `Not documented`, `Not working`, `New`, `ACv3`, `ACv2`, `ACv1`
   - Type: `String`
   - Required: `true`
-- `Image`: An image of the kismet node. **The image (.png) must be placed in `docs/.vuepress/public/images/kismet/`**
+- `image`: An image of the kismet node. **The image (.png) must be placed in `docs/.vuepress/public/images/kismet/`**
   - Type: `String` - image name
   - Required: `false`
-- `Folder`: The folder of the kismet node in UDK
+- `folder`: The folder of the kismet node in UDK
   - Options: `TAGame`, `TAGame_decrypted`
   - Type: `String`
   - Required: `true`
-- `Type`: Type of kismet node
+- `type`: Type of kismet node
   - Options: `Actions`, `Events`
   - Type: `String`
   - Required: `true`
-- `:Notes`: Tips and remarks about the kismet node
+- `:notes`: Tips and remarks about the kismet node
   - Type: `Array`
   - Required: `false`
 
@@ -69,13 +69,13 @@ To register an array as a property of a kismet node (or any other component) `:`
 
 *Values:*
 
-- `:InputLinks`: All items on the left side of a kismet node (except for `in`)
+- `:inputLinks`: All items on the left side of a kismet node (except for `in`)
   - Type: `Array`
   - Required: `false`
-- `:OutputLinks`: All items on the right side of a kismet node (except for `out`)
+- `:outputLinks`: All items on the right side of a kismet node (except for `out`)
   - Type: `Array`
   - Required: `false`
-- `:InputLinks`: All variables of a kismet node
+- `:inputLinks`: All variables of a kismet node
   - Type: `Array`
   - Required: `false`
 
@@ -83,8 +83,8 @@ A not documentated node would then look like this:
 
 ```md
 <KismetNode 
-    Title="Apply Car Products" Status="Not documented" 
-    Folder="TAGame_decrypted" Type="Actions" 
+    title="Apply Car Products" status="Not documented" 
+    folder="TAGame_decrypted" type="Actions" 
 />
 ```
 
@@ -127,9 +127,11 @@ This is a dangerous warning
 ::: details
 This is a details block
 :::
+
 ::: warning Title
 This is a warning with a custom title
 :::
+
 ---
 
 ## Markdown
@@ -188,7 +190,7 @@ console.log(guide)
 
 With no language specified:
 
-```
+```txt
 no syntax highlights
 // rest of text
 ```

@@ -7,62 +7,66 @@
     >
       <span
         class="colored"
-        :style="`background-color: ${status.colors[status.list.indexOf(Status)]}`"
-      > {{ Status }} </span> 
-      {{ Title }} 
-      <span class="folder"> {{ Folder }} </span>
+        :style="`background-color: ${statusConfig.colors[statusConfig.list.indexOf(status)]}`"
+      > {{ status }} </span> 
+      {{ title }} 
+      <span class="folder"> {{ folder }} </span>
     </button> 
 
     <div
       v-if="active === 0 && hasProperty"
       class="content"
     >
-      <p v-if="Description">
-        {{ Description }}
+      <p v-if="description">
+        {{ description }}
       </p>
       <img
-        v-if="Image"
-        :src="`/images/kismet/${Type}/${Folder}/${Image}.png`"
+        v-if="image"
+        :src="`/images/kismet/${type}/${folder}/${image}.png`"
       >
       <div
-        v-if="InputLinks || OutputLinks || VariableLinks"
+        v-if="inputLinks.length > 0 || outputLinks.length > 0 || variableLinks.length > 0"
         class="node-object"
       >
         <hr>
-        <p v-if="InputLinks">
+        <p v-if="inputLinks.length > 0">
           Input links
         </p>
         <ul>
           <li
-            v-for="link in InputLinks"
-            :key="link"
-          > {{ link }} </li>
-        </ul>
-        <p v-if="OutputLinks">
-          Output links
-        </p>
-        <ul>
-          <li
-            v-for="link in OutputLinks"
-            :key="link"
-          > {{ link }} </li>
-        </ul>
-        <p v-if="VariableLinks">
-          Variable links
-        </p>
-        <ul>
-          <li
-            v-for="link in VariableLinks"
+            v-for="link in inputLinks"
             :key="link"
           >
             {{ link }}
           </li>
         </ul>
-        <hr v-if="Notes">
+        <p v-if="outputLinks.length > 0">
+          Output links
+        </p>
+        <ul>
+          <li
+            v-for="link in outputLinks"
+            :key="link"
+          >
+            {{ link }}
+          </li>
+        </ul>
+        <p v-if="variableLinks.length > 0">
+          Variable links
+        </p>
+        <ul>
+          <li
+            v-for="link in variableLinks"
+            :key="link"
+          >
+            {{ link }}
+          </li>
+        </ul>
+        <hr v-if="notes.length > 0">
       </div>
       <ul>
         <li
-          v-for="link in Notes"
+          v-for="link in notes"
           :key="link"
         >
           {{ link }}
@@ -83,56 +87,79 @@
 // blue: #4F8CEE
 // green: #51D05C
 // orange: #C9AB35
-// array used for validation. If you want to change this, update also the status array in data() and add a color in the same index
+// array used for validation. If you want to change this, add a color in the same index
 const StatusList = ['New', 'Not working', 'Not documented', 'ACv3', 'ACv2', 'ACv1']
 const Folders = ['TAGame', 'TAGame_decrypted']
 const Types = ['Actions', 'Events']
 
 export default {
     props: {
-        Title: {
+        title: {
             type: String,
             required: true
         },
-        Description: String,
-        Image: String,
-        Status:{
+        description: {
+            type: String,
+            default: ''
+        },
+        image: {
+            type: String,
+            default: ''
+        },
+        status:{
             validator: function (value) {
                 return StatusList.indexOf(value) !== -1
             },
             type: String,
             required: true
         },
-        Folder: {
+        folder: {
             validator: function (value) {
                 return Folders.indexOf(value) !== -1
             },
             type: String,
             required: true
         },
-        Type: {
+        type: {
             validator: function (value) {
                 return Types.indexOf(value) !== -1
             },
             type: String,
             required: true
         },
-        InputLinks: Array,
-        OutputLinks: Array,
-        VariableLinks: Array,
-        Notes: Array
+        inputLinks: {
+            type: Array,
+            default: () => []
+        },
+        outputLinks: {
+            type: Array,
+            default: () => []
+        },
+        variableLinks: {
+            type: Array,
+            default: () => []
+        },
+        notes: {
+            type: Array,
+            default: () => []
+        }
     },
     data () {
         return {
             active: -1,
-            status: {
-                list: ['New', 'Not working', 'Not documented','ACv3','ACv2','ACv1'],
+            statusConfig: {
+                list: StatusList,
                 colors: ['#4F8CEE','#E74343','#C9AB35','#51D05C','#51D05C','#51D05C'],
             },
             error: {
                 message: 'Nothing has been added about this node'
             },
-            hasProperty: !!this.Image || !!this.OutputLinks || !!this.InputLinks || !!this.Notes || !!this.VariableLinks || !!this.Description
+            hasProperty: !!this.image 
+              || this.outputLinks.length > 0 
+              || this.inputLinks.length > 0 
+              || this.notes.length > 0 
+              || this.variableLinks.length > 0 
+              || !!this.description
         }
     },
     methods:{

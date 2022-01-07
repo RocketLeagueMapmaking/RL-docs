@@ -30,20 +30,12 @@ Make sure that you have downloaded [the latest Dummy Classes](https://github.com
 ---
 
 <KismetNode
-    Title="Add Game Ball" Status="Not documented" Image="add_game_ball"
-    Folder="TAGame" Type="Actions"
-    Description="Add a ball to the game"  
-    :InputLinks="['test','test2']"
-    :OutputLinks="['test','test2']"
-    :VariableLinks="['test','test2']"
-    :Notes="['test','test2']"
+    title="Add Game Ball" status="Not documented" image="add_game_ball"
+    folder="TAGame" type="Actions"
+    description="Add a ball to the game"
 />
 
 <KismetNode
-    Title="Apply Car Products" Status="Not documented"
-    Folder="TAGame_decrypted" Type="Actions"
+    title="Apply Car Products" status="Not documented"
+    folder="TAGame_decrypted" type="Actions"
 />
-
-### Events
-
----
