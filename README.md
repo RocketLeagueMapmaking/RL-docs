@@ -7,7 +7,7 @@
 ## Deployment
 
 **NOTE**: These steps will currently only work for the main `rocketleaguemapmaking.com` domain, as it hasn't been made
-customisable yet. If you wish to view this locally, see the [contribution](./docs/more/contribute.md) documentation.
+customisable yet. If you wish to view this locally, see the [contribution](./CONTRIBUTING.md) documentation.
 
 This site can be executed as a docker container on the host machine.
 
