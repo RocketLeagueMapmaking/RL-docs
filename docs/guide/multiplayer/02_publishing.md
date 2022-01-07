@@ -46,7 +46,7 @@ Sometimes Steam will reject your upload with minimal information. The only 100% 
 
 Next, create a new text file and change the file extension to .vdf. This is a Valve Description File (probably) which contains the info Steam needs to properly offer your map to people on the workshop. Open it in your favorite text editor. Insert this:
 
-```
+```vdf
 "workshopitem"
 {
     "appid"  "252950"
@@ -60,8 +60,8 @@ Next, create a new text file and change the file extension to .vdf. This is a Va
 }
 ```
 
-| Field name| Explanation |
-|-|-|
+| Field name | Explanation |
+| ---------- | ----------- |
 | appid | **needs to be 252950** like I've shown here. That is the code that corresponds to Rocket League, as you can see at the end of its [Steam URL](http://store.steampowered.com/app/252950/) |
 | publishedfileid  | the unique ID tied to your item and profile. Only the contributors to an item have access to modify that Workshop item. You can see the number at the end of the workshop page's URL: [http://steamcommunity.com/sharedfiles/filedetails/?id=814858208](http://steamcommunity.com/sharedfiles/filedetails/?id=814858208) (shameless plug). For the initial upload, this needs to be '0'. SteamCMD will automatically change it to the correct value after your first upload.|  
 | visibility | when set to 0 means Public. If you just want to use this as way to iteratively test maps and not be judged, you can change that to 1 (Friends only) or 2 (only me)|
@@ -72,12 +72,16 @@ Hopefully the rest of the fields are self-explanatory.
 
 Now, run SteamCMD. You will have to close Rocket League, and it’s probably simpler to log out of Steam as well. I also recommend disconnecting your controller, because it tends to show up only as player 2 after running SteamCMD.
 
-:::warning
+:::danger
 Make sure you aren’t streaming or capturing video, because you’re about to type your password in plain sight.
 :::
 
 To log in, type:
 login YourUserName YourPassword SteamGuardCode
+
+:::warning Epic Games
+If you don't have Rocket League installed on Steam, you will not be able to continue. A workaround is to publish your map on [the shared RLMM Steam account](https://steamcommunity.com/id/rocketleaguemapmaking). Contact Mr. Swaggles if you're at this step
+:::
 
 If you don’t have SteamGuard enabled, ignore the third argument. You should see it successfully log in, and that’s half the battle.
 
