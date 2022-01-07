@@ -22,24 +22,20 @@
     "lint-markdown:fix": "npx markdownlint-cli2-fix \"**/*.md\" \"#node_modules\""
   },
   "engines": {
-    "node": ">=14.0.0",
+    "node": ">= 12.22.0 || >=14.0.0 || >=16.0.0",
     "npm": ">=7.0.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/vue-fontawesome": "^2.0.2",
-    "node-fetch": "^2.6.5",
+    "node-fetch": "^2.6.6",
     "vue": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
-    "vuepress-theme-default-prefers-color-scheme": "^1.1.2"
+    "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "^7.29.0",
-    "eslint-plugin-vue": "^7.12.1",
-    "markdownlint-cli2": "^0.3.1",
-    "vuepress": "^1.8.2",
+    "eslint": "^8.5.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "markdownlint-cli2": "^0.3.2",
+    "vuepress": "^1.9.4",
     "vuepress-plugin-seo": "^0.1.4"
   }
 }

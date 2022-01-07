@@ -25,7 +25,7 @@ This site can be executed as a docker container on the host machine.
 
 ## Contributing documentation
 
-Read the [contribution](./docs/more/contribute.md) documentation for guidelines when contributing.
+Read the [contribution](./CONTRIBUTING.md) documentation for guidelines when contributing.
 
 ## Certificate Renewal
 

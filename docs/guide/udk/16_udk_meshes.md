@@ -3,7 +3,7 @@ title: Meshes in UDK
 ---
 # Meshes in UDK <Badge text="not finished" type="warning"/>
 
-This will be a scatterbrained collection of notes and warnings about meshes in UDK. 
+This will be a scatterbrained collection of notes and warnings about meshes in UDK.
 
 ## Limitations of UDK <Badge text="not finished" type="warning"/>
 
@@ -30,4 +30,3 @@ Alternatively, you may set certain paths which UDK will monitor for file updates
 ## Workflow Advice
 
 Because you will want to playtest your map as you build it, I highly recommend creating placeholder meshes which have the right shape. As you finesse that, you can add more detail and replace these with more interesting meshes. Along those lines, don't worry about UV unwrapping the first versions of your meshes, unless their materials need to be set a certain way for gameplay purposes. **You'll be much happier with your map if you playtest it as you work on it.**
-
