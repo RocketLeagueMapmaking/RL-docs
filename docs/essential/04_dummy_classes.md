@@ -5,6 +5,7 @@ tags:
   - guide
   - hello
 ---
+
 # Dummy Classes
 
 Thanks to the work of dedicated modders, there is a repository of wonderful Dummy Classes available to you.
@@ -136,7 +137,49 @@ enum ERBCollisionChannel
 };
 ```
 
+Additionally, update `RBCollisionChannelContainer` (line ~401) to have `Ball`, `VehicleBlocker` and `BallBlocker` so it looks like this:
+
+```unrealscript{10-12}
+struct RBCollisionChannelContainer
+{
+    var() const bool Default;
+    var const bool Nothing; // This is reserved to allow an object to opt-out of all collisions, and should not be set.
+    var() const bool Pawn;
+    var() const bool Vehicle;
+    var() const bool Water;
+    var() const bool GameplayPhysics;
+    var() const bool EffectPhysics;
+    var() const bool Ball;
+    var() const bool VehicleBlocker;
+    var() const bool BallBlocker;
+    var() const bool Untitled1;
+    var() const bool Untitled2;
+    var() const bool Untitled3;
+    var() const bool Untitled4;
+    var() const bool Cloth;
+    var() const bool FluidDrain;
+    var() const bool SoftBody;
+    var() const bool FracturedMeshPart;
+    var() const bool BlockingVolume;
+    var() const bool DeadPawn;
+    var() const bool Clothing;
+    var() const bool ClothingCollision;
+};
+```
+
 This allows us to give objects different collision channels for different behaviors. VehicleBlocker objects allow the ball through, but not the player. BallBlocker is the reverse. And Ball is… like the ball.
+
+On line ~180, update
+
+```unrealscript
+var() bool bUseAsOccluder;
+```
+
+to
+
+```unrealscript
+var(Rendering) bool bUseAsOccluder;
+```
 
 **Lastly, in `Actor.uc`** go to this line:
 

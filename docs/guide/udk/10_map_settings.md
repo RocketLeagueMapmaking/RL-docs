@@ -13,7 +13,7 @@ The World Info window from the `View` menu offers useful settings for the map as
 | ------------------------------- | -------------------------------------------- |
 | `Default Post Process Settings` | A wide array of visual filters you can apply |
 | `Zone Info`                     | Limits on maximum player movement            |
-| `Streaming Levels`              | Shows [the streaming levels]() you have made |
+| `Streaming Levels`              | Shows the streaming levels you have made     |
 | `Title`                         | Name of the map                              |
 | `Author`                        | Your name                                    |
 | `My Map Info`                   | Add a `MapInfo_TA` here                      |
@@ -50,26 +50,25 @@ What a mouthful. Essentially this object is a camera that can see in every direc
 
 The key to making it appear is to **assign Grass_Textures.GrassCube to the Texture Target field.** This allows the output of the `SceneCaptureCubeMapActor` to be displayed in the level. All other settings inside its properties are up to your artistic tastes, but here are explanations of the most important ones:
 
-| SceneCaptureCubeMapActor |                                             |
-| ------------------------ | ------------------------------------------- |
+| SceneCaptureCubeMapActor |                                                                   |
+| ------------------------ | ----------------------------------------------------------------- |
 | Texture Target           | Set to `TextureRenderTargetCube'Grass_Textures.GrassCube'`        |
-| Near Plane               | Anything closer than this will not be captured in the cubemap |
+| Near Plane               | Anything closer than this will not be captured in the cubemap     |
 | Far Plane                | Anything further "" (setting this too high will tank performance) |
-| Clear Color              | The color of any gaps created by the Near/Far Plane settings |
-| Frame Rate               | Setting this too high will tank the performance of your map |
-| Post Process             | See below  |
+| Clear Color              | The color of any gaps created by the Near/Far Plane settings      |
+| Frame Rate               | Setting this too high will tank the performance of your map       |
+| Post Process             | See below                                                         |
 
 The **PostProcess** dummy asset package has a number of preconfigured post-processing chains which apply different levels of blur or color filters to the cubemap. These can also be applied to the map as a whole by setting the **World Post Process Chain inside World Properties.**
 
-<!-- |Auto cam| |
-|------|-----|
-| | |
+<!-- | Auto cam |     |
+| -------- | --- |
+|          |     |
 
-|Spectator| |
-|------|------|
-| | |
+| Spectator |     |
+| --------- | --- |
+|           |     |
 
-|Sound| |
-|------|------|
-| arena sound settings |plays sound when a certain event happens. You can choose from one of [the existing arena sound settings]() | -->
-
+| Sound                |
+| -------------------- | ------------------------------------------------------------------------------------------------------ |
+| arena sound settings | plays sound when a certain event happens. You can choose from one of the existing arena sound settings | -->

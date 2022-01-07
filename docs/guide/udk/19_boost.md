@@ -20,7 +20,7 @@ The image shown above is a `VehiclePickup_Boost_TA` on top of an `FXActor_Boost_
 
 ## Boost Archetypes
 
-Depending on which version of the Park_P dummy assets you are using, you may not have the `VehiclePickup_Boost_TA` archetypes available. **Expand the Archetypes subfolder and look for VehiclePickup.** Inside this folder should be two archetypes named **VehiclePickup_BoostPill** and **VehiclePickup_BoostPad.**
+Depending on which version of the Park_P dummy assets you are using, you may not have the `VehiclePickup_Boost_TA` archetypes available. **Expand the Archetypes subfolder and look for VehiclePickup.** Inside this folder should be two archetypes named **VehiclePickup_BoostPill**and**VehiclePickup_BoostPad.**
 
 <CaptionImageComponent src=/images/UDK/advanced/boost_pickuparchetypes.png caption="Arche-typical setup"/>
 
@@ -66,7 +66,7 @@ The most efficient way to do this for all boost pickups is with the Scene tab of
 
 <CaptionImageComponent src=/images/UDK/advanced/boost_associate.png caption="This will click eventually"/>
 
-**Double click each `VehiclePickup_Boost_TA` object. This will transport the camera to it in the 3D viewer. Click the FXActor beneath the pickup. Then click the green arrow in the FXActor slot in the properties subwindow.** 
+**Double click each `VehiclePickup_Boost_TA` object. This will transport the camera to it in the 3D viewer. Click the FXActor beneath the pickup. Then click the green arrow in the FXActor slot in the properties subwindow.**
 
 :::warning
 **Make sure you have literally anything other than the Park_P or HoopsStadium_P boost FXActor archetype selected in the Content Browser.** Make sure you are assigning the FXActor that is physically placed in the map instead of the abstract concept of an FXActor. It should always start with `FXActor_TA'yourMapName`.
@@ -205,4 +205,3 @@ Slot 1 will be the effect that plays when the boost is picked up, which is imple
 | “res”      | Respawn Delay      | 4             |
 
 **Remember to assign the `FXActor_Boost_TA` to the FXActor slot as well.**
-

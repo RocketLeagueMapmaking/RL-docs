@@ -203,16 +203,16 @@ module.exports = {
 
     '/resources/references/': [
         {
-          title: 'References',
-          collapsable: false,
-          sidebarDepth: 1,
-          children: [
-            'guide',
-            'psyonix',
-            'ue5'
-          ]
+            title: 'References',
+            collapsable: false,
+            sidebarDepth: 1,
+            children: [
+                'guide',
+                'psyonix',
+                'ue5'
+            ]
         }
-      ],
+    ],
     
     '/ue5/': [
         {

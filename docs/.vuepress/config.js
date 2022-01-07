@@ -1,4 +1,9 @@
-const { head, themeConfig, plugins } = require('./configs/index.js')
+const { 
+    additionalPages,
+    head, 
+    themeConfig, 
+    plugins 
+} = require('./configs/index.js')
 
 module.exports = {
     title: 'RLMM',
@@ -15,5 +20,8 @@ module.exports = {
     // Theme configuration
     themeConfig,  
     // Register plugins
-    plugins
+    plugins,
+
+    // Add other additional pages
+    additionalPages
 }

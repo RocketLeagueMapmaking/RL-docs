@@ -16,7 +16,7 @@ If you have ideas for the website, you can reach us [here](../more/contact.md) o
 You can help us by donating via:
 
 - [Patreon](https://www.patreon.com/rocketleaguemapmaking)
-- [PayPal]() (eventually)
+- PayPal (eventually)
 
 If you want to add money to a prize pool for a contest, say so in the description and it will happen!
 
