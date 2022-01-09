@@ -1,10 +1,11 @@
+<!-- markdownlint-disable-next-line MD041 -->
 ![Rocket League map making](./docs/.vuepress/public/icons/logo_rlmm_fulltext_new.png)
 
 # Rocket League Mapmaking Website Documentation
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rocketleaguemapmaking/rl-docs/Build)
-![Website](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Frocketleaguemapmaking.com%2F)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/rocketleaguemapmaking/rl-docs)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rocketleaguemapmaking/rl-docs/Build)][github-actions]
+[![Website](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Frocketleaguemapmaking.com%2F)][domain]
+[![GitHub package.json version](https://img.shields.io/github/package-json/v/rocketleaguemapmaking/rl-docs)][package.json]
 
 - Guide by Mr Swaggles
 - Site design by ghostrider-05
@@ -44,3 +45,6 @@ Currently we [manually redeploy](https://certbot.eff.org/docs/using.html#renewin
 5. Restart the docker container `sudo docker container restart rlmm`
 
 [contributing]: ./CONTRIBUTING.md
+[package.json]: https://github.com/RocketLeagueMapmaking/RL-docs/blob/master/package.json
+[github-actions]: https://github.com/RocketLeagueMapmaking/RL-docs/actions
+[domain]: https://rocketleaguemapmaking.com
