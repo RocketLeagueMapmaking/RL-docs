@@ -1,12 +1,9 @@
-name: Build
+name: Preview
 on:
-  push:
-    branches:
-      - master
   pull_request:
 jobs:
-  build:
-    name: Build
+  preview:
+    name: Deploy preview
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -23,3 +20,4 @@ jobs:
 
       - name: Build website
         run: npm run docs:build
+# TODO: add preview deploy functionality
