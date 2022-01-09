@@ -1,10 +1,11 @@
 name: Deploy
-  on: workflow_dispatch
-    inputs:
-      version:
-        description: 'The version of the website to deploy'
-        required: true
-        default: '1.0.0'
+  on: 
+    workflow_dispatch:
+      inputs:
+        version:
+          description: 'The version of the website to deploy'
+          required: true
+          default: '1.0.0'
 jobs:
   deploy:
     runs-on: ubuntu-latest
