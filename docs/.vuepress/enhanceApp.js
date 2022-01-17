@@ -6,7 +6,11 @@ import Socials from './components/Home/Socials'
 
 import Footer from './components/Footer'
 import FlowChart from './components/FlowChart'
-import KismetNodes from './components/KismetSelect'
+
+import KismetNodeSearch from './components/Kismet/NodeSearch.vue'
+import KismetNodeList from './components/Kismet/NodeList.vue'
+import KismetNodeProperty from './components/Kismet/NodeProperty.vue'
+import KismetNode from './components/Kismet/Node.vue'
 
 export default ({
     Vue, // the version of Vue being used in the VuePress app
@@ -19,7 +23,10 @@ export default ({
         ['SocialsComponent', Socials],
         ['FooterComponent', Footer],
         ['FlowChartComponent', FlowChart],
-        ['KismetNode', KismetNodes]
+        ['KismetNode', KismetNode],
+        ['KismetNodeProperty', KismetNodeProperty],
+        ['KismetNodeSearch', KismetNodeSearch],
+        ['KismetNodeList', KismetNodeList]
     ]
 
     for (const component of components) {

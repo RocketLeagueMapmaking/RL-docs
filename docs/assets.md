@@ -12,7 +12,7 @@ On this page you will find some tips and tricks related to styling a page. Other
 
 ## RLMM Assets
 
-### Kismet nodes
+### Kismet reference
 
 ```md
 <KismetNode 
@@ -36,7 +36,7 @@ On this page you will find some tips and tricks related to styling a page. Other
     :notes="['This node is synchronous','This nodes requires x or y']"
 />
 
-*General properties:*
+To update the data being used for this project, update the data files in `public/data/`.
 
 - `title`: Name of the kismet node used in UDK
   - Type: `String`

@@ -203,13 +203,22 @@ module.exports = {
 
     '/resources/references/': [
         {
-            title: 'References',
+          title: 'References',
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [
+            'guide',
+            'psyonix',
+            'ue5'
+          ]
+        },
+        {
+            title: 'Kismet Data',
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                'guide',
-                'psyonix',
-                'ue5'
+                'kismet/nodes',
+                'kismet/player'
             ]
         }
     ],

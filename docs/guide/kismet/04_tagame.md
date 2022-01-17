@@ -1,7 +1,7 @@
 ---
 title: Documentation
 ---
-# TAGame Kismet Nodes
+# Kismet
 
 ## UDK
 
@@ -12,30 +12,21 @@ Nodes from the TAGame folder were added to UDK by Psyonix. For all other nodes y
 - [Variables](https://docs.unrealengine.com/udk/Three/KismetReference.html#Variables)
 - [Events](https://docs.unrealengine.com/udk/Three/KismetReference.html#Events)
 
-:::warning UDK Documentation: Special Cases
+::::warning UDK Documentation: Disabled nodes
 
-- All events that mention `mobile` do not work since Rocket League is not on mobile (yet?)
-- More nodes, such as `Modify Property`, are also disabled
-- HUD events will not work because the Render Event node is disabled. For rendering images and animations you should use Flash and Scaleform
+Psyonix has not included all kismet nodes that can be found in UDK. For a complete list of all kismet nodes that do not work in Rocket League see the reference list below. To hide these nodes in UDK add `deprecated` in the header of the UnrealScript files.
+
+:::details List of disabled nodes
+<span v-for="node in require('../../.vuepress/public/data/disabled_nodes.json')">- {{ node }}<br></span>
 :::
 
-## TAGame
+::::
 
-### Updating
+## Rocket League
 
-Make sure that you have downloaded [the latest Dummy Classes](https://github.com/RocketLeagueMapmaking/RL-Dummy-Classes), or you might not see all of the nodes displayed on this page. Copy the folders containing the classes into `{UDK}\Development\Src\` and Windows should copy only the new files. You will then have to run a Full Recompile in Unreal Frontend. **It's a good idea to make backups before recompiling.**
+Search for a kismet node in the reference list on this page of all kismet actions and events added by Psyonix from the [Dummy Classes](https://github.com/RocketLeagueMapmaking/RL-Dummy-Classes)
 
-### Actions
+More information about these classes can be found in the kismet reference:
 
----
-
-<KismetNode
-    title="Add Game Ball" status="Not documented" image="add_game_ball"
-    folder="TAGame" type="Actions"
-    description="Add a ball to the game"
-/>
-
-<KismetNode
-    title="Apply Car Products" status="Not documented"
-    folder="TAGame_decrypted" type="Actions"
-/>
+- [Kismet nodes reference](./../../resources/references/kismet/nodes.md)
+- [Player properties reference](./../../resources/references/kismet/player.md)
