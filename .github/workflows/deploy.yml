@@ -12,4 +12,11 @@ jobs:
     steps:
       - run: |
           echo "Updating the website (version ${{ github.event.inputs.version }})!"
-# TODO: login, update container and give result
+      - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        script: sh deployment/update_and_deploy.sh ${{ github.event.inputs.version }}

@@ -19,5 +19,21 @@ jobs:
         run: npm ci
 
       - name: Build website
-        run: npm run docs:build
-# TODO: add preview deploy functionality
+        run: npm run docs:dev
+        
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: './docs/.vuepress/dist'
+          production-branch: master
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Github PR-preview: ${{ github.event.pull_request.title }}"
+          github-deployment-environment: "preview/${{ github.event.pull_request.number }}"
+          github-deployment-description: "Github PR-preview: ${{ github.event.pull_request.title }}"
+          enable-pull-request-comment: false
+          enable-commit-comment: false
+          overwrites-pull-request-comment: false
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 1

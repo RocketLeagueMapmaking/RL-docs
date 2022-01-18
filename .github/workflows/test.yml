@@ -22,4 +22,6 @@ jobs:
 
       - name: Run markdown lint
         run: npm run lint-markdown
-# Run link checks
+
+      - name: Check markdown links
+        run: npm run test
