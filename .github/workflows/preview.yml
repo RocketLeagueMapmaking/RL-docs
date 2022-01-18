@@ -5,6 +5,7 @@ jobs:
   preview:
     name: Deploy preview
     runs-on: ubuntu-latest
+    environment: previews
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2

@@ -9,11 +9,13 @@ const definePlugins = (plugins) => {
     return plugins.filter(plugin => plugin != undefined && (plugin.length || 1) > 0)
 }
 
+const useLinkTestPlugin = process.env.npm_config_test !== 'links' || process.env.TEST_SCRIPT === 'links'
+
 module.exports = definePlugins([
     '@vuepress/active-header-links',
     '@vuepress/last-updated',
     'seo',
-    process.env.npm_config_test === 'links' ? [
+    useLinkTestPlugin ? [
         // Only runs when the test script in package.json is run
         require('../plugins/linkCheck.js'),
         {

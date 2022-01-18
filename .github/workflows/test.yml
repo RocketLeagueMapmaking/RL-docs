@@ -25,3 +25,5 @@ jobs:
 
       - name: Check markdown links
         run: npm run test
+        env:
+          TEST_SCRIPT: links
