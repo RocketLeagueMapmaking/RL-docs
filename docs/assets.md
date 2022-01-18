@@ -6,7 +6,7 @@ sidebar: auto
 
 On this page you will find some tips and tricks related to styling a page. Other useful pages are:
 
-- [Markdown-it examples](https://markdown-it.github.io/) (some examples are in [#markdown](assets.html#markdown))
+- [Markdown-it examples](https://markdown-it.github.io/) (some examples are in [#markdown](#markdown))
 - [Vuepress markdown documentation](https://vuepress.vuejs.org/guide/markdown.html)
 - [Source code of this page](https://github.com/RocketLeagueMapmaking/RL-docs/blob/master/docs/assets.md)
 

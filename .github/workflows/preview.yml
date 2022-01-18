@@ -19,9 +19,10 @@ jobs:
         run: npm ci
 
       - name: Build website
-        run: npm run docs:dev
+        run: npm run docs:build
         
       - name: Deploy to Netlify
+        id: netlify_deploy
         uses: nwtgck/actions-netlify@v1.2
         with:
           publish-dir: './docs/.vuepress/dist'
@@ -37,3 +38,6 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         timeout-minutes: 1
+    - name: Deploy link
+      run: |
+        echo "${{ steps.netlify_deploy.outputs.deploy-url }}"

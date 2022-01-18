@@ -5,7 +5,7 @@ title: Introduction
 
 Decrypting assets from the game is great for discovering new techniques or cleaning up old data, but please remember these words from earlier in the guide:
 
-> **Rocket League mapmaking techniques cannot be used to give you a competitive advantage in the game, and any attempts at that are directly against the [EULA](../../more/psyonix.md).** Please play nice and play by the rules, and you have nothing to fear.
+> **Rocket League mapmaking techniques cannot be used to give you a competitive advantage in the game, and any attempts at that are directly against the [EULA](../../resources/references/psyonix.md).** Please play nice and play by the rules, and you have nothing to fear.
 
 :::tip uMod
 uMod is outdated and it doesn't work anymore since the DX11 update. It was used for extracting textures and applying them in-game. You can use the Alphaconsole plugin for bakkesmod and uModel now to replace uMod.

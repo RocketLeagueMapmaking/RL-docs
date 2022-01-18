@@ -9,7 +9,7 @@ Now that we have the fundamentals all in place, the rest of the map can come tog
 
 ![alt text](/images/UDK/basics/image209.png "Boring old, lame old blue and white map pieces")
 
-I have [a library of default map pieces](../../resources/downloads.md#default-map-pieces) (FBX files) with adjusted UV maps so that they look acceptable with no assigned material. All of these have an object origin offset, meaning all I have to do is place them into the world at (0,0,0) and they all line up. **Note that a Soccar game is played along the Y axis.**
+I have [a library of default map pieces](../../resources/downloads.md#free-3d-models) (FBX files) with adjusted UV maps so that they look acceptable with no assigned material. All of these have an object origin offset, meaning all I have to do is place them into the world at (0,0,0) and they all line up. **Note that a Soccar game is played along the Y axis.**
 
 The reason for building a map in pieces is that Rocket League (and UDK in general) does not like spawning you inside of objects. By building it like this, you ensure that the game does not consider you “inside” of anything.
 

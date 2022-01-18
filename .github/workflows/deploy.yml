@@ -8,15 +8,16 @@ on:
         default: '1.0.0'
 jobs:
   deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
       - run: |
           echo "Updating the website (version ${{ github.event.inputs.version }})!"
-      - name: executing remote ssh commands using password
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
-        script: sh deployment/update_and_deploy.sh ${{ github.event.inputs.version }}
+      - name: Login and redeploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: sh deployment/update_and_deploy.sh ${{ github.event.inputs.version }}

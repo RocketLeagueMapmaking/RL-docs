@@ -1,10 +1,10 @@
-const { resolve, join } = require('path');
-const { existsSync } = require('fs');
-const process = require('process');
+const { resolve, join } = require('path')
+const { existsSync } = require('fs')
+const process = require('process')
 
-const markdownLinkCheck = require('markdown-link-check');
-const markdownLinkExtractor = require('markdown-link-extractor');
-const chalk = require('chalk');
+const markdownLinkCheck = require('markdown-link-check')
+const markdownLinkExtractor = require('markdown-link-extractor')
+const chalk = require('chalk')
 
 /**
  * @typedef MarkdownLink
@@ -47,21 +47,21 @@ const checkExternalLink = (link) => {
     markdownLinkCheck(link.href, {
         projectBaseUrl: '/docs/',
         replacementPatterns: [ 
-            { pattern: './', replacement: "{{BASEURL}}/"}, 
-            { pattern: '/', replacement: "{{BASEURL}}/"},
-            { pattern: '../', replacement: "{{BASEURL}}/"}
+            { pattern: './', replacement: '{{BASEURL}}/'}, 
+            { pattern: '/', replacement: '{{BASEURL}}/'},
+            { pattern: '../', replacement: '{{BASEURL}}/'}
         ],
         ignorePatterns: [{ pattern: 'http'}]
     }, (err, results) => {
         if (err) {
-            console.log('Error', err);
-            return;
+            console.log('Error', err)
+            return
         }
-        results.forEach(function (result) {
+        results.forEach(result => {
             if (result.status !== 'ignored') {
-                console.warn('%s is %s', result.link, result.status);
+                console.warn('%s is %s', result.link, result.status)
             }
-        });
+        })
     })
 }
 
@@ -120,7 +120,7 @@ const checkPage = (relativeLink, currentPath, options) => {
  * @param {PageSearchOptions} searchOptions
  * @param {boolean} logMatches
  */
- const checkHeader = (header, otherPagePath, searchOptions, logMatches, link = '') => {
+const checkHeader = (header, otherPagePath, searchOptions, logMatches, link = '') => {
     const { additionalPages, site, source } = searchOptions
     if (additionalPages.some(page => page.path === otherPagePath)) {
         if (logMatches) console.log(`Skipping header check on additional page: ${header} [${otherPagePath}]`)
@@ -141,9 +141,9 @@ const checkPage = (relativeLink, currentPath, options) => {
     const message = (valid) => `${valid} header on link: ${header} ${pageHeaders}${link ? `. Link: ${link}` : ''} [${otherPagePath}]`
 
     if (!isValid) {
-        console.warn(chalk.yellow(message(`Invalid`)))
+        console.warn(chalk.yellow(message('Invalid')))
     } else if (logMatches) {
-        console.log(chalk.green(message(`Valid`)))
+        console.log(chalk.green(message('Valid')))
     }
 }
 
@@ -206,7 +206,7 @@ module.exports = (options, ctx) => {
 
                 // Get all invalid links on this page
                 const invalidPageLinks = pageLinks.map(link => {
-                    const { href } = link
+                    const { href, raw } = link
                     const sitePage = site[i].path
 
                     // Link is a header on the current page
@@ -223,7 +223,7 @@ module.exports = (options, ctx) => {
                             checkHeader(header, path , searchOptions, logMatches, href)
                         }
 
-                        if (logMatches) console.log(chalk.green(`Valid link: ${l.raw}`))
+                        if (logMatches) console.log(chalk.green(`Valid link: ${raw}`))
                     } else {
                         return `Invalid link found: ${href} [${sitePage}]`
                     }
