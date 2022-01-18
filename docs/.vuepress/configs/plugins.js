@@ -9,7 +9,7 @@ const definePlugins = (plugins) => {
     return plugins.filter(plugin => plugin != undefined && (plugin.length || 1) > 0)
 }
 
-const useLinkTestPlugin = process.env.npm_config_test !== 'links' || process.env.TEST_SCRIPT === 'links'
+const useLinkTestPlugin = process.env.npm_config_test === 'links' || process.env.TEST_SCRIPT === 'links'
 
 module.exports = definePlugins([
     '@vuepress/active-header-links',

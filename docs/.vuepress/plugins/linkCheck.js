@@ -168,7 +168,7 @@ module.exports = (options, ctx) => {
         name,
         ready () {
             // Check if the tests needs to be run
-            if (process.env.npm_config_test !== 'links' || process.env.TEST_SCRIPT === 'links') {
+            if (process.env.npm_config_test === 'links' || process.env.TEST_SCRIPT === 'links') {
                 return
             }
             console.log(`Running test plugin ${name}: ${description}`)

@@ -1,6 +1,6 @@
 name: Preview
 on:
-  pull_request:
+  pull_request_target:
 jobs:
   preview:
     name: Deploy preview
@@ -26,6 +26,7 @@ jobs:
         id: netlify_deploy
         uses: nwtgck/actions-netlify@v1.2
         with:
+          environment: previews
           publish-dir: './docs/.vuepress/dist'
           production-branch: master
           github-token: ${{ secrets.GITHUB_TOKEN }}
