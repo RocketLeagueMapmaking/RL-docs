@@ -91,7 +91,7 @@ Not every material in the game will need to have this much detail (obviously), b
 ![alt text](/images/UDK/advanced/image114.png "Fur Elise")
 
 I will be using this stupid fur texture that I stole from the internet. You are welcome to copy it from here, or work with any other texture you like.
-:::warning Give credits
+:::info Give credits
 **Many websites want to charge you to use their images and textures. Often these are higher quality, but there are enough free resources available that you should have all you need. Give credit where credit is due if you use something which obviously had a lot of work put into it.**
 :::
 
