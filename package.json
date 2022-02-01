@@ -15,7 +15,7 @@
   "scripts": {
     "docs:build": "vuepress build docs",
     "docs:dev": "vuepress dev docs",
-    "test": "npm run docs:dev -TEST=links",
+    "test": "node ./github/workflows/md_link_check.js",
     "lint": "eslint docs/.vuepress/ --ext .js,.ts,.vue",
     "lint:fix": "npm run lint -- --fix",
     "lint-markdown": "npx markdownlint-cli2 \"**/*.md\" \"#node_modules\"",

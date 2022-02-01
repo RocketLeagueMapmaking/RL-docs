@@ -20,4 +20,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: sh deployment/update_and_deploy.sh ${{ github.event.inputs.version }}
+          script: sh web_repo/deployment/update_and_deploy.sh ${{ github.event.inputs.version }}

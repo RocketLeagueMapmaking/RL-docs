@@ -122,6 +122,7 @@ const checkPage = (relativeLink, currentPath, options) => {
  */
 const checkHeader = (header, otherPagePath, searchOptions, logMatches, link = '') => {
     const { additionalPages, site, source } = searchOptions
+
     if (additionalPages.some(page => page.path === otherPagePath)) {
         if (logMatches) console.log(`Skipping header check on additional page: ${header} [${otherPagePath}]`)
         return
@@ -149,7 +150,7 @@ const checkHeader = (header, otherPagePath, searchOptions, logMatches, link = ''
 
 module.exports = (options, ctx) => {
     const name = 'rlmm-linkcheck-plugin'
-    const description = 'plugin to test all links in markdown files'
+    const description = 'test markdown links'
 
     // Set the plugin options
     const linkOptions = options.links || {}
@@ -160,18 +161,15 @@ module.exports = (options, ctx) => {
     const exitOnError = option(options.exitOnErrors, true)
 
     // Read the pages from the options
-    const additionalPages = (options.additionalPages || []).map(page => ({ 
+    const pages = option(options.additionalPages, [])
+    const additionalPages = pages.map(page => ({ 
         path: page.path.replace('.html', '.md')
     }))
     
     return {
         name,
         ready () {
-            // Check if the tests needs to be run
-            if (process.env.npm_config_test === 'links' || process.env.TEST_SCRIPT === 'links') {
-                return
-            }
-            console.log(`Running test plugin ${name}: ${description}`)
+            console.log(`Running plugin ${name}: ${description}`)
 
             /**
              * @type {Array<string>}
@@ -192,7 +190,7 @@ module.exports = (options, ctx) => {
                 site
             }
 
-            const invalidLinks = checkInternal ? markdownPages.map((content, i) => {
+            const invalidLinks = checkInternal || checkExternal ? markdownPages.map((content, i) => {
                 /**
                  * @type {Array<MarkdownLink>}
                  */
@@ -204,8 +202,11 @@ module.exports = (options, ctx) => {
                     return null
                 }
 
+                // Check external links
+                if (checkExternal) pageLinks.forEach(checkExternalLink)
+
                 // Get all invalid links on this page
-                const invalidPageLinks = pageLinks.map(link => {
+                const invalidPageLinks = checkInternal ? pageLinks.map(link => {
                     const { href, raw } = link
                     const sitePage = site[i].path
 
@@ -227,10 +228,7 @@ module.exports = (options, ctx) => {
                     } else {
                         return `Invalid link found: ${href} [${sitePage}]`
                     }
-
-                    // Check external links
-                    if (checkExternal) pageLinks.forEach(checkExternalLink)
-                }).filter(n => n)
+                }).filter(n => n) : []
 
                 return invalidPageLinks
             }).filter(n => n).flat() : []
