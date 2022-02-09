@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+*.json text
+*.js text linguist-detectable
+*.md text linguist-detectable
+*.{yml,yaml} text
+
+*.png binary
+*.{jpeg,jpg} binary
