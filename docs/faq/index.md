@@ -16,7 +16,7 @@ Is an answer incomplete or not up-to-date? Read [this guide](../more/contribute.
 
 :::details How do I get started?
 
-Pick your favorite Getting Started guide (selfishly I would recommend my own: the website you are currently visiting). At the very least, you’ll need [UDK](../recourses/downloads.md#setup), [Rocket League](https://rocketleague.com), and a lot of free time. Be sure to join the Mapmaking Discord (top of the [Modding network](../resources/modding_network.md)) and don’t be afraid to ask questions!
+Pick your favorite Getting Started guide (selfishly I would recommend my own: the website you are currently visiting). At the very least, you’ll need [UDK](../resources/downloads.md#setup), [Rocket League](https://rocketleague.com), and a lot of free time. Be sure to join the Mapmaking Discord (top of the [Modding network](../resources/modding_network.md)) and don’t be afraid to ask questions!
 
 Tags: [setup](../essential/), [UDK](../guide/udk/00_start.md)
 
@@ -156,9 +156,9 @@ Answered by:
 
 :::details How do I test my maps?
 
-The fastest way to test your map is by using [the .bat script](../essential/05_project_setup.md#batch-script-for-quickly-testing-maps-bsfqtm) from the beginning of this guide to overwrite `Labs_Utopia_P.upk` with your map. If you used the [RLMM UDK RL setup script](../essential/03_installing.md#rocketleaguemapmaking-udk-rl-setup-script) this script will be located in `{UDK Folder}\UDKGame\Content\Maps\`. Drag your map onto the script, open the Utopia Retro map in Rocket League, and you are ready to go! You can read more about it [here](../guide/udk/04_test.md). To test your maps in multiplayer (recommended if you make use of Kismet and want the map to have multiplayer) you can check out [this corner of the website.](../guide/multiplayer/01_multiplayer.md#testing-multiplayer)
+The fastest way to test your map is by using [the .bat script](../essential/05_project_setup.md#batch-script-for-quickly-testing-maps-bsfqtm) from the beginning of this guide to overwrite `Labs_Utopia_P.upk` with your map. If you used the [RLMM UDK RL setup script](../essential/03_installing.md#rocketleaguemapmaking-udk-rl-setup-script) this script will be located in `{UDK Folder}\UDKGame\Content\Maps\`. Drag your map onto the script, open the Utopia Retro map in Rocket League, and you are ready to go! You can read more about it [here](../guide/udk/04_map_test.md). To test your maps in multiplayer (recommended if you make use of Kismet and want the map to have multiplayer) you can check out [this corner of the website.](../guide/multiplayer/01_multiplayer.md#testing-multiplayer)
 
-Tags: [multiplayer](../guide/multiplayer/01_multiplayer.md), [testing](../guide/udk/04_test.md)
+Tags: [multiplayer](../guide/multiplayer/01_multiplayer.md), [testing](../guide/udk/04_map_test.md)
 
 Answered by: Ghostrider-05
 :::

@@ -37,7 +37,7 @@ To be thorough, we’ll also fine-tune the wall segment. **Right click it > Tran
 
 The beautiful thing about this approach is that you do not have to reapply StickyWalls™ or even worry about those Rigid Body checkboxes. It should keep all of the same properties from before. However, **it’s good to confirm, because sometimes they toggle themselves anyway.**
 
-However, **`Collision_Floor` does not have the same UV Map (more on these [later](../blender/06_UV.md)) as Concrete_Base. Notice that the checker pattern is much smaller. This means that any texture details on it will be much smaller.**
+However, **`Collision_Floor` does not have the same UV Map (more on these [later](../blender/06_uv.md)) as Concrete_Base. Notice that the checker pattern is much smaller. This means that any texture details on it will be much smaller.**
 
 But, for now, it’s just nice to have a floor to drive on. Test it out!
 

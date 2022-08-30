@@ -46,7 +46,7 @@ Why does your car look different on different maps? Lighting is a large part of 
 
 What a mouthful. Essentially this object is a camera that can see in every direction. But instead of showing the player or being the viewpoint for a cinematic, it generates a set of 6 images (arranged in a cube) that reflective surfaces will show. Since Rocket League is very metallic and shiny in general, this affects a lot of surfaces.
 
-![alt text](/images/UDK/basics/mapsettings_sccma.jpg "Capture deez cubez")
+![alt text](/images/UDK/basics/mapsettings_sccma.png "Capture deez cubez")
 
 The key to making it appear is to **assign Grass_Textures.GrassCube to the Texture Target field.** This allows the output of the `SceneCaptureCubeMapActor` to be displayed in the level. All other settings inside its properties are up to your artistic tastes, but here are explanations of the most important ones:
 

@@ -1,4 +1,11 @@
+<!-- markdownlint-disable-next-line MD041 -->
+![Rocket League map making](./docs/.vuepress/public/icons/logo_rlmm_fulltext_new.png)
+
 # Rocket League Mapmaking Website Documentation
+
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rocketleaguemapmaking/rl-docs/Build)][github-actions]
+[![Website](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Frocketleaguemapmaking.com%2F)][domain]
+[![GitHub package.json version](https://img.shields.io/github/package-json/v/rocketleaguemapmaking/rl-docs)][package.json]
 
 - Guide by Mr Swaggles
 - Site design by ghostrider-05
@@ -7,7 +14,7 @@
 ## Deployment
 
 **NOTE**: These steps will currently only work for the main `rocketleaguemapmaking.com` domain, as it hasn't been made
-customisable yet. If you wish to view this locally, see the [contribution](./docs/more/contribute.md) documentation.
+customisable yet. If you wish to view this locally, see the [contribution][contributing] documentation.
 
 This site can be executed as a docker container on the host machine.
 
@@ -25,7 +32,7 @@ This site can be executed as a docker container on the host machine.
 
 ## Contributing documentation
 
-Read the [contribution](./CONTRIBUTING.md) documentation for guidelines when contributing.
+Read the [contribution][contributing] documentation for guidelines when contributing.
 
 ## Certificate Renewal
 
@@ -36,3 +43,8 @@ Currently we [manually redeploy](https://certbot.eff.org/docs/using.html#renewin
 3. Select option 2 (temporary webserver, hence needing step 1)
 4. Check that the new certificate looks good `sudo certbot certificates`
 5. Restart the docker container `sudo docker container restart rlmm`
+
+[contributing]: ./CONTRIBUTING.md
+[package.json]: https://github.com/RocketLeagueMapmaking/RL-docs/blob/master/package.json
+[github-actions]: https://github.com/RocketLeagueMapmaking/RL-docs/actions
+[domain]: https://rocketleaguemapmaking.com
