@@ -132,7 +132,7 @@ const checkHeader = (header, otherPagePath, searchOptions, logMatches, link = ''
     const page = site.find(page => page.path === otherPagePath 
         || otherPagePath.includes(page.path) 
         || [pathFromSource, pathFromSource.toLowerCase()].includes(`/${page.path}`)
-        || otherPagePath.replaceAll('\\', '/').includes(page.path)
+        || otherPagePath.replace('\\', '/').includes(page.path)
     ) || {}
             
     const headers = page.headers || []
