@@ -128,7 +128,7 @@ const checkHeader = (header, otherPagePath, searchOptions, logMatches, link = ''
         return
     }
 
-    const pathFromSource = otherPagePath.slice(source.length).replaceAll('\\', '/')
+    const pathFromSource = otherPagePath.slice(source.length).replace(/\\/g, '/')
     const page = site.find(page => page.path === otherPagePath 
         || otherPagePath.includes(page.path) 
         || [pathFromSource, pathFromSource.toLowerCase()].includes(`/${page.path}`)
