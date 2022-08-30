@@ -1,4 +1,4 @@
-const { resolve, join } = require('path')
+const { resolve, join, sep } = require('path')
 const { existsSync } = require('fs')
 const process = require('process')
 
@@ -87,9 +87,9 @@ const checkPage = (relativeLink, currentPath, options) => {
     const relSuffix = resolvedPath.indexOf('.html') > 0 ? resolvedPath.indexOf('.html') : resolvedPath.indexOf('.md')
     const relPath = pageHeader ? resolvedPath.slice(0, relSuffix + 1) + 'md' : resolvedPath
                 
-    const path = (base) => resolve(base + '\\' + pagePath, relPath)
-    const pathNoExt = (base) => resolve(base + '\\' + pagePath.replace('.md', ''), relPath)
-    const publicPath = publicDir + '\\' + relPath
+    const path = (base) => resolve(base + sep + pagePath, relPath)
+    const pathNoExt = (base) => resolve(base + sep + pagePath.replace('.md', ''), relPath)
+    const publicPath = publicDir + sep + relPath
 
     const page = site.find(page => [path(source), pathNoExt(source), publicPath].some(path => path.includes(page.path)))
 
@@ -181,7 +181,7 @@ module.exports = (options, ctx) => {
                 path: page.relativePath
             }))
 
-            const source = ctx.options.sourceDir, publicDir = source + '\\.vuepress\\public'
+            const source = ctx.options.sourceDir, publicDir = source + sep + '.vuepress' + sep + 'public'
 
             const searchOptions = {
                 additionalPages,
