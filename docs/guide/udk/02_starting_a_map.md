@@ -5,7 +5,7 @@ title: 'Starting a Map'
 
 This is the point in the guide where things have to go a little non-linear. You may need to jump forward to [Blender sections](../blender/01_blender.md), then back to [Material sections](../textures/01_textures.md), then back to this for it all to make sense.
 
-:::tip Progress
+:::info Progress
 From here until the end, this guide will focus on creating a custom map from scratch. Have you already decided what you want to make? [This flowchart](../../essential/01_flowchart.md) should help you pick which sections to focus on.
 :::
 
