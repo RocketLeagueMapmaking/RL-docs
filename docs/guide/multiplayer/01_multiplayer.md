@@ -14,5 +14,5 @@ To test it in multiplayer you can either:
 
 ## Multiplayer Limitations <Badge text="not finished" type="warning"/>
 
-- There's a limit on your map size.
+- There's a limit on your map size in multiplayer. The limit is around 40_000 uu.
 - Kismet data is not shared across clients without some tricks. More information about how to make sure your Kismet works in multiplayer can be found in [the Advanced Kismet section.](../kismet/06_advanced.md)
