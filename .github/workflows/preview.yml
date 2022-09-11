@@ -10,7 +10,7 @@ on:
 jobs:
   preview:
     runs-on: ubuntu-latest
-    if: secrets.CLOUDFLARE_API_TOKEN && github.repository_owner != 'RocketLeagueMapmaking'
+    if: ${{ secrets.CLOUDFLARE_API_TOKEN && github.repository_owner != 'RocketLeagueMapmaking' }}
     permissions:
       contents: read
       deployments: write
