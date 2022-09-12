@@ -33,9 +33,13 @@ jobs:
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@1
+        id: cloudflare
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: ${{ secrets.CLOUDFLARE_PROJECTNAME }}
-          directory: /docs/.vuepress/dist
+          directory: docs/.vuepress/dist
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Log
+        run: echo "Deployed preview site on https://${{ steps.cloudflare.outputs.id }}.rocketleaguemapmaking.pages.dev"
