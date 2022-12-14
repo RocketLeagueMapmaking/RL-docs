@@ -3,8 +3,9 @@
 
 # Rocket League Mapmaking Website Documentation
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rocketleaguemapmaking/rl-docs/Build)][github-actions]
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rocketleaguemapmaking/rl-docs/Test?label=tests)][github-actions]
 [![Website](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Frocketleaguemapmaking.com%2F)][domain]
+[![Dev website](https://img.shields.io/website?down_message=offline&up_message=online&label=website@master&url=https%3A%2F%2Frocketleaguemapmaking.pages.dev%2F)][dev-domain]
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/rocketleaguemapmaking/rl-docs)][package.json]
 
 - Guide by Mr Swaggles
@@ -14,7 +15,7 @@
 ## Deployment
 
 **NOTE**: These steps will currently only work for the main `rocketleaguemapmaking.com` domain, as it hasn't been made
-customisable yet. If you wish to view this locally, see the [contribution][contributing] documentation.
+customisable yet. If you wish to view this branch or a PR locally, open the [developer site][dev-domain] or the url in the PR.
 
 This site can be executed as a docker container on the host machine.
 
@@ -48,3 +49,4 @@ Currently we [manually redeploy](https://certbot.eff.org/docs/using.html#renewin
 [package.json]: https://github.com/RocketLeagueMapmaking/RL-docs/blob/master/package.json
 [github-actions]: https://github.com/RocketLeagueMapmaking/RL-docs/actions
 [domain]: https://rocketleaguemapmaking.com
+[dev-domain]: https://rocketleaguemapmaking.pages.dev
