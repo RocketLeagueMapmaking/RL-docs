@@ -5,7 +5,7 @@ title: Bots
 
 ## Psyonix Bots
 
-To spawn bots in a map, the [Kismet node `Add bot`](../kismet/04_tagame.md#actions) may be used. For now they only go to the location of the ball and after that they drive around in circles.
+To spawn bots in a map, the [Kismet node `Add bot`](../kismet/04_tagame.md) may be used. For now they only go to the location of the ball and after that they drive around in circles.
 
 ## RLBot
 

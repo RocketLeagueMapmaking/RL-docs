@@ -8,7 +8,7 @@ This is an example list of which properties you can get from a player's car.
 It does **not** replace any AssetExtractor command or the class data in Unreal Explorer:
 **this list might be incorrect (think of replication status, etc.) and you should verify if the property is correctly displayed here!**
 
-This latest game update of this list is the same as the [Kismet nodes](./nodes) reference.
+This latest game update of this list is the same as the [Kismet nodes](nodes.md) reference.
 
 :::details Data structure
 An example property might look like this:

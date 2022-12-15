@@ -46,7 +46,7 @@ Sometimes Steam will reject your upload with minimal information. The only 100% 
 
 Next, create a new text file and change the file extension to .vdf. This is a Valve Description File (probably) which contains the info Steam needs to properly offer your map to people on the workshop. Open it in your favorite text editor. Insert this:
 
-```vdf
+```txt
 "workshopitem"
 {
     "appid"  "252950"
