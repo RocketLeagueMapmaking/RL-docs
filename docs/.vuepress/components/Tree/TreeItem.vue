@@ -3,11 +3,14 @@
     <div
       :class="{ bold: isFolder }"
       class="tree-item-content"
-      @click="toggle"
       :style="{ 'background-color': isFirstColor ? firstColor : secondColor, 'font-weight': isFolder ? 700 : 400 }"
+      @click="toggle"
     >
-    <span v-if="isFolder" :style="{ 'padding-right': '5px'}"><span v-if="!isOpen"> &#9650;</span><span v-else>&#9660;</span></span>
-    <span v-html="createItem(computedItem, isFolder)"></span>
+      <span
+        v-if="isFolder"
+        :style="{ 'padding-right': '5px'}"
+      ><span v-if="!isOpen"> &#9650;</span><span v-else>&#9660;</span></span>
+      <span v-html="createItem(computedItem, isFolder)" />
     </div>
     <div
       v-show="isOpen"
@@ -18,11 +21,11 @@
         :key="index"
         class="item"
         :item="child"
-        :isFirstColor="!isFirstColor"
-        :createItem="createItem"
+        :is-first-color="!isFirstColor"
+        :create-item="createItem"
       />
     </div>
-</div>
+  </div>
 </template>
 
 <script>

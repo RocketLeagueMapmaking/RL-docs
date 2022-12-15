@@ -1,31 +1,49 @@
 <template>
-    <div class="kismet-container" :class="category" v-if="nodes.length > 0">
-        <h3>{{ category }}</h3>
-        <div v-for="node in nodes" :key="node.name">
-            <div v-if="showNode(node)">
-                <div class="node-header" v-on:click="toggle(node)">
-                    <a>
-                        {{ node.displayName }}
-                    </a>
+  <div
+    v-if="nodes.length > 0"
+    class="kismet-container"
+    :class="category"
+  >
+    <h3>{{ category }}</h3>
+    <div
+      v-for="node in nodes"
+      :key="node.name"
+    >
+      <div v-if="showNode(node)">
+        <div
+          class="node-header"
+          @click="toggle(node)"
+        >
+          <a>
+            {{ node.displayName }}
+          </a>
 
-                    <div class="label" v-if="IsNonDummyClass(node)" title="This class is not documented in the dummy classes">
-                        <p>Unregistered</p>
-                    </div>
+          <div
+            v-if="IsNonDummyClass(node)"
+            class="label"
+            title="This class is not documented in the dummy classes"
+          >
+            <p>Unregistered</p>
+          </div>
 
-                    <span v-show="!Ishidden(node)">&#9660;</span>
-                    <span v-show="Ishidden(node)">&#9650;</span>
-                </div>
-                <div v-show="Ishidden(node)">
-                    <KismetNode :node="node" :category="category" :hideImage="IsNonDummyClass(node)"/>
-                </div>
-            </div>
+          <span v-show="!Ishidden(node)">&#9660;</span>
+          <span v-show="Ishidden(node)">&#9650;</span>
         </div>
+        <div v-show="Ishidden(node)">
+          <KismetNode
+            :node="node"
+            :category="category"
+            :hide-image="IsNonDummyClass(node)"
+          />
+        </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
 
-import TAGameData from '../../public/data/kismet_nodes.json';
+import TAGameData from '../../public/data/kismet_nodes.json'
 
 import { formatNodes } from './NodeSearch.vue'
 
@@ -41,7 +59,7 @@ export default {
             type: String,
             required: true,
             validator: (upk) => {
-                return ['ProjectX', 'TAGame', 'all'].indexOf(upk) !== -1;
+                return ['ProjectX', 'TAGame', 'all'].indexOf(upk) !== -1
             }
         },
         dummyItems: {
@@ -65,13 +83,13 @@ export default {
     },
     methods: {
         toggle(node){
-            let index = this.nodes.indexOf(node);
+            let index = this.nodes.indexOf(node)
             if(this.toggled.includes(index)){
-                this.toggled = this.toggled.filter(i => i !== index);
-            }else this.toggled.push(index);
+                this.toggled = this.toggled.filter(i => i !== index)
+            }else this.toggled.push(index)
         },
         Ishidden(node){
-            return this.toggled.includes(this.nodes.indexOf(node));
+            return this.toggled.includes(this.nodes.indexOf(node))
         },
 
         IsNonDummyClass (node) {
