@@ -24,37 +24,43 @@
                 "flags": "",
                 "name": "ActorArchetype",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "Velocity",
                 "type": "Vector",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "Speed",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "SpawnOwners",
                 "type": "array<Actor>",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "SpawnPoints",
                 "type": "array<Actor>",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "transient",
                 "name": "Spawned",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"ProjectX\"",
@@ -87,15 +93,18 @@
             "variable": [
                 {
                     "name": "\"Spawn Point\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Spawn Owner\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Spawned\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": true
                 }
             ]
         }
@@ -109,13 +118,15 @@
                 "flags": "",
                 "name": "Event",
                 "type": "FXActorEvent_X",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "AttachTo",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"ProjectX\"",
@@ -139,11 +150,13 @@
             "variable": [
                 {
                     "name": "\"Target\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"AttachTo\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -157,7 +170,8 @@
                 "flags": "transient",
                 "name": "Spawned",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"ProjectX\"",
@@ -180,11 +194,13 @@
             "variable": [
                 {
                     "name": "\"Instigator\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": true
                 },
                 {
                     "name": "\"Spawned\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": true
                 }
             ]
         }
@@ -198,37 +214,43 @@
                 "flags": "",
                 "name": "SpawnedBall",
                 "type": "Ball_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "Instigator",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "SpawnTransform",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "PlacedBall",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "bWake",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "/*0x00000800-0x00000000*/ const",
                 "name": "BallArchetype",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -280,19 +302,23 @@
             "variable": [
                 {
                     "name": "\"Instigator\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"SpawnTransform\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"SpawnedBall\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": true
                 },
                 {
                     "name": "\"PlacedBall\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -306,31 +332,36 @@
                 "flags": "native const noexport",
                 "name": "VfTable_FTickableObject",
                 "type": "Pointer",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "const",
                 "name": "CsvFileName",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "const",
                 "name": "StartOverrideTime",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "transient",
                 "name": "OverrideTime",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "transient",
                 "name": "bTickable",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -353,37 +384,43 @@
                 "flags": "",
                 "name": "Assets",
                 "type": "array<ProductAsset_TA>",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "TeamColor",
                 "type": "LinearColor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "AccentColor",
                 "type": "LinearColor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "TeamFinish",
                 "type": "ProductAsset_PaintFinish_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "CustomFinish",
                 "type": "ProductAsset_PaintFinish_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "CarPreviewActor",
                 "type": "CarPreviewActor_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -410,7 +447,8 @@
             "variable": [
                 {
                     "name": "\"CarPreviewActor\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -424,25 +462,29 @@
                 "flags": "",
                 "name": "StaticMeshToAttach",
                 "type": "StaticMesh",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "SkeletalMeshToAttach",
                 "type": "SkeletalMesh",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "ParticleSystemToAttach",
                 "type": "ParticleSystem",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "BoneToAttachTo",
                 "type": "name",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -474,7 +516,8 @@
                 "flags": "export editinline",
                 "name": "PSC",
                 "type": "ParticleSystemComponent",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -519,25 +562,29 @@
                 "flags": "/*0x00010800-0x00000000*/ const",
                 "name": "CinematicCarArchPath",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "/*0x00010000-0x00000000*/",
                 "name": "bHideAfterPause",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "/*0x00010000-0x00000000*/",
                 "name": "bHideAfterCompleted",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "/*0x00010000-0x00000000*/",
                 "name": "ClassesToNotShow",
                 "type": "array< class >",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -545,10 +592,6 @@
         "archetype": "\"SeqAct_CarMatinee_TA'TAGame.Default__SeqAct_CarMatinee_TA'\"",
         "displayName": "\"Car Matinee\"",
         "defaultproperties": [
-            {
-                "name": "CinematicCarArchPath",
-                "value": "\"Archetypes.Car.Car_Cinematic\""
-            },
             {
                 "name": "bHideAfterCompleted",
                 "value": "true"
@@ -573,61 +616,71 @@
                 "flags": "",
                 "name": "Actor",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "CheckActor",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "RotationAngle",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "LastRotation",
                 "type": "Rotator",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "LastDirection",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "CheckAxis",
                 "type": "Vector",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "TurnAxis",
                 "type": "Vector",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "MaxRotationAngle",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bResetOnDirectionChange",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "AxisDirection",
                 "type": "SeqAct_CheckRotationAngle_TA.ECheckAxis",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -669,7 +722,8 @@
             "variable": [
                 {
                     "name": "\"Actor To Check\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": true
                 }
             ]
         }
@@ -683,7 +737,8 @@
                 "flags": "",
                 "name": "CurrentSequenceIndex",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -702,7 +757,8 @@
             "variable": [
                 {
                     "name": "\"SequenceIndex\"",
-                    "expectedType": "Class'Engine.SeqVar_Int'"
+                    "expectedType": "Class'Engine.SeqVar_Int'",
+                    "isOutput": false
                 }
             ]
         }
@@ -716,7 +772,8 @@
                 "flags": "",
                 "name": "CheckpointName",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -735,7 +792,74 @@
             "variable": [
                 {
                     "name": "\"CheckpointName\"",
-                    "expectedType": "Class'Engine.SeqVar_String'"
+                    "expectedType": "Class'Engine.SeqVar_String'",
+                    "isOutput": false
+                }
+            ]
+        }
+    },
+    {
+        "name": "ConcatenateStrings",
+        "Class": "SeqAct_ConcatenateStrings_TA",
+        "Package": "TAGame",
+        "variables": [
+            {
+                "flags": "",
+                "name": "ValueA",
+                "type": "string",
+                "replicated": "False",
+                "category": ""
+            },
+            {
+                "flags": "",
+                "name": "ValueB",
+                "type": "string",
+                "replicated": "False",
+                "category": ""
+            },
+            {
+                "flags": "",
+                "name": "ConcatenateWithSpace",
+                "type": "bool",
+                "replicated": "False",
+                "category": ""
+            },
+            {
+                "flags": "",
+                "name": "StringResult",
+                "type": "string",
+                "replicated": "False",
+                "category": null
+            }
+        ],
+        "category": "\"TAGame\"",
+        "type": "actions",
+        "archetype": "\"SeqAct_ConcatenateStrings_TA'TAGame.Default__SeqAct_ConcatenateStrings_TA'\"",
+        "displayName": "\"Concatenate Strings\"",
+        "defaultproperties": [
+            {
+                "name": "ConcatenateWithSpace",
+                "value": "true"
+            }
+        ],
+        "links": {
+            "input": [],
+            "output": [],
+            "variable": [
+                {
+                    "name": "\"A\"",
+                    "expectedType": "Class'Engine.SeqVar_String'",
+                    "isOutput": false
+                },
+                {
+                    "name": "\"B\"",
+                    "expectedType": "Class'Engine.SeqVar_String'",
+                    "isOutput": false
+                },
+                {
+                    "name": "\"StringResult\"",
+                    "expectedType": "Class'Engine.SeqVar_String'",
+                    "isOutput": true
                 }
             ]
         }
@@ -749,7 +873,8 @@
                 "flags": "",
                 "name": "Instigator",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -782,7 +907,8 @@
             "variable": [
                 {
                     "name": "\"Instigator\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -796,7 +922,8 @@
                 "flags": "",
                 "name": "MaxCount",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": "Counter"
             }
         ],
         "category": "\"TAGame\"",
@@ -847,13 +974,15 @@
                 "flags": "",
                 "name": "AttachTo",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "export editinline",
                 "name": "AttachingComponent",
                 "type": "ActorComponent_X",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -872,7 +1001,8 @@
             "variable": [
                 {
                     "name": "\"AttachTo\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -907,7 +1037,8 @@
                 "flags": "",
                 "name": "InFXActor",
                 "type": "FXActor_X",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -926,7 +1057,8 @@
             "variable": [
                 {
                     "name": "\"FX Actor\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -940,43 +1072,50 @@
                 "flags": "",
                 "name": "Instigator",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "Title",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "Body",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bShowButtonOne",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bShowButtonTwo",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "ButtonOneTitle",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "ButtonTwoTitle",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -1022,7 +1161,8 @@
             "variable": [
                 {
                     "name": "\"Instigator\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -1036,31 +1176,36 @@
                 "flags": "",
                 "name": "ForwardOffset",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "Spline",
                 "type": "SplineActor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "Throttle",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bDebug",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "transient",
                 "name": "Cars",
                 "type": "array<CarSplineData>",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -1098,11 +1243,13 @@
             "variable": [
                 {
                     "name": "\"Target\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Spline\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -1131,6 +1278,47 @@
         }
     },
     {
+        "name": "DynamicMapEvent",
+        "Class": "SeqAct_DynamicMapEvents_TA",
+        "Package": "TAGame",
+        "variables": [
+            {
+                "flags": "",
+                "name": "EventID",
+                "type": "string",
+                "replicated": "False",
+                "category": null
+            }
+        ],
+        "category": "\"TAGame\"",
+        "type": "actions",
+        "archetype": "\"SeqAct_DynamicMapEvents_TA'TAGame.Default__SeqAct_DynamicMapEvents_TA'\"",
+        "displayName": "\"Dynamic Map Event\"",
+        "defaultproperties": [],
+        "links": {
+            "input": [
+                {
+                    "name": "\"Is Event Active\""
+                }
+            ],
+            "output": [
+                {
+                    "name": "\"Yes\""
+                },
+                {
+                    "name": "\"No\""
+                }
+            ],
+            "variable": [
+                {
+                    "name": "\"EventId\"",
+                    "expectedType": "Class'Engine.SeqVar_String'",
+                    "isOutput": false
+                }
+            ]
+        }
+    },
+    {
         "name": "EndTutorial",
         "Class": "SeqAct_EndTutorial_TA",
         "Package": "TAGame",
@@ -1139,7 +1327,8 @@
                 "flags": "",
                 "name": "Instigator",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -1168,7 +1357,8 @@
             "variable": [
                 {
                     "name": "\"Instigator\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -1234,7 +1424,8 @@
                 "flags": "",
                 "name": "Option",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -1372,13 +1563,15 @@
                 "flags": "",
                 "name": "CheckpointName",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "bIsActive",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -1397,11 +1590,13 @@
             "variable": [
                 {
                     "name": "\"CheckpointName\"",
-                    "expectedType": "Class'Engine.SeqVar_String'"
+                    "expectedType": "Class'Engine.SeqVar_String'",
+                    "isOutput": true
                 },
                 {
                     "name": "\"bIsActive\"",
-                    "expectedType": "Class'Engine.SeqVar_Bool'"
+                    "expectedType": "Class'Engine.SeqVar_Bool'",
+                    "isOutput": true
                 }
             ]
         }
@@ -1415,7 +1610,8 @@
                 "flags": "",
                 "name": "Ball",
                 "type": "Object",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -1441,7 +1637,8 @@
             "variable": [
                 {
                     "name": "\"Ball\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -1455,13 +1652,15 @@
                 "flags": "",
                 "name": "PlayerName",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "transient",
                 "name": "FoundActor",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -1480,7 +1679,8 @@
             "variable": [
                 {
                     "name": "\"Found Actor\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": true
                 }
             ]
         }
@@ -1532,43 +1732,43 @@
                 "flags": "",
                 "name": "RarityColorsPrime",
                 "type": "array<Vector>",
-                "replicated": "False"
-            },
-            {
-                "flags": "",
-                "name": "RarityColorsChina",
-                "type": "array<Vector>",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "bRandomize",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "MinimumRandomQuality",
                 "type": "_Types_TA.EProductQuality",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "ColorIdx",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "transient",
                 "name": "OutColor",
                 "type": "Vector",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "transient",
                 "name": "LastRandomIdx",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -1595,15 +1795,18 @@
             "variable": [
                 {
                     "name": "\"Rarity Index\"",
-                    "expectedType": "Class'Engine.SeqVar_Int'"
+                    "expectedType": "Class'Engine.SeqVar_Int'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Random\"",
-                    "expectedType": "Class'Engine.SeqVar_Bool'"
+                    "expectedType": "Class'Engine.SeqVar_Bool'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Color\"",
-                    "expectedType": "Class'Engine.SeqVar_Vector'"
+                    "expectedType": "Class'Engine.SeqVar_Vector'",
+                    "isOutput": true
                 }
             ]
         }
@@ -1617,7 +1820,8 @@
                 "flags": "",
                 "name": "SaveData",
                 "type": "SaveData_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -1636,11 +1840,13 @@
             "variable": [
                 {
                     "name": "\"\"",
-                    "expectedType": "Class'Engine.SequenceVariable'"
+                    "expectedType": "Class'Engine.SequenceVariable'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Save Data\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -1654,13 +1860,15 @@
                 "flags": "",
                 "name": "TeamIndex",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "TeamScore",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -1679,11 +1887,13 @@
             "variable": [
                 {
                     "name": "\"Team Index\"",
-                    "expectedType": "Class'Engine.SeqVar_Int'"
+                    "expectedType": "Class'Engine.SeqVar_Int'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Team Score\"",
-                    "expectedType": "Class'Engine.SeqVar_Int'"
+                    "expectedType": "Class'Engine.SeqVar_Int'",
+                    "isOutput": true
                 }
             ]
         }
@@ -1738,7 +1948,8 @@
                 "flags": "",
                 "name": "bEnabled",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -1764,7 +1975,8 @@
             "variable": [
                 {
                     "name": "\"Enabled\"",
-                    "expectedType": "Class'Engine.SeqVar_Bool'"
+                    "expectedType": "Class'Engine.SeqVar_Bool'",
+                    "isOutput": false
                 }
             ]
         }
@@ -1778,13 +1990,15 @@
                 "flags": "",
                 "name": "Instigator",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "BoostAmount",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -1814,7 +2028,8 @@
             "variable": [
                 {
                     "name": "\"Instigator\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -1828,19 +2043,22 @@
                 "flags": "",
                 "name": "ActorNameToHide",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bKeepAllInstancesHidden",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "transient",
                 "name": "bFoundDemoedCar",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -1889,31 +2107,36 @@
                 "flags": "",
                 "name": "MaterialInstance",
                 "type": "MaterialInstanceConstant",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "SK",
                 "type": "SkeletalMeshActor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "SM",
                 "type": "StaticMeshActor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "InstancedMaterial",
                 "type": "MaterialInstanceConstant",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "MatIndex",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -1932,19 +2155,23 @@
             "variable": [
                 {
                     "name": "\"Static Mesh Actor\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Material Index\"",
-                    "expectedType": "Class'Engine.SeqVar_Int'"
+                    "expectedType": "Class'Engine.SeqVar_Int'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Instanced Material\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": true
                 },
                 {
                     "name": "\"Skeletal Mesh Actor\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -1979,13 +2206,15 @@
                 "flags": "",
                 "name": "Instigator",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "ActionName",
                 "type": "name",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -2015,7 +2244,8 @@
             "variable": [
                 {
                     "name": "\"Instigator\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -2061,13 +2291,15 @@
                 "flags": "",
                 "name": "Instigator",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "Target",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -2097,11 +2329,13 @@
             "variable": [
                 {
                     "name": "\"Instigator\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Target\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": true
                 }
             ]
         }
@@ -2115,19 +2349,22 @@
                 "flags": "",
                 "name": "Instigator",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "Target",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "MaxConeAngle",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -2160,11 +2397,13 @@
             "variable": [
                 {
                     "name": "\"Instigator\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Target\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -2178,7 +2417,8 @@
                 "flags": "",
                 "name": "Map",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -2206,31 +2446,36 @@
                 "flags": "",
                 "name": "Actor",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "ActorToLookAt",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "InterpSpeed",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bConstantInterpSpeed",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bUpdating",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -2260,11 +2505,13 @@
             "variable": [
                 {
                     "name": "\"Actor\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"ActorToLookAt\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -2328,6 +2575,18 @@
                 },
                 {
                     "name": "\"Park Snowy\""
+                },
+                {
+                    "name": "\"Tokyo Toon\""
+                },
+                {
+                    "name": "\"Utopia Lux\""
+                },
+                {
+                    "name": "\"Street\""
+                },
+                {
+                    "name": "\"Fire and Ice\""
                 }
             ],
             "variable": []
@@ -2342,7 +2601,8 @@
                 "flags": "",
                 "name": "CountdownTime",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -2370,31 +2630,36 @@
                 "flags": "",
                 "name": "Actor",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "MoveTransform",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "InterpSpeed",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bConstantInterpSpeed",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bMove",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -2428,11 +2693,13 @@
             "variable": [
                 {
                     "name": "\"Actor\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"MoveTransform\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -2446,13 +2713,15 @@
                 "flags": "",
                 "name": "EventName",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "Instigator",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -2475,7 +2744,66 @@
             "variable": [
                 {
                     "name": "\"Instigator\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
+                }
+            ]
+        }
+    },
+    {
+        "name": "RegisterMapDragon",
+        "Class": "SeqAct_RegisterMapDragon_TA",
+        "Package": "TAGame",
+        "variables": [
+            {
+                "flags": "",
+                "name": "PlacedActor",
+                "type": "Actor",
+                "replicated": "False",
+                "category": null
+            },
+            {
+                "flags": "",
+                "name": "TeamIndex",
+                "type": "int",
+                "replicated": "False",
+                "category": null
+            },
+            {
+                "flags": "transient",
+                "name": "bActivated",
+                "type": "bool",
+                "replicated": "False",
+                "category": null
+            }
+        ],
+        "category": "\"TAGame\"",
+        "type": "actions",
+        "archetype": "\"SeqAct_RegisterMapDragon_TA'TAGame.Default__SeqAct_RegisterMapDragon_TA'\"",
+        "displayName": "\"Register Map Dragon\"",
+        "defaultproperties": [
+            {
+                "name": "bCallHandler",
+                "value": "false"
+            }
+        ],
+        "links": {
+            "input": [
+                {
+                    "name": "\"Register\""
+                }
+            ],
+            "output": [],
+            "variable": [
+                {
+                    "name": "\"Actor\"",
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
+                },
+                {
+                    "name": "\"Team Index\"",
+                    "expectedType": "Class'Engine.SeqVar_Int'",
+                    "isOutput": false
                 }
             ]
         }
@@ -2489,7 +2817,8 @@
                 "flags": "",
                 "name": "RBObj",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -2503,7 +2832,8 @@
             "variable": [
                 {
                     "name": "\"RB Actor\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -2517,37 +2847,43 @@
                 "flags": "",
                 "name": "Actor",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "RotateTransform",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "InterpSpeed",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bConstantInterpSpeed",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bUpdating",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "RotateTolerance",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -2578,11 +2914,13 @@
             "variable": [
                 {
                     "name": "\"Actor\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"RotateTransform\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -2596,25 +2934,29 @@
                 "flags": "",
                 "name": "Instigator",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "FadeColor",
                 "type": "Color",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "FadeTime",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bFadeAudio",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -2655,7 +2997,86 @@
             "variable": [
                 {
                     "name": "\"Instigator\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
+                }
+            ]
+        }
+    },
+    {
+        "name": "ScreenFade",
+        "Class": "SeqAct_ScreenFade_TA",
+        "Package": "TAGame",
+        "variables": [
+            {
+                "flags": "",
+                "name": "Instigator",
+                "type": "Actor",
+                "replicated": "False",
+                "category": null
+            },
+            {
+                "flags": "",
+                "name": "FadeColor",
+                "type": "Color",
+                "replicated": "False",
+                "category": ""
+            },
+            {
+                "flags": "",
+                "name": "FadeTime",
+                "type": "float",
+                "replicated": "False",
+                "category": ""
+            },
+            {
+                "flags": "",
+                "name": "bFadeAudio",
+                "type": "bool",
+                "replicated": "False",
+                "category": ""
+            }
+        ],
+        "category": "\"TAGame\"",
+        "type": "actions",
+        "archetype": "\"SeqAct_ScreenFade_TA'TAGame.Default__SeqAct_ScreenFade_TA'\"",
+        "displayName": "\"Screen Fade\"",
+        "defaultproperties": [
+            {
+                "name": "FadeTime",
+                "value": "0.30"
+            },
+            {
+                "name": "bFadeAudio",
+                "value": "true"
+            },
+            {
+                "name": "bCallHandler",
+                "value": "false"
+            }
+        ],
+        "links": {
+            "input": [
+                {
+                    "name": "\"Enable\""
+                },
+                {
+                    "name": "\"Disable\""
+                }
+            ],
+            "output": [
+                {
+                    "name": "\"Enabled\""
+                },
+                {
+                    "name": "\"Disabled\""
+                }
+            ],
+            "variable": [
+                {
+                    "name": "\"Instigator\"",
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -2669,19 +3090,22 @@
                 "flags": "",
                 "name": "Target",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "Instigator",
                 "type": "PlayerController_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "bForceBallCamTarget",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": "BallCamTarget"
             }
         ],
         "category": "\"TAGame\"",
@@ -2707,11 +3131,13 @@
             "variable": [
                 {
                     "name": "\"Instigator\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Target\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -2725,19 +3151,22 @@
                 "flags": "",
                 "name": "Ball",
                 "type": "Ball_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "Material",
                 "type": "MaterialInterface",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "MaterialID",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -2764,7 +3193,8 @@
             "variable": [
                 {
                     "name": "\"Ball\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -2778,19 +3208,22 @@
                 "flags": "",
                 "name": "BallObj",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "Charge",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "Team",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -2804,15 +3237,18 @@
             "variable": [
                 {
                     "name": "\"Breakout Ball\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Charge\"",
-                    "expectedType": "Class'Engine.SeqVar_Int'"
+                    "expectedType": "Class'Engine.SeqVar_Int'",
+                    "isOutput": true
                 },
                 {
                     "name": "\"Team\"",
-                    "expectedType": "Class'Engine.SeqVar_Int'"
+                    "expectedType": "Class'Engine.SeqVar_Int'",
+                    "isOutput": true
                 }
             ]
         }
@@ -2826,13 +3262,15 @@
                 "flags": "",
                 "name": "PlatformObj",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "Damage",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -2846,11 +3284,13 @@
             "variable": [
                 {
                     "name": "\"Breakout Platform\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Damage\"",
-                    "expectedType": "Class'Engine.SeqVar_Int'"
+                    "expectedType": "Class'Engine.SeqVar_Int'",
+                    "isOutput": true
                 }
             ]
         }
@@ -2864,13 +3304,15 @@
                 "flags": "",
                 "name": "Instigator",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "Transform",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -2893,11 +3335,13 @@
             "variable": [
                 {
                     "name": "\"Instigator\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Transform\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -2911,7 +3355,8 @@
                 "flags": "",
                 "name": "ColorToUse",
                 "type": "LinearColor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -2946,121 +3391,141 @@
                 "flags": "",
                 "name": "Products",
                 "type": "array<ProductAsset_TA>",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "ProductsWithPaint",
                 "type": "array<ProductWithSettings>",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "TeamFinish",
                 "type": "ProductAsset_PaintFinish_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "AccentFinish",
                 "type": "ProductAsset_PaintFinish_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bUseInGameColors",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bOverwriteCurrent",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bUseDefaultLoadout",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bApplyToAllCars",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "TeamColor",
                 "type": "LinearColor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "AccentColor",
                 "type": "LinearColor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "ForcedTeamOverride",
                 "type": "SeqAct_SetLoadout_TA.EForcedTeamOverride",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "BodyPaint",
                 "type": "ProductPaint_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "SkinPaint",
                 "type": "ProductPaint_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "WheelPaint",
                 "type": "ProductPaint_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "BoostPaint",
                 "type": "ProductPaint_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "SSTrailPaint",
                 "type": "ProductPaint_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "AntennaPaint",
                 "type": "ProductPaint_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "HatPaint",
                 "type": "ProductPaint_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "GoalExplosionPaint",
                 "type": "ProductPaint_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "ParentCar",
                 "type": "Car_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -3100,19 +3565,22 @@
                 "flags": "",
                 "name": "MatInst",
                 "type": "MaterialInstanceConstant",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "ParamName",
                 "type": "name",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "VectorValue",
                 "type": "Vector",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -3126,11 +3594,13 @@
             "variable": [
                 {
                     "name": "\"VectorValue\"",
-                    "expectedType": "Class'Engine.SeqVar_Vector'"
+                    "expectedType": "Class'Engine.SeqVar_Vector'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"MatInstValue\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -3144,19 +3614,22 @@
                 "flags": "",
                 "name": "MeshList",
                 "type": "array<Object>",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "ParamName",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "ScalarValue",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -3170,15 +3643,18 @@
             "variable": [
                 {
                     "name": "\"Meshes\"",
-                    "expectedType": "Class'Engine.SeqVar_ObjectList'"
+                    "expectedType": "Class'Engine.SeqVar_ObjectList'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"ScalarValue\"",
-                    "expectedType": "Class'Engine.SeqVar_Float'"
+                    "expectedType": "Class'Engine.SeqVar_Float'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"ParamName\"",
-                    "expectedType": "Class'Engine.SeqVar_String'"
+                    "expectedType": "Class'Engine.SeqVar_String'",
+                    "isOutput": false
                 }
             ]
         }
@@ -3192,13 +3668,15 @@
                 "flags": "",
                 "name": "Instigator",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "LocalizedPlayerName",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -3225,7 +3703,8 @@
             "variable": [
                 {
                     "name": "\"Instigator\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -3239,13 +3718,15 @@
                 "flags": "",
                 "name": "Chains",
                 "type": "array<PostProcessChain>",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bReplaceCurrentChain",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -3277,25 +3758,29 @@
                 "flags": "",
                 "name": "FocusActor",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "LocationOffset",
                 "type": "Vector",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "Rotation",
                 "type": "Rotator",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "FOV",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -3335,55 +3820,64 @@
                 "flags": "",
                 "name": "FocusDistance",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "FocusBlur",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "FocusStrength",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bUseGreenScreen",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bUseVignetteOverlay",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "GreenScreenColor",
                 "type": "LinearColor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "ImageFilterIndex",
                 "type": "Engine.EImageFilterOptions",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "ImageFilterIntensity",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "Vignette",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -3438,19 +3932,22 @@
                 "flags": "",
                 "name": "ActorMAT",
                 "type": "SkeletalMeshActorMAT_Products_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "ControllerOrPawn",
                 "type": "Object",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "LoadoutIndex",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -3469,11 +3966,13 @@
             "variable": [
                 {
                     "name": "\"Skel MAT\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": true
                 },
                 {
                     "name": "\"Player\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": true
                 }
             ]
         }
@@ -3487,13 +3986,15 @@
                 "flags": "",
                 "name": "BlueColors",
                 "type": "array<LinearColor>",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "OrangeColors",
                 "type": "array<LinearColor>",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -3521,43 +4022,50 @@
                 "flags": "native const noexport",
                 "name": "VfTable_FTickableObject",
                 "type": "Pointer",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "bUseCurve",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bActivated",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "CurrentTime",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "EndTime",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "SlomoValue",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "SlomoCurve",
                 "type": "RawDistributionFloat",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -3589,7 +4097,8 @@
                 "flags": "",
                 "name": "TutorialType",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -3617,13 +4126,15 @@
                 "flags": "const localized",
                 "name": "Tip",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "ActionNames",
                 "type": "array<name>",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -3651,7 +4162,8 @@
                 "flags": "",
                 "name": "Input",
                 "type": "VehicleInputs",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -3679,19 +4191,22 @@
                 "flags": "",
                 "name": "ActorArchetype",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "Transform",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "SpawnedActor",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -3710,15 +4225,18 @@
             "variable": [
                 {
                     "name": "\"Actor Archetype\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Transform\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Spawned Actor\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -3732,43 +4250,50 @@
                 "flags": "",
                 "name": "SpawnedBot",
                 "type": "Car_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "SpawnTransform",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "SkillLevel",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bDisableAllLogic",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bCollideWithBall",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bCollideWithVehicle",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "TeamIndex",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -3809,11 +4334,13 @@
             "variable": [
                 {
                     "name": "\"Spawned Bot\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": true
                 },
                 {
                     "name": "\"Spawn Transform\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -3827,73 +4354,85 @@
                 "flags": "",
                 "name": "AccentColors",
                 "type": "SpawnCarColorSet",
-                "replicated": "False"
+                "replicated": "False",
+                "category": "Accent"
             },
             {
                 "flags": "",
                 "name": "AccentTeamColor",
                 "type": "LinearColor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": "Accent"
             },
             {
                 "flags": "",
                 "name": "BlueTeamColors",
                 "type": "SpawnCarColorSet",
-                "replicated": "False"
+                "replicated": "False",
+                "category": "Team"
             },
             {
                 "flags": "",
                 "name": "OrangeTeamColors",
                 "type": "SpawnCarColorSet",
-                "replicated": "False"
+                "replicated": "False",
+                "category": "Team"
             },
             {
                 "flags": "",
                 "name": "TeamAccentColor",
                 "type": "LinearColor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": "Team"
             },
             {
                 "flags": "",
                 "name": "Body",
                 "type": "ProductAsset_Body_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "Skin",
                 "type": "ProductAsset_Skin_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "CarYaw",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "CarOffsetX",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "CarOffsetY",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "SetOffsetY",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "transient",
                 "name": "BaseOffsetY",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -3957,67 +4496,85 @@
                 "flags": "native const noexport",
                 "name": "VfTable_FTickableObject",
                 "type": "Pointer",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "FXActor",
                 "type": "FXActor_X",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
+            },
+            {
+                "flags": "editinline",
+                "name": "Product",
+                "type": "ProductAssetReference_TA",
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "Transform",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "Location",
                 "type": "Vector",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "Rotation",
                 "type": "Rotator",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "ActorToSpawnOn",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "SpawnedFXActor",
                 "type": "FXActor_X",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "Paint",
                 "type": "ProductPaint_TA",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "PaintParameterNames",
                 "type": "name",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "transient",
                 "name": "bTickable",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "transient",
                 "name": "BallLocMic",
                 "type": "MaterialInstanceConstant",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -4044,19 +4601,23 @@
             "variable": [
                 {
                     "name": "\"Actor to Spawn On\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"FXActor\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Transform\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Spawned FXActor\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -4070,13 +4631,15 @@
                 "flags": "",
                 "name": "Instigator",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "/*0x00000800-0x00000000*/ const",
                 "name": "TutorialName",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -4136,7 +4699,8 @@
             "variable": [
                 {
                     "name": "\"Instigator\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -4150,7 +4714,8 @@
                 "flags": "",
                 "name": "RBObj",
                 "type": "Actor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -4164,7 +4729,8 @@
             "variable": [
                 {
                     "name": "\"RB Actor\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -4178,7 +4744,8 @@
                 "flags": "",
                 "name": "UIOverlayName",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -4215,7 +4782,8 @@
                 "flags": "",
                 "name": "MeshActor",
                 "type": "StaticMeshActor",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -4229,7 +4797,8 @@
             "variable": [
                 {
                     "name": "\"Mesh\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -4243,19 +4812,22 @@
                 "flags": "",
                 "name": "bIgnoreCase",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "StringA",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "StringB",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -4281,11 +4853,13 @@
             "variable": [
                 {
                     "name": "\"String A\"",
-                    "expectedType": "Class'Engine.SeqVar_String'"
+                    "expectedType": "Class'Engine.SeqVar_String'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"String B\"",
-                    "expectedType": "Class'Engine.SeqVar_String'"
+                    "expectedType": "Class'Engine.SeqVar_String'",
+                    "isOutput": false
                 }
             ]
         }
@@ -4363,7 +4937,8 @@
                 "flags": "",
                 "name": "PlayerName",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -4395,7 +4970,8 @@
                 "flags": "",
                 "name": "bOneTouchOnly",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": "BallTouch"
             }
         ],
         "category": "\"TAGame\"",
@@ -4425,11 +5001,13 @@
             "variable": [
                 {
                     "name": "\"Ball\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Car\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": false
                 }
             ]
         }
@@ -4443,7 +5021,8 @@
                 "flags": "",
                 "name": "SequenceIndex",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -4466,7 +5045,8 @@
             "variable": [
                 {
                     "name": "\"SequenceIndex\"",
-                    "expectedType": "Class'Engine.SeqVar_Int'"
+                    "expectedType": "Class'Engine.SeqVar_Int'",
+                    "isOutput": true
                 }
             ]
         }
@@ -4530,6 +5110,35 @@
         }
     },
     {
+        "name": "DynamicMapEventUpdate",
+        "Class": "SeqEvent_DynamicMapEvents_TA",
+        "Package": "TAGame",
+        "variables": [],
+        "category": "\"TAGame\"",
+        "type": "events",
+        "archetype": "\"SeqEvent_DynamicMapEvents_TA'TAGame.Default__SeqEvent_DynamicMapEvents_TA'\"",
+        "displayName": "\"Dynamic Map Event Update\"",
+        "defaultproperties": [
+            {
+                "name": "MaxTriggerCount",
+                "value": "0"
+            },
+            {
+                "name": "bPlayerOnly",
+                "value": "false"
+            }
+        ],
+        "links": {
+            "input": [],
+            "output": [
+                {
+                    "name": "\"Events Updated\""
+                }
+            ],
+            "variable": []
+        }
+    },
+    {
         "name": "GameEventStateChanged",
         "Class": "SeqEvent_GameEventStateChanged_TA",
         "Package": "TAGame",
@@ -4538,7 +5147,8 @@
                 "flags": "",
                 "name": "StateName",
                 "type": "string",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -4561,7 +5171,8 @@
             "variable": [
                 {
                     "name": "\"State Name\"",
-                    "expectedType": "Class'Engine.SeqVar_String'"
+                    "expectedType": "Class'Engine.SeqVar_String'",
+                    "isOutput": false
                 }
             ]
         }
@@ -4575,13 +5186,15 @@
                 "flags": "",
                 "name": "CallTimePercent",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "bHasBeenCalled",
                 "type": "bool",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -4604,64 +5217,8 @@
             "variable": [
                 {
                     "name": "\"Call Time Percent\"",
-                    "expectedType": "Class'Engine.SeqVar_Float'"
-                }
-            ]
-        }
-    },
-    {
-        "name": "GarageComplexState",
-        "Class": "SeqEvent_GarageComplexState_TA",
-        "Package": "TAGame",
-        "variables": [
-            {
-                "flags": "",
-                "name": "GarageState",
-                "type": "string",
-                "replicated": "False"
-            },
-            {
-                "flags": "",
-                "name": "PreviousGarageState",
-                "type": "string",
-                "replicated": "False"
-            }
-        ],
-        "category": "\"TAGame\"",
-        "type": "events",
-        "archetype": "\"SeqEvent_GarageComplexState_TA'TAGame.Default__SeqEvent_GarageComplexState_TA'\"",
-        "displayName": "\"GarageComplex State\"",
-        "defaultproperties": [
-            {
-                "name": "MaxTriggerCount",
-                "value": "0"
-            },
-            {
-                "name": "bPlayerOnly",
-                "value": "false"
-            }
-        ],
-        "links": {
-            "input": [],
-            "output": [
-                {
-                    "name": "\"On State Change\""
-                },
-                {
-                    "name": "\"Enter Center Car\""
-                },
-                {
-                    "name": "\"Exit Center Car\""
-                }
-            ],
-            "variable": [
-                {
-                    "name": "\"GarageState\"",
-                    "expectedType": "Class'Engine.SeqVar_String'"
-                },
-                {
-                    "name": "\"PreviousGarageState\"",
-                    "expectedType": "Class'Engine.SeqVar_String'"
+                    "expectedType": "Class'Engine.SeqVar_Float'",
+                    "isOutput": true
                 }
             ]
         }
@@ -4710,7 +5267,8 @@
                 "flags": "",
                 "name": "SequenceName",
                 "type": "name",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -4737,7 +5295,8 @@
             "variable": [
                 {
                     "name": "\"Name\"",
-                    "expectedType": "Class'Engine.SeqVar_Name'"
+                    "expectedType": "Class'Engine.SeqVar_Name'",
+                    "isOutput": true
                 }
             ]
         }
@@ -4812,7 +5371,8 @@
                 "flags": "transient",
                 "name": "PrevBackground",
                 "type": "_Types_TA.EMainMenuBackground",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -4875,7 +5435,8 @@
             "variable": [
                 {
                     "name": "\"Rarity Index\"",
-                    "expectedType": "Class'Engine.SeqVar_Int'"
+                    "expectedType": "Class'Engine.SeqVar_Int'",
+                    "isOutput": true
                 }
             ]
         }
@@ -4912,7 +5473,8 @@
             "variable": [
                 {
                     "name": "\"Rarity Index\"",
-                    "expectedType": "Class'Engine.SeqVar_Int'"
+                    "expectedType": "Class'Engine.SeqVar_Int'",
+                    "isOutput": true
                 }
             ]
         }
@@ -4955,7 +5517,8 @@
                 "flags": "",
                 "name": "FXInstance",
                 "type": "FXActor_X",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -4985,7 +5548,8 @@
             "variable": [
                 {
                     "name": "\"Explosion FXActor Instance\"",
-                    "expectedType": "Class'Engine.SeqVar_Object'"
+                    "expectedType": "Class'Engine.SeqVar_Object'",
+                    "isOutput": true
                 }
             ]
         }
@@ -5031,7 +5595,8 @@
                 "flags": "",
                 "name": "TimeSeconds",
                 "type": "float",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",
@@ -5092,13 +5657,15 @@
                 "flags": "",
                 "name": "BlueScore",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "RedScore",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -5121,45 +5688,15 @@
             "variable": [
                 {
                     "name": "\"Blue Score\"",
-                    "expectedType": "Class'Engine.SeqVar_Int'"
+                    "expectedType": "Class'Engine.SeqVar_Int'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Red Score\"",
-                    "expectedType": "Class'Engine.SeqVar_Int'"
+                    "expectedType": "Class'Engine.SeqVar_Int'",
+                    "isOutput": false
                 }
             ]
-        }
-    },
-    {
-        "name": "ShowGarageComplex",
-        "Class": "SeqEvent_ShowGarageComplex_TA",
-        "Package": "TAGame",
-        "variables": [],
-        "category": "\"TAGame\"",
-        "type": "events",
-        "archetype": "\"SeqEvent_ShowGarageComplex_TA'TAGame.Default__SeqEvent_ShowGarageComplex_TA'\"",
-        "displayName": "\"Show Garage Complex\"",
-        "defaultproperties": [
-            {
-                "name": "MaxTriggerCount",
-                "value": "0"
-            },
-            {
-                "name": "bPlayerOnly",
-                "value": "false"
-            }
-        ],
-        "links": {
-            "input": [],
-            "output": [
-                {
-                    "name": "\"Hide\""
-                },
-                {
-                    "name": "\"Show\""
-                }
-            ],
-            "variable": []
         }
     },
     {
@@ -5171,19 +5708,22 @@
                 "flags": "",
                 "name": "Team",
                 "type": "int",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             },
             {
                 "flags": "",
                 "name": "Primary",
                 "type": "Vector",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             },
             {
                 "flags": "",
                 "name": "Secondary",
                 "type": "Vector",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -5206,11 +5746,13 @@
             "variable": [
                 {
                     "name": "\"Primary\"",
-                    "expectedType": "Class'Engine.SeqVar_Vector'"
+                    "expectedType": "Class'Engine.SeqVar_Vector'",
+                    "isOutput": false
                 },
                 {
                     "name": "\"Secondary\"",
-                    "expectedType": "Class'Engine.SeqVar_Vector'"
+                    "expectedType": "Class'Engine.SeqVar_Vector'",
+                    "isOutput": false
                 }
             ]
         }
@@ -5337,7 +5879,8 @@
                 "flags": "const",
                 "name": "UIState",
                 "type": "_Types_TA.EUIMenuState",
-                "replicated": "False"
+                "replicated": "False",
+                "category": null
             }
         ],
         "category": "\"TAGame\"",
@@ -5376,7 +5919,8 @@
                 "flags": "",
                 "name": "SettingName",
                 "type": "name",
-                "replicated": "False"
+                "replicated": "False",
+                "category": ""
             }
         ],
         "category": "\"TAGame\"",

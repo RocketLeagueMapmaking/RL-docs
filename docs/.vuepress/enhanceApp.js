@@ -12,6 +12,9 @@ import KismetNodeList from './components/Kismet/NodeList.vue'
 import KismetNodeProperty from './components/Kismet/NodeProperty.vue'
 import KismetNode from './components/Kismet/Node.vue'
 
+import Tree from './components/Tree/Tree.vue'
+import TreeItem from './components/Tree/TreeItem.vue'
+
 export default ({
     Vue, // the version of Vue being used in the VuePress app
 }) => {
@@ -26,7 +29,9 @@ export default ({
         ['KismetNode', KismetNode],
         ['KismetNodeProperty', KismetNodeProperty],
         ['KismetNodeSearch', KismetNodeSearch],
-        ['KismetNodeList', KismetNodeList]
+        ['KismetNodeList', KismetNodeList],
+        ['TreeComponent', Tree],
+        ['TreeItem', TreeItem],
     ]
 
     for (const component of components) {

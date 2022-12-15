@@ -30,14 +30,14 @@
 
     <!-- Filter options for packages and types -->
     <select name="upk" id="" class="autocomplete-input" @change="setUPK" :disabled="match">
-      <option value="all" >All packages</option>
-      <option value="TAGame" >TAGame</option>
-      <option value="ProjectX" >ProjectX</option>
+      <option v-for="pkg in validPackages" :key="pkg" :selected="pkg === upk" :value="pkg">
+        {{ pkg === "all" ? "All packages" : pkg }}
+      </option>
     </select>
 
     <select name="type" id="" class="autocomplete-input" @change="setType" :disabled="match">
       <option value="all">All nodes</option>
-      <option v-for="nodeType in validNodeTypes.filter(n => n !== 'all')" :key="nodeType" :value="nodeType">{{ nodeType }}</option>
+      <option v-for="nodeType in validNodeTypes.filter(n => n !== 'all')" :key="nodeType" :value="nodeType" :selected="nodeType == type">{{ nodeType }}</option>
     </select>
 
     <select name="classes"
@@ -79,11 +79,14 @@
 
     <!-- Found kismet node -->
     <div v-if="!isOpen && search && match">
-      <h3>{{ match.name }}</h3>
+      <p>Showing result for kismet node: {{ search }}</p>
+
       <KismetNodeList
         :upk="upk"
-        :names="[match]"
-        :category="categoryName(search)"
+        :names="[match.displayName]"
+        :category="match.type"
+        :dummyItems="dummyItems"
+        :onlyDummyItems="onlyDummyClasses"
       />
     </div>
 
@@ -209,7 +212,7 @@ export default {
       match: null,
       search: "",
       active: "all",
-      upk: "TAGame",
+      upk: "all",
       type: "all",
       arrowCounter: -1,
       minChar: 2,
@@ -217,6 +220,7 @@ export default {
       nodes: kismetNodes,
       dummyItems: [],
       validNodeTypes,
+      validPackages: ["all"].concat(validPackages),
       category: []
     }
   },
@@ -236,21 +240,18 @@ export default {
       this.category = ["all"].concat(types); 
 
       let url = window.location.search;
+      if (URLSearchParams == undefined) return;
 
-      if (url && url.includes('?') && url.includes('=')) {
+      const params = new URLSearchParams(url);
+      const type = params.get('type'), upk = params.get('upk'), search = params.get('search');
 
-          const [type, query] = url.split('=');
-
-          if (type.charAt( 0 ) === '?') return;
-
-          if (['upk', 'type'].includes(type.slice(1))){
-            console.log(type, query)
-
-          }else if (['search'].includes(type.slice(1))) return;
-
-          const name = this.queryToName(query);
-
-          return this.showResult(name);
+      if (search != null) {
+        const name = this.queryToName(search);
+        console.log("Showing search item: ", name);
+        this.showResult(name);
+      } else {
+        if (type != null) this.setType({ target:{ value: type }})
+        if (upk != null) this.setUPK({ target:{ value: upk }})
       }
 
       const dummyItems = await getDummyClasses()
@@ -298,7 +299,7 @@ export default {
     },
 
     setUrl(){
-      if ('URLSearchParams' in window) {
+      if (URLSearchParams != undefined) {
 
         const params = ["type", "upk", "node"];
         const searchParams = new URLSearchParams(window.location.search);
@@ -308,7 +309,7 @@ export default {
         });
 
         if (this.match) {
-          searchParams.set("node", this.nameToQuery(this.match.name));
+          searchParams.set("search", this.nameToQuery(this.search));
         } else {
 
           if (this.type !== "all") searchParams.set("type", this.type);

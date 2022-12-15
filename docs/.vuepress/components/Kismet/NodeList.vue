@@ -113,9 +113,9 @@ export default {
 .node-header .label {
     position:absolute; 
     right: 300px;
-    padding: 5px 4px;
-    border-radius: 2px;
-    background-color: red;
+    padding: 5px 12px;
+    border-radius: 4px;
+    background-color: #B13434;
 }
 
 .node-header .label p {

@@ -16,5 +16,6 @@ We will set up a simple Hello World printout when you load the map.
 ![alt text](/images/kismet/guide/image126.png "Hello World")
 
 **Connect the Loaded and Visible connector to the Show input of the Draw Text action. Inside the Properties panel, change “Display Time Seconds” to 3. Change “Message Text” to Hello World.**
+**Create a new Player variable for all players and connect it to "Target" on the Draw Text action.**
 
 Save the project and check it out! The text should be centered in the screen and go away after 3 seconds.
