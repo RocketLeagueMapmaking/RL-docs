@@ -46,7 +46,7 @@ export default {
 
     methods: {
         imagePath(node) {
-            const name = node.displayName.toLowerCase().replaceAll('\"', '').replaceAll(' ','_');
+            const name = node.displayName.toLowerCase().replaceAll('"', '').replaceAll(' ','_');
             const categoryName = this.category[0].toUpperCase() + this.category.slice(1);
 
             return `/images/kismet/${categoryName}/${node.Package}/${name}.png`;

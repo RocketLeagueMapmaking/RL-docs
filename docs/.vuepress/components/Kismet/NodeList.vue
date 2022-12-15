@@ -41,7 +41,7 @@ export default {
             type: String,
             required: true,
             validator: (upk) => {
-                return ["ProjectX", "TAGame", "all"].indexOf(upk) !== -1;
+                return ['ProjectX', 'TAGame', 'all'].indexOf(upk) !== -1;
             }
         },
         dummyItems: {
