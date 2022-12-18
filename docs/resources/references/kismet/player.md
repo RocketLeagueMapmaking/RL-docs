@@ -30,6 +30,6 @@ An example property might look like this:
 The class `Car_TA` is in local matches and training (`Car_Freeplay_TA` is extended from this class) the class for a player's car.
 
 <TreeComponent
-    path="../../../data/kismet_tree.json"
+    :treeData="require('../../../.vuepress/public/data/kismet_tree.json')"
     createItemKey="kismetNode"
 />

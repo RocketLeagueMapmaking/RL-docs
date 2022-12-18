@@ -20,9 +20,10 @@
         v-for="(child, index) in computedItem.c"
         :key="index"
         class="item"
-        :item="child"
+        :item="computeItem(child)"
         :is-first-color="!isFirstColor"
         :create-item="createItem"
+        :classes="classes"
       />
     </div>
   </div>
@@ -51,7 +52,7 @@ export default {
             type: Function,
         },
         classes: {
-            required: false,
+            required: true,
             type: Array,
         }
     },
@@ -65,7 +66,9 @@ export default {
             return this.item.c && this.item.c.length
         },
         computedItem: function () {
-            return 'rc' in this.item ? this.classes.find(x => x.type === this.item.rc) : this.item
+            const out = 'cr' in this.item ? this.classes.find(x => x.type === this.item.cr) : this.item
+            if (!out) console.log('Unable to find item', this.item)
+            return out
         }
     },
     methods: {
@@ -74,6 +77,11 @@ export default {
                 this.isOpen = !this.isOpen
             }
         },
+        computeItem: function (item) {
+            const out = 'cr' in item ? this.classes.find(x => x.type === item.cr) : item
+            if (!out) console.log('Unable to find item', item)
+            return out
+        }
     },
 }
 </script>

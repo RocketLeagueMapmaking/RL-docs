@@ -270,13 +270,13 @@ export default {
         },
     },
 
-    async created(){
+    async mounted (){
 
         let types = this.categories.includes(',') ? this.categories.split(',') : [this.categories]
 
         this.category = ['all'].concat(types) 
 
-        let url = window.location.search
+        let url = document.location.search
         if (URLSearchParams == undefined) return
 
         const params = new URLSearchParams(url)
@@ -339,7 +339,7 @@ export default {
             if (URLSearchParams != undefined) {
 
                 const params = ['type', 'upk', 'node']
-                const searchParams = new URLSearchParams(window.location.search)
+                const searchParams = new URLSearchParams(document.location.search)
 
                 params.forEach(param => {
                     if(searchParams.has(param)) searchParams.delete(param)
@@ -355,7 +355,7 @@ export default {
 
                 let stringParams = searchParams.toString()
                 let newParams = stringParams.length > 0 ? `?${stringParams}` : ''
-                let newRelativePathQuery = window.location.pathname + newParams
+                let newRelativePathQuery = document.location.pathname + newParams
 
                 history.pushState(null, '', newRelativePathQuery)
             }

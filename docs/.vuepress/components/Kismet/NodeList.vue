@@ -46,6 +46,7 @@
 import TAGameData from '../../public/data/kismet_nodes.json'
 
 import { formatNodes } from './NodeSearch.vue'
+import KismetNode from './Node.vue'
 
 const nodes = formatNodes(TAGameData)
 
@@ -74,6 +75,9 @@ export default {
             type: Array,
             required: false
         }
+    },
+    components: {
+        KismetNode
     },
     data(){
         return {

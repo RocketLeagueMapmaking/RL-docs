@@ -25,8 +25,8 @@ export default {
         TreeItem
     },
     props: {
-        path: {
-            type: String,
+        treeData: {
+            type: Object,
             required: true
         },
         createItem: {
@@ -47,14 +47,8 @@ export default {
     },
     data() {
         return {
-            treeData: {},
             formatters,
         }
-    },
-    created () {
-        fetch(this.path, { headers: { 'Content-Type': 'application/json'}, cache: 'force-cache' })
-            .then(res => res.json())
-            .then(json => this.treeData = json)
     },
 }
 </script>
