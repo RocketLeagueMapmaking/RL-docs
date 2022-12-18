@@ -11,6 +11,7 @@ title: Tools
 - [Map Loader by Thanrek](https://bakkesplugins.com/plugins/view/187)
 - [Netcode by CinderBlock](https://bakkesplugins.com/plugins/view/166)
 - [Workshop Map Loader & Downloader by Vync_](https://bakkesplugins.com/plugins/view/223)
+- [Map expansion by Blaku](https://bakkesplugins.com/plugins/view/294)
 
 ## Bibliothèque d'Alexandrie
 

@@ -14,78 +14,65 @@ On this page you will find some tips and tricks related to styling a page. Other
 
 ### Kismet reference
 
-```md
-<KismetNode 
-    title="Kismet Node" status="Not documented" image="add_game_ball"
-    folder="TAGame" type="Actions"
-    description="Add a Kismet node to the documentation" 
-    :inputLinks="['Add','Remove']"
-    :outputLinks="['Added','Removed']"
-    :variableLinks="['ball','Targets']"
-    :notes="['This node is synchronous','This nodes requires x or y']"
-/>
-```
+To update the data being used for this project, update the JSON files in `/docs/.vuepress/public/data/`.
+The following data files are being used:
 
-<KismetNode
-    title="Kismet Node" status="Not documented" image="add_game_ball"
-    folder="TAGame" type="Actions"
-    description="Add a Kismet node to the documentation"
-    :inputLinks="['Add','Remove']"
-    :outputLinks="['Added','Removed']"
-    :variableLinks="['ball','Targets']"
-    :notes="['This node is synchronous','This nodes requires x or y']"
-/>
+- `disabled_nodes.json`: kismet guide; details in the documentation page
+- `kismet_nodes.json`: the kismet node reference
+- `kismet_tree.json`: the Car_TA property tree
 
-To update the data being used for this project, update the data files in `public/data/`.
+**Don't forget to update the version badge!**
 
-- `title`: Name of the kismet node used in UDK
-  - Type: `String`
-  - Required: `true`
-- `description`: Summary of what can be done with the kismet node
-  - Type: `String`
-  - Required: `false`
-- `status`: State of the kismet node
-  - Options: `Not documented`, `Not working`, `New`, `ACv3`, `ACv2`, `ACv1`
-  - Type: `String`
-  - Required: `true`
-- `image`: An image of the kismet node. **The image (.png) must be placed in `docs/.vuepress/public/images/kismet/`**
-  - Type: `String` - image name
-  - Required: `false`
-- `folder`: The folder of the kismet node in UDK
-  - Options: `TAGame`, `TAGame_decrypted`
-  - Type: `String`
-  - Required: `true`
-- `type`: Type of kismet node
-  - Options: `Actions`, `Events`
-  - Type: `String`
-  - Required: `true`
-- `:notes`: Tips and remarks about the kismet node
-  - Type: `Array`
-  - Required: `false`
+### Tree
 
-:::warning Semicolon
-To register an array as a property of a kismet node (or any other component) `:` or `v-bind:` must be placed before the name of the array.
-:::
+A recursive tree structure can be used to display a nested object with the `<TreeComponent />`.
 
-*Values:*
+The following properties are exposed:
 
-- `:inputLinks`: All items on the left side of a kismet node (except for `in`)
-  - Type: `Array`
-  - Required: `false`
-- `:outputLinks`: All items on the right side of a kismet node (except for `out`)
-  - Type: `Array`
-  - Required: `false`
-- `:inputLinks`: All variables of a kismet node
-  - Type: `Array`
-  - Required: `false`
+- treeData: the json object to use for the tree. Can be loaded with `require('../path/.vuepress/public/data/file.json')`.
+- firstColor: the base color of an item
+- secondColor: the child color of an item
 
-A not documentated node would then look like this:
+By default only the name is being used for displaying the tree item.
+You can return a string containing html with a function on each item with two options:
 
-```md
-<KismetNode 
-    title="Apply Car Products" status="Not documented" 
-    folder="TAGame_decrypted" type="Actions" 
-/>
+1. Define the callback function directly
+
+   ```js
+   /**
+    * @param {{ name: string, other: any }} item The current item
+    * @param {boolean} isFolder Whether the item is a folder with children
+    */
+   function createItem (item, isFolder) {
+       return `<p>${item.other.displayName}</p>`
+   }
+   ```
+
+   You can then pass this function as property the `createItem` prop.
+
+2. You define the callback on `formatters` with a new key and the callback function on the map. Use cases are for when the component is in markdown files. You then pass the key with the `createItemKey` property to the component.
+
+An example object:
+
+```json
+{
+  "name": "string",
+  "c": [
+    {
+      "name": "string",
+      "other": "any"
+    },
+    {
+      "name": "string",
+      "other": "any",
+      "c": [
+        {
+          // ...
+        }
+      ]
+    }
+  ]
+}
 ```
 
 ## Vuepress assets

@@ -3,10 +3,24 @@ title: Sound
 ---
 # Kismet Sound
 
-# In-Game Sounds <Badge text="not finished" type="warning"/>
+:::tip Decrypting sounds
+Check out the [sound decryption](../decryption/03_sound.md) page for more information on playing sounds outside of the game
+:::
 
-## Game Music
+## In-Game Sounds <Badge text="not finished" type="warning"/>
 
-If you've ever opened CookedPCConsole and sorted by alphabetical, you've seen a long list of files named with seemingly random numbers. Those are all of the songs that play on the main menu!
+Rocket League uses Wwise audio tracks to play sounds in the game.
+To play an in-game sound in your map, you will need to use the `AkAudio` Dummy classes.
 
-[Here is a nice tool to decrypt them](https://drive.google.com/file/d/1kOP6-7ZD-zbXeI6Bj38jjJ9-YVO-hzN4/view?usp=sharing). The resulting `.ogg` files may be played with a media player such as VLC. Keep in mind that these are not DMCA-free.
+First, find a sound cue you want play in the Dummy assets (in the content browser).
+Then go into kismet and add an `AkLoadBank` node to load the bank of the cue.
+Finally you can add an `AkPlaySound` node with the sound cue to play the music from the cue.
+
+For examples of implementations you can look in the workshop for the following maps:
+
+- Beat saber
+
+## Custom sound
+
+At the moment of writing, it is not possible to play custom sound cues / SFX in Rocket League via UDK.
+Be sure to follow the announcement channel in Discord for any updates.

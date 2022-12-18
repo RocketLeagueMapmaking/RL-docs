@@ -1,7 +1,7 @@
 ---
 title: Documentation
 ---
-# Kismet
+# Kismet documentation
 
 ## UDK
 
@@ -23,7 +23,7 @@ Psyonix has not included all kismet nodes that can be found in UDK. For a comple
 
 ::::
 
-## Rocket League
+## Game references
 
 Search for a kismet node in the reference list on this page of all kismet actions and events added by Psyonix from the [Dummy Classes](https://github.com/RocketLeagueMapmaking/RL-Dummy-Classes)
 
@@ -31,3 +31,7 @@ More information about the classes can be found in these references:
 
 - [Kismet nodes reference](./../../resources/references/kismet/nodes.md)
 - [Player properties reference](./../../resources/references/kismet/player.md)
+
+## Game map kismet
+
+If you want to copy or view the kismet of an official map, you can use [this](https://discord.com/channels/711882968200904715/713071168331972699/973280162483425290) experimental build of Unreal Explorer
