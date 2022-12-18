@@ -18,8 +18,8 @@
     "test": "node ./.github/workflows/md_link_check.js",
     "lint": "eslint docs/.vuepress/ --ext .js,.ts,.vue",
     "lint:fix": "npm run lint -- --fix",
-    "lint-markdown": "npx markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
-    "lint-markdown:fix": "npx markdownlint-cli2-fix \"**/*.md\" \"#node_modules\""
+    "lint-markdown": "npx markdownlint-cli2 \"**/*.md\" \"#node_modules\" \"#.github\"",
+    "lint-markdown:fix": "npx markdownlint-cli2-fix \"**/*.md\" \"#node_modules\" \"#.github\""
   },
   "engines": {
     "node": ">= 12.22.0 || >=14.0.0 || >=16.0.0",
