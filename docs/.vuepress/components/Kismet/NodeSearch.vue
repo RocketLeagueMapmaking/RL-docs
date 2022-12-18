@@ -271,6 +271,7 @@ export default {
     },
 
     async mounted (){
+        document.addEventListener('click', this.handleClickOutside)
 
         let types = this.categories.includes(',') ? this.categories.split(',') : [this.categories]
 
@@ -295,10 +296,6 @@ export default {
         if (dummyItems) {
             this.dummyItems = dummyItems
         }
-    },
-
-    mounted() {
-        document.addEventListener('click', this.handleClickOutside)
     },
 
     destroyed() {
