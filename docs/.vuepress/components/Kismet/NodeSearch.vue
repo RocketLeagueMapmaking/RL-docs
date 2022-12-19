@@ -190,7 +190,7 @@ const getDummyClasses = async () => {
 }
 
 export const formatNodes = (nodes) => nodes.map(node => {
-    const escape = (input) => input.replaceAll('"', '')
+    const escape = (input) => input.replace(/"/g, '')
 
     node.displayName = escape(node.displayName)
     node.category = escape(node.category)
@@ -425,13 +425,13 @@ export default {
         },
 
         queryToName(query) {
-            return query.replaceAll('_',' ').split(' ').map(word => {
+            return query.replace(/_/g,' ').split(' ').map(word => {
                 return word[0].toUpperCase() + word.slice(1)
             }).join(' ')
         },
 
         nameToQuery(name) {
-            return name.toLowerCase().replaceAll(' ','_')
+            return name.toLowerCase().replace(/ /g,'_')
         },
 
         suggestedText() {
