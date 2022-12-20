@@ -10,7 +10,12 @@
         v-if="isFolder"
         :style="{ 'padding-right': '5px'}"
       ><span v-if="!isOpen"> &#9650;</span><span v-else>&#9660;</span></span>
-      <component :is="componentItems.get(renderComponent)" :item="computedItem" :isFolder="isFolder > 0" :parents="parents" />
+      <component
+        :is="componentItems.get(renderComponent)"
+        :item="computedItem"
+        :is-folder="isFolder > 0"
+        :parents="parents"
+      />
     </div>
     <div
       v-show="isOpen"
@@ -22,10 +27,10 @@
         class="item"
         :parents="parents.concat(computedItem.name)"
         :item="computeItem(child)"
-        :renderComponent="renderComponent"
+        :render-component="renderComponent"
         :is-first-color="!isFirstColor"
         :classes="classes"
-        :itemsToFilter="itemsToFilter.slice(1)"
+        :items-to-filter="itemsToFilter.slice(1)"
         :open-on-created="openOnCreated"
       />
     </div>

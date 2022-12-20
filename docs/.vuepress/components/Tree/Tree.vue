@@ -6,7 +6,7 @@
       :classes="treeData.classes"
       :is-first-color="true"
       :items-to-filter="highlighted"
-      :renderComponent="itemCompName"
+      :render-component="itemCompName"
       :open-on-created="openAll"
     />
   </div>
