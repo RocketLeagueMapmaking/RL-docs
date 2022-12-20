@@ -32,4 +32,5 @@ The class `Car_TA` is in local matches and training (`Car_Freeplay_TA` is extend
 <TreeComponent
     :treeData="require('../../../.vuepress/public/data/kismet_tree.json')"
     createItemKey="kismetNode"
+    itemCompName="PRITree"
 />

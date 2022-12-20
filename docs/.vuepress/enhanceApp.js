@@ -14,6 +14,7 @@ import KismetNode from './components/Kismet/Node.vue'
 
 import Tree from './components/Tree/Tree.vue'
 import TreeItem from './components/Tree/TreeItem.vue'
+import PRITreeItem from './components/Tree/PRITreeItem.vue'
 
 export default ({
     Vue, // the version of Vue being used in the VuePress app
@@ -32,6 +33,7 @@ export default ({
         ['KismetNodeList', KismetNodeList],
         ['TreeComponent', Tree],
         ['TreeItem', TreeItem],
+        ['PRITreeItem', PRITreeItem],
     ]
 
     for (const component of components) {

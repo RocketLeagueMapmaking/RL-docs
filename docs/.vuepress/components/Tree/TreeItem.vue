@@ -10,29 +10,53 @@
         v-if="isFolder"
         :style="{ 'padding-right': '5px'}"
       ><span v-if="!isOpen"> &#9650;</span><span v-else>&#9660;</span></span>
-      <span v-html="createItem(computedItem, isFolder)" />
+      <component :is="componentItems.get(renderComponent)" :item="computedItem" :isFolder="isFolder > 0" :parents="parents" />
     </div>
     <div
       v-show="isOpen"
       v-if="isFolder"
     >
       <tree-item
-        v-for="(child, index) in computedItem.c"
+        v-for="(child, index) in filterChildren(computedItem)"
         :key="index"
         class="item"
+        :parents="parents.concat(computedItem.name)"
         :item="computeItem(child)"
+        :renderComponent="renderComponent"
         :is-first-color="!isFirstColor"
-        :create-item="createItem"
         :classes="classes"
+        :itemsToFilter="itemsToFilter.slice(1)"
+        :open-on-created="openOnCreated"
       />
     </div>
   </div>
 </template>
 
 <script>
+import PRITreeItem from './PRITreeItem.vue'
+
+const componentItems = new Map()
+    .set('PRITree', PRITreeItem)
+
 export default {
     props: {
         item: Object,
+        renderComponent: String,
+        openOnCreated: {
+            type: Boolean,
+            default: false,
+            required: false,
+        },
+        parents: {
+            type: Array,
+            required: false,
+            default: () => []
+        },
+        itemsToFilter: {
+            type: Array,
+            required: false,
+            default: () => []
+        },
         isFirstColor: {
             required: true,
             type: Boolean,
@@ -47,10 +71,6 @@ export default {
             type: String,
             default: 'var(--borderColor)'
         },
-        createItem : {
-            required: true,
-            type: Function,
-        },
         classes: {
             required: true,
             type: Array,
@@ -58,29 +78,50 @@ export default {
     },
     data: function () {
         return {
-            isOpen: false,
+            toggled: false,
+            toggledOnce: false,
+            componentItems,
         }
     },
     computed: {
+        isOpen: function () {
+            return !this.toggledOnce ? this.openOnCreated : this.toggled
+        },
         isFolder: function () {
             return this.item.c && this.item.c.length
         },
         computedItem: function () {
-            const out = 'cr' in this.item ? this.classes.find(x => x.type === this.item.cr) : this.item
-            if (!out) console.log('Unable to find item', this.item)
-            return out
+            return this.computeItem(this.item)
         }
     },
     methods: {
+        filterChild: function (child) {
+            return this.itemsToFilter.length > 1 ? this.itemsToFilter[1] === this.computeItem(child).name : true
+        },
+        filterChildren: function (item) {
+            if (!item.c) return []
+            else return item.c.filter(n => this.filterChild(n))
+        },
         toggle: function () {
+            if (!this.toggledOnce) this.toggledOnce = true
             if (this.isFolder) {
-                this.isOpen = !this.isOpen
+                this.toggled = !this.toggled
             }
         },
         computeItem: function (item) {
-            const out = 'cr' in item ? this.classes.find(x => x.type === item.cr) : item
+            if (!('cr' in item)) {
+                // if (this.parents.length > 3 || !item.type || !item.type.includes('_')) return item
+
+                // const Class = this.classes.find(x => x.type === item.type)
+                return item
+            }
+            const out = this.classes.find(x => x.type === item.cr)
             if (!out) console.log('Unable to find item', item)
-            return out
+            // if (out) out.name = item.name
+            return {
+                ...out,
+                name: item.name
+            }
         }
     },
 }
@@ -101,6 +142,14 @@ export default {
     margin-bottom: 2px;
 }
 
+.tree-item-content.bold {
+    display: flex;
+    flex-direction: row;
+}
+
+.tree-item-content.bold:hover {
+    cursor: pointer;
+}
 
 
 ul, li {
