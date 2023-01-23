@@ -94,14 +94,14 @@ In the Matinee window you may also set your own hotkeys by going to `Edit` > `Co
 You can change the text of almost any message or button (including the `Save all` button) in  
 `{UDK Folder}\Engine\Localization\INT\UnrealEd.int`
 
-### Context menu
+### Actor context menu
 
 You can add (or remove) your own favorite classes in the right click > add actors menu. For class `MyClass`, add the class `ActorFactoryMyClass` in a source folder:
 
 ```uc
 // /Development/src/MyMod/Classes/ActorFactoryMyClass.uc
 
-class ActorFactoryDynamicMesh extends ActorFactory
+class ActorFactoryMyClass extends ActorFactory
     config(Editor)
     collapsecategories
     hidecategories(Object)
@@ -116,6 +116,27 @@ defaultproperties
 ```
 
 By setting `bShowInEditorQuickMenu=true` you can move `MyClass` from `add actors > templates > MyClass` to the most-used actors in `add actors > MyClass`.
+
+### Content browser context menu
+
+Similar to the actor classes menu, you can extend the `Factory` class for a custom item in the content browser.
+
+```uc
+// /Development/src/MyMod/Classes/ActorFactoryMyClassNew.uc
+
+class ActorFactoryMyClassNew extends Factory
+    native;
+
+defaultproperties
+{
+    SupportedClass=class'MyClass'
+    Description="My Class"
+    bCreateNew=True
+}
+```
+
+- you can't remove items from the context menu, but if the list is outside the viewport select a random item and change the factory to the class you want in the menu.
+- as with other factories, you can't set properties in the new factory window
 
 ## More
 
