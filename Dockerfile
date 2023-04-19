@@ -10,6 +10,9 @@ WORKDIR /opt/build
 # Copy in dependency resolution files.
 COPY package*.json ./
 
+# Copy in contributing guide to sync with the site.
+COPY CONTRIBUTING.md ./
+
 # Install NPM dependencies. Execute this before copy to ensure that caching occurs.
 RUN npm ci
 

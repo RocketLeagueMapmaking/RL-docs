@@ -24,10 +24,6 @@ If you have disabled the Welcome screen, you can access it in the `Help` menu. C
 - In `{UDK Folder}\Engine\EditorResources\WPF\Controls\WelcomeScreen.xaml` you can replace the images and the background of the welcome screen with your own images. Replace the current source (in line 13-20) with the path of the image, they can be located in anywhere on your computer
 - In `{UDK Folder}\Engine\Localization\INT\UnrealEd.int` you can change the text above the title by replacing `WelcomeScreen_Title` (line 71)
 
-:::warning Changing URLs
-URLs are bound to keys that can't be changed without having the source code of UDK
-:::
-
 ## Map Templates
 
 You can replace the UDK templates with (your own) custom maps templates. Try to keep these up to date with any framework changes as we continue to learn more about modding Rocket League. To save your own map as a template:
