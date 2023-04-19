@@ -124,7 +124,7 @@ const checkHeader = (header, otherPagePath, searchOptions, logMatches, link = ''
     const { additionalPages, site, source } = searchOptions
 
     if (additionalPages.some(page => page.path === otherPagePath)) {
-        if (logMatches) console.log(`Skipping header check on additional page: ${header} [${otherPagePath}]`)
+        console.log(chalk.yellowBright(`Skipping header check on additional page: ${header} [${otherPagePath}]`))
         return
     }
 
@@ -192,12 +192,12 @@ module.exports = (options, ctx) => {
 
             const invalidLinks = checkInternal || checkExternal ? markdownPages.map((content, i) => {
                 /**
-                 * @type {Array<MarkdownLink>}
+                 * @type {Array<string>}
                  */
-                const links = markdownLinkExtractor(content, true)
+                const links = markdownLinkExtractor(content, true).links
 
                 // Check only for internal vuepress links
-                const pageLinks = links.filter(n => checkExternal ? n : !n.href.startsWith('http'))
+                const pageLinks = links.filter(n => checkExternal ? n : !n.startsWith('http'))
                 if (pageLinks.length < 0) { 
                     return null
                 }
@@ -206,8 +206,7 @@ module.exports = (options, ctx) => {
                 if (checkExternal) pageLinks.forEach(checkExternalLink)
 
                 // Get all invalid links on this page
-                const invalidPageLinks = checkInternal ? pageLinks.map(link => {
-                    const { href, raw } = link
+                const invalidPageLinks = checkInternal ? pageLinks.map(href => {
                     const sitePage = site[i].path
 
                     // Link is a header on the current page
@@ -224,7 +223,7 @@ module.exports = (options, ctx) => {
                             checkHeader(header, path , searchOptions, logMatches, href)
                         }
 
-                        if (logMatches) console.log(chalk.green(`Valid link: ${raw}`))
+                        if (logMatches) console.log(chalk.green(`Valid link: ${href}`))
                     } else {
                         return `Invalid link found: ${href} [${sitePage}]`
                     }

@@ -36,8 +36,8 @@ You'll likely require assistance at some point in your journey. Please check the
 
 This website has no advertisements so you can focus on the important stuff. If you want to support us with content, ideas, or simply money (for contests), we would greatly appreciate it!
 
-* [Contribute to this guide](../more/contribute.md#this-guide)
-* [Donate (for future contests)](../more/contribute.md#financial-contribution)
+* [Contribute to this guide](../more/contribute.md)
+* [Donate (for future contests)](https://patreon.com/rocketleaguemapmaking)
 
 ## Cheat Sheets
 

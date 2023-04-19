@@ -18,7 +18,7 @@ set OutFolder="{DecryptedMaps}"
 RLUPKTool -f %InFolder% -o %OutFolder%
 ```
 
-This will add the `.upk` files to another to a folder which will be referenced as `{DecryptedMaps}`
+This will add the `.upk` files to another to a folder which will be referenced as `{DecryptedMaps}`. Note that the in and out folder are folders you have to add yourself.
 
 ## Dummy assets
 
