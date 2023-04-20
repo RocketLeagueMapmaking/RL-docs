@@ -25,17 +25,25 @@ Nodes from the TAGame folder were added to UDK by Psyonix. For all other nodes y
 
 Make sure that you have downloaded [the latest Dummy Classes](https://github.com/RocketLeagueMapmaking/RL-Dummy-Classes), or you might not see all of the nodes displayed on this page. Copy the folders containing the classes into `{UDK}\Development\Src\` and Windows should copy only the new files. You will then have to run a Full Recompile in Unreal Frontend. **It's a good idea to make backups before recompiling.**
 
-### Actions
+:::warning Unreal Frontend
+Sometimes the recompile using the console might not give the correct exit status.
+If you restart and still see the "classes need an update" message, use Unreal Frontend to recompile.
+:::
 
----
+<!-- 
+// TODO: remove comment when cheatsheets are updated and PRI one is added to the others
+### PRI Cheatsheet
 
-<KismetNode
-    title="Add Game Ball" status="Not documented" image="add_game_ball"
-    folder="TAGame" type="Actions"
-    description="Add a ball to the game"
-/>
+It is tricky to get a property from a player when you need a sequence of multiple `Get Property`'s.
+See the [PRI Cheatsheet](/) for autocomplete to see the path for getting the property.
 
-<KismetNode
-    title="Apply Car Products" status="Not documented"
-    folder="TAGame_decrypted" type="Actions"
-/>
+### Kismet nodes
+
+#### Disabled 
+
+#### Psyonix
+
+Below is a list of nodes added by Psyonix. 
+They might not be in the Dummy classes or give a clear description on what it does, visit the Discord server for help.
+
+-->

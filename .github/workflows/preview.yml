@@ -10,7 +10,7 @@ on:
 jobs:
   preview:
     runs-on: ubuntu-latest
-    if: secrets.CLOUDFLARE_API_TOKEN && github.repository_owner != 'RocketLeagueMapmaking'
+    if: ${{ github.repository_owner != 'RocketLeagueMapmaking' }}
     permissions:
       contents: read
       deployments: write
@@ -19,14 +19,27 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Install node.js v16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
       - name: Build Vuepress
         run: npm run docs:build
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@1
+        id: cloudflare
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: ${{ secrets.CLOUDFLARE_PROJECTNAME }}
-          directory: /docs/.vuepress/dist
+          directory: docs/.vuepress/dist
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Log
+        run: echo "Deployed preview site on ${{ steps.cloudflare.outputs.url }}"

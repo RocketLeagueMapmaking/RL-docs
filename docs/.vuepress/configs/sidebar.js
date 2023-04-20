@@ -8,31 +8,31 @@
 module.exports = {
     '/essential/': [
         {
-            title: 'Mapmaking Essentials',   
-            collapsable: false, 
-            sidebarDepth: 1,    
+            title: 'Mapmaking Essentials',
+            collapsable: false,
+            sidebarDepth: 1,
             children: [
                 '',
                 '01_flowchart',
                 '02_clarifications'
             ]
         },
-    
+
         {
-            title: 'Installing UDK',   
-            collapsable: false, 
-            sidebarDepth: 1,    
+            title: 'Installing UDK',
+            collapsable: false,
+            sidebarDepth: 1,
             children: [
                 '03_installing',
                 '04_dummy_classes',
                 '05_project_setup'
             ]
         },
-    
+
         {
-            title: 'Exploring UDK',   
-            collapsable: false, 
-            sidebarDepth: 1,    
+            title: 'Exploring UDK',
+            collapsable: false,
+            sidebarDepth: 1,
             children: [
                 '06_udk_intro',
                 '07_udk_editor',
@@ -41,21 +41,51 @@ module.exports = {
             ]
         }
     ],
-  
-    '/guide/': [
+
+    '/guide/blender': [
         {
-            title: 'Information',  
-            collapsable: false, 
-            sidebarDepth: 1,    
+            title: 'Blender Basics',
+            collapsable: false,
+            sidebarDepth: 1,
             children: [
-                ''
+                '/guide/blender/01_blender',
+                '/guide/blender/02_intro',
+                '/guide/blender/03_setup',
+                '/guide/blender/04_modeling',
+                '/guide/blender/06_uv',
+                '/guide/blender/07_unwrapping',
+                '/guide/blender/08_resolution',
+                '/guide/blender/09_mipmaps',
+                '/guide/blender/10_interlude_other'
             ]
         },
 
         {
-            title: 'UDK Basics',   
-            collapsable: true, 
-            sidebarDepth: 1,    
+            title: 'Exporting to UDK',
+            collapsable: false,
+            sidebarDepth: 1,
+            children: [
+                '/guide/blender/05_fbx',
+            ]
+        },
+
+        {
+            title: 'Blender Advanced',
+            collapsable: false,
+            sidebarDepth: 1,
+            children: [
+                '/guide/blender/11_animation',
+                '/guide/blender/12_modifiers',
+                '/guide/blender/13_curves'
+            ]
+        }
+    ],
+
+    '/guide/': [
+        {
+            title: 'UDK Basics',
+            collapsable: false,
+            // sidebarDepth: 1,
             children: [
                 '/guide/udk/00_start',
                 '/guide/udk/01_csg',
@@ -75,27 +105,8 @@ module.exports = {
         },
 
         {
-            title: 'Blender Basics',   
-            collapsable: true, 
-            sidebarDepth: 1,    
-            children: [
-                '/guide/blender/01_blender',
-                '/guide/blender/02_intro',
-                '/guide/blender/03_setup',
-                '/guide/blender/04_modeling',
-                '/guide/blender/05_fbx',
-                '/guide/blender/06_uv',
-                '/guide/blender/07_unwrapping',
-                '/guide/blender/08_resolution',
-                '/guide/blender/09_mipmaps',
-                '/guide/blender/10_interlude_other'
-            ]
-        },
-
-        {
-            title: 'UDK Advanced',   
-            collapsable: true, 
-            sidebarDepth: 1,    
+            title: 'UDK Advanced',
+            collapsable: false,
             children: [
                 '/guide/udk/14_dummy_assets',
                 '/guide/udk/15_archetypes',
@@ -111,9 +122,9 @@ module.exports = {
         },
 
         {
-            title: 'Kismet',   
-            collapsable: true, 
-            sidebarDepth: 1,    
+            title: 'Kismet',
+            collapsable: false,
+            sidebarDepth: 1,
             children: [
                 '/guide/kismet/01_kismet',
                 '/guide/kismet/02_project',
@@ -125,20 +136,9 @@ module.exports = {
         },
 
         {
-            title: 'Blender Advanced',   
-            collapsable: true, 
-            sidebarDepth: 1,    
-            children: [
-                '/guide/blender/11_animation',
-                '/guide/blender/12_modifiers',
-                '/guide/blender/13_curves'
-            ]
-        },
-
-        {
-            title: 'Textures',   
-            collapsable: true, 
-            sidebarDepth: 1,    
+            title: 'Textures',
+            collapsable: false,
+            sidebarDepth: 1,
             children: [
                 '/guide/textures/01_textures',
                 '/guide/textures/02_custom',
@@ -147,9 +147,9 @@ module.exports = {
         },
 
         {
-            title: 'Multiplayer',   
-            collapsable: true, 
-            sidebarDepth: 1,    
+            title: 'Multiplayer',
+            collapsable: false,
+            sidebarDepth: 1,
             children: [
                 '/guide/multiplayer/01_multiplayer',
                 '/guide/multiplayer/02_publishing',
@@ -158,9 +158,9 @@ module.exports = {
         },
 
         {
-            title: 'Decryption',   
-            collapsable: true, 
-            sidebarDepth: 1,    
+            title: 'Decryption',
+            collapsable: false,
+            sidebarDepth: 1,
             children: [
                 '/guide/decryption/',
                 '/guide/decryption/01_assets',
@@ -171,9 +171,9 @@ module.exports = {
         },
 
         {
-            title: 'Miscellaneous',   
-            collapsable: true, 
-            sidebarDepth: 1,    
+            title: 'Miscellaneous',
+            collapsable: false,
+            sidebarDepth: 1,
             children: [
                 '/guide/misc/01_misc',
                 '/guide/misc/02_grass',
@@ -189,9 +189,9 @@ module.exports = {
 
     '/more/': [
         {
-            title: 'More Information',   
-            collapsable: false, 
-            sidebarDepth: 1,    
+            title: 'More Information',
+            collapsable: false,
+            sidebarDepth: 1,
             children: [
                 'about',
                 'contact',
@@ -201,36 +201,11 @@ module.exports = {
         }
     ],
 
-    '/resources/references/': [
-        {
-            title: 'References',
-            collapsable: false,
-            sidebarDepth: 1,
-            children: [
-                'guide',
-                'psyonix',
-                'ue5'
-            ]
-        }
-    ],
-    
-    '/ue5/': [
-        {
-            title: 'UE5',
-            collapsable: false,
-            sidebarDepth: 1,
-            children: [
-                '',
-                'comparison'
-            ]
-        }
-    ],
-
     '/cheatsheet/': [
         {
-            title: 'Cheat Sheets',   
-            collapsable: false, 
-            sidebarDepth: 1,    
+            title: 'Cheat Sheets',
+            collapsable: false,
+            sidebarDepth: 1,
             children: [
                 '',
                 '01_stickywalls',
@@ -247,5 +222,30 @@ module.exports = {
                 '12_uvmaps'
             ]
         }
-    ]
+    ],
+
+    '/resources/references/': [
+        {
+            title: 'References',
+            collapsable: false,
+            sidebarDepth: 1,
+            children: [
+                'guide',
+                'psyonix',
+                'ue5'
+            ]
+        }
+    ],
+
+    '/ue5/': [
+        {
+            title: 'UE5',
+            collapsable: false,
+            sidebarDepth: 1,
+            children: [
+                '',
+                'comparison'
+            ]
+        }
+    ],
 }
