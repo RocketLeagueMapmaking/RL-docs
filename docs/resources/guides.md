@@ -8,6 +8,10 @@ tags:
 
 More Recent/Thorough Guides At The Top
 
+## 2023
+
+* [Rocket Sledge's How To Play Custom Maps](https://www.youtube.com/watch?v=qPJO9GSexKU)
+
 ## 2021
 
 * [Simple Shark's RLMM Tutorial Series](https://www.youtube.com/playlist?list=PLIomqmQFYkVTl2FI2YBGzGuUZWSvZnS9d)

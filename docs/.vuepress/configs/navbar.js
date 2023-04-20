@@ -95,6 +95,10 @@ module.exports = [
                         link: '/resources/tools'
                     },
                     {
+                        text: 'Discord server',
+                        link: 'https://discord.gg/PWu3ZWa'
+                    },
+                    {
                         text: 'Steam workshop',
                         link: 'https://steamcommunity.com/app/252950/workshop/'
                     }
