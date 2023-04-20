@@ -42,4 +42,4 @@ jobs:
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Log
-        run: echo "Deployed preview site on https://${{ steps.cloudflare.outputs.id }}.rocketleaguemapmaking.pages.dev"
+        run: echo "Deployed preview site on ${{ steps.cloudflare.outputs.url }}"
