@@ -10,7 +10,7 @@ import FlowChart from './components/FlowChart'
 import KismetNodeSearch from './components/Kismet/NodeSearch.vue'
 import KismetNodeList from './components/Kismet/NodeList.vue'
 import KismetNodeProperty from './components/Kismet/NodeProperty.vue'
-import KismetNode from './components/Kismet/Node.vue'
+import KismetNode from './components/Kismet/NodeItem.vue'
 import KismetUpdatedList from './components/Kismet/UpdatedList.vue'
 
 import Tree from './components/Tree/Tree.vue'

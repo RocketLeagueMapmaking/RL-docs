@@ -77,7 +77,7 @@ module.exports = [
             },
             {
                 text: 'References',
-                link: '/resources/references/'
+                link: '/resources/references/guide'
             },
             {
                 text: 'Community',

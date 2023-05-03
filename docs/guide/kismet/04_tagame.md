@@ -17,7 +17,9 @@ Nodes from the TAGame and a few other folders were added to UDK by Psyonix. For 
 Psyonix has not included all kismet nodes that can be found in UDK. For a complete list of all kismet nodes that do not work in Rocket League see the reference list below. To hide these nodes in UDK add `deprecated` in the header of the UnrealScript files or remove them if you no longer want them.
 
 :::details List of disabled nodes
-<KismetUpdatedList state="deleted"/>
+<!-- Span needed to give more space to the list -->
+<span style="visibility: hidden"></span>
+<KismetUpdatedList state="deleted" style="padding-top: 20px;" />
 :::
 
 ::::

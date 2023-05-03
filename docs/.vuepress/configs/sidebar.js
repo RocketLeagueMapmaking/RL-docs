@@ -233,15 +233,15 @@ module.exports = {
                 'guide',
                 'psyonix',
                 'ue5',
-                {
-                    title: 'Kismet',
-                    collapsable: false,
-                    sidebarDepth: 1,
-                    children: [
-                        'kismet/nodes',
-                        'kismet/player'
-                    ]
-                }
+            ]
+        },
+        {
+            title: 'Kismet references',
+            collapsable: false,
+            sidebarDepth: 1,
+            children: [
+                'kismet/nodes',
+                'kismet/player'
             ]
         }
     ],

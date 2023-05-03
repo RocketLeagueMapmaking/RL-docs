@@ -157,38 +157,6 @@
 
 import TAGameData from '../../public/data/kismet_nodes.json'
 
-const getDummyClasses = async () => {
-    const lastTime = localStorage.getItem('dummyClassesUpdateTime')
-    const today = Math.round(new Date().getTime() / 1000)
-
-    if (!lastTime || (today - Number(lastTime) > (24 * 3600))) {
-        const itemFilter = item => item.path.endsWith('.uc') && item.type === 'blob' && item.path.includes('Classes/Seq')
-        const repo = 'https://api.github.com/repos/RocketLeagueMapmaking/RL-Dummy-Classes/git/trees/95b6d7dcaea3620687636e1f5e76bdb237e50755?recursive=true'
-    
-        const items = await fetch(repo).then(async response => {
-            const json = await response.json()
-
-            if (!json || !json.tree) return null
-      
-            return json.tree.filter(itemFilter).map(item => item.path)
-        })
-
-        if (!items) {
-            return null
-        }
-
-        localStorage.setItem('dummyClassesItems', JSON.stringify(items))
-        localStorage.setItem('dummyClassesUpdateTime', today.toString())
-
-        return items
-    } else {
-        const items = localStorage.getItem('dummyClassesItems')
-        if (items) {
-            return JSON.parse(items)
-        }
-    }
-}
-
 export const formatNodes = (nodes) => nodes.map(node => {
     const escape = (input) => input.replace(/"/g, '')
 
@@ -291,11 +259,6 @@ export default {
             if (type != null) this.setType({ target:{ value: type }})
             if (upk != null) this.setUPK({ target:{ value: upk }})
         }
-
-        // const dummyItems = await getDummyClasses()
-        // if (dummyItems) {
-        //     this.dummyItems = dummyItems
-        // }
     },
 
     destroyed() {

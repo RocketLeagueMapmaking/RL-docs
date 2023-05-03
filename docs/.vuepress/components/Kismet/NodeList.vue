@@ -33,7 +33,7 @@
           <KismetNode
             :node="node"
             :category="category"
-            :hide-image="IsNonDummyClass(node)"
+            :hide-image="false"
           />
         </div>
       </div>
@@ -46,7 +46,7 @@
 import TAGameData from '../../public/data/kismet_nodes.json'
 
 import { formatNodes } from './NodeSearch.vue'
-import KismetNode from './Node.vue'
+import KismetNode from './NodeItem.vue'
 
 const nodes = formatNodes(TAGameData)
 
@@ -68,6 +68,7 @@ export default {
         },
         dummyItems: {
             type: Array,
+            default: [],
             required: false
         },
         onlyDummyItems: {
@@ -76,6 +77,7 @@ export default {
         },
         names: {
             type: Array,
+            default: [],
             required: false
         }
     },

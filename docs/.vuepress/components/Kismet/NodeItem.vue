@@ -1,10 +1,10 @@
 <template>
   <div class="kismet-node">
     <p>
-      Class: {{ node.Class }} <a
+      Class: <a
         v-if="!hideImage"
         :href="source(node)"
-      >Source</a>
+      >{{ node.Class }}</a>
     </p>
     <!-- A description of the kismet node -->
     <p v-if="node.description">
