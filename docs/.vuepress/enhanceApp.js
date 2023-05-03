@@ -13,7 +13,7 @@ import KismetNodeProperty from './components/Kismet/NodeProperty.vue'
 import KismetNode from './components/Kismet/NodeItem.vue'
 import KismetUpdatedList from './components/Kismet/UpdatedList.vue'
 
-import Tree from './components/Tree/Tree.vue'
+import Tree from './components/Tree/TreeComponent.vue'
 import TreeItem from './components/Tree/TreeItem.vue'
 import PRITreeItem from './components/Tree/PRITreeItem.vue'
 

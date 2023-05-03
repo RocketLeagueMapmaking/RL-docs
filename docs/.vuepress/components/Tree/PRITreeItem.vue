@@ -1,69 +1,69 @@
 <template>
-  <span class="item-render-content">
-    <div v-if="isFolder">
-      <span :title="item.type">{{ item.name }}</span>
-    </div>
-    <div
-      v-else
-      class="child"
-    >
-      <div>
-        <span
-          :title="`${item.Package}.${item.Class}`"
-          style="padding-right: 8px;"
-        >{{ item.type }}</span>
-        <span :title="item.category != null ? `Editor category: (${item.category})` : ''">{{ item.name }}</span>
-      </div>
-      <span
-        v-if="item.replicated === 'True'"
-        style="background-color: var(--accentColor); border-radius: 2px; padding: 1px 10px;"
-      >
-        R
-      </span>
-    </div>
-    <div
-      v-if="parents.length > 0"
-      class="actions"
-    >
-      <button
-        title="Share this path"
-        @click="copy(['Player'].concat(parents.slice(1)).join('.') + `.${item.name}`, 'the item path')"
-      >
-        <span
-          class="iconify"
-          data-icon="material-symbols:conversion-path"
-        />
+    <span class="item-render-content">
+        <div v-if="isFolder">
+            <span :title="item.type">{{ item.name }}</span>
+        </div>
+        <div
+            v-else
+            class="child"
+        >
+            <div>
+                <span
+                    :title="`${item.Package}.${item.Class}`"
+                    style="padding-right: 8px;"
+                >{{ item.type }}</span>
+                <span :title="item.category != null ? `Editor category: (${item.category})` : ''">{{ item.name }}</span>
+            </div>
+            <span
+                v-if="item.replicated === 'True'"
+                style="background-color: var(--accentColor); border-radius: 2px; padding: 1px 10px;"
+            >
+                R
+            </span>
+        </div>
+        <div
+            v-if="parents.length > 0"
+            class="actions"
+        >
+            <button
+                title="Share this path"
+                @click="copy(['Player'].concat(parents.slice(1)).join('.') + `.${item.name}`, 'the item path')"
+            >
+                <span
+                    class="iconify"
+                    data-icon="material-symbols:conversion-path"
+                />
 
-      </button>
-      <button
-        title="Share this property"
-        @click="copy(shareUrl(), 'the url to this item path')"
-      >
-        <span
-          class="iconify"
-          data-icon="fa6-solid:link"
-        />
-      </button>
-      <button
-        title="Copy kismet"
-        @click="fetchKismet()"
-      >
-        <span
-          class="iconify"
-          data-icon="fa6-solid:clone"
-        />
-      </button>
-    </div>
-  </span>
+            </button>
+            <button
+                title="Share this property"
+                @click="copy(shareUrl(), 'the url to this item path')"
+            >
+                <span
+                    class="iconify"
+                    data-icon="fa6-solid:link"
+                />
+            </button>
+            <button
+                title="Copy kismet"
+                @click="fetchKismet()"
+            >
+                <span
+                    class="iconify"
+                    data-icon="fa6-solid:clone"
+                />
+            </button>
+        </div>
+    </span>
 </template>
 
 <script>
 
 export default {
     props: {
-        item: Object,
-        isFolder: Boolean,
-        parents: Array
+        item: { type: Object, required: true },
+        isFolder: { type: Boolean, required: true },
+        parents: { type: Array, required: true },
     },
     methods: {
         copy: function (text, type) {

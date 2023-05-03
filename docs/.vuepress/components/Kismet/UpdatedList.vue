@@ -1,20 +1,25 @@
 <template>
     <span>
-        <span v-for="node in nodes" :key="node">- {{ node }}<br></span>
+        <span 
+            v-for="node in nodes" 
+            :key="node"
+        >
+            - {{ node }}<br>
+        </span>
     </span>
 </template>
 
 <script>
 export default {
-    data () {
-        return { 
-            nodes: ['Loading...'] 
-        }
-    },
     props: {
         state: { 
             type: String,
             required: true,
+        }
+    },
+    data () {
+        return { 
+            nodes: ['Loading...'] 
         }
     },
     async mounted () {
@@ -22,8 +27,8 @@ export default {
         const data = await fetch(`https://raw.githubusercontent.com/ghostrider-05/RL-dummy-classes2/${branch}/ci/changelog/kismet.json`)
             .then(res => res.json())
             .catch(err => {
-                console.log(err);
-                return undefined;
+                console.log(err)
+                return undefined
             })
 
         if (data) {

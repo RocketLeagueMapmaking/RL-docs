@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <TreeItem
-      class="item"
-      :item="treeData"
-      :classes="treeData.classes"
-      :is-first-color="true"
-      :items-to-filter="highlighted"
-      :render-component="itemCompName"
-      :open-on-created="openAll"
-    />
-  </div>
+    <div>
+        <TreeItem
+            class="item"
+            :item="treeData"
+            :classes="treeData.classes"
+            :is-first-color="true"
+            :items-to-filter="highlighted"
+            :render-component="itemCompName"
+            :open-on-created="openAll"
+        />
+    </div>
 </template>
 
 <script>

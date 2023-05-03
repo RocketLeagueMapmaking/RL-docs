@@ -1,52 +1,52 @@
 <template>
-  <div class="kismet-node">
-    <p>
-      Class: <a
-        v-if="!hideImage"
-        :href="source(node)"
-      >{{ node.Class }}</a>
-    </p>
-    <!-- A description of the kismet node -->
-    <p v-if="node.description">
-      {{ node.description }}
-    </p>
-    <!-- The image of the kismet node -->
-    <img
-      v-if="!hideImage"
-      :src="imagePath(node)"
-      :alt="node.name"
-    >
-    <!-- A list of all links (input, output and variable) and properties -->
-    <ul>
-      <div v-if="node.variables.length > 0">
-        <KismetNodeProperty
-          header="Properties"
-          :properties="node.variables"
-        />
-      </div>
+    <div class="kismet-node">
+        <p>
+            Class: <a
+                v-if="!hideImage"
+                :href="source(node)"
+            >{{ node.Class }}</a>
+        </p>
+        <!-- A description of the kismet node -->
+        <p v-if="node.description">
+            {{ node.description }}
+        </p>
+        <!-- The image of the kismet node -->
+        <img
+            v-if="!hideImage"
+            :src="imagePath(node)"
+            :alt="node.name"
+        >
+        <!-- A list of all links (input, output and variable) and properties -->
+        <ul>
+            <div v-if="node.variables.length > 0">
+                <KismetNodeProperty
+                    header="Properties"
+                    :properties="node.variables"
+                />
+            </div>
 
-      <div v-if="node.links.input.length > 0">
-        <KismetNodeProperty
-          header="Input links"
-          :properties="node.links.input"
-        />
-      </div>
+            <div v-if="node.links.input.length > 0">
+                <KismetNodeProperty
+                    header="Input links"
+                    :properties="node.links.input"
+                />
+            </div>
 
-      <div v-if="node.links.output.length > 0">
-        <KismetNodeProperty
-          header="Output links"
-          :properties="node.links.output"
-        />
-      </div>
+            <div v-if="node.links.output.length > 0">
+                <KismetNodeProperty
+                    header="Output links"
+                    :properties="node.links.output"
+                />
+            </div>
 
-      <div v-if="node.links.variable.length > 0">
-        <KismetNodeProperty
-          header="Variable links"
-          :properties="node.links.variable"
-        />
-      </div>
-    </ul>
-  </div>
+            <div v-if="node.links.variable.length > 0">
+                <KismetNodeProperty
+                    header="Variable links"
+                    :properties="node.links.variable"
+                />
+            </div>
+        </ul>
+    </div>
 </template>
 
 <script>

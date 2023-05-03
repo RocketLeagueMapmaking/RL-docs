@@ -1,40 +1,40 @@
 <template>
-  <div class="tree-item">
-    <div
-      :class="{ bold: isFolder }"
-      class="tree-item-content"
-      :style="{ 'background-color': isFirstColor ? firstColor : secondColor, 'font-weight': isFolder ? 700 : 400 }"
-      @click="toggle"
-    >
-      <span
-        v-if="isFolder"
-        :style="{ 'padding-right': '5px'}"
-      ><span v-if="!isOpen"> &#9650;</span><span v-else>&#9660;</span></span>
-      <component
-        :is="componentItems.get(renderComponent)"
-        :item="computedItem"
-        :is-folder="isFolder > 0"
-        :parents="parents"
-      />
+    <div class="tree-item">
+        <div
+            :class="{ bold: isFolder }"
+            class="tree-item-content"
+            :style="{ 'background-color': isFirstColor ? firstColor : secondColor, 'font-weight': isFolder ? 700 : 400 }"
+            @click="toggle"
+        >
+            <span
+                v-if="isFolder"
+                :style="{ 'padding-right': '5px'}"
+            ><span v-if="!isOpen"> &#9650;</span><span v-else>&#9660;</span></span>
+            <component
+                :is="componentItems.get(renderComponent)"
+                :item="computedItem"
+                :is-folder="isFolder > 0"
+                :parents="parents"
+            />
+        </div>
+        <div
+            v-show="isOpen"
+            v-if="isFolder"
+        >
+            <tree-item
+                v-for="(child, index) in filterChildren(computedItem)"
+                :key="index"
+                class="item"
+                :parents="parents.concat(computedItem.name)"
+                :item="computeItem(child)"
+                :render-component="renderComponent"
+                :is-first-color="!isFirstColor"
+                :classes="classes"
+                :items-to-filter="itemsToFilter.slice(1)"
+                :open-on-created="openOnCreated"
+            />
+        </div>
     </div>
-    <div
-      v-show="isOpen"
-      v-if="isFolder"
-    >
-      <tree-item
-        v-for="(child, index) in filterChildren(computedItem)"
-        :key="index"
-        class="item"
-        :parents="parents.concat(computedItem.name)"
-        :item="computeItem(child)"
-        :render-component="renderComponent"
-        :is-first-color="!isFirstColor"
-        :classes="classes"
-        :items-to-filter="itemsToFilter.slice(1)"
-        :open-on-created="openOnCreated"
-      />
-    </div>
-  </div>
 </template>
 
 <script>
@@ -45,8 +45,14 @@ const componentItems = new Map()
 
 export default {
     props: {
-        item: Object,
-        renderComponent: String,
+        item: {
+            type: Object,
+            required: true,
+        },
+        renderComponent: {
+            type: String,
+            required: true,
+        },
         openOnCreated: {
             type: Boolean,
             default: false,
@@ -115,14 +121,12 @@ export default {
         },
         computeItem: function (item) {
             if (!('cr' in item)) {
-                // if (this.parents.length > 3 || !item.type || !item.type.includes('_')) return item
-
-                // const Class = this.classes.find(x => x.type === item.type)
                 return item
             }
+
             const out = this.classes.find(x => x.type === item.cr)
             if (!out) console.log('Unable to find item', item)
-            // if (out) out.name = item.name
+
             return {
                 ...out,
                 name: item.name
@@ -134,9 +138,6 @@ export default {
 
 <style scoped>
 .item {
-    /* background-color: red; */
-    /* margin-left: -3px; */
-    /* margin: 4px 12px; */
     display: flex;
     flex-direction: column;
     padding-left: 12px;
@@ -156,9 +157,7 @@ export default {
     cursor: pointer;
 }
 
-
 ul, li {
-    /* background-color: green; */
     list-style: none;
 }
 </style>

@@ -1,44 +1,44 @@
 <template>
-  <div
-    v-if="nodes.length > 0"
-    class="kismet-container"
-    :class="category"
-  >
-    <h3>{{ category }}</h3>
     <div
-      v-for="node in nodes"
-      :key="node.name"
+        v-if="nodes.length > 0"
+        class="kismet-container"
+        :class="category"
     >
-      <div v-if="showNode(node)">
+        <h3>{{ category }}</h3>
         <div
-          class="node-header"
-          @click="toggle(node)"
+            v-for="(node, index) in nodes"
+            :key="node.name + '_' + index"
         >
-          <a>
-            {{ node.displayName }}
-          </a>
+            <div v-if="showNode(node)">
+                <div
+                    class="node-header"
+                    @click="toggle(node)"
+                >
+                    <a>
+                        {{ node.displayName }}
+                    </a>
 
-          <div
-            v-if="IsNonDummyClass(node)"
-            class="label"
-            title="This class is not documented in the dummy classes"
-          >
-            <p>Unregistered</p>
-          </div>
+                    <div
+                        v-if="IsNonDummyClass(node)"
+                        class="label"
+                        title="This class is not documented in the dummy classes"
+                    >
+                        <p>Unregistered</p>
+                    </div>
 
-          <span v-show="!Ishidden(node)">&#9660;</span>
-          <span v-show="Ishidden(node)">&#9650;</span>
+                    <span v-show="!Ishidden(node)">&#9660;</span>
+                    <span v-show="Ishidden(node)">&#9650;</span>
+                </div>
+                <div v-show="Ishidden(node)">
+                    <KismetNode
+                        :node="node"
+                        :category="category"
+                        :hide-image="false"
+                    />
+                </div>
+            </div>
         </div>
-        <div v-show="Ishidden(node)">
-          <KismetNode
-            :node="node"
-            :category="category"
-            :hide-image="false"
-          />
-        </div>
-      </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -68,16 +68,12 @@ export default {
         },
         dummyItems: {
             type: Array,
-            default: [],
-            required: false
-        },
-        onlyDummyItems: {
-            type: Boolean,
+            default: () => [],
             required: false
         },
         names: {
             type: Array,
-            default: [],
+            default: () => [],
             required: false
         }
     },
@@ -94,6 +90,7 @@ export default {
                 this.toggled = this.toggled.filter(i => i !== index)
             }else this.toggled.push(index)
         },
+
         Ishidden(node){
             return this.toggled.includes(this.nodes.indexOf(node))
         },
@@ -101,11 +98,11 @@ export default {
         IsNonDummyClass (node) {
             return this.dummyItems.length > 0 ? !this.dummyItems.includes(`${node.Package}/Classes/${node.Class}.uc`) : false
         },
+
         showNode (node) {
             return this.category === node.type 
                 && (this.upk === 'all' || node.Package === this.upk) 
-                && (this.names ? this.names.includes(node.displayName) : true)
-                && (this.onlyDummyItems ? !this.IsNonDummyClass(node) : true)
+                && (this.names && this.names.length > 0 ? this.names.includes(node.displayName) : true)
         }
     }
 }

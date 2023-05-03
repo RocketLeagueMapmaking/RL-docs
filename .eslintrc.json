@@ -26,6 +26,7 @@
         "quotes": ["error", "single"],
         "semi": ["warn", "never"],
         "vars-on-top": "warn",
+        "vue/html-indent": ["warn", 4],
         "vue/multi-word-component-names": "warn"
     }
 }
