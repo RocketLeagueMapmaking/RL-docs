@@ -132,7 +132,7 @@ module.exports = [
                     {
                         text: 'Website assets',
                         link: 'assets'
-                    }
+                    },
                     {
                         text: 'GitHub',
                         link: 'https://github.com/rocketleaguemapmaking/RL-Docs'
