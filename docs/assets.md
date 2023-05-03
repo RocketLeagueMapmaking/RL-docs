@@ -17,7 +17,6 @@ On this page you will find some tips and tricks related to styling a page. Other
 To update the data being used for this project, update the JSON files in `/docs/.vuepress/public/data/`.
 The following data files are being used:
 
-- `disabled_nodes.json`: kismet guide; details in the documentation page
 - `kismet_nodes.json`: the kismet node reference
 - `kismet_tree.json`: the Car_TA property tree
 

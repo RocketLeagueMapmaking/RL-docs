@@ -130,8 +130,12 @@ module.exports = [
                         link: '/more/contribute'
                     },
                     {
-                        text: 'Discussions',
-                        link: 'https://github.com/rocketleaguemapmaking/RL-Docs/discussions'
+                        text: 'Website assets',
+                        link: 'assets'
+                    }
+                    {
+                        text: 'GitHub',
+                        link: 'https://github.com/rocketleaguemapmaking/RL-Docs'
                     },
                     {
                         text: 'Patreon',
