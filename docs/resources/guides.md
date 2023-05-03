@@ -8,6 +8,10 @@ tags:
 
 More Recent/Thorough Guides At The Top
 
+## 2023
+
+* [Rocket Sledge's How To Play Custom Maps](https://www.youtube.com/watch?v=qPJO9GSexKU)
+
 ## 2021
 
 * [Simple Shark's RLMM Tutorial Series](https://www.youtube.com/playlist?list=PLIomqmQFYkVTl2FI2YBGzGuUZWSvZnS9d)
@@ -44,4 +48,4 @@ More Recent/Thorough Guides At The Top
 
 * [Thanrek's Not So Ultimate Modding Guide](https://docs.google.com/document/d/1rZU_kDCLdgioF9jeuYipJ14-KulxLqOEXpZY8KPiuSQ/pub)
 * [Wejrox's RL Modding Series](https://www.youtube.com/watch?v=U8dx2IZNvZc&index=1&list=PLvhilV-QKVLQVtH_sxbcfQ-Mct-GBBVb9)
-* [Wascy's turorial on collectible pixel-art](https://www.youtube.com/watch?v=lg_MHpDOB3U)
+* [Wascy's tutorial on collectible pixel-art](https://www.youtube.com/watch?v=lg_MHpDOB3U)

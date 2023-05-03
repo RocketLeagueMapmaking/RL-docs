@@ -24,10 +24,6 @@ If you have disabled the Welcome screen, you can access it in the `Help` menu. C
 - In `{UDK Folder}\Engine\EditorResources\WPF\Controls\WelcomeScreen.xaml` you can replace the images and the background of the welcome screen with your own images. Replace the current source (in line 13-20) with the path of the image, they can be located in anywhere on your computer
 - In `{UDK Folder}\Engine\Localization\INT\UnrealEd.int` you can change the text above the title by replacing `WelcomeScreen_Title` (line 71)
 
-:::warning Changing URLs
-URLs are bound to keys that can't be changed without having the source code of UDK
-:::
-
 ## Map Templates
 
 You can replace the UDK templates with (your own) custom maps templates. Try to keep these up to date with any framework changes as we continue to learn more about modding Rocket League. To save your own map as a template:
@@ -94,14 +90,14 @@ In the Matinee window you may also set your own hotkeys by going to `Edit` > `Co
 You can change the text of almost any message or button (including the `Save all` button) in  
 `{UDK Folder}\Engine\Localization\INT\UnrealEd.int`
 
-### Context menu
+### Actor context menu
 
 You can add (or remove) your own favorite classes in the right click > add actors menu. For class `MyClass`, add the class `ActorFactoryMyClass` in a source folder:
 
 ```uc
 // /Development/src/MyMod/Classes/ActorFactoryMyClass.uc
 
-class ActorFactoryDynamicMesh extends ActorFactory
+class ActorFactoryMyClass extends ActorFactory
     config(Editor)
     collapsecategories
     hidecategories(Object)
@@ -116,6 +112,27 @@ defaultproperties
 ```
 
 By setting `bShowInEditorQuickMenu=true` you can move `MyClass` from `add actors > templates > MyClass` to the most-used actors in `add actors > MyClass`.
+
+### Content browser context menu
+
+Similar to the actor classes menu, you can extend the `Factory` class for a custom item in the content browser.
+
+```uc
+// /Development/src/MyMod/Classes/ActorFactoryMyClassNew.uc
+
+class ActorFactoryMyClassNew extends Factory
+    native;
+
+defaultproperties
+{
+    SupportedClass=class'MyClass'
+    Description="My Class"
+    bCreateNew=True
+}
+```
+
+- you can't remove items from the context menu, but if the list is outside the viewport select a random item and change the factory to the class you want in the menu.
+- as with other factories, you can't set properties in the new factory window
 
 ## More
 

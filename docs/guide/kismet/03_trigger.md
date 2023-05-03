@@ -11,13 +11,10 @@ For some reason, UDK requires that you add TriggerVolume Touch Events in a diffe
 
 ![alt text](/images/kismet/guide/image236.png "Hello Pain")
 
-## Instigator
-
-Kismet events that are triggered when a player performs a certain action often have the variable link "Instigator".
-This is the player (or the car from the player) that triggered the current event.
-
-In the example above, you can connect the "Instigator" from the trigger volume to the "Target" of the Draw Text action.
-However, you can't directly link these, a new empty Object variable is needed and can be used to connect the nodes.
+:::tip Draw target
+In the example above the `Draw Text` node has the exposed variable `Target`.
+When a node performs an action on a player create a new player variable with the index of the player (or select all for all players). If you do not connect a target you might not see the action happening.
+:::
 
 ## Max Trigger Count <Badge text="important" type="tip"/>
 

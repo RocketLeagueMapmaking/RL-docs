@@ -2,6 +2,7 @@
 *
 !/deployment
 !/package*.json
+!/CONTRIBUTING.md
 !/docs
 
 # Need to avoid dist conflicts on build.

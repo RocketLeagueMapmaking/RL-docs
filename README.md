@@ -3,7 +3,7 @@
 
 # Rocket League Mapmaking Website Documentation
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rocketleaguemapmaking/rl-docs/Test?label=tests)][github-actions]
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/RocketLeagueMapMaking/RL-docs/test.yml?branch=master&label=tests)][github-actions]
 [![Website](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Frocketleaguemapmaking.com%2F)][domain]
 [![Dev website](https://img.shields.io/website?down_message=offline&up_message=online&label=website@master&url=https%3A%2F%2Frocketleaguemapmaking.pages.dev%2F)][dev-domain]
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/rocketleaguemapmaking/rl-docs)][package.json]
@@ -37,13 +37,7 @@ Read the [contribution][contributing] documentation for guidelines when contribu
 
 ## Certificate Renewal
 
-Currently we [manually redeploy](https://certbot.eff.org/docs/using.html#renewing-certificates) certificates using certbot on the host machine. This should be automated in future.  
-
-1. Stop the docker container to free up port 80 `docker stop rlmm`
-2. Execute `sudo  certbot certonly --force-renew --cert-name rocketleaguemapmaking.com` on the host machine.
-3. Select option 2 (temporary webserver, hence needing step 1)
-4. Check that the new certificate looks good `sudo certbot certificates`
-5. Restart the docker container `sudo docker container restart rlmm`
+The certificate is renewed by the `renewcert.sh` script run using a cron job.
 
 [contributing]: ./CONTRIBUTING.md
 [package.json]: https://github.com/RocketLeagueMapmaking/RL-docs/blob/master/package.json
