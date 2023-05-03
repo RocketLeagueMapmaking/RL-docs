@@ -26,8 +26,18 @@
       class="actions"
     >
       <button
+        title="Share this path"
+        @click="copy(['Player'].concat(parents.slice(1)).join('.') + `.${item.name}`, 'the item path')"
+      >
+        <span
+          class="iconify"
+          data-icon="material-symbols:conversion-path"
+        />
+
+      </button>
+      <button
         title="Share this property"
-        @click="copy(shareUrl(), 'the item path')"
+        @click="copy(shareUrl(), 'the url to this item path')"
       >
         <span
           class="iconify"

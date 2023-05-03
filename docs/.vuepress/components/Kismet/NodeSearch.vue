@@ -65,7 +65,7 @@
         </option>
       </select>
 
-      <select
+      <!-- <select
         name="classes"
         :class="`autocomplete-input ${!onlyDummyClasses ? 'danger' : ''}`"
         :disabled="match"
@@ -83,7 +83,7 @@
         >
           All classes
         </option>
-      </select>
+      </select> -->
 
       <!-- Search suggestions -->
       <ul
@@ -292,10 +292,10 @@ export default {
             if (upk != null) this.setUPK({ target:{ value: upk }})
         }
 
-        const dummyItems = await getDummyClasses()
-        if (dummyItems) {
-            this.dummyItems = dummyItems
-        }
+        // const dummyItems = await getDummyClasses()
+        // if (dummyItems) {
+        //     this.dummyItems = dummyItems
+        // }
     },
 
     destroyed() {

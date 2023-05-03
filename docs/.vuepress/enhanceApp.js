@@ -11,6 +11,7 @@ import KismetNodeSearch from './components/Kismet/NodeSearch.vue'
 import KismetNodeList from './components/Kismet/NodeList.vue'
 import KismetNodeProperty from './components/Kismet/NodeProperty.vue'
 import KismetNode from './components/Kismet/Node.vue'
+import KismetUpdatedList from './components/Kismet/UpdatedList.vue'
 
 import Tree from './components/Tree/Tree.vue'
 import TreeItem from './components/Tree/TreeItem.vue'
@@ -34,6 +35,7 @@ export default ({
         ['TreeComponent', Tree],
         ['TreeItem', TreeItem],
         ['PRITreeItem', PRITreeItem],
+        ['KismetUpdatedList', KismetUpdatedList],
     ]
 
     for (const component of components) {

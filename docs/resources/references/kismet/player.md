@@ -23,7 +23,9 @@ An example property might look like this:
 - `Team`: the property name
 - `Team` (hover): the editor category of the property, if applicable.
 - `[R]`: indicator if the property is any sort of replicated. Read more about the replication conditions in the [UDK documentation](https://docs.unrealengine.com/udk/Three/VariableReplication.html)
-<!-- - `<Copy>`: copy the kismet needed to get this property from the base class. -->
+- `<Share path button>`: copy the path (`Player.A.B`) of this property.
+- `<Share link button>`: copy the link to this property to share it with someone else.
+- `<Copy button>`: copy the kismet needed to get this property from the base class.
 
 :::
 

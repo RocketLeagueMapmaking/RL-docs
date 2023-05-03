@@ -76,7 +76,7 @@ export default {
         },
 
         source (node) {
-            return `https://github.com/RocketLeagueMapmaking/RL-Dummy-Classes/blob/master/${node.Package}/Classes/${node.Class}.uc`
+            return `https://github.com/ghostrider-05/RL-dummy-classes2/blob/main/Src/${node.Package}/Classes/${node.Class}.uc`
         }
     }
 }
