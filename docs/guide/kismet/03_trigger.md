@@ -11,10 +11,14 @@ For some reason, UDK requires that you add TriggerVolume Touch Events in a diffe
 
 ![alt text](/images/kismet/guide/image236.png "Hello Pain")
 
-:::tip Draw target
-In the example above the `Draw Text` node has the exposed variable `Target`.
-When a node performs an action on a player create a new player variable with the index of the player (or select all for all players). If you do not connect a target you might not see the action happening.
-:::
+## Instigators
+
+![UDK documentation instigator example](https://docs.unrealengine.com/udk/Three/rsrc/Three/KismetUserGuide/graphpane.jpg)
+
+Most events have the `Instigator` variable if the event is triggered by an actor, such as a player, ball or mesh.
+This variable can be useful when you want to do something to a certain player. Most actions have the `Target`/`Targets` variable that you can connect the empty reference of the `Instigator` to.
+
+When an event does not have an instigator, for example on level load, create a new `Player` variable and select a player index or use all players to perform an action with these players as target.
 
 ## Max Trigger Count <Badge text="important" type="tip"/>
 

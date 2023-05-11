@@ -12,16 +12,6 @@ On this page you will find some tips and tricks related to styling a page. Other
 
 ## RLMM Assets
 
-### Kismet reference
-
-To update the data being used for this project, update the JSON files in `/docs/.vuepress/public/data/`.
-The following data files are being used:
-
-- `kismet_nodes.json`: the kismet node reference
-- `kismet_tree.json`: the Car_TA property tree
-
-**Don't forget to update the version badge!**
-
 ### Tree
 
 A recursive tree structure can be used to display a nested object with the `<TreeComponent />`.
@@ -29,6 +19,7 @@ A recursive tree structure can be used to display a nested object with the `<Tre
 The following properties are exposed:
 
 - treeData: the json object to use for the tree. Can be loaded with `require('../path/.vuepress/public/data/file.json')`.
+- url: the url that can be fetched to get the same data as `treeData`
 - firstColor: the base color of an item
 - secondColor: the child color of an item
 
