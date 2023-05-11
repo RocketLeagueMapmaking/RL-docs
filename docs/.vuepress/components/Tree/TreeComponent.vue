@@ -23,7 +23,7 @@ export default {
         treeData: {
             type: Object,
             required: false,
-            default: () => {}
+            default: () => ({ classes: [] }),
         },
         url: {
             type: String,

@@ -118,7 +118,7 @@
                     :category="match.type"
                     :dummy-items="dummyItems"
                     :nodes="nodes"
-                    :openAllNodes="true"
+                    :open-all-nodes="true"
                 />
             </div>
         </div>
@@ -177,6 +177,7 @@ export default {
             },
         },
     },
+
     data() {
         return {
             isOpen: false,
@@ -195,6 +196,22 @@ export default {
             validPackages: ['all'].concat(validPackages),
             category: [],
         }
+    },
+
+    computed: {
+        suggestedText () {
+            return this.active === 'all'
+                ? 'Suggested nodes:'
+                : `Suggested ${this.active}:`
+        },
+
+        noResultsText() {
+            return `There are no ${
+                this.active === 'all'
+                    ? 'results for'
+                    : `results for ${this.active} matching`
+            }: ${this.search}`
+        },
     },
 
     watch: {
@@ -248,22 +265,6 @@ export default {
 
     destroyed() {
         document.removeEventListener('click', this.handleClickOutside)
-    },
-
-    computed: {
-        suggestedText () {
-            return this.active === 'all'
-                ? 'Suggested nodes:'
-                : `Suggested ${this.active}:`
-        },
-
-        noResultsText() {
-            return `There are no ${
-                this.active === 'all'
-                    ? 'results for'
-                    : `results for ${this.active} matching`
-            }: ${this.search}`
-        },
     },
 
     methods: {

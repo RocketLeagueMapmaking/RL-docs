@@ -45,6 +45,10 @@
 import KismetNode from './NodeItem.vue'
 
 export default {
+    components: {
+        KismetNode
+    },
+
     props: {
         category: {
             type: String,
@@ -76,10 +80,6 @@ export default {
             default: false,
             required: false
         }
-    },
-
-    components: {
-        KismetNode
     },
 
     data () {

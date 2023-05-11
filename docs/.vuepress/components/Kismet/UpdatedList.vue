@@ -23,7 +23,7 @@ export default {
         }
     },
     async mounted () {
-        const data = await fetch(`https://raw.githubusercontent.com/ghostrider-05/RL-dummy-classes2/main/ci/changelog/kismet.json`)
+        const data = await fetch('https://raw.githubusercontent.com/ghostrider-05/RL-dummy-classes2/main/ci/changelog/kismet.json')
             .then(res => res.json())
             .catch(err => {
                 console.log(err)
