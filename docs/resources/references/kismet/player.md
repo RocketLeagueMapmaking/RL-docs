@@ -2,13 +2,13 @@
 title: Player properties
 ---
 
-# Player References
+# Player References <Badge :text="'version: ' + ($page.version || 'loading...')" />
 
 This is an example list of which properties you can get from a player's car.
 It does **not** replace any AssetExtractor command or the class data in Unreal Explorer:
 **this list might be incorrect (think of replication status, etc.) and you should verify if the property is correctly displayed here!**
 
-This latest game update of this list is the same as the [Kismet nodes](nodes.md) reference.
+This latest game update of this list can be found in the badge above.
 
 :::details Data structure
 An example property might look like this:
@@ -32,7 +32,7 @@ An example property might look like this:
 The class `Car_TA` is in local matches and training (`Car_Freeplay_TA` is extended from this class) the class for a player's car.
 
 <TreeComponent
-    :treeData="require('../../../.vuepress/public/data/kismet_tree.json')"
+    url="https://kismet-cdn.ghostrider-05.com/assets?tag=tree&version=latest"
     createItemKey="kismetNode"
     itemCompName="PRITree"
 />

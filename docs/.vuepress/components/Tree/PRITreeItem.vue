@@ -74,7 +74,7 @@ export default {
             return url.origin + url.pathname + '?path=' + this.parents.join('.') + `.${this.item.name}`
         },
         fetchKismet: function () {
-            const url = `https://kismet.rocketleaguemapmaking.workers.dev/?type=${this.item.type || 'object'}&path=${this.parents.join('.') + `.${this.item.name}`}`
+            const url = `https://kismet.ghostrider.workers.dev/?type=${this.item.type || 'object'}&path=${this.parents.join('.') + `.${this.item.name}`}`
             fetch(url).then(res => res.text()).then(kismet => this.copy(kismet, 'kismet'))
         }
     }

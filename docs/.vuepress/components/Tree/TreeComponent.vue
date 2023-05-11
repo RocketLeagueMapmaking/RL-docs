@@ -2,8 +2,8 @@
     <div>
         <TreeItem
             class="item"
-            :item="treeData"
-            :classes="treeData.classes"
+            :item="data"
+            :classes="data.classes"
             :is-first-color="true"
             :items-to-filter="highlighted"
             :render-component="itemCompName"
@@ -22,7 +22,13 @@ export default {
     props: {
         treeData: {
             type: Object,
-            required: true
+            required: false,
+            default: () => {}
+        },
+        url: {
+            type: String,
+            required: false,
+            default: ''
         },
         itemCompName: {
             required: true,
@@ -38,6 +44,7 @@ export default {
         return {
             highlighted: [],
             hasPath: false,
+            data: { classes: [] },
         }
     },
 
@@ -47,7 +54,26 @@ export default {
         }
     },
 
-    mounted () {
+    async mounted () {
+        if (this.treeData) {
+            this.data = this.treeData
+        } else {
+            const data = await fetch(this.url)
+                .then(res => res.json())
+                .catch(err => {
+                    console.log(err)
+                    return undefined
+                })
+
+            if (data) {
+                this.data = data
+            }
+        }
+
+        if ('version' in this.data) {
+            this.$page.version = this.data.version
+        }
+
         const path = new URLSearchParams(window.location.search).get('path')
 
         if (path) {

@@ -87,7 +87,7 @@
                     v-if="results.length > 2"
                     class="results-title"
                 >
-                    {{ suggestedText() }}
+                    {{ suggestedText }}
                 </li>
                 <li
                     v-for="(result, i) in results"
@@ -105,7 +105,7 @@
                 v-if="isOpen && results.length === 0 && search.length > minChar"
                 class="results-title"
             >
-                There are no {{ noResultsText() }}
+                {{ noResultsText }}
             </p>
 
             <!-- Found kismet node -->
@@ -117,6 +117,8 @@
                     :names="[match.displayName]"
                     :category="match.type"
                     :dummy-items="dummyItems"
+                    :nodes="nodes"
+                    :openAllNodes="true"
                 />
             </div>
         </div>
@@ -128,6 +130,7 @@
                     :key="nodeType"
                     :upk="upk"
                     :category="nodeType"
+                    :nodes="nodes"
                     :dummy-items="dummyItems"
                 />
             </div>
@@ -135,6 +138,7 @@
                 <KismetNodeList
                     :upk="upk"
                     :category="type"
+                    :nodes="nodes"
                     :dummy-items="dummyItems"
                 />
             </div>
@@ -143,38 +147,8 @@
 </template>
 
 <script>
-import TAGameData from '../../public/data/kismet_nodes.json'
-
-export const formatNodes = (nodes) =>
-    nodes.map((node) => {
-        const escape = (input) => input.replace(/"/g, '')
-
-        node.displayName = escape(node.displayName)
-        node.category = escape(node.category)
-        node.archetype = escape(node.archetype)
-
-        node.links = Object.keys(node.links)
-            .map((key) => {
-                return [
-                    key,
-                    node.links[key].map((link) => {
-                        const { name, ...other } = link
-                        return {
-                            ...other,
-                            name: escape(name),
-                        }
-                    }),
-                ]
-            })
-            .reduce((prev, curr) => ({ ...prev, [curr[0]]: curr[1] }), {})
-
-        return node
-    })
-
 const validPackages = ['TAGame', 'ProjectX']
 const validNodeTypes = ['actions', 'events', 'conditions', 'all']
-
-const kismetNodes = formatNodes(TAGameData)
 
 export default {
     props: {
@@ -214,8 +188,8 @@ export default {
             type: 'all',
             arrowCounter: -1,
             minChar: 2,
-            items: kismetNodes.map((i) => i.displayName),
-            nodes: kismetNodes,
+            items: [],
+            nodes: [],
             dummyItems: [],
             validNodeTypes,
             validPackages: ['all'].concat(validPackages),
@@ -232,7 +206,20 @@ export default {
     },
 
     async mounted() {
-        console.log(`Loaded ${this.items.length} kismet nodes`, this.$data, this.nodes)
+        const response = await fetch('https://kismet-cdn.ghostrider-05.com/assets?version=latest&tag=nodes_automated')
+
+        if (!response.ok) {
+            console.error('Failed to fetch kismet nodes, check the network tab for more details!')
+            return
+        }
+
+        const data = await response.json()
+        const latestVersion = response.headers.get('X-Kismet-Latest-Version')
+
+        this.nodes = data
+        this.items = data.map(i => i.displayName)
+        
+        console.log(`Loaded ${this.items.length} kismet nodes for version ${latestVersion}`)
         document.addEventListener('click', this.handleClickOutside)
 
         let types = this.categories.includes(',')
@@ -261,6 +248,22 @@ export default {
 
     destroyed() {
         document.removeEventListener('click', this.handleClickOutside)
+    },
+
+    computed: {
+        suggestedText () {
+            return this.active === 'all'
+                ? 'Suggested nodes:'
+                : `Suggested ${this.active}:`
+        },
+
+        noResultsText() {
+            return `There are no ${
+                this.active === 'all'
+                    ? 'results for'
+                    : `results for ${this.active} matching`
+            }: ${this.search}`
+        },
     },
 
     methods: {
@@ -397,20 +400,6 @@ export default {
 
         nameToQuery(name) {
             return name.toLowerCase().replace(/ /g, '_')
-        },
-
-        suggestedText() {
-            return this.active === 'all'
-                ? 'Suggested nodes:'
-                : `Suggested ${this.active}:`
-        },
-
-        noResultsText() {
-            return `${
-                this.active === 'all'
-                    ? 'results for'
-                    : `results for ${this.active} matching`
-            }: ${this.search}`
         },
     },
 }

@@ -29,7 +29,7 @@
                     <span v-show="!Ishidden(node)">&#9660;</span>
                     <span v-show="Ishidden(node)">&#9650;</span>
                 </div>
-                <div v-show="Ishidden(node)">
+                <div v-if="Ishidden(node)">
                     <KismetNode
                         :node="node"
                         :category="category"
@@ -42,18 +42,9 @@
 </template>
 
 <script>
-
-import TAGameData from '../../public/data/kismet_nodes.json'
-
-import { formatNodes } from './NodeSearch.vue'
 import KismetNode from './NodeItem.vue'
 
-const nodes = formatNodes(TAGameData)
-
 export default {
-    components: {
-        KismetNode
-    },
     props: {
         category: {
             type: String,
@@ -66,6 +57,10 @@ export default {
                 return ['ProjectX', 'TAGame', 'all'].indexOf(upk) !== -1
             }
         },
+        nodes: {
+            type: Array,
+            required: true
+        },
         dummyItems: {
             type: Array,
             default: () => [],
@@ -75,14 +70,24 @@ export default {
             type: Array,
             default: () => [],
             required: false
+        },
+        openAllNodes : {
+            type: Boolean,
+            default: false,
+            required: false
         }
     },
-    data(){
+
+    components: {
+        KismetNode
+    },
+
+    data () {
         return {
             toggled: [],
-            nodes
         }
     },
+
     methods: {
         toggle(node){
             let index = this.nodes.indexOf(node)
@@ -92,7 +97,7 @@ export default {
         },
 
         Ishidden(node){
-            return this.toggled.includes(this.nodes.indexOf(node))
+            return this.openAllNodes || this.toggled.includes(this.nodes.indexOf(node))
         },
 
         IsNonDummyClass (node) {

@@ -3,8 +3,8 @@
         <p>
             Class: <a
                 v-if="!hideImage"
-                :href="source(node)"
-            >{{ node.Class }}</a>
+                :href="src"
+            >{{ node.Class }}<OutboundLink /></a>
         </p>
         <!-- A description of the kismet node -->
         <p v-if="node.description">
@@ -13,8 +13,9 @@
         <!-- The image of the kismet node -->
         <img
             v-if="!hideImage"
-            :src="imagePath(node)"
+            :src="imageSrc"
             :alt="node.name"
+            :title="imageTitle"
         >
         <!-- A list of all links (input, output and variable) and properties -->
         <ul>
@@ -67,18 +68,19 @@ export default {
         }
     },
 
-    methods: {
-        imagePath(node) {
-            const name = node.displayName.toLowerCase().replace(/"/g, '').replace(/ /g,'_')
-            const categoryName = this.category[0].toUpperCase() + this.category.slice(1)
-
-            return `/images/kismet/${categoryName}/${node.Package}/${name}.png`
+    computed: {
+        imageTitle () {
+            return `Auto-generated image of ${this.node.Class}. May not be accurate.`
         },
 
-        source (node) {
-            return `https://github.com/ghostrider-05/RL-dummy-classes2/blob/main/Src/${node.Package}/Classes/${node.Class}.uc`
+        imageSrc () {
+            return `https://kismet-cdn.ghostrider-05.com/images?name=${this.node.Class}`
+        },
+
+        src () {
+            return `https://github.com/ghostrider-05/RL-dummy-classes2/blob/main/Src/${this.node.Package}/Classes/${this.node.Class}.uc`
         }
-    }
+    },
 }
 </script>
 
@@ -86,5 +88,11 @@ export default {
 .kismet-node {
     background-color: var(--codeBgColor);
     padding: .8rem;
+}
+
+.kismet-node img {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
 }
 </style>
