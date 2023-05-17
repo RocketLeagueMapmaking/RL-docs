@@ -12,8 +12,8 @@
             ><span v-if="!isOpen"> &#9654;</span><span v-else>&#9660;</span></span>
 
             <component
-                v-if="componentItems.has(renderComponent)"
                 :is="componentItems.get(renderComponent)"
+                v-if="componentItems.has(renderComponent)"
                 :item="item"
                 :tree="tree"
                 :config-key="configKey"
@@ -44,7 +44,7 @@
                 :items-to-filter="itemsToFilter.slice(1)"
                 :open-on-created="openOnCreated"
                 :filter-type="filterType"
-            ></tree-item>
+            />
         </div>
     </div>
 </template>

@@ -78,50 +78,50 @@
             </select>
         </div>
 
-            <!-- Search suggestions -->
-            <ul
-                v-show="isOpen && results.length > 0"
-                id="autocomplete-results"
-                class="autocomplete-results"
-            >
-                <li
-                    v-if="results.length > 2"
-                    class="results-title"
-                >
-                    {{ suggestedText }}
-                </li>
-                <li
-                    v-for="(result, i) in results"
-                    :key="i"
-                    class="autocomplete-result"
-                    :class="{ 'is-active': i === arrowCounter }"
-                    @click="setResult(result)"
-                >
-                    {{ result }}
-                </li>
-            </ul>
-
-            <!-- Displayed when there are no results -->
-            <p
-                v-if="isOpen && results.length === 0 && search.length > minChar"
+        <!-- Search suggestions -->
+        <ul
+            v-show="isOpen && results.length > 0"
+            id="autocomplete-results"
+            class="autocomplete-results"
+        >
+            <li
+                v-if="results.length > 2"
                 class="results-title"
             >
-                {{ noResultsText }}
-            </p>
+                {{ suggestedText }}
+            </li>
+            <li
+                v-for="(result, i) in results"
+                :key="i"
+                class="autocomplete-result"
+                :class="{ 'is-active': i === arrowCounter }"
+                @click="setResult(result)"
+            >
+                {{ result }}
+            </li>
+        </ul>
 
-            <!-- Found kismet node -->
-            <div v-if="!isOpen && search && match">
-                <p>Showing result for kismet node: {{ search }}</p>
+        <!-- Displayed when there are no results -->
+        <p
+            v-if="isOpen && results.length === 0 && search.length > minChar"
+            class="results-title"
+        >
+            {{ noResultsText }}
+        </p>
 
-                <KismetNodeList
-                    :upk="upk"
-                    :names="[match.displayName]"
-                    :category="match.type"
-                    :dummy-items="dummyItems"
-                    :nodes="nodes"
-                    :open-all-nodes="true"
-                />
-            </div>
+        <!-- Found kismet node -->
+        <div v-if="!isOpen && search && match">
+            <p>Showing result for kismet node: {{ search }}</p>
+
+            <KismetNodeList
+                :upk="upk"
+                :names="[match.displayName]"
+                :category="match.type"
+                :dummy-items="dummyItems"
+                :nodes="nodes"
+                :open-all-nodes="true"
+            />
+        </div>
 
         <div v-if="!match">
             <div v-if="type === 'all'">

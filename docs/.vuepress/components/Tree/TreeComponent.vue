@@ -1,6 +1,6 @@
 <template>
     <div>
-        <slot :version="version"></slot>
+        <slot :version="version" />
         <TreeItem
             class="item"
             :item="data"
