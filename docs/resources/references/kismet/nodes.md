@@ -6,7 +6,7 @@ title: Kismet nodes
 
 This is an attempt on a public kismet reference for nodes specifically in Rocket League.
 After a notable update in the game for kismet, this list will be updated (hopefully);
-the latest version for this reference is visible [in the badge in this guide](player.md) or the latest commit in the [Dummy Classes][dc2].
+the latest version for this reference is visible [in the badge in this guide](class.md) or the latest commit in the [Dummy Classes][dc2].
 
 :::details How to use
 

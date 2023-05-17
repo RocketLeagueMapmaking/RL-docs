@@ -31,7 +31,7 @@ Search for a kismet node in the reference list on this page of all kismet action
 More information about the classes can be found in these references:
 
 - [Kismet nodes reference](./../../resources/references/kismet/nodes.md)
-- [Player properties reference](./../../resources/references/kismet/player.md)
+- [Player properties reference](./../../resources/references/kismet/class.md)
 
 ## Game map kismet
 
