@@ -9,45 +9,64 @@
             <span
                 v-if="isFolder"
                 :style="{ 'padding-right': '5px'}"
-            ><span v-if="!isOpen"> &#9650;</span><span v-else>&#9660;</span></span>
+            ><span v-if="!isOpen"> &#9654;</span><span v-else>&#9660;</span></span>
+
             <component
+                v-if="componentItems.has(renderComponent)"
                 :is="componentItems.get(renderComponent)"
-                :item="computedItem"
-                :is-folder="isFolder > 0"
+                :item="item"
+                :tree="tree"
+                :config-key="configKey"
                 :parents="parents"
-            />
-        </div>
-        <div
-            v-show="isOpen"
-            v-if="isFolder"
-        >
-            <tree-item
-                v-for="(child, index) in filterChildren(computedItem)"
-                :key="index"
-                class="item"
-                :parents="parents.concat(computedItem.name)"
-                :item="computeItem(child)"
                 :render-component="renderComponent"
                 :is-first-color="!isFirstColor"
-                :classes="classes"
                 :items-to-filter="itemsToFilter.slice(1)"
                 :open-on-created="openOnCreated"
+                :filter-type="filterType"
             />
+            <div v-else>
+                {{ item.name }}
+            </div>
+        </div>
+        <div
+            v-if="isFolder && isOpen"
+        >
+            <tree-item
+                v-for="(child, index) in filterChildren()"
+                :key="index"
+                class="item"
+                :parents="parents.concat(child.name)"
+                :item="child"
+                :tree="tree"
+                :config-key="configKey"
+                :render-component="renderComponent"
+                :is-first-color="!isFirstColor"
+                :items-to-filter="itemsToFilter.slice(1)"
+                :open-on-created="openOnCreated"
+                :filter-type="filterType"
+            ></tree-item>
         </div>
     </div>
 </template>
 
 <script>
 import PRITreeItem from './PRITreeItem.vue'
-
-const componentItems = new Map()
-    .set('PRITree', PRITreeItem)
+import configs from '../../configs/components/tree.js'
 
 export default {
     props: {
         item: {
             type: Object,
             required: true,
+        },
+        tree: {
+            type: Object,
+            required: true,
+        },
+        configKey: {
+            type: String,
+            required: false,
+            default: '',
         },
         renderComponent: {
             type: String,
@@ -62,6 +81,11 @@ export default {
             type: Array,
             required: false,
             default: () => []
+        },
+        filterType: {
+            type: String,
+            required: false,
+            default: 'none',
         },
         itemsToFilter: {
             type: Array,
@@ -82,16 +106,13 @@ export default {
             type: String,
             default: 'var(--borderColor)'
         },
-        classes: {
-            required: true,
-            type: Array,
-        }
     },
     data: function () {
         return {
             toggled: false,
             toggledOnce: false,
-            componentItems,
+            componentItems: new Map()
+                .set('PRITree', PRITreeItem),
         }
     },
     computed: {
@@ -99,19 +120,27 @@ export default {
             return !this.toggledOnce ? this.openOnCreated : this.toggled
         },
         isFolder: function () {
-            return this.item.c && this.item.c.length
+            return this.children != undefined
         },
-        computedItem: function () {
-            return this.computeItem(this.item)
+        children: function () {
+            if (this.configKey.length > 0) {
+                const config = configs[this.configKey]
+                if (config && config.computeChildren) {
+                    return config.computeChildren(this.item, this.tree)
+                }
+            }
+            return this.item.children
         }
     },
     methods: {
         filterChild: function (child) {
-            return this.itemsToFilter.length > 1 ? this.itemsToFilter[1] === this.computeItem(child).name : true
+            return this.itemsToFilter.length > 1 ? this.itemsToFilter[1] === child.name : true
         },
-        filterChildren: function (item) {
-            if (!item.c) return []
-            else return item.c.filter(n => this.filterChild(n))
+        filterChildren: function () {
+            const children = this.children
+
+            if (!children) return []
+            else return children.filter(n => this.filterChild(n) && (this.filterType !== 'none' ? n[this.filterType] : true))
         },
         toggle: function () {
             if (!this.toggledOnce) this.toggledOnce = true
@@ -119,19 +148,6 @@ export default {
                 this.toggled = !this.toggled
             }
         },
-        computeItem: function (item) {
-            if (!('cr' in item)) {
-                return item
-            }
-
-            const out = this.classes.find(x => x.type === item.cr)
-            if (!out) console.log('Unable to find item', item)
-
-            return {
-                ...out,
-                name: item.name
-            }
-        }
     },
 }
 </script>

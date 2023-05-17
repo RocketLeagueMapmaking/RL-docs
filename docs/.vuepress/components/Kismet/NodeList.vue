@@ -14,6 +14,8 @@
                     class="node-header"
                     @click="toggle(node)"
                 >
+                    <span v-if="!Ishidden(node)">&#9654;</span>
+                    <span v-else>&#9660;</span>
                     <a>
                         {{ node.displayName }}
                     </a>
@@ -25,9 +27,6 @@
                     >
                         <p>Unregistered</p>
                     </div>
-
-                    <span v-show="!Ishidden(node)">&#9660;</span>
-                    <span v-show="Ishidden(node)">&#9650;</span>
                 </div>
                 <div v-if="Ishidden(node)">
                     <KismetNode
@@ -118,15 +117,19 @@ export default {
     text-transform: capitalize
 }
 
-.node-header{ 
+.node-header { 
     margin: 14px 0 0 0;
     width: inherit;
-    background-color: var(--borderColor);
+    background-color: var(--tipBgColor);
     padding: 9px 9px;
     min-height: 28px;
     display: flex;
     align-items: center;
     border-radius: 2px;
+}
+
+.node-header:hover {
+    cursor: pointer;
 }
 
 .node-header a, .node-header a:hover {
@@ -137,8 +140,6 @@ export default {
 }
 
 .node-header .label {
-    position:absolute; 
-    right: 300px;
     padding: 5px 12px;
     border-radius: 4px;
     background-color: #B13434;
@@ -149,8 +150,7 @@ export default {
 }
 
 .node-header span {
-    margin-left: auto;
-    padding-right: 8px;
+    padding: 8px;
 }
 
 </style>

@@ -241,7 +241,7 @@ module.exports = {
             sidebarDepth: 1,
             children: [
                 'kismet/nodes',
-                'kismet/player'
+                'kismet/class',
             ]
         }
     ],

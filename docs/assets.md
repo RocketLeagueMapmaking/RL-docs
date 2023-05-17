@@ -20,54 +20,54 @@ The following properties are exposed:
 
 - treeData: the json object to use for the tree. Can be loaded with `require('../path/.vuepress/public/data/file.json')`.
 - url: the url that can be fetched to get the same data as `treeData`
-- firstColor: the base color of an item
-- secondColor: the child color of an item
+- openAllItems: open all levels at loading the page
+
+#### Simple tree
 
 By default only the name is being used for displaying the tree item.
-You can return a string containing html with a function on each item with two options:
 
-1. Define the callback function directly
-
-   ```js
-   /**
-    * @param {{ name: string, other: any }} item The current item
-    * @param {boolean} isFolder Whether the item is a folder with children
-    */
-   function createItem (item, isFolder) {
-       return `<p>${item.other.displayName}</p>`
-   }
-   ```
-
-   You can then pass this function as property the `createItem` prop.
-
-2. You define the callback on `formatters` with a new key and the callback function on the map. Use cases are for when the component is in markdown files. You then pass the key with the `createItemKey` property to the component.
-
-An example object:
-
-```json
-{
-  "name": "string",
-  "c": [
-    {
-      "name": "string",
-      "other": "any"
-    },
-    {
-      "name": "string",
-      "other": "any",
-      "c": [
-        {
-          // ...
-        }
-      ]
-    }
-  ]
-}
+```md
+<TreeComponent
+    :treeData="{
+        name: 'test',
+        children: [{ name: 'child', children: [{ name: 'more' }] }, { name: 'child 2'}]
+    }"
+/>
 ```
+
+<TreeComponent
+    :treeData="{
+        name: 'test',
+        children: [{ name: 'child', children: [{ name: 'more' }] }, { name: 'child 2'}]
+    }"
+/>
+
+#### Advanced options
+
+For more options add a configuration in `configs/components/tree.js` for load options, render component, etc. to load with the `configKey` property. See the current configuration as example.
+
+A default slot can be used to access the version of the tree:
+
+<TreeComponent
+    :treeData="{
+        name: 'test 2',
+        version: '0',
+        children: [{ name: 'child', children: []}]
+    }"
+    v-slot="slotProps"
+>
+
+#### version <Badge :text="slotProps.version" />
+
+</TreeComponent>
 
 ## Vuepress assets
 
 ```md
+::: info
+This is an info block
+:::
+
 ::: tip
 This is a tip
 :::
@@ -88,6 +88,10 @@ This is a details block
 This is a warning with a custom title
 :::
 ````
+
+::: info
+This is an info block
+:::
 
 ::: tip
 This is a tip

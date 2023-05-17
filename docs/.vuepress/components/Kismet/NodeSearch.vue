@@ -76,6 +76,7 @@
                     {{ nodeType }}
                 </option>
             </select>
+        </div>
 
             <!-- Search suggestions -->
             <ul
@@ -121,7 +122,6 @@
                     :open-all-nodes="true"
                 />
             </div>
-        </div>
 
         <div v-if="!match">
             <div v-if="type === 'all'">
@@ -409,15 +409,19 @@ export default {
 <style scoped>
 .autocomplete {
     position: relative;
-    display: inline-block;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
 }
 
 .autocomplete-input {
-    background-color: var(--highlightedBgColor);
+    background-color: var(--tipBgColor);
     border: none;
     color: var(--textColor);
     padding: 0 11px !important;
+    margin: 6px 6px 6px 0;
     border-radius: 3px;
     height: 35px;
     width: 200px;
@@ -429,11 +433,11 @@ export default {
 }
 .autocomplete-input::placeholder {
     color: var(--textColor);
-    background-color: var(--highlightedBgColor);
+    background-color: var(--tipBgColor);
 }
 
 .autocomplete-input option {
-    background-color: var(--highlightedBgColor);
+    background-color: var(--tipBgColor);
     padding: 3px 3px;
 }
 .autocomplete-results {

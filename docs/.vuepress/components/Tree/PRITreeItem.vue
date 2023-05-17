@@ -1,6 +1,6 @@
 <template>
     <span class="item-render-content">
-        <div v-if="isFolder">
+        <div v-if="item.is_parent">
             <span :title="item.type">{{ item.name }}</span>
         </div>
         <div
@@ -9,50 +9,52 @@
         >
             <div>
                 <span
-                    :title="`${item.Package}.${item.Class}`"
+                    :title="item.parent ? `${item.parent.Package}.${item.parent.name}` : ''"
                     style="padding-right: 8px;"
                 >{{ item.type }}</span>
-                <span :title="item.category != null ? `Editor category: (${item.category})` : ''">{{ item.name }}</span>
+                <span :title="title">{{ item.name }}</span>
             </div>
-            <span
-                v-if="item.replicated === 'True'"
-                style="background-color: var(--accentColor); border-radius: 2px; padding: 1px 10px;"
-            >
-                R
-            </span>
-        </div>
-        <div
-            v-if="parents.length > 0"
-            class="actions"
-        >
-            <button
-                title="Share this path"
-                @click="copy(['Player'].concat(parents.slice(1)).join('.') + `.${item.name}`, 'the item path')"
-            >
+            <div style="flex-direction: row;display: flex;">
                 <span
-                    class="iconify"
-                    data-icon="material-symbols:conversion-path"
-                />
+                    v-if="item.replicated"
+                    style="background-color: var(--accentColor); border-radius: 2px; padding: 1px 10px;"
+                >
+                    R
+                </span>
+                <div
+                    v-if="parents.length > 0"
+                    class="actions"
+                >
+                    <button
+                        title="Share this path"
+                        @click="copy(path, 'the item path')"
+                    >
+                        <span
+                            class="iconify"
+                            data-icon="material-symbols:conversion-path"
+                        />
 
-            </button>
-            <button
-                title="Share this property"
-                @click="copy(shareUrl(), 'the url to this item path')"
-            >
-                <span
-                    class="iconify"
-                    data-icon="fa6-solid:link"
-                />
-            </button>
-            <button
-                title="Copy kismet"
-                @click="fetchKismet()"
-            >
-                <span
-                    class="iconify"
-                    data-icon="fa6-solid:clone"
-                />
-            </button>
+                    </button>
+                    <button
+                        title="Share this property"
+                        @click="copy(shareUrl(), 'the url to this item path')"
+                    >
+                        <span
+                            class="iconify"
+                            data-icon="fa6-solid:link"
+                        />
+                    </button>
+                    <button
+                        title="Copy kismet"
+                        @click="fetchKismet()"
+                    >
+                        <span
+                            class="iconify"
+                            data-icon="fa6-solid:clone"
+                        />
+                    </button>
+                </div>
+            </div>
         </div>
     </span>
 </template>
@@ -62,19 +64,30 @@
 export default {
     props: {
         item: { type: Object, required: true },
-        isFolder: { type: Boolean, required: true },
         parents: { type: Array, required: true },
     },
+
+    computed: {
+        title: function () {
+            const { category, description, defaultValue } = this.item
+            return `Editor category: ${category ? `(${category})` : ''}\nDescription: ${description || ''}\nDefault value: ${defaultValue || ''}`
+        },
+
+        path: function () {
+            return ['Player', ...this.parents].join('.')
+        },
+    },
+
     methods: {
         copy: function (text, type) {
             navigator.clipboard.writeText(text).then(alert('Copied ' + type + ' to your clipboard'))
         },
         shareUrl: function () {
             const url = new URL(window.location.href)
-            return url.origin + url.pathname + '?path=' + this.parents.join('.') + `.${this.item.name}`
+            return url.origin + url.pathname + '?path=' + this.path
         },
         fetchKismet: function () {
-            const url = `https://kismet.ghostrider.workers.dev/?type=${this.item.type || 'object'}&path=${this.parents.join('.') + `.${this.item.name}`}`
+            const url = `https://kismet.ghostrider.workers.dev/?type=${this.item.type || 'object'}&path=${this.path}`
             fetch(url).then(res => res.text()).then(kismet => this.copy(kismet, 'kismet'))
         }
     }

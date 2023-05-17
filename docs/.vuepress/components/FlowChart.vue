@@ -255,7 +255,7 @@ export default{
                     text: 'Don\'t know where to start? This flowchart should help.<br>Each answer contains useful links and relevant information.<br>',
                     button: 'I want to make a custom map',
                 },
-                ready: '<h2>What kind of map do you want to make?</h2>',
+                ready: 'What kind of map do you want to make?',
                 end: 'You are at the end',
                 setup: 'Set-up:',
                 menu: {
