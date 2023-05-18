@@ -7,7 +7,10 @@
             >{{ node.Class }}<OutboundLink /></a>
         </p>
         <!-- A description of the kismet node -->
-        <p v-if="node.description">
+        <p
+            v-if="node.description"
+            class="description"
+        >
             {{ node.description }}
         </p>
         <!-- The image of the kismet node -->
@@ -94,5 +97,9 @@ export default {
     max-width: 300px;
     margin: 0 auto;
     display: block;
+}
+
+.description {
+    overflow-wrap: break-word;
 }
 </style>

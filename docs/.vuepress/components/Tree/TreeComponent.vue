@@ -58,7 +58,6 @@ export default {
     data() {
         return {
             highlighted: [],
-            hasPath: false,
             itemCompName: 'default',
             data: { name: 'Loading...', children: [] },
             version: 'loading...',
@@ -69,7 +68,11 @@ export default {
     computed: {
         openAll: function () {
             return this.hasPath || this.openAllItems
-        }
+        },
+
+        hasPath: function () {
+            return this.highlighted.length > 0
+        },
     },
 
     async mounted () {
@@ -113,15 +116,17 @@ export default {
         }
 
         console.log('Rendering tree with component ' + this.itemCompName)
-        console.log(this.data)
 
         const params = new URLSearchParams(window.location.search)
         const path = params.get('path'), filter = params.get('filter')
 
         if (path) {
+            console.log('Setting tree path to ' + path)
+
             this.highlighted = path.split('.')
-            this.hasPath = true
         } else if (filter) {
+            console.log('Setting tree filter to ' + filter)
+
             this.filterType = filter
         }
     }

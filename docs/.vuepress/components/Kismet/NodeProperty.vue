@@ -9,12 +9,18 @@
                 :key="link.name"
             >
                 <div v-if="link.name !== 'VfTable_FTickableObject'">
-                    <li :title="tooltip(link)">
+                    <li 
+                        :title="tooltip(link)" 
+                        :class="{ tooltip: tooltip(link) }"
+                    >
                         <span v-if="link.type">{{ link.type }}</span>
                         <span class="name">
                             {{ link.name }} 
                         </span>
-                        <span v-if="link.description"> 
+                        <span
+                            v-if="link.description"
+                            class="description"
+                        > 
                             - {{ link.description }}
                         </span>
                     </li>
@@ -43,10 +49,7 @@ export default {
             
             if(link.expectedType){
                 return `Expected class: ${link.expectedType}`
-            // }else{
-            //     return link.default ? `Type: ${link.expectedType}. Default value: ${link.default}` : `Type: ${link.expectedType}`;
             }
-            
         }
     }
     
@@ -57,7 +60,16 @@ export default {
 .bold {
     font-weight: 700;
 }
+
 .name {
     font-weight: 500;
+}
+
+.description {
+    overflow-wrap: break-word;
+}
+
+.tooltip:hover {
+    cursor: help;
 }
 </style>
