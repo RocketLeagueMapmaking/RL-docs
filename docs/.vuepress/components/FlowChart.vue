@@ -14,7 +14,7 @@
                 <button
                     class="begin_message"
                     @click="reset = !reset"
-                > 
+                >
                     {{ messages.begin.button }}
                 </button>
             </div>
@@ -30,18 +30,18 @@
                         {{ question.question }}
                     </p>
                     <p v-html="question.desc" />
-        
+
                     <div class="mobile-btn">
                         <button
                             class="choicebutton"
                             @click="setupProgress += 1"
-                        > 
+                        >
                             {{ buttons.yes }}
                         </button>
                         <button
                             class="choicebutton-no"
                             @click="end = !end"
-                        > 
+                        >
                             {{ buttons.no }}
                         </button>
                     </div>
@@ -78,10 +78,10 @@
                                 :key="focus"
                                 class="focus-btn"
                                 @click="followupCategory = followupQuestions.find(x => x.name === focus).data"
-                            > 
+                            >
                                 {{ focus }}
                             </button>
-                        </div>      
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,17 +100,17 @@
                         <button
                             class="choicebutton"
                             @click="end = !end"
-                        > 
+                        >
                             {{ buttons.yes }}
                         </button>
                         <button
                             class="choicebutton-no"
                             @click="followupProgress += 1"
-                        > 
+                        >
                             {{ buttons.no }}
                         </button>
                     </div>
-                </div>   
+                </div>
             </div>
 
             <!-- Reached the end -->
@@ -120,7 +120,7 @@
             >
                 <p> {{ messages.end }} </p>
             </div>
-            
+
             <!-- Question answers -->
             <div v-if="end">
                 <div v-if="setupProgress < setupQuestions.length">
@@ -167,7 +167,7 @@
                     :hidden="true"
                     @click="categoryIndex += 1"
                 />
-                
+
                 <!-- To previous question in the setup questions -->
                 <button
                     v-if="!end && !reset && setupProgress < setupQuestions.length"
@@ -239,7 +239,7 @@ import { flowChart } from '../configs/index.js'
 const { setupQuestions, followupQuestions, mapCategories } = flowChart
 
 export default{
-    data(){
+    data (){
         return {
             // Track progress in the setup questions
             setupProgress: 0,
@@ -278,12 +278,12 @@ export default{
             mapCategories,
             setupQuestions
         }
-    }, 
+    },
 
     methods: {
         resetChart () {
-            this.setupProgress = 0 
-            this.followupProgress = 0 
+            this.setupProgress = 0
+            this.followupProgress = 0
             this.categoryIndex = 0
             this.reset = !this.reset
             this.followupCategory = []
@@ -375,7 +375,7 @@ button:disabled, button[disabled]{
 }
 
 .iconify {
-  color: #ffffff; 
+  color: #ffffff;
   font-size: 40px;
 }
 

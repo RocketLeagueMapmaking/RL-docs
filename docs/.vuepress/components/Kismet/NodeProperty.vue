@@ -9,18 +9,18 @@
                 :key="link.name"
             >
                 <div v-if="link.name !== 'VfTable_FTickableObject'">
-                    <li 
-                        :title="tooltip(link)" 
+                    <li
+                        :title="tooltip(link)"
                         :class="{ tooltip: tooltip(link) }"
                     >
                         <span v-if="link.type">{{ link.type }}</span>
                         <span class="name">
-                            {{ link.name }} 
+                            {{ link.name }}
                         </span>
                         <span
                             v-if="link.description"
                             class="description"
-                        > 
+                        >
                             - {{ link.description }}
                         </span>
                     </li>
@@ -44,15 +44,15 @@ export default {
     },
 
     methods: {
-        tooltip(link){
+        tooltip (link){
             if(['input', 'output'].some(item => this.header.toLowerCase().includes(item))) return
-            
+
             if(link.expectedType){
                 return `Expected class: ${link.expectedType}`
             }
         }
     }
-    
+
 }
 </script>
 

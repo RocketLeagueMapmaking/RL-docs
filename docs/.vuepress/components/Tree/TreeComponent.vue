@@ -55,7 +55,7 @@ export default {
             default: false
         }
     },
-    data() {
+    data () {
         return {
             highlighted: [],
             itemCompName: 'default',

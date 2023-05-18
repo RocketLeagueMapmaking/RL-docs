@@ -147,38 +147,30 @@
 </template>
 
 <script>
-const validPackages = ['TAGame', 'ProjectX']
+const validPackages = ['TAGame', 'ProjectX', 'all']
 const validNodeTypes = ['actions', 'events', 'conditions', 'all']
+
+function isValid (value, options) {
+    const values = value.includes(',') ? value.split(',') : [value]
+
+    return values.every((value) => options.includes(value))
+}
 
 export default {
     props: {
         categories: {
             type: String,
             required: true,
-            validator: (value) => {
-                let values = value.includes(',') ? value.split(',') : [value]
-
-                for (let type of values) {
-                    if (!validNodeTypes.includes(type)) return false
-                }
-                return true
-            },
+            validator: (value) => isValid(value, validNodeTypes),
         },
         packages: {
             type: String,
             required: true,
-            validator: (value) => {
-                let values = value.includes(',') ? value.split(',') : [value]
-
-                for (let type of values) {
-                    if (!validPackages.includes(type)) return false
-                }
-                return true
-            },
+            validator: (value) => isValid(value, validPackages),
         },
     },
 
-    data() {
+    data () {
         return {
             isOpen: false,
             results: [],
@@ -193,7 +185,7 @@ export default {
             nodes: [],
             dummyItems: [],
             validNodeTypes,
-            validPackages: ['all'].concat(validPackages),
+            validPackages,
             category: [],
         }
     },
@@ -205,7 +197,7 @@ export default {
                 : `Suggested ${this.active}:`
         },
 
-        noResultsText() {
+        noResultsText () {
             return `There are no ${
                 this.active === 'all'
                     ? 'results for'
@@ -222,7 +214,7 @@ export default {
         },
     },
 
-    async mounted() {
+    async mounted () {
         const response = await fetch('https://kismet-cdn.ghostrider-05.com/assets?version=latest&tag=nodes_automated')
 
         if (!response.ok) {
@@ -235,17 +227,17 @@ export default {
 
         this.nodes = data
         this.items = data.map(i => i.displayName)
-        
+
         console.log(`Loaded ${this.items.length} kismet nodes for version ${latestVersion}`)
         document.addEventListener('click', this.handleClickOutside)
 
-        let types = this.categories.includes(',')
+        const types = this.categories.includes(',')
             ? this.categories.split(',')
             : [this.categories]
 
         this.category = ['all'].concat(types)
 
-        let url = document.location.search
+        const url = document.location.search
         if (URLSearchParams == undefined) return
 
         const params = new URLSearchParams(url)
@@ -263,12 +255,12 @@ export default {
         }
     },
 
-    destroyed() {
+    destroyed () {
         document.removeEventListener('click', this.handleClickOutside)
     },
 
     methods: {
-        setResult(result) {
+        setResult (result) {
             this.search = result
             this.isOpen = false
             this.match = this.findNode(result)
@@ -277,21 +269,21 @@ export default {
             this.setUrl()
         },
 
-        setType(event) {
+        setType (event) {
             this.type = event.target.value
 
             this.filterResults()
             this.setUrl()
         },
 
-        setUPK(event) {
+        setUPK (event) {
             this.upk = event.target.value
 
             this.filterResults()
             this.setUrl()
         },
 
-        setUrl() {
+        setUrl () {
             if (URLSearchParams != undefined) {
                 const params = ['type', 'upk', 'node']
                 const searchParams = new URLSearchParams(
@@ -309,17 +301,17 @@ export default {
                     if (this.upk !== 'all') searchParams.set('upk', this.upk)
                 }
 
-                let stringParams = searchParams.toString()
-                let newParams =
+                const stringParams = searchParams.toString()
+                const newParams =
                     stringParams.length > 0 ? `?${stringParams}` : ''
-                let newRelativePathQuery =
+                const newRelativePathQuery =
                     document.location.pathname + newParams
 
                 history.pushState(null, '', newRelativePathQuery)
             }
         },
 
-        resetResult() {
+        resetResult () {
             this.search = ''
             this.results = []
             this.isOpen = false
@@ -328,11 +320,11 @@ export default {
             this.match = null
         },
 
-        showResult(name) {
+        showResult (name) {
             if (this.items.includes(name)) this.setResult(name)
         },
 
-        filterResults() {
+        filterResults () {
             if (this.search.length > this.minChar) {
                 this.results = this.items.filter((item) => {
                     if (
@@ -350,46 +342,46 @@ export default {
             } else this.results = []
         },
 
-        findNode(name) {
+        findNode (name) {
             return this.nodes.find((x) => x.displayName === name)
         },
 
-        handleClickOutside(event) {
+        handleClickOutside (event) {
             if (!this.$el.contains(event.target)) {
                 this.isOpen = false
                 this.arrowCounter = -1
             }
         },
 
-        onChange() {
+        onChange () {
             this.$emit('input', this.search)
 
             this.filterResults()
             this.isOpen = true
         },
 
-        onArrowDown() {
+        onArrowDown () {
             if (this.arrowCounter < this.results.length) this.arrowCounter += 1
         },
 
-        onArrowUp() {
+        onArrowUp () {
             if (this.arrowCounter > 0) this.arrowCounter -= 1
         },
 
-        onEnter() {
+        onEnter () {
             this.search = this.results[this.arrowCounter]
             this.isOpen = false
             this.arrowCounter = -1
             this.match = this.nodes.find((x) => x.name === this.search)
         },
 
-        categoryName(name) {
-            let type = this.findNode(name).type
+        categoryName (name) {
+            const type = this.findNode(name).type
 
             return `${type[0].toUpperCase() + type.slice(1)}s`
         },
 
-        queryToName(query) {
+        queryToName (query) {
             return query
                 .replace(/_/g, ' ')
                 .split(' ')
@@ -399,7 +391,7 @@ export default {
                 .join(' ')
         },
 
-        nameToQuery(name) {
+        nameToQuery (name) {
             return name.toLowerCase().replace(/ /g, '_')
         },
     },

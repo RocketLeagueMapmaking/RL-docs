@@ -4,7 +4,7 @@
             Rocket League <br> Mapmaking
         </h1>
         <p>Guides, Maps, Downloads, and More!</p>
-        
+
         <h3 style="display: inline-block;">
             <a
                 class="first-link"
@@ -25,8 +25,8 @@
                 class="second-link"
                 href="https://steamcommunity.com/app/252950/workshop/"
             >Browse the Maps</a>
-        </h3> 
-    </section> 
+        </h3>
+    </section>
 </template>
 
 <style lang="stylus">

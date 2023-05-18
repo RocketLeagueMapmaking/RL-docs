@@ -13,7 +13,7 @@ module.exports = {
                     return x.variables.map(v => ({ ...v, parent: { name: x.name, Package: x.Package }}))
                 })
         },
-        mounted: function (tree) {      
+        mounted: function (tree) {
             return {
                 name: 'Player car',
                 type: tree.name,

@@ -1,5 +1,5 @@
 <template>
-    <section class="socials"> 
+    <section class="socials">
         <h1 class="section-title">
             <span>Social</span><br>Media
         </h1>
@@ -29,7 +29,7 @@
                     >
                         If anyone can make this happen, it&#39;ll be Lethamyr. Keep fighting the good fight! <a href="https://t.co/zbXdfAGaCa">https://t.co/zbXdfAGaCa</a>
                     </p>&mdash; Rocket League MapMaking (@RLMapMaking) <a href="https://twitter.com/RLMapMaking/status/1320128052374822912?ref_src=twsrc%5Etfw">October 24, 2020</a>
-                </blockquote> 
+                </blockquote>
                 <script
                     async
                     src="https://platform.twitter.com/widgets.js"
@@ -37,7 +37,7 @@
                 />
             </div>
         </div>
-    </section> 
+    </section>
 </template>
 
 <style lang="stylus">
@@ -59,7 +59,7 @@
 .card{
   width: 33%;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   margin: 15px;
 }
 .socials-icons{

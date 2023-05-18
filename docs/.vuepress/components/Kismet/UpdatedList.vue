@@ -1,7 +1,7 @@
 <template>
     <span>
-        <span 
-            v-for="node in nodes" 
+        <span
+            v-for="node in nodes"
             :key="node"
         >
             - {{ node }}<br>
@@ -12,14 +12,14 @@
 <script>
 export default {
     props: {
-        state: { 
+        state: {
             type: String,
             required: true,
         }
     },
     data () {
-        return { 
-            nodes: ['Loading...'] 
+        return {
+            nodes: ['Loading...']
         }
     },
     async mounted () {

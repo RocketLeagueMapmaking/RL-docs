@@ -14,21 +14,21 @@
                     class="node-header"
                     @click="toggle(node)"
                 >
-                    <span v-if="!Ishidden(node)">&#9654;</span>
+                    <span v-if="!isHidden(node)">&#9654;</span>
                     <span v-else>&#9660;</span>
                     <a>
                         {{ node.displayName }}
                     </a>
 
                     <div
-                        v-if="IsNonDummyClass(node)"
+                        v-if="isNonDummyClass(node)"
                         class="label"
                         title="This class is not documented in the dummy classes"
                     >
                         <p>Unregistered</p>
                     </div>
                 </div>
-                <div v-if="Ishidden(node)">
+                <div v-if="isHidden(node)">
                     <KismetNode
                         :node="node"
                         :category="category"
@@ -88,24 +88,24 @@ export default {
     },
 
     methods: {
-        toggle(node){
-            let index = this.nodes.indexOf(node)
+        toggle (node){
+            const index = this.nodes.indexOf(node)
             if(this.toggled.includes(index)){
                 this.toggled = this.toggled.filter(i => i !== index)
             }else this.toggled.push(index)
         },
 
-        Ishidden(node){
+        isHidden (node){
             return this.openAllNodes || this.toggled.includes(this.nodes.indexOf(node))
         },
 
-        IsNonDummyClass (node) {
+        isNonDummyClass (node) {
             return this.dummyItems.length > 0 ? !this.dummyItems.includes(`${node.Package}/Classes/${node.Class}.uc`) : false
         },
 
         showNode (node) {
-            return this.category === node.type 
-                && (this.upk === 'all' || node.Package === this.upk) 
+            return this.category === node.type
+                && (this.upk === 'all' || node.Package === this.upk)
                 && (this.names && this.names.length > 0 ? this.names.includes(node.displayName) : true)
         }
     }
@@ -117,7 +117,7 @@ export default {
     text-transform: capitalize
 }
 
-.node-header { 
+.node-header {
     margin: 14px 0 0 0;
     width: inherit;
     background-color: var(--tipBgColor);

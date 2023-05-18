@@ -18,14 +18,14 @@
                 class="replicated"
                 :title="replicated.title"
             >
-                {{ replicated.name }}   
+                {{ replicated.name }}
             </span>
             <div
                 v-if="showActions"
                 class="actions"
             >
-                <button 
-                    v-for="action in actions" 
+                <button
+                    v-for="action in actions"
                     :key="action.title"
                     :title="action.title"
                     @click="action.onClick"
@@ -61,8 +61,15 @@ export default {
 
     computed: {
         title: function () {
-            const { category, description, defaultValue, is_parent, parent, type } = this.item
-            const cls = is_parent ? type : `${parent.Package}.${parent.name}`
+            const {
+                category,
+                description,
+                defaultValue,
+                is_parent: isParent,
+                parent,
+                type
+            } = this.item
+            const cls = isParent ? type : `${parent.Package}.${parent.name}`
 
             return `Class: ${cls}\nEditor category: ${category ? `(${category})` : ''}\nDescription: ${description || ''}\nDefault value: ${defaultValue || ''}`
         },
@@ -80,12 +87,12 @@ export default {
                 {
                     title: 'Share this path',
                     icon: 'material-symbols:conversion-path',
-                    onClick: () => this.copy(this.path, "the item path")
+                    onClick: () => this.copy(this.path, 'the item path')
                 },
                 {
                     title: 'Share this property',
                     icon: 'fa6-solid:link',
-                    onClick: () => this.copy(this.shareUrl(), "the url to this item path")
+                    onClick: () => this.copy(this.shareUrl(), 'the url to this item path')
                 },
                 {
                     title: 'Copy kismet',
@@ -149,7 +156,7 @@ button:hover {
 
 .replicated {
     background-color: var(--accentColor);
-    border-radius: 2px; 
+    border-radius: 2px;
     padding: 1px 10px;
 }
 </style>

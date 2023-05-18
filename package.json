@@ -1,6 +1,6 @@
 {
   "name": "rocket_league_map_making",
-  "version": "0.8.7",
+  "version": "0.9.0",
   "description": "A website containing information pertaining to the creation, extension, debugging, and concepts of Rocket League map making.",
   "author": "RLMM",
   "license": "ISC",
@@ -26,17 +26,17 @@
     "npm": ">=7.0.0"
   },
   "dependencies": {
-    "node-fetch": "^2.6.9",
+    "node-fetch": "^2.6.11",
     "vue": "^2.7.14",
     "vue-template-compiler": "^2.7.14",
     "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.38.0",
-    "eslint-plugin-vue": "^9.11.0",
-    "markdown-link-check": "^3.11.1",
+    "eslint": "^8.40.0",
+    "eslint-plugin-vue": "^9.13.0",
+    "markdown-link-check": "^3.11.2",
     "markdown-link-extractor": "^3.1.0",
-    "markdownlint-cli2": "^0.6.0",
+    "markdownlint-cli2": "^0.7.1",
     "vuepress": "^1.9.9",
     "vuepress-plugin-container": "^2.1.5",
     "vuepress-plugin-seo": "^0.1.4"
