@@ -1,9 +1,19 @@
 <template>
     <div>
-        <slot :version="version" />
+        <slot
+            name="content"
+            :version="version"
+        />
+        <slot
+            name="search"
+            :set-options="setOptions"
+            :set-filter-name="setFilterName"
+            :filter-name="filterName"
+        />
         <TreeItem
             class="item"
             :item="data"
+            :filter-name="filterName"
             :is-first-color="true"
             :items-to-filter="highlighted"
             :render-component="itemCompName"
@@ -62,6 +72,7 @@ export default {
             data: { name: 'Loading...', children: [] },
             version: 'loading...',
             filterType: 'none',
+            filterName: { name: '', level: 1 },
         }
     },
 
@@ -81,11 +92,11 @@ export default {
         if (this.treeData.name) {
             mountedData = this.treeData
         } else {
-            console.log('Fetching remote tree data...')
+            console.debug('Fetching remote tree data...')
             const data = await fetch(this.url)
                 .then(res => res.json())
                 .catch(err => {
-                    console.log(err)
+                    console.error(err)
                     return undefined
                 })
 
@@ -95,7 +106,7 @@ export default {
         }
 
         if (this.versionKey in mountedData) {
-            console.log('Setting tree version to ' + mountedData[this.versionKey])
+            console.debug('Setting tree version to ' + mountedData[this.versionKey])
             this.version = mountedData[this.versionKey]
         }
 
@@ -104,31 +115,49 @@ export default {
         if (config) {
             if (config.component) this.itemCompName = config.component
             if (config.mounted) {
-                console.log('Converting tree data with key ' + this.configKey)
+                console.debug('Converting tree data with key ' + this.configKey)
                 this.data = config.mounted(mountedData)
-                console.log('Finished converting tree data')
+                console.debug('Finished converting tree data')
             } else {
                 this.data = mountedData
             }
         } else {
-            console.log('Rendering tree with default config')
+            console.debug('Rendering tree with default config')
             this.data = mountedData
         }
 
-        console.log('Rendering tree with component ' + this.itemCompName)
+        console.debug('Rendering tree with component ' + this.itemCompName)
 
         const params = new URLSearchParams(window.location.search)
         const path = params.get('path'), filter = params.get('filter')
 
         if (path) {
-            console.log('Setting tree path to ' + path)
+            console.debug('Setting tree path to ' + path)
 
             this.highlighted = path.split('.')
         } else if (filter) {
-            console.log('Setting tree filter to ' + filter)
+            console.debug('Setting tree filter to ' + filter)
 
             this.filterType = filter
         }
+    },
+
+    methods: {
+        setFilterName ({ name, level }) {
+            console.debug('Setting filter to ' + name + ' at level ' + level)
+
+            if (name) this.filterName.name = name
+            if (level) this.filterName.level = level
+        },
+
+        /**
+         * @param {{ filterType?: string }} options
+         */
+        setOptions (options) {
+            if (options.filterType && options.filterType.length > 0) {
+                this.filterType = options.filterType
+            }
+        },
     }
 }
 </script>

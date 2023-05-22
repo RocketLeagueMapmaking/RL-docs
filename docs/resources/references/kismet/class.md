@@ -13,8 +13,8 @@ This latest game update of this reference list can be found in the badge.
 <TreeComponent
     url="https://kismet-cdn.ghostrider-05.com/assets?tag=compact_tree&version=latest"
     configKey="PRI"
-    v-slot="slotProps"
 >
+<template v-slot:content="data">
 
 :::details How to use
 
@@ -24,7 +24,7 @@ This latest game update of this reference list can be found in the badge.
 
 :::
 
-## Player's car Reference <Badge :text="'version: ' + slotProps.version" />
+## Player's car Reference <Badge :text="'version: ' + data.version" />
 
 :::details Data structure
 An example property might look like this:
@@ -44,6 +44,17 @@ An example property might look like this:
 
 :::
 
-The class `Car_TA` is in local matches and training (`Car_Freeplay_TA` is extended from this class) the class for a player's car.
+The class `Car_TA` is in local matches and training (`Car_Freeplay_TA` is extended from this class) the class for a player's car. You can get this class on the car spawned event and the get car action.
 
+When using the `Player` kismet variable / player spawned event, use the `PlayerController` class (`PlayerController_TA`) as your starting point.
+
+</template>
+
+<template v-slot:search="data">
+    <PRITreeSearch
+        :setOptions="data.setOptions"
+        :setInputName="data.setFilterName"
+        :inputName="data.filterName"
+    />
+</template>
 </TreeComponent>

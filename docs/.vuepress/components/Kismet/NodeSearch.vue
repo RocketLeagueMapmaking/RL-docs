@@ -22,7 +22,10 @@
                 }"
                 @click="resetResult()"
             >
-                &#128473;
+                <span
+                    class="iconify"
+                    data-icon="fa-solid:times"
+                />
             </button>
             <button
                 class="autocomplete-input"
@@ -34,7 +37,11 @@
                 }"
                 @click="showResult(search)"
             >
-                &#x1F50E;&#xFE0E;
+                <span
+                    class="iconify"
+                    data-icon="fa-solid:search"
+                    data-rotate="90deg"
+                />
             </button>
 
             <!-- Filter options for packages and types -->
@@ -62,18 +69,13 @@
                 :disabled="match"
                 @change="setType"
             >
-                <option value="all">
-                    All nodes
-                </option>
                 <option
-                    v-for="nodeType in validNodeTypes.filter(
-                        (n) => n !== 'all'
-                    )"
+                    v-for="nodeType in validNodeTypes"
                     :key="nodeType"
                     :value="nodeType"
                     :selected="nodeType == type"
                 >
-                    {{ nodeType }}
+                    {{ nodeType === 'all' ? 'All nodes' : nodeType }}
                 </option>
             </select>
         </div>
@@ -111,7 +113,7 @@
 
         <!-- Found kismet node -->
         <div v-if="!isOpen && search && match">
-            <p>Showing result for kismet node: {{ search }}</p>
+            <p>{{ resultsText }}</p>
 
             <KismetNodeList
                 :upk="upk"
@@ -147,8 +149,8 @@
 </template>
 
 <script>
-const validPackages = ['TAGame', 'ProjectX', 'all']
-const validNodeTypes = ['actions', 'events', 'conditions', 'all']
+const validPackages = ['all', 'ProjectX', 'TAGame']
+const validNodeTypes = ['all', 'actions', 'conditions', 'events']
 
 function isValid (value, options) {
     const values = value.includes(',') ? value.split(',') : [value]
@@ -203,6 +205,10 @@ export default {
                     ? 'results for'
                     : `results for ${this.active} matching`
             }: ${this.search}`
+        },
+
+        resultsText () {
+            return `Showing result for kismet node: ${this.search}`
         },
     },
 
@@ -418,6 +424,9 @@ export default {
     height: 35px;
     width: 200px;
     max-width: fit-content !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .autocomplete-input .danger {

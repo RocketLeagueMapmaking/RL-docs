@@ -1,5 +1,8 @@
 <template>
-    <div class="tree-item">
+    <div
+        v-show="!(isFolder && filterChildren().length === 0)"
+        class="tree-item"
+    >
         <div
             :class="{ bold: isFolder }"
             class="tree-item-content"
@@ -23,6 +26,7 @@
                 :items-to-filter="itemsToFilter.slice(1)"
                 :open-on-created="openOnCreated"
                 :filter-type="filterType"
+                :filter-name="filterName"
             />
             <div v-else>
                 {{ item.name }}
@@ -44,6 +48,7 @@
                 :items-to-filter="itemsToFilter.slice(1)"
                 :open-on-created="openOnCreated"
                 :filter-type="filterType"
+                :filter-name="filterName"
             />
         </div>
     </div>
@@ -87,6 +92,10 @@ export default {
             required: false,
             default: 'none',
         },
+        filterName: {
+            type: Object,
+            required: true,
+        },
         itemsToFilter: {
             type: Array,
             required: false,
@@ -122,25 +131,48 @@ export default {
         isFolder: function () {
             return this.children != undefined
         },
-        children: function () {
+        config: function () {
             if (this.configKey.length > 0) {
                 const config = configs[this.configKey]
-                if (config && config.computeChildren) {
-                    return config.computeChildren(this.item, this.tree)
-                }
+                if (config) return config
             }
-            return this.item.children
+
+            return undefined
+        },
+        children: function () {
+            return this.getChildren(this.item)
         }
     },
     methods: {
+        getChildren: function (item) {
+            if (this.config != undefined && this.config.computeChildren) {
+                return this.config.computeChildren(item, this.tree)
+            }
+
+            return item.children
+        },
         filterChild: function (child) {
-            return this.itemsToFilter.length > 1 ? this.itemsToFilter[1] === child.name : true
+            const isInPath = this.itemsToFilter.length > 1
+                ? this.itemsToFilter[1] === child.name
+                : true
+            const hasType = this.filterType !== 'none' ? child[this.filterType] : true
+            const isInName = this.filterChildName(child)
+
+            return isInPath && isInName && hasType
+        },
+        filterChildName: function (child) {
+            if (this.filterName.name.length === 0) return true
+            else if (this.config && this.config.filterChildren) {
+                return this.config.filterChildren(child, this.tree, this.filterName)
+            } else {
+                return child.name.toLowerCase().includes(this.filterName.name.toLowerCase())
+            }
         },
         filterChildren: function () {
             const children = this.children
 
             if (!children) return []
-            else return children.filter(n => this.filterChild(n) && (this.filterType !== 'none' ? n[this.filterType] : true))
+            else return children.filter(n => this.filterChild(n))
         },
         toggle: function () {
             if (!this.toggledOnce) this.toggledOnce = true

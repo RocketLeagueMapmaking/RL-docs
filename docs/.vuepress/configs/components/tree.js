@@ -10,12 +10,26 @@ module.exports = {
                 .flatMap(x => {
                     // ???
                     if (!x && item.type === 'Object') return []
-                    return x.variables.map(v => ({ ...v, parent: { name: x.name, Package: x.Package }}))
+                    return x.variables.map(v => ({
+                        ...v,
+                        is_parent: v.type !== item.type ? v.is_parent : false,
+                        parent: { name: x.name, Package: x.Package },
+                        index: item.index + 1,
+                    }))
                 })
+        },
+        filterChildren: function (child, tree, options) {
+            const { name, level } = options
+            if (child.is_parent && level >= child.index) {
+                return this.computeChildren(child, tree).some(n => this.filterChildren(n, tree, options))
+            } else {
+                return child.name.toLowerCase().includes(name.toLowerCase())
+            }
         },
         mounted: function (tree) {
             return {
                 name: 'Player car',
+                index: 0,
                 type: tree.name,
                 is_parent: true,
                 classes: tree.classes,

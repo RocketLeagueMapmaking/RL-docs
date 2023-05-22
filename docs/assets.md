@@ -46,7 +46,7 @@ By default only the name is being used for displaying the tree item.
 
 For more options add a configuration in `configs/components/tree.js` for load options, render component, etc. to load with the `configKey` property. See the current configuration as example.
 
-A default slot can be used to access the version of the tree:
+A `content` slot can be used to access the version of the tree:
 
 <TreeComponent
     :treeData="{
@@ -54,12 +54,14 @@ A default slot can be used to access the version of the tree:
         version: '0',
         children: [{ name: 'child', children: []}]
     }"
-    v-slot="slotProps"
+    v-slot:content="slotProps"
 >
 
 #### version <Badge :text="slotProps.version" />
 
 </TreeComponent>
+
+Furthermore, a `search` slot is available to search for names while allowing custom components to render the inputs
 
 ## Vuepress assets
 
