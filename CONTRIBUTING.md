@@ -42,6 +42,16 @@ The project utilises `vuepress` in order to create pages for our documentation, 
 1. Execute `npm run docs:dev`.
 2. Open the URL specified within the output of the command.
 
+## Sharing local snapshot
+
+To share a local build of the current branch:
+
+1. Execute `npm install` from the root of the repository.
+2. Log into the rlmm / your own Cloudflare account with `npx wrangler login` and complete the oauth2 flow.
+3. Execute `npm run docs:build`
+4. Execute `npx wrangler pages publish ./docs/.vuepress/dist/ --project-name=rocketleaguemapmaking --branch=<branch>`.
+Replace `<branch>` with the name of the current branch.
+
 ## Components
 
 Vuepress makes use of [Vue components](https://vuepress.vuejs.org/guide/using-vue.html#using-components). If you make multiple components for one page or the components are about the same subject, add them in a folder.

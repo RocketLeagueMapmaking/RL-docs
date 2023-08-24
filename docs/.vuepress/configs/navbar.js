@@ -77,7 +77,7 @@ module.exports = [
             },
             {
                 text: 'References',
-                link: '/resources/references/'
+                link: '/resources/references/guide'
             },
             {
                 text: 'Community',
@@ -130,8 +130,8 @@ module.exports = [
                         link: '/more/contribute'
                     },
                     {
-                        text: 'Discussions',
-                        link: 'https://github.com/rocketleaguemapmaking/RL-Docs/discussions'
+                        text: 'GitHub',
+                        link: 'https://github.com/rocketleaguemapmaking/RL-Docs'
                     },
                     {
                         text: 'Patreon',

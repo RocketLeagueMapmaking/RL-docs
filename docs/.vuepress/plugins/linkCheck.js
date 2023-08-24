@@ -33,21 +33,21 @@ const chalk = require('chalk')
  * Check whether the input is given and return otherwise given the default value.
  * Only intended for booleans for this plugin.
  * Replace on later node version with input ??= Default
- * @param {*} input 
- * @param {boolean} Default 
+ * @param {*} input
+ * @param {boolean} Default
  * @returns {boolean}
  */
 const option = (input, Default) => input != undefined ? input : Default
 
 /**
  * Validate an external link (starting with http(s)://)
- * @param {string} link 
+ * @param {string} link
  */
 const checkExternalLink = (link) => {
     markdownLinkCheck(link.href, {
         projectBaseUrl: '/docs/',
-        replacementPatterns: [ 
-            { pattern: './', replacement: '{{BASEURL}}/'}, 
+        replacementPatterns: [
+            { pattern: './', replacement: '{{BASEURL}}/'},
             { pattern: '/', replacement: '{{BASEURL}}/'},
             { pattern: '../', replacement: '{{BASEURL}}/'}
         ],
@@ -67,43 +67,43 @@ const checkExternalLink = (link) => {
 
 /**
  * Check if the relative path is a site page
- * @param {string} relativeLink 
- * @param {string} currentPath 
+ * @param {string} relativeLink
+ * @param {string} currentPath
  * @param {PageSearchOptions} options
- * @returns 
+ * @returns
  */
 const checkPage = (relativeLink, currentPath, options) => {
     const { publicDir, source, site, additionalPages } = options
 
-    const pageHeader = relativeLink.includes('.html#') || relativeLink.includes('.md#') 
-        ? relativeLink.slice(relativeLink.indexOf('#') + 1) 
+    const pageHeader = relativeLink.includes('.html#') || relativeLink.includes('.md#')
+        ? relativeLink.slice(relativeLink.indexOf('#') + 1)
         : null
 
-    const pagePath = !['.', '/'].includes(relativeLink[0]) 
-        ? currentPath.slice(0, currentPath.lastIndexOf('/')) 
+    const pagePath = !['.', '/'].includes(relativeLink[0])
+        ? currentPath.slice(0, currentPath.lastIndexOf('/'))
         : currentPath
-                
+
     const resolvedPath = relativeLink.startsWith('../') ? `../${relativeLink}` : relativeLink
     const relSuffix = resolvedPath.indexOf('.html') > 0 ? resolvedPath.indexOf('.html') : resolvedPath.indexOf('.md')
     const relPath = pageHeader ? resolvedPath.slice(0, relSuffix + 1) + 'md' : resolvedPath
-                
+
     const path = (base) => resolve(base + sep + pagePath, relPath)
     const pathNoExt = (base) => resolve(base + sep + pagePath.replace('.md', ''), relPath)
     const publicPath = publicDir + sep + relPath
 
     const page = site.find(page => [path(source), pathNoExt(source), publicPath].some(path => path.includes(page.path)))
 
-    const isValidPath = existsSync(path(source)) 
-        || existsSync(path(publicDir)) 
-        || existsSync(publicPath) 
+    const isValidPath = existsSync(path(source))
+        || existsSync(path(publicDir))
+        || existsSync(publicPath)
         || existsSync(pathNoExt(source))
         || additionalPages.some(page => path(source) === join(source, page.path))
 
-    const isValid = (path) => existsSync(path) ? path : null 
+    const isValid = (path) => existsSync(path) ? path : null
 
     const output = isValid(path(source)) || isValid(path(publicDir)) || isValid(pathNoExt(source)) || additionalPages.find(page => path(source) === join(source, page.path))
     const validPath = output && output.path ? output.path : output
-            
+
     if (!isValidPath && validPath) console.log(chalk.red(validPath))
     return {
         header: pageHeader,
@@ -115,8 +115,8 @@ const checkPage = (relativeLink, currentPath, options) => {
 
 /**
  * Check whether a header (page slug after #) is valid on a page
- * @param {string} header 
- * @param {string} otherPagePath 
+ * @param {string} header
+ * @param {string} otherPagePath
  * @param {PageSearchOptions} searchOptions
  * @param {boolean} logMatches
  */
@@ -129,14 +129,14 @@ const checkHeader = (header, otherPagePath, searchOptions, logMatches, link = ''
     }
 
     const pathFromSource = otherPagePath.slice(source.length).replace(/\\/g, '/')
-    const page = site.find(page => page.path === otherPagePath 
-        || otherPagePath.includes(page.path) 
+    const page = site.find(page => page.path === otherPagePath
+        || otherPagePath.includes(page.path)
         || [pathFromSource, pathFromSource.toLowerCase()].includes(`/${page.path}`)
         || otherPagePath.replace('\\', '/').includes(page.path)
     ) || {}
-            
+
     const headers = page.headers || []
-    const isValid = headers.some(x => x === header) 
+    const isValid = headers.some(x => x === header)
 
     const pageHeaders = headers.length > 0 ? `(page has headers: ${headers.join(',')})` : '(page has no headers)'
     const message = (valid) => `${valid} header on link: ${header} ${pageHeaders}${link ? `. Link: ${link}` : ''} [${otherPagePath}]`
@@ -162,10 +162,10 @@ module.exports = (options, ctx) => {
 
     // Read the pages from the options
     const pages = option(options.additionalPages, [])
-    const additionalPages = pages.map(page => ({ 
+    const additionalPages = pages.map(page => ({
         path: page.path.replace('.html', '.md')
     }))
-    
+
     return {
         name,
         ready () {
@@ -176,7 +176,7 @@ module.exports = (options, ctx) => {
              */
             const markdownPages = ctx.pages.map(page => page._strippedContent)
 
-            const site = ctx.pages.map(page => ({ 
+            const site = ctx.pages.map(page => ({
                 headers: page.headers ? page.headers.map(h => h.slug) : [],
                 path: page.relativePath
             }))
@@ -198,7 +198,7 @@ module.exports = (options, ctx) => {
 
                 // Check only for internal vuepress links
                 const pageLinks = links.filter(n => checkExternal ? n : !n.startsWith('http'))
-                if (pageLinks.length < 0) { 
+                if (pageLinks.length < 0) {
                     return null
                 }
 

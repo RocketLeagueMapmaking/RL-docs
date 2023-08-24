@@ -1,21 +1,21 @@
 <template>
-  <div>
-    <div class="footer">
-      <img
-        alt="RLMM logo"
-        src="icons/logo_rlmm_round_144.png"
-      >
-      <a href="https://www.youtube.com/channel/UCp6gkqadtgsaZmPnex9MNiA/featured">YouTube</a>
-      <a href="https://discord.gg/PWu3ZWa">Discord</a>
-      <a href="https://github.com/RocketLeagueMapmaking/RL-docs">GitHub</a>
-      <a href="./more/contact">Contact</a>
-      <a href="./more/about">About</a>
-    </div>
+    <div>
+        <div class="footer">
+            <img
+                alt="RLMM logo"
+                src="icons/logo_rlmm_round_144.png"
+            >
+            <a href="https://www.youtube.com/channel/UCp6gkqadtgsaZmPnex9MNiA/featured">YouTube</a>
+            <a href="https://discord.gg/PWu3ZWa">Discord</a>
+            <a href="https://github.com/RocketLeagueMapmaking/RL-docs">GitHub</a>
+            <a href="./more/contact">Contact</a>
+            <a href="./more/about">About</a>
+        </div>
 
-    <div class="under-footer">
-      <p>Powered by Vuepress   |   Written by Mr. Swaggles   |   Designed by ghostrider-05</p>
+        <div class="under-footer">
+            <p>Powered by Vuepress   |   Written by Mr. Swaggles   |   Designed by ghostrider-05</p>
+        </div>
     </div>
-  </div>
 </template>
 
 <style lang="stylus">

@@ -1,8 +1,8 @@
-const { 
+const {
     additionalPages,
-    head, 
-    themeConfig, 
-    plugins 
+    head,
+    themeConfig,
+    plugins
 } = require('./configs/index.js')
 
 module.exports = {
@@ -18,7 +18,7 @@ module.exports = {
     evergreen: true,
 
     // Theme configuration
-    themeConfig,  
+    themeConfig,
     // Register plugins
     plugins,
 

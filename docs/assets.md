@@ -12,85 +12,64 @@ On this page you will find some tips and tricks related to styling a page. Other
 
 ## RLMM Assets
 
-### Kismet nodes
+### Tree
+
+A recursive tree structure can be used to display a nested object with the `<TreeComponent />`.
+
+The following properties are exposed:
+
+- treeData: the json object to use for the tree. Can be loaded with `require('../path/.vuepress/public/data/file.json')`.
+- url: the url that can be fetched to get the same data as `treeData`
+- openAllItems: open all levels at loading the page
+
+#### Simple tree
+
+By default only the name is being used for displaying the tree item.
 
 ```md
-<KismetNode 
-    title="Kismet Node" status="Not documented" image="add_game_ball"
-    folder="TAGame" type="Actions"
-    description="Add a Kismet node to the documentation" 
-    :inputLinks="['Add','Remove']"
-    :outputLinks="['Added','Removed']"
-    :variableLinks="['ball','Targets']"
-    :notes="['This node is synchronous','This nodes requires x or y']"
+<TreeComponent
+    :treeData="{
+        name: 'test',
+        children: [{ name: 'child', children: [{ name: 'more' }] }, { name: 'child 2'}]
+    }"
 />
 ```
 
-<KismetNode
-    title="Kismet Node" status="Not documented" image="add_game_ball"
-    folder="TAGame" type="Actions"
-    description="Add a Kismet node to the documentation"
-    :inputLinks="['Add','Remove']"
-    :outputLinks="['Added','Removed']"
-    :variableLinks="['ball','Targets']"
-    :notes="['This node is synchronous','This nodes requires x or y']"
+<TreeComponent
+    :treeData="{
+        name: 'test',
+        children: [{ name: 'child', children: [{ name: 'more' }] }, { name: 'child 2'}]
+    }"
 />
 
-*General properties:*
+#### Advanced options
 
-- `title`: Name of the kismet node used in UDK
-  - Type: `String`
-  - Required: `true`
-- `description`: Summary of what can be done with the kismet node
-  - Type: `String`
-  - Required: `false`
-- `status`: State of the kismet node
-  - Options: `Not documented`, `Not working`, `New`, `ACv3`, `ACv2`, `ACv1`
-  - Type: `String`
-  - Required: `true`
-- `image`: An image of the kismet node. **The image (.png) must be placed in `docs/.vuepress/public/images/kismet/`**
-  - Type: `String` - image name
-  - Required: `false`
-- `folder`: The folder of the kismet node in UDK
-  - Options: `TAGame`, `TAGame_decrypted`
-  - Type: `String`
-  - Required: `true`
-- `type`: Type of kismet node
-  - Options: `Actions`, `Events`
-  - Type: `String`
-  - Required: `true`
-- `:notes`: Tips and remarks about the kismet node
-  - Type: `Array`
-  - Required: `false`
+For more options add a configuration in `configs/components/tree.js` for load options, render component, etc. to load with the `configKey` property. See the current configuration as example.
 
-:::warning Semicolon
-To register an array as a property of a kismet node (or any other component) `:` or `v-bind:` must be placed before the name of the array.
-:::
+A `content` slot can be used to access the version of the tree:
 
-*Values:*
+<TreeComponent
+    :treeData="{
+        name: 'test 2',
+        version: '0',
+        children: [{ name: 'child', children: []}]
+    }"
+    v-slot:content="slotProps"
+>
 
-- `:inputLinks`: All items on the left side of a kismet node (except for `in`)
-  - Type: `Array`
-  - Required: `false`
-- `:outputLinks`: All items on the right side of a kismet node (except for `out`)
-  - Type: `Array`
-  - Required: `false`
-- `:inputLinks`: All variables of a kismet node
-  - Type: `Array`
-  - Required: `false`
+#### version <Badge :text="slotProps.version" />
 
-A not documentated node would then look like this:
+</TreeComponent>
 
-```md
-<KismetNode 
-    title="Apply Car Products" status="Not documented" 
-    folder="TAGame_decrypted" type="Actions" 
-/>
-```
+Furthermore, a `search` slot is available to search for names while allowing custom components to render the inputs
 
 ## Vuepress assets
 
 ```md
+::: info
+This is an info block
+:::
+
 ::: tip
 This is a tip
 :::
@@ -111,6 +90,10 @@ This is a details block
 This is a warning with a custom title
 :::
 ````
+
+::: info
+This is an info block
+:::
 
 ::: tip
 This is a tip

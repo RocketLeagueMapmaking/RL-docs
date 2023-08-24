@@ -232,7 +232,16 @@ module.exports = {
             children: [
                 'guide',
                 'psyonix',
-                'ue5'
+                'ue5',
+            ]
+        },
+        {
+            title: 'Kismet references',
+            collapsable: false,
+            sidebarDepth: 1,
+            children: [
+                'kismet/nodes',
+                'kismet/class',
             ]
         }
     ],

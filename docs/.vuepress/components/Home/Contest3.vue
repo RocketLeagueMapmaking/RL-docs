@@ -1,23 +1,23 @@
 <template>
-  <section class="guide-part">
-    <div class="guide-text">
-      <h1 class="section-title">
-        <span> Mapmaking Contest 3 </span> <br> Mayday
-      </h1>
-      <div class="guide-part-body">
-        <p>
-          Mayday May Day Mayday! From May 1st until July 13th, 2021, the community was asked to make a map which was flowery, dangerous, or both flowery and dangerous. $550 in prizes went to <a href="https://imgur.com/gallery/kbp3Jzz">eight amazing maps</a> as judged by a panel and by the Rocket League Community. The next one will surely blow your mind!
-        </p>
-      </div>
-    </div>
+    <section class="guide-part">
+        <div class="guide-text">
+            <h1 class="section-title">
+                <span> Mapmaking Contest 3 </span> <br> Mayday
+            </h1>
+            <div class="guide-part-body">
+                <p>
+                    Mayday May Day Mayday! From May 1st until July 13th, 2021, the community was asked to make a map which was flowery, dangerous, or both flowery and dangerous. $550 in prizes went to <a href="https://imgur.com/gallery/kbp3Jzz">eight amazing maps</a> as judged by a panel and by the Rocket League Community. The next one will surely blow your mind!
+                </p>
+            </div>
+        </div>
 
-    <div class="guide-intro">
-      <img
-        src="../../public/images/rlmmc3.png"
-        alt="Mayday"
-      >
-    </div>
-  </section>
+        <div class="guide-intro">
+            <img
+                src="../../public/images/rlmmc3.png"
+                alt="Mayday"
+            >
+        </div>
+    </section>
 </template>
 
 <style lang="stylus">

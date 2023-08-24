@@ -31,7 +31,7 @@ The terms Link/Connector/Connection are used somewhat interchangeably, but they 
 * `C (with node(s) selected)` - Add comment block
 
 :::tip More Hotkeys
-It is possible to [add kismet nodes](https://docs.unrealengine.com/udk/Three/KismetUserGuide.html#Hotkeys) with your keyboard, and you can also [change the hotkeys](../misc/08_custom_udk.md#udk-custom-hotkeys) as you prefer!
+It is possible to [add kismet nodes](https://docs.unrealengine.com/udk/Three/KismetUserGuide.html#Hotkeys) with your keyboard, and you can also [change the hotkeys](../misc/08_custom_udk.md#kismet) as you prefer!
 :::
 
 ## Kismet Editor Window <Badge text="important" type="tip"/>
@@ -62,8 +62,6 @@ It is possible to [add kismet nodes](https://docs.unrealengine.com/udk/Three/Kis
 
 Kismet offers a hodge-podge of nodes which are essentially split into five groups. They will be explained in this order since you will need to understand all previous types going down the list:
 
-Kismet offers a hodge-podge of nodes which are essentially split into five groups. They will be explained in this order since you will need to understand all previous types going down the list:
-
 | Type      | Used for...                           |
 | --------- | ------------------------------------- |
 | Variable  | Storing information                   |
@@ -82,28 +80,28 @@ If you wish to completely abuse the game for things like Chaos Rumble or (the or
 
 ### Variables
 
-| Type              | Used for...                                                                                       |
-| ----------------- | ------------------------------------------------------------------------------------------------- |
-| Bool              | True/False data, like a door being open or shut                                                   |
+| Type              | Used for...                                                                         |
+| ----------------- | ----------------------------------------------------------------------------------- |
+| Bool              | True/False data, like a door being open or shut                                     |
 | External Variable | Named variables of any type from an external sequence ([see Sequences](#sequences)) |
-| Float             | Numbers with decimal precision, like speed or Z location                                          |
-| Int               | Numbers with integer precision, like number of players                                            |
-| Matinee Data      | Animation data (see [Matinee](../udk/21_matinee.md))                                                 |
-| Named Variable    | Named variables of any type                                                                       |
-| Object            | Objects in the map, like the ball                                                                 |
-| Player            | Players themselves                                                                                |
-| String            | Text data, like player names                                                                      |
-| Vector            | Sets of (typically) 3 numbers, like 3D location                                                   |
+| Float             | Numbers with decimal precision, like speed or Z location                            |
+| Int               | Numbers with integer precision, like number of players                              |
+| Matinee Data      | Animation data (see [Matinee](../udk/21_matinee.md))                                |
+| Named Variable    | [Named variables][udk-docs:named-vars] of any type                                  |
+| Object            | Objects in the map, like the ball                                                   |
+| Player            | Players themselves                                                                  |
+| String            | Text data, like player names                                                        |
+| Vector            | Sets of (typically) 3 numbers, like 3D location                                     |
 
 ### Events
 
 I encourage you to test out any Events which sound interesting. Here are some of the most frequently and generally useful:
 
-| Event                   | Used for...                                                                            |
-| ----------------------- | -------------------------------------------------------------------------------------- |
-| Level Loaded            | Running code as soon as the map is loaded                                              |
-| Player > Player Spawned | Running code when a player spawns or respawns                                          |
-| TAGame > Round Start    | Running code when gameplay starts or resumes                                           |
+| Event                   | Used for...                                                                               |
+| ----------------------- | ----------------------------------------------------------------------------------------- |
+| Level Loaded            | Running code as soon as the map is loaded                                                 |
+| Player > Player Spawned | Running code when a player spawns or respawns                                             |
+| TAGame > Round Start    | Running code when gameplay starts or resumes                                              |
 | TriggerVolume Touch     | Running code when the player or ball enters a region (more on this [here](03_trigger.md)) |
 
 ### Actions
@@ -132,3 +130,5 @@ There are a few key nodes to keep in mind when working with Sequences, as they e
 | -------------------------------------- | -------------------------------------------------- |
 | Action > Event > Activate Remote Event | Triggering a Remote Event (asynchronous)           |
 | Event > Remote Event                   | Activating a Sequence when that event is triggered |
+
+[udk-docs:named-vars]: https://docs.unrealengine.com/udk/Three/KismetUserGuide.html#Named%20Variables

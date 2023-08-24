@@ -1,4 +1,5 @@
 name: Preview fork deploys
+# Maybe use more events at some point?
 on: 
   push:
     branches-ignore:

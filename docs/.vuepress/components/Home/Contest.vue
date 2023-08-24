@@ -1,23 +1,23 @@
 <template>
-  <section class="guide-part">
-    <div class="guide-text">
-      <h1 class="section-title">
-        <span> Maptember </span> <br> Madness
-      </h1>
-      <div class="guide-part-body">
-        <p>
-          In September 2020, Rocket League Mapmaking kicked off a contest featuring $550 in prize money. These prizes went to <a href="https://imgur.com/gallery/TElpGKG">seven very deserving maps</a> as judged by a panel and by the Rocket League Community. Keep an eye out for future contests!
-        </p>
-      </div>
-    </div>
+    <section class="guide-part">
+        <div class="guide-text">
+            <h1 class="section-title">
+                <span> Maptember </span> <br> Madness
+            </h1>
+            <div class="guide-part-body">
+                <p>
+                    In September 2020, Rocket League Mapmaking kicked off a contest featuring $550 in prize money. These prizes went to <a href="https://imgur.com/gallery/TElpGKG">seven very deserving maps</a> as judged by a panel and by the Rocket League Community. Keep an eye out for future contests!
+                </p>
+            </div>
+        </div>
 
-    <div class="guide-intro">
-      <img
-        src="../../public/images/home/image260.png"
-        alt="Maptember madness"
-      >
-    </div>
-  </section>
+        <div class="guide-intro">
+            <img
+                src="../../public/images/home/image260.png"
+                alt="Maptember madness"
+            >
+        </div>
+    </section>
 </template>
 
 <style lang="stylus">

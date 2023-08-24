@@ -1,236 +1,236 @@
 <!-- eslint-disable vue/no-v-html -->
 <template>
-  <div>
-    <div class="flowchart">
-      <!-- Begin message -->
-      <div
-        v-if="reset"
-        class="begin"
-      >
-        <h1>
-          {{ messages.begin.title }}
-        </h1>
-        <p v-html="messages.begin.text" />
-        <button
-          class="begin_message"
-          @click="reset = !reset"
-        > 
-          {{ messages.begin.button }}
-        </button>
-      </div>
-
-      <!-- Set-up questions -->
-      <div
-        v-for="(question, i) in setupQuestions"
-        :key="question.question"
-        class="question"
-      >
-        <div v-if="!reset && !end && setupProgress === i">
-          <p class="ask">
-            {{ question.question }}
-          </p>
-          <p v-html="question.desc" />
-        
-          <div class="mobile-btn">
-            <button
-              class="choicebutton"
-              @click="setupProgress += 1"
-            > 
-              {{ buttons.yes }}
-            </button>
-            <button
-              class="choicebutton-no"
-              @click="end = !end"
-            > 
-              {{ buttons.no }}
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Select map type -->
-      <div v-if="setupProgress === setupQuestions.length && followupCategory.length === 0">
-        <p> {{ messages.ready }} </p>
-        <div
-          v-for="(type, j) in mapCategories"
-          :key="type.category"
-          :class="{ category: categoryIndex === j }"
-        >
-          <div v-if="categoryIndex === j">
-            <h2> {{ type.category }} </h2>
-            <p> {{ type.description }} </p>
-
-            <div class="category_examples">
-              <p> {{ messages.menu.example }} </p>
-              <p
-                v-for="example in type.examples"
-                :key="example"
-                class="example"
-              >
-                <code>{{ example }}</code>
-              </p>
+    <div>
+        <div class="flowchart">
+            <!-- Begin message -->
+            <div
+                v-if="reset"
+                class="begin"
+            >
+                <h1>
+                    {{ messages.begin.title }}
+                </h1>
+                <p v-html="messages.begin.text" />
+                <button
+                    class="begin_message"
+                    @click="reset = !reset"
+                >
+                    {{ messages.begin.button }}
+                </button>
             </div>
 
-            <div class="category_focus">
-              <p> {{ messages.menu.focus }} </p>
-              <button
-                v-for="focus in type.focus"
-                :key="focus"
-                class="focus-btn"
-                @click="followupCategory = followupQuestions.find(x => x.name === focus).data"
-              > 
-                {{ focus }}
-              </button>
-            </div>      
-          </div>
+            <!-- Set-up questions -->
+            <div
+                v-for="(question, i) in setupQuestions"
+                :key="question.question"
+                class="question"
+            >
+                <div v-if="!reset && !end && setupProgress === i">
+                    <p class="ask">
+                        {{ question.question }}
+                    </p>
+                    <p v-html="question.desc" />
+
+                    <div class="mobile-btn">
+                        <button
+                            class="choicebutton"
+                            @click="setupProgress += 1"
+                        >
+                            {{ buttons.yes }}
+                        </button>
+                        <button
+                            class="choicebutton-no"
+                            @click="end = !end"
+                        >
+                            {{ buttons.no }}
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select map type -->
+            <div v-if="setupProgress === setupQuestions.length && followupCategory.length === 0">
+                <p> {{ messages.ready }} </p>
+                <div
+                    v-for="(type, j) in mapCategories"
+                    :key="type.category"
+                    :class="{ category: categoryIndex === j }"
+                >
+                    <div v-if="categoryIndex === j">
+                        <h2> {{ type.category }} </h2>
+                        <p> {{ type.description }} </p>
+
+                        <div class="category_examples">
+                            <p> {{ messages.menu.example }} </p>
+                            <p
+                                v-for="example in type.examples"
+                                :key="example"
+                                class="example"
+                            >
+                                <code>{{ example }}</code>
+                            </p>
+                        </div>
+
+                        <div class="category_focus">
+                            <p> {{ messages.menu.focus }} </p>
+                            <button
+                                v-for="focus in type.focus"
+                                :key="focus"
+                                class="focus-btn"
+                                @click="followupCategory = followupQuestions.find(x => x.name === focus).data"
+                            >
+                                {{ focus }}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2nd series Questions -->
+            <div
+                v-for="(question, k) in followupCategory"
+                :key="question.question"
+            >
+                <div v-if="followupCategory.length > 0 && followupProgress === k && !end">
+                    <p class="ask">
+                        {{ `${messages.menu.question} ${question.question}?` }}
+                    </p>
+                    <p> {{ question.desc }} </p>
+                    <div class="mobile-btn">
+                        <button
+                            class="choicebutton"
+                            @click="end = !end"
+                        >
+                            {{ buttons.yes }}
+                        </button>
+                        <button
+                            class="choicebutton-no"
+                            @click="followupProgress += 1"
+                        >
+                            {{ buttons.no }}
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reached the end -->
+            <div
+                v-if="followupCategory.length > 0 && followupProgress === followupCategory.length"
+                style="display:flex; align-items:center; justify-content:center;"
+            >
+                <p> {{ messages.end }} </p>
+            </div>
+
+            <!-- Question answers -->
+            <div v-if="end">
+                <div v-if="setupProgress < setupQuestions.length">
+                    <p v-html="setupQuestions[setupProgress].no" />
+                </div>
+                <div v-else-if="followupCategory.length > 0">
+                    <p
+                        class="answer"
+                        v-html="followupCategory[followupProgress].no"
+                    />
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <button
+                    v-if="setupProgress === setupQuestions.length && followupCategory.length === 0"
+                    :disabled="categoryIndex === 0"
+                    class="menu-button"
+                    @click="categoryIndex -= 1"
+                >
+                    <span
+                        class="iconify"
+                        :data-icon="buttons.prev"
+                    />
+                </button>
+
+                <button
+                    v-if="setupProgress === setupQuestions.length && followupCategory.length === 0"
+                    :disabled="(categoryIndex + 1) === mapCategories.length"
+                    class="menu-button"
+                    @click="categoryIndex += 1"
+                >
+                    <span
+                        class="iconify"
+                        :data-icon="buttons.next"
+                    />
+                </button>
+
+                <!-- if not hidden, the previous button will have a default left icon -->
+                <button
+                    v-if="setupProgress === setupQuestions.length && followupCategory.length === 0"
+                    :disabled="(categoryIndex + 1) === mapCategories.length"
+                    :hidden="true"
+                    @click="categoryIndex += 1"
+                />
+
+                <!-- To previous question in the setup questions -->
+                <button
+                    v-if="!end && !reset && setupProgress < setupQuestions.length"
+                    :disabled="setupProgress === 0"
+                    class="menu-button"
+                    @click="setupProgress -= 1"
+                >
+                    <span
+                        class="iconify"
+                        :data-icon="buttons.back"
+                    />
+                </button>
+
+                <!-- Back to category menu -->
+                <button
+                    v-if="!end && followupCategory.length > 0"
+                    class="menu-button"
+                    @click="setupProgress = setupQuestions.length; followupProgress = 0; followupCategory = [];"
+                >
+                    <span
+                        class="iconify"
+                        :data-icon="buttons.menu"
+                    />
+                </button>
+
+                <!-- Return to question -->
+                <button
+                    v-if="end"
+                    id="returnbutton"
+                    class="returnbutton"
+                    @click="end = !end"
+                >
+                    <span
+                        class="iconify"
+                        :data-icon="buttons.return"
+                    />
+                </button>
+
+                <!-- Reset buttons -->
+                <button
+                    v-if="end"
+                    class="resetbutton"
+                    @click="end = !end; resetChart()"
+                >
+                    <span
+                        class="iconify"
+                        :data-icon="buttons.reset"
+                    />
+                </button>
+
+                <button
+                    v-if="!reset && !end"
+                    class="resetbutton"
+                    @click="resetChart()"
+                >
+                    <span
+                        class="iconify"
+                        :data-icon="buttons.reset"
+                    />
+                </button>
+            </div>
         </div>
-      </div>
-
-      <!-- 2nd series Questions -->
-      <div
-        v-for="(question, k) in followupCategory"
-        :key="question.question"
-      >
-        <div v-if="followupCategory.length > 0 && followupProgress === k && !end">
-          <p class="ask">
-            {{ `${messages.menu.question} ${question.question}?` }}
-          </p>
-          <p> {{ question.desc }} </p>
-          <div class="mobile-btn">
-            <button
-              class="choicebutton"
-              @click="end = !end"
-            > 
-              {{ buttons.yes }}
-            </button>
-            <button
-              class="choicebutton-no"
-              @click="followupProgress += 1"
-            > 
-              {{ buttons.no }}
-            </button>
-          </div>
-        </div>   
-      </div>
-
-      <!-- Reached the end -->
-      <div
-        v-if="followupCategory.length > 0 && followupProgress === followupCategory.length"
-        style="display:flex; align-items:center; justify-content:center;"
-      >
-        <p> {{ messages.end }} </p>
-      </div>
-            
-      <!-- Question answers -->
-      <div v-if="end">
-        <div v-if="setupProgress < setupQuestions.length">
-          <p v-html="setupQuestions[setupProgress].no" />
-        </div>
-        <div v-else-if="followupCategory.length > 0">
-          <p
-            class="answer"
-            v-html="followupCategory[followupProgress].no"
-          />
-        </div>
-      </div>
-
-      <!-- Buttons -->
-      <div class="buttons">
-        <button
-          v-if="setupProgress === setupQuestions.length && followupCategory.length === 0"
-          :disabled="categoryIndex === 0"
-          class="menu-button"
-          @click="categoryIndex -= 1"
-        >
-          <span
-            class="iconify"
-            :data-icon="buttons.prev"
-          />
-        </button>
-
-        <button
-          v-if="setupProgress === setupQuestions.length && followupCategory.length === 0"
-          :disabled="(categoryIndex + 1) === mapCategories.length"
-          class="menu-button"
-          @click="categoryIndex += 1"
-        >
-          <span
-            class="iconify"
-            :data-icon="buttons.next"
-          />
-        </button>
-
-        <!-- if not hidden, the previous button will have a default left icon -->
-        <button
-          v-if="setupProgress === setupQuestions.length && followupCategory.length === 0"
-          :disabled="(categoryIndex + 1) === mapCategories.length"
-          :hidden="true"
-          @click="categoryIndex += 1"
-        />
-                
-        <!-- To previous question in the setup questions -->
-        <button
-          v-if="!end && !reset && setupProgress < setupQuestions.length"
-          :disabled="setupProgress === 0"
-          class="menu-button"
-          @click="setupProgress -= 1"
-        >
-          <span
-            class="iconify"
-            :data-icon="buttons.back"
-          />
-        </button>
-
-        <!-- Back to category menu -->
-        <button
-          v-if="!end && followupCategory.length > 0"
-          class="menu-button"
-          @click="setupProgress = setupQuestions.length; followupProgress = 0; followupCategory = [];"
-        >
-          <span
-            class="iconify"
-            :data-icon="buttons.menu"
-          />
-        </button>
-
-        <!-- Return to question -->
-        <button
-          v-if="end"
-          id="returnbutton"
-          class="returnbutton"
-          @click="end = !end"
-        >
-          <span
-            class="iconify"
-            :data-icon="buttons.return"
-          />
-        </button>
-
-        <!-- Reset buttons -->
-        <button
-          v-if="end"
-          class="resetbutton"
-          @click="end = !end; resetChart()"
-        >
-          <span
-            class="iconify"
-            :data-icon="buttons.reset"
-          />
-        </button>
-
-        <button
-          v-if="!reset && !end"
-          class="resetbutton"
-          @click="resetChart()"
-        >
-          <span
-            class="iconify"
-            :data-icon="buttons.reset"
-          />
-        </button>
-      </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -239,7 +239,7 @@ import { flowChart } from '../configs/index.js'
 const { setupQuestions, followupQuestions, mapCategories } = flowChart
 
 export default{
-    data(){
+    data (){
         return {
             // Track progress in the setup questions
             setupProgress: 0,
@@ -255,7 +255,7 @@ export default{
                     text: 'Don\'t know where to start? This flowchart should help.<br>Each answer contains useful links and relevant information.<br>',
                     button: 'I want to make a custom map',
                 },
-                ready: '<h2>What kind of map do you want to make?</h2>',
+                ready: 'What kind of map do you want to make?',
                 end: 'You are at the end',
                 setup: 'Set-up:',
                 menu: {
@@ -278,12 +278,12 @@ export default{
             mapCategories,
             setupQuestions
         }
-    }, 
+    },
 
     methods: {
         resetChart () {
-            this.setupProgress = 0 
-            this.followupProgress = 0 
+            this.setupProgress = 0
+            this.followupProgress = 0
             this.categoryIndex = 0
             this.reset = !this.reset
             this.followupCategory = []
@@ -375,7 +375,7 @@ button:disabled, button[disabled]{
 }
 
 .iconify {
-  color: #ffffff; 
+  color: #ffffff;
   font-size: 40px;
 }
 
