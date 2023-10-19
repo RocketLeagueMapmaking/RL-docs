@@ -17,7 +17,7 @@ This a list of useful things in order of importance:
 * [Blender](https://www.blender.org/), wonderful 3D software
 * [Rocket League Dummy Classes V3](https://github.com/RocketLeagueMapmaking/RL-Dummy-Classes)
 * [Paint.net](http://www.getpaint.net/download.html#download) or [GIMP](https://www.gimp.org/downloads/), full-featured image editors
-* [Rocket League UPK Decryptor](./downloads.md#more-downloads) and [UE Viewer](./downloads.md#more-downloads) to decrypt RL assets
+* [Rocket League UPK Decryptor](#miscellaneous) and [UE Viewer](#miscellaneous) to decrypt RL assets
 * [Park_P Dummy Assets](https://drive.google.com/open?id=1rpQzqHgoRgpOBSHEpeDwvRtG3sYUXacl)
 
 ### Miscellaneous
@@ -41,6 +41,7 @@ This a list of useful things in order of importance:
 [GitHub](https://github.com/Martinii89/RL_DummyAssets)
 
 ### Rocket League Mapmaking Sketchfab
+
 [Community Library](https://sketchfab.com/rocketleaguemapmaking/models)
 
 ### JimJoms' One Stop Chop Shop

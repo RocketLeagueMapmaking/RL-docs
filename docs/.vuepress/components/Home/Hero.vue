@@ -1,18 +1,32 @@
 <template>
-    <section class='headpage'>
-        <h1 class='title'>Rocket League <br> Mapmaking</h1>
+    <section class="headpage">
+        <h1 class="title">
+            Rocket League <br> Mapmaking
+        </h1>
         <p>Guides, Maps, Downloads, and More!</p>
-        
-        <h3 style='display: inline-block;'>
-            <a class='first-link' href="/essential/index.html">Get Started with UDK</a>
+
+        <h3 style="display: inline-block;">
+            <a
+                class="first-link"
+                href="/essential/index.html"
+            >Get Started with UDK</a>
             <br>
-            <a class='second-link' href="/guide/udk/00_start.html">Explore the Documentation</a>
+            <a
+                class="second-link"
+                href="/guide/udk/00_start.html"
+            >Explore the Documentation</a>
             <br>
-            <a class='first-link' href="/more/contribute">Get Involved</a>
+            <a
+                class="first-link"
+                href="/more/contribute"
+            >Get Involved</a>
             <br>
-            <a class='second-link' href="https://steamcommunity.com/app/252950/workshop/">Browse the Maps</a>
-        </h3> 
-    </section> 
+            <a
+                class="second-link"
+                href="https://steamcommunity.com/app/252950/workshop/"
+            >Browse the Maps</a>
+        </h3>
+    </section>
 </template>
 
 <style lang="stylus">

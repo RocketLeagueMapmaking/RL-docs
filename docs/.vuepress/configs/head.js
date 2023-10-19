@@ -1,63 +1,68 @@
 module.exports = [
     ['meta',
         {
-            name: 'viewport', 
+            name: 'viewport',
             content: 'width=device-width,initial-scale=1,maximum-scale=5,minimal-ui'
         }
     ],
-    ['link', 
+    ['link',
         {
-            rel: 'icon', 
+            rel: 'icon',
             href: '/icons/logo_rlmm_round_144.png'
         }
     ],
-    ['link', 
-        { 
-            rel: 'manifest', 
-            href: '/manifest.json' 
+    ['link',
+        {
+            rel: 'manifest',
+            href: '/manifest.json'
         }
     ],
-    ['meta', 
+    ['meta',
         {
-            name: 'theme-color', 
+            name: 'theme-color',
             content: '#3eaf7c'
         }
     ],
-    ['meta', 
+    ['meta',
         {
-            name: 'apple-mobile-web-app-capable', 
+            name: 'apple-mobile-web-app-capable',
             content: 'yes'
         }
     ],
-    ['meta', 
+    ['meta',
         {
-            name: 'apple-mobile-web-app-status-bar-style', 
+            name: 'apple-mobile-web-app-status-bar-style',
             content: 'black'
         }
     ],
-    ['link', 
+    ['link',
         {
-            rel: 'apple-touch-icon', 
+            rel: 'apple-touch-icon',
             href: '/icons/apple-touch-icon-152x152.png'
         }
     ],
-    ['link', 
+    ['link',
         {
-            rel: 'mask-icon', 
-            href: '/icons/safari-pinned-tab.svg', 
+            rel: 'mask-icon',
+            href: '/icons/safari-pinned-tab.svg',
             color: '#3eaf7c'
         }
     ],
-    ['meta', 
+    ['meta',
         {
-            name: 'msapplication-TileImage', 
+            name: 'msapplication-TileImage',
             content: '/icons/msapplication-icon-144x144.png'
         }
     ],
-    ['meta', 
+    ['meta',
         {
-            name: 'msapplication-TileColor', 
+            name: 'msapplication-TileColor',
             content: '#000000'
+        }
+    ],
+    ['script',
+        {
+            src: 'https://code.iconify.design/2/2.1.0/iconify.min.js'
         }
     ]
 ]

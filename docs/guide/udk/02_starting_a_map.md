@@ -5,7 +5,7 @@ title: 'Starting a Map'
 
 This is the point in the guide where things have to go a little non-linear. You may need to jump forward to [Blender sections](../blender/01_blender.md), then back to [Material sections](../textures/01_textures.md), then back to this for it all to make sense.
 
-:::tip Progress
+:::info Progress
 From here until the end, this guide will focus on creating a custom map from scratch. Have you already decided what you want to make? [This flowchart](../../essential/01_flowchart.md) should help you pick which sections to focus on.
 :::
 
@@ -19,19 +19,19 @@ I am starting with a completely blank map to be thorough. **You don’t have to*
 
 ## Name Your Project <Badge text="important" type="tip"/>
 
-**Go to File > Save Current Level** and pick a good name for the project. Mine is called CeilingGoal. It is saved inside `{UDK Folder}\UDKGame\Content\Maps\CeilingGoal\`. 
+**Go to File > Save Current Level** and pick a good name for the project. Mine is called CeilingGoal. It is saved inside `{UDK Folder}\UDKGame\Content\Maps\CeilingGoal\`.
 
 :::warning
 Many things will not work properly if you have spaces in the project name, so either use camelCase, snake_case, or what3ver_MAKESxSENSE-toYou.
 :::
 
-[Here](https://drive.google.com/file/d/1_SRltyPZXlqwuA4s2rHA5H8GgMOiSqk-/view?usp=sharing) is another set of meshes to get you going. I fine-tuned the UVs so that they look reasonably good with no materials. You may use these or the ones inside Park_P.upk. If your UDK setup has the fully Dummy Assets package, this will be inside `{UDK Folder}\UDKGame\Content\DummyAssets\Maps\BeckwithPark` 
+[Here](https://drive.google.com/file/d/1_SRltyPZXlqwuA4s2rHA5H8GgMOiSqk-/view?usp=sharing) is another set of meshes to get you going. I fine-tuned the UVs so that they look reasonably good with no materials. You may use these or the ones inside Park_P.upk. If your UDK setup has the fully Dummy Assets package, this will be inside `{UDK Folder}\UDKGame\Content\DummyAssets\Maps\BeckwithPark`
 
 ## Project Settings
 
 First, there are a few World properties to tweak. Open World Properties from the View menu. Search for “kill” and then change Kill Z to something like -3000 and Soft Kill to -2500. Kill Z is the height at which you die, and Soft Kill is where your camera stops as you fall to your death. These just need to be substantially below the playing field.
 
-#### Include Stickywalls <Badge text="important" type="tip"/>
+### Include Stickywalls <Badge text="important" type="tip"/>
 
 ![alt text](/images/UDK/basics/image27.png "It sticks with you")
 

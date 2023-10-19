@@ -1,0 +1,35 @@
+name: Feature request
+description: Request a new feature or page / section
+labels: [feature request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use the suggestion channel in Discord for non-website related features: https://discord.gg/PWu3ZWa
+        [Create a discussion](https://github.com/RocketLeagueMapmaking/RL-docs/discussions/new) for questions / discussions about the website
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature
+      description: Is your feature request related to a problem? Please describe
+      placeholder: A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution
+      description: Describe the solution you'd like
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative solutions
+      description: Describe alternatives you've considered
+      placeholder: A clear and concise description of any alternative solutions or features you've considered.
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Any other context or screenshots about the feature request

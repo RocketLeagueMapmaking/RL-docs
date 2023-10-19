@@ -1,6 +1,6 @@
 {
   "name": "rocket_league_map_making",
-  "version": "0.8.6",
+  "version": "0.9.0",
   "description": "A website containing information pertaining to the creation, extension, debugging, and concepts of Rocket League map making.",
   "author": "RLMM",
   "license": "ISC",
@@ -15,31 +15,30 @@
   "scripts": {
     "docs:build": "vuepress build docs",
     "docs:dev": "vuepress dev docs",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node ./.github/workflows/md_link_check.js",
     "lint": "eslint docs/.vuepress/ --ext .js,.ts,.vue",
     "lint:fix": "npm run lint -- --fix",
-    "lint-markdown": "npx markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
-    "lint-markdown:fix": "npx markdownlint-cli2-fix \"**/*.md\" \"#node_modules\""
+    "lint-markdown": "npx markdownlint-cli2 \"**/*.md\" \"#node_modules\" \"#.github\"",
+    "lint-markdown:fix": "npx markdownlint-cli2-fix \"**/*.md\" \"#node_modules\" \"#.github\""
   },
   "engines": {
-    "node": ">=14.0.0",
+    "node": ">= 12.22.0 || >=14.0.0 || >=16.0.0",
     "npm": ">=7.0.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/vue-fontawesome": "^2.0.2",
-    "node-fetch": "^2.6.5",
-    "vue": "^2.6.14",
-    "vue-template-compiler": "^2.6.14",
-    "vuepress-theme-default-prefers-color-scheme": "^1.1.2"
+    "node-fetch": "^2.6.11",
+    "vue": "^2.7.14",
+    "vue-template-compiler": "^2.7.14",
+    "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "^7.29.0",
-    "eslint-plugin-vue": "^7.12.1",
-    "markdownlint-cli2": "^0.3.1",
-    "vuepress": "^1.8.2",
+    "eslint": "^8.40.0",
+    "eslint-plugin-vue": "^9.13.0",
+    "markdown-link-check": "^3.11.2",
+    "markdown-link-extractor": "^3.1.0",
+    "markdownlint-cli2": "^0.7.1",
+    "vuepress": "^1.9.9",
+    "vuepress-plugin-container": "^2.1.5",
     "vuepress-plugin-seo": "^0.1.4"
   }
 }

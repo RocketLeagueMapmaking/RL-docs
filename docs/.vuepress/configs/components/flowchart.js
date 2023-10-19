@@ -1,4 +1,4 @@
-const questions = [
+const setupQuestions = [
     {
         question: 'Do you have UDK installed?',
         desc: '<b>UDK</b>, or the <b>Unreal Development Kit</b>, is the program used to create games in Unreal Engine 3. Since Rocket League is made with this tool, we have to use it too.',
@@ -83,7 +83,7 @@ const questions = [
     }
 ]
 
-const typeofmaps = [
+const mapCategories = [
     {
         category: 'Challenge Map',
         description: 'A test of mechanical control',
@@ -126,10 +126,10 @@ const typeofmaps = [
     }
 ]
 
-const types = [
+const followupQuestions = [
     {
         name: 'Meshes',
-        data: [{},
+        data: [
             {
                 question: 'Ground and Collisions',
                 desc: 'Surfaces for the player to drive on',
@@ -159,7 +159,7 @@ const types = [
     },
     {
         name: 'Detail',
-        data: [{},
+        data: [
             {
                 question: 'Player / Ball Spawns',
                 desc: 'It\'s nice to be able to exist',
@@ -185,7 +185,7 @@ const types = [
     },
     {
         name: 'Kismet',
-        data: [{},
+        data: [
             {
                 question: 'Triggers or Checkpoints',
                 desc: 'Logic to add meaningful features',
@@ -198,14 +198,14 @@ const types = [
             },
             {
                 question: 'Button Presses',
-                desc: 'A small description to add some text to the question!',
+                desc: 'React to interactions from the player!',
                 no: '<a href="../guide/kismet/06_advanced.html" target="_blank">Kismet - Advanced</a>'
             }
         ]
     },
     {
         name: 'Materials',
-        data: [{},
+        data: [
             {
                 question: 'Solid Colors',
                 desc: 'Brought to you by Roy G. Biv',
@@ -230,7 +230,7 @@ const types = [
     },
     {
         name: 'Bakkesmod',
-        data: [{},
+        data: [
             {
                 question: 'Fully Custom Car or Ball Behavior',
                 desc: 'Cars that levitate, balls that teleport',
@@ -240,7 +240,7 @@ const types = [
     },
     {
         name: 'Animations',
-        data: [{},
+        data: [
             {
                 question: 'Simple Loops',
                 desc: 'Spinning fans or sailing boats',
@@ -261,7 +261,7 @@ const types = [
 ]
 
 module.exports = {
-    types,
-    typeofmaps,
-    questions
+    setupQuestions,
+    mapCategories,
+    followupQuestions
 }

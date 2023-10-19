@@ -6,91 +6,70 @@ sidebar: auto
 
 On this page you will find some tips and tricks related to styling a page. Other useful pages are:
 
-- [Markdown-it examples](https://markdown-it.github.io/) (some examples are in [#markdown](assets.html#markdown))
+- [Markdown-it examples](https://markdown-it.github.io/) (some examples are in [#markdown](#markdown))
 - [Vuepress markdown documentation](https://vuepress.vuejs.org/guide/markdown.html)
 - [Source code of this page](https://github.com/RocketLeagueMapmaking/RL-docs/blob/master/docs/assets.md)
 
 ## RLMM Assets
 
-### Kismet nodes
+### Tree
+
+A recursive tree structure can be used to display a nested object with the `<TreeComponent />`.
+
+The following properties are exposed:
+
+- treeData: the json object to use for the tree. Can be loaded with `require('../path/.vuepress/public/data/file.json')`.
+- url: the url that can be fetched to get the same data as `treeData`
+- openAllItems: open all levels at loading the page
+
+#### Simple tree
+
+By default only the name is being used for displaying the tree item.
 
 ```md
-<KismetNode 
-    Title="Kismet Node" Status="Not documented" Image="add_game_ball"
-    Folder="TAGame" Type="Actions"
-    Description="Add a Kismet node to the documentation" 
-    :InputLinks="['Add','Remove']"
-    :OutputLinks="['Added','Removed']"
-    :VariableLinks="['ball','Targets']"
-    :Notes="['This node is synchronous','This nodes requires x or y']"
+<TreeComponent
+    :treeData="{
+        name: 'test',
+        children: [{ name: 'child', children: [{ name: 'more' }] }, { name: 'child 2'}]
+    }"
 />
 ```
 
-<KismetNode
-    Title="Kismet Node" Status="Not documented" Image="add_game_ball"
-    Folder="TAGame" Type="Actions"
-    Description="Add a Kismet node to the documentation"
-    :InputLinks="['Add','Remove']"
-    :OutputLinks="['Added','Removed']"
-    :VariableLinks="['ball','Targets']"
-    :Notes="['This node is synchronous','This nodes requires x or y']"
+<TreeComponent
+    :treeData="{
+        name: 'test',
+        children: [{ name: 'child', children: [{ name: 'more' }] }, { name: 'child 2'}]
+    }"
 />
 
-*General properties:*
+#### Advanced options
 
-- `Title`: Name of the kismet node used in UDK
-  - Type: `String`
-  - Required: `true`
-- `Description`: Summary of what can be done with the kismet node
-  - Type: `String`
-  - Required: `false`
-- `Status`: State of the kismet node
-  - Options: `Not documented`, `Not working`, `New`, `ACv3`, `ACv2`, `ACv1`
-  - Type: `String`
-  - Required: `true`
-- `Image`: An image of the kismet node. **The image (.png) must be placed in `docs/.vuepress/public/images/kismet/`**
-  - Type: `String` - image name
-  - Required: `false`
-- `Folder`: The folder of the kismet node in UDK
-  - Options: `TAGame`, `TAGame_decrypted`
-  - Type: `String`
-  - Required: `true`
-- `Type`: Type of kismet node
-  - Options: `Actions`, `Events`
-  - Type: `String`
-  - Required: `true`
-- `:Notes`: Tips and remarks about the kismet node
-  - Type: `Array`
-  - Required: `false`
+For more options add a configuration in `configs/components/tree.js` for load options, render component, etc. to load with the `configKey` property. See the current configuration as example.
 
-:::warning Semicolon
-To register an array as a property of a kismet node (or any other component) `:` or `v-bind:` must be placed before the name of the array.
-:::
+A `content` slot can be used to access the version of the tree:
 
-*Values:*
+<TreeComponent
+    :treeData="{
+        name: 'test 2',
+        version: '0',
+        children: [{ name: 'child', children: []}]
+    }"
+    v-slot:content="slotProps"
+>
 
-- `:InputLinks`: All items on the left side of a kismet node (except for `in`)
-  - Type: `Array`
-  - Required: `false`
-- `:OutputLinks`: All items on the right side of a kismet node (except for `out`)
-  - Type: `Array`
-  - Required: `false`
-- `:InputLinks`: All variables of a kismet node
-  - Type: `Array`
-  - Required: `false`
+#### version <Badge :text="slotProps.version" />
 
-A not documentated node would then look like this:
+</TreeComponent>
 
-```md
-<KismetNode 
-    Title="Apply Car Products" Status="Not documented" 
-    Folder="TAGame_decrypted" Type="Actions" 
-/>
-```
+Furthermore, a `search` slot is available to search for names while allowing custom components to render the inputs
 
 ## Vuepress assets
 
 ```md
+::: info
+This is an info block
+:::
+
 ::: tip
 This is a tip
 :::
@@ -112,6 +91,10 @@ This is a warning with a custom title
 :::
 ````
 
+::: info
+This is an info block
+:::
+
 ::: tip
 This is a tip
 :::
@@ -127,9 +110,11 @@ This is a dangerous warning
 ::: details
 This is a details block
 :::
+
 ::: warning Title
 This is a warning with a custom title
 :::
+
 ---
 
 ## Markdown
@@ -188,7 +173,7 @@ console.log(guide)
 
 With no language specified:
 
-```
+```txt
 no syntax highlights
 // rest of text
 ```

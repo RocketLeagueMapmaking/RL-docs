@@ -13,6 +13,10 @@ When Psyonix announced Steam Workshop support in 2016, they proudly touted their
 
 WorkshopUploader.exe may be found two layers up from {CookedPCConsole}, inside the folder Binaries. If you can get it to work, then I’m happy for you.
 
+### Community update
+
+If you still want to continue with the workshop uploader tool, use [the patched uploader](https://cdn.discordapp.com/attachments/713071168331972699/933414521714921542/WorkshopUploader.exe). Replace it with the broken uploader and follow the guide from Psyonix for uploading.
+
 ## Creating a Preview Image
 
 Before uploading the map, you will need to get a beautiful screenshot to entice victims and or innocent passers-by. This will appear both on Steam and in Rocket League as the image that people see when looking at your map.
@@ -46,7 +50,7 @@ Sometimes Steam will reject your upload with minimal information. The only 100% 
 
 Next, create a new text file and change the file extension to .vdf. This is a Valve Description File (probably) which contains the info Steam needs to properly offer your map to people on the workshop. Open it in your favorite text editor. Insert this:
 
-```vdf
+```txt
 "workshopitem"
 {
     "appid"  "252950"

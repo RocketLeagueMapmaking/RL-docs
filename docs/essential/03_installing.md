@@ -13,7 +13,7 @@ title: Installing
 
 If you don’t want to stress about this setup process, there are two publicly-available packages which streamline it immensely.
 
-### RocketLeagueMapmaking UDK RL Setup Script
+### RocketLeagueMapmaking UDK RL Setup Script <Badge text="recommended" type="tip"/>
 
 This script is meant to hold your hand through the entire setup process, take care of tedious and error-prone steps for you, then generate a Project folder that starts you off on the right path. Refer to the section below to install UDK properly.
 
@@ -24,6 +24,10 @@ This script is meant to hold your hand through the entire setup process, take ca
 To download this, you will need to make an account with RocketLeagueMods.com, our little corner of the VideoGameMods network. Newk’s package supplies detailed instructions for installing UDK 2015, and provides a huge set of resources to get going quickly. Refer to the section below to install UDK properly.
 
 * [RocketLeagueMods Link](https://rocketleaguemods.com/mods/udk-2015-simple-setup/)
+
+:::warning Setup steps
+The steps for the setup using this tool may differ from this guide and the other tools, see the page on the rocketleaguemods website for more information. Note that it might be outdated and it might not have all the latest discoveries added
+:::
 
 ## Running the Installer
 
