@@ -119,6 +119,10 @@ module.exports = [
                 link: '/more/contact'
             },
             {
+                text: 'Events',
+                link: '/more/events'
+            },
+            {
                 text: 'Roadmap',
                 link: '/more/roadmap'
             },

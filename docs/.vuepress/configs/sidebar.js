@@ -195,6 +195,7 @@ module.exports = {
             children: [
                 'about',
                 'contact',
+                'events',
                 'roadmap',
                 'contribute'
             ]
