@@ -1,39 +1,56 @@
 <template>
     <section class="headpage">
-        <h1 class="title">
-            Rocket League <br> Mapmaking
+        <h1 class="title" v-html="title">
         </h1>
-        <p>Guides, Maps, Downloads, and More!</p>
+        <p>{{ description }}</p>
 
-        <h3 style="display: inline-block;">
+        <div class="headpage-actions">
             <a
-                class="first-link"
-                href="/essential/index.html"
-            >Get Started with UDK</a>
-            <br>
-            <a
-                class="second-link"
-                href="/guide/udk/00_start.html"
-            >Explore the Documentation</a>
-            <br>
-            <a
-                class="first-link"
-                href="/more/contribute"
-            >Get Involved</a>
-            <br>
-            <a
-                class="second-link"
-                href="https://steamcommunity.com/app/252950/workshop/"
-            >Browse the Maps</a>
-        </h3>
+                class="headpage-action" 
+                :class="{ primary: action.primary }" 
+                v-for="action in actions" 
+                :key="action.text"
+                :href="action.link"
+            >
+                <span>
+                    {{ action.text }}
+                </span>
+            </a>
+        </div>
     </section>
 </template>
 
+<script>
+export default {
+    data () {
+        return {
+            className: 'hero',
+            title: 'Rocket League<br>Mapmaking',
+            description: 'Guides, Maps, Downloads, and More!',
+            actions: [
+                {
+                    text: 'Get started with UDK',
+                    link: '/essential/',
+                    primary: true,
+                },
+            ]
+        }
+    },
+
+    mounted () {
+        const innerHTML = '<div class="headpage">' + this.$el.innerHTML + '</div>'
+
+        document.getElementsByClassName(this.className)
+            .item(0).innerHTML = innerHTML
+    }
+}
+</script>
+
 <style lang="stylus">
-.headpage{
+.headpage {
     height: calc(100vh - 3.6rem);
     background-color: #2d2d2d;
-    background-image: linear-gradient(180deg, rgba(0, 134, 29, 0.33) 0%, #000000 100%), url('../../public/images/home/rsz_home-stadium.png');
+    background-image: linear-gradient(180deg, rgba(0, 134, 29, 0.33) 0%, var(--bgColor) 100%), url('../../public/images/home/rsz_home-stadium.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,45 +59,65 @@
     justify-content: center;
     padding-left: 10vw;
     max-width: 100vw !important;
-    margin-top: 0px;
-    transform: translateY(-55px);
 }
-.headpage h1{
+
+.headpage h1 {
     text-transform: uppercase;
     color: white;
     font-size: 84px;
     font-weight: bold;
     line-height: 5rem;
-    transform: translateY(30px);
-    margin-right: 20px;
+    margin: 0px 20px 0px 0px;
 }
-.headpage p{
+
+.headpage p {
+    color: var(--textColor);
     max-width: 600px;
     padding-bottom: 12px;
     padding-right: 5vw;
     font-size: 30px;
 }
-.headpage a{
-    display: inline-block;
-    margin-bottom: 15px;
-    width: fit-content;
+
+.headpage-actions {
+    display: flex;
 }
-.first-link{
-    color: #00DD30;
+
+.headpage-action {
+    padding: 12px 28px;
+    background-color: var(--bgColor);
+    border: none;
+    border-radius: 4px;
 }
-.second-link{
-    color: #ffffff;
-    display: inline-block;
+
+.headpage-action.primary {
+    background-color: var(--darken10AccentColor);
 }
+
+.headpage-action span {
+    color: var(--textColor);
+    font-size: 18px;
+}
+
+.headpage-action:hover {
+    text-decoration: none !important;
+    background-color: var(--darken10BgColor);
+    cursor: pointer;
+}
+
+.headpage-action.primary:hover {
+    background-color: var(--accentColor);
+}
+
 @media screen and (max-width: 600px) {
-  .headpage{
-    padding-left: 5vw;
-  }
-  .headpage h1{
-    transform: translateY(35px);
-    font-size: 54px;
-    line-height: 4rem;
-    max-width: 90vw;
-  }
+    .headpage {
+        padding-left: 5vw;
+    }
+
+    .headpage h1 {
+        transform: translateY(35px);
+        font-size: 54px;
+        line-height: 4rem;
+        max-width: 90vw;
+    }
 }
 </style>
