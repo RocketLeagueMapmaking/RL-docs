@@ -196,7 +196,7 @@ module.exports = {
                 'about',
                 'contact',
                 'roadmap',
-                'contribute'
+                'ue5'
             ]
         }
     ],
@@ -208,20 +208,7 @@ module.exports = {
             sidebarDepth: 1,
             children: [
                 'guide',
-                'psyonix',
-                'ue5'
-            ]
-        }
-    ],
-    
-    '/ue5/': [
-        {
-            title: 'UE5',
-            collapsable: false,
-            sidebarDepth: 1,
-            children: [
-                '',
-                'comparison'
+                'psyonix'
             ]
         }
     ],
