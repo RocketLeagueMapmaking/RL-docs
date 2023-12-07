@@ -232,7 +232,8 @@ module.exports = {
                 '10_multiplayer',
                 '11_soccar',
                 '12_uvmaps',
-                '13_cleanmeshes'
+                '13_cleanmeshes',
+                '14_pri'
             ]
         }
     ]
