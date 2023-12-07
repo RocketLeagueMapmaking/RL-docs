@@ -15,7 +15,7 @@ WorkshopUploader.exe may be found two layers up from {CookedPCConsole}, inside t
 
 ### Community update
 
-If you still want to continue with the workshop uploader tool, use [the patched uploader](https://cdn.discordapp.com/attachments/713071168331972699/933414521714921542/WorkshopUploader.exe). Replace it with the broken uploader and follow the guide from Psyonix for uploading.
+If you still want to continue with the workshop uploader tool, use [the patched uploader](https://drive.google.com/file/d/1vxYllvf0F9bZ0bUc97crFXD3QijCAZkm/view). Replace it with the broken uploader and follow the guide from Psyonix for uploading.
 
 ## Creating a Preview Image
 

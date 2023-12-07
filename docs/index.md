@@ -23,24 +23,12 @@ features:
 <HeroComponent v-show="false" />
 
 ::: slot footer
-<div class="home-footer-links">
-    <img
-        alt="RLMM logo"
-        style="max-width: 50px;"
-        src="icons/logo_rlmm_round_144.png"
-    >
-    <a href="https://www.youtube.com/channel/UCp6gkqadtgsaZmPnex9MNiA/featured">YouTube</a>
-    <a href="https://discord.gg/PWu3ZWa">Discord</a>
-    <a href="https://twitter.com/rlmapmaking">Twitter</a>
-    <a href="./more/contact">Contact</a>
-    <a href="./more/about">About</a>
-</div>
+<footer-links />
 
 Powered by Vuepress | Written by Mr. Swaggles | Designed by ghostrider-05
 :::
 
 <style>
-/* Styles for the replaced hero */
 .home-page .page-edit {
     display: none;
 }
@@ -72,20 +60,5 @@ Powered by Vuepress | Written by Mr. Swaggles | Designed by ghostrider-05
 
 .home .hero h1, .home .hero .description, .home .hero .action {
     margin: inherit !important;
-}
-
-/* Footer links */
-.home-footer-links {
-    max-width: 50vw;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.home-footer-links a {
-    margin: 0 auto;
-    max-width: 20px;
 }
 </style>

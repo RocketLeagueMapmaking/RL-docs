@@ -1,15 +1,17 @@
 <template>
     <section class="headpage">
-        <h1 class="title" v-html="title">
-        </h1>
+        <h1
+            class="title"
+            v-html="title"
+        />
         <p>{{ description }}</p>
 
         <div class="headpage-actions">
             <a
-                class="headpage-action" 
-                :class="{ primary: action.primary }" 
-                v-for="action in actions" 
+                v-for="action in actions"
                 :key="action.text"
+                class="headpage-action"
+                :class="{ primary: action.primary }"
                 :href="action.link"
             >
                 <span>

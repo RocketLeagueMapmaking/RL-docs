@@ -1,4 +1,5 @@
 import Hero from './components/Home/Hero'
+import FooterLinks from './components/Home/FooterLinks.vue'
 
 import FlowChart from './components/FlowChart'
 
@@ -18,6 +19,7 @@ export default ({
 }) => {
     const components = [
         ['HeroComponent', Hero],
+        ['FooterLinks', FooterLinks],
         ['FlowChartComponent', FlowChart],
         ['KismetNode', KismetNode],
         ['KismetNodeProperty', KismetNodeProperty],
