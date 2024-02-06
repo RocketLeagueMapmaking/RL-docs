@@ -6,4 +6,4 @@
 !/docs
 
 # Need to avoid dist conflicts on build.
-/docs/.vuepress/dist
+/docs/.vitepress/dist

@@ -1,2 +1,2 @@
-docs/.vuepress/dist
+docs/.vitepress/dist
 node_modules

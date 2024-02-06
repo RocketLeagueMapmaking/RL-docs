@@ -1,4 +1,6 @@
-module.exports = [
+import type { HeadConfig } from 'vitepress'
+
+export default <HeadConfig[]>[
     ['meta',
         {
             name: 'viewport',
@@ -60,9 +62,4 @@ module.exports = [
             content: '#000000'
         }
     ],
-    ['script',
-        {
-            src: 'https://code.iconify.design/2/2.1.0/iconify.min.js'
-        }
-    ]
 ]

@@ -4,6 +4,7 @@
   "description": "A website containing information pertaining to the creation, extension, debugging, and concepts of Rocket League map making.",
   "author": "RLMM",
   "license": "ISC",
+  "type": "module",
   "homepage": "http://rocketleaguemapmaking.com",
   "repository": {
     "type": "git",
@@ -13,32 +14,30 @@
     "url": "https://github.com/rocketleaguemapmaking/RL-docs/issues"
   },
   "scripts": {
-    "docs:build": "vuepress build docs",
-    "docs:dev": "vuepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:dev": "vitepress dev docs",
     "test": "node ./.github/workflows/md_link_check.js",
-    "lint": "eslint docs/.vuepress/ --ext .js,.ts,.vue",
+    "lint": "eslint docs/.vitepress/ --ext .js,.ts,.vue",
     "lint:fix": "npm run lint -- --fix",
     "lint-markdown": "npx markdownlint-cli2 \"**/*.md\" \"#node_modules\" \"#.github\"",
     "lint-markdown:fix": "npx markdownlint-cli2-fix \"**/*.md\" \"#node_modules\" \"#.github\""
   },
   "engines": {
-    "node": ">= 12.22.0 || >=14.0.0 || >=16.0.0",
+    "node": ">=18.0.0",
     "npm": ">=7.0.0"
   },
   "dependencies": {
-    "node-fetch": "^2.6.11",
-    "vue": "^2.7.14",
-    "vue-template-compiler": "^2.7.14",
-    "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
+    "@rocketleaguemapmaking/theme-rlmm": "github:rocketleaguemapmaking/theme-rlmm#0.4.0"
   },
   "devDependencies": {
-    "eslint": "^8.40.0",
-    "eslint-plugin-vue": "^9.13.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.21.1",
     "markdown-link-check": "^3.11.2",
     "markdown-link-extractor": "^3.1.0",
-    "markdownlint-cli2": "^0.7.1",
-    "vuepress": "^1.9.9",
-    "vuepress-plugin-container": "^2.1.5",
-    "vuepress-plugin-seo": "^0.1.4"
+    "markdownlint-cli2": "^0.12.1",
+    "typescript": "^5.3.3",
+    "vitepress": "1.0.0-rc.42",
+    "vue": "^3.4.15",
+    "wrangler": "^3.26.0"
   }
 }

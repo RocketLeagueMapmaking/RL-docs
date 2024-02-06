@@ -1,11 +1,13 @@
-module.exports = [
+import type { DefaultTheme } from 'vitepress'
+
+export default <DefaultTheme.NavItem[]>[
     {
         text: 'Essentials',
         link: '/essential/'
     },
 
     {
-        text: 'Documentation',
+        text: 'Guide',
         items: [
             {
                 text: 'UDK',
@@ -127,7 +129,7 @@ module.exports = [
                 items: [
                     {
                         text: 'Contributing guide',
-                        link: '/more/contribute'
+                        link: 'https://github.com/rocketleaguemapmaking/RL-Docs/blob/master/CONTRIBUTING.md'
                     },
                     {
                         text: 'GitHub',
