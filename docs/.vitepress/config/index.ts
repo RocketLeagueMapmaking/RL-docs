@@ -9,6 +9,9 @@ export default defineConfig({
     description: 'Guides, Resources, Maps, and more for making custom maps',
     head,
 
+    srcExclude: [
+        '**/flowchart_questions/*.md',
+    ],
     vite: {
         publicDir: '.vitepress/public',
     },
@@ -40,7 +43,7 @@ export default defineConfig({
         // Links
         externalLinkIcon: true,
         editLink: {
-            pattern: 'https://github.com/rocketleaguemapmaking/theme-rlmm/tree/main/docs/guide/:path',
+            pattern: 'https://github.com/rocketleaguemapmaking/rl-docs/tree/master/docs/:path',
             text: 'View this page on GitHub',
         },
         socialLinks: [

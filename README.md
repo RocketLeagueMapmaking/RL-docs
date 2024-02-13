@@ -1,5 +1,5 @@
 <!-- markdownlint-disable-next-line MD041 -->
-![Rocket League map making](./docs/.vuepress/public/icons/logo_rlmm_fulltext_new.png)
+![Rocket League map making](./docs/.vitepress/public/icons/logo_rlmm_fulltext_new.png)
 
 # Rocket League Mapmaking Website Documentation
 

@@ -17,7 +17,7 @@ const sidebar: DefaultTheme.Sidebar = {
             items: [
                 {
                     text: 'Essentials',
-                    link: '',
+                    link: 'index.html',
                 },
                 {
                     text: 'Introduction',
@@ -326,7 +326,7 @@ const sidebar: DefaultTheme.Sidebar = {
             items: [
                 {
                     text: 'Introduction',
-                    link: '/',
+                    link: 'index.html',
                 },
                 {
                     text: 'Assets',
@@ -394,7 +394,7 @@ const sidebar: DefaultTheme.Sidebar = {
             items: [
                 {
                     text: 'Cheat Sheets',
-                    link: '/',
+                    link: 'index.html',
                 },
                 {
                     text: 'Sticky Walls',
