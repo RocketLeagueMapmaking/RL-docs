@@ -6,12 +6,15 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:vue/recommended"
+        "plugin:vue/recommended",
+        "plugin:@typescript-eslint/recommended"
     ],
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": 12
+        "ecmaVersion": 14
     },
     "plugins": [
+        "@typescript-eslint",
         "vue"
     ],
     "rules": {

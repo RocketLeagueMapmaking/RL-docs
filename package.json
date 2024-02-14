@@ -16,7 +16,7 @@
   "scripts": {
     "docs:build": "vitepress build docs",
     "docs:dev": "vitepress dev docs",
-    "test": "node ./.github/workflows/md_link_check.js",
+    "docs:preview": "vitepress preview docs",
     "lint": "eslint docs/.vitepress/ --ext .js,.ts,.vue",
     "lint:fix": "npm run lint -- --fix",
     "lint-markdown": "npx markdownlint-cli2 \"**/*.md\" \"#node_modules\" \"#.github\"",
@@ -30,6 +30,8 @@
     "@rocketleaguemapmaking/theme-rlmm": "github:rocketleaguemapmaking/theme-rlmm#0.4.0"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
     "eslint": "^8.56.0",
     "eslint-plugin-vue": "^9.21.1",
     "markdown-link-check": "^3.11.2",
@@ -38,6 +40,6 @@
     "typescript": "^5.3.3",
     "vitepress": "1.0.0-rc.42",
     "vue": "^3.4.15",
-    "wrangler": "^3.26.0"
+    "wrangler": "^3.28.2"
   }
 }
