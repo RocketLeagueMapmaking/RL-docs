@@ -57,7 +57,7 @@ This tells UDK to recognize that these folders contain assets that you intend to
 
 **In `StaticMeshActor.uc`** go to these lines
 
-```unrealscript
+```txt
 Begin Object Class=StaticMeshComponent Name=StaticMeshComponent0
     bAllowApproximateOcclusion=TRUE
     bForceDirectLightMap=TRUE
@@ -67,7 +67,7 @@ End Object
 
 And replace it with these lines
 
-```unrealscript{5-7}
+```txt{5-7}
 Begin Object Class=StaticMeshComponent Name=StaticMeshComponent0
     bAllowApproximateOcclusion=TRUE
     bForceDirectLightMap=TRUE
@@ -82,7 +82,7 @@ This is to set the defaults that we want on every solid object in the game.
 
 **In `PrimitiveComponent.uc`** go to these lines:
 
-```unrealscript
+```txt
 enum ERBCollisionChannel
 {
     RBCC_Default,
@@ -109,7 +109,7 @@ enum ERBCollisionChannel
 
 And replace it with these lines:
 
-```unrealscript{10-12}
+```txt{10-12}
 enum ERBCollisionChannel
 {
     RBCC_Default,
@@ -139,7 +139,7 @@ enum ERBCollisionChannel
 
 Additionally, update `RBCollisionChannelContainer` (line ~401) to have `Ball`, `VehicleBlocker` and `BallBlocker` so it looks like this:
 
-```unrealscript{10-12}
+```txt{10-12}
 struct RBCollisionChannelContainer
 {
     var() const bool Default;
@@ -171,25 +171,25 @@ This allows us to give objects different collision channels for different behavi
 
 On line ~180, update
 
-```unrealscript
+```txt
 var() bool bUseAsOccluder;
 ```
 
 to
 
-```unrealscript
+```txt
 var(Rendering) bool bUseAsOccluder;
 ```
 
 **Lastly, in `Actor.uc`** go to this line:
 
-```unrealscript
+```txt
 var const bool bNoDelete; // Cannot be deleted during play.
 ```
 
 And replace it with this line:
 
-```unrealscript
+```txt
 var() const bool bNoDelete; // Cannot be deleted during play.
 ```
 

@@ -63,7 +63,7 @@ UDK can't find the default objects, so change:
 `{Variable}={VariableClass}'Default{Class}.{Property}'`
 to:
 
-```uc
+```txt
 begin object name={Property} Class={VariableClass}
 end object
 {Variable}={Property}
@@ -72,7 +72,7 @@ end object
 - `Warning, Unknown property in defaults:     {Variable}={Value} (looked in {ObjectClass})`
 This error is probably shown when you have this code:
 
-```uc
+```txt
 begin object name={Variable} Class={ObjectClass}
 object end
 {Variable}={Value}

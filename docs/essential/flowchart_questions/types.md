@@ -1,3 +1,4 @@
+<!-- markdownlint-disable-file MD041 -->
 <template #types-0="{ goNext }">
 
 What kind of map do you want to make?

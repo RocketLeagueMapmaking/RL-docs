@@ -88,3 +88,5 @@ Each answer contains useful links and relevant information.
 ## Getting Set Up <Badge text="important" type="tip"/>
 
 Soon we will go over the tools and assets you need to get things done. But first, a few brief notes on common points of confusion.
+
+<!-- markdownlint-disable-file MD001 -->

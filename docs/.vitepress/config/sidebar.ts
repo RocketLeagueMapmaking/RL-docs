@@ -1,6 +1,6 @@
-import type { DefaultTheme } from "vitepress";
+import type { DefaultTheme } from 'vitepress'
 
-function createGroupWithBase(path: string, items: DefaultTheme.SidebarItem[]) {
+function createGroupWithBase (path: string, items: DefaultTheme.SidebarItem[]) {
     return {
         [path]: {
             base: path,

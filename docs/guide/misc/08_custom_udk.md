@@ -94,7 +94,7 @@ You can change the text of almost any message or button (including the `Save all
 
 You can add (or remove) your own favorite classes in the right click > add actors menu. For class `MyClass`, add the class `ActorFactoryMyClass` in a source folder:
 
-```uc
+```txt
 // /Development/src/MyMod/Classes/ActorFactoryMyClass.uc
 
 class ActorFactoryMyClass extends ActorFactory
@@ -117,7 +117,7 @@ By setting `bShowInEditorQuickMenu=true` you can move `MyClass` from `add actors
 
 Similar to the actor classes menu, you can extend the `Factory` class for a custom item in the content browser.
 
-```uc
+```txt
 // /Development/src/MyMod/Classes/ActorFactoryMyClassNew.uc
 
 class ActorFactoryMyClassNew extends Factory

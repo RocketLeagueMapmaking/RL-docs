@@ -1,5 +1,5 @@
+<!-- markdownlint-disable-file MD041 -->
 <!-- Kismet questions -->
-
 <template #advanced-kismet-0>
 
 ### Do you need Triggers or Checkpoints?

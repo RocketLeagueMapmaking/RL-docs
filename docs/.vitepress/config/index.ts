@@ -28,8 +28,8 @@ export default defineConfig({
         sidebar,
         nav,
 
-        logo: { 
-            src: '/icons/logo_rlmm_round_144.png' 
+        logo: {
+            src: '/icons/logo_rlmm_round_144.png',
         },
 
         footer: {
