@@ -10,10 +10,10 @@ hero:
   actions:
     - theme: brand
       text: Get started
-      link: /theme/
+      link: /essential/
     - theme: alt
       text: UDK Guide
-      link: /udk/
+      link: /guide/udk/00_start
   steam:
     title: <span>New</span> Steam workshop
     enabled: true
@@ -22,13 +22,13 @@ hero:
 features:
     - title: UDK Guide
       details: Learn how to use UDK and make your map work in Rocket League
-      link: /udk/
+      link: /guide/udk/00_start
       linkText: Read more
       icon: 
         src: https://cdn.discordapp.com/emojis/714386127145926676.webp?size=64&quality=lossless
     - title: 3D modeling
       details: Learn how to make your maps unique with your own assets or import meshes from Blender into UDK
-      link: /blender/
+      link: /guide/blender/01_blender
       linkText: Read more
       icon:
         src: https://cdn.discordapp.com/emojis/714382878561140737.webp?size=64&quality=lossless
@@ -51,7 +51,7 @@ resources:
     link: /cheatsheet/
   - title: References
     details: Detailed reference lists of Psyonix added classes and kismet nodes
-    link: /resources/references/kismet/node
+    link: /resources/references/kismet/nodes
   - title: Tools
     details: Utilities made by map makers to improve the modding experience
     link: /resources/tools
