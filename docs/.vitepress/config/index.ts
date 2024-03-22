@@ -1,10 +1,11 @@
-import { defineConfig } from '../../../node_modules/@rocketleaguemapmaking/theme-rlmm/lib/config'
+import { defineConfigWithTheme } from 'vitepress'
+import { type ThemeConfig } from '@rocketleaguemapmaking/theme-rlmm'
 
 import head from './head'
 import sidebar from './sidebar'
 import nav from './navbar'
 
-export default defineConfig({
+export default defineConfigWithTheme<ThemeConfig>({
     title: 'RLMM',
     description: 'Guides, Resources, Maps, and more for making custom maps',
     head,
