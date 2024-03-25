@@ -14,7 +14,8 @@
 
 ## Deployment
 
-**NOTE**: These steps will currently only work for the main `rocketleaguemapmaking.com` domain, as it hasn't been made
+> [!NOTE]
+> These steps will currently only work for the main `rocketleaguemapmaking.com` domain, as it hasn't been made
 customisable yet. If you wish to view this branch or a PR locally, open the [developer site][dev-domain] or the url in the PR.
 
 This site can be executed as a docker container on the host machine.

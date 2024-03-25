@@ -50,7 +50,7 @@ resources:
     details: Step by step guides to make your workflow easy
     link: /cheatsheet/
   - title: References
-    details: Detailed reference lists of Psyonix added classes and kismet nodes
+    details: References of Psyonix added classes and kismet nodes
     link: /resources/references/kismet/nodes
   - title: Tools
     details: Utilities made by map makers to improve the modding experience

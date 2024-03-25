@@ -4,7 +4,7 @@
     ],
     "compilerOptions": {
         "target": "es2016",
-        "module": "NodeNext",
+        "module": "ESNext",
         "moduleResolution": "bundler",
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
