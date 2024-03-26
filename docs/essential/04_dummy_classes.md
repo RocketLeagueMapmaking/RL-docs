@@ -216,4 +216,4 @@ You can find the download [Here.](../resources/downloads.md#setup)
 
 **Place this into `{UDK Folder}\UDKGame\Content\`** alongside the various other files. UDK will recognize it here and make its contents available to you.
 
-[A later section](../guide/udk/14_dummy_assets.md) of this guide will show you how to use any resource from any map, but this is more than enough to get started with.
+[A later section](../guide/udk/dummy_assets.md) of this guide will show you how to use any resource from any map, but this is more than enough to get started with.

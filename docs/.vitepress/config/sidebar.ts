@@ -21,11 +21,11 @@ const sidebar: DefaultTheme.Sidebar = {
                 },
                 {
                     text: 'Introduction',
-                    link: '01_flowchart',
+                    link: 'flowchart',
                 },
                 {
                     text: 'Clarifications',
-                    link: '02_clarifications',
+                    link: 'clarifications',
                 },
             ],
         },
@@ -35,15 +35,15 @@ const sidebar: DefaultTheme.Sidebar = {
             items: [
                 {
                     text: 'Installing',
-                    link: '03_installing',
+                    link: 'installing',
                 },
                 {
                     text: 'Dummy Classes',
-                    link: '04_dummy_classes',
+                    link: 'dummy_classes',
                 },
                 {
                     text: 'Project setup',
-                    link: '05_project_setup',
+                    link: 'project_setup',
                 },
             ],
         },
@@ -53,19 +53,19 @@ const sidebar: DefaultTheme.Sidebar = {
             items: [
                 {
                     text: 'UDK introduction',
-                    link: '06_udk_intro',
+                    link: 'udk_intro',
                 },
                 {
                     text: 'UDK Editor',
-                    link: '07_udk_editor',
+                    link: 'udk_editor',
                 },
                 {
                     text: 'Content Browser',
-                    link: '08_content_browser',
+                    link: 'content_browser',
                 },
                 {
                     text: 'Sticky Walls',
-                    link: '09_sticky_walls',
+                    link: 'sticky_walls',
                 },
             ],
         },
@@ -73,41 +73,59 @@ const sidebar: DefaultTheme.Sidebar = {
 
     ...createGroupWithBase('/guide/blender/', [
         {
-            text: 'Blender Basics',
+            text: 'Blender',
             collapsed: false,
             items: [
                 {
                     text: 'Hello blender',
-                    link: '01_blender',
+                    link: 'blender',
                 },
                 {
                     text: 'Introduction',
-                    link: '02_intro',
+                    link: 'intro',
                 },
                 {
                     text: 'Blender Window',
-                    link: '03_setup',
+                    link: 'setup',
                 },
                 {
                     text: 'Modeling',
-                    link: '04_modeling',
+                    link: 'modeling',
                 },
                 {
                     text: 'UV Maps and Materials',
-                    link: '06_uv',
+                    link: 'uv',
                 },
                 {
                     text: 'UV Unwrapping',
-                    link: '07_unwrapping',
+                    link: 'unwrapping',
                 },
                 {
                     text: 'Mipmaps and LOD',
-                    link: '08_resolution',
+                    link: 'resolution',
                 },
                 {
                     text: 'Other sources',
-                    link: '10_interlude_other',
+                    link: 'interlude_other',
                 },
+                {
+                    text: 'Advanced',
+                    collapsed: false,
+                    items: [
+                        {
+                            text: 'Armatures and Animation',
+                            link: 'animation',
+                        },
+                        {
+                            text: 'Modifiers',
+                            link: 'modifiers',
+                        },
+                        {
+                            text: 'Curve modeling',
+                            link: 'curves',
+                        },
+                    ]
+                }
             ],
         },
         {
@@ -116,28 +134,10 @@ const sidebar: DefaultTheme.Sidebar = {
             items: [
                 {
                     text: 'FBX Export',
-                    link: '05_fbx',
+                    link: 'fbx',
                 },
             ],
         },
-        {
-            text: 'Blender Advanced',
-            collapsed: false,
-            items: [
-                {
-                    text: 'Armatures and Animation',
-                    link: '11_animation',
-                },
-                {
-                    text: 'Modifiers',
-                    link: '12_modifiers',
-                },
-                {
-                    text: 'Curve modeling',
-                    link: '13_curves',
-                },
-            ]
-        }
     ]),
 
     ...createGroupWithBase('/guide/', [
@@ -148,103 +148,103 @@ const sidebar: DefaultTheme.Sidebar = {
             items: [
                 {
                     text: 'Hello Guide',
-                    link: '00_start',
+                    link: 'start',
                 },
                 {
                     text: 'CSG',
-                    link: '01_csg',
+                    link: 'csg',
                 },
                 {
                     text: 'Starting a map',
-                    link: '02_starting_a_map',
+                    link: 'starting_a_map',
                 },
                 {
                     text: 'Collidable Meshes',
-                    link: '03_collidable_mesh',
+                    link: 'collidable_mesh',
                 },
                 {
                     text: 'Testing',
-                    link: '04_map_test',
+                    link: 'map_test',
                 },
                 {
                     text: 'Collidable Collisions',
-                    link: '05_collidable_collisions',
+                    link: 'collidable_collisions',
                 },
                 {
                     text: 'The Owl',
-                    link: '06_owl',
+                    link: 'owl',
                 },
                 {
                     text: 'Materials',
-                    link: '07_materials',
+                    link: 'materials',
                 },
                 {
                     text: 'Lighting',
-                    link: '08_lighting',
+                    link: 'lighting',
                 },
                 {
                     text: 'Rocket League Match Items',
-                    link: '09_game_items',
+                    link: 'game_items',
                 },
                 {
                     text: 'Map Settings',
-                    link: '10_map_settings',
+                    link: 'map_settings',
                 },
                 {
                     text: 'Volumes',
-                    link: '11_volumes',
+                    link: 'volumes',
                 },
                 {
                     text: 'Next',
-                    link: '12_interlude_next',
+                    link: 'interlude_next',
                 },
                 {
                     text: 'Interlude - Rapid Testing',
-                    link: '13_interlude_test',
+                    link: 'interlude_test',
                 },
                 {
                     text: 'Advanced',
-                    collapsed: true,
+                    collapsed: false,
                     items: [
                         {
                             text: 'Dummy Assets',
-                            link: '14_dummy_assets',
+                            link: 'dummy_assets',
                         },
                         {
                             text: 'Archetypes',
-                            link: '15_archetypes',
+                            link: 'archetypes',
                         },
                         {
                             text: 'Meshes in UDK',
-                            link: '16_udk_meshes',
+                            link: 'udk_meshes',
                         },
                         {
                             text: 'Custom Materials',
-                            link: '17_custom_materials',
+                            link: 'custom_materials',
                         },
                         {
                             text: 'Lightmaps',
-                            link: '18_lightmaps',
+                            link: 'lightmaps',
                         },
                         {
                             text: 'Boost',
-                            link: '19_boost',
+                            link: 'boost',
                         },
                         {
                             text: 'KActors',
-                            link: '20_kactors',
+                            link: 'kactors',
                         },
                         {
                             text: 'Matinee',
-                            link: '21_matinee',
+                            link: 'matinee',
                         },
                         {
                             text: 'Skeletal Mesh',
-                            link: '22_skeletal_mesh',
+                            link: 'skeletal_mesh',
                         },
                         {
                             text: 'Extra Modes',
-                            link: '23_extra_modes',
+                            link: 'extra_modes',
                         },
                     ]
                 }
@@ -257,27 +257,27 @@ const sidebar: DefaultTheme.Sidebar = {
             items: [
                 {
                     text: 'Kismet',
-                    link: '01_kismet',
+                    link: 'kismet',
                 },
                 {
                     text: 'Adding Kismet',
-                    link: '02_project',
+                    link: 'project',
                 },
                 {
                     text: 'TriggerVolumes',
-                    link: '03_trigger',
+                    link: 'trigger',
                 },
                 {
                     text: 'References',
-                    link: '04_tagame',
+                    link: 'tagame',
                 },
                 {
                     text: 'Sound',
-                    link: '05_sound',
+                    link: 'sound',
                 },
                 {
                     text: 'Advanced Kismet',
-                    link: '06_advanced',
+                    link: 'advanced',
                 },
             ],
         },
@@ -288,15 +288,15 @@ const sidebar: DefaultTheme.Sidebar = {
             items: [
                 {
                     text: 'Hello Textures',
-                    link: '01_textures',
+                    link: 'textures',
                 },
                 {
                     text: 'Custom Textures',
-                    link: '02_custom',
+                    link: 'custom',
                 },
                 {
                     text: 'Texture Painting',
-                    link: '03_painting',
+                    link: 'painting',
                 },
             ],
         },
@@ -307,15 +307,15 @@ const sidebar: DefaultTheme.Sidebar = {
             items: [
                 {
                     text: 'Multiplayer',
-                    link: '01_multiplayer',
+                    link: 'multiplayer',
                 },
                 {
                     text: 'Publishing',
-                    link: '02_publishing',
+                    link: 'publishing',
                 },
                 {
                     text: 'Playing Maps',
-                    link: '03_playing',
+                    link: 'playing',
                 },
             ],
         },
@@ -330,19 +330,19 @@ const sidebar: DefaultTheme.Sidebar = {
                 },
                 {
                     text: 'Assets',
-                    link: '01_assets',
+                    link: 'assets',
                 },
                 {
                     text: 'Classes',
-                    link: '02_classes',
+                    link: 'classes',
                 },
                 {
                     text: 'Sound',
-                    link: '03_sound',
+                    link: 'sound',
                 },
                 {
                     text: 'Packages',
-                    link: '04_packages',
+                    link: 'packages',
                 },
             ],
         },
@@ -353,35 +353,35 @@ const sidebar: DefaultTheme.Sidebar = {
             items: [
                 {
                     text: 'Miscellaneous',
-                    link: '01_misc',
+                    link: 'misc',
                 },
                 {
                     text: 'Grass',
-                    link: '02_grass',
+                    link: 'grass',
                 },
                 {
                     text: 'Weather',
-                    link: '03_weather',
+                    link: 'weather',
                 },
                 {
                     text: 'Stacked Transparency',
-                    link: '04_stacked_transparency',
+                    link: 'stacked_transparency',
                 },
                 {
                     text: 'Geometry Editor',
-                    link: '05_geometry_editor',
+                    link: 'geometry_editor',
                 },
                 {
                     text: 'Bots',
-                    link: '06_bots',
+                    link: 'bots',
                 },
                 {
                     text: 'Ghost Plugin',
-                    link: '07_ghostplugin',
+                    link: 'ghostplugin',
                 },
                 {
                     text: 'Customize UDK',
-                    link: '08_custom_udk',
+                    link: 'custom_udk',
                 },
             ],
         },
@@ -398,51 +398,51 @@ const sidebar: DefaultTheme.Sidebar = {
                 },
                 {
                     text: 'Sticky Walls',
-                    link: '01_stickywalls',
+                    link: 'stickywalls',
                 },
                 {
                     text: 'Dummy assets',
-                    link: '02_dummyassets',
+                    link: 'dummyassets',
                 },
                 {
                     text: 'Collisions',
-                    link: '03_collisions',
+                    link: 'collisions',
                 },
                 {
                     text: 'Materials',
-                    link: '04_materials',
+                    link: 'materials',
                 },
                 {
                     text: 'Boost',
-                    link: '05_boost',
+                    link: 'boost',
                 },
                 {
                     text: 'Quick Testing',
-                    link: '06_quick_testing',
+                    link: 'quick_testing',
                 },
                 {
                     text: 'KActors',
-                    link: '07_kactors',
+                    link: 'kactors',
                 },
                 {
                     text: 'Lighting',
-                    link: '08_lighting',
+                    link: 'lighting',
                 },
                 {
                     text: 'Map Models',
-                    link: '09_map_models',
+                    link: 'map_models',
                 },
                 {
                     text: 'Playing Multiplayer',
-                    link: '10_multiplayer',
+                    link: 'multiplayer',
                 },
                 {
                     text: 'Soccar Setup',
-                    link: '11_soccar',
+                    link: 'soccar',
                 },
                 {
                     text: 'UV Maps',
-                    link: '12_uvmaps',
+                    link: 'uvmaps',
                 },
             ],
         },
@@ -473,11 +473,11 @@ const sidebar: DefaultTheme.Sidebar = {
             items: [
                 {
                     text: 'Kismet nodes',
-                    link: '/kismet/nodes',
+                    link: 'kismet/nodes',
                 },
                 {
                     text: 'Class properties',
-                    link: '/kismet/class',
+                    link: 'kismet/class',
                 },
             ]
         },

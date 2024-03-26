@@ -7,7 +7,7 @@ If you’re like me, you never get anything right on the first try. You probably
 
 You do not need to close Rocket League to test changes to your map. You just need to overwrite the file it’s using and reload the map in game. I also recommend setting the game to either Borderless or Windowed mode in the Video settings so that the process of jumping in and out is less painful.
 
-Near the [beginning of the guide](../../essential/05_project_setup.md#batch-script-for-quickly-testing-maps-bsfqtm), I provided a small batch (.bat) script for quickly testing maps. **Keeping a copy of this inside each project folder within Maps will save you hours in the long run.**
+Near the [beginning of the guide](../../essential/project_setup.md#batch-script-for-quickly-testing-maps-bsfqtm), I provided a small batch (.bat) script for quickly testing maps. **Keeping a copy of this inside each project folder within Maps will save you hours in the long run.**
 
 Or **set one instance of this script as the default program for opening .udk and .upk files.** This way, you only have to double-click any .udk file anywhere in your files to replace one of the in-game maps. Just think of the time savings.
 

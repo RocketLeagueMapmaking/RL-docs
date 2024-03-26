@@ -58,7 +58,7 @@ Tip_00001=Did you know you can replace the current tips with your own?\n\nLearn 
 
 ## Documentation
 
-The [Content Browser](../../essential/08_content_browser.md#content-browser) has a tab for documentation, which you can fill with your own useful links by editing the file `{UDK Folder}\Engine\EditorResources\UDKOffline.html`
+The [Content Browser](../../essential/content_browser.md#content-browser) has a tab for documentation, which you can fill with your own useful links by editing the file `{UDK Folder}\Engine\EditorResources\UDKOffline.html`
 
 ## UDK Custom Hotkeys
 

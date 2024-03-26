@@ -13,24 +13,20 @@ export default <DefaultTheme.NavItem[]>[
                 text: 'UDK',
                 items: [
                     {
-                        text: 'Basics',
-                        link: '/guide/udk/00_start'
-                    },
-                    {
-                        text: 'Advanced',
-                        link: '/guide/udk/14_dummy_assets'
+                        text: 'Editor',
+                        link: '/guide/udk/start'
                     },
                     {
                         text: 'Kismet',
-                        link: '/guide/kismet/01_kismet'
+                        link: '/guide/kismet/kismet'
                     },
                     {
                         text: 'Textures',
-                        link: '/guide/textures/01_textures'
+                        link: '/guide/textures/textures'
                     },
                     {
                         text: 'Multiplayer',
-                        link: '/guide/multiplayer/01_multiplayer'
+                        link: '/guide/multiplayer/multiplayer'
                     },
                     {
                         text: 'Decryption',
@@ -38,7 +34,7 @@ export default <DefaultTheme.NavItem[]>[
                     },
                     {
                         text: 'Miscellaneous',
-                        link: '/guide/misc/01_misc'
+                        link: '/guide/misc/misc'
                     }
                 ]
             },
@@ -46,17 +42,13 @@ export default <DefaultTheme.NavItem[]>[
                 text: 'Blender',
                 items: [
                     {
-                        text: 'Basics',
-                        link: '/guide/blender/01_blender'
+                        text: 'Guide',
+                        link: '/guide/blender/blender'
                     },
                     {
                         text: 'Exporting to UDK',
-                        link: '/guide/blender/05_fbx'
+                        link: '/guide/blender/fbx'
                     },
-                    {
-                        text: 'Advanced',
-                        link: '/guide/blender/11_animation'
-                    }
                 ]
             }
         ]

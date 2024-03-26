@@ -38,4 +38,4 @@ If you have an idea and are looking for collaboration, check out the #collaborat
 
 ## Rocket League Itself
 
-But the ace up our sleeves? [Dummy Assets.](../udk/14_dummy_assets.md)
+But the ace up our sleeves? [Dummy Assets.](../udk/dummy_assets.md)

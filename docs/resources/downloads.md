@@ -31,7 +31,7 @@ This a list of useful programs and files for mapmaking:
 * [Autodesk FBX Converter Tool](https://www.autodesk.com/developer-network/platform-technologies/fbx-converter-archives)
 * [Workshop texture package](https://drive.google.com/file/d/1jklpjfEu4Yw97cjYaMDWRx8H2XFyji6U/view?usp=sharing)
 
-[All-In-One Installer Packages](../essential/03_installing.md#all-in-one-packages):
+[All-In-One Installer Packages](../essential/installing.md#all-in-one-packages):
 
 * [RocketLeagueMapmaking UDK RL Setup Script](https://github.com/Dasoccerguy/RocketLeagueMapMaking)
 * [Newk’s UDK Simple Setup](https://rocketleaguemods.com/mods/udk-2015-simple-setup/)

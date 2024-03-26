@@ -14,7 +14,7 @@ If you're reading this, hopefully you have completed all of the steps in the [Es
 * Installed image editing software, like Paint.net
 * Created a StickyWalls Physical Material
 
-If so, you're ready to go. Recall this [flowchart](../../essential/01_flowchart.md) from the Essentials guide. This will help you focus your energy.
+If so, you're ready to go. Recall this [flowchart](../../essential/flowchart.md) from the Essentials guide. This will help you focus your energy.
 
 **By the time you reach the end of this section, you will have made a fully functional custom map that can be played with friends.** If you skip too much, you might be left wondering why the shadows in your map are so harsh, for example.
 

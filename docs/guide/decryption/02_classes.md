@@ -3,13 +3,13 @@ title: Classes
 ---
 # Classes
 
-With UE Explorer or the AssetExtraction tool you can update or add new classes to [the dummy classes](../../essential/04_dummy_classes.md). These classes can be used for [kismet nodes](../kismet/04_tagame.md). If you can't open a new package you are missing the keys for that package in `keys.txt`.
+With UE Explorer or the AssetExtraction tool you can update or add new classes to [the dummy classes](../../essential/dummy_classes.md). These classes can be used for [kismet nodes](../kismet/tagame.md). If you can't open a new package you are missing the keys for that package in `keys.txt`.
 
 ## Packages
 
 There are a few packages in the `{CookedPCConsole}` folder that can be used for extracting classes:
 
-- `AkAudio.upk`: contains classes related to [sound](../kismet/05_sound.md)
+- `AkAudio.upk`: contains classes related to [sound](../kismet/sound.md)
 - `Core.upk`: contains all the base classes. These are used in almost every other package
 - `Engine.upk`: contains basic classes used mostly in `ProjectX.upk` and `TAGame.upk`
 - `GfxUI.upk`: contains classes related to interfaces
@@ -17,14 +17,14 @@ There are a few packages in the `{CookedPCConsole}` folder that can be used for 
 - `OnlineSubsystemEOS.upk`: contains classes related to authentication and online interfaces
 - `OnlineSubsystemSteamworks.upk`: contains classes related to Steam and the workshop
 - `ProjectX.upk`: contains classes related to online systems in the game, such as matchmaking and player progress
-- `TAGame.upk`: contains classes and [kismet nodes](../kismet/04_tagame.md) mostly used in map making
+- `TAGame.upk`: contains classes and [kismet nodes](../kismet/tagame.md) mostly used in map making
 - `WinDrv.upk`: contains a few classes related to http requests
 
 Another file that's useful is `Startup.upk`, this contains packages for boosts, FXActors and more. Every package mentioned in the list above has it's own folder in `{UDK Folder}/Development/Src/`.
 
 ## Kismet nodes
 
-Almost every file that starts with: `SeqAct_` (action), `SeqCon_` (condition), `SeqEvent_` (event) or `SeqVar_` (variable), can be used in [kismet](../kismet/04_tagame.md). If the node is not displayed correctly, delete or comment `Links=none`, `VariableLinks=none` and `LinkedVariables=none`.
+Almost every file that starts with: `SeqAct_` (action), `SeqCon_` (condition), `SeqEvent_` (event) or `SeqVar_` (variable), can be used in [kismet](../kismet/tagame.md). If the node is not displayed correctly, delete or comment `Links=none`, `VariableLinks=none` and `LinkedVariables=none`.
 
 ## Recompiling
 

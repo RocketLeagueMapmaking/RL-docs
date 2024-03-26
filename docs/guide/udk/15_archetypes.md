@@ -35,6 +35,6 @@ There are, however, a number of very useful archetypes which offer properties th
 
 ![alt text](/images/UDK/advanced/archetypes_vehiclepickup.png "Sensible Nonsense")
 
-This "Unknown Type" boost pickup should give you 0 boost and respawn instantly, right? Notice that those lines are not in bold. **These properties will be inherited from the preconfigured Boost Pad Archetype within Rocket League.** In other words, you don't need to change anything to have a perfectly configured boost pad. But, you are **able** to change the amount of boost given and the respawn time because Archetypes are **Configurable.** The section on [Boost](19_boost.md) will explain in much greater detail.
+This "Unknown Type" boost pickup should give you 0 boost and respawn instantly, right? Notice that those lines are not in bold. **These properties will be inherited from the preconfigured Boost Pad Archetype within Rocket League.** In other words, you don't need to change anything to have a perfectly configured boost pad. But, you are **able** to change the amount of boost given and the respawn time because Archetypes are **Configurable.** The section on [Boost](boost.md) will explain in much greater detail.
 
 Go forth and explore the offerings of the Dummy Assets with newfound confidence in what you are looking at! Don't forget to share any neat findings.

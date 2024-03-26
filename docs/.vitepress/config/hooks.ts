@@ -1,6 +1,6 @@
-import { SiteConfig } from "vitepress"
+import { SiteConfig } from 'vitepress'
 
-export async function buildEnd(siteConfig: SiteConfig): Promise<void> {
+export async function buildEnd (siteConfig: SiteConfig): Promise<void> {
     const isAction = process.env.GITHUB_ACTIONS != undefined
         && typeof process.env.BUILD_NOTIFICATION_URL === 'string'
         && process.env.GITHUB_REF === 'refs/heads/master'
