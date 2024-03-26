@@ -3,7 +3,7 @@
   "version": "0.10.0",
   "description": "A website containing information pertaining to the creation, extension, debugging, and concepts of Rocket League map making.",
   "author": "RLMM",
-  "license": "ISC",
+  "license": "MIT",
   "type": "module",
   "private": true,
   "homepage": "https://rocketleaguemapmaking.com",
