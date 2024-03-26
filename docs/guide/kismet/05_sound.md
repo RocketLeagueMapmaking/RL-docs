@@ -4,7 +4,7 @@ title: Sound
 # Kismet Sound
 
 :::tip Decrypting sounds
-Check out the [sound decryption](../decryption/03_sound.md) page for more information on playing sounds outside of the game
+Check out the [sound decryption](../decryption/sound.md) page for more information on playing sounds outside of the game
 :::
 
 ## In-Game Sounds <Badge text="not finished" type="warning"/>

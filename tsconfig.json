@@ -1,0 +1,15 @@
+{
+    "include": [
+        "docs/.vitepress/**/*.ts"
+    ],
+    "compilerOptions": {
+        "target": "es2016",
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true, 
+        "strict": true,
+        "skipLibCheck": true
+    }
+}

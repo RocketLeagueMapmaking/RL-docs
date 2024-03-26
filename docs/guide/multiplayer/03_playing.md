@@ -86,7 +86,7 @@ To play Workshop maps in single player or multiplayer, you can replace an existi
 Some map swappers are:
 
 * [Lethamyr's Custom Map Loader](https://lethamyr.com/set-up-custom-maps)
-* [Mr. Swaggles' BSFQTM](../../essential/05_project_setup.md#batch-script-for-quickly-testing-maps-bsfqtm)
+* [Mr. Swaggles' BSFQTM](../../essential/project_setup.md#batch-script-for-quickly-testing-maps-bsfqtm)
 
 To download maps for Epic, paste the URL of the workshop map into [steamworkshopdownloader.io](https://steamworkshopdownloader.io/) and download the file.
 

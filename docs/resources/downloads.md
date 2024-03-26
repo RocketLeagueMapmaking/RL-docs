@@ -11,11 +11,13 @@ Here you can find every download referenced across the website.
 
 ### Setup
 
-This a list of useful things in order of importance:
+This a list of useful programs and files for mapmaking:
 
 * [Unreal Development Kit 2015](https://drive.google.com/uc?id=1z9C3t6nKW1utWilVshODxyGcucxuzbOW&export=download) (or [Unreal Development Kit 2013.2](https://drive.google.com/open?id=1IBLYxCDxIgRtMS7V9SizeY_FpHhWEHxo))
 * [Blender](https://www.blender.org/), wonderful 3D software
-* [Rocket League Dummy Classes V3](https://github.com/RocketLeagueMapmaking/RL-Dummy-Classes)
+* [Rocket League Dummy Classes](https://github.com/RocketLeagueMapmaking/RL-Dummy-Classes)
+* [Rocket League Dummy Assets](https://github.com/RocketLeagueMapmaking/RL-Dummy-Classes)
+* [Rocket League Not-So-Dummy Assets](/resources/RL_NotSoDummyAssets-main.zip)
 * [Paint.net](http://www.getpaint.net/download.html#download) or [GIMP](https://www.gimp.org/downloads/), full-featured image editors
 * [Rocket League UPK Decryptor](#miscellaneous) and [UE Viewer](#miscellaneous) to decrypt RL assets
 * [Park_P Dummy Assets](https://drive.google.com/open?id=1rpQzqHgoRgpOBSHEpeDwvRtG3sYUXacl)
@@ -29,7 +31,7 @@ This a list of useful things in order of importance:
 * [Autodesk FBX Converter Tool](https://www.autodesk.com/developer-network/platform-technologies/fbx-converter-archives)
 * [Workshop texture package](https://drive.google.com/file/d/1jklpjfEu4Yw97cjYaMDWRx8H2XFyji6U/view?usp=sharing)
 
-[All-In-One Installer Packages](../essential/03_installing.md#all-in-one-packages):
+[All-In-One Installer Packages](../essential/installing.md#all-in-one-packages):
 
 * [RocketLeagueMapmaking UDK RL Setup Script](https://github.com/Dasoccerguy/RocketLeagueMapMaking)
 * [Newk’s UDK Simple Setup](https://rocketleaguemods.com/mods/udk-2015-simple-setup/)

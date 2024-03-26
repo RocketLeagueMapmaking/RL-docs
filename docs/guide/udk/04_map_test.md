@@ -8,7 +8,7 @@ As mentioned in a few other places, the quickest and easiest way to test a map i
 **Be sure to create a backup, however. You never know when you might need it.** What if you want to play online after working on mods, in the map you just overwrote? Well, say hello to the banhammer. Jk. But not really. You will receive a 5+ minute timeout if the Rocket League servers detect the modified game files in an online multiplayer game. **Psyonix has [stated that it welcomes and encourages mods](../../resources/references/psyonix.md), so in general there is absolutely nothing to be afraid of.**
 
 :::tip Testing Multiplayer
-You can test multiplayer on one computer using [this guide](https://steamcommunity.com/sharedfiles/filedetails/?id=311943358) if you are lucky/smurfy enough to have two Steam accounts with Rocket League. Or, ask someone else to [join your map.](../multiplayer/01_multiplayer.md#testing-multiplayer)
+You can test multiplayer on one computer using [this guide](https://steamcommunity.com/sharedfiles/filedetails/?id=311943358) if you are lucky/smurfy enough to have two Steam accounts with Rocket League. Or, ask someone else to [join your map.](../multiplayer/multiplayer.md#testing-multiplayer)
 :::
 
 :::warning Make Backups

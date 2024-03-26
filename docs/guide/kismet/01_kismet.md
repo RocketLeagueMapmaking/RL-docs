@@ -5,7 +5,7 @@ title: Kismet
 
 Kismet is a node-based programming system that presents a “cleaner” and “easier to use” interface than you would get writing your own code. Logical blocks take the place of code classes and functions, and lines on the page indicate data and program flow.
 
-Kismet, much like the [CSG tools](../udk/01_csg.md), is not meant to be used to program a whole game. It is meant more as a tool for cheap and dirty testing, but in this case it is the only option we appear to have.
+Kismet, much like the [CSG tools](../udk/csg.md), is not meant to be used to program a whole game. It is meant more as a tool for cheap and dirty testing, but in this case it is the only option we appear to have.
 
 ## Key Terms
 
@@ -31,7 +31,7 @@ The terms Link/Connector/Connection are used somewhat interchangeably, but they 
 * `C (with node(s) selected)` - Add comment block
 
 :::tip More Hotkeys
-It is possible to [add kismet nodes](https://docs.unrealengine.com/udk/Three/KismetUserGuide.html#Hotkeys) with your keyboard, and you can also [change the hotkeys](../misc/08_custom_udk.md#kismet) as you prefer!
+It is possible to [add kismet nodes](https://docs.unrealengine.com/udk/Three/KismetUserGuide.html#Hotkeys) with your keyboard, and you can also [change the hotkeys](../misc/custom_udk.md#kismet) as you prefer!
 :::
 
 ## Kismet Editor Window <Badge text="important" type="tip"/>
@@ -86,7 +86,7 @@ If you wish to completely abuse the game for things like Chaos Rumble or (the or
 | External Variable | Named variables of any type from an external sequence ([see Sequences](#sequences)) |
 | Float             | Numbers with decimal precision, like speed or Z location                            |
 | Int               | Numbers with integer precision, like number of players                              |
-| Matinee Data      | Animation data (see [Matinee](../udk/21_matinee.md))                                |
+| Matinee Data      | Animation data (see [Matinee](../udk/matinee.md))                                |
 | Named Variable    | [Named variables][udk-docs:named-vars] of any type                                  |
 | Object            | Objects in the map, like the ball                                                   |
 | Player            | Players themselves                                                                  |
@@ -102,7 +102,7 @@ I encourage you to test out any Events which sound interesting. Here are some of
 | Level Loaded            | Running code as soon as the map is loaded                                                 |
 | Player > Player Spawned | Running code when a player spawns or respawns                                             |
 | TAGame > Round Start    | Running code when gameplay starts or resumes                                              |
-| TriggerVolume Touch     | Running code when the player or ball enters a region (more on this [here](03_trigger.md)) |
+| TriggerVolume Touch     | Running code when the player or ball enters a region (more on this [here](trigger.md)) |
 
 ### Actions
 

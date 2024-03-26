@@ -3,7 +3,7 @@ title: Dummy Assets
 ---
 # Dummy Assets
 
-This is perhaps the most important section in this whole guide, yet it’s very hard to explain in an intelligible or collected fashion. I feel it’s important to understand [basic mapmaking](../../essential/01_flowchart.md) (i.e. everything leading up to this point) before attempting to use Dummy Assets, because this is where it starts to get really weird. Dedicated modders finally cracked the code in 2017, which allows for any map maker to use any in-game asset. The trick?
+This is perhaps the most important section in this whole guide, yet it’s very hard to explain in an intelligible or collected fashion. I feel it’s important to understand [basic mapmaking](../../essential/flowchart.md) (i.e. everything leading up to this point) before attempting to use Dummy Assets, because this is where it starts to get really weird. Dedicated modders finally cracked the code in 2017, which allows for any map maker to use any in-game asset. The trick?
 
 Just name it correctly.
 

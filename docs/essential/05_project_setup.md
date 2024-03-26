@@ -20,7 +20,7 @@ I use Windows 10 and the Steam version of Rocket League, so please keep that in 
     * Several of my modded maps live inside `\mods`, a folder I created
 `C:\Games\SteamApps\common\rocketleague\TAGame\CookedPCConsole` will be referred to as `{CookedPCConsole}` for simplicity.
 
-* As mentioned in the [UDK install process](03_installing.md), everything will live inside `{UDK Folder}`
+* As mentioned in the [UDK install process](installing.md), everything will live inside `{UDK Folder}`
   * **Each individual custom map should live inside a folder within `{UDK Folder}\UDKGame\Content\Maps\`**
   * In addition to these folders, I highly highly recommend making two Windows File Explorer shortcuts, or bookmarking these locations
     * One that points to `{CookedPCConsole}`

@@ -58,7 +58,7 @@ Tip_00001=Did you know you can replace the current tips with your own?\n\nLearn 
 
 ## Documentation
 
-The [Content Browser](../../essential/08_content_browser.md#content-browser) has a tab for documentation, which you can fill with your own useful links by editing the file `{UDK Folder}\Engine\EditorResources\UDKOffline.html`
+The [Content Browser](../../essential/content_browser.md#content-browser) has a tab for documentation, which you can fill with your own useful links by editing the file `{UDK Folder}\Engine\EditorResources\UDKOffline.html`
 
 ## UDK Custom Hotkeys
 
@@ -94,7 +94,7 @@ You can change the text of almost any message or button (including the `Save all
 
 You can add (or remove) your own favorite classes in the right click > add actors menu. For class `MyClass`, add the class `ActorFactoryMyClass` in a source folder:
 
-```uc
+```txt
 // /Development/src/MyMod/Classes/ActorFactoryMyClass.uc
 
 class ActorFactoryMyClass extends ActorFactory
@@ -117,7 +117,7 @@ By setting `bShowInEditorQuickMenu=true` you can move `MyClass` from `add actors
 
 Similar to the actor classes menu, you can extend the `Factory` class for a custom item in the content browser.
 
-```uc
+```txt
 // /Development/src/MyMod/Classes/ActorFactoryMyClassNew.uc
 
 class ActorFactoryMyClassNew extends Factory

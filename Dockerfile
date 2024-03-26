@@ -1,5 +1,5 @@
 ARG deploy_base_image="nginx:1.16.1-alpine"
-ARG build_base_image="node:14.13.0-alpine3.12"
+ARG build_base_image="node:18.19.0-alpine3.19"
 
 # Use an intermediary image to do our builds, removing coupling from the machine executing commands and allowing us to
 # trim the fat.
@@ -7,11 +7,11 @@ FROM $build_base_image AS builder
 
 WORKDIR /opt/build
 
+# Install Git if lastUpdated is enabled
+RUN apk update && apk add git
+
 # Copy in dependency resolution files.
 COPY package*.json ./
-
-# Copy in contributing guide to sync with the site.
-COPY CONTRIBUTING.md ./
 
 # Install NPM dependencies. Execute this before copy to ensure that caching occurs.
 RUN npm ci
@@ -30,7 +30,7 @@ RUN rm -rf /usr/share/nginx/html/*
 
 # Copy in the required files we built in the previous image.
 # Only the Dist folder is required as everything is compiled into there on build.
-COPY --from=builder /opt/build/docs/.vuepress/dist /usr/share/nginx/html
+COPY --from=builder /opt/build/docs/.vitepress/dist /usr/share/nginx/html
 
 # Copy in our configuration, which is applied on startup.
 COPY ./deployment/server.conf /etc/nginx/conf.d/server.conf
