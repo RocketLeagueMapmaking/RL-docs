@@ -28,3 +28,5 @@ jobs:
         # https://vitepress.dev/reference/site-config#ignoredeadlinks
       - name: Check guide build
         run: npm run docs:build
+        env:
+            BUILD_NOTIFICATION_URL: ${{ secrets.BUILD_NOTIFICATION_URL }}

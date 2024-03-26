@@ -7,6 +7,9 @@ FROM $build_base_image AS builder
 
 WORKDIR /opt/build
 
+# Install Git if lastUpdated is enabled
+RUN apk update && apk add git
+
 # Copy in dependency resolution files.
 COPY package*.json ./
 

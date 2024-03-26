@@ -2,8 +2,10 @@ import { defineConfigWithTheme } from 'vitepress'
 import { type ThemeConfig } from '@rocketleaguemapmaking/theme-rlmm'
 
 import head from './head'
-import sidebar from './sidebar'
+import { buildEnd } from './hooks'
 import nav from './navbar'
+import rewrites from './rewrites'
+import sidebar from './sidebar'
 
 export default defineConfigWithTheme<ThemeConfig>({
     title: 'RLMM',
@@ -17,12 +19,23 @@ export default defineConfigWithTheme<ThemeConfig>({
         publicDir: '.vitepress/public',
     },
 
+    // Routing
+    // Enable rewrites and cleanUrls to have: /guide/udk/00_start.html -> /guide/udk/start
+
+    // Removes file extensions from routes
     cleanUrls: true,
+    // Removes numbered prefixes from routes
+    rewrites,
+
+    // Page features
     appearance: true,
     lastUpdated: true,
     markdown: {
         headers: true,
     },
+
+    // Hooks
+    buildEnd,
 
     // Theme configuration
     themeConfig: {
