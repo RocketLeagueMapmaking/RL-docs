@@ -13,7 +13,7 @@ hero:
       link: /essential/
     - theme: alt
       text: UDK Guide
-      link: /guide/udk/00_start
+      link: /guide/udk/start
   steam:
     title: <span>New</span> Steam workshop
     enabled: true
@@ -22,13 +22,13 @@ hero:
 features:
     - title: UDK Guide
       details: Learn how to use UDK and make your map work in Rocket League
-      link: /guide/udk/00_start
+      link: /guide/udk/start
       linkText: Read more
       icon: 
         src: https://cdn.discordapp.com/emojis/714386127145926676.webp?size=64&quality=lossless
     - title: 3D modeling
       details: Learn how to make your maps unique with your own assets or import meshes from Blender into UDK
-      link: /guide/blender/01_blender
+      link: /guide/blender/blender
       linkText: Read more
       icon:
         src: https://cdn.discordapp.com/emojis/714382878561140737.webp?size=64&quality=lossless

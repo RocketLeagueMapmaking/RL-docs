@@ -30,6 +30,7 @@ This site can be executed as a docker container on the host machine.
     - To view all docker containers, execute `docker ps -a`, which are ordered by age.
     - To view the NGINX logs of a container, execute `docker logs <container_name>`.
     - To stop the service, execute `docker stop rlmm`
+1. Execute `sh deployment/move_dummyassets.sh` to copy in the Not So Dummy Assets.
 1. Access the site at the correct URL (`rocketleaguemapmaking.com`).
 
 ## Contributing documentation
