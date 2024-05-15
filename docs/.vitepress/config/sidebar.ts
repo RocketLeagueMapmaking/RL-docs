@@ -220,7 +220,7 @@ const sidebar: DefaultTheme.Sidebar = {
                         },
                         {
                             text: 'Custom Materials',
-                            link: 'custom_materials',
+                            link: 'custom_material',
                         },
                         {
                             text: 'Lightmaps',

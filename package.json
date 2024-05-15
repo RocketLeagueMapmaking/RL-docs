@@ -35,10 +35,10 @@
     "@typescript-eslint/parser": "^7.4.0",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.24.0",
-    "markdownlint-cli2": "^0.12.1",
-    "typescript": "^5.4.3",
-    "vitepress": "1.0.1",
-    "vue": "^3.4.21",
-    "wrangler": "^3.37.0"
+    "markdownlint-cli2": "^0.13.0",
+    "typescript": "^5.4.5",
+    "vitepress": "1.1.4",
+    "vue": "^3.4.27",
+    "wrangler": "^3.56.0"
   }
 }

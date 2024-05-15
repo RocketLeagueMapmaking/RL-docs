@@ -28,7 +28,7 @@ function iterateFolder (folder: string, options: Pick<RewriteOptions, 'base' | '
         }, {} as Record<string, string>)
 }
 
-function createRewrites (options: RewriteOptions) {
+export default function (options: RewriteOptions) {
     return combineFolders(options).reduce((rewrites, folderName) => {
         return {
             ...rewrites,
@@ -36,15 +36,3 @@ function createRewrites (options: RewriteOptions) {
         }
     }, {} as Record<string, string>)
 }
-
-export default createRewrites({
-    base: 'docs/',
-    regexp: /^(\d{2}_)/,
-    nestedFolders: [
-        { name: 'docs/guide/', prefix: 'guide/' },
-    ],
-    folders: [
-        'cheatsheet',
-        'essential',
-    ],
-})

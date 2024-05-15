@@ -17,7 +17,7 @@ hero:
   steam:
     title: <span>New</span> Steam workshop
     enabled: true
-    amount: 3
+    amount: 4
 
 features:
     - title: UDK Guide
@@ -74,13 +74,14 @@ events:
     dataUrl: https://docs.rocketleaguemapmaking.workers.dev/events?type=contests&scheme=actions
 
 promotion:
-    image: https://rocketleague.media.zestyio.com/rl_home_f2p-launch_cross_10656.jpg?width=1920&fit=bounds
+    image: https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F609bf4cf21cbe49b3f2b00dd475b36c6.cdn.bubble.io%2Ff1700166532312x832263170601654800%2Fleth_ultimate_course_v2_thumb.jpg?w=768&h=432&auto=compress&dpr=1.25
     title:
         image: https://skillquest.io/wp-content/uploads/2022/08/Skillquest-Coding-Camps-and-Education-for-Rocket-League-Players.png
-    description: Learn map making in a video tutorial course.<br><br>Some more text about the course and why you should choose it over regular videos if you have the money for it
+    # Copied from the introduction of skillquest
+    description: This comprehensive course by renowned map creators Lethamyr and Mr. Swaggles, in partnership with Skillquest, invites you to explore the thrilling world of custom map design. <br> Whether you're a passionate gamer, aspiring coder, or tech enthusiast, this self-paced course is your ticket to unlocking the secrets of Rocket League's creative universe. 
     actions:
         - text: Read more
-          link: https://learn.skillquest.io/landing/1699993747535x796931164922708000
+          href: https://learn.skillquest.io/landing/1699993747535x796931164922708000
 
 sponsors:
   message: Patreon shoutout

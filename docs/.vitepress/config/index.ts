@@ -25,7 +25,18 @@ export default defineConfigWithTheme<ThemeConfig>({
     // Removes file extensions from routes
     cleanUrls: true,
     // Removes numbered prefixes from routes
-    rewrites,
+    // Does not redirect prefixed routes in builds
+    rewrites: rewrites({
+        base: 'docs/',
+        regexp: /^(\d{2}_)/,
+        nestedFolders: [
+            { name: 'docs/guide/', prefix: 'guide/' },
+        ],
+        folders: [
+            'cheatsheet',
+            'essential',
+        ],
+    }),
 
     // Page features
     appearance: true,
@@ -58,7 +69,7 @@ export default defineConfigWithTheme<ThemeConfig>({
         externalLinkIcon: true,
         editLink: {
             pattern: 'https://github.com/rocketleaguemapmaking/rl-docs/tree/master/docs/:path',
-            text: 'View this page on GitHub',
+            text: 'View on GitHub',
         },
         socialLinks: [
             { icon: 'discord', link: 'https://discord.gg/PWu3ZWa' },
