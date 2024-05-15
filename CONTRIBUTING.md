@@ -20,19 +20,19 @@ We have some minor style requirements for documentation additions:
 - If you are changing / adding content related to UDK, check your changes in UDK (only follow the content you have written and not your own knowledge). Any PR with changes in UDK should be reviewed.
 - If you are adding image resources:
   - pay attention to their file size: images above 5MB will not be accepted, and anything above 1MB should be reviewed.
-  - Images should be added in `/docs/.vuepress/public/images` and icons in `/docs/.vuepress/public/icons`
+  - Images should be added in `/docs/.vitepress/public/images` and icons in `/docs/.vitepress/public/icons`
 - [Create an issue](https://github.com/rocketleaguemapmaking/RL-docs/issues/new/choose) for small contributions (such as fixing typos or broken links)
 
 # Development and local testing
 
-The project utilises `vuepress` in order to create pages for our documentation, running on a Node backend.
+The project utilises `vitepress` in order to create pages for our documentation, running on a Node backend.
 
 ## Dependencies
 
-1. Install [Node v12+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (or later).
+1. Install [Node v18+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (or later). You can use [nvm](https://github.com/nvm-sh/nvm) to easily update Node.
 
-- `node --version` should show at least `v12.22.0`. Lower versions have not been tested but may also work.
-- `npm --version` should show at least `7.0.0`. Lower versions have not been tested but may also work.
+- `node --version` should show at least `v18.19.0`. Lower versions have not been tested but may also work.
+- `npm --version` should show at least `10.2.3`. Lower versions have not been tested but may also work.
 
 2. Clone the repository to your machine.
 3. Execute `npm install` from the root of the repository.
@@ -42,6 +42,12 @@ The project utilises `vuepress` in order to create pages for our documentation, 
 1. Execute `npm run docs:dev`.
 2. Open the URL specified within the output of the command.
 
+> [!NOTE]
+> To preview the built website:
+>
+> 1. Execute `npm run docs:build` and `npm run docs:preview`.
+> 2. Open the URL specified within the output of the command.
+
 ## Sharing local snapshot
 
 To share a local build of the current branch:
@@ -49,14 +55,12 @@ To share a local build of the current branch:
 1. Execute `npm install` from the root of the repository.
 2. Log into the rlmm / your own Cloudflare account with `npx wrangler login` and complete the oauth2 flow.
 3. Execute `npm run docs:build`
-4. Execute `npx wrangler pages publish ./docs/.vuepress/dist/ --project-name=rocketleaguemapmaking --branch=<branch>`.
+4. Execute `npx wrangler pages publish ./docs/.vitepress/dist/ --project-name=rocketleaguemapmaking --branch=<branch>`.
 Replace `<branch>` with the name of the current branch.
 
-## Components
+## Theme
 
-Vuepress makes use of [Vue components](https://vuepress.vuejs.org/guide/using-vue.html#using-components). If you make multiple components for one page or the components are about the same subject, add them in a folder.
+This guide uses a custom guide theme. The theme [`theme-rlmm`](https://theme-rlmm.pages.dev) is built on [VitePress](https://vitepress.dev) with Vue.js 3 and Vite.
 
-- Components are placed inside `/docs/.vuepress/components/`
-- Components are registered globally in `/docs/.vuepress/public/enhanceApp.js`.
-
-**Make sure a custom component’s name either contains a hyphen or is in PascalCase. Otherwise it will be treated as an inline element and wrapped inside a `<p>` tag, which will lead to hydration mismatch because `<p>` does not allow block elements to be placed inside it.** Read more about it [in the Vue documentation](https://vuejs.org/v2/guide/components-registration.html#Component-Names).
+- Any theme modification should be in `docs/.vitepress/theme/`
+- Feature requests and issues with the theme (components) should be opened in the [theme repository](https://github.com/rocketleaguemapmaking/theme-rlmm)

@@ -15,4 +15,4 @@ If you have any question or ideas, you can contact us via:
 
 Since this guide has been made specifically for mapmaking, we will not add many guides for [other tools](../faq/). We will, of course, make additions to the current pages and add new ones about everything related to mapmaking.
 
-[Click Here](contribute.md) to learn how to request more content.
+Read [the contributing guide](https://github.com/RocketLeagueMapmaking/RL-docs/blob/master/CONTRIBUTING.md) to learn how to request or add more content.

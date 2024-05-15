@@ -7,7 +7,7 @@ These Cheat Sheets are meant as quick references for tricky topics. I recommend 
 
 ## Ideas?
 
-Anything you would like to see encapsulated as a Cheat Sheet? [Contact us](../more/contact.md) with your idea, or [Contribute](../more/contribute.md) directly!
+Anything you would like to see encapsulated as a Cheat Sheet? [Contact us](../more/contact.md) with your idea, or [contribute](https://github.com/RocketLeagueMapmaking/RL-docs/blob/master/CONTRIBUTING.md) directly!
 
 ## General UDK Tips and Tricks <Badge text="not finished" type="warning"/>
 

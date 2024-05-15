@@ -5,7 +5,7 @@ title: The Owl
 
 ![alt text](/images/UDK/basics/image89.png "How to make a Rocket League map in 3 minutes!")
 
-Now that we have the fundamentals all in place, the rest of the map can come together very quickly. For brevity, I am going to skip over the modeling steps, but that will be explained [here](../blender/01_blender.md).
+Now that we have the fundamentals all in place, the rest of the map can come together very quickly. For brevity, I am going to skip over the modeling steps, but that will be explained [here](../blender/blender.md).
 
 ![alt text](/images/UDK/basics/image209.png "Boring old, lame old blue and white map pieces")
 

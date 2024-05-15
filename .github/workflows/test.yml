@@ -6,12 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      - name: Install node.js v14
-        uses: actions/setup-node@v2
+      - name: Install node.js v18
+        uses: actions/setup-node@v4
         with:
-          node-version: 14
+          node-version: 18
           cache: npm
 
       - name: Install dependencies
@@ -23,8 +23,10 @@ jobs:
       - name: Run markdown lint
         run: npm run lint-markdown
 
-      - name: Check markdown links
-        run: npm run test
-
-      - name: Check Vuepress build
+        # Broken links are checked by VitePress on building
+        # Make sure that ignoreDeadlinks is enabled!
+        # https://vitepress.dev/reference/site-config#ignoredeadlinks
+      - name: Check guide build
         run: npm run docs:build
+        env:
+            BUILD_NOTIFICATION_URL: ${{ secrets.BUILD_NOTIFICATION_URL }}

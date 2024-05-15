@@ -3,10 +3,10 @@ title: 'Starting a Map'
 ---
 # Starting a Map
 
-This is the point in the guide where things have to go a little non-linear. You may need to jump forward to [Blender sections](../blender/01_blender.md), then back to [Material sections](../textures/01_textures.md), then back to this for it all to make sense.
+This is the point in the guide where things have to go a little non-linear. You may need to jump forward to [Blender sections](../blender/blender.md), then back to [Material sections](../textures/textures.md), then back to this for it all to make sense.
 
 :::info Progress
-From here until the end, this guide will focus on creating a custom map from scratch. Have you already decided what you want to make? [This flowchart](../../essential/01_flowchart.md) should help you pick which sections to focus on.
+From here until the end, this guide will focus on creating a custom map from scratch. Have you already decided what you want to make? [This flowchart](../../essential/flowchart.md) should help you pick which sections to focus on.
 :::
 
 ## Project Information
@@ -35,9 +35,9 @@ First, there are a few World properties to tweak. Open World Properties from the
 
 ![alt text](/images/UDK/basics/image27.png "It sticks with you")
 
-Next, we are going to include [StickyWalls®](../../essential/09_sticky_walls.md) in this project. **Right click and Fully Load the Generic package. Right click StickyWalls and do “Create a copy…” Select your new map in the Package dropdown (or type it exactly). Click OK. If this fails, make sure that your project name does not have spaces.**
+Next, we are going to include [StickyWalls®](../../essential/sticky_walls.md) in this project. **Right click and Fully Load the Generic package. Right click StickyWalls and do “Create a copy…” Select your new map in the Package dropdown (or type it exactly). Click OK. If this fails, make sure that your project name does not have spaces.**
 
-Because this is going to be based on the default soccar map, the initial assets are almost all ready to go. **In the [Content Browser](../../essential/08_content_browser.md), right click Park_P and select Fully Load.** Filter to Static Meshes only in the Object Type selector.
+Because this is going to be based on the default soccar map, the initial assets are almost all ready to go. **In the [Content Browser](../../essential/content_browser.md), right click Park_P and select Fully Load.** Filter to Static Meshes only in the Object Type selector.
 
 ![alt text](/images/UDK/basics/image22.png "All the makings of a delicious new map")
 

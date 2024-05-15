@@ -27,4 +27,4 @@ Whenever you start a new map, you will need to copy the StickyWalls® material i
 
 Congratulations, you have completed the setup guide! You now have everything you need to make custom maps for Rocket League. This would be a perfect time to revisit the flowchart from the beginning of this section.
 
-[The Flowchart](01_flowchart.md)
+[The Flowchart](flowchart.md)
