@@ -21,10 +21,10 @@ ItsBrank has created [a repository](https://github.com/ItsBranK/RocketLeagueAsse
 
 To get started with decrypting the assets, you will need some tools. Each tool has a different focus to extract a certain type of asset. They can be installed in the Map making or in the Rocket League mods discord server with the RLAESKeyBot bot (use `!help` for all the commands).
 
-* uModel (or UE Viewer): used for [decrypting and exporting assets](01_assets.md)
-* UE Explorer: used for [decrypting classes](02_classes.md)
-* RLUPKTool ([source](https://github.com/Martinii89/RLUPKT/tree/master)): used for [decrypting `.upk` packages](04_packages.md)
-* AssetExtraction ([source](https://github.com/Martinii89/Unreal-Library/tree/master/AssetExtraction)): used for [extracting classes](02_classes.md), exporting world information and object properties
+* uModel (or UE Viewer): used for [decrypting and exporting assets](assets.md)
+* UE Explorer: used for [decrypting classes](classes.md)
+* RLUPKTool ([source](https://github.com/Martinii89/RLUPKT/tree/master)): used for [decrypting `.upk` packages](packages.md)
+* AssetExtraction ([source](https://github.com/Martinii89/Unreal-Library/tree/master/AssetExtraction)): used for [extracting classes](classes.md), exporting world information and object properties
 
 ## Logs
 

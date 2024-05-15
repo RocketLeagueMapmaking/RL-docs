@@ -2,4 +2,4 @@
 title: Guides
 ---
 
-This page was removed. [Get started with UDK](udk/00_start.md).
+This page was removed. [Get started with UDK](udk/start.md).
