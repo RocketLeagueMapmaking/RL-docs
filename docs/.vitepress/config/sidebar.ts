@@ -497,6 +497,10 @@ const sidebar: DefaultTheme.Sidebar = {
                     link: 'contact',
                 },
                 {
+                    text: 'Events',
+                    link: 'events',
+                },
+                {
                     text: 'Roadmap',
                     link: 'roadmap',
                 },

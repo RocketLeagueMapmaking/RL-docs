@@ -70,7 +70,7 @@ events:
     description: Map making events challenging to make custom maps in a certain theme
     action:
         text: See all contests
-        link: /events
+        link: /more/events
     dataUrl: https://docs.rocketleaguemapmaking.workers.dev/events?type=contests&scheme=actions
 
 promotion:

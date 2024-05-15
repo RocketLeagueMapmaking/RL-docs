@@ -98,7 +98,7 @@ export default <DefaultTheme.NavItem[]>[
     },
 
     {
-        text: 'Learn more',
+        text: 'More',
         items: [
             {
                 text: 'About',
@@ -107,6 +107,10 @@ export default <DefaultTheme.NavItem[]>[
             {
                 text: 'Contact',
                 link: '/more/contact'
+            },
+            {
+                text: 'Events',
+                link: '/more/events',
             },
             {
                 text: 'Roadmap',
