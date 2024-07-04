@@ -28,7 +28,7 @@
     "npm": ">=7.0.0"
   },
   "dependencies": {
-    "@rocketleaguemapmaking/theme-rlmm": "github:rocketleaguemapmaking/theme-rlmm"
+    "@rocketleaguemapmaking/theme-rlmm": "github:rocketleaguemapmaking/theme-rlmm#90c3ffc"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.4.0",
