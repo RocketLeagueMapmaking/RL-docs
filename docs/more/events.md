@@ -2,6 +2,7 @@
 layout: page
 ---
 
+<!-- markdownlint-disable-next-line MD041 -->
 <ItemGrid
     title="Map making contests"
     description="Events that challenge map makers to create custom maps in a certain theme"
