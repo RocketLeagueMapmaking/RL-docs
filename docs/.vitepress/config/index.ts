@@ -4,8 +4,20 @@ import { type ThemeConfig } from '@rocketleaguemapmaking/theme-rlmm'
 import head from './head'
 import { buildEnd } from './hooks'
 import nav from './navbar'
-import rewrites from './rewrites'
+import createRewrites from './rewrites'
 import sidebar from './sidebar'
+
+const rewrites = createRewrites({
+    base: 'docs/',
+    regexp: /^(\d{2}_)/,
+    nestedFolders: [
+        { name: 'docs/guide/', prefix: 'guide/' },
+    ],
+    folders: [
+        'cheatsheet',
+        'essential',
+    ],
+})
 
 export default defineConfigWithTheme<ThemeConfig>({
     title: 'RLMM',
@@ -26,17 +38,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     cleanUrls: true,
     // Removes numbered prefixes from routes
     // Does not redirect prefixed routes in builds
-    rewrites: rewrites({
-        base: 'docs/',
-        regexp: /^(\d{2}_)/,
-        nestedFolders: [
-            { name: 'docs/guide/', prefix: 'guide/' },
-        ],
-        folders: [
-            'cheatsheet',
-            'essential',
-        ],
-    }),
+    rewrites,
 
     // Page features
     appearance: true,
@@ -74,6 +76,10 @@ export default defineConfigWithTheme<ThemeConfig>({
         socialLinks: [
             { icon: 'discord', link: 'https://discord.gg/PWu3ZWa' },
         ],
+
+        router: {
+            redirects: rewrites,
+        },
 
         // Search
         search: {
