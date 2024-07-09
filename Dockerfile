@@ -1,4 +1,4 @@
-ARG deploy_base_image="nginx:1.27-alpine"
+ARG deploy_base_image="nginx:1.16.1-alpine"
 ARG build_base_image="node:18.19.0-alpine3.19"
 
 # Use an intermediary image to do our builds, removing coupling from the machine executing commands and allowing us to
