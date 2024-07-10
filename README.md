@@ -15,10 +15,14 @@
 ## Deployment
 
 > [!NOTE]
-> These steps will currently only work for the main `rocketleaguemapmaking.com` domain, as it hasn't been made
-customisable yet. If you wish to view this branch or a PR remotely, visit the [developer site][dev-domain] or the subdomain in the PR actions.
+> These steps will currently only work for the main `rocketleaguemapmaking.com` domain. If you wish to view this branch or a PR remotely, visit the [developer site][dev-domain] or the subdomain in the PR actions.
 
 This site can be executed as a docker container on the host machine.
+
+To update the site on the host machine, run the `deploy` workflow with the version to deploy as the input. See the GitHub documentation for [how to run a workflow manually](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow#running-a-workflow).  
+
+<details>
+<summary>Manual update steps</summary>
 
 1. [Install Docker-CE](https://docs.docker.com/engine/install/) on the host machine. Docker (non-ce) should also work but is not tested.
 1. Clone this repository.
@@ -32,6 +36,8 @@ This site can be executed as a docker container on the host machine.
     - To stop the service, execute `docker stop rlmm`
 1. Execute `sh deployment/move_dummyassets.sh` to copy in the Not So Dummy Assets.
 1. Access the site at the correct URL (`rocketleaguemapmaking.com`).
+
+</details>
 
 ## Contributing documentation
 
