@@ -43,7 +43,7 @@ jobs:
           echo "Updating the website to version ${{ github.event.inputs.version }}!"
 
       - name: Login and redeploy
-        # Not use @master because of https://github.com/appleboy/ssh-action/issues/317 
+        # Do not use @master because of https://github.com/appleboy/ssh-action/issues/317 
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
