@@ -1,10 +1,133 @@
 ---
 title: About
+layout: page
 editLink: false
-tags:
-  - about
-  - info
+outline: false
+# Avatar order for thanks: check first Steam, then GitHub or Discord
+teams:
+    - title: Guide members
+      lead: The people who made and/or maintain this guide
+      size: medium
+      members:
+          - name: Mr. Swaggles
+            avatar: https://github.com/spencerarrasmith.png
+            title: Guide
+            links:
+                - icon: github
+                  link: https://github.com/spencerarrasmith
+          - name: ghostrider-05
+            avatar: https://github.com/ghostrider-05.png
+            title: Site design
+            links:
+                - icon: github
+                  link: https://github.com/ghostrider-05
+          - name: JimJoms
+            avatar: https://github.com/wejrox.png
+            title: Website trickery
+            links:
+                - icon: github
+                  link: https://github.com/wejrox
+    - title: Guide contributors
+      lead: People who have added content to this guide
+      size: small
+      members:
+        - name: Mr. Phil
+          avatar: https://github.com/MrPh1l.png
+    - title: Special thanks
+      lead: These guys will be referred to as friendly/wonderful/amazing modders, so please thank them if you get a chance.  Send a message if we didn’t give you credit for discovering something, and we’ll add you.
+      size: small
+      members:
+        - name: whynotsteven
+          title: RL Modding Founder, The OG
+          avatar: https://cdn.discordapp.com/avatars/156441056848773121/13a68016f288ff2866577b2e39545639.webp
+        - name: ButterandCream
+          title: Discord/Reddit Admin, Rocket Launcher Creator
+          avatar: https://cdn.discordapp.com/avatars/254108543832031232/712fef518dbb834393f2a39c9ce130be.webp
+        - name: Bakkes
+          title: Bakkesmod Creator
+          avatar: https://github.com/BakkesModOrg.png
+        - name: glhglh
+          title: Collision Channels, AlphaConsole Plugin, Foundational Discoveries
+          avatar: https://avatars.akamai.steamstatic.com/67e045fb949aec814145fd1b4659d416ef6610a7_medium.jpg
+        - name: CinderBlock
+          title: Bakkesmod Genius
+          avatar: https://avatars.akamai.steamstatic.com/cfb8d8009c54f7f328f1adcc937429c3bfd2c605_medium.jpg
+        - name: Lethamyr
+          title: Countless Custom Maps, New Features, and Publicity
+          avatar: https://cdn.discordapp.com/avatars/134426410205839360/d5682f3aff3152ceadb24979392ef659.webp
+        - name: KarlHeinzSchneider
+          title: Collision Channels, Foundational Discoveries
+          avatar: https://avatars.akamai.steamstatic.com/e8fe32fa35ee42395aad303374dcc8476a8a6852_medium.jpg
+        - name: wejrox/JimJoms
+          title: Web Development, Video Tutorials, One-Stop-Chop-Shop
+          avatar: https://github.com/wejrox.png
+        - name: Derzo
+          title: Fixed Collisions, Guides, Custom Materials, In-Game Assets
+          avatar: https://avatars.akamai.steamstatic.com/c6b6740fd277f806ec450c2a8b50f4368dd114d9_medium.jpg
+        - name: Stanbroek
+          title: Advanced Map and Kismet Techniques, Rocket Plugin
+          avatar: https://avatars.akamai.steamstatic.com/1bdd44992128e186f6c880a45458e0f9d2fe9dc5_medium.jpg
+        - name: Thanrek
+          title: Advanced Map and Kismet Techniques
+          avatar: https://avatars.akamai.steamstatic.com/229d2f3f2c5c85d577f9ae86d34585d7909303aa_medium.jpg
+        - name: French Fries
+          title: Foundational Dribbling Challenge Maps
+          avatar: https://avatars.akamai.steamstatic.com/a7b7a4ab057ee9e00d9aeb662235da7e939e22b9_medium.jpg
+        - name: dmc
+          title: Foundational Challenge Maps
+          avatar: https://avatars.akamai.steamstatic.com/8d56d924b8f4733bd708e517ab01fc49d86ff28a_medium.jpg
+        - name: Dreale
+          title: Foundational Parkour Challenge Maps
+          avatar: https://avatars.akamai.steamstatic.com/b0fafc98c10e761c130a3d8780b2ae4ae81d3f6e_medium.jpg
+        - name: Ardivee
+          title: Boost, Mapmaking Techniques
+          avatar: https://github.com/ardivee.png
+        - name: Eliot
+          title: UE Explorer Program
+          avatar: https://github.com/EliotVU.png
+        - name: Martinn
+          title: UPK Decryptor, Dummy Assets, Bakkesmod Work
+          avatar: https://github.com/Martinii89.png
+        - name: LiveDimensions
+          title: Tech Support
+          avatar: https://avatars.akamai.steamstatic.com/e7220efa5ccbdc88853a2ab749996d8d5865e2f6_medium.jpg
+        - name: tj
+          title: RocketLeagueMapmaking GitHub Team
+          avatar: https://avatars.akamai.steamstatic.com/196984cd7b0a17671b6db7347a679d1ecd9012e5_medium.jpg
+        - name: Ecrase-Patate
+          title: Kismet Wizard
+          avatar: https://avatars.akamai.steamstatic.com/3f8e3489c043bea04cc3ebd5dd844d84720a2f27_medium.jpg
+        - name: MrPhil
+          title: Dynamic Mesh Actors, New Kismet Nodes, Support, Website Content
+          avatar: https://avatars.akamai.steamstatic.com/98fb16d7d0a87502d76d7329e550963260f1094b_medium.jpg
+        - name: Newk
+          title: New Kismet Nodes
+          avatar: https://avatars.akamai.steamstatic.com/c8c8fc2a45a51ff2bb5afaf7cb2fa754602414c7_medium.jpg
+        - name: GroovyUnicyclist
+          title: Discord Moderator
+          avatar: https://cdn.discordapp.com/avatars/152177634179022848/26dfb4edcc25c1925192dbd4f3ed2737.webp
+        - name: BalancedWaffle
+          title: Community Workshop Games Founder
+          avatar: https://cdn.discordapp.com/avatars/473225209445482505/2d516cc7eb38400099fd68ac7afb4d7a.webp
+        - name: JetFox
+          title: Rocket Host Plugin, Map Hosting
+          avatar: https://cdn.discordapp.com/avatars/172783765574254592/f755b90d5c44c83545b2e3f43e729e39.webp
+        - name: ghostrider-05
+          title: RocketLeagueMapmaking.com
+          avatar: https://github.com/ghostrider-05.png
 ---
+
+<script setup>
+import {
+    VPTeamPage,
+    VPTeamPageTitle,
+    VPTeamPageSection,
+    VPTeamMembers,
+} from 'vitepress/theme'
+</script>
+
+<div class="vp-doc page-doc" style="padding-bottom: 0;">
+
 # About
 
 ## New Guide; Who Dis?
@@ -13,39 +136,37 @@ First off, a sincere thanks to all of you for using this guide in its various fo
 
 - Mr. Swaggles
 
-## Bio - Mr. Swaggles
+### Bio - Mr. Swaggles
 
 Who am I? I have a few names, depending on where you find me: Mr. Swaggles in Rocket League, Dasoccerguy in DMs or other places, and Dr. Swaggles for smurfing/testing. I have used Blender since 2003, though only for hobby-level projects. I consider myself very competent with Blender, but I am by no means a professional and I still have much to learn. I have been playing Rocket League since one week after release, and I can safely say that it is my favorite game ever. Most often you’ll find me shooting some Hoops.
 
-## Special Thanks
+</div>
 
-These guys will be referred to as friendly/wonderful/amazing modders, so please thank them if you get a chance. Send a message if we didn’t give you credit for discovering something, and we’ll add you.
-
-|                        |                                                                   |
-| ---------------------- | ----------------------------------------------------------------- |
-| **whynotsteven**       | RL Modding Founder, The OG                                        |
-| **ButterandCream**     | Discord/Reddit Admin, Rocket Launcher Creator                     |
-| **Bakkes**             | Bakkesmod Creator                                                 |
-| **glhglh**             | Collision Channels, AlphaConsole Plugin, Foundational Discoveries |
-| **CinderBlock**        | Bakkesmod Genius                                                  |
-| **Lethamyr**           | Countless Custom Maps, New Features, and Publicity                |
-| **KarlHeinzSchneider** | Collision Channels, Foundational Discoveries                      |
-| **wejrox/JimJoms**     | Web Development, Video Tutorials, One-Stop-Chop-Shop              |
-| **Derzo**              | Fixed Collisions, Guides, Custom Materials, In-Game Assets        |
-| **Stanbroek**          | Advanced Map and Kismet Techniques, Rocket Plugin                 |
-| **Thanrek**            | Advanced Map and Kismet Techniques                                |
-| **French Fries**       | Foundational Dribbling Challenge Maps                             |
-| **dmc**                | Foundational Challenge Maps                                       |
-| **Dreale**             | Foundational Parkour Challenge Maps                               |
-| **Ardivee**            | Boost, Mapmaking Techniques                                       |
-| **Eliot**              | UE Explorer Program                                               |
-| **Martinn**            | UPK Decryptor, Dummy Assets, Bakkesmod Work                       |
-| **LiveDimensions**     | Tech Support                                                      |
-| **tj**                 | RocketLeagueMapmaking GitHub Team                                 |
-| **Ecrase-Patate**      | Kismet Wizard                                                     |
-| **MrPhil**             | Dynamic Mesh Actors, New Kismet Nodes, Support, Website Content   |
-| **Newk**               | New Kismet Nodes                                                  |
-| **GroovyUnicyclist**   | Discord Moderator                                                 |
-| **BalancedWaffle**     | Community Workshop Games Founder                                  |
-| **JetFox**             | Rocket Host Plugin, Map Hosting                                   |
-| **ghostrider-05**      | RocketLeagueMapmaking.com                                         |
+<VPTeamPage style="margin: 0px 0px 60px;">
+    <VPTeamPageTitle>
+        <template #title>
+            {{ $frontmatter.teams[0].title }}
+        </template>
+        <template #lead>
+            {{ $frontmatter.teams[0].lead }}
+        </template>
+    </VPTeamPageTitle>
+    <VPTeamMembers
+        :size="$frontmatter.teams[0].size"
+        :members="$frontmatter.teams[0].members"
+    />
+    <VPTeamPageSection v-for="team in ($frontmatter.teams || []).slice(1)" :key="team.title">
+        <template #title>
+            {{ team.title }}
+        </template>
+        <template #lead>
+            {{ team.lead }}
+        </template>
+        <template #members>
+            <VPTeamMembers
+                :size="team.size"
+                :members="team.members"
+            />
+        </template>
+    </VPTeamPageSection>
+</VPTeamPage>
