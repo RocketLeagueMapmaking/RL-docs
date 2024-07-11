@@ -19,7 +19,13 @@
 
 This site can be executed as a docker container on the host machine.
 
-To update the site on the host machine, run the `deploy` workflow with the version to deploy as the input. See the GitHub documentation for [how to run a workflow manually](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow#running-a-workflow).  
+To update the site on the host machine, run [the `deploy` workflow](https://github.com/RocketLeagueMapmaking/RL-docs/actions/workflows/deploy.yml) on the default branch with the following inputs:
+
+- version: the version to deploy. Generally the same as the version in [package.json](./package.json).
+- deploy & push (default: `true`). Disable this to only build the Docker Image with deploying it.
+- webhook message (default: `true`): send a Discord message with the deployment details when the workflow is finished.
+
+See the GitHub documentation for [how to run a workflow manually](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow#running-a-workflow).  
 
 <details>
 <summary>Manual update steps</summary>
