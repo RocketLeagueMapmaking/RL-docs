@@ -36,7 +36,8 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ github.event.inputs.version }}
+          # See https://github.com/docker/build-push-action/issues/535#issuecomment-1936723515
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ vars.DOCKERHUB_IMAGE_NAME }}:${{ github.event.inputs.version }}
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
