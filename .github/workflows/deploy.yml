@@ -6,10 +6,20 @@ on:
         description: "The version of the website to deploy"
         type: string
         required: true
+      deploy_image:
+        description: "Push and deploy this image. Disable to build only"
+        type: boolean
+        default: true
+      send_webhook:
+        description: "Send a webhook message in the #website channel after deployment"
+        type: boolean
+        default: true
 jobs:
   build:
     name: Build image
     runs-on: ubuntu-latest
+    outputs:
+      docker_digest: ${{ steps.docker.outputs.digest }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -31,17 +41,20 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+
       - name: Build and push
         uses: docker/build-push-action@v6
+        id: docker
         with:
           context: .
-          push: true
+          push: ${{ github.event.inputs.deploy_image }}
           # See https://github.com/docker/build-push-action/issues/535#issuecomment-1936723515
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ vars.DOCKERHUB_IMAGE_NAME }}:${{ github.event.inputs.version }}
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
     needs: build
+    if: github.event.inputs.deploy_image
     steps:
       - run: |
           echo "Updating the website to version ${{ github.event.inputs.version }}!"
@@ -49,11 +62,34 @@ jobs:
       - name: Login and redeploy
         # Do not use @master because of https://github.com/appleboy/ssh-action/issues/317 
         uses: appleboy/ssh-action@v1.0.3
+        id: ssh
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
+          # Not using deployment/move_dummyassets.sh for now
+          # If that file ever changes, also update the file on the server
           script: |
             cd ${{ vars.SSH_PROJECT_ROOT }}
             sh deployment/update_and_deploy.sh ${{ github.event.inputs.version }}
-            sh deployment/move_dummyassets.sh
+            cd ..
+            sh move_dummyassets.sh
+
+      - name: Send webhook result
+        if: github.event.inputs.send_webhook
+        uses: tsickert/discord-webhook@v6.0.0
+        with:
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          username: GitHub
+          avatar-url: ${{ vars.DISCORD_WEBHOOK_AVATAR }}
+          embed-color: 5793266
+          embed-author-name: ${{ github.actor }}
+          embed-author-icon-url: https://avatars.githubusercontent.com/u/${{ github.actor_id }}
+          embed-title: '[${{ github.repository_owner }}]: Deploy workflow triggered'
+          embed-url: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          # Deployed url will for now always be the same as this workflow works only for the website
+          embed-description: |-
+            Version: [`${{ github.event.inputs.version }}`](https://hub.docker.com/layers/${{ secrets.DOCKERHUB_USERNAME }}/${{ vars.DOCKERHUB_IMAGE_NAME }}/${{ github.event.inputs.version }}/images/${{ needs.build.outputs.docker_digest }})
+            Status: ${{ steps.ssh.conclusion }}
+            Deployed on: [${{ github.ref_name }}](https://github.com/${{ github.repository }}/commit/${{ github.sha }})
+            Deployed url: [rocketleaguemapmaking.com](https://rocketleaguemapmaking.com/)
