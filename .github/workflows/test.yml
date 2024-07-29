@@ -23,6 +23,9 @@ jobs:
       - name: Run markdown lint
         run: npm run lint-markdown
 
+      - name: Run file lint
+        run: npm run lint-files
+
         # Broken links are checked by VitePress on building
         # Make sure that ignoreDeadlinks is enabled!
         # https://vitepress.dev/reference/site-config#ignoredeadlinks

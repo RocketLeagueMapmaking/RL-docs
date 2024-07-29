@@ -1,0 +1,65 @@
+ls:
+  docs:
+    .dir: lowercase
+    .md: snakecase
+
+    .vitepress:
+      .ts: lowercase
+
+      public:
+        .png: exists:0
+
+        # All icons should be snake case
+        icons:
+          .png: regex:logo_(\w|_|\d)+
+        
+        images:
+          # All images should be in the corresponding category of the guide
+          # and not in the images folder
+          .png: exists:0
+
+          blender:
+            # All images should be in the basics and advanced folder only
+            .png: exists:0
+            .dir: regex:(basics|advanced)
+
+          UDK:
+            .png: exists:0
+            .dir: regex:(basics|advanced|essential)
+
+          # All images should not be called image(N)
+          # TODO: change to not_regex when ls-lint adds something to disallow with regex
+          '*':
+            .png: regex:image\d+
+
+          '**':
+            .png: regex:image\d+
+
+    
+    cheatsheet:
+      .md: regex:index|\d{2}_([a-z_])*
+
+    essential:
+      .md: regex:index|\d{2}_([a-z_])*
+
+      # Overwrite md rule only for the flowchart folder
+      flowchart_questions:
+        .md: snakecase
+
+    guide/**/:
+      .md: regex:index|\d{2}_([a-z_])*
+
+  deployment:
+    .sh: snakecase
+  
+  .github/ISSUE_TEMPLATE:
+    .yml: snakecase
+  
+  .github/workflows:
+    .yml: snakecase
+
+ignore:
+  - .git
+  - node_modules
+  - docs/.vitepress/cache
+  - docs/.vitepress/dist
