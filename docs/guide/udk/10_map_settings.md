@@ -22,7 +22,7 @@ Some of the most useful Post Process settings are `Scene Desaturation`, `Scene C
 
 ### MapInfo_TA
 
-![alt text](/images/newmapinfo.png "Very informative, much TA")
+![alt text](/images/UDK/basics/newmapinfo.png "Very informative, much TA")
 
 As with other parts of this process, UDK and/or Rocket League will supply default parameters if you do not. To create a new MapInfo_TA object associated with your map, **open World Properties from the View menu. Search for `info`, then click the blue dropdown arrow at the right edge of the window and select `MapInfo_TA`.** This will create a new region with all of the adjustable parameters inside `MapInfo_TA`:
 
