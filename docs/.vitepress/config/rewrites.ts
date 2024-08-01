@@ -1,38 +1,59 @@
-import { readdirSync } from 'fs'
-import { resolve } from 'path'
+import { readdirSync } from 'node:fs'
+import { resolve } from 'node:path'
 
-interface RewriteOptions {
+import type { UserConfig } from 'vitepress'
+
+export type RewriteConfig = NonNullable<UserConfig['rewrites']>
+
+type RewriteFolderOptions =
+    | string
+    | { name: string, nested?: boolean }
+
+export interface RewriteOptions {
     base: string
-    folders: string[]
-    nestedFolders: { name: string, prefix: string }[]
+    folders: RewriteFolderOptions[]
     regexp: RegExp
 }
 
-function combineFolders (options: Pick<RewriteOptions, 'folders' | 'nestedFolders'>): string[] {
-    return options.nestedFolders.flatMap(({ name, prefix }) => {
-        return readdirSync(resolve('.', name))
-            .filter(n => !n.includes('.'))
-            .map(n => prefix + n)
-    }).concat(options.folders)
+function combineBaseWithFolders (base: string, folders: RewriteFolderOptions[]): string[] {
+    const nestedFolders = folders.filter(f => typeof f !== 'string' && f.nested)
+        .flatMap(filename => {
+            const name = base + filename + '/', prefix = filename + '/'
+            return readdirSync(resolve('.', name))
+                .filter(n => !n.includes('.'))
+                .map(n => prefix + n)
+        })
+
+    const flatFolders = folders.filter(f => typeof f === 'string' || !f.nested)
+        .map(f => typeof f === 'string' ? f : f.name)
+
+    return nestedFolders.concat(flatFolders)
 }
 
-function iterateFolder (folder: string, options: Pick<RewriteOptions, 'base' | 'regexp'>) {
-    return readdirSync(resolve('.', options.base + folder), { encoding: 'utf8' })
-        .filter(n => n.match(options.regexp))
-        .reduce((obj, name) => {
-            const route = (file: string) => folder + '/' + file
-            return {
-                ...obj,
-                [route(name)]: route(name.replace(options.regexp, ''))
-            }
-        }, {} as Record<string, string>)
+const createFileRewrite = (filename: string, folder: string, regexp: RegExp) => {
+    const route = (file: string) => folder + '/' + file
+
+    return {
+        [route(filename)]: route(filename.replace(regexp, ''))
+    }
 }
 
-export default function (options: RewriteOptions) {
-    return combineFolders(options).reduce((rewrites, folderName) => {
+function createRewritesForFolder (folder: string, base: string, regexp: RegExp) {
+    return readdirSync(resolve('.', base + folder), { encoding: 'utf8' })
+        .filter(n => n.match(regexp))
+        .reduce<Record<string, string>>((rewrites, filename) => ({
+            ...rewrites,
+            ...createFileRewrite(filename, folder, regexp),
+        }), {})
+}
+
+export default function (options: RewriteOptions): RewriteConfig {
+    const folders = combineBaseWithFolders(options.base, options.folders)
+
+    return folders.reduce<RewriteConfig>((rewrites, folder) => {
         return {
             ...rewrites,
-            ...iterateFolder(folderName, options),
+            ...createRewritesForFolder(folder, options.base, options.regexp),
         }
-    }, {} as Record<string, string>)
+    }, {})
 }
