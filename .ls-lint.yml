@@ -1,4 +1,11 @@
 ls:
+  deployment:
+    .sh: snakecase
+  
+  .github:
+    '{ISSUE_TEMPLATE,workflows}':
+      .yml: snakecase
+
   docs:
     .dir: lowercase
     .md: snakecase
@@ -18,12 +25,8 @@ ls:
           # and not in the images folder
           .png: exists:0
 
-          blender:
-            # All images should be in the basics and advanced folder only
-            .png: exists:0
-            .dir: regex:(basics|advanced)
-
-          UDK:
+          # All images should be in the basics and advanced folder only
+          '{blender,udk}':
             .png: exists:0
             .dir: regex:(basics|advanced|essential)
 
@@ -35,28 +38,16 @@ ls:
           '**':
             .png: regex:image\d+
 
-    
-    cheatsheet:
+    '{cheatsheet,essential,guide/**/}':
       .md: regex:index|\d{2}_([a-z_])*
-
-    essential:
-      .md: regex:index|\d{2}_([a-z_])*
+      index.md: exists:1
 
       # Overwrite md rule only for the flowchart folder
       flowchart_questions:
         .md: snakecase
 
-    guide/**/:
-      .md: regex:index|\d{2}_([a-z_])*
-
-  deployment:
-    .sh: snakecase
-  
-  .github/ISSUE_TEMPLATE:
-    .yml: snakecase
-  
-  .github/workflows:
-    .yml: snakecase
+    '{faq,more,resources}':
+      index.md: exists:1
 
 ignore:
   - .git
