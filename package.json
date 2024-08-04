@@ -19,8 +19,10 @@
     "docs:dev": "vitepress dev docs",
     "docs:preview": "vitepress preview docs",
     "lint": "eslint docs/.vitepress/ --ext .js,.ts,.vue",
-    "lint-files": "fslint --files=docs/.vitepress/public/**/*.png --limit-mb=1 && ls-lint",
     "lint:fix": "npm run lint -- --fix",
+    "lint-files": "npm run lint-files:size && npm run lint-files:name",
+    "lint-files:size": "fslint --files=docs/.vitepress/public/**/*.png --limit-mb=1",
+    "lint-files:name": "ls-lint",
     "lint-markdown": "npx markdownlint-cli2 \"**/*.md\" \"#node_modules\" \"#.github\"",
     "lint-markdown:fix": "npx markdownlint-cli2-fix \"**/*.md\" \"#node_modules\" \"#.github\""
   },

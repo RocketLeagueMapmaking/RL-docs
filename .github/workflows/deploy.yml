@@ -33,6 +33,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+        # Run lint and build first to make sure the site will still build
+        # since workflow dispatch can be run on failed builds
+      - name: Run eslint
+        run: npm run lint
+
+      - name: Run markdown lint
+        run: npm run lint-markdown
+
+      - name: Run file lint
+        run: npm run lint-files
+
       - name: Check guide build
         run: npm run docs:build
 
