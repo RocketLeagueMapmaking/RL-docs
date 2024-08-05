@@ -1,0 +1,35 @@
+'section: blender':
+  - changed-files:
+    - any-glob-to-any-file: docs/guide/blender/**
+
+'section: decryption':
+  - changed-files:
+    - any-glob-to-any-file: docs/guide/decryption/**
+
+'section: get started':
+  - changed-files:
+    - any-glob-to-any-file: docs/essential/**
+
+'section: kismet':
+  - changed-files:
+    - any-glob-to-any-file: docs/guide/kismet/**
+
+'section: misc':
+  - changed-files:
+    - any-glob-to-any-file: docs/guide/misc/**
+
+'section: multiplayer':
+  - changed-files:
+    - any-glob-to-any-file: docs/guide/multiplayer/**
+
+'section: textures':
+  - changed-files:
+    - any-glob-to-any-file: docs/guide/textures/**
+
+'section: udk':
+  - changed-files:
+    - any-glob-to-any-file: docs/guide/udk/**
+
+config:
+  - changed-files:
+    - any-glob-to-any-file: docs/.vitepress/config/**

@@ -10,11 +10,9 @@ import sidebar from './sidebar'
 const rewrites = createRewrites({
     base: 'docs/',
     regexp: /^(\d{2}_)/,
-    nestedFolders: [
-        { name: 'docs/guide/', prefix: 'guide/' },
-    ],
     folders: [
         'cheatsheet',
+        { name: 'guide', nested: true },
         'essential',
     ],
 })

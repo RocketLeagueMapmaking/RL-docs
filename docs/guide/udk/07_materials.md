@@ -47,7 +47,7 @@ In the [Content Browser](../../essential/content_browser.md), **search for “gr
 :::tip Bibliothèque d'Alexandrie
 The library allows you to see the map's content and find the name of what you want to get. You can then report the name into UDK to find the material you're looking for in the right package! You can find the library [here](../../resources/downloads.md#miscellaneous).
 
-*How to use*
+How to use this tool:
 
 It's the same process as testing a map. You can overwrite a map (e.g. Labs_Utopia_P) with a library file, start the game and go to freeplay on this map. \
 The library map is divided in 3 parts for now: The Particles on the left, the Materials in the middle and the Material Instances on the right. \
