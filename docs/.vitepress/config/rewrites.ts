@@ -17,8 +17,10 @@ export interface RewriteOptions {
 
 function combineBaseWithFolders (base: string, folders: RewriteFolderOptions[]): string[] {
     const nestedFolders = folders.filter(f => typeof f !== 'string' && f.nested)
-        .flatMap(filename => {
+        .flatMap(options => {
+            const filename = (<Exclude<RewriteFolderOptions, string>>options).name
             const name = base + filename + '/', prefix = filename + '/'
+
             return readdirSync(resolve('.', name))
                 .filter(n => !n.includes('.'))
                 .map(n => prefix + n)
