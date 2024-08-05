@@ -21,7 +21,11 @@ If worst comes to worst and you’ve ruined everything, you can always uninstall
 
 **Copy and paste your `{YourMapNameHere}.udk` file into `{CookedPCConsole}`. Rename it to `Labs_Utopia_P.upk` (note that the file extension changes from .udk to .upk). Alternatively, use the BSFQTM script from earlier in the guide.**
 
-**Hop into Training and enjoy! (Note - RL will crash if you load an Exhibition or Local match)**
+Hop into Training and enjoy!
+
+:::danger Note
+RL will crash if you load an Exhibition or Local match
+:::
 
 ## A Humble Apology
 
