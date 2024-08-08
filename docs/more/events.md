@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Events
 ---
 
 <!-- markdownlint-disable-next-line MD041 -->
