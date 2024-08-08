@@ -1,6 +1,12 @@
 import decap from 'vite-plugin-decap-cms'
 
-import { GITHUB_REPOSITORY } from '../shared'
+import {
+    CLOUDFLARE_WORKER,
+    GITHUB_DEFAULT_BRANCH,
+    GITHUB_REPOSITORY,
+    WEBSITE_LOGO_PATH,
+    WEBSITE_URL,
+} from '../shared'
 
 import createCollections from './collections'
 import { mediaFolder } from './options'
@@ -13,22 +19,23 @@ export default decap({
         backend: {
             local: 'dev',
             name: 'github',
+
             repo: GITHUB_REPOSITORY,
-            // Cannot be 'cms' apparently
-            branch: 'content',
+            branch: GITHUB_DEFAULT_BRANCH,
             cmsLabelPrefix: 'cms/',
+
             squashMerges: true,
             openAuthoring: true,
             alwaysFork: true,
 
-            siteDomain: 'https://docs.rocketleaguemapmaking.workers.dev',
-            baseUrl: 'https://docs.rocketleaguemapmaking.workers.dev',
+            siteDomain: CLOUDFLARE_WORKER,
+            baseUrl: CLOUDFLARE_WORKER,
             authEndpoint: '/cms/auth',
         },
 
         mediaFolder,
-        logoUrl: 'docs/.vitepress/public/icons/logo_rlmm_round_144.png',
-        displayUrl: 'https://rocketleaguemapmaking.com',
+        logoUrl: WEBSITE_LOGO_PATH,
+        displayUrl: WEBSITE_URL,
 
         editor: { preview: false },
         publishMode: 'editorial_workflow',

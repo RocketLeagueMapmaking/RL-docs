@@ -7,7 +7,10 @@ import { buildEnd } from './hooks'
 import nav from './navbar'
 import createRewrites from './rewrites'
 import sidebar from './sidebar'
-import { DISCORD_INVITE } from './shared'
+import {
+    DISCORD_INVITE,
+    WEBSITE_LOGO_PATH,
+} from './shared'
 
 const rewrites = createRewrites({
     base: 'docs/',
@@ -71,7 +74,7 @@ export default defineConfigWithTheme<ThemeConfig>({
         nav,
 
         logo: {
-            src: '/icons/logo_rlmm_round_144.png',
+            src: WEBSITE_LOGO_PATH,
         },
 
         footer: {
