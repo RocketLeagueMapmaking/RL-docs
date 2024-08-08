@@ -39,7 +39,7 @@ export default defineConfigWithTheme<ThemeConfig>({
                 transform: (code, id) => {
                     if (id.endsWith('VPDocFooter.vue')) {
                         const link = '<VPLink class="edit-link-button"'
-                        return code.replace(link, link + ' target="_self"');
+                        return code.replace(link, link + ' target="_self"')
                     }
                 },
             }

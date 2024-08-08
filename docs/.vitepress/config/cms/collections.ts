@@ -38,7 +38,7 @@ export default function (): DecapCmsCollection[] {
                         titleTemplate: { hidden: true },
                     },
                     additionalFields: [
-                        createTeamPageField(), 
+                        createTeamPageField(),
                     ]
                 }
             ]
@@ -63,7 +63,7 @@ export default function (): DecapCmsCollection[] {
 
         VitePress.createDefaultPageFolderCollection(
             'blender',
-            `docs/guide/blender/`,
+            'docs/guide/blender/',
             createFolderOptions('Blender', {
                 mediaFolder: 'blender/',
                 description: 'Blender guide pages',
