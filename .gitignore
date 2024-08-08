@@ -9,6 +9,7 @@ node_modules
 /docs/.vitepress/dist/
 /docs/.vitepress/cache/
 /.vitepress/cache/
+/docs/.vitepress/public/admin/
 
 # Do not commit API keys
 .env
