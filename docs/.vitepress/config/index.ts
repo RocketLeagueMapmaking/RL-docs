@@ -1,11 +1,13 @@
 import { defineConfigWithTheme } from 'vitepress'
 import { type ThemeConfig } from '@rocketleaguemapmaking/theme-rlmm'
 
+import cms from './cms/'
 import head from './head'
 import { buildEnd } from './hooks'
 import nav from './navbar'
 import createRewrites from './rewrites'
 import sidebar from './sidebar'
+import { DISCORD_INVITE } from './shared'
 
 const rewrites = createRewrites({
     base: 'docs/',
@@ -29,6 +31,19 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
     vite: {
         publicDir: '.vitepress/public',
+        plugins: [
+            cms,
+            {
+                name: 'make-edit-link-external',
+                enforce: 'pre',
+                transform: (code, id) => {
+                    if (id.endsWith('VPDocFooter.vue')) {
+                        const link = '<VPLink class="edit-link-button"'
+                        return code.replace(link, link + ' target="_self"');
+                    }
+                },
+            }
+        ],
     },
 
     // Routing
@@ -70,11 +85,16 @@ export default defineConfigWithTheme<ThemeConfig>({
         // Links
         externalLinkIcon: true,
         editLink: {
-            pattern: 'https://github.com/rocketleaguemapmaking/rl-docs/tree/master/docs/:path',
-            text: 'View on GitHub',
+            pattern: (page) => {
+                const parts = page.filePath.slice(0, -'.md'.length).split('/')
+                const collectionName = parts.at(-2), entryName = parts.at(-1)
+
+                return `/admin/index.html#/edit/${collectionName}/${entryName}`
+            },
+            text: 'Edit this page',
         },
         socialLinks: [
-            { icon: 'discord', link: 'https://discord.gg/PWu3ZWa' },
+            { icon: 'discord', link: DISCORD_INVITE },
         ],
 
         router: {
