@@ -1,10 +1,15 @@
 import { SiteConfig } from 'vitepress'
 
+import {
+    GITHUB_DEFAULT_BRANCH,
+    GITHUB_REPOSITORY,
+} from './shared'
+
 export async function buildEnd (siteConfig: SiteConfig): Promise<void> {
     const isAction = process.env.GITHUB_ACTIONS != undefined
         && typeof process.env.BUILD_NOTIFICATION_URL === 'string'
-        && process.env.GITHUB_REF === 'refs/heads/master'
-        && process.env.GITHUB_REPOSITORY?.toLowerCase() === 'rocketleaguemapmaking/rl-docs'
+        && process.env.GITHUB_REF === ('refs/heads/' + GITHUB_DEFAULT_BRANCH)
+        && process.env.GITHUB_REPOSITORY?.toLowerCase() === GITHUB_REPOSITORY
 
     if (!isAction) return
 
