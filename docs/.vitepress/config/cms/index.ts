@@ -21,8 +21,8 @@ export default decap({
             openAuthoring: true,
             alwaysFork: true,
 
-            siteDomain: 'https://docs.rocketleaguemapmaking.pages.dev',
-            baseUrl: 'https://docs.rocketleaguemapmaking.pages.dev',
+            siteDomain: 'https://docs.rocketleaguemapmaking.workers.dev',
+            baseUrl: 'https://docs.rocketleaguemapmaking.workers.dev',
             authEndpoint: '/cms/auth',
         },
 
