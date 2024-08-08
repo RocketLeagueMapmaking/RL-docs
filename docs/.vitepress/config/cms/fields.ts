@@ -26,41 +26,41 @@ export const createThemeHomePageFields = () => <[]>VitePress.createHomePageField
         })
     ],
 }).concat(<never[]>[
-    createField("list", {
-        name: "resources",
-        label: "Resources",
-        label_singular: "resource",
+    createField('list', {
+        name: 'resources',
+        label: 'Resources',
+        label_singular: 'resource',
         allow_add: true,
         required: false,
         fields: [
-            createField("string", {
-                name: "title",
+            createField('string', {
+                name: 'title',
                 required: true
             }),
-            createField("string", {
-                name: "details",
+            createField('string', {
+                name: 'details',
                 required: false
             }),
-            createField("string", {
-                name: "icon",
+            createField('string', {
+                name: 'icon',
                 required: false
             }),
-            createField("string", {
-                name: "link",
+            createField('string', {
+                name: 'link',
                 required: false
             }),
-            createField("string", {
-                name: "linkText",
-                label: "Link text",
+            createField('string', {
+                name: 'linkText',
+                label: 'Link text',
                 required: false
             }),
-            createField("string", {
-                name: "target",
-                label: "Target",
+            createField('string', {
+                name: 'target',
+                label: 'Target',
                 required: false
             }),
-            createField("string", {
-                name: "rel",
+            createField('string', {
+                name: 'rel',
                 required: false
             }),
         ]
