@@ -20,6 +20,10 @@ export default decap({
             squashMerges: true,
             openAuthoring: true,
             alwaysFork: true,
+
+            siteDomain: 'https://docs.rocketleaguemapmaking.pages.dev',
+            baseUrl: 'https://docs.rocketleaguemapmaking.pages.dev',
+            authEndpoint: '/cms/auth',
         },
 
         mediaFolder,
