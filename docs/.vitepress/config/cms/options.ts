@@ -1,4 +1,4 @@
-import { createField, DecapCmsCollection, type VitePress } from 'vite-plugin-decap-cms'
+import { createField, type VitePress } from 'vite-plugin-decap-cms'
 import { SidebarItemConfig } from '../sidebar'
 
 export const publicFolder = '/images/'
