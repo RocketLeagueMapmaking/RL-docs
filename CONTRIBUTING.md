@@ -1,6 +1,27 @@
-# Overview
+# Workflow
 
-Contribution should be performed through a number of simple steps:
+Hi, we (as [guide maintainers](./README.md)) are really exited that you are interested in contributing to this guide. Before contributing, decide what type of contribution you are looking to make:
+
+- [Writing guide pages](#content-editing).
+- Writing code. Before starting make sure to read:
+  - [The development workflow](#development)
+  - [The project guidelines](#guidelines)
+  - [Development setup guide](#development-and-local-testing)
+- Becoming a team member: send a message to Mr. Swaggles or ghostrider-05 on Discord
+
+## Content editing
+
+To make changes to the content of the guide, we recommend to use the CMS ([Content Management System](https://en.wikipedia.org/wiki/Content_management_system)), available on [`/admin/`](https://rocketleaguemapmaking.com/admin/) or by clicking the `Edit this page` link on a guide page, to make your contributions through the following steps:
+
+1. [Create a GitHub account](https://github.com/join)
+2. Log in using your GitHub account on the [guide CMS](https://rocketleaguemapmaking.com/admin/).
+3. Write guide pages while following [the guidelines](#guidelines).
+4. When finished, go to [the workflow UI](https://rocketleaguemapmaking.com/admin/#/workflow) and move your changes to the `In Review` column.
+5. A maintainer will review your changes and merge the pull request on GitHub.
+
+## Development
+
+Code contributions should be performed through the following steps:
 
 1. Find an issue to fix.
 2. Fork the repository.
@@ -62,5 +83,6 @@ Replace `<branch>` with the name of the current branch.
 
 This guide uses a custom guide theme. The theme [`theme-rlmm`](https://theme-rlmm.pages.dev) is built on [VitePress](https://vitepress.dev) with Vue.js 3 and Vite.
 
-- Any theme modification should be in `docs/.vitepress/theme/`
+- Style theme modifications should be in `docs/.vitepress/theme/`. The theme should be only exported from the `@rocketleaguemapmaking/theme-rlmm` package!
+  - Any component, code or other changes should be in the [theme repository](https://github.com/rocketleaguemapmaking/theme-rlmm)
 - Feature requests and issues with the theme (components) should be opened in the [theme repository](https://github.com/rocketleaguemapmaking/theme-rlmm)
