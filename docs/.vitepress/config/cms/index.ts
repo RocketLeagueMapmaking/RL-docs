@@ -26,7 +26,7 @@ export default decap({
 
             squashMerges: true,
             openAuthoring: true,
-            alwaysFork: true,
+            alwaysFork: false,
 
             siteDomain: CLOUDFLARE_WORKER,
             baseUrl: CLOUDFLARE_WORKER,
