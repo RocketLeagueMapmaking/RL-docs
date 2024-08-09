@@ -1,6 +1,6 @@
 # Workflow
 
-Hi, we (as [guide maintainers](./README.md)) are really exited that you are interested in contributing to this guide. Before contributing, decide what type of contribution you are looking to make:
+Hi, we, the [guide maintainers](./README.md), are really exited that you are interested in contributing to this guide. Before contributing, decide what type of contribution you are looking to make:
 
 - [Writing guide pages](#content-editing).
 - Writing code. Before starting make sure to read:
@@ -84,5 +84,4 @@ Replace `<branch>` with the name of the current branch.
 This guide uses a custom guide theme. The theme [`theme-rlmm`](https://theme-rlmm.pages.dev) is built on [VitePress](https://vitepress.dev) with Vue.js 3 and Vite.
 
 - Style theme modifications should be in `docs/.vitepress/theme/`. The theme should be only exported from the `@rocketleaguemapmaking/theme-rlmm` package!
-  - Any component, code or other changes should be in the [theme repository](https://github.com/rocketleaguemapmaking/theme-rlmm)
-- Feature requests and issues with the theme (components) should be opened in the [theme repository](https://github.com/rocketleaguemapmaking/theme-rlmm)
+- Feature requests, issues and any component, code or other changes with the theme (components) should be opened in the [theme repository](https://github.com/rocketleaguemapmaking/theme-rlmm)
