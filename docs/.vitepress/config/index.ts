@@ -90,7 +90,7 @@ export default defineConfigWithTheme<ThemeConfig>({
         editLink: {
             pattern: (page) => {
                 const parts = page.filePath.slice(0, -'.md'.length).split('/')
-                const collectionName = parts.at(-2), entryName = parts.at(-1)
+                const collectionName = parts.at(-2) + (page.frontmatter.advanced ? '_advanced' : ''), entryName = parts.at(-1)
 
                 return `/admin/index.html#/edit/${collectionName}/${entryName}`
             },

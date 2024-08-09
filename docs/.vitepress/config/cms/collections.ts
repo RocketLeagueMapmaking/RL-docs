@@ -42,18 +42,39 @@ export default function (): DecapCmsCollection[] {
                     ]
                 }
             ]
-        ], { collection: { delete: false } }),
+        ], {
+            collection: {
+                delete: false,
+                publish: false,
+            },
+        }),
 
         ...Object.values(<Sidebar>sidebar)
             .filter(({ base }) => base === '/guide/')
             .flatMap(({ items, meta }) => {
-                return items.map(item => {
+                return items.flatMap(item => {
                     const dirname = item.base!.replace('/guide/', '').slice(0, -1)
+
+                    if (dirname === 'udk') {
+                        return [false, true].reduce<DecapCmsCollection<'folder'>[]>((collection, advanced) => {
+                            const type = advanced ? 'advanced' : 'basics'
+                
+                            return collection.concat(VitePress.createDefaultPageFolderCollection(
+                                dirname + (type === 'advanced' ? '_advanced' : ''),
+                                'docs' + item.base,
+                                createFolderOptions(meta.text! + ': Editor' + (type === 'advanced' ? ' advanced' : ''), {
+                                    mediaFolder: dirname + '/',
+                                    description: item.text! + ' ' + type + ' guide pages',
+                                    advancedFilter: advanced,
+                                })
+                            ))
+                        }, [])
+                    }
 
                     return VitePress.createDefaultPageFolderCollection(
                         dirname,
                         'docs' + item.base,
-                        createFolderOptions(meta.text! + ': ' + (item.text! === 'UDK' ? 'Editor' : item.text!), {
+                        createFolderOptions(meta.text! + ': ' + item.text!, {
                             mediaFolder: dirname + '/',
                             description: item.text! + ' guide pages',
                         })
@@ -61,15 +82,20 @@ export default function (): DecapCmsCollection[] {
                 })
             }),
 
-        VitePress.createDefaultPageFolderCollection(
-            'blender',
-            'docs/guide/blender/',
-            createFolderOptions('Blender', {
-                mediaFolder: 'blender/',
-                description: 'Blender guide pages',
-                text: 'Blender',
-            })
-        ),
+        ...[false, true].reduce<DecapCmsCollection<'folder'>[]>((collection, advanced) => {
+            const type = advanced ? 'advanced' : 'basics'
+
+            return collection.concat(VitePress.createDefaultPageFolderCollection(
+                'blender' + (type === 'advanced' ? '_advanced' : ''),
+                'docs/guide/blender/',
+                createFolderOptions('Blender' + (type === 'advanced' ? ': advanced' : ''), {
+                    mediaFolder: `blender/${type}/`,
+                    description: `Blender ${type} guide pages`,
+                    text: 'Blender',
+                    advancedFilter: advanced,
+                })
+            ))
+        }, []),
 
         ...Object.values(<Sidebar>sidebar)
             .filter(({ base }) => !base.startsWith('/guide/'))
