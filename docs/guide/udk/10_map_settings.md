@@ -1,5 +1,6 @@
 ---
 title: Map Settings
+advanced: false
 ---
 # Map Settings
 

@@ -1,5 +1,6 @@
 ---
 title: Hello Blender
+advanced: false
 ---
 # Hello Blender
 

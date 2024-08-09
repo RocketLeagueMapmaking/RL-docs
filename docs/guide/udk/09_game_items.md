@@ -1,5 +1,6 @@
 ---
 title: 'Rocket League Match Items'
+advanced: false
 ---
 # Rocket League Match Items
 

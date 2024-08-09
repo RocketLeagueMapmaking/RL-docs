@@ -1,5 +1,6 @@
 ---
 title: Extra Modes
+advanced: true
 ---
 # Extra Modes <Badge text="not finished" type="warning"/>
 

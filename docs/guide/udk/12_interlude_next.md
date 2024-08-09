@@ -1,5 +1,6 @@
 ---
 title: Next
+advanced: false
 ---
 # What Next?
 

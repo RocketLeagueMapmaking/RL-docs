@@ -1,5 +1,6 @@
 ---
 title: Hello Guide
+advanced: false
 ---
 
 # Hello Guide

@@ -1,5 +1,6 @@
 ---
 title: Blender Window
+advanced: false
 ---
 # Blender Setup
 
