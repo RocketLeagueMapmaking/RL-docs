@@ -1,9 +1,14 @@
-import { createField, type VitePress } from 'vite-plugin-decap-cms'
+import { createField, DecapCmsCollection, type VitePress } from 'vite-plugin-decap-cms'
 import { SidebarItemConfig } from '../sidebar'
 
-export const mediaFolder = 'docs/.vitepress/public/images/'
+export const publicFolder = '/images/'
+export const mediaFolder = '/docs/.vitepress/public/images/'
 
-export function createFolderOptions (label: string, config: SidebarItemConfig) {
+interface FolderConfig {
+    advancedFilter?: boolean
+}
+
+export function createFolderOptions (label: string, config: SidebarItemConfig & FolderConfig) {
     return {
         overwrites: {
             titleTemplate: { hidden: true },
@@ -14,6 +19,10 @@ export function createFolderOptions (label: string, config: SidebarItemConfig) {
             labelSingular: label + ' file',
             description: config.description,
             mediaFolder: mediaFolder + config.mediaFolder,
+            publicFolder: publicFolder + config.mediaFolder,
+            filter: config.advancedFilter != undefined
+                ? { field: 'advanced', value: config.advancedFilter, }
+                : undefined,
             create: true,
             publish: false,
         },
@@ -23,10 +32,16 @@ export function createFolderOptions (label: string, config: SidebarItemConfig) {
             // editorComponents: [],
         },
         additionalFields: [
-            createField('string', {
-                name: 'filename',
-                label: 'File name',
-            }),
+            ...(config.advancedFilter != undefined
+                ? [
+                    createField('boolean', {
+                        name: 'advanced',
+                        label: 'Advanced guide',
+                        hint: 'This page is an advanced guide',
+                        required: true,
+                    })
+                ] : []
+            ),
         ]
     } satisfies Parameters<typeof VitePress['createDefaultPageFolderCollection']>[2]
 }

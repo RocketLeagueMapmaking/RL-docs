@@ -9,7 +9,7 @@ import {
 } from '../shared'
 
 import createCollections from './collections'
-import { mediaFolder } from './options'
+import { mediaFolder, publicFolder } from './options'
 
 export default decap({
     login: {
@@ -34,6 +34,7 @@ export default decap({
         },
 
         mediaFolder,
+        publicFolder,
         logoUrl: WEBSITE_LOGO_PATH,
         displayUrl: WEBSITE_URL,
 
