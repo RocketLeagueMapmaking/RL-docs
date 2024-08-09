@@ -1,5 +1,6 @@
 ---
 title: Lightmaps
+advanced: true
 ---
 # Lightmaps <Badge text="not finished" type="warning"/>
 

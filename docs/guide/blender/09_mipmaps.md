@@ -1,5 +1,6 @@
 ---
 title: Mipmaps and LOD
+advanced: false
 ---
 # Mipmaps
 

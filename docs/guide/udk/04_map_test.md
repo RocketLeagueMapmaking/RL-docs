@@ -1,5 +1,6 @@
 ---
 title: 'Testing'
+advanced: false
 ---
 # Testing the Map
 

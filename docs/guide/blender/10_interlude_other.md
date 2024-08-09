@@ -1,5 +1,6 @@
 ---
 title: Other Sources
+advanced: false
 ---
 # Other Sources of 3D Models
 

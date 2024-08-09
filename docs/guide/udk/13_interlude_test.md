@@ -1,5 +1,6 @@
 ---
 title: Interlude - Rapid Testing
+advanced: false
 ---
 # Notes on Rapid Testing
 

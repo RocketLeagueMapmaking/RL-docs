@@ -1,5 +1,6 @@
 ---
 title: The Owl
+advanced: false
 ---
 # Draw The Rest Of The F***ing Owl
 

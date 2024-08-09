@@ -1,5 +1,6 @@
 ---
 title: 'Starting a Map'
+advanced: false
 ---
 # Starting a Map
 

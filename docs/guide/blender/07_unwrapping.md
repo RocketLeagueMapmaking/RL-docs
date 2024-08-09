@@ -1,5 +1,6 @@
 ---
 title: UV Unwrapping
+advanced: false
 ---
 # UV Unwrapping
 
