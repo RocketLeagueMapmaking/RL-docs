@@ -1,5 +1,7 @@
 import type { HeadConfig } from 'vitepress'
 
+import { WEBSITE_LOGO_PATH } from './shared'
+
 export default <HeadConfig[]>[
     ['meta',
         {
@@ -10,7 +12,7 @@ export default <HeadConfig[]>[
     ['link',
         {
             rel: 'icon',
-            href: '/icons/logo_rlmm_round_144.png'
+            href: WEBSITE_LOGO_PATH,
         }
     ],
     ['link',

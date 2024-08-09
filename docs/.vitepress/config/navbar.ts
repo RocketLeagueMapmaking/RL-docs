@@ -1,5 +1,10 @@
 import type { DefaultTheme } from 'vitepress'
 
+import {
+    GITHUB_DEFAULT_BRANCH,
+    GITHUB_REPOSITORY_URL,
+} from './shared'
+
 export default <DefaultTheme.NavItem[]>[
     {
         text: 'Essentials',
@@ -121,11 +126,11 @@ export default <DefaultTheme.NavItem[]>[
                 items: [
                     {
                         text: 'Contributing guide',
-                        link: 'https://github.com/rocketleaguemapmaking/RL-Docs/blob/master/CONTRIBUTING.md'
+                        link: GITHUB_REPOSITORY_URL + `/blob/${GITHUB_DEFAULT_BRANCH}/CONTRIBUTING.md`
                     },
                     {
                         text: 'GitHub',
-                        link: 'https://github.com/rocketleaguemapmaking/RL-Docs'
+                        link: GITHUB_REPOSITORY_URL
                     },
                     {
                         text: 'Patreon',
