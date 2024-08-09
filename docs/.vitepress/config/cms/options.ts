@@ -15,6 +15,7 @@ export function createFolderOptions (label: string, config: SidebarItemConfig) {
             description: config.description,
             mediaFolder: mediaFolder + config.mediaFolder,
             create: true,
+            publish: false,
         },
         markdownOptions: {
             modes: ['raw', 'rich_text'],
