@@ -58,7 +58,7 @@ export default function (): DecapCmsCollection[] {
                     if (dirname === 'udk') {
                         return [false, true].reduce<DecapCmsCollection<'folder'>[]>((collection, advanced) => {
                             const type = advanced ? 'advanced' : 'basics'
-                
+
                             return collection.concat(VitePress.createDefaultPageFolderCollection(
                                 dirname + (type === 'advanced' ? '_advanced' : ''),
                                 'docs' + item.base,
