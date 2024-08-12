@@ -1,5 +1,6 @@
 import type { HeadConfig } from 'vitepress'
 
+import { getCollectionItemEditLink } from './cms'
 import { WEBSITE_LOGO_PATH } from './shared'
 
 export default <HeadConfig[]>[
@@ -63,5 +64,9 @@ export default <HeadConfig[]>[
             name: 'msapplication-TileColor',
             content: '#000000'
         }
+    ],
+    ['script',
+        {},
+        `const ${getCollectionItemEditLink.name} = ${getCollectionItemEditLink}`
     ],
 ]
