@@ -8,10 +8,12 @@ import {
     WEBSITE_URL,
 } from '../shared'
 
-import createCollections from './collections'
+import createCollections, { getCollectionItemEditLink } from './collections'
 import { mediaFolder, publicFolder } from './options'
 
-export { getCollectionItemEditLink } from './collections'
+export {
+    getCollectionItemEditLink,
+}
 
 export default decap({
     login: {

@@ -16,15 +16,16 @@ import { createFolderOptions } from './options'
 export const getCollectionItemEditLink = (page: Pick<PageData, 'filePath' | 'frontmatter'>) => {
     const parts = page.filePath.slice(0, -'.md'.length).split('/')
     const collectionName = parts.at(-2) + (page.frontmatter.advanced ? '_advanced' : ''), entryName = parts.at(-1)!
-    
+
     return `/admin/index.html#/edit/${collectionName}/${entryName}`
 }
 
-function getCollectionName (path: string, frontmatter: Record<string, any>) {
+function getCollectionName (path: string, frontmatter: PageData['frontmatter']) {
     return path.replace(/\//g, ' ').trim().split(' ').at(-1)! + (frontmatter.advanced ? '_advanced' : '')
 }
 
 function createAdvancedCollections (
+    // eslint-disable-next-line no-unused-vars
     fn: (type: 'basics' | 'advanced') => Parameters<typeof VitePress['createDefaultPageFolderCollection']>
 ): DecapCmsCollection<'folder'>[] {
     /**
