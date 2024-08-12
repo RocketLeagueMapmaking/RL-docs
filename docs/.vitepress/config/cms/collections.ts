@@ -77,7 +77,7 @@ export default function (): DecapCmsCollection[] {
             ],
             [
                 'Site configuration',
-                'docs/.vitepress/config.json',
+                'docs/.vitepress/config/data/config.json',
                 {
                     overwrites: {
                         body: { deleted: true },

@@ -1,7 +1,10 @@
 import { defineConfigWithTheme } from 'vitepress'
 import { type ThemeConfig } from '@rocketleaguemapmaking/theme-rlmm'
 
-import cms, { getCollectionItemEditLink } from './cms/'
+import cms, {
+    getCollectionItemEditLink,
+    vitepressEditLinkPlugin,
+} from './cms/'
 import head from './head'
 import { buildEnd } from './hooks'
 import nav from './navbar'
@@ -38,16 +41,7 @@ export default defineConfigWithTheme<ThemeConfig>({
         publicDir: '.vitepress/public',
         plugins: [
             cms,
-            {
-                name: 'make-edit-link-external',
-                enforce: 'pre',
-                transform: (code, id) => {
-                    if (id.endsWith('VPDocFooter.vue')) {
-                        const link = '<VPLink class="edit-link-button"'
-                        return code.replace(link, link + ' target="_self"')
-                    }
-                },
-            }
+            vitepressEditLinkPlugin,
         ],
     },
 
@@ -87,6 +81,7 @@ export default defineConfigWithTheme<ThemeConfig>({
         // Links
         externalLinkIcon: true,
         editLink: {
+            // Function must be exported in head since this is run client-side
             pattern: getCollectionItemEditLink,
             text: config.editLinkText,
         },
