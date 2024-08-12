@@ -11,6 +11,8 @@ import {
 import createCollections from './collections'
 import { mediaFolder, publicFolder } from './options'
 
+export { getCollectionItemEditLink } from './collections'
+
 export default decap({
     login: {
         title: 'Content Manager | RLMM',

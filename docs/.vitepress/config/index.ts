@@ -1,7 +1,7 @@
 import { defineConfigWithTheme } from 'vitepress'
 import { type ThemeConfig } from '@rocketleaguemapmaking/theme-rlmm'
 
-import cms from './cms/'
+import cms, { getCollectionItemEditLink } from './cms/'
 import head from './head'
 import { buildEnd } from './hooks'
 import nav from './navbar'
@@ -11,6 +11,8 @@ import {
     DISCORD_INVITE,
     WEBSITE_LOGO_PATH,
 } from './shared'
+
+import config from './data/config.json'
 
 const rewrites = createRewrites({
     base: 'docs/',
@@ -25,8 +27,8 @@ const rewrites = createRewrites({
 })
 
 export default defineConfigWithTheme<ThemeConfig>({
-    title: 'RLMM',
-    description: 'Guides, Resources, Maps, and more for making custom maps',
+    title: config.title,
+    description: config.description,
     head,
 
     srcExclude: [
@@ -79,22 +81,14 @@ export default defineConfigWithTheme<ThemeConfig>({
 
         footer: {
             copyright: `2020 - ${new Date().getFullYear()}`,
-            message: [
-                'RLMM Guide',
-                'Made by <a href="https://twitter.com/RH_MrSwaggles">Mr. Swaggles</a>',
-            ].join(' | '),
+            message: config.footer.message,
         },
 
         // Links
         externalLinkIcon: true,
         editLink: {
-            pattern: (page) => {
-                const parts = page.filePath.slice(0, -'.md'.length).split('/')
-                const collectionName = parts.at(-2) + (page.frontmatter.advanced ? '_advanced' : ''), entryName = parts.at(-1)
-
-                return `/admin/index.html#/edit/${collectionName}/${entryName}`
-            },
-            text: 'Edit this page',
+            pattern: getCollectionItemEditLink,
+            text: config.editLinkText,
         },
         socialLinks: [
             { icon: 'discord', link: DISCORD_INVITE },

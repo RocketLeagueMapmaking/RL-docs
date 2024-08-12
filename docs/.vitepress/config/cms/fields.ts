@@ -276,3 +276,33 @@ export const createTeamPageField = () => createField('list', {
         })
     ]
 })
+
+export const createSiteConfigFields = () => <never[]>[
+    createField('string', {
+        name: 'title',
+        label: 'Site title',
+        required: true,
+    }),
+    createField('text', {
+        name: 'description',
+        label: 'Site description',
+        required: true,
+    }),
+    createField('string', {
+        name: 'editLinkText',
+        label: 'Edit page: link text',
+        required: true,
+    }),
+    createField('object', {
+        name: 'footer',
+        label: 'Footer',
+        required: true,
+        fields: [
+            createField('string', {
+                name: 'message',
+                label: 'Message',
+                required: true,
+            }),
+        ],
+    }),
+]
