@@ -1,9 +1,5 @@
 ---
 title: Content Browser
-tags:
-  - mr swaggles
-  - guide
-  - hello
 ---
 # UDK Basics
 

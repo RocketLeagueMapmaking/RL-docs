@@ -1,5 +1,5 @@
 ---
-title: 'Materials'
+title: Materials
 ---
 # Materials
 

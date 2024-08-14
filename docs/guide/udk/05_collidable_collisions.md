@@ -1,5 +1,5 @@
 ---
-title: 'Collidable Collisions'
+title: Collidable Collisions
 ---
 # Collidable Collisions
 

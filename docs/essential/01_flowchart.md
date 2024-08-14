@@ -1,8 +1,5 @@
 ---
-title: 'Introduction'
-tags:
-  - flowchart
-  - structure
+title: Introduction
 ---
 
 # The Big Picture

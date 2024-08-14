@@ -1,9 +1,5 @@
 ---
 title: Customize UDK
-tags:
-    - UDK editor
-    - Customize
-    - custom toolbar
 ---
 # Customized UDK
 

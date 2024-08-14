@@ -1,9 +1,5 @@
 ---
 title: UDK Editor 
-tags:
-  - mr swaggles
-  - guide
-  - hello
 ---
 # UDK Basics
 

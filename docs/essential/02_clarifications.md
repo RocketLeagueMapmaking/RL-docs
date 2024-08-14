@@ -1,9 +1,5 @@
 ---
 title: Clarifications
-tags:
-  - UDK 2013
-  - UDK 2015
-  - Unreal engine
 ---
 # Clarifications
 

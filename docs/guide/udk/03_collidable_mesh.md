@@ -1,5 +1,5 @@
 ---
-title: 'Collidable Meshes'
+title: Collidable Meshes
 ---
 # Collidable Meshes <Badge text="important" type="tip"/>
 

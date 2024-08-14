@@ -1,9 +1,5 @@
 ---
 title: Dummy Classes
-tags:
-  - dummy classes
-  - guide
-  - hello
 ---
 
 # Dummy Classes

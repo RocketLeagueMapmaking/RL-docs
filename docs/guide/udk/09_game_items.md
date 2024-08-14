@@ -1,5 +1,5 @@
 ---
-title: 'Rocket League Match Items'
+title: Rocket League Match Items
 ---
 # Rocket League Match Items
 

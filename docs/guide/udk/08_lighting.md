@@ -1,5 +1,5 @@
 ---
-title: 'Lighting'
+title: Lighting
 ---
 # Lighting
 

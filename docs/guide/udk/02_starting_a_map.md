@@ -1,5 +1,5 @@
 ---
-title: 'Starting a Map'
+title: Starting a Map
 ---
 # Starting a Map
 

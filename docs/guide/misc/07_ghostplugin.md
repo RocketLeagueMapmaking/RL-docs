@@ -1,9 +1,5 @@
 ---
 title: Ghost Plugin
-tags:
-  - bakkesmod
-  - plugin
-  - thanrek
 ---
 
 # Ghost Plugin by Thanrek

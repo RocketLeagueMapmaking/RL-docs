@@ -1,8 +1,5 @@
 ---
-title: 'Essentials'
-tags:
-  - essential
-  - essentials
+title: Essentials
 ---
 
 # Mapmaking Essentials

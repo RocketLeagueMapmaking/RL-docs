@@ -1,9 +1,5 @@
 ---
 title: Project Setup
-tags:
-  - project setup
-  - new folder
-  - rocket league mods
 ---
 # Project Setup
 
