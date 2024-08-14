@@ -24,13 +24,16 @@ We have some minor style requirements for documentation additions:
   - use [snake_case](https://en.wikipedia.org/wiki/Snake_case) for file naming conventions. Only use lowercase for TypeScript files.
   - If you are adding markdown files in the `docs` folder:
     - use `\d{2}_([a-z_])*.md` for naming all other files in the `/cheatsheet/`, `/essential/` and `/guide/**/` folders.
-    - add a `title` frontmatter key to new files. In the `/guide/blender/` and `/guide/udk/` folder also add `advanced` (with a boolean value) to the frontmatter.
+    - add the following frontmatter to new files:
+      - `title` (`string`): The topic of the current page.
+      - `advanced` (`boolean`): Whether this page is an advanced guide. Only needed on pages when a folder has an advanced section (`/guide/blender/` and `/guide/udk/`).
 - If you are changing / adding content related to UDK, check your changes in UDK (only follow the content you have written and not your own knowledge). Any PR with changes in UDK should be reviewed.
 - If you are adding image resources:
   - pay attention to their file size: images above 1MB will fail the tests and should be reviewed. Use an online compressor tool or [Windows PowerToys' Image resizer](https://learn.microsoft.com/en-us/windows/powertoys/image-resizer) to make sure that the file size is below the limit.
   - Images should be added in `/docs/.vitepress/public/images/{section}/` and icons in `/docs/.vitepress/public/icons`.
   - Images and icons should have relevant file names to their content and be named in snake_case. Icons should also be prefixed by `logo_`.
-  - Image resources are not allowed directly in `/images/`, `/images/blender/` and `/images/udk/`, only the subdirectories of those folders.
+  - Images are not allowed directly in `/images/`, `/images/blender/` and `/images/udk/`, only the subdirectories of those folders.
+  - Image references in markdown should [have a good alt text](https://supercooldesign.co.uk/blog/how-to-write-good-alt-text). They can also have [a title](https://www.markdownguide.org/basic-syntax/#images-1) with a comment or small joke.
 - [Create an issue](https://github.com/rocketleaguemapmaking/RL-docs/issues/new/choose) for small contributions (such as fixing typos or broken links).
 
 # Development and local testing

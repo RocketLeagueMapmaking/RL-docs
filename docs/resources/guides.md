@@ -1,8 +1,6 @@
 ---
-title: 'Guides'
+title: Guides
 editLink: false
-tags:
-  - guides
 ---
 # Guides
 
