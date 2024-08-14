@@ -78,11 +78,11 @@ Each answer contains useful links and relevant information.
 
 ### Getting Ready <Badge text="important" type="tip"/>
 
-![alt text](/images/UDK/essential/image66.png "This will have clickable links someday")
+![alt text](/images/udk/essential/image66.png "This will have clickable links someday")
 
 ### Getting Down to Business <Badge text="important" type="tip"/>
 
-![alt text](/images/UDK/essential/image73.png "This will also have clickable links someday")
+![alt text](/images/udk/essential/image73.png "This will also have clickable links someday")
 :::
 
 ## Getting Set Up <Badge text="important" type="tip"/>

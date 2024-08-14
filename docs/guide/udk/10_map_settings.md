@@ -22,7 +22,7 @@ Some of the most useful Post Process settings are `Scene Desaturation`, `Scene C
 
 ### MapInfo_TA
 
-![alt text](/images/UDK/basics/newmapinfo.png "Very informative, much TA")
+![alt text](/images/udk/basics/newmapinfo.png "Very informative, much TA")
 
 As with other parts of this process, UDK and/or Rocket League will supply default parameters if you do not. To create a new MapInfo_TA object associated with your map, **open World Properties from the View menu. Search for `info`, then click the blue dropdown arrow at the right edge of the window and select `MapInfo_TA`.** This will create a new region with all of the adjustable parameters inside `MapInfo_TA`:
 
@@ -42,11 +42,11 @@ Similarly, the XYRotation setting may be used for some great effects. To spawn a
 
 Why does your car look different on different maps? Lighting is a large part of that, but an object that plays perhaps an even bigger role is called the Scene Capture Cube Map Actor, which can be added to the scene from the Actor Classes tab.
 
-![alt text](/images/UDK/basics/scenecapturecubemapactor.jpg "A time for reflection")
+![alt text](/images/udk/basics/scenecapturecubemapactor.jpg "A time for reflection")
 
 What a mouthful. Essentially this object is a camera that can see in every direction. But instead of showing the player or being the viewpoint for a cinematic, it generates a set of 6 images (arranged in a cube) that reflective surfaces will show. Since Rocket League is very metallic and shiny in general, this affects a lot of surfaces.
 
-![alt text](/images/UDK/basics/mapsettings_sccma.png "Capture deez cubez")
+![alt text](/images/udk/basics/mapsettings_sccma.png "Capture deez cubez")
 
 The key to making it appear is to **assign Grass_Textures.GrassCube to the Texture Target field.** This allows the output of the `SceneCaptureCubeMapActor` to be displayed in the level. All other settings inside its properties are up to your artistic tastes, but here are explanations of the most important ones:
 

@@ -15,7 +15,7 @@ You can test multiplayer on one computer using [this guide](https://steamcommuni
 For the multiplayer reason, **it is important, first and foremost, to create a backup of whatever you overwrite. Keep it secret. Keep it safe.**
 :::
 
-![alt text](/images/UDK/basics/image229.png "May it be a light for you in dark places, when all other lights go out.")
+![alt text](/images/udk/basics/image229.png "May it be a light for you in dark places, when all other lights go out.")
 
 If worst comes to worst and you’ve ruined everything, you can always uninstall and reinstall Rocket League. A less drastic measure is to, in Steam, right click on Rocket League > Properties > Local Files > Verify Integrity of Game Cache.
 
@@ -29,7 +29,7 @@ RL will crash if you load an Exhibition or Local match
 
 ## A Humble Apology
 
-![alt text](/images/UDK/basics/image49.jpg "I’m sorry")
+![alt text](/images/udk/basics/image49.jpg "I’m sorry")
 
 Alright, I’m sorry that I did that to you. But, it’s not a true modding experience if everything goes right the first time. **You and the ball will fall through the map, and no property you change can fix that.**
 

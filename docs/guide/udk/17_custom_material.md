@@ -9,7 +9,7 @@ title: Custom Materials
 
 **There is a key limitation to custom materials for Rocket League maps, and it has to do with the same property that allows Dummy Assets to begin with. Rocket League only allows materials which exist within packages already inside `CookedPCConsole`**. Whereas brand new meshes, particle systems, and certain other objects may be created within a new map project, we are not so lucky with materials. In fact, the only reason we are able to have any new materials is thanks to the inclusion of Startup.upk within Rocket League’s files (thanks Psyonix).
 
-![alt text](/images/UDK/advanced/image124.png "Don’t believe his lies")
+![alt text](/images/udk/advanced/image124.png "Don’t believe his lies")
 
 **The New Material option will only break your heart.**
 
@@ -62,15 +62,15 @@ The VertexPaint materials are unlikely to be any more useful than TexturePaint_2
 
 This material is the chosen one when it comes to custom materials for Rocket League maps. Now to get down to business.
 
-![alt text](/images/UDK/advanced/image41.png "Yes")
+![alt text](/images/udk/advanced/image41.png "Yes")
 
 <Badge text="important" type="tip"/> <b>Find TexturePaint_2Tex_Color at the bottom of Engine>Content>EngineDebugMaterials. Right click it and hit Create New Material Instance (Constant)...</b>
 
-![alt text](/images/UDK/advanced/image185.png "Details, details, details...")
+![alt text](/images/udk/advanced/image185.png "Details, details, details...")
 
 **Fill in the information in the popup window, making sure to put this Material Instance into your map project.**
 
-![alt text](/images/UDK/advanced/image15.png "At long last, we meet again for the first time, for the last time")
+![alt text](/images/udk/advanced/image15.png "At long last, we meet again for the first time, for the last time")
 
 An uninspiring gray sphere will show up in a popup window, and the Content Browser will switch packages to highlight the new creation. **Double check that this exists within your map project.**
 
@@ -80,7 +80,7 @@ A Material Instance, as mentioned, has a number of parameters which may be custo
 
 In this context, “Channel” simply refers to a property of the material. Red, Green, and Blue are often referred to as the Red channel, Green channel, and Blue channel in image editing software. Consider this render from the game EVE Online:
 
-![alt text](/images/UDK/advanced/image199.png "UDK == Null sec")
+![alt text](/images/udk/advanced/eve_online_ship.png "UDK == Null sec")
 
 Obviously the ship has color, which is provided by the **Diffuse** channel. The gold panels are much shinier than the off-white hull, which is made possible with the **Specular** channel. Small lights are visible around the inhabited parts of the ship thanks to the **Emissive** channel. And, all of the intricate detail surrounding those windows is probably not mesh geometry, but rather comes from the **Normal** map. An additional channel which is handled internal to Unreal Engine is the **Lightmap**, which provides subtle shadows (often called Ambient Occlusion or AO) where different parts of the ship meet.
 
@@ -88,7 +88,7 @@ Not every material in the game will need to have this much detail (obviously), b
 
 ## Applying Textures to Material Instance Channels
 
-![alt text](/images/UDK/advanced/image114.png "Fur Elise")
+![alt text](/images/udk/advanced/image114.png "Fur Elise")
 
 I will be using this stupid fur texture that I stole from the internet. You are welcome to copy it from here, or work with any other texture you like.
 :::info Give credits
@@ -97,13 +97,13 @@ I will be using this stupid fur texture that I stole from the internet. You are 
 
 **Textures must be .TGA (Targa) files, with a resolution that is a power of 2. I will be importing this as 256x256, which is rather low-quality.** See the [Texture Resolutions table](../blender/resolution.md) for some guidance.
 
-![alt text](/images/UDK/advanced/image119.png "Import-ant screenshot")
+![alt text](/images/udk/advanced/image119.png "Import-ant screenshot")
 
 **Import the texture by dragging it from your File Browser into the Content Browser.** I prefer to keep textures in a Texture grouping to reduce clutter, but this is not required.
 
 **Double click the Material Instance you created to bring up the Material Instance Editor window (or keep it open after creating the Material Instance).** I prefer to make the left panel much bigger and the right preview much smaller.
 
-![alt text](/images/UDK/advanced/image148.png "It’s happening fur real now")
+![alt text](/images/udk/advanced/image148.png "It’s happening fur real now")
 
 **Select the imported texture in the Content Browser. Find the Diffuse channel under Parameter Groups > Texture Parameter Values. Click the green arrow to assign the texture to this channel. Lastly, click the checkbox next to the word Diffuse. The preview will update when you do this step, which indicates that this succeeded.**
 
