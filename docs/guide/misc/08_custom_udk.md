@@ -10,7 +10,7 @@ If you installed UDK with (a future version of) the [quick setup script](https:/
 To replace the UDK splash screen with your own image, save the image as a `.bmp` file (preferably with a size of 650*375), rename the image to `EdSplash` and replace the standard splash screen in \
 `{UDK Folder}/UDKGame/Splash/PC/`
 
-![""](/images/udk/shark_UDK_splash.png "Nominee for best splash screen?")
+![A splash screen for UDK with an octane car and the UDK logo](/images/misc/shark_UDK_splash.png "Nominee for best splash screen?")
 
 ## Welcome Screen
 
