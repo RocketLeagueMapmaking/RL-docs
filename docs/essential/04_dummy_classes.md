@@ -11,7 +11,7 @@ These are UDK-ready classes with the same names and properties as the customized
 The download may be found under [Downloads.](../resources/downloads.md#setup)
 If you feel like using git, you can run git clone within the UDK folder. Downloading the .zip file is totally fine too.
 
-![alt text](/images/udk/essential/dummyclasses_location.png "Lots of goodies")
+![Folder in File explorer with Dummy classes with dummy classes folders selected](/images/udk/essential/dummyclasses_location.png "Lots of goodies")
 
 Extract the .zip, and paste the four folders alongside all of the others in
 `{UDK Folder}\Development\Src`
@@ -199,7 +199,7 @@ If you ever change these files in the future, you will need to recompile again.
 
 In `{UDK Folder}\Binaries\`, run `UnrealFrontend.exe`.
 
-![alt text](/images/udk/essential/image81.png "Because you bake a cake before you ship it... thanks TJ")
+![Unreal Frontend on the Script step, focusing](/images/udk/essential/frontend_scripts_recompile.png "Because you bake a cake before you ship it... thanks TJ")
 
 **Click Script and run Full Recompile.** Close it after it finishes, and now you’re allowed to start.
 ...almost
@@ -208,7 +208,7 @@ In `{UDK Folder}\Binaries\`, run `UnrealFrontend.exe`.
 
 Thanks to the hard work of friendly modders, there is an extremely useful UDK Package (.UPK) which contains a number of assets ripped from the game. They allow you to build your map with pieces and materials that are already in the game. However, the important thing is that they have the exact same name as the in-game assets. More on this aspect of things later.
 
-You can find the download [Here.](../resources/downloads.md#setup)
+You can find the download [here.](../resources/downloads.md#setup)
 
 **Place this into `{UDK Folder}\UDKGame\Content\`** alongside the various other files. UDK will recognize it here and make its contents available to you.
 

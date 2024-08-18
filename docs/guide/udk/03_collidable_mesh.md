@@ -24,7 +24,7 @@ Unchecking “Disable All Rigid Body” allows for this object to have collision
 | “loca”     |         Y          |             0 |
 | “loca”     |         Z          |             0 |
 
-**Alternatively, right click the Move tool on the top toolbar:** ![alt text](/images/udk/essential/image76.png)
+**Alternatively, right click the Move tool on the top toolbar:** ![UDK toolbar interface for moving objects](/images/udk/essential/ui_editor_window.png)
 
 A small window will pop up. **Enter 0, 0, and 0, and make sure Relative is unchecked.** With Relative unchecked, you **move the object to this location.** With Relative checked, you **move an object by this amount.**
 

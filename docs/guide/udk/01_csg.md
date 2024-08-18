@@ -14,8 +14,8 @@ However, if you must, here’s how you can use CSG brushes.
 
 ## The CSG Toolbars
 
-![alt text](/images/udk/essential/image99.png)
-![alt text](/images/udk/essential/image9.png)
+![Brushes buttons in the UDK menu](/images/udk/essential/ui_editor_brushes.png)
+![CSG buttons in the UDK menu](/images/udk/essential/ui_editor_csg.png)
 
 - Top Left: Add (Ctrl+A)
 - Top Right: Subtract (Ctrl+S)

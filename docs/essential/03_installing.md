@@ -33,11 +33,11 @@ The steps for the setup using this tool may differ from this guide and the other
 
 After you [download the UDK 2015 Installer](../resources/downloads.md#setup) from my Drive (or any other friendly modder’s secret stash), double click it to start the install process. Accept the TOS.
 
-![alt text](/images/udk/essential/image149.png "UT Sample Game will cause great sadness")
+![Screen of installer for 'Project Setup' highlighting 'Empty project'](/images/udk/essential/installation_step_project.png "UT Sample Game will cause great sadness")
 
 **Install with an Empty Game.** The Sample Game has lots of cool things, but they’re completely irrelevant to Rocket League and will only cause trouble. Sorry.
 
-![alt text](/images/udk/essential/image243.png "Or whatever you wanna name it")
+![Screen of installer for 'Install options' on the project name field](/images/udk/essential/installation_step_project.png "Or whatever you wanna name it")
 
 In the Project Name field, enter a good name for your project. I call mine RLMM (Rocket League MapMaking) but yours will be referred to as `{ProjectName}` in this guide. Additionally, this folder will be called `{UDK Folder}` for the rest of this guide.
 

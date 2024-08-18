@@ -55,7 +55,7 @@ If you start with a blank map, you are guaranteed to see an intimidating warning
 
 The Lightmass Importance Volume tells UDK (and Rocket League) which portion of the map is most important to make pretty. In our case, this is the portion where players will be.
 
-![alt text](/images/udk/essential/image57.png)
+![Volumes buttons in the UDK menu](/images/udk/essential/ui_editor_volumes.png)
 
 A Lightmass Importance Volume may be created by resizing the CSG Brush to the size of the playing field, then adding a LightmassImportanceVolume from the Volumes menu. That will fix this error and give you a much speedier Build Lighting process.
 
