@@ -37,29 +37,39 @@ export default <HeadConfig[]>[
             content: 'black'
         }
     ],
-    ['link',
+
+    // OG links
+    // Not including the special Twitter links, because X...
+
+    ['meta',
         {
-            rel: 'apple-touch-icon',
-            href: '/icons/apple-touch-icon-152x152.png'
-        }
-    ],
-    ['link',
-        {
-            rel: 'mask-icon',
-            href: '/icons/safari-pinned-tab.svg',
-            color: '#3eaf7c'
+            property: 'og:type',
+            content: 'website',
         }
     ],
     ['meta',
         {
-            name: 'msapplication-TileImage',
-            content: '/icons/msapplication-icon-144x144.png'
+            property: 'og:url',
+            content: 'https://rocketleaguemapmaking.com/',
         }
     ],
     ['meta',
         {
-            name: 'msapplication-TileColor',
-            content: '#000000'
+            property: 'og:title',
+            content: 'RLMM',
         }
     ],
+    ['meta',
+        {
+            property: 'og:description',
+            content: '',
+        }
+    ],
+    // TODO: create a preview image
+    // ['meta',
+    //     {
+    //         property: 'og:image',
+    //         content: '',
+    //     }
+    // ],
 ]
