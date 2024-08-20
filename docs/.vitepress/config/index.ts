@@ -22,9 +22,13 @@ export default defineConfigWithTheme<ThemeConfig>({
     description: 'Guides, Resources, Maps, and more for making custom maps',
     head,
 
+    sitemap: {
+        hostname: 'https://rocketleaguemapmaking.com',
+    },
     srcExclude: [
         '**/flowchart_questions/*.md',
     ],
+
     vite: {
         publicDir: '.vitepress/public',
     },
@@ -37,6 +41,8 @@ export default defineConfigWithTheme<ThemeConfig>({
     // Removes numbered prefixes from routes
     // Does not redirect prefixed routes in builds
     rewrites,
+    // Make sure this is always set to false to detect incorrect (internal) links!
+    ignoreDeadLinks: false,
 
     // Page features
     appearance: true,
