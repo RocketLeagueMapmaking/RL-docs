@@ -20,14 +20,18 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       docker_digest: ${{ steps.docker.outputs.digest }}
+    strategy:
+      matrix:
+        # Set the same version as in Dockerfile
+        node: [18]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install node.js v${{ vars.NODE_VERSION }}
+      - name: Install node.js v${{ matrix.node }}
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ vars.NODE_VERSION }}
+          node-version: ${{ matrix.node }}
           cache: npm
 
       - name: Install dependencies
