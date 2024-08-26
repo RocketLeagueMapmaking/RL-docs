@@ -101,8 +101,12 @@ const sidebar: DefaultTheme.Sidebar = {
                     link: 'unwrapping',
                 },
                 {
-                    text: 'Mipmaps and LOD',
+                    text: 'Texture Resolution',
                     link: 'resolution',
+                },
+                {
+                    text: 'Mipmaps and LOD',
+                    link: 'mipmaps',
                 },
                 {
                     text: 'Other sources',
