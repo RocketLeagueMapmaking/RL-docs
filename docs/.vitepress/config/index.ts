@@ -1,11 +1,14 @@
 import { defineConfigWithTheme } from 'vitepress'
 import { type ThemeConfig } from '@rocketleaguemapmaking/theme-rlmm'
 
+import { frontmatterKeys, homeFrontmatterKeys } from '../theme/data'
+
 import head from './head'
-import { buildEnd } from './hooks'
+import createHooks from './hooks'
 import nav from './navbar'
-import createRewrites from './rewrites'
 import sidebar from './sidebar'
+
+import createRewrites from './util/rewrites'
 
 const rewrites = createRewrites({
     base: 'docs/',
@@ -52,7 +55,24 @@ export default defineConfigWithTheme<ThemeConfig>({
     },
 
     // Hooks
-    buildEnd,
+    ...createHooks({
+        frontmatterValidation: {
+            error: false,
+            required: [
+                {
+                    path: 'title',
+                    ignore: [
+                        '/essential/flowchart_questions/',
+                    ],
+                }
+            ],
+            using: [
+                { keys: frontmatterKeys },
+                { keys: homeFrontmatterKeys, valid: ['/'] },
+                { keys: ['teams'], valid: ['/more/about'] },
+            ],
+        }
+    }),
 
     // Theme configuration
     themeConfig: {

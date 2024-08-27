@@ -1,5 +1,6 @@
-import type { SiteConfig } from 'vitepress'
+import { createContentLoader, type SiteConfig } from 'vitepress'
 import type { ThemeConfig } from '@rocketleaguemapmaking/theme-rlmm'
+import { validateFrontmatter, type FrontmatterValidationConfig } from './util/frontmatter'
 
 /**
  * Only runs in the test workflow on the docs repo and on the master branch
@@ -23,6 +24,21 @@ async function sendBuildNotification (siteConfig: SiteConfig<ThemeConfig>): Prom
     })
 }
 
-export async function buildEnd (siteConfig: SiteConfig<ThemeConfig>): Promise<void> {
-    if (isGitHubAction()) await sendBuildNotification(siteConfig)
+async function getGuidePages () {
+    return await createContentLoader('**').load()
+}
+
+export interface HookConfig {
+    frontmatterValidation: FrontmatterValidationConfig
+}
+
+export default function (config: HookConfig) {
+    return {
+        buildEnd: async function (siteConfig: SiteConfig<ThemeConfig>): Promise<void> {
+            if (isGitHubAction()) await sendBuildNotification(siteConfig)
+
+            const pages = await getGuidePages()
+            validateFrontmatter(pages, config.frontmatterValidation)
+        }
+    }
 }
