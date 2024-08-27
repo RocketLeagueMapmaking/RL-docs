@@ -1,6 +1,10 @@
 import { createContentLoader, type SiteConfig } from 'vitepress'
 import type { ThemeConfig } from '@rocketleaguemapmaking/theme-rlmm'
-import { validateFrontmatter, type FrontmatterValidationConfig } from './util/frontmatter'
+
+import {
+    validateFrontmatter,
+    type FrontmatterValidationConfig,
+} from './util/frontmatter'
 
 /**
  * Only runs in the test workflow on the docs repo and on the master branch
@@ -38,7 +42,11 @@ export default function (config: HookConfig) {
             if (isGitHubAction()) await sendBuildNotification(siteConfig)
 
             const pages = await getGuidePages()
+
+            // Validate the frontmatter for all docs/**/*.md files
             validateFrontmatter(pages, config.frontmatterValidation)
+
+            // TODO: generate sidebar and navbar from the files.
         }
     }
 }

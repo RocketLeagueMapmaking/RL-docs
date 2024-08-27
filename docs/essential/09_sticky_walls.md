@@ -1,6 +1,5 @@
 ---
 title: Sticky Walls
-next: ../guide/
 ---
 # Sticky Walls ™ <Badge text="important" type="tip"/>
 

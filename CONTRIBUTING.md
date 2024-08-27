@@ -77,3 +77,7 @@ This guide uses a custom guide theme. The theme [`theme-rlmm`](https://theme-rlm
 
 - Any theme modification should be in `docs/.vitepress/theme/`
 - Feature requests and issues with the theme (components) should be opened in the [theme repository](https://github.com/rocketleaguemapmaking/theme-rlmm)
+
+Furthermore, this repo has the following `pageClass`es available:
+
+- `page-inline-images`: makes all images on the page display inline. This is used for pages with lists with an icon at the beginning of each item.

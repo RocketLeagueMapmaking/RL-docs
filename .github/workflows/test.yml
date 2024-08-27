@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
+        # Run for both the node version used and the next major version
         node: [18, 20]
     steps:
       - name: Checkout repository
