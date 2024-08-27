@@ -1,4 +1,3 @@
-// TODO: export these from theme-rlmm?
 export const frontmatterKeys = [
     // Default
     'layout',
@@ -11,9 +10,17 @@ export const frontmatterKeys = [
     'pageClass',
     'sidebar',
     'navbar',
+    'aside',
+    'lastUpdated',
     'editLink',
+    'footer',
     // theme-rlmm
+    'banner',
     'blocks',
+    'exposePages',
+    'feedback',
+    'inbox',
+    'related',
     'finished',
     'offlineText',
 ]
@@ -21,6 +28,7 @@ export const frontmatterKeys = [
 export const homeFrontmatterKeys = [
     'hero',
     'features',
+    'resourceTitle',
     'resources',
     'events',
     'promotion',

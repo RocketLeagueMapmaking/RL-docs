@@ -46,7 +46,7 @@ export default function (config: HookConfig) {
             // Validate the frontmatter for all docs/**/*.md files
             validateFrontmatter(pages, config.frontmatterValidation)
 
-            // TODO: generate sidebar and navbar from the files.
+            // TODO: generate/check sidebar and navbar from the files.
         }
     }
 }

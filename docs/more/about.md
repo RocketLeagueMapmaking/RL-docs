@@ -118,12 +118,7 @@ teams:
 ---
 
 <script setup>
-import {
-    VPTeamPage,
-    VPTeamPageTitle,
-    VPTeamPageSection,
-    VPTeamMembers,
-} from 'vitepress/theme'
+import { TeamPage } from '@rocketleaguemapmaking/theme-rlmm'
 </script>
 
 <div class="vp-doc page-doc" style="padding-bottom: 0;">
@@ -142,31 +137,4 @@ Who am I? I have a few names, depending on where you find me: Mr. Swaggles in Ro
 
 </div>
 
-<VPTeamPage style="margin: 0px 0px 60px;">
-    <VPTeamPageTitle>
-        <template #title>
-            {{ $frontmatter.teams[0].title }}
-        </template>
-        <template #lead>
-            {{ $frontmatter.teams[0].lead }}
-        </template>
-    </VPTeamPageTitle>
-    <VPTeamMembers
-        :size="$frontmatter.teams[0].size"
-        :members="$frontmatter.teams[0].members"
-    />
-    <VPTeamPageSection v-for="team in ($frontmatter.teams || []).slice(1)" :key="team.title">
-        <template #title>
-            {{ team.title }}
-        </template>
-        <template #lead>
-            {{ team.lead }}
-        </template>
-        <template #members>
-            <VPTeamMembers
-                :size="team.size"
-                :members="team.members"
-            />
-        </template>
-    </VPTeamPageSection>
-</VPTeamPage>
+<TeamPage />
