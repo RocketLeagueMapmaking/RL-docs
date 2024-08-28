@@ -33,6 +33,9 @@ teams:
       members:
         - name: Mr. Phil
           avatar: https://github.com/MrPh1l.png
+          links:
+            - icon: github
+              link: https://github.com/MrPh1l
     - title: Special thanks
       lead: These guys will be referred to as friendly/wonderful/amazing modders, so please thank them if you get a chance.  Send a message if we didn’t give you credit for discovering something, and we’ll add you.
       size: small

@@ -1,9 +1,23 @@
 ---
 title: The Owl
+next_actions:
+  - title: Add lighting
+    details: 
+    link: ./lighting
+    linkText: Learn more
+  - title: Match items
+    link: ./game_items
+    linkText: Learn more
+  - title: Add volumes
+    link: ./volumes
+    linkText: Learn more
+  - title: Map settings
+    link: ./map_settings
+    linkText: Learn more
 ---
-# Draw The Rest Of The F***ing Owl
+# Building a map
 
-![alt text](/images/udk/basics/image89.png "How to make a Rocket League map in 3 minutes!")
+![Draw The Rest Of The F***ing Owl](/images/udk/basics/image89.png "How to make a Rocket League map in 3 minutes!")
 
 Now that we have the fundamentals all in place, the rest of the map can come together very quickly. For brevity, I am going to skip over the modeling steps, but that will be explained [here](../blender/blender.md).
 
@@ -25,6 +39,7 @@ Because of surface normals, any map pieces which have no thickness will be invis
 * Occasionally (and inexplicably) you won’t be able to place meshes by dragging them out of the Content Browser window. To get around this, **select the mesh in the Content Browser window, then right click in the 3D Editor. Select “Add {MeshName} Here”.**
 * You don’t have to close Rocket League to retest maps. Simply exit to the main menu, overwrite the test map, and reload it. Use the BSFQTM to increase your speed and productivity.
 * I also recommend switching Rocket League to Windowed or Borderless mode and going Invisible on Steam (to save your friends from the spam).
+
 :::
 
 **Remember, you need to do all of the collision fixes (both on the imported Static Mesh in the Content Browser and on the StaticMeshActor placed in the world) on every mesh you want to collide with.** These steps are shown in previous sections.
@@ -35,4 +50,6 @@ Once all meshes are in the scene, lighting will need to be rebuilt from the Buil
 
 Try to be as thorough as you can be when testing your map. It only takes one missed collision setting or unset StickyWalls® to ruin the whole experience.
 
-**But now it’s time to make this map more than just a weird checkered box.**
+**But now it’s time to [make this map more than just a weird checkered box](./materials)** or to continue with adding interesting map features:
+
+<DocFeatures frontmatterKey="next_actions" />

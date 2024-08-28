@@ -73,7 +73,10 @@ Once the mesh is made, head back to UDK to import it into the map package. **Sim
 ![alt text](/images/udk/basics/image170.png "Get your asset in here")
 
 :::warning
+
 You may see a warning about your FBX version (7.3.0 vs 7.4.0). [This can be ignored and hidden in the future.](https://answers.unrealengine.com/questions/10660/fbx-export-74.html)
+
+:::
 
 UDK will kindly try to figure out how to collide with these objects. But, remember that Psyonix replaced the whole physics engine, meaning that these checkboxes are dead to us. **Double click the newly imported Static Mesh and change these settings:**
 

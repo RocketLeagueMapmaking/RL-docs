@@ -53,7 +53,3 @@ In a similar vein, you will never be able to collide with a surface you create u
 Luckily we can achieve a solid floor in 3 different ways, and none is very difficult.
 
 <DocFeatures frontmatterKey="collision_types" />
-
-<script setup>
-import { DocFeatures } from '@rocketleaguemapmaking/theme-rlmm'
-</script>

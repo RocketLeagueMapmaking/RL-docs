@@ -175,7 +175,7 @@ const sidebar: DefaultTheme.Sidebar = {
                     link: 'collidable_collisions',
                 },
                 {
-                    text: 'The Owl',
+                    text: 'Building a map',
                     link: 'owl',
                 },
                 {
