@@ -4,7 +4,7 @@ title: CSG
 
 # Constructive Solid Geometry
 
-![alt text](/images/udk/basics/comparison_textures.png "You vs the map she tells you not to worry about")
+![Two maps: one with default textures and one with custom textures](/images/udk/basics/comparison_textures.png "You vs the map she tells you not to worry about")
 
 The simplest and most straightforward way to build a map is using UDK’s brush system, CSG (Constructive Solid Geometry). In the days of yore, this was basically the only way people were making maps, until people started using 3D modeling software and following the steps laid out in the first version of this guide in late 2016.
 

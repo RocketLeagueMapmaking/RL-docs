@@ -1,23 +1,20 @@
 ---
 title: Testing
+collision_types:
+    - title: Add a Blocking Volume
+      link: ./collidable_collisions#option-1-add-a-blocking-volume
+    - title: Swap in Collision_Floor
+      link: ./collidable_collisions#option-2-swap-in-collision-floor
+    - title: Make Our Own Floor
+      link: ./collidable_collisions#option-3-make-our-own-floor
 ---
 # Testing the Map
+
+## Overwrite
 
 As mentioned in a few other places, the quickest and easiest way to test a map is to overwrite a default map in Rocket League with your own. A number of guides tell you to overwrite `Labs_Underpass_P.upk`, but that is a bad idea because that map is currently in the rotation for Rumble. **Instead, overwrite `Labs_Utopia_P.upk` because the map is weird and unused.**
 
 **Be sure to create a backup, however. You never know when you might need it.** What if you want to play online after working on mods, in the map you just overwrote? Well, say hello to the banhammer. Jk. But not really. You will receive a 5+ minute timeout if the Rocket League servers detect the modified game files in an online multiplayer game. **Psyonix has [stated that it welcomes and encourages mods](../../resources/references/psyonix.md), so in general there is absolutely nothing to be afraid of.**
-
-:::tip Testing Multiplayer
-You can test multiplayer on one computer using [this guide](https://steamcommunity.com/sharedfiles/filedetails/?id=311943358) if you are lucky/smurfy enough to have two Steam accounts with Rocket League. Or, ask someone else to [join your map.](../multiplayer/multiplayer.md#testing-multiplayer)
-:::
-
-:::warning Make Backups
-For the multiplayer reason, **it is important, first and foremost, to create a backup of whatever you overwrite. Keep it secret. Keep it safe.**
-:::
-
-![alt text](/images/udk/basics/image229.png "May it be a light for you in dark places, when all other lights go out.")
-
-If worst comes to worst and you’ve ruined everything, you can always uninstall and reinstall Rocket League. A less drastic measure is to, in Steam, right click on Rocket League > Properties > Local Files > Verify Integrity of Game Cache.
 
 **Copy and paste your `{YourMapNameHere}.udk` file into `{CookedPCConsole}`. Rename it to `Labs_Utopia_P.upk` (note that the file extension changes from .udk to .upk). Alternatively, use the BSFQTM script from earlier in the guide.**
 
@@ -27,9 +24,23 @@ Hop into Training and enjoy!
 RL will crash if you load an Exhibition or Local match
 :::
 
-## A Humble Apology
+:::tip Testing Multiplayer
+You can test multiplayer on one computer using [this guide](https://steamcommunity.com/sharedfiles/filedetails/?id=311943358) if you are lucky/smurfy enough to have two Steam accounts with Rocket League. Or, ask someone else to [join your map.](../multiplayer/multiplayer.md#testing-multiplayer)
+:::
 
-![alt text](/images/udk/basics/image49.jpg "I’m sorry")
+## Backup
+
+For the multiplayer reason, **it is important, first and foremost, to create a backup of whatever you overwrite. Keep it secret. Keep it safe.**
+
+![Steam game settings](/images/udk/basics/steam_verify_files.png "May it be a light for you in dark places, when all other lights go out.")
+
+If worst comes to worst and you’ve ruined everything, you can always uninstall and reinstall Rocket League. A less drastic measure is to, in Steam, right click on Rocket League > Properties > Local Files > Verify Integrity of Game Cache.
+
+## Play testing
+
+A Humble Apology.
+
+![A car falling through the floor](/images/udk/basics/ceilinggoal_scam.jpg "I’m sorry")
 
 Alright, I’m sorry that I did that to you. But, it’s not a true modding experience if everything goes right the first time. **You and the ball will fall through the map, and no property you change can fix that.**
 
@@ -40,3 +51,9 @@ In a similar vein, you will never be able to collide with a surface you create u
 :::
 
 Luckily we can achieve a solid floor in 3 different ways, and none is very difficult.
+
+<DocFeatures frontmatterKey="collision_types" />
+
+<script setup>
+import { DocFeatures } from '@rocketleaguemapmaking/theme-rlmm'
+</script>
