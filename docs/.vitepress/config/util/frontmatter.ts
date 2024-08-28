@@ -1,6 +1,5 @@
 import { type ContentData } from 'vitepress'
 
-
 type FilterConfig<Key extends string, Type extends string | string[]> =
     | string
     // eslint-disable-next-line no-unused-vars
