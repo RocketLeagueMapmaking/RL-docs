@@ -14,7 +14,7 @@ What a sad place the world would be without boost. Luckily, it can be added and 
 * `StaticMeshActor` - The solid object underneath the orange glow
 * `Archetype` - A preconfigured asset
 
-![alt text](/images/udk/basics/image143.png "I wish it looked like this in game")
+![A boost pad in UDK](/images/udk/advanced/boost_pad_editor.png "I wish it looked like this in game")
 
 The image shown above is a `VehiclePickup_Boost_TA` on top of an `FXActor_Boost_TA` and a `StaticMeshActor`. This one is a Boost Pill, as you can tell from the long legs on the model.
 
@@ -22,13 +22,13 @@ The image shown above is a `VehiclePickup_Boost_TA` on top of an `FXActor_Boost_
 
 Depending on which version of the Park_P dummy assets you are using, you may not have the `VehiclePickup_Boost_TA` archetypes available. **Expand the Archetypes subfolder and look for VehiclePickup.** Inside this folder should be two archetypes named **VehiclePickup_BoostPill**and**VehiclePickup_BoostPad.**
 
-![alt text](/images/udk/advanced/boost_pickuparchetypes.png "Arche-typical setup")
+![](/images/udk/advanced/boost_pickuparchetypes.png "Arche-typical setup")
 
 If these are not available, look instead inside **HoopsStadium_P.Archetypes.VehiclePickup** and use them instead.
 
 Next, look inside **Park_P.pickup_boost** for similar archetypes named **BoostPill_FXActor** and **BoostPad_FXActor.**
 
-![alt text](/images/udk/advanced/boost_fxactorarchetypes.png "This season on FX...")
+![](/images/udk/advanced/boost_fxactorarchetypes.png "This season on FX...")
 
 Again, if these are not available for some reason, look instead in **HoopsStadium_P.pickup_boost.**
 
@@ -36,7 +36,7 @@ These archetypes are fully configured and are ready to be placed into the map. T
 
 Boost pickups on a standard Soccar map are at these locations. The ± symbol means that there is a pad at both +X and -X, or +Y and -Y, so placing the pickups listed below and mirroring them will make a complete set. Note that the `VehiclePickup` actors are at **different heights** for boost pads and pills. All `FXActor`s are at 0 Z:
 
-![alt text](/images/udk/basics/image142.png "A heart in a box (see it?)")
+![Field with boosts placed as in standard maps](/images/udk/advanced/boost_half_field.png "A heart in a box (see it?)")
 
 | Pickup Type | X     | Y     | Pickup Z |
 | ----------- | ----- | ----- | -------- |
@@ -64,7 +64,7 @@ If you tested your map immediately after adding these archetypes, you were proba
 
 The most efficient way to do this for all boost pickups is with the Scene tab of the Content Browser.
 
-![alt text](/images/udk/advanced/boost_associate.png "This will click eventually")
+![](/images/udk/advanced/boost_associate.png "This will click eventually")
 
 **Double click each `VehiclePickup_Boost_TA` object. This will transport the camera to it in the 3D viewer. Click the FXActor beneath the pickup. Then click the green arrow in the FXActor slot in the properties subwindow.**
 
@@ -76,13 +76,13 @@ The most efficient way to do this for all boost pickups is with the Scene tab of
 
 If you wish to create boost with custom functionality, perhaps with a different respawn time or boost amount, these values may be easily changed within the properties of each `VehiclePickup_Boost_TA`. For **truly custom boost** with a different appearance or hitbox, we must go deeper.
 
-![alt text](/images/udk/advanced/boost_custom.png "Booooooooooooooooooooost")
+![](/images/udk/advanced/boost_custom.png "Booooooooooooooooooooost")
 
 **First, find `FXActor_Boost_TA` in the Actors tab of the Content Browser. Drag it onto the map. Next, find `VehiclePickup_Boost_TA` and drag it onto the map. Last, add the Static Mesh named `BoostPad_Large` from the Park_P package.** Or add your own custom mesh. You're unstoppable. **However, note that this requires the FXActorEvents.upk dummy assets package, which was added to the [GitHub Repository](https://github.com/RocketLeagueMapmaking/RL_DummyAssets) in 2021.**
 
 **Pick the same X and Y location for all of these objects. Set the locations of the `FXActor_Boost_TA` and the Static Mesh to 0 in Z. Set the Z location of the `VehiclePickup_Boost_TA` to 72.**
 
-![alt text](/images/udk/advanced/boost_custompillattachments.png "Don't get too attached")
+![](/images/udk/advanced/boost_custompillattachments.png "Don't get too attached")
 
 Inside the properties of the `FXActor_Boost_TA`, **add 3 Attachment slots.** You may simply copy text from these tables, but please feel free to try substituting any of the Particle Systems or Static Meshes for a different one from the dummy assets.
 
@@ -90,7 +90,7 @@ Inside the properties of the `FXActor_Boost_TA`, **add 3 Attachment slots.** You
 
 Slot 0 will be the hovering ball of gooey boost, which is implemented as a particle system.
 
-![alt text](/images/udk/advanced/boost_custompill_attachment0.png "Particular settings")
+![](/images/udk/advanced/boost_custompill_attachment0.png "Particular settings")
 
 | Search for                | Take this action   | Set this value |
 | ------------------------- | ------------------ | -------------- |
@@ -106,7 +106,7 @@ When adding the ParticleSystemComponent, **press P to quickly jump between items
 
 Slot 1 will be the glow emanating from the base of the pickup, which is implemented as a mesh.
 
-![alt text](/images/udk/advanced/boost_custompill_attachment1.png "Meshy settings")
+![](/images/udk/advanced/boost_custompill_attachment1.png "Meshy settings")
 
 | Search for                | Take this action     | Set this value |
 | ------------------------- | -------------------- | -------------- |
@@ -124,7 +124,7 @@ Try replacing the BoostPad_Large_Glow mesh with your own model. The UV map for t
 
 Slot 2 will be the effect that plays when the boost is picked up, which is implemented as a particle system.
 
-![alt text](/images/udk/advanced/boost_custompill_attachment2.png "Particular settings part 2")
+![](/images/udk/advanced/boost_custompill_attachment2.png "Particular settings part 2")
 
 | Search for                | Take this action     | Set this value |
 | ------------------------- | -------------------- | -------------- |
@@ -144,7 +144,7 @@ Note that the Attach Any triggers on **PickedUp,** which is the opposite of the 
 
 Next, there are some properties to set within the boost pill’s `VehiclePickup_Boost_TA`:
 
-![alt text](/images/udk/advanced/boost_custompill_pickup.png "A little pick-me-up")
+![](/images/udk/advanced/boost_custompill_pickup.png "A little pick-me-up")
 
 | Search for | Change the line(s) | To this value  |
 | ---------- | ------------------ | -------------- |
@@ -153,7 +153,7 @@ Next, there are some properties to set within the boost pill’s `VehiclePickup_
 | “boo”      | Boost Type         | BoostType_Pill |
 | “res”      | Respawn Delay      | 10             |
 
-**Lastly, lock the properties window. Select the `FXActor_Boost_TA`, then hit the green arrow.** ![alt text](/images/udk/basics/image21.png)! This tells the VehiclePickup which FXActor it should animate (and then hide) when a player passes through its hitbox. And speaking of the hitbox, it may be changed in the Collision section of the Properties window.
+**Lastly, lock the properties window. Select the `FXActor_Boost_TA`, then hit the green arrow.** ![Use selected icon](/images/udk/advanced/icon_use_boost.png)! This tells the VehiclePickup which FXActor it should animate (and then hide) when a player passes through its hitbox. And speaking of the hitbox, it may be changed in the Collision section of the Properties window.
 
 **Try creating Evil Boost with a negative Boost Amount.** Fufufufu.
 
@@ -205,3 +205,6 @@ Slot 1 will be the effect that plays when the boost is picked up, which is imple
 | “res”      | Respawn Delay      | 4             |
 
 **Remember to assign the `FXActor_Boost_TA` to the FXActor slot as well.**
+
+<!-- TODO: add more alt texts and remove the next line -->
+<!-- markdownlint-disable-file MD045 -->

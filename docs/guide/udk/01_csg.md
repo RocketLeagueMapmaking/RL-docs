@@ -15,6 +15,8 @@ However, if you must, here’s how you can use CSG brushes.
 ## The CSG Toolbars
 
 ![Brushes buttons in the UDK menu](/images/udk/essential/ui_editor_brushes.png)
+
+---
 ![CSG buttons in the UDK menu](/images/udk/essential/ui_editor_csg.png)
 
 - Top Left: Add (Ctrl+A)

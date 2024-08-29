@@ -33,7 +33,8 @@ We have some minor style requirements for documentation additions:
   - Images should be added in `/docs/.vitepress/public/images/{section}/` and icons in `/docs/.vitepress/public/icons`.
   - Images and icons should have relevant file names to their content and be named in snake_case. Icons should also be prefixed by `logo_`.
   - Images are not allowed directly in `/images/`, `/images/blender/` and `/images/udk/`, only the subdirectories of those folders.
-  - Image references in markdown should [have a good alt text](https://supercooldesign.co.uk/blog/how-to-write-good-alt-text). They can also have [a title](https://www.markdownguide.org/basic-syntax/#images-1) with a comment or small joke.
+  - Image references in markdown should [have a good alt text](https://supercooldesign.co.uk/blog/how-to-write-good-alt-text). They can also have [a title](https://www.markdownguide.org/basic-syntax/#images-1) with a comment or small joke. Images of icons don't need to have an alt text.
+  - Images should have a line break (`---` with one white line above) between each other if no other text is between the images.
 - [Create an issue](https://github.com/rocketleaguemapmaking/RL-docs/issues/new/choose) for small contributions (such as fixing typos or broken links).
 
 # Development and local testing
@@ -81,3 +82,7 @@ This guide uses a custom guide theme. The theme [`theme-rlmm`](https://theme-rlm
 Furthermore, this repo has the following `pageClass`es available:
 
 - `page-inline-images`: makes all images on the page display inline. This is used for pages with lists with an icon at the beginning of each item.
+
+The following components (not including the components registered by the theme) are also registered globally:
+
+- `DocFeatures`
