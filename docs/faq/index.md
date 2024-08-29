@@ -1,6 +1,5 @@
 ---
-sidebar: 'auto'
-sidebarDepth: 0
+title: FAQ
 ---
 
 # FAQ

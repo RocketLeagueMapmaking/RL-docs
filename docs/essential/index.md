@@ -1,13 +1,10 @@
 ---
-title: 'Essentials'
-tags:
-  - essential
-  - essentials
+title: Essentials
 ---
 
 # Mapmaking Essentials
 
-![alt text](/images/UDK/essential/dangerous.png "Also dangerous to take this")
+![Introduction image](/images/udk/essential/dangerous.png "Also dangerous to take this")
 
 ## Getting Started
 

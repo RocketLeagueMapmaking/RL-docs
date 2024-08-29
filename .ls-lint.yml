@@ -1,0 +1,42 @@
+ls:
+  deployment:
+    .sh: snakecase
+  
+  .github:
+    '{ISSUE_TEMPLATE,workflows}':
+      .yml: snakecase
+
+  docs:
+    .dir: lowercase
+    .md: snakecase
+
+    .vitepress:
+      .ts: lowercase
+
+      public:
+        .png: exists:0
+
+        # All icons should be snake case
+        icons:
+          .png: regex:logo_(\w|_|\d)+
+        
+        images:
+          # TODO: add this when ls-lint adds this
+          # .png: not_regex:image\d+
+
+          # All images should be in the following folders only
+          '{blender,udk}/*':
+            .dir: regex:(basics|advanced|essential) | regex:(04_modeling|05_blender_course)
+
+    '{cheatsheet,essential,guide/**/}':
+      .md: regex:index|\d{2}_([a-z_])*
+
+      # Overwrite md rule only for the flowchart folder
+      flowchart_questions:
+        .md: snakecase
+
+ignore:
+  - .git
+  - node_modules
+  - docs/.vitepress/cache
+  - docs/.vitepress/dist

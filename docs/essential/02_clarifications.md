@@ -1,9 +1,5 @@
 ---
 title: Clarifications
-tags:
-  - UDK 2013
-  - UDK 2015
-  - Unreal engine
 ---
 # Clarifications
 
@@ -19,7 +15,7 @@ UDK is for Unreal Engine 3. Unreal Engine 4 was first released in 2014, and it�
 
 ## File Extensions
 
-![alt text](/images/UDK/essential/clarification_extensions.png "Don't not not hide")
+![Windows settings menu for file explorer](/images/udk/essential/clarification_extensions.png "Don't not not hide")
 
 I highly recommend disabling the option to “Hide extensions for known file types” on Windows so that you actually know what files you are dealing with. **Search for File Explorer Options in the Start Menu. Go to the View tab. Uncheck “Hide extensions for known file types.”**
 

@@ -21,7 +21,7 @@ Let me repeat that:
 
 For example, every StaticMeshActor will start with "Accepts Dynamic Decals" unchecked and not in bold. Checking the box will make the text appear in bold. "Accepts Static Decals" is checked but not in bold.
 
-![alt text](/images/UDK/advanced/archetypes_defaultproperties.png "I accept")
+![Changed default properties](/images/udk/advanced/archetypes_defaultproperties.png "I accept")
 
 When this StaticMeshActor is loaded into the level, **any properties in bold will be applied.** In this case, the ball indicator circle will now appear on this object when the ball is above it. All other properties are inherited from the base **Object Archetype for all StaticMeshActors** which is packaged deep inside Rocket League.
 
@@ -33,7 +33,7 @@ Technically what we are doing when we add a dummy asset mesh to the level is pla
 
 There are, however, a number of very useful archetypes which offer properties that can be configured by us. Namely, `VehiclePickup_Boost_TA'Park_P.Archetypes.VehiclePickup.VehiclePickup_BoostPad'`. This is a preconfigured version of a `VehiclePickup_Boost_TA` class which is stored inside Park_P (Beckwith Park). **Place one into the map and open its Properties window.**
 
-![alt text](/images/UDK/advanced/archetypes_vehiclepickup.png "Sensible Nonsense")
+![Default boost properties](/images/udk/advanced/archetypes_vehiclepickup.png "Sensible Nonsense")
 
 This "Unknown Type" boost pickup should give you 0 boost and respawn instantly, right? Notice that those lines are not in bold. **These properties will be inherited from the preconfigured Boost Pad Archetype within Rocket League.** In other words, you don't need to change anything to have a perfectly configured boost pad. But, you are **able** to change the amount of boost given and the respawn time because Archetypes are **Configurable.** The section on [Boost](boost.md) will explain in much greater detail.
 

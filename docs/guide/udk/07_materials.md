@@ -1,5 +1,5 @@
 ---
-title: 'Materials'
+title: Materials
 ---
 # Materials
 
@@ -19,17 +19,20 @@ This will be explored in much more detail in the [Custom Materials section](cust
 
 To create a plain old solid color, you will follow most of the exact same steps as creating a full custom, textured material, just without the part where you use a custom texture.
 
-![alt text](/images/UDK/basics/image79.png)
-![alt text](/images/UDK/basics/image202.png "UDK shows its true colors")
+![Right click menu on the material in the content browser](/images/udk/basics/material_color_create_mic.png)
+
+---
+![Options menu for copying the MIC](/images/udk/basics/material_color_mic_options.png "UDK shows its true colors")
 
 **In the Content Browser, find the material called `LevelColorationLitMaterial` inside Engine > Content > EngineDebugMaterials. Right click it, and select “Create New Material Instance (Constant)...” In the popup window, type or select your map package. “Grouping” is a sub-package location for this object (not required, but can be useful). Give it an obvious and unique name, then click OK.**
 
 A Material is a model of all the ways that the surface of an object will interact with light. This includes color, shininess, transparency, subsurface scattering, anisotropy, and a whole list of other features. A Material Instance uses the same underlying material properties of its base, but allows you to modify certain exposed parameters (in this case, the color).  The Content Browser should jump to this newly created material, which is inside your own map package. Make sure that it’s where it should be.
 
-![alt text](/images/UDK/basics/image31.png "I’m blue da ba dee da ba daa")
-![alt text](/images/UDK/basics/image164.png)
+![MIC editor with the color option highlighted](/images/udk/basics/material_color_blue.png "I’m blue da ba dee da ba daa")
 
 **Double click the Material Instance, and you will bring up the Material Instance Editor. Find the Color parameter in the left panel. Change the color to your choice. Click the checkbox to overwrite the default color with what you have picked (i.e. to actually change the color).** The preview ball will change, as will any objects in your map that are already using this.
+
+![MIC of the blue color](/images/udk/basics/material_color_blue_copy.png)
 
 **To create a second material, right click the Material Instance and select “Create a Copy…” Follow the same steps to pick a different color.**
 
@@ -39,15 +42,22 @@ If you want to make a material that will always stay exactly the color you pick,
 
 We’re going to put a grass material on the ceiling, and a glass material on the floor. The walls will be something wild.
 
-![alt text](/images/UDK/basics/image108.png)
-![alt text](/images/UDK/basics/image169.png "Material possessions")
+![Content browser showing glass materials and MICs](/images/udk/basics/park_p_materials_glass.png)
+
+---
+![Static mesh with a glass material assigned](/images/udk/basics/park_p_material_glass_assign.png "Material possessions")
 
 In the [Content Browser](../../essential/content_browser.md), **search for “grass” within the [Park_P](../../essential/dummy_classes.md#park-p) package. It can also help to filter down to only Materials and Material Instances (Constant).** Remember to clear these filters when you need to search for something else. **Select `GrassAndBush_Mat`. Select the ceiling, and press F4 to bring up its properties. Search for “mater” and assign this to its first Materials slot using the green arrow.**
 
-:::tip Bibliothèque d'Alexandrie
+::::details Search for game materials
+
+To help you with searching through the large collection of materials in the Dummy assets, a few modders have made some tools to help with this search.
+
+:::info Bibliothèque d'Alexandrie
+
 The library allows you to see the map's content and find the name of what you want to get. You can then report the name into UDK to find the material you're looking for in the right package! You can find the library [here](../../resources/downloads.md#miscellaneous).
 
-*How to use*
+How to use this tool:
 
 It's the same process as testing a map. You can overwrite a map (e.g. Labs_Utopia_P) with a library file, start the game and go to freeplay on this map. \
 The library map is divided in 3 parts for now: The Particles on the left, the Materials in the middle and the Material Instances on the right. \
@@ -56,7 +66,10 @@ Then go back to UDK, fully load the map package you want and write the name in t
 
 *TIP:*
 Use Bakkes Mod to spot the materials specifically made for the different teams (some particles/materials don't work)
+
 :::
+
+::::
 
 This will appear as basically a solid color in the editor. We are unable to use fully custom materials in Rocket League, which means that you just have to deal with this for now.
 
@@ -66,6 +79,6 @@ Next, select the floor. **Assign it a material called `HexGlass_Mat`**.
 
 **Save the map and test it out!**
 
-![alt text](/images/UDK/basics/image95.jpg "It’s almost decent!")
+![CeilingGoal with materials in the game](/images/udk/basics/ceilinggoal_map_game_materials.jpg "It’s almost decent!")
 
-Well, it looks pretty good, but it needs a little je ne sais quoi. Let’s get to one of the most neglected aspects of map design: Lighting!
+Well, it looks pretty good, but it needs a little je ne sais quoi. Let’s get to one of the most neglected aspects of map design: [Lighting](./lighting)!

@@ -5,7 +5,7 @@ title: Assets
 
 With uModel you can view meshes and materials and export them so you can use them in your maps. To view all the hotkeys press `H`.
 
-!['uModel viewport of the scarab car'](/images/decryption/image222.png)
+!['uModel viewport of the scarab car'](/images/decryption/umodel_viewport.png)
 
 ## Start-up options
 

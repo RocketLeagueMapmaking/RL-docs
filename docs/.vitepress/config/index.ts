@@ -1,20 +1,21 @@
 import { defineConfigWithTheme } from 'vitepress'
 import { type ThemeConfig } from '@rocketleaguemapmaking/theme-rlmm'
 
+import { frontmatterKeys, homeFrontmatterKeys } from '../theme/data'
+
 import head from './head'
-import { buildEnd } from './hooks'
+import createHooks from './hooks'
 import nav from './navbar'
-import createRewrites from './rewrites'
 import sidebar from './sidebar'
+
+import createRewrites from './util/rewrites'
 
 const rewrites = createRewrites({
     base: 'docs/',
     regexp: /^(\d{2}_)/,
-    nestedFolders: [
-        { name: 'docs/guide/', prefix: 'guide/' },
-    ],
     folders: [
         'cheatsheet',
+        { name: 'guide', nested: true },
         'essential',
     ],
 })
@@ -24,9 +25,13 @@ export default defineConfigWithTheme<ThemeConfig>({
     description: 'Guides, Resources, Maps, and more for making custom maps',
     head,
 
+    sitemap: {
+        hostname: 'https://rocketleaguemapmaking.com',
+    },
     srcExclude: [
         '**/flowchart_questions/*.md',
     ],
+
     vite: {
         publicDir: '.vitepress/public',
     },
@@ -39,6 +44,8 @@ export default defineConfigWithTheme<ThemeConfig>({
     // Removes numbered prefixes from routes
     // Does not redirect prefixed routes in builds
     rewrites,
+    // Make sure this is always set to false to detect incorrect (internal) links!
+    ignoreDeadLinks: false,
 
     // Page features
     appearance: true,
@@ -48,7 +55,29 @@ export default defineConfigWithTheme<ThemeConfig>({
     },
 
     // Hooks
-    buildEnd,
+    ...createHooks({
+        frontmatterValidation: {
+            error: false,
+            required: [
+                {
+                    path: 'title',
+                    ignore: [
+                        '/essential/flowchart_questions/',
+                    ],
+                }
+            ],
+            using: [
+                { keys: frontmatterKeys },
+                { keys: homeFrontmatterKeys, valid: ['/'] },
+                { keys: ['teams'], valid: ['/more/about'] },
+                // Custom features
+                {
+                    keys: ['collision_types', 'next_actions'],
+                    valid: ['/guide/udk/04_map_test', '/guide/udk/06_owl'],
+                },
+            ],
+        }
+    }),
 
     // Theme configuration
     themeConfig: {

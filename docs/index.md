@@ -15,7 +15,14 @@ hero:
       text: UDK Guide
       link: /guide/udk/start
   steam:
-    title: <span>New</span> Steam workshop
+    title:
+      text: Steam workshop
+      title: Click to switch between created or updated maps
+      switchSortBy:
+        initial: created
+        prefix:
+          created: New
+          updated: Updated
     enabled: true
     amount: 4
 

@@ -1,5 +1,6 @@
 ---
 title: Kismet
+pageClass: page-inline-images
 ---
 # Kismet Overview
 
@@ -36,21 +37,21 @@ It is possible to [add kismet nodes](https://docs.unrealengine.com/udk/Three/Kis
 
 ## Kismet Editor Window <Badge text="important" type="tip"/>
 
-![alt text](/images/kismet/guide/image18.png "Nice and simple")
+![The kismet interface on the main sequence (empty)](/images/kismet/ui_overview.png "Nice and simple")
 
 1 - Toolbar - Various useful-ish functions, all in one place:
 
-* ![alt text](/images/kismet/guide/image87.png) Go back to the previous sequence
-* ![alt text](/images/kismet/guide/image242.png) Go forward to the returned-from sequence
-* ![alt text](/images/kismet/guide/image154.png) Go up one sequence level
-* ![alt text](/images/kismet/guide/image62.png) Rename the current sequence
-* ![alt text](/images/kismet/guide/image188.png) Zoom to selected (`A`)
-* ![alt text](/images/kismet/guide/image208.png) Hide node’s unused connectors (also in a node’s right click menu)
-* ![alt text](/images/kismet/guide/image19.png) Reveal all of node’s connectors (also in a node’s right click menu)
-* ![alt text](/images/kismet/guide/image17.png) Search for nodes to place
-* ![alt text](/images/kismet/guide/image36.png) Search for nodes already in editor
-* ![alt text](/images/kismet/guide/image182.png) Update the list of nodes
-* ![alt text](/images/kismet/guide/image249.png) Open a second Kismet window
+* ![](/images/kismet/icon_back.png) Go back to the previous sequence
+* ![](/images/kismet/icon_forward.png) Go forward to the returned-from sequence
+* ![](/images/kismet/icon_up.png) Go up one sequence level
+* ![](/images/kismet/icon_rename.png) Rename the current sequence
+* ![](/images/kismet/icon_zoom_selected.png) Zoom to selected (`A`)
+* ![](/images/kismet/icon_hide_unused.png) Hide node’s unused connectors (also in a node’s right click menu)
+* ![](/images/kismet/icon_reveal_all.png) Reveal all of node’s connectors (also in a node’s right click menu)
+* ![](/images/kismet/icon_search_add.png) Search for nodes to place
+* ![](/images/kismet/icon_search_sequence.png) Search for nodes already in editor
+* ![](/images/kismet/icon_update.png) Update the list of nodes
+* ![](/images/kismet/icon_new_window.png) Open a second Kismet window
 
 2 - Node Editor - Place, move, and interconnect nodes
 
@@ -132,3 +133,6 @@ There are a few key nodes to keep in mind when working with Sequences, as they e
 | Event > Remote Event                   | Activating a Sequence when that event is triggered |
 
 [udk-docs:named-vars]: https://docs.unrealengine.com/udk/Three/KismetUserGuide.html#Named%20Variables
+
+<!-- Alt not required for icons: -->
+<!-- markdownlint-disable-file MD045 -->
