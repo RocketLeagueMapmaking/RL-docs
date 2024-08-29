@@ -11,6 +11,7 @@ import {
     createTeamPageField,
     createThemeHomePageFields,
 } from './fields'
+
 import { createFolderOptions } from './options'
 
 export const getCollectionItemEditLink = (page: Pick<PageData, 'filePath' | 'frontmatter'>) => {
@@ -64,11 +65,7 @@ export default function (): DecapCmsCollection[] {
                 'docs/more/about.md',
                 {
                     overwrites: {
-                        body: { hidden: true },
-                        description: { hidden: true },
-                        head: { hidden: true },
-                        title: { hidden: true },
-                        titleTemplate: { hidden: true },
+                        hidden: true,
                     },
                     additionalFields: [
                         createTeamPageField(),
@@ -80,11 +77,7 @@ export default function (): DecapCmsCollection[] {
                 'docs/.vitepress/config/data/config.json',
                 {
                     overwrites: {
-                        body: { deleted: true },
-                        description: { deleted: true },
-                        head: { deleted: true },
-                        title: { deleted: true },
-                        titleTemplate: { deleted: true },
+                        deleted: true,
                     },
                     additionalFields: createSiteConfigFields(),
                 }

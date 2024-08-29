@@ -6,14 +6,19 @@ import {
     type FrontmatterValidationConfig,
 } from './util/frontmatter'
 
+import {
+    GITHUB_DEFAULT_BRANCH,
+    GITHUB_REPOSITORY,
+} from './shared'
+
 /**
  * Only runs in the test workflow on the docs repo and on the master branch
  */
 function isGitHubAction () {
     return process.env.GITHUB_ACTIONS != undefined
         && typeof process.env.BUILD_NOTIFICATION_URL === 'string'
-        && process.env.GITHUB_REF === 'refs/heads/master'
-        && process.env.GITHUB_REPOSITORY?.toLowerCase() === 'rocketleaguemapmaking/rl-docs'
+        && process.env.GITHUB_REF === `refs/heads/${GITHUB_DEFAULT_BRANCH}`
+        && process.env.GITHUB_REPOSITORY?.toLowerCase() === GITHUB_REPOSITORY
 }
 
 async function sendBuildNotification (siteConfig: SiteConfig<ThemeConfig>): Promise<void> {

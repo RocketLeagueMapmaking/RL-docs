@@ -3,10 +3,7 @@ import { type ThemeConfig } from '@rocketleaguemapmaking/theme-rlmm'
 
 import { frontmatterKeys, homeFrontmatterKeys } from '../theme/data'
 
-import cms, {
-    getCollectionItemEditLink,
-    vitepressEditLinkPlugin,
-} from './cms/'
+import { getCollectionItemEditLink } from './cms/'
 import head from './head'
 import createHooks from './hooks'
 import nav from './navbar'
@@ -14,7 +11,9 @@ import sidebar from './sidebar'
 import {
     DISCORD_INVITE,
     WEBSITE_LOGO_PATH,
+    WEBSITE_URL,
 } from './shared'
+import vite from './vite'
 
 import config from './data/config.json'
 
@@ -36,19 +35,13 @@ export default defineConfigWithTheme<ThemeConfig>({
     head,
 
     sitemap: {
-        hostname: 'https://rocketleaguemapmaking.com',
+        hostname: WEBSITE_URL,
     },
     srcExclude: [
         '**/flowchart_questions/*.md',
     ],
 
-    vite: {
-        publicDir: '.vitepress/public',
-        plugins: [
-            cms,
-            vitepressEditLinkPlugin,
-        ],
-    },
+    vite,
 
     // Routing
     // Enable rewrites and cleanUrls to have: /guide/udk/00_start.html -> /guide/udk/start
@@ -71,7 +64,6 @@ export default defineConfigWithTheme<ThemeConfig>({
     // Hooks
     ...createHooks({
         frontmatterValidation: {
-            error: false,
             required: [
                 {
                     path: 'title',

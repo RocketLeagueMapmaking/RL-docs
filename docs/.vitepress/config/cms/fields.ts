@@ -1,7 +1,7 @@
 import { createField, VitePress } from 'vite-plugin-decap-cms'
 
-export const createThemeHomePageFields = () => <[]>VitePress.createHomePageFields({
-    additionalHeroFields: <never[]>[
+export const createThemeHomePageFields = () => VitePress.createHomePageFields({
+    additionalHeroFields: [
         createField('object', {
             name: 'steam',
             label: 'Steam maps',
@@ -25,7 +25,7 @@ export const createThemeHomePageFields = () => <[]>VitePress.createHomePageField
             ]
         })
     ],
-}).concat(<never[]>[
+}).concat([
     createField('list', {
         name: 'resources',
         label: 'Resources',
@@ -277,7 +277,7 @@ export const createTeamPageField = () => createField('list', {
     ]
 })
 
-export const createSiteConfigFields = () => <never[]>[
+export const createSiteConfigFields = () => [
     createField('string', {
         name: 'title',
         label: 'Site title',
