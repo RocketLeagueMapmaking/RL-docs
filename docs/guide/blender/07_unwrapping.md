@@ -22,8 +22,8 @@ As you can tell, this doesn’t exactly look great. You can scale the UV Map in 
 
 **Luckily, there are a few ways to do better with the UV map.**
 
-![alt text](/images/blender/basics/uv_map_sphere_projection.png "Almost like they’re aware of how hard this can be")
-![alt text](/images/blender/basics/uv_sphere_projection_render.png)
+![The Sphere projection option highlighted in the menu](/images/blender/basics/uv_map_sphere_projection.png "Almost like they’re aware of how hard this can be")
+![Sphere rendered with an improved UV mapped texture](/images/blender/basics/uv_sphere_projection_render.png)
 
 First, notice that there is a `Sphere Projection` option in the UV Mapping menu. This will automatically create a rather good UV map. It can be improved by scaling it both larger and wider. However, the north and south poles look wacky. If you don’t care about those, then you’re done. Otherwise, the best solution is whatever makes the most sense to you. You could re-unwrap just those faces, obscure those faces with geometry (e.g. the default Rocket League ball with its blinking lights), or accept them as a minor detail that will be weird.
 

@@ -62,7 +62,7 @@ For ease of use, I copy this script into the folder of each of my in-progress ma
 
 When you run UDK Editor, you will be faced with a welcome splash screen and a few options.
 
-![alt text](/images/udk/essential/ui_map_template.png "A nice day to be a cube on a platform in an infinite void")
+![UDK welcome and template screens](/images/udk/essential/ui_map_template.png "A nice day to be a cube on a platform in an infinite void")
 
 If you want to have an animated skysphere around your world, use one of the Lighting templates. If you just want an entirely clean slate, go with the Blank Map option.
 

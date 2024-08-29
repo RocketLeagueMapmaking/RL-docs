@@ -4,7 +4,7 @@ title: Essentials
 
 # Mapmaking Essentials
 
-![alt text](/images/udk/essential/dangerous.png "Also dangerous to take this")
+![Introduction image](/images/udk/essential/dangerous.png "Also dangerous to take this")
 
 ## Getting Started
 
