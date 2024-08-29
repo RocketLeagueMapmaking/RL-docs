@@ -1,7 +1,9 @@
 import type { HeadConfig } from 'vitepress'
 
 import { getCollectionItemEditLink } from './cms'
-import { WEBSITE_LOGO_PATH } from './shared'
+import { WEBSITE_LOGO_PATH, WEBSITE_URL } from './shared'
+
+import config from './data/config.json'
 
 export default <HeadConfig[]>[
     ['meta',
@@ -57,19 +59,19 @@ export default <HeadConfig[]>[
     ['meta',
         {
             property: 'og:url',
-            content: 'https://rocketleaguemapmaking.com/',
+            content: WEBSITE_URL,
         }
     ],
     ['meta',
         {
             property: 'og:title',
-            content: 'RLMM',
+            content: config.title,
         }
     ],
     ['meta',
         {
             property: 'og:description',
-            content: '',
+            content: config.description,
         }
     ],
     // TODO: create a preview image
