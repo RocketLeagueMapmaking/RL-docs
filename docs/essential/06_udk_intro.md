@@ -1,9 +1,6 @@
 ---
 title: UDK Introduction
-tags:
-  - UDK
-  - starting
-  - hello
+outline: 3
 ---
 # UDK Basics
 

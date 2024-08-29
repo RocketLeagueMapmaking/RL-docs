@@ -1,8 +1,5 @@
 ---
-title: 'References'
-tags:
-  - reference
-  - references
+title: References
 ---
 
 # Guide

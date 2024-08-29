@@ -1,11 +1,10 @@
 ---
-title: 'Introduction'
-tags:
-  - flowchart
-  - structure
+title: Introduction
 ---
 
 # The Big Picture
+
+## Flowchart
 
 It can be hard to know where to start, so here is a flowchart to help you pick the right path. **Most of this guide will build on itself, so if you are new to this you should not skip too much.**
 
@@ -78,11 +77,11 @@ Each answer contains useful links and relevant information.
 
 ### Getting Ready <Badge text="important" type="tip"/>
 
-![alt text](/images/UDK/essential/image66.png "This will have clickable links someday")
+![Flowchart with important topics when making a map](/images/udk/essential/flowchart_part1.png "This will have clickable links someday")
 
 ### Getting Down to Business <Badge text="important" type="tip"/>
 
-![alt text](/images/UDK/essential/image73.png "This will also have clickable links someday")
+![Flowchart of map making topics to look into](/images/udk/essential/flowchart_part2.png "This will also have clickable links someday")
 :::
 
 ## Getting Set Up <Badge text="important" type="tip"/>

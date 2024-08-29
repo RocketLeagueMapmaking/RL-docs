@@ -20,18 +20,33 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       docker_digest: ${{ steps.docker.outputs.digest }}
+    strategy:
+      matrix:
+        # Set the same version as in Dockerfile
+        node: [18]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install node.js v18
+      - name: Install node.js v${{ matrix.node }}
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: ${{ matrix.node }}
           cache: npm
 
       - name: Install dependencies
         run: npm ci
+
+        # Run lint and build first to make sure the site will still build
+        # since workflow dispatch can be run on failed builds
+      - name: Run eslint
+        run: npm run lint
+
+      - name: Run markdown lint
+        run: npm run lint-markdown
+
+      - name: Run file lint
+        run: npm run lint-files
 
       - name: Check guide build
         run: npm run docs:build
@@ -72,7 +87,7 @@ jobs:
           script: |
             cd ${{ vars.SSH_PROJECT_ROOT }}
             sh deployment/update_and_deploy.sh ${{ github.event.inputs.version }}
-            cd ..
+            cd ${{ vars.SSH_PROJECT_DUMMY_SCRIPT_ROOT }}
             sh move_dummyassets.sh
 
       - name: Send webhook result

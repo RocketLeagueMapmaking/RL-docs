@@ -30,7 +30,7 @@ Almost every file that starts with: `SeqAct_` (action), `SeqCon_` (condition), `
 
 When you have added a new class or changed an existing node, you have to recompile it before UDK can recognize it. This can be done by using Unreal Frontend, in the menu click `script` > `Full recompile`, or by starting UDK with the `make -full` arguments. If you see at the bottom of the logs `COMMANDLET 'UDK.exe make -full' SUCCEEDED`, the recompile was successful and you can open UDK.
 
-!['example of recompile errors in Unreal Frontend'](/images/decryption/recompile.png "Task failed succesfully!")
+!['example of recompile errors in Unreal Frontend'](/images/decryption/recompile_logs.png "Task failed succesfully!")
 
 ## Compile issues
 

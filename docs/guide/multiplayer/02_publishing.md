@@ -33,7 +33,7 @@ First, you should prepare a separate folder for Workshop uploads. This way you c
 It’s best to keep this outside of the UDK project folder so that you don’t get duplicate package warnings when you start UDK.
 :::
 
-![alt text](/images/multiplayer/image214.png "Nobody ever complains that their computer is too well organized")
+![Example of files needed to upload: .vdf, .udk and preview.jpg files](/images/multiplayer/upload_folder_example.png "Nobody ever complains that their computer is too well organized")
 
 **Copy and paste the .udk file into this new folder. Two files will need to accompany the .udk upload:**
 

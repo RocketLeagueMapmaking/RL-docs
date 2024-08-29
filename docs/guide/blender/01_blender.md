@@ -10,13 +10,16 @@ Blender is a wonderful program, though it is also an extremely complicated one. 
 
 There are some great resources out on the world wide web, and some extremely dedicated YouTubers and communities.
 
-:::tip Here’s a list of places you can go for help:
+:::tip
+
+Here’s a list of places you can go for help:
 
 * [Blender Subreddit](https://www.reddit.com/r/blender/)
 * [Blender Stack Exchange](https://blender.stackexchange.com/)
 * [Blender Artists](https://blenderartists.org/)
 * [Blender Guru (YouTube channel)](https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g)
 * [CG Cookie (YouTube channel)](https://www.youtube.com/channel/UC9VayT7q3pQ7tdF-TG4Q0yQ)
+
 :::
 
 And of course, I and others would be happy to help you out in Discord.
