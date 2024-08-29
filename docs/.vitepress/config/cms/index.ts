@@ -1,3 +1,4 @@
+import { type Plugin } from 'vitepress'
 import decap from 'vite-plugin-decap-cms'
 
 import {
@@ -8,10 +9,28 @@ import {
     WEBSITE_URL,
 } from '../shared'
 
-import createCollections from './collections'
+import createCollections, { getCollectionItemEditLink } from './collections'
 import { mediaFolder, publicFolder } from './options'
 
-export { getCollectionItemEditLink } from './collections'
+export {
+    getCollectionItemEditLink,
+}
+
+/**
+ * Makes the 'Edit this page' feature have a target attribute.
+ * 
+ * This is needed to link to non-VitePress pages, such as the CMS.
+ */
+export const vitepressEditLinkPlugin: Plugin = {
+    name: 'make-edit-link-external',
+    enforce: 'pre',
+    transform: (code, id) => {
+        if (id.endsWith('VPDocFooter.vue')) {
+            const link = '<VPLink class="edit-link-button"'
+            return code.replace(link, link + ' target="_self"')
+        }
+    },
+}
 
 export default decap({
     login: {
