@@ -70,6 +70,11 @@ export default defineConfigWithTheme<ThemeConfig>({
                 { keys: frontmatterKeys },
                 { keys: homeFrontmatterKeys, valid: ['/'] },
                 { keys: ['teams'], valid: ['/more/about'] },
+                // Custom features
+                {
+                    keys: ['collision_types', 'next_actions'],
+                    valid: ['/guide/udk/04_map_test', '/guide/udk/06_owl'],
+                },
             ],
         }
     }),
