@@ -8,6 +8,7 @@ import {
     WEBSITE_URL,
 } from '../shared'
 
+import { customContainerBlock } from './blocks'
 import createCollections, { getCollectionItemEditLink } from './collections'
 import { mediaFolder, publicFolder } from './options'
 
@@ -20,6 +21,11 @@ export default decap({
         title: 'Content Manager | RLMM',
     },
     debug: true,
+    script: {
+        markdownEditorComponents: [
+            customContainerBlock,
+        ],
+    },
     config: {
         backend: {
             local: 'dev',
