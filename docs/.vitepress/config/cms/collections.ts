@@ -42,6 +42,7 @@ export default function (): DecapCmsCollection[] {
                 overwrites: {
                     titleTemplate: { hidden: true },
                     head: { hidden: true },
+                    body: { required: false },
                 },
                 additionalFields: createThemeHomePageFields(),
             },
