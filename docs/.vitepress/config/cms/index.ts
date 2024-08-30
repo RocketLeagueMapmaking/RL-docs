@@ -2,7 +2,7 @@ import decap from 'vite-plugin-decap-cms'
 
 import {
     CLOUDFLARE_WORKER,
-    GITHUB_DEFAULT_BRANCH,
+    GITHUB_CMS_BRANCH,
     GITHUB_REPOSITORY,
     WEBSITE_LOGO_PATH,
     WEBSITE_URL,
@@ -19,13 +19,14 @@ export default decap({
     login: {
         title: 'Content Manager | RLMM',
     },
+    debug: true,
     config: {
         backend: {
             local: 'dev',
             name: 'github',
 
             repo: GITHUB_REPOSITORY,
-            branch: GITHUB_DEFAULT_BRANCH,
+            branch: GITHUB_CMS_BRANCH,
             cmsLabelPrefix: 'cms/',
 
             squashMerges: true,

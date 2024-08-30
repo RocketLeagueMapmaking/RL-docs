@@ -1,8 +1,5 @@
 import { type PageData } from 'vitepress'
-import {
-    VitePress,
-    type DecapCmsCollection,
-} from 'vite-plugin-decap-cms'
+import { type DecapCmsCollection } from 'vite-plugin-decap-cms'
 
 import sidebar, { type Sidebar } from '../sidebar'
 
@@ -12,7 +9,11 @@ import {
     createThemeHomePageFields,
 } from './fields'
 
-import { createFolderOptions } from './options'
+import {
+    createAdvancedCollections,
+    createFileCollection,
+    createFolderCollection,
+} from './options'
 
 export const getCollectionItemEditLink = (page: Pick<PageData, 'filePath' | 'frontmatter'>) => {
     const parts = page.filePath.slice(0, -'.md'.length).split('/')
@@ -21,69 +22,41 @@ export const getCollectionItemEditLink = (page: Pick<PageData, 'filePath' | 'fro
     return `/admin/index.html#/edit/${collectionName}/${entryName}`
 }
 
-function getCollectionName (path: string, frontmatter: PageData['frontmatter']) {
-    return path.replace(/\//g, ' ').trim().split(' ').at(-1)! + (frontmatter.advanced ? '_advanced' : '')
-}
-
-function createAdvancedCollections (
-    // eslint-disable-next-line no-unused-vars
-    fn: (type: 'basics' | 'advanced') => Parameters<typeof VitePress['createDefaultPageFolderCollection']>
-): DecapCmsCollection<'folder'>[] {
-    /**
-    * Set false first in the array to have the UI in order:
-    * - {collection}
-    * - {collection} advaned
-    */
-    const options = [false, true]
-
-    return options.reduce<DecapCmsCollection<'folder'>[]>((collection, advanced) => {
-        const type = advanced ? 'advanced' : 'basics'
-
-        return collection.concat(VitePress.createDefaultPageFolderCollection(...fn(type)))
-    }, [])
-}
-
 export default function (): DecapCmsCollection[] {
     const sidebarItems = Object.values(<Sidebar>sidebar)
 
     return [
-        VitePress.createDefaultPageFileCollection('Special pages', [
-            [
-                'Home page',
-                'docs/index.md',
-                {
-                    ...createFolderOptions('Special', {
-                        description: '',
-                        mediaFolder: '',
-                    }),
-                    collection: {},
-                    additionalFields: createThemeHomePageFields(),
-                }
-            ],
-            [
-                'About: teams & special thanks',
-                'docs/more/about.md',
-                {
-                    overwrites: {
-                        hidden: true,
-                    },
-                    additionalFields: [
-                        createTeamPageField(),
-                    ]
-                }
-            ],
-            [
-                'Site configuration',
-                'docs/.vitepress/config/data/config.json',
-                {
-                    overwrites: {
-                        deleted: true,
-                    },
-                    additionalFields: createSiteConfigFields(),
-                }
-            ],
+        createFileCollection('Special pages', [
+            {
+                name: 'Site configuration',
+                file: 'docs/.vitepress/config/data/config.json',
+                overwrites: {
+                    deleted: true,
+                },
+                additionalFields: createSiteConfigFields(),
+            },
+            {
+                name: 'Home page',
+                file: 'docs/index.md',
+                overwrites: {
+                    titleTemplate: { hidden: true },
+                    head: { hidden: true },
+                },
+                additionalFields: createThemeHomePageFields(),
+            },
+            {
+                name: 'About: teams & special thanks',
+                file: 'docs/more/about.md',
+                overwrites: {
+                    hidden: true,
+                },
+                additionalFields: [
+                    createTeamPageField(),
+                ]
+            },
         ], {
             collection: {
+                create: false,
                 delete: false,
                 publish: false,
             },
@@ -96,49 +69,41 @@ export default function (): DecapCmsCollection[] {
                     const dirname = item.base!.replace('/guide/', '').slice(0, -1)
 
                     if (dirname === 'udk') {
-                        return createAdvancedCollections((type) => [
-                            getCollectionName(dirname, { advanced: type === 'advanced' }),
-                            'docs' + item.base,
-                            createFolderOptions(meta.text! + ': Editor' + (type === 'advanced' ? ' advanced' : ''), {
-                                mediaFolder: dirname + '/',
-                                description: item.text! + ' ' + type + ' guide pages',
-                                advancedFilter: type === 'advanced',
-                            }),
-                        ])
+                        return createAdvancedCollections((type) => ({
+                            base: item.base!,
+                            name: dirname,
+                            mediaFolder: dirname + '/',
+                            label: meta.text! + ': Editor' + (type === 'advanced' ? ' advanced' : ''),
+                            description: item.text! + ' ' + type + ' guide pages',
+                        }))
                     }
 
-                    return VitePress.createDefaultPageFolderCollection(
-                        dirname,
-                        'docs' + item.base,
-                        createFolderOptions(meta.text! + ': ' + item.text!, {
-                            mediaFolder: dirname + '/',
-                            description: item.text! + ' guide pages',
-                        })
-                    )
+                    return createFolderCollection({
+                        base: item.base!,
+                        name: dirname,
+                        label: meta.text! + ': ' + item.text!,
+                        description: item.text! + ' guide pages',
+                        mediaFolder: dirname + '/',
+                    })
                 })
             }),
 
-        ...createAdvancedCollections((type) => [
-            getCollectionName('blender', { advanced: type === 'advanced' }),
-            'docs/guide/blender/',
-            createFolderOptions('Blender' + (type === 'advanced' ? ': advanced' : ''), {
-                mediaFolder: `blender/${type}/`,
-                description: `Blender ${type} guide pages`,
-                text: 'Blender',
-                advancedFilter: type === 'advanced',
-            })
-        ]),
+        ...createAdvancedCollections((type) => ({
+            base: '/guide/blender/',
+            name: 'blender',
+            mediaFolder: `blender/${type}/`,
+            label: 'Blender' + (type === 'advanced' ? ': advanced' : ''),
+            description: `Blender ${type} guide pages`,
+        })),
 
         ...sidebarItems
             .filter(({ base }) => !base.startsWith('/guide/'))
             .flatMap(({ items, base, meta: config }) => {
-                const label = config.text ?? items[0].text!
-
-                return VitePress.createDefaultPageFolderCollection(
-                    getCollectionName(base, {}),
-                    'docs' + base,
-                    createFolderOptions(label, config)
-                )
+                return createFolderCollection({
+                    base,
+                    label: config.text ?? items[0].text!,
+                    mediaFolder: '',
+                })
             }),
     ]
 }

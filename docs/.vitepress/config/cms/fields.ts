@@ -1,5 +1,77 @@
 import { createField, VitePress } from 'vite-plugin-decap-cms'
 
+export const advancedField = createField('boolean', {
+    name: 'advanced',
+    label: 'Advanced guide',
+    hint: 'This page is an advanced guide',
+    required: true,
+})
+
+const createFeatureFields = () => [
+    createField('string', {
+        name: 'title',
+        required: true
+    }),
+    createField('string', {
+        name: 'details',
+        required: false
+    }),
+    createField('string', {
+        name: 'icon',
+        required: false
+    }),
+    createField('string', {
+        name: 'link',
+        required: false
+    }),
+    createField('string', {
+        name: 'linkText',
+        label: 'Link text',
+        required: false
+    }),
+    createField('string', {
+        name: 'target',
+        label: 'Target',
+        required: false
+    }),
+    createField('string', {
+        name: 'rel',
+        label: 'Relation',
+        required: false
+    }),
+]
+
+const createSocialLinkFields = () => [
+    createField('string', {
+        name: 'link',
+        label: 'Link',
+        required: true,
+    }),
+    createField('select', {
+        name: 'icon',
+        label: 'Icon',
+        required: true,
+        options: [
+            'discord',
+            'facebook',
+            'github',
+            'instagram',
+            'linkedin',
+            'mastodon',
+            'npm',
+            'slack',
+            'twitter',
+            'x',
+            'youtube',
+        ],
+    }),
+    createField('string', {
+        name: 'ariaLabel',
+        label: 'Aria label',
+        required: false,
+    }),
+]
+
 export const createThemeHomePageFields = () => VitePress.createHomePageFields({
     additionalHeroFields: [
         createField('object', {
@@ -32,38 +104,7 @@ export const createThemeHomePageFields = () => VitePress.createHomePageFields({
         label_singular: 'resource',
         allow_add: true,
         required: false,
-        fields: [
-            createField('string', {
-                name: 'title',
-                required: true
-            }),
-            createField('string', {
-                name: 'details',
-                required: false
-            }),
-            createField('string', {
-                name: 'icon',
-                required: false
-            }),
-            createField('string', {
-                name: 'link',
-                required: false
-            }),
-            createField('string', {
-                name: 'linkText',
-                label: 'Link text',
-                required: false
-            }),
-            createField('string', {
-                name: 'target',
-                label: 'Target',
-                required: false
-            }),
-            createField('string', {
-                name: 'rel',
-                required: false
-            }),
-        ]
+        fields: createFeatureFields(),
     }),
     createField('object', {
         name: 'events',
@@ -241,36 +282,7 @@ export const createTeamPageField = () => createField('list', {
                     label_singular: 'link',
                     required: false,
                     allow_add: true,
-                    fields: [
-                        createField('string', {
-                            name: 'link',
-                            label: 'Link',
-                            required: true,
-                        }),
-                        createField('select', {
-                            name: 'icon',
-                            label: 'Icon',
-                            required: true,
-                            options: [
-                                'discord',
-                                'facebook',
-                                'github',
-                                'instagram',
-                                'linkedin',
-                                'mastodon',
-                                'npm',
-                                'slack',
-                                'twitter',
-                                'x',
-                                'youtube',
-                            ],
-                        }),
-                        createField('string', {
-                            name: 'ariaLabel',
-                            label: 'Aria label',
-                            required: false,
-                        }),
-                    ]
+                    fields: createSocialLinkFields(),
                 }),
             ]
         })
