@@ -5,6 +5,7 @@ import {
     type CollectionType,
     type DecapCmsCollection,
     type SharedDecapCmsCollection,
+    type VitePressAdditionalField,
 } from 'vite-plugin-decap-cms'
 
 import { advancedField } from './fields'
@@ -31,6 +32,8 @@ function getCollectionName (path: string, frontmatter: PageData['frontmatter']) 
 
 type FolderData = Record<'base' | 'label' | 'mediaFolder', string>
     & { description?: string, name?: string }
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    & { filter?: { field: string, value: any } }
 
 export function createFileCollection (
     name: string,
@@ -47,7 +50,7 @@ export function createFileCollection (
     )
 }
 
-export function createFolderCollection (data: FolderData, advanced?: boolean) {
+export function createFolderCollection (data: FolderData, fields?: VitePressAdditionalField[]) {
     return VitePress.createDefaultPageFolderCollection(
         data.name ?? getCollectionName(data.base, {}),
         'docs' + data.base,
@@ -65,12 +68,10 @@ export function createFolderCollection (data: FolderData, advanced?: boolean) {
                 description: data.description,
                 mediaFolder: data.mediaFolder,
                 publicFolder: data.mediaFolder,
-                filter: advanced != undefined
-                    ? { field: 'advanced', value: advanced, }
-                    : undefined,
+                filter: data.filter,
             } as SharedDecapCmsCollection<CollectionType>),
             additionalFields: [
-                ...(advanced != undefined ? [advancedField] : []),
+                ...(fields ?? []),
             ]
         }
     )
@@ -78,7 +79,7 @@ export function createFolderCollection (data: FolderData, advanced?: boolean) {
 
 export function createAdvancedCollections (
     // eslint-disable-next-line no-unused-vars
-    fn: (type: 'basics' | 'advanced') => Required<FolderData>
+    fn: (type: 'basics' | 'advanced') => Omit<Required<FolderData>, 'filter'>
 ): DecapCmsCollection<'folder'>[] {
     /**
     * Set false first in the array to have the UI in order:
@@ -97,7 +98,10 @@ export function createAdvancedCollections (
             label: data.label,
             mediaFolder: data.mediaFolder,
             description: data.description,
-        }, type === 'advanced')
+            filter: advanced != undefined
+                ? { field: 'advanced', value: advanced, }
+                : undefined,
+        }, advanced != undefined ? [advancedField] : [])
 
         return collections.concat(collection)
     }, [])
