@@ -97,10 +97,60 @@ export const createThemeHomePageFields = () => VitePress.createHomePageFields({
                     label: 'Amount of maps',
                     required: true,
                 }),
-                createField('string', {
+                createField('object', {
                     name: 'title',
                     label: 'Title',
                     required: true,
+                    fields: [
+                        createField('string', {
+                            name: 'text',
+                            label: 'Text',
+                            required: true,
+                        }),
+                        createField('string', {
+                            name: 'title',
+                            label: 'Title',
+                            required: false,
+                        }),
+                        createField('object', {
+                            name: 'switchSortBy',
+                            label: 'Switch sort by',
+                            required: false,
+                            fields: [
+                                createField('boolean', {
+                                    name: 'enabled',
+                                    label: 'Enabled',
+                                    required: false,
+                                }),
+                                createField('select', {
+                                    name: 'initial',
+                                    label: 'Initial mode',
+                                    required: true,
+                                    options: [
+                                        'created',
+                                        'updated',
+                                    ],
+                                }),
+                                createField('object', {
+                                    name: 'prefix',
+                                    label: 'Mode prefix',
+                                    required: true,
+                                    fields: [
+                                        createField('string', {
+                                            name: 'created',
+                                            label: 'Created',
+                                            required: true,
+                                        }),
+                                        createField('string', {
+                                            name: 'updated',
+                                            label: 'Updated',
+                                            required: true,
+                                        }),
+                                    ]
+                                }),
+                            ]
+                        }),
+                    ]
                 }),
             ]
         })
