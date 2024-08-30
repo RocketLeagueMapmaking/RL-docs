@@ -42,11 +42,6 @@ const createFeatureFields = () => [
 ]
 
 const createSocialLinkFields = () => [
-    createField('string', {
-        name: 'link',
-        label: 'Link',
-        required: true,
-    }),
     createField('select', {
         name: 'icon',
         label: 'Icon',
@@ -66,11 +61,24 @@ const createSocialLinkFields = () => [
         ],
     }),
     createField('string', {
+        name: 'link',
+        label: 'Link',
+        required: true,
+    }),
+    createField('string', {
         name: 'ariaLabel',
         label: 'Aria label',
         required: false,
     }),
 ]
+
+export const createPageFeature = (data: Record<'name' | 'label' | 'label_singular', string>) => createField('list', {
+    name: data.name,
+    label: data.label,
+    label_singular: data.label_singular,
+    allow_add: true,
+    fields: createFeatureFields(),
+})
 
 export const createThemeHomePageFields = () => VitePress.createHomePageFields({
     additionalHeroFields: [
@@ -315,6 +323,19 @@ export const createSiteConfigFields = () => [
                 label: 'Message',
                 required: true,
             }),
+            createField('string', {
+                name: 'copyright',
+                label: 'Copyright',
+                required: true,
+            }),
         ],
+    }),
+    createField('list', {
+        name: 'socialLinks',
+        allow_add: true,
+        label: 'Social links',
+        label_singular: 'link',
+        hint: 'The icons with links in the navbar',
+        fields: createSocialLinkFields(),
     }),
 ]

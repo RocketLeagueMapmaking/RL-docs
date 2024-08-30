@@ -4,6 +4,7 @@ import { type DecapCmsCollection } from 'vite-plugin-decap-cms'
 import sidebar, { type Sidebar } from '../sidebar'
 
 import {
+    createPageFeature,
     createSiteConfigFields,
     createTeamPageField,
     createThemeHomePageFields,
@@ -44,6 +45,14 @@ export default function (): DecapCmsCollection[] {
                 },
                 additionalFields: createThemeHomePageFields(),
             },
+        ], {
+            collection: {
+                create: false,
+                delete: false,
+                publish: false,
+            },
+        }),
+        createFileCollection('Special keys', [
             {
                 name: 'About: teams & special thanks',
                 file: 'docs/more/about.md',
@@ -53,6 +62,34 @@ export default function (): DecapCmsCollection[] {
                 additionalFields: [
                     createTeamPageField(),
                 ]
+            },
+            {
+                name: 'Features: map test - collision types',
+                file: 'docs/guide/udk/04_map_test.md',
+                overwrites: {
+                    hidden: true,
+                },
+                additionalFields: [
+                    createPageFeature({
+                        name: 'collision_types',
+                        label: 'Collision types',
+                        label_singular: 'type',
+                    }),
+                ],
+            },
+            {
+                name: 'Features: building - next actions',
+                file: 'docs/guide/udk/06_owl.md',
+                overwrites: {
+                    hidden: true,
+                },
+                additionalFields: [
+                    createPageFeature({
+                        name: 'next_actions',
+                        label: 'Next actions',
+                        label_singular: 'action',
+                    }),
+                ],
             },
         ], {
             collection: {

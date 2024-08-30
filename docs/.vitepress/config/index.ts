@@ -1,4 +1,4 @@
-import { defineConfigWithTheme } from 'vitepress'
+import { defineConfigWithTheme, type DefaultTheme } from 'vitepress'
 import { type ThemeConfig } from '@rocketleaguemapmaking/theme-rlmm'
 
 import { frontmatterKeys, homeFrontmatterKeys } from '../theme/data'
@@ -9,7 +9,6 @@ import createHooks from './hooks'
 import nav from './navbar'
 import sidebar from './sidebar'
 import {
-    DISCORD_INVITE,
     WEBSITE_LOGO_PATH,
     WEBSITE_URL,
 } from './shared'
@@ -94,10 +93,7 @@ export default defineConfigWithTheme<ThemeConfig>({
             src: WEBSITE_LOGO_PATH,
         },
 
-        footer: {
-            copyright: `2020 - ${new Date().getFullYear()}`,
-            message: config.footer.message,
-        },
+        footer: config.footer,
 
         // Links
         externalLinkIcon: true,
@@ -106,9 +102,7 @@ export default defineConfigWithTheme<ThemeConfig>({
             pattern: getCollectionItemEditLink,
             text: config.editLinkText,
         },
-        socialLinks: [
-            { icon: 'discord', link: DISCORD_INVITE },
-        ],
+        socialLinks: <DefaultTheme.SocialLink[]>config.socialLinks,
 
         router: {
             redirects: rewrites,
