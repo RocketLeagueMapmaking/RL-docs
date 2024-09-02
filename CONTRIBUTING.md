@@ -106,4 +106,4 @@ Furthermore, this repo has the following `pageClass`es available:
 
 The following components (not including the components registered by the theme) are also registered globally:
 
-- `DocFeatures`
+- [`DocFeatures`](https://theme-rlmm.pages.dev/components#docfeatures)

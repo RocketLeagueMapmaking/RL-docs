@@ -4,6 +4,7 @@
 *.json text
 *.js text linguist-detectable
 *.md text linguist-detectable
+*.ts text linguist-detectable
 *.{yml,yaml} text
 
 *.png binary
