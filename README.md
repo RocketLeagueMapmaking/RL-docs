@@ -3,10 +3,10 @@
 
 # Rocket League Mapmaking Website Documentation
 
+[![GitHub package.json version](https://img.shields.io/github/package-json/v/rocketleaguemapmaking/rl-docs)][package.json]
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/RocketLeagueMapMaking/RL-docs/test.yml?branch=master&label=tests)][github-actions]
 [![Website](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Frocketleaguemapmaking.com%2F)][domain]
 [![Dev website](https://img.shields.io/website?down_message=offline&up_message=online&label=website@master&url=https%3A%2F%2Frocketleaguemapmaking.pages.dev%2F)][dev-domain]
-[![GitHub package.json version](https://img.shields.io/github/package-json/v/rocketleaguemapmaking/rl-docs)][package.json]
 
 - Guide by Mr Swaggles
 - Site design by ghostrider-05
@@ -22,7 +22,8 @@ This site can be executed as a docker container on the host machine.
 To update the site on the host machine, run [the `deploy` workflow](https://github.com/RocketLeagueMapmaking/RL-docs/actions/workflows/deploy.yml) on the default branch with the following inputs:
 
 - version: the version to deploy. Generally the same as the version in [package.json](./package.json).
-- deploy & push (default: `true`). Disable this to only build the Docker Image with deploying it.
+- push (default: `true`). Controls whether to push the built image to Docker hub. If `deploy` is enabled and `push` is disabled, the server will use an already pushed image with the same `version`, or fail.
+- deploy (default: `true`). Disable this to only build (and push) the Docker Image without deploying it.
 - webhook message (default: `true`): send a Discord message with the deployment details when the workflow is finished.
 
 See the GitHub documentation for [how to run a workflow manually](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow#running-a-workflow).  
