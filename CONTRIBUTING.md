@@ -11,12 +11,12 @@ Hi, we, the [guide maintainers](./README.md), are really exited that you are int
 
 ## Content editing
 
-To make changes to the content of the guide, we recommend to use the CMS ([Content Management System](https://en.wikipedia.org/wiki/Content_management_system)), available on [`/admin/`](https://rocketleaguemapmaking.com/admin/) or by clicking the `Edit this page` link on a guide page, to make your contributions through the following steps:
+To make changes to the content of the guide, we recommend to use the CMS ([Content Management System](https://en.wikipedia.org/wiki/Content_management_system)), available on the [`/admin/`](https://rocketleaguemapmaking.com/admin/) path or by clicking the `Edit this page` link on a guide page, to make your contributions through the following steps:
 
 1. [Create a GitHub account](https://github.com/join)
 2. Log in using your GitHub account on the [guide CMS](https://rocketleaguemapmaking.com/admin/).
 3. Write guide pages while following [the guidelines](#guidelines).
-4. When finished, go to [the workflow UI](https://rocketleaguemapmaking.com/admin/#/workflow) and move your changes to the `In Review` column.
+4. When finished, save your edited pages and go to [the workflow UI](https://rocketleaguemapmaking.com/admin/#/workflow) and move your changes to the `In Review` column.
 5. A maintainer will review your changes and merge the pull request on GitHub.
 
 ## Development
@@ -54,7 +54,7 @@ We have some minor style requirements for documentation additions:
   - Images should be added in `/docs/.vitepress/public/images/{section}/` and icons in `/docs/.vitepress/public/icons`.
   - Images and icons should have relevant file names to their content and be named in snake_case. Icons should also be prefixed by `logo_`.
   - Images are not allowed directly in `/images/`, `/images/blender/` and `/images/udk/`, only the subdirectories of those folders.
-  - Image references in markdown should [have a good alt text](https://supercooldesign.co.uk/blog/how-to-write-good-alt-text). They can also have [a title](https://www.markdownguide.org/basic-syntax/#images-1) with a comment or small joke. Images of icons don't need to have an alt text.
+  - Image references in markdown should [have a good alt text](https://webaim.org/techniques/alttext/). They can also have [a title](https://www.markdownguide.org/basic-syntax/#images-1) with a comment or small joke. <!-- Some image alt text may be redundant, but that is something for later to check -->
   - Images should have a line break (`---` with one white line above) between each other if no other text is between the images.
 - [Create an issue](https://github.com/rocketleaguemapmaking/RL-docs/issues/new/choose) for small contributions (such as fixing typos or broken links).
 
