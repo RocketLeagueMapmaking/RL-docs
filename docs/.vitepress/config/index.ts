@@ -65,10 +65,17 @@ export default defineConfigWithTheme<ThemeConfig>({
         frontmatterValidation: {
             required: [
                 {
-                    path: 'title',
+                    key: 'title',
                     ignore: [
                         '/essential/flowchart_questions/',
                     ],
+                },
+                {
+                    key: 'advanced',
+                    valid: [
+                        '/guide/blender/',
+                        '/guide/udk/',
+                    ]
                 }
             ],
             using: [

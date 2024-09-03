@@ -1,4 +1,4 @@
-import { createContentLoader, type SiteConfig } from 'vitepress'
+import { createContentLoader, type SiteConfig, type UserConfig } from 'vitepress'
 import type { ThemeConfig } from '@rocketleaguemapmaking/theme-rlmm'
 
 import {
@@ -10,6 +10,16 @@ import {
     GITHUB_DEFAULT_BRANCH,
     GITHUB_REPOSITORY,
 } from './shared'
+
+type UserConfigHookNames = keyof UserConfig extends infer Key
+    ? Key extends keyof UserConfig
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any, no-unused-vars
+        ? Required<UserConfig>[Key] extends ((...args: any[]) => any | Promise<any>)
+            ? Key : never
+        : never
+    : never
+
+export type UserConfigHooks = Pick<UserConfig, Exclude<UserConfigHookNames, 'themeConfig'>>
 
 /**
  * Only runs in the test workflow on the docs repo and on the master branch
@@ -44,14 +54,18 @@ export interface HookConfig {
 export default function (config: HookConfig) {
     return {
         buildEnd: async function (siteConfig: SiteConfig<ThemeConfig>): Promise<void> {
-            if (isGitHubAction()) await sendBuildNotification(siteConfig)
+            if (isGitHubAction()) {
+                siteConfig.logger.info('Sending build notification')
+                await sendBuildNotification(siteConfig)
+            }
 
             const pages = await getGuidePages()
+            siteConfig.logger.info(`Building ${pages.length} markdown pages`, { timestamp: true })
 
             // Validate the frontmatter for all docs/**/*.md files
-            validateFrontmatter(pages, config.frontmatterValidation)
+            validateFrontmatter(pages, config.frontmatterValidation, siteConfig.logger)
 
             // TODO: generate/check sidebar and navbar from the files.
-        }
-    }
+        },
+    } satisfies UserConfigHooks
 }

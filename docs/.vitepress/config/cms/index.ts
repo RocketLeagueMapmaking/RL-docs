@@ -20,7 +20,6 @@ export default decap({
     login: {
         title: 'Content Manager | RLMM',
     },
-    debug: true,
     script: {
         markdownEditorComponents: [
             customContainerBlock,
