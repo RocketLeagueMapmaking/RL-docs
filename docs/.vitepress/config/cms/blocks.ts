@@ -17,6 +17,8 @@ export const customContainerBlock = {
                 'danger',
                 'info',
                 'tip',
+                // Not a custom container, but has the same syntax
+                'raw',
             ],
         },
         {

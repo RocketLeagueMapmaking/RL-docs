@@ -58,6 +58,9 @@ export default defineConfigWithTheme<ThemeConfig>({
     lastUpdated: true,
     markdown: {
         headers: true,
+        image: {
+            lazyLoading: true,
+        },
     },
 
     // Hooks
