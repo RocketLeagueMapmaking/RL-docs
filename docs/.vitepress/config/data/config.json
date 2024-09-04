@@ -1,0 +1,21 @@
+{
+    "title": "RLMM",
+    "description": "Guides, Resources, Maps, and more for making custom maps",
+    "editLinkText": "Edit this page",
+    "footer": {
+        "message": "Rocket League map making guide",
+        "copyright": "Made by <a href=\"/more/about\">Mr. Swaggles</a>"
+    },
+    "socialLinks": [
+        {
+            "icon": "discord",
+            "link": "https://discord.gg/PWu3ZWa"
+        }
+    ],
+    "cms": {
+        "title": "Content Manager | RLMM"
+    },
+    "srcExclude": [
+        "**/flowchart_questions/*.md"
+    ]
+}

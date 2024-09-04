@@ -6,6 +6,11 @@
     --vp-c-brand-soft: var(--vp-c-green-soft);
 }
 
+/**
+ * Styles for the pageClass frontmatter
+ * When adding a new class, also explain it in CONTRIBUTING.md 
+ */
+
 .page-inline-images img {
     display: unset;
 }

@@ -1,5 +1,6 @@
 ---
 title: Lighting
+advanced: false
 ---
 # Lighting
 

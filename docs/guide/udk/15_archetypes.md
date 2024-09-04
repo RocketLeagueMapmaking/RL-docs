@@ -1,5 +1,6 @@
 ---
 title: Archetypes
+advanced: true
 ---
 # UDK Archetypes
 

@@ -1,5 +1,6 @@
 ---
 title: The Owl
+advanced: false
 next_actions:
   - title: Add lighting
     details: 

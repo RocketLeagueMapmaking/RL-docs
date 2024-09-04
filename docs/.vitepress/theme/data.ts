@@ -23,6 +23,8 @@ export const frontmatterKeys = [
     'related',
     'finished',
     'offlineText',
+    // Site config
+    'advanced',
 ]
 
 export const homeFrontmatterKeys = [

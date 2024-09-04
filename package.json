@@ -1,6 +1,6 @@
 {
   "name": "rocket_league_map_making",
-  "version": "0.10.2",
+  "version": "0.11.0",
   "description": "A website containing information pertaining to the creation, extension, debugging, and concepts of Rocket League map making.",
   "author": "RLMM",
   "license": "MIT",
@@ -30,8 +30,14 @@
     "node": ">=18.0.0",
     "npm": ">=7.0.0"
   },
+  "overrides": {
+    "react": "^18.3.1",
+    "@types/react": "^18.3.4",
+    "react-dom": "^18.3.1"
+  },
   "dependencies": {
-    "@rocketleaguemapmaking/theme-rlmm": "github:rocketleaguemapmaking/theme-rlmm#v0.7.0"
+    "@rocketleaguemapmaking/theme-rlmm": "github:rocketleaguemapmaking/theme-rlmm#v0.7.0",
+    "vite-plugin-decap-cms": "^0.4.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",

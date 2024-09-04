@@ -1,4 +1,4 @@
-import { type ContentData } from 'vitepress'
+import { type ContentData, type SiteConfig } from 'vitepress'
 
 type FilterConfig<Key extends string, Type extends string | string[]> =
     | string
@@ -10,7 +10,7 @@ function getKeyFromFilter <Key extends string, Type extends string | string[]> (
 
     return config.ignore?.some(ignored => path.startsWith(ignored))
         ? undefined
-        : (config.valid == undefined || config.valid.some(valid => path === valid))
+        : (config.valid == undefined || config.valid.some(valid => path.startsWith(valid)))
             ? config[key]
             : undefined
 }
@@ -18,11 +18,11 @@ function getKeyFromFilter <Key extends string, Type extends string | string[]> (
 export interface FrontmatterValidationConfig {
     validate?: boolean
     error?: boolean
-    required?: FilterConfig<'path', string>[]
+    required?: FilterConfig<'key', string>[]
     using?: FilterConfig<'keys', string[]>[]
 }
 
-export function validateFrontmatter (pages: ContentData[], keys: FrontmatterValidationConfig) {
+export function validateFrontmatter (pages: ContentData[], keys: FrontmatterValidationConfig, logger: SiteConfig['logger']) {
     if (keys.validate === false) return
     let invalid = 0
 
@@ -30,10 +30,10 @@ export function validateFrontmatter (pages: ContentData[], keys: FrontmatterVali
         const frontmatter = Object.keys(page.frontmatter)
 
         for (const key of keys.required ?? []) {
-            const pageKey = getKeyFromFilter(page.url, key, 'path')
+            const pageKey = getKeyFromFilter(page.url, key, 'key')
 
             if (pageKey && !frontmatter.includes(pageKey)) {
-                console.error(`Missing frontmatter key ${pageKey} on: ${page.url}`)
+                logger.error(`Missing frontmatter key ${pageKey} on: ${page.url}`, { timestamp: true })
                 invalid += 1
             }
         }
@@ -46,7 +46,7 @@ export function validateFrontmatter (pages: ContentData[], keys: FrontmatterVali
         })
 
         if (unknwownKeys.length) {
-            console.error(`Using unknown frontmatter ${unknwownKeys.join(', ')} on: ${page.url}`)
+            logger.error(`Using unknown frontmatter ${unknwownKeys.join(', ')} on: ${page.url}`, { timestamp: true })
         }
     }
 
@@ -54,6 +54,6 @@ export function validateFrontmatter (pages: ContentData[], keys: FrontmatterVali
         const msg = `Missing frontmatter keys on ${invalid} pages`
 
         if (keys.error ?? true) throw new Error(msg)
-        else console.error(msg)
+        else logger.error(msg, { timestamp: true })
     }
 }

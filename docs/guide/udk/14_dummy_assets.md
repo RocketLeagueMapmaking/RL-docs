@@ -1,5 +1,6 @@
 ---
 title: Dummy Assets
+advanced: true
 ---
 # Dummy Assets
 

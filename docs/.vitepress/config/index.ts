@@ -1,12 +1,20 @@
-import { defineConfigWithTheme } from 'vitepress'
+import { defineConfigWithTheme, type DefaultTheme } from 'vitepress'
 import { type ThemeConfig } from '@rocketleaguemapmaking/theme-rlmm'
 
 import { frontmatterKeys, homeFrontmatterKeys } from '../theme/data'
 
+import { getCollectionItemEditLink } from './cms/'
 import head from './head'
 import createHooks from './hooks'
 import nav from './navbar'
 import sidebar from './sidebar'
+import {
+    WEBSITE_LOGO_PATH,
+    WEBSITE_URL,
+} from './shared'
+import vite from './vite'
+
+import config from './data/config.json'
 
 import createRewrites from './util/rewrites'
 
@@ -21,20 +29,16 @@ const rewrites = createRewrites({
 })
 
 export default defineConfigWithTheme<ThemeConfig>({
-    title: 'RLMM',
-    description: 'Guides, Resources, Maps, and more for making custom maps',
+    title: config.title,
+    description: config.description,
     head,
 
     sitemap: {
-        hostname: 'https://rocketleaguemapmaking.com',
+        hostname: WEBSITE_URL,
     },
-    srcExclude: [
-        '**/flowchart_questions/*.md',
-    ],
+    srcExclude: config.srcExclude,
 
-    vite: {
-        publicDir: '.vitepress/public',
-    },
+    vite,
 
     // Routing
     // Enable rewrites and cleanUrls to have: /guide/udk/00_start.html -> /guide/udk/start
@@ -52,19 +56,28 @@ export default defineConfigWithTheme<ThemeConfig>({
     lastUpdated: true,
     markdown: {
         headers: true,
+        image: {
+            lazyLoading: true,
+        },
     },
 
     // Hooks
     ...createHooks({
         frontmatterValidation: {
-            error: false,
             required: [
                 {
-                    path: 'title',
+                    key: 'title',
                     ignore: [
                         '/essential/flowchart_questions/',
                     ],
-                }
+                },
+                {
+                    key: 'advanced',
+                    valid: [
+                        '/guide/blender/',
+                        '/guide/udk/',
+                    ]
+                },
             ],
             using: [
                 { keys: frontmatterKeys },
@@ -76,7 +89,7 @@ export default defineConfigWithTheme<ThemeConfig>({
                     valid: ['/guide/udk/04_map_test', '/guide/udk/06_owl'],
                 },
             ],
-        }
+        },
     }),
 
     // Theme configuration
@@ -85,26 +98,19 @@ export default defineConfigWithTheme<ThemeConfig>({
         nav,
 
         logo: {
-            src: '/icons/logo_rlmm_round_144.png',
+            src: WEBSITE_LOGO_PATH,
         },
 
-        footer: {
-            copyright: `2020 - ${new Date().getFullYear()}`,
-            message: [
-                'RLMM Guide',
-                'Made by <a href="https://twitter.com/RH_MrSwaggles">Mr. Swaggles</a>',
-            ].join(' | '),
-        },
+        footer: config.footer,
 
         // Links
         externalLinkIcon: true,
         editLink: {
-            pattern: 'https://github.com/rocketleaguemapmaking/rl-docs/tree/master/docs/:path',
-            text: 'View on GitHub',
+            // Function must be exported in head since this is run client-side
+            pattern: getCollectionItemEditLink,
+            text: config.editLinkText,
         },
-        socialLinks: [
-            { icon: 'discord', link: 'https://discord.gg/PWu3ZWa' },
-        ],
+        socialLinks: <DefaultTheme.SocialLink[]>config.socialLinks,
 
         router: {
             redirects: rewrites,

@@ -1,5 +1,6 @@
 ---
 title: Custom Materials
+advanced: true
 ---
 # Custom Materials
 

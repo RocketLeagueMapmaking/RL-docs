@@ -1,5 +1,6 @@
 ---
 title: Testing
+advanced: false
 collision_types:
     - title: Add a Blocking Volume
       link: ./collidable_collisions#option-1-add-a-blocking-volume

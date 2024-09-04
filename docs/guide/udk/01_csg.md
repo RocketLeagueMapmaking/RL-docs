@@ -1,5 +1,6 @@
 ---
 title: CSG
+advanced: false
 ---
 
 # Constructive Solid Geometry

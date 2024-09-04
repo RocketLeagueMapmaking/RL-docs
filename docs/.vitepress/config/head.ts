@@ -1,5 +1,10 @@
 import type { HeadConfig } from 'vitepress'
 
+import { getCollectionItemEditLink } from './cms'
+import { WEBSITE_LOGO_PATH, WEBSITE_URL } from './shared'
+
+import config from './data/config.json'
+
 export default <HeadConfig[]>[
     ['meta',
         {
@@ -10,7 +15,7 @@ export default <HeadConfig[]>[
     ['link',
         {
             rel: 'icon',
-            href: '/icons/logo_rlmm_round_144.png'
+            href: WEBSITE_LOGO_PATH,
         }
     ],
     ['link',
@@ -37,6 +42,10 @@ export default <HeadConfig[]>[
             content: 'black'
         }
     ],
+    ['script',
+        {},
+        `const ${getCollectionItemEditLink.name} = ${getCollectionItemEditLink}`
+    ],
 
     // OG links
     // Not including the special Twitter links, because X...
@@ -50,19 +59,19 @@ export default <HeadConfig[]>[
     ['meta',
         {
             property: 'og:url',
-            content: 'https://rocketleaguemapmaking.com/',
+            content: WEBSITE_URL,
         }
     ],
     ['meta',
         {
             property: 'og:title',
-            content: 'RLMM',
+            content: config.title,
         }
     ],
     ['meta',
         {
             property: 'og:description',
-            content: '',
+            content: config.description,
         }
     ],
     // TODO: create a preview image

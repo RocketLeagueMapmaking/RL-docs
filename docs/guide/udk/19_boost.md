@@ -1,5 +1,6 @@
 ---
 title: Boost
+advanced: true
 ---
 # Boost
 

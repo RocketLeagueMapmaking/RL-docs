@@ -1,5 +1,6 @@
 ---
 title: Rocket League Match Items
+advanced: false
 pageClass: page-inline-images
 ---
 # Rocket League Match Items

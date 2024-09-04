@@ -1,5 +1,6 @@
 ---
 title: Texture Resolution
+advanced: false
 ---
 # Texture Resolution
 
