@@ -4,10 +4,10 @@ import { type DecapCmsCollection } from 'vite-plugin-decap-cms'
 import sidebar, { type Sidebar } from '../sidebar'
 
 import {
-    createPageFeature,
+    createFeaturePageField,
+    createHomePageFields,
     createSiteConfigFields,
     createTeamPageField,
-    createThemeHomePageFields,
 } from './fields'
 
 import {
@@ -44,7 +44,7 @@ export default function (): DecapCmsCollection[] {
                     head: { hidden: true },
                     body: { required: false },
                 },
-                additionalFields: createThemeHomePageFields(),
+                additionalFields: createHomePageFields(),
             },
         ], {
             collection: {
@@ -71,7 +71,7 @@ export default function (): DecapCmsCollection[] {
                     hidden: true,
                 },
                 additionalFields: [
-                    createPageFeature({
+                    createFeaturePageField({
                         name: 'collision_types',
                         label: 'Collision types',
                         label_singular: 'type',
@@ -85,7 +85,7 @@ export default function (): DecapCmsCollection[] {
                     hidden: true,
                 },
                 additionalFields: [
-                    createPageFeature({
+                    createFeaturePageField({
                         name: 'next_actions',
                         label: 'Next actions',
                         label_singular: 'action',

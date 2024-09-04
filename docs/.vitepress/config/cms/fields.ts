@@ -72,7 +72,7 @@ const createSocialLinkFields = () => [
     }),
 ]
 
-export const createPageFeature = (data: Record<'name' | 'label' | 'label_singular', string>) => createField('list', {
+export const createFeaturePageField = (data: Record<'name' | 'label' | 'label_singular', string>) => createField('list', {
     name: data.name,
     label: data.label,
     label_singular: data.label_singular,
@@ -80,91 +80,90 @@ export const createPageFeature = (data: Record<'name' | 'label' | 'label_singula
     fields: createFeatureFields(),
 })
 
-export const createThemeHomePageFields = () => VitePress.createHomePageFields({
-    additionalHeroFields: [
-        createField('object', {
-            name: 'steam',
-            label: 'Steam maps',
-            required: false,
-            fields: [
-                createField('boolean', {
-                    name: 'enabled',
-                    label: 'Enable',
-                    required: true,
-                }),
-                createField('number', {
-                    name: 'amount',
-                    label: 'Amount of maps',
-                    required: true,
-                }),
-                createField('object', {
-                    name: 'title',
-                    label: 'Title',
-                    required: true,
-                    fields: [
-                        createField('string', {
-                            name: 'text',
-                            label: 'Text',
-                            required: true,
-                        }),
-                        createField('string', {
-                            name: 'title',
-                            label: 'Title',
-                            required: false,
-                        }),
-                        createField('object', {
-                            name: 'switchSortBy',
-                            label: 'Switch sort by',
-                            required: false,
-                            fields: [
-                                createField('boolean', {
-                                    name: 'enabled',
-                                    label: 'Enabled',
-                                    required: false,
-                                }),
-                                createField('select', {
-                                    name: 'initial',
-                                    label: 'Initial mode',
-                                    required: true,
-                                    options: [
-                                        'created',
-                                        'updated',
-                                    ],
-                                }),
-                                createField('object', {
-                                    name: 'prefix',
-                                    label: 'Mode prefix',
-                                    required: true,
-                                    fields: [
-                                        createField('string', {
-                                            name: 'created',
-                                            label: 'Created',
-                                            required: true,
-                                        }),
-                                        createField('string', {
-                                            name: 'updated',
-                                            label: 'Updated',
-                                            required: true,
-                                        }),
-                                    ]
-                                }),
-                            ]
-                        }),
-                    ]
-                }),
-            ]
-        })
-    ],
-}).concat([
-    createField('list', {
+export const createHomePageFields = () => {
+    const steamComponent = createField('object', {
+        name: 'steam',
+        label: 'Steam maps',
+        required: false,
+        fields: [
+            createField('boolean', {
+                name: 'enabled',
+                label: 'Enable',
+                required: true,
+            }),
+            createField('number', {
+                name: 'amount',
+                label: 'Amount of maps',
+                required: true,
+            }),
+            createField('object', {
+                name: 'title',
+                label: 'Title',
+                required: true,
+                fields: [
+                    createField('string', {
+                        name: 'text',
+                        label: 'Text',
+                        required: true,
+                    }),
+                    createField('string', {
+                        name: 'title',
+                        label: 'Title',
+                        required: false,
+                    }),
+                    createField('object', {
+                        name: 'switchSortBy',
+                        label: 'Switch sort by',
+                        required: false,
+                        fields: [
+                            createField('boolean', {
+                                name: 'enabled',
+                                label: 'Enabled',
+                                required: false,
+                            }),
+                            createField('select', {
+                                name: 'initial',
+                                label: 'Initial mode',
+                                required: true,
+                                options: [
+                                    'created',
+                                    'updated',
+                                ],
+                            }),
+                            createField('object', {
+                                name: 'prefix',
+                                label: 'Mode prefix',
+                                required: true,
+                                fields: [
+                                    createField('string', {
+                                        name: 'created',
+                                        label: 'Created',
+                                        required: true,
+                                    }),
+                                    createField('string', {
+                                        name: 'updated',
+                                        label: 'Updated',
+                                        required: true,
+                                    }),
+                                ]
+                            }),
+                        ]
+                    }),
+                ]
+            }),
+        ]
+    })
+
+    const resources = createField('list', {
         name: 'resources',
         label: 'Resources',
         label_singular: 'resource',
         allow_add: true,
         required: false,
         fields: createFeatureFields(),
-    }),
-    createField('object', {
+    })
+
+    const events = createField('object', {
         name: 'events',
         label: 'Events',
         fields: [
@@ -201,8 +200,9 @@ export const createThemeHomePageFields = () => VitePress.createHomePageFields({
                 required: true,
             }),
         ],
-    }),
-    createField('object', {
+    })
+
+    const promotion = createField('object', {
         name: 'promotion',
         label: 'Promotion',
         fields: [
@@ -236,8 +236,9 @@ export const createThemeHomePageFields = () => VitePress.createHomePageFields({
                 hint: 'To have line breaks in the text add <br>'
             }),
         ],
-    }),
-    createField('object', {
+    })
+
+    const sponsors = createField('object', {
         name: 'sponsors',
         label: 'Sponsors',
         fields: [
@@ -257,8 +258,17 @@ export const createThemeHomePageFields = () => VitePress.createHomePageFields({
                 required: true,
             }),
         ],
-    }),
-])
+    })
+
+    return VitePress.createHomePageFields({
+        additionalHeroFields: [
+            steamComponent,
+        ],
+    }).concat(resources)
+        .concat(events)
+        .concat(promotion)
+        .concat(sponsors)
+}
 
 export const createTeamPageField = () => createField('list', {
     name: 'teams',
