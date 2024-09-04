@@ -11,5 +11,11 @@
             "icon": "discord",
             "link": "https://discord.gg/PWu3ZWa"
         }
+    ],
+    "cms": {
+        "title": "Content Manager | RLMM"
+    },
+    "srcExclude": [
+        "**/flowchart_questions/*.md"
     ]
 }

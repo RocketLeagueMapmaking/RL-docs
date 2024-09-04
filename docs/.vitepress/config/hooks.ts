@@ -64,8 +64,6 @@ export default function (config: HookConfig) {
 
             // Validate the frontmatter for all docs/**/*.md files
             validateFrontmatter(pages, config.frontmatterValidation, siteConfig.logger)
-
-            // TODO: generate/check sidebar and navbar from the files.
         },
     } satisfies UserConfigHooks
 }

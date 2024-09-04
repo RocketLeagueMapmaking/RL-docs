@@ -36,9 +36,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     sitemap: {
         hostname: WEBSITE_URL,
     },
-    srcExclude: [
-        '**/flowchart_questions/*.md',
-    ],
+    srcExclude: config.srcExclude,
 
     vite,
 
@@ -79,7 +77,7 @@ export default defineConfigWithTheme<ThemeConfig>({
                         '/guide/blender/',
                         '/guide/udk/',
                     ]
-                }
+                },
             ],
             using: [
                 { keys: frontmatterKeys },
@@ -91,7 +89,7 @@ export default defineConfigWithTheme<ThemeConfig>({
                     valid: ['/guide/udk/04_map_test', '/guide/udk/06_owl'],
                 },
             ],
-        }
+        },
     }),
 
     // Theme configuration

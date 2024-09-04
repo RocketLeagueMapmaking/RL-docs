@@ -12,13 +12,15 @@ import { customContainerBlock } from './blocks'
 import createCollections, { getCollectionItemEditLink } from './collections'
 import { mediaFolder, publicFolder } from './options'
 
+import config from '../data/config.json'
+
 export {
     getCollectionItemEditLink,
 }
 
 export default decap({
     login: {
-        title: 'Content Manager | RLMM',
+        title: config.cms.title,
     },
     script: {
         markdownEditorComponents: [
