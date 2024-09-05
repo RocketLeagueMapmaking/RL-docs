@@ -50,7 +50,7 @@ teams:
           title: Bakkesmod Creator
           avatar: https://github.com/BakkesModOrg.png
         - name: glhglh
-          title: Collision Channels, AlphaConsole Plugin, Foundational Discoveries
+          title: AlphaConsole Plugin, Collisions, Foundational Discoveries
           avatar: https://avatars.akamai.steamstatic.com/67e045fb949aec814145fd1b4659d416ef6610a7_medium.jpg
         - name: CinderBlock
           title: Bakkesmod Genius
@@ -68,7 +68,7 @@ teams:
           title: Fixed Collisions, Guides, Custom Materials, In-Game Assets
           avatar: https://avatars.akamai.steamstatic.com/c6b6740fd277f806ec450c2a8b50f4368dd114d9_medium.jpg
         - name: Stanbroek
-          title: Advanced Map and Kismet Techniques, Rocket Plugin
+          title: Rocket Plugin, Advanced Map and Kismet Techniques
           avatar: https://avatars.akamai.steamstatic.com/1bdd44992128e186f6c880a45458e0f9d2fe9dc5_medium.jpg
         - name: Thanrek
           title: Advanced Map and Kismet Techniques
@@ -89,7 +89,7 @@ teams:
           title: UE Explorer Program
           avatar: https://github.com/EliotVU.png
         - name: Martinn
-          title: UPK Decryptor, Dummy Assets, Bakkesmod Work
+          title: UPK Decryptor, Dummy Assets, Bakkesmod Work, Numerous Plugins
           avatar: https://github.com/Martinii89.png
         - name: LiveDimensions
           title: Tech Support
@@ -115,6 +115,9 @@ teams:
         - name: JetFox
           title: Rocket Host Plugin, Map Hosting
           avatar: https://cdn.discordapp.com/avatars/172783765574254592/f755b90d5c44c83545b2e3f43e729e39.webp
+        - name: Simple Shark
+          title: Countless Custom Maps, Netcode Plugin and Flash Tutorials
+          avatar: https://avatars.akamai.steamstatic.com/01bfc62ac4e2fbace1c7800c9dbcf7e6e9f97463_medium.jpg
         - name: ghostrider-05
           title: RocketLeagueMapmaking.com
           avatar: https://github.com/ghostrider-05.png
@@ -136,7 +139,7 @@ First off, a sincere thanks to all of you for using this guide in its various fo
 
 ### Bio - Mr. Swaggles
 
-Who am I? I have a few names, depending on where you find me: Mr. Swaggles in Rocket League, Dasoccerguy in DMs or other places, and Dr. Swaggles for smurfing/testing. I have used Blender since 2003, though only for hobby-level projects. I consider myself very competent with Blender, but I am by no means a professional and I still have much to learn. I have been playing Rocket League since one week after release, and I can safely say that it is my favorite game ever. Most often you’ll find me shooting some Hoops.
+Who am I? I have a few names, depending on where you find me: Mr. Swaggles in Rocket League, Dasoccerguy in DMs or other places, and Dr. Swaggles for smurfing/testing. I have used Blender since 2003, though only for hobby-level projects. I consider myself very competent with Blender, but I am by no means a professional and still have much to learn. I have been playing Rocket League since one week after release, and I can safely say that it is my favorite game ever. Most often you’ll find me shooting some Hoops.
 
 </div>
 

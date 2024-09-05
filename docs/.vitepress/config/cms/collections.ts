@@ -140,7 +140,8 @@ export default function (): DecapCmsCollection[] {
                 return createFolderCollection({
                     base,
                     label: config.text ?? items[0].text!,
-                    mediaFolder: '',
+                    description: config.description,
+                    mediaFolder: config.mediaFolder,
                 })
             }),
     ]

@@ -7,6 +7,13 @@ export default {
     ...ThemeRLMM,
     enhanceApp (ctx) {
         ThemeRLMM.enhanceApp(ctx)
-        ctx.app.component('DocFeatures', DocFeatures)
+
+        const components = [
+            ['DocFeatures', DocFeatures],
+        ] as const
+
+        for (const [name, component] of components) {
+            ctx.app.component(name, component)
+        }
     },
 } satisfies Theme

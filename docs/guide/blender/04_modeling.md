@@ -321,6 +321,3 @@ Now, let’s make the hand do something interesting. **Move the 3D cursor to the
 - MatCaps are a great way to view your meshes
 
 Have fun! Blender is great!
-
-<!-- TODO: add more alt texts and remove the next line -->
-<!-- markdownlint-disable-file MD045 -->
