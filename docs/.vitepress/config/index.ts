@@ -63,6 +63,10 @@ export default defineConfigWithTheme<ThemeConfig>({
 
     // Hooks
     ...createHooks({
+        imageCaptions: {
+            enabled: true,
+            className: 'custom-img-caption',
+        },
         frontmatterValidation: {
             required: [
                 {

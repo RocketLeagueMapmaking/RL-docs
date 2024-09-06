@@ -6,6 +6,19 @@
     --vp-c-brand-soft: var(--vp-c-green-soft);
 }
 
+/* Makes the caption the same width as the image */
+p:has(.custom-img-caption) {
+    display: inline-block;
+}
+
+/* Styles for the caption block, if custom image captions are rendered */
+.custom-img-caption {
+    background-color: var(--vp-c-brand);
+    display: block;
+    padding: 4px 10px;
+    text-align: center;
+}
+
 /**
  * Styles for the pageClass frontmatter
  * When adding a new class, also explain it in CONTRIBUTING.md 

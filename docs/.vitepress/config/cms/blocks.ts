@@ -51,7 +51,7 @@ function createComponentBlock (options: ComponentBlockOptions): Block {
                         name: 'name',
                         required: false,
                         label: templateField.nameLabel ?? 'Name',
-                        // @ts-expect-error
+                        // @ts-expect-error Errors bc of 'options' not in the string options
                         options: templateField.names,
                     }),
                     createField('markdown', {
@@ -74,7 +74,7 @@ function createComponentBlock (options: ComponentBlockOptions): Block {
                     : {},
                 templates: slots != undefined
                     ? slots.split('</template>').filter(str => str.length).map((slot) => {
-                        //@ts-ignore
+                        // @ts-expect-error TODO: Look into moving to es2018 or higher
                         const results = /^<template #(.*)>(.*)/ms.exec(slot) ?? []
                         console.log([slots], slot, results)
                         const name = results.at(1)
@@ -90,13 +90,13 @@ function createComponentBlock (options: ComponentBlockOptions): Block {
             const templates = data.templates.map(({ name, content }) => {
                 return `<template${name ? ` #${name}` : ''}>\n${content}\n</template>`
             })
-    
+
             const props = Object.entries(data.props)
                 .reduce((str, prop) => str + ` :${prop[0]}="${prop[1]}"`, ' ')
-    
+
             return `<${id}${props}>\n${templates}\n</${id}>`
         },
-        toPreview: function (data: ComponentData) {
+        toPreview: function () {
             return ''
         },
     }
@@ -138,7 +138,7 @@ const customContainerBlock: Block = {
     ] satisfies DecapCmsField[],
     // @ts-expect-error Needs flag to work
     pattern: /^:::(\w+)(.*?)\n(.*?)\n^:::$/ms,
-    fromBlock: function (match): BlockFields { 
+    fromBlock: function (match): BlockFields {
         return {
             type: match[1],
             summary: match[2],
