@@ -1,0 +1,21 @@
+name: "Renew certificate"
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 1 * *"
+jobs:
+  renew:
+    name: Renew
+    runs-on: ubuntu-latest
+    steps:
+      - name: Login and renew cert
+        # Do not use @master because of https://github.com/appleboy/ssh-action/issues/317
+        uses: appleboy/ssh-action@v1.0.3
+        id: ssh
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            cd ${{ vars.SSH_PROJECT_ROOT }}
+            sh deployment/renewcert.sh
