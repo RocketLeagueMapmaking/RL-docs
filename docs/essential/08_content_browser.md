@@ -35,7 +35,7 @@ To make custom maps easier to use, **every mesh/material/actor used needs to be 
 If your map is named `MyTestMap1`, **make quintuple sure all assets are inside the folder `MyTestMap1` in the Content Browser.** If they are not, pieces of your map will magically vanish when you try to play it in Rocket League. This is the single most common mistake new mapmakers make.
 :::
 
-![](/images/UDK/essential/moveobjects.png "Move it or lose it")
+![](/images/udk/essential/moveobjects.png "Move it or lose it")
 
 If your assets are in the wrong package, **select them, right click, and select `Move or Rename...`** Type in the name of your map and click OK.
 
