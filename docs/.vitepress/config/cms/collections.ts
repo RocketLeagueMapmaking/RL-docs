@@ -4,11 +4,12 @@ import { type DecapCmsCollection } from 'vite-plugin-decap-cms'
 import sidebar, { type Sidebar } from '../sidebar'
 
 import {
-    createFeaturePageField,
+    createFeaturesField,
     createHomePageFields,
+    createNotificationConfigFields,
     createSiteConfigFields,
-    createTeamPageField,
-} from './fields'
+    createTeamsField,
+} from './fields/'
 
 import {
     createAdvancedCollections,
@@ -46,6 +47,14 @@ export default function (): DecapCmsCollection[] {
                 },
                 additionalFields: createHomePageFields(),
             },
+            {
+                name: 'Notifications',
+                file: 'docs/.vitepress/config/data/notifications.json',
+                overwrites: {
+                    deleted: true,
+                },
+                additionalFields: createNotificationConfigFields(),
+            },
         ], {
             collection: {
                 create: false,
@@ -61,7 +70,11 @@ export default function (): DecapCmsCollection[] {
                     hidden: true,
                 },
                 additionalFields: [
-                    createTeamPageField(),
+                    createTeamsField({
+                        name: 'teams',
+                        label: 'Teams',
+                        label_singular: 'team',
+                    }),
                 ]
             },
             {
@@ -71,7 +84,7 @@ export default function (): DecapCmsCollection[] {
                     hidden: true,
                 },
                 additionalFields: [
-                    createFeaturePageField({
+                    createFeaturesField({
                         name: 'collision_types',
                         label: 'Collision types',
                         label_singular: 'type',
@@ -85,7 +98,7 @@ export default function (): DecapCmsCollection[] {
                     hidden: true,
                 },
                 additionalFields: [
-                    createFeaturePageField({
+                    createFeaturesField({
                         name: 'next_actions',
                         label: 'Next actions',
                         label_singular: 'action',

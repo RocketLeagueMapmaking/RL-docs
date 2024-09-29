@@ -15,6 +15,7 @@ import {
 import vite from './vite'
 
 import config from './data/config.json'
+import { banners, notifications } from './data/notifications.json'
 
 import createRewrites from './util/rewrites'
 
@@ -118,6 +119,14 @@ export default defineConfigWithTheme<ThemeConfig>({
 
         router: {
             redirects: rewrites,
+        },
+
+        banner: {
+            data: banners,
+        },
+
+        notifications: {
+            data: notifications,
         },
 
         // Search

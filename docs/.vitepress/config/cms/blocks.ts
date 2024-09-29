@@ -1,5 +1,7 @@
 import { createField, DecapCmsField, fieldToSnakeCase, Options } from 'vite-plugin-decap-cms'
 
+import * as fields from './fields/'
+
 type Block = NonNullable<NonNullable<Options['script']>['markdownEditorComponents']>[number]
 
 interface ComponentBlockOptions {
@@ -32,13 +34,13 @@ function createComponentBlock (options: ComponentBlockOptions): Block {
         label,
         pattern: new RegExp(`^<${id}(.*)>((.|\\n)*?)<\\/${id}>$`, 'm'),
         fields: [
-            createField('object', {
+            props.length > 0 ? createField('object', {
                 name: 'props',
                 label: 'Properties',
                 required: false,
                 collapsed: true,
                 fields: props.map(fieldToSnakeCase),
-            }),
+            }) : undefined,
             templateField != undefined ? createField('list', {
                 name: 'templates',
                 label: templateField.label,
@@ -63,7 +65,6 @@ function createComponentBlock (options: ComponentBlockOptions): Block {
             }) : undefined,
         ].filter(n => n) as Block['fields'],
         fromBlock: function (match): ComponentData {
-            console.log(match)
             const props = match.at(1), slots = match.at(2)
 
             return {
@@ -74,9 +75,7 @@ function createComponentBlock (options: ComponentBlockOptions): Block {
                     : {},
                 templates: slots != undefined
                     ? slots.split('</template>').filter(str => str.length).map((slot) => {
-                        // @ts-expect-error TODO: Look into moving to es2018 or higher
                         const results = /^<template #(.*)>(.*)/ms.exec(slot) ?? []
-                        console.log([slots], slot, results)
                         const name = results.at(1)
 
                         return {
@@ -136,7 +135,6 @@ const customContainerBlock: Block = {
             widget: 'markdown'
         }
     ] satisfies DecapCmsField[],
-    // @ts-expect-error Needs flag to work
     pattern: /^:::(\w+)(.*?)\n(.*?)\n^:::$/ms,
     fromBlock: function (match): BlockFields {
         return {
@@ -162,13 +160,7 @@ export default [
             label: 'Steps',
             labelSingular: 'step',
         },
-        props: [
-            createField('string', {
-                name: 'color',
-                label: 'Color',
-                required: false,
-            }),
-        ],
+        props: fields.stepsProperties,
     }),
     createComponentBlock({
         id: 'tabs',
@@ -178,25 +170,7 @@ export default [
             labelSingular: 'tab',
             nameLabel: 'Id',
         },
-        props: [
-            createField('list', {
-                name: 'tabs',
-                label: 'Tab names',
-                label_singular: 'name',
-                allow_add: true,
-                required: true,
-            }),
-            createField('string', {
-                name: 'startTab',
-                label: 'Start tab name',
-                required: false,
-            }),
-            createField('string', {
-                name: 'searchParam',
-                label: 'Search parameter',
-                required: false,
-            }),
-        ]
+        props: fields.tabsProperties,
     }),
     createComponentBlock({
         id: 'ActionBlock',
