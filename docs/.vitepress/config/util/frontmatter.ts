@@ -1,59 +1,143 @@
 import { type ContentData, type SiteConfig } from 'vitepress'
 
-type FilterConfig<Key extends string, Type extends string | string[]> =
+export type FilterKey =
     | string
+    | { key: string, options: (string | boolean | number)[] }
+
+interface FilterOptions {
+    prefixMatch?: boolean
+    options?: (string | boolean | number)[]
+    ignore?: (string | RegExp)[]
+    include?: (string | RegExp)[]
+}
+
+type FilterConfig<Key extends string, Type extends string | FilterKey[]> =
+    // | FilterKey
     // eslint-disable-next-line no-unused-vars
-    | ({ [K in Key]: Type } & { ignore?: string[], valid?: string[] })
+    | ({ [K in Key]: Type } & FilterOptions)
 
-function getKeyFromFilter <Key extends string, Type extends string | string[]> (path: string, config: FilterConfig<Key, Type>, key: Key) {
-    if (typeof config === 'string') return config
+/**
+ * Get frontmatter keys for a page from a configuration
+ * @param path The page path
+ * @param config The frontmatter key configuration
+ * @param key The object key in the configuration that holds the keys values.
+ */
+function getKeyFromFilter <
+    Key extends string,
+    Type extends string | FilterKey[]
+> (path: string, config: FilterConfig<Key, Type>, key: Key): FilterKey[] | undefined {
+    const hasPath = (items?: (string | RegExp)[]) => items != undefined && items.some(pattern => {
+        return typeof pattern === 'string' ? (config.prefixMatch ? path.startsWith(pattern) : path === pattern) : pattern.test(path)
+    })
 
-    return config.ignore?.some(ignored => path.startsWith(ignored))
-        ? undefined
-        : (config.valid == undefined || config.valid.some(valid => path.startsWith(valid)))
-            ? config[key]
-            : undefined
+    if (hasPath(config.ignore)) return undefined
+    if (config.include != undefined) {
+        if (!hasPath(config.include)) return undefined
+    }
+
+    return Array.isArray(config[key]) ? config[key] : [config[key]]
 }
 
-export interface FrontmatterValidationConfig {
-    validate?: boolean
-    error?: boolean
-    required?: FilterConfig<'key', string>[]
-    using?: FilterConfig<'keys', string[]>[]
-}
+function getInvalidFrontmatter <
+    Key extends string,
+    Type extends string | string[]
+> (page: ContentData, configs: FilterConfig<Key, Type>[], key: Key) {
+    return configs.reduce<{ key: string, value?: unknown, options?:(string | number | boolean)[] }[]>((items, config) => {
+        const pageKey = getKeyFromFilter(page.url, config, key)
+        if (pageKey == undefined) return items
 
-export function validateFrontmatter (pages: ContentData[], keys: FrontmatterValidationConfig, logger: SiteConfig['logger']) {
-    if (keys.validate === false) return
-    let invalid = 0
+        for (const key of pageKey) {
+            const keystr = typeof key === 'string' ? key : key.key
 
-    for (const page of pages) {
-        const frontmatter = Object.keys(page.frontmatter)
-
-        for (const key of keys.required ?? []) {
-            const pageKey = getKeyFromFilter(page.url, key, 'key')
-
-            if (pageKey && !frontmatter.includes(pageKey)) {
-                logger.error(`Missing frontmatter key ${pageKey} on: ${page.url}`, { timestamp: true })
-                invalid += 1
+            if (page.frontmatter[keystr] == undefined) {
+                items.push({ key: keystr })
+            } else if (typeof key !== 'string' && key.options.length) {
+                if (!key.options.includes(page.frontmatter[keystr])) {
+                    items.push({
+                        key: keystr,
+                        options: key.options,
+                        value: page.frontmatter[keystr],
+                    })
+                }
             }
         }
 
-        const unknwownKeys = frontmatter.filter(key => {
-            return !(keys.using ?? [])
-                .map(using => getKeyFromFilter(page.url, using, 'keys'))
-                .filter((n): n is string[] => n != undefined)
-                .some(using => using.includes(key))
-        })
+        return items
+    }, [])
+}
 
-        if (unknwownKeys.length) {
-            logger.error(`Using unknown frontmatter ${unknwownKeys.join(', ')} on: ${page.url}`, { timestamp: true })
+function getUnusedFrontmatter <
+    Key extends string,
+    Type extends FilterKey[]
+> (page: ContentData, configs: FilterConfig<Key, Type>[], key: Key) {
+    const usedKeys = configs.reduce<{ key: string, value?: unknown, options?:(string | number | boolean)[] }[]>((items, config) => {
+        const pageKey = getKeyFromFilter(page.url, config, key)
+        if (pageKey == undefined) return items
+
+        for (const key of pageKey) {
+            const keystr = typeof key === 'string' ? key : key.key
+
+            items.push({
+                key: keystr,
+                value: page.frontmatter[keystr],
+                options: typeof key === 'string' ? undefined : key.options,
+            })
+        }
+
+        return items
+    }, [])
+
+    return Object.keys(page.frontmatter)
+        .filter(key => !usedKeys.some(k => k.key === key && (k.options ? k.options.includes(<string>k.value) : true)))
+}
+
+export interface FrontmatterValidationConfig {
+    /**
+     * Whether to validate the pages for frontmatter keys
+     * @default true
+     */
+    validate?: boolean
+
+    /**
+     * Whether to throw an error on missing {@link required} keys
+     * @default true
+     */
+    error?: boolean
+
+    /**
+     * The required keys to have on pages.
+     */
+    required?: FilterConfig<'key', string>[]
+
+    /**
+     * The supported keys. Can be used to check for unused keys / keys with no effect.
+     */
+    using?: FilterConfig<'keys', FilterKey[]>[]
+}
+
+export function validateFrontmatter (pages: ContentData[], config: FrontmatterValidationConfig, logger: SiteConfig['logger']) {
+    if (config.validate === false) return
+    const invalid: string[] = []
+
+    for (const page of pages) {
+        for (const { key, options, value } of getInvalidFrontmatter(page, config.required ?? [], 'key')) {
+            if (options) logger.error(`Invalid frontmatter key ${key} on: ${page.url}. Received: ${value}, must be one of: ${options.join(', ')}`, { timestamp: true })
+            else logger.error(`Missing frontmatter key '${key}' on: ${page.url}`, { timestamp: true })
+
+            invalid.push(page.url)
+        }
+
+        const unknownKeys = getUnusedFrontmatter(page, config.using ?? [], 'keys')
+        if (unknownKeys.length > 0) {
+            const keys = unknownKeys.map(key => `${key} (${page.frontmatter[key]})`).join(', ')
+            logger.warn(`Using unknown frontmatter ${keys} on: ${page.url}`, { timestamp: true })
         }
     }
 
-    if (invalid) {
-        const msg = `Missing frontmatter keys on ${invalid} pages`
+    if (invalid.length > 0) {
+        const msg = `Missing ${invalid.length} frontmatter keys on ${[...new Set(invalid)].length} pages`
 
-        if (keys.error ?? true) throw new Error(msg)
+        if (config.error ?? true) throw new Error(msg)
         else logger.error(msg, { timestamp: true })
     }
 }

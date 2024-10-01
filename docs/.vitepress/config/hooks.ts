@@ -47,19 +47,25 @@ async function getGuidePages () {
     return await createContentLoader('**').load()
 }
 
+interface ImageCaptionOptions {
+    enabled: boolean
+    className: string
+    /** @default 'span' */
+    tag?: string
+}
+
 export interface HookConfig {
-    frontmatterValidation: FrontmatterValidationConfig
+    /**
+     * Validate frontmatter keys
+     */
+    frontmatterValidation?: FrontmatterValidationConfig
+
     /**
      * Adds the title of an image as text to the page.
      * Only added on the built site.
      * You can test it with the preview command or on the deployed preview.
      */
-    imageCaptions?: {
-        enabled: boolean
-        className: string
-        /** @default 'span' */
-        tag?: string
-    }
+    imageCaptions?: ImageCaptionOptions
 }
 
 export default function (config: HookConfig) {
@@ -74,7 +80,7 @@ export default function (config: HookConfig) {
             siteConfig.logger.info(`Building ${pages.length} markdown pages`, { timestamp: true })
 
             // Validate the frontmatter for all docs/**/*.md files
-            validateFrontmatter(pages, config.frontmatterValidation, siteConfig.logger)
+            validateFrontmatter(pages, config.frontmatterValidation ?? {}, siteConfig.logger)
         },
         transformHtml (code) {
             if (config.imageCaptions?.enabled) {
