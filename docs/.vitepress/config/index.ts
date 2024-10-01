@@ -90,6 +90,7 @@ export default defineConfigWithTheme<ThemeConfig>({
         },
         socialLinks: <DefaultTheme.SocialLink[]>config.socialLinks,
 
+        // Theme-rlmm options
         router: {
             redirects: rewrites,
         },
@@ -100,6 +101,12 @@ export default defineConfigWithTheme<ThemeConfig>({
 
         notifications: {
             data: notifications,
+        },
+
+        storage: {
+            pageClasses: {
+                'image-captions': 'use-custom-image-captions',
+            },
         },
 
         // Search
