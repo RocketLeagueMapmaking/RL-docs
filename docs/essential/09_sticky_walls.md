@@ -3,7 +3,7 @@ title: Sticky Walls
 ---
 # Sticky Walls ™ <Badge text="important" type="tip"/>
 
-**There is one more bit of very important setup.** Now that UDK is open and we’re in the Content Browser, we need to create a package to store some objects that will be useful across all projects. In the bottom left of the Content Browser tab, **click New to make a new package.** We’re going to keep a few assets in here that we copy into any future project. Call it something generic like Generic, General, RLMods, MyPackage, or whatever you think is best.
+**There is one more bit of very important setup.** Now that UDK is open and we’re in the Content Browser, we can create a package to store some objects that will be useful across all projects. In the bottom left of the Content Browser tab, **click New to make a new package.** We’re going to keep a few assets in here that we copy into any future project. Call it something generic like Generic, General, RLMods, MyPackage, or whatever you think is best.
 
 ![Menu for creating a new PhysicalMaterial](/images/udk/essential/stickywalls_factory.png "Time to get sticky… together")
 
@@ -18,12 +18,14 @@ After you click OK, you will see a new PhysicalMaterial within the Content Brows
 
 **If the Properties window doesn’t open by default, double click StickyWalls. Scroll to the bottom and click the small blue arrow on the right. Inside there, assuming the UDK setup went correctly, there is an option for `PhysicalMaterialProperty_TA`. Select this, and more options appear below. Check “Sticky Wheels” and close the properties window.**
 
-:::tip
-Whenever you start a new map, you will need to copy the StickyWalls® material into the new package. More on that later.
+:::tip New maps
+Whenever you start a new map, you will need to copy the StickyWalls® material into the new package or create a new instance of it. More on that later.
 :::
 
 ## The World Awaits
 
-Congratulations, you have completed the setup guide! You now have everything you need to make custom maps for Rocket League. This would be a perfect time to revisit the flowchart from the beginning of this section.
+**Congratulations**, you have completed the setup guide! You now have everything you need to make custom maps for Rocket League. This would be a perfect time to revisit the flowchart from the beginning of this section.
 
 [The Flowchart](flowchart.md)
+
+When you are ready, dive into the rest of the guide!

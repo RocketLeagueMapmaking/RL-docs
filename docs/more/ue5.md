@@ -1,8 +1,12 @@
 ---
-title: UDK vs UE5
+title: Unreal Engine 5
 ---
 
-# UDK/UE4/UE5 Overview
+# Rocket League and Unreal Engine 5
+
+After rumors following the leaked plans for Rocket League, that it will be transitioned to UE5, Devin acknowledged on Reddit that this is an ongoing project for Psyonix.
+
+What the effects are for Rocket League map making are not clear until Psyonix shares their plans. For now, you don't need to learn UE5 as it will take some time before they finish this long-term project.
 
 ## Background info - UDK
 
@@ -54,7 +58,7 @@ title: UDK vs UE5
 ### Distribution
 
 * Nexusmods is a common platform for mod distribution that works with many Unreal Engine games
-* [Epic Launcher roadmap](https://trello.com/b/GXLc34hk/epic-games-store-roadmap) lists “Mod Support For Games” as a finished feature a year ago, but has only been added for a handful of games so far
+* [Epic Launcher Roadmap](https://trello.com/b/GXLc34hk/epic-games-store-roadmap) lists “Mod Support For Games” as a finished feature a year ago, but has only been added for a handful of games so far
 * Generally speaking UE4/5 were made in the era of SaaS (software as a service) with an emphasis on creating games which will be updated/upgraded over time, so they are much better suited from the ground up for distributing and maintaining files such as plugins, skins, etc
 
 ## UE5 Upgrade Challenges

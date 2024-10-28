@@ -8,7 +8,7 @@ import {
     WEBSITE_URL,
 } from '../shared'
 
-import { customContainerBlock } from './blocks'
+import markdownEditorComponents from './blocks'
 import createCollections, { getCollectionItemEditLink } from './collections'
 import { mediaFolder, publicFolder } from './options'
 
@@ -23,9 +23,7 @@ export default decap({
         title: config.cms.title,
     },
     script: {
-        markdownEditorComponents: [
-            customContainerBlock,
-        ],
+        markdownEditorComponents,
     },
     config: {
         backend: {

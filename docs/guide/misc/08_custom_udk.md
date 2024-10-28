@@ -132,4 +132,4 @@ defaultproperties
 
 ## More
 
-If you are willing to dive into the config files and source code of UDK to discover more tricks, please share anything interesting that you find! Let's wait until Psyonix uses [UE5](../../ue5/) to make Rocket League
+If you are willing to dive into the config files and source code of UDK to discover more tricks, please share anything interesting that you find!

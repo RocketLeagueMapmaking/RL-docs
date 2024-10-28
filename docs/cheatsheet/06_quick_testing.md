@@ -1,9 +1,7 @@
 ---
 title: Quick Testing
 ---
-# Cheat Sheets <Badge text="not finished" type="warning"/>
-
-## Quick Testing
+# Quick Testing
 
 This page will be updated soon!
 

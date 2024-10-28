@@ -14,7 +14,7 @@ pageClass: page-inline-images
 
 * File - Contains what you would expect. **However, CTRL+S IS NOT SAVE. To save, you have to manually click Save. Save All will save any external packages you have also modified (and can cause UDK to crash). Save Current Level is typically the right choice.**
 * Edit - Everything in this menu may also be found in the various toolbars.
-* View - **`Browser Windows > Content Browser` to open the Content Browser if you close it.** The options through the middle are reasonably self-explanatory. But, I would like to highlight the `New Viewport` and `Viewport Configuration` options at the bottom. These allow you to have multiple views open, which is a workflow that some people are more comfortable with. **To eliminate part of a split viewport, resize it to 0.**
+* View - `Browser Windows > Content Browser` **to open the Content Browser if you close it.** The options through the middle are reasonably self-explanatory. But, I would like to highlight the `New Viewport` and `Viewport Configuration` options at the bottom. These allow you to have multiple views open, which is a workflow that some people are more comfortable with. **To eliminate part of a split viewport, resize it to 0.**
 * Brush - These options are all found in section 11 of the GUI. They build geometry in the viewer.
 * Build - This is for finalizing the map. Before you test it in-game, it is always a good idea to `Build Paths`. If you want to see your map in its full beauty, you should `Build Lighting`. Alternatively, you can just `Build All` whenever you feel like it. Building can take a while, but will catch any errors like invalid spawn points or invalid geometry.
 * Play - Sadly, this menu is dead to us.
@@ -32,7 +32,7 @@ New, load, save, etc. No surprises here.
 
 ![](/images/udk/essential/ui_editor_window.png)
 
-Undo, redo, and then the settings for the manipulator widget. These are to move/translate, rotate, scale uniformly, and scale per axis. The dropdown menu for World/Local changes the coordinate system.
+Undo, redo, and then the settings for the manipulator widget. These are to move/translate, rotate, scale uniformly, and scale per axis. Spacebar will switch between translate, rotate, and scale. The dropdown menu for World/Local changes the coordinate system. **Right clicking these buttons spawns a pop-up which allows for typing exact values.**
 
 ### 4 - Editor Window Actor Search
 
@@ -126,21 +126,21 @@ When you have an actor selected and do either a double click, `right click > Pro
 
 As you mouse over the various buttons on the right edge, the tooltips will fill you in on what they do. However, it can still be a little unclear from their descriptions.
 
-![](/images/udk/essential/ui_properties_use.png) - Use Selected Object In Content Browser - First, select the material/texture/mesh/whatever you intend to use in the viewer panel of the Content Browser. Then, click this arrow to autofill with its full UPK reference name (such as PhysicalMaterial'TestMap.PhysicalMaterials.StickyWalls').
+![](/images/udk/essential/ui_properties_use.png) - **Use Selected Object In Content Browser** - First, select the material/texture/mesh/whatever you intend to use in the viewer panel of the Content Browser. Then, click this arrow to autofill with its full UPK reference name (such as PhysicalMaterial'TestMap.PhysicalMaterials.StickyWalls').
 
-![](/images/udk/essential/ui_properties_search_cb.png) - Find Object in Content Browser - Navigates to and selects the listed item in the content browser. This is the easiest way to jump around, because you don’t have to remember where every last material is buried.
+![](/images/udk/essential/ui_properties_search_cb.png) - **Find Object in Content Browser** - Navigates to and selects the listed item in the content browser. This is the easiest way to jump around, because you don’t have to remember where every last material is buried.
 
-![](/images/udk/essential/ui_properties_clear.png) - Clear Text - Wipes this box clean, almost like backspace or delete would do.
+![](/images/udk/essential/ui_properties_clear.png) - **Clear Text** - Wipes this box clean, almost like backspace or delete would do.
 
-![](/images/udk/essential/ui_properties_remove_all.png) - Remove All Items From This Array - Clear the entire array. In the image above, the array is already empty.
+![](/images/udk/essential/ui_properties_remove_all.png) - **Remove All Items From This Array** - Clear the entire array. In the image above, the array is already empty.
 
-![](/images/udk/essential/ui_properties_add.png) - Add a New Item - For arrays, such as StaticMeshActors with multiple Materials or a map with multiple spawn points, you may need to manually create open slots. Clicking this will create a slot which has a few more options, as shown below.
+![](/images/udk/essential/ui_properties_add.png) - **Add a New Item** - For arrays, such as StaticMeshActors with multiple Materials or a map with multiple spawn points, you may need to manually create open slots. Clicking this will create a slot which has a few more options, as shown below.
 
-![](/images/udk/essential/ui_properties_copy.png) - Create a Copy of This Item - Couldn’t have said it better myself.
+![](/images/udk/essential/ui_properties_copy.png) - **Create a Copy of This Item** - Couldn’t have said it better myself.
 
-![](/images/udk/essential/ui_properties_remove.png) - Remove This Item - As advertised.
+![](/images/udk/essential/ui_properties_remove.png) - **Remove This Item** - As advertised.
 
-![](/images/udk/essential/ui_properties_insert_before.png) - Insert a New Item Before This Item - Really stunning iconographic work here.
+![](/images/udk/essential/ui_properties_insert_before.png) - **Insert a New Item Before This Item** - Really stunning iconographic work here.
 
 ## Right Click Menu <Badge text="note" type="warning"/>
 

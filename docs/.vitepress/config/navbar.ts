@@ -79,6 +79,10 @@ export default <DefaultTheme.NavItem[]>[
                 link: '/resources/references/guide'
             },
             {
+                text: 'Tips and Tricks',
+                link: '/tipstricks/'
+            },
+            {
                 text: 'Community',
                 items: [
                     {
@@ -122,11 +126,15 @@ export default <DefaultTheme.NavItem[]>[
                 link: '/more/roadmap'
             },
             {
+                text: 'UE5',
+                link: '/more/ue5'
+            },
+            {
                 text: 'Contribute',
                 items: [
                     {
                         text: 'Contributing guide',
-                        link: GITHUB_REPOSITORY_URL + `/blob/${GITHUB_DEFAULT_BRANCH}/CONTRIBUTING.md`
+                        link: `${GITHUB_REPOSITORY_URL}/blob/${GITHUB_DEFAULT_BRANCH}/CONTRIBUTING.md`
                     },
                     {
                         text: 'GitHub',
@@ -139,5 +147,14 @@ export default <DefaultTheme.NavItem[]>[
                 ]
             }
         ]
-    }
+    },
+
+    {
+        component: 'SettingsNav',
+        props: {
+            link: '/settings',
+            icon: 'fa6-solid:gear',
+            label: 'Guide settings',
+        },
+    },
 ]

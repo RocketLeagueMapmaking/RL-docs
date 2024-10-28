@@ -1,9 +1,7 @@
 ---
 title: Boost
 ---
-# Cheat Sheets <Badge text="not finished" type="warning"/>
-
-## Boost
+# Boost
 
 This page will be updated soon!
 

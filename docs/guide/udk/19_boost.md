@@ -206,6 +206,3 @@ Slot 1 will be the effect that plays when the boost is picked up, which is imple
 | “res”      | Respawn Delay      | 4             |
 
 **Remember to assign the `FXActor_Boost_TA` to the FXActor slot as well.**
-
-<!-- TODO: add more alt texts and remove the next line -->
-<!-- markdownlint-disable-file MD045 -->
