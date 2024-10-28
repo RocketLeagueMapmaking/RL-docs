@@ -1,6 +1,8 @@
 import { type Theme } from 'vitepress'
 import ThemeRLMM, { DocFeatures } from '@rocketleaguemapmaking/theme-rlmm'
 
+import SettingsNav from './components/SettingsNav.vue'
+
 import './style.css'
 
 export default {
@@ -10,6 +12,7 @@ export default {
 
         const components = [
             ['DocFeatures', DocFeatures],
+            ['SettingsNav', SettingsNav],
         ] as const
 
         for (const [name, component] of components) {

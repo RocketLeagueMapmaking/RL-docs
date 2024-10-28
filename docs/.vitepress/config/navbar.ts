@@ -147,5 +147,14 @@ export default <DefaultTheme.NavItem[]>[
                 ]
             }
         ]
-    }
+    },
+
+    {
+        component: 'SettingsNav',
+        props: {
+            link: '/settings',
+            icon: 'fa6-solid:gear',
+            label: 'Guide settings',
+        },
+    },
 ]
