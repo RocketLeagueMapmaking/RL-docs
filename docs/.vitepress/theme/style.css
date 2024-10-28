@@ -6,6 +6,12 @@
     --vp-c-brand-soft: var(--vp-c-green-soft);
 }
 
+/* Oops, missed this in the theme */
+.VPSwitch.enabled .check {
+    background-color: var(--vp-c-brand-3);
+    transform: translateX(18px);
+}
+
 /* Makes the caption the same width as the image */
 html.image-captions p:has(.custom-img-caption) {
     display: inline-block;
@@ -13,7 +19,7 @@ html.image-captions p:has(.custom-img-caption) {
 
 /* Styles for the caption block, if custom image captions are rendered */
 html.image-captions .custom-img-caption {
-    background-color: var(--vp-c-brand);
+    background-color: var(--vp-c-default-2);
     display: block;
     padding: 4px 10px;
     text-align: center;

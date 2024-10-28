@@ -56,9 +56,6 @@ export default defineConfigWithTheme<ThemeConfig>({
     lastUpdated: true,
     markdown: {
         headers: true,
-        image: {
-            lazyLoading: true,
-        },
     },
 
     // Hooks
@@ -105,7 +102,10 @@ export default defineConfigWithTheme<ThemeConfig>({
 
         storage: {
             pageClasses: {
-                'image-captions': 'use-custom-image-captions',
+                'image-captions': {
+                    key: 'use-custom-image-captions',
+                    defaultValue: false,
+                },
             },
         },
 
