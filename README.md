@@ -52,7 +52,7 @@ Read the [contribution][contributing] documentation for guidelines when contribu
 
 ## Certificate Renewal
 
-The certificate is renewed by the `deployment/renewcert.sh` script run using a cron job.
+The certificate is renewed by the [`renewcert`](.github/workflows/certificate.yml) script run using a cron job.
 
 [contributing]: ./CONTRIBUTING.md
 [package.json]: https://github.com/RocketLeagueMapmaking/RL-docs/blob/master/package.json
