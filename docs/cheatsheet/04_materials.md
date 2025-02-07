@@ -11,7 +11,7 @@ pageClass: page-inline-images
 | --------------------------- | ------------------------------------------------------- |
 | **Solid Color**             | **LevelColorationLitMaterial**                          |
 | **Translucent Solid Color** | **TerrainCollisionMaterial**                            |
-| ** Textured Material        | **TexturePaint_2Tex_Color**                             |
+| **Textured Material**       | **TexturePaint_2Tex_Color**                             |
 
 Right click and **Create New Material Instance (Constant):**
 
@@ -26,7 +26,7 @@ Type your map in **Package**
 
 In the next popup window, expand **Parameter Groups:**
 
-| Set **Color**                                     | Set **CollisionColor**                             | Load **Textures** into Channels                   |
+| Set **Color**                                 | Set **CollisionColor**                         | Load **Textures** into Channels               |
 | --------------------------------------------- | ---------------------------------------------- | --------------------------------------------- |
 | ![](/images/cheatsheets/materials/image9.png) | ![](/images/cheatsheets/materials/image12.png) | ![](/images/cheatsheets/materials/image5.png) |
 
