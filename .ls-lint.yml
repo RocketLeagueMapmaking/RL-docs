@@ -21,8 +21,7 @@ ls:
           .png: regex:logo_(\w|_|\d)+
         
         images:
-          # TODO: add this when ls-lint adds this
-          # .png: not_regex:image\d+
+          .png: not_regex:image\d+
 
           # All images should be in the following folders only
           '{blender,udk}/*':

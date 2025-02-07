@@ -12,6 +12,20 @@ export type Sidebar = {
 }
 
 const sidebar: Sidebar = {
+    '/': {
+        base: '/',
+        meta: {
+            description: '',
+            mediaFolder: '',
+        },
+        items: [
+            {
+                text: 'Guide settings',
+                link: 'settings',
+            },
+        ],
+    },
+
     '/essential/': {
         base: '/essential/',
         meta: {
