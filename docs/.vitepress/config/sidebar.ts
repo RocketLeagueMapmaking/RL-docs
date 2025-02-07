@@ -12,6 +12,20 @@ export type Sidebar = {
 }
 
 const sidebar: Sidebar = {
+    '/': {
+        base: '/',
+        meta: {
+            description: '',
+            mediaFolder: '',
+        },
+        items: [
+            {
+                text: 'Guide settings',
+                link: 'settings',
+            },
+        ],
+    },
+
     '/essential/': {
         base: '/essential/',
         meta: {
@@ -417,15 +431,14 @@ const sidebar: Sidebar = {
         base: '/cheatsheet/',
         meta: {
             description: '',
-            mediaFolder: '',
+            mediaFolder: 'cheatsheets/',
         },
         items: [
             {
-                text: 'Cheat Sheets',
-                collapsed: false,
+                text: 'Cheatsheets',
                 items: [
                     {
-                        text: 'Cheat Sheets',
+                        text: 'Cheatsheets',
                         link: 'index.html',
                     },
                     {
@@ -481,6 +494,20 @@ const sidebar: Sidebar = {
         ]
     },
 
+    '/tipstricks/': {
+        base: '/tipstricks/',
+        meta: {
+            description: 'Tips and tricks',
+            mediaFolder: 'tipstricks/',
+        },
+        items: [
+            {
+                text: 'Tips & tricks',
+                link: 'index.html'
+            },
+        ]
+    },
+
     '/resources/references/': {
         base: '/resources/references/',
         meta: {
@@ -490,25 +517,15 @@ const sidebar: Sidebar = {
         items: [
             {
                 text: 'References',
-                collapsed: false,
                 items: [
                     {
-                        text: 'Guide',
+                        text: 'Guide links',
                         link: 'guide',
-                    },
-                    {
-                        text: 'Psyonix Links',
-                        link: 'psyonix',
-                    },
-                    {
-                        text: 'UE5',
-                        link: 'ue5',
                     },
                 ]
             },
             {
-                text: 'Kismet References',
-                collapsed: false,
+                text: 'Kismet',
                 items: [
                     {
                         text: 'Kismet nodes',
@@ -532,7 +549,6 @@ const sidebar: Sidebar = {
         items: [
             {
                 text: 'More Information',
-                collapsed: false,
                 items: [
                     {
                         text: 'About',
@@ -550,6 +566,10 @@ const sidebar: Sidebar = {
                         text: 'Roadmap',
                         link: 'roadmap',
                     },
+                    {
+                        text: 'UE5',
+                        link: 'ue5'
+                    }
                 ],
             },
         ]

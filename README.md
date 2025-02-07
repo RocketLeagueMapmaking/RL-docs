@@ -25,6 +25,7 @@ To update the site on the host machine, run [the `deploy` workflow](https://gith
 - push (default: `true`). Controls whether to push the built image to Docker hub. If `deploy` is enabled and `push` is disabled, the server will use an already pushed image with the same `version`, or fail.
 - deploy (default: `true`). Disable this to only build (and push) the Docker Image without deploying it.
 - webhook message (default: `true`): send a Discord message with the deployment details when the workflow is finished.
+- run linting (default: `true`): run all linting scripts before deploying the site.
 
 See the GitHub documentation for [how to run a workflow manually](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow#running-a-workflow).  
 

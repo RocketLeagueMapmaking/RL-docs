@@ -18,6 +18,10 @@ on:
         description: "Send a webhook message in the #website channel after deployment"
         type: boolean
         default: true
+      run_linting:
+        description: "Run the linting scripts on the documentation"
+        type: boolean
+        default: true
 jobs:
   build:
     name: Build image
@@ -45,12 +49,15 @@ jobs:
         # since workflow dispatch can be run on failed builds
       - name: Run eslint
         run: npm run lint
+        if: inputs.run_linting
 
       - name: Run markdown lint
         run: npm run lint-markdown
+        if: inputs.run_linting
 
       - name: Run file lint
         run: npm run lint-files
+        if: inputs.run_linting
 
       - name: Check guide build
         run: npm run docs:build

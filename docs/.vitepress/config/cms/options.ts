@@ -84,7 +84,7 @@ export function createAdvancedCollections (
     /**
     * Set false first in the array to have the UI in order:
     * - {collection}
-    * - {collection} advaned
+    * - {collection} advanced
     */
     const options = [false, true]
 

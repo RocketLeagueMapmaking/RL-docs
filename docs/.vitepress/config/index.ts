@@ -1,8 +1,6 @@
 import { defineConfigWithTheme, type DefaultTheme } from 'vitepress'
 import { type ThemeConfig } from '@rocketleaguemapmaking/theme-rlmm'
 
-import { frontmatterKeys, homeFrontmatterKeys } from '../theme/data'
-
 import { getCollectionItemEditLink } from './cms/'
 import head from './head'
 import createHooks from './hooks'
@@ -15,6 +13,8 @@ import {
 import vite from './vite'
 
 import config from './data/config.json'
+import frontmatterValidation from './data/frontmatter'
+import { banners, notifications } from './data/notifications.json'
 
 import createRewrites from './util/rewrites'
 
@@ -56,40 +56,15 @@ export default defineConfigWithTheme<ThemeConfig>({
     lastUpdated: true,
     markdown: {
         headers: true,
-        image: {
-            lazyLoading: true,
-        },
     },
 
     // Hooks
     ...createHooks({
-        frontmatterValidation: {
-            required: [
-                {
-                    key: 'title',
-                    ignore: [
-                        '/essential/flowchart_questions/',
-                    ],
-                },
-                {
-                    key: 'advanced',
-                    valid: [
-                        '/guide/blender/',
-                        '/guide/udk/',
-                    ]
-                },
-            ],
-            using: [
-                { keys: frontmatterKeys },
-                { keys: homeFrontmatterKeys, valid: ['/'] },
-                { keys: ['teams'], valid: ['/more/about'] },
-                // Custom features
-                {
-                    keys: ['collision_types', 'next_actions'],
-                    valid: ['/guide/udk/04_map_test', '/guide/udk/06_owl'],
-                },
-            ],
+        imageCaptions: {
+            enabled: true,
+            className: 'custom-img-caption',
         },
+        frontmatterValidation,
     }),
 
     // Theme configuration
@@ -112,8 +87,26 @@ export default defineConfigWithTheme<ThemeConfig>({
         },
         socialLinks: <DefaultTheme.SocialLink[]>config.socialLinks,
 
+        // Theme-rlmm options
         router: {
             redirects: rewrites,
+        },
+
+        banner: {
+            data: banners,
+        },
+
+        notifications: {
+            data: notifications,
+        },
+
+        storage: {
+            pageClasses: {
+                'image-captions': {
+                    key: 'use-custom-image-captions',
+                    defaultValue: false,
+                },
+            },
         },
 
         // Search
