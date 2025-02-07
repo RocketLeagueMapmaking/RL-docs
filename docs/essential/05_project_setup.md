@@ -20,7 +20,7 @@ I use Windows 10 and the Steam version of Rocket League, so please keep that in 
   * **Each individual custom map should live inside a folder within `{UDK Folder}\UDKGame\Content\Maps\`**
   * In addition to these folders, I highly highly recommend making two Windows File Explorer shortcuts, or bookmarking these locations
     * One that points to `{CookedPCConsole}`
-    * One that points to the Steam Workshop folder for Rocket League. This may be found in the Steam install location (the first half of `{CookedPCConsole}`), but instead of `\rocketleague\` it will be `\workshop\content\252950\`. Each downloaded map has a custom identifier in here, and it can be incredibly valuable to open them up in UDK and see how things are made.
+    * One that points to the Steam Workshop folder for Rocket League. This may be found in the Steam install location (the first half of `{CookedPCConsole}`), but instead of `\common\` it will be `\workshop\content\252950\`. Each downloaded map has a custom identifier in here, and it can be incredibly valuable to open them up in UDK and see how things are made.
     * Keep these within the `\Maps\` folder
 
 * Within `C:\UDK\` I also have a folder named `Assets`. This is where I keep Blender projects, exported meshes, custom textures, screenshots, and whatever else (each within a categorized folder) that I might want to have easy access to.
