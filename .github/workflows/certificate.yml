@@ -17,5 +17,4 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
-            cd ${{ vars.SSH_PROJECT_CERT_ROOT }}
-            sh renewcert.sh
+            sh /home/${{ secrets.RLMM_USERNAME }}/renewcert.sh
