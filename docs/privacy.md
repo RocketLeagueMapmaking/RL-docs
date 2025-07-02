@@ -1,4 +1,5 @@
 ---
+title: Privacy policy
 lastUpdated: true
 sidebar: false
 next: false

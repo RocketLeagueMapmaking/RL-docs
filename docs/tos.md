@@ -1,4 +1,5 @@
 ---
+title: Terms of Service
 lastUpdated: true
 sidebar: false
 next: false
