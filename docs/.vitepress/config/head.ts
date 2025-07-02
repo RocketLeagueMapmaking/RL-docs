@@ -46,6 +46,13 @@ export default <HeadConfig[]>[
         {},
         `const ${getCollectionItemEditLink.name} = ${getCollectionItemEditLink}`
     ],
+    ['script',
+        {
+            defer: '',
+            src: 'https://static.cloudflareinsights.com/beacon.min.js',
+            'data-cf-beacon': '{"token": "f333ed2ade344138a71c7882e02e1b1b"}',
+        }
+    ],
 
     // OG links
     // Not including the special Twitter links, because X...
