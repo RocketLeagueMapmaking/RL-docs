@@ -59,4 +59,4 @@ The certificate is renewed by the [`renewcert`](.github/workflows/certificate.ym
 [package.json]: https://github.com/RocketLeagueMapmaking/RL-docs/blob/master/package.json
 [github-actions]: https://github.com/RocketLeagueMapmaking/RL-docs/actions
 [domain]: https://rocketleaguemapmaking.com
-[dev-domain]: https://rocketleaguemapmaking.pages.dev
+[dev-domain]: https://dev.rocketleaguemapmaking.com
