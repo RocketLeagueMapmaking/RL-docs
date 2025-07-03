@@ -96,7 +96,7 @@ jobs:
           # Not using deployment/move_dummyassets.sh for now
           # If that file ever changes, also update the file on the server
           script: |
-            sh /home/${{ secrets.RLMM_USERNAME }}/deployment/update_and_deploy.sh ${{ github.event.inputs.version }}
+            sh /home/${{ secrets.RLMM_USERNAME }}/web_repo/deployment/update_and_deploy.sh ${{ github.event.inputs.version }}
             sh /home/${{ secrets.RLMM_USERNAME }}/move_dummyassets.sh
 
       - name: Send webhook result
