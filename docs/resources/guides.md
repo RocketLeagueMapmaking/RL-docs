@@ -1,5 +1,7 @@
 ---
 title: Guides
+sidebar: false
+next: false
 editLink: false
 ---
 # Guides

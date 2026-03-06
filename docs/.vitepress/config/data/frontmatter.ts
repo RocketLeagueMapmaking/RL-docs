@@ -19,6 +19,8 @@ const frontmatterKeys: FilterKey[] = [
     'lastUpdated',
     'editLink',
     'footer',
+    'prev',
+    'next',
     // theme-rlmm
     'banner',
     'blocks',

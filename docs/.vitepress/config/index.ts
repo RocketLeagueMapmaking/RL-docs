@@ -89,6 +89,7 @@ export default defineConfigWithTheme<ThemeConfig>({
 
         // Theme-rlmm options
         router: {
+            // Apply the rewrites to redirect to the rewritten page
             redirects: rewrites,
         },
 

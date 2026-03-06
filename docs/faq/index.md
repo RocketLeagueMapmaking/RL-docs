@@ -1,5 +1,7 @@
 ---
 title: FAQ
+sidebar: false
+next: false
 ---
 
 # FAQ

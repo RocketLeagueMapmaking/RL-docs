@@ -1,17 +1,20 @@
 ---
 title: Settings
 editLink: false
+sidebar: false
 aside: false
 ---
 
 # Guide settings
 
-## Display
+## Appearance
 
 <PreferenceSetting :isAppearance="true" storeKey="">
 
 Use dark theme
 </PreferenceSetting>
+
+## Display
 
 <PreferenceSetting storeKey="use-custom-image-captions">
 
