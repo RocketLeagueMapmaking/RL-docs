@@ -49,13 +49,12 @@ jobs:
               run: npm run docs:build
 
             - name: Publish to Cloudflare Pages
-              uses: cloudflare/pages-action@1
+              uses: cloudflare/wrangler-action@v3
               id: cloudflare
               with:
                 apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
                 accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-                projectName: ${{ secrets.CLOUDFLARE_PROJECTNAME || 'rocketleaguemapmaking' }}
-                directory: docs/.vitepress/dist
+                command: pages deploy docs/.vitepress/dist --project-name=${{ secrets.CLOUDFLARE_PROJECTNAME || 'rocketleaguemapmaking' }}
                 # Enable GitHub deployments
                 gitHubToken: ${{ secrets.GITHUB_TOKEN }}
 

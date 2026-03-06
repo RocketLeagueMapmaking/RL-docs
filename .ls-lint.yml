@@ -21,7 +21,7 @@ ls:
           .png: regex:logo_(\w|_|\d)+
         
         images:
-          .png: not_regex:image\d+
+          .png: regex:!image\d+
 
           # All images should be in the following folders only
           '{blender,udk}/*':
