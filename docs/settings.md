@@ -14,6 +14,11 @@ aside: false
 Use dark theme
 </PreferenceSetting>
 
+<PreferenceSetting storeKey="rlmm-accent-color" type="color" cssVariable="--vp-c-brand-1" :resetOptions="{ enabled: true }">
+
+Accent color
+</PreferenceSetting>
+
 ## Display
 
 <PreferenceSetting storeKey="use-custom-image-captions">

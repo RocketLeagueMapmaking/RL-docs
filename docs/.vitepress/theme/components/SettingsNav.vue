@@ -35,6 +35,12 @@ defineProps<{
     background-color: var(--vp-c-bg-soft);
 }
 
+/* Hides the border on the menu from the original theme switch */
+.VPMenu .group + .group {
+    border-top: unset !important;
+    padding: 0 12px 0 12px !important;
+}
+
 .nav-settings-item {
     justify-content: space-between;
     align-items: center;
@@ -50,6 +56,7 @@ defineProps<{
 
 .nav-settings {
     color: var(--vp-c-text-2);
+    padding-left: 10px;
     font-size: 12px;
     font-weight: 500;
 }
