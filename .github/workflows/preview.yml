@@ -27,7 +27,7 @@ jobs:
         strategy:
           matrix:
             # Set the same version as in Dockerfile
-            node: [18]
+            node: [22]
         permissions:
             contents: read
             deployments: write

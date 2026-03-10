@@ -64,7 +64,7 @@ The project utilises `vitepress` in order to create pages for our documentation,
 
 ## Dependencies
 
-1. Install [Node v18+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (or later). You can use [nvm](https://github.com/nvm-sh/nvm) to easily update Node.
+1. Install [Node v22+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (or later). You can use [nvm](https://github.com/nvm-sh/nvm) to easily update Node.
 
 - `node --version` should show at least `v18.19.0`. Lower versions have not been tested but may also work.
 - `npm --version` should show at least `10.2.3`. Lower versions have not been tested but may also work.
