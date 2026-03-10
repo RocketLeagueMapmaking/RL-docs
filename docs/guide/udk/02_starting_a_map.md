@@ -30,7 +30,7 @@ Many things will not work properly if you have spaces in the project name, so ei
 
 :::
 
-[Here](https://drive.google.com/file/d/1_SRltyPZXlqwuA4s2rHA5H8GgMOiSqk-/view?usp=sharing) is another set of meshes to get you going. I fine-tuned the UVs so that they look reasonably good with no materials. You may use these or the ones inside Park_P.upk. If your UDK setup has the fully Dummy Assets package, this will be inside `{UDK Folder}\UDKGame\Content\DummyAssets\Maps\BeckwithPark`
+[This zipped folder](https://drive.google.com/file/d/1_SRltyPZXlqwuA4s2rHA5H8GgMOiSqk-/view?usp=sharing) contains another set of meshes to get you going. I fine-tuned the UVs so that they look reasonably good with no materials. You may use these or the ones inside Park_P.upk. If your UDK setup has the fully Dummy Assets package, this will be inside `{UDK Folder}\UDKGame\Content\DummyAssets\Maps\BeckwithPark`
 
 ## Project Settings
 

@@ -208,7 +208,7 @@ In `{UDK Folder}\Binaries\`, run `UnrealFrontend.exe`.
 
 Thanks to the hard work of friendly modders, there is an extremely useful UDK Package (.UPK) which contains a number of assets ripped from the game. They allow you to build your map with pieces and materials that are already in the game. However, the important thing is that they have the exact same name as the in-game assets. More on this aspect of things later.
 
-You can find the download [here.](../resources/downloads.md#setup)
+You can find the download [in the resources](../resources/downloads.md#setup).
 
 **Place this into `{UDK Folder}\UDKGame\Content\`** alongside the various other files. UDK will recognize it here and make its contents available to you.
 
