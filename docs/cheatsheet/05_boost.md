@@ -9,11 +9,11 @@ pageClass: page-inline-images
 
 Add `FXActor_Boost_TA` from the Actor Classes window:
 
-![](/images/cheatsheets/boost/image1.png)
+![](/images/cheatsheets/boost/fxactor_class.png)
 
 Add `VehiclePickup_Boost_TA` next to the FXActor:
 
-![](/images/cheatsheets/boost/image2.png)
+![](/images/cheatsheets/boost/boost_placement.png)
 
 </template>
 <template #step-2>
@@ -61,11 +61,11 @@ Change the following properties in the VehiclePickup:
 
 Assign the FXActor to the VehiclePickup:
 
-![](/images/cheatsheets/boost/image3.png)
+![](/images/cheatsheets/boost/boost_assign_fxactor.png)
 
 And lastly, in FXActor:
 
-![](/images/cheatsheets/boost/image4.png)
+![](/images/cheatsheets/boost/fxactor_nodelete.png)
 
 </template>
 </steps>

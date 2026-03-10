@@ -1,9 +1,9 @@
 {
-    "MD013": false,
-    "MD024": false,
-    "MD025": false,
-    "MD029": false,
-    "MD033": false,
-    "MD034": false,
-    "MD045": false
+    "line-length": false,
+    "no-duplicate-heading": false,
+    "single-h1": false,
+    "ol-prefix": false,
+    "no-inline-html": false,
+    "no-bare-urls": false,
+    "no-alt-text": false
 }
