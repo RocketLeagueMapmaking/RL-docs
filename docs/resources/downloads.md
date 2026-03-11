@@ -1,7 +1,8 @@
 ---
 title: Downloads
-sidebar: auto
-editLink: false
+sidebar: false
+outline: 3
+next: false
 ---
 # Downloads & Assets
 

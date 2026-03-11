@@ -38,7 +38,7 @@ The easiest way to find the Rocket League install location is to right click it 
 
 Put a copy of this .bat file next to each map project:
 
-![](/images/cheatsheets/quicktesting/image1.png)
+![](/images/cheatsheets/quicktesting/script_folder.png)
 
 To use, simply drag the .udk file onto it, then start Training in Rocket League.
 
@@ -47,7 +47,7 @@ To use, simply drag the .udk file onto it, then start Training in Rocket League.
 
 Keep the project file and .bat script in view to the side of UDK
 
-![](/images/cheatsheets/quicktesting/image2.png)
+![](/images/cheatsheets/quicktesting/screen_layout.png)
 
 </template>
 </steps>

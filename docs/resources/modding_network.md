@@ -1,5 +1,7 @@
 ---
 title: Modding Network
+sidebar: false
+next: false
 ---
 # The Modding Network
 

@@ -1,5 +1,7 @@
 ---
 title: Tools
+sidebar: false
+next: false
 ---
 
 # Community Tools

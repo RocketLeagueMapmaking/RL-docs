@@ -11,27 +11,29 @@ pageClass: page-inline-images
 
 **Add** them to UDKGame/Content and verify in the Content Browser:
 
-![](/images/cheatsheets/dummyassets/image6.png)
+![](/images/cheatsheets/dummyassets/download_steps.png)
 
 </template>
 <template #step-2>
 
 **Right click** a map package and select **Fully Load:**
 
-![](/images/cheatsheets/dummyassets/image2.png)
+![](/images/cheatsheets/dummyassets/package_fully_load.png)
 
 </template>
 <template #step-3>
 
 **Drag** an asset into the map, or **Right click** in the 3D editor and **Add** the object:
 
+![](/images/cheatsheets/dummyassets/actor_add.png)
+
 **Immediately open Properties** (F4) and put a useful name in the Tag field:
 
-![](/images/cheatsheets/dummyassets/image1.png)
+![](/images/cheatsheets/dummyassets/actor_tag.png)
 
 Save Current Level will update the Scene tab, then sort by Tag to find the invisible Dummy Assets:
 
-![](/images/cheatsheets/dummyassets/image3.png)
+![](/images/cheatsheets/dummyassets/scene_tags.png)
 
 </template>
 </steps>

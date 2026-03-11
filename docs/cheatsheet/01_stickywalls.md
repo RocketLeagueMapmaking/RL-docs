@@ -8,11 +8,11 @@ pageClass: page-inline-images
 <template #step-1>
 
 Create a **New Asset** with **New** at the bottom left of the Content Browser:
-![](/images/cheatsheets/stickywalls/image7.png)
+![](/images/cheatsheets/stickywalls/button_new_asset.png)
 
 or Right Click and select **New Physical Material**:
 
-![](/images/cheatsheets/stickywalls/image8.png)
+![](/images/cheatsheets/stickywalls/new_physicalmaterial.png)
 
 </template>
 <template #step-2>
@@ -26,14 +26,14 @@ or Right Click and select **New Physical Material**:
 | **Name**     | StickyWalls                               |
 | **Factory**  | PhysicalMaterial                          |
 
-![](/images/cheatsheets/stickywalls/image3.png)
+![](/images/cheatsheets/stickywalls/new_material_factory.png)
 
 </template>
 <template #step-3>
 
 **Add** `PhysicalMaterialProperty_TA` with the blue arrow dropdown at the bottom of the next popup. Check **Enable Sticky Wheels**
 
-![](/images/cheatsheets/stickywalls/image6.png)
+![](/images/cheatsheets/stickywalls/phys_material_properties.png)
 
 You may wish to create a secondary Sticky Walls with **Consider For Ground** disabled. The game will not end if the ball hits that surface at 0 seconds.
 
@@ -42,7 +42,7 @@ You may wish to create a secondary Sticky Walls with **Consider For Ground** dis
 
 **Assign** to a Static Mesh Actor or Blocking Volume’s `Phys Material Override` slot with the green arrow
 
-![](/images/cheatsheets/stickywalls/image1.png)
+![](/images/cheatsheets/stickywalls/override_phys_material.png)
 
 </template>
 </steps>

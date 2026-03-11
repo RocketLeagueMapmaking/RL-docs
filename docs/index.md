@@ -25,6 +25,8 @@ hero:
         enabled: true
     enabled: true
     amount: 4
+    urlSearchParams:
+      platform: steam
 features:
   - title: UDK Guide
     details: Learn how to use UDK and make your map work in Rocket League

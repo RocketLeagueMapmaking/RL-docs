@@ -37,6 +37,7 @@ One of the key optimizations used by UDK is a strategy called Light Mapping. Thi
 When you build, UDK is inevitably going to complain about some things. In general you can ignore Warnings, but Errors should be resolved before publishing your map.
 
 These are the most common things you’ll see and how to fix them:
+
 | Message/Error                                    | Fix                                                                                                                                      |
 | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | “Maps not built with production lighting         | Select “Production” in lighting build options (this makes it take much longer)                                                           |

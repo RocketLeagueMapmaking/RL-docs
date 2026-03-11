@@ -3,7 +3,8 @@ import { resolve } from 'node:path'
 
 import type { UserConfig } from 'vitepress'
 
-export type RewriteConfig = NonNullable<UserConfig['rewrites']>
+// eslint-disable-next-line no-unused-vars
+export type RewriteConfig = Exclude<NonNullable<UserConfig['rewrites']>, ((_id: string) => string)>
 
 type RewriteFolderOptions =
     | string

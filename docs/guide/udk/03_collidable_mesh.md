@@ -19,6 +19,7 @@ advanced: false
 Unchecking “Disable All Rigid Body” allows for this object to have collisions. “Block Rigid Body” allows for it to collide with other solid objects. “Accepts Dynamic Decals” allows Rocket League to draw the ball indicator circle on this mesh, which is typically what you want. “Collision Type” allows for this object to collide with certain types of actors, but is largely overruled by RBChannel. “RBChannel” allows for objects which block only the ball or only the player (as examples), with the default option to block everything. **Some of these are the default settings, but they are good to verify anyway.**
 
 **Center the mesh to the world origin:**
+
 | Search for | Change the line(s) | To this value |
 | ---------- | :----------------: | ------------: |
 | “loca”     |         X          |             0 |
@@ -40,6 +41,7 @@ Next, look for `Field_STD_Collision_Corner`, and place it into the map. Adjust i
 If you used one of the templates, you will have a light already. If not, **right click anywhere in the 3D editor > Add Actor > Add Light (Point). Right click the added light > Convert Light > DirectionalLights > DirectionalLight. Position it somewhere above the map.**
 
 Inside its properties:
+
 | Search for | Change the line(s) | To this value |
 | ---------- | :----------------: | ------------: |
 | “draw”     |     Draw Scale     |             5 |

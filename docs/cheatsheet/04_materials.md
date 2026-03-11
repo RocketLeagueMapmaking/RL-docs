@@ -15,20 +15,20 @@ pageClass: page-inline-images
 
 Right click and **Create New Material Instance (Constant):**
 
-![](/images/cheatsheets/materials/image3.png)
+![](/images/cheatsheets/materials/create_mic.png)
 
 </template>
 <template #step-2>
 
 Type your map in **Package**
 
-![](/images/cheatsheets/materials/image7.png)
+![](/images/cheatsheets/materials/mic_factory.png)
 
 In the next popup window, expand **Parameter Groups:**
 
-| Set **Color**                                 | Set **CollisionColor**                         | Load **Textures** into Channels               |
-| --------------------------------------------- | ---------------------------------------------- | --------------------------------------------- |
-| ![](/images/cheatsheets/materials/image9.png) | ![](/images/cheatsheets/materials/image12.png) | ![](/images/cheatsheets/materials/image5.png) |
+| Set **Color**                                     | Set **CollisionColor**                                      | Load **Textures** into Channels                           |
+| ------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------- |
+| ![](/images/cheatsheets/materials/prop_color.png) | ![](/images/cheatsheets/materials/prop_collision_color.png) | ![](/images/cheatsheets/materials/prop_load_textures.png) |
 
 **Click the Checkbox** to overwrite the Parameter.
 
@@ -37,23 +37,23 @@ In the next popup window, expand **Parameter Groups:**
 
 **Textures** should be different per channel:
 
-| **Diffuse**                                   | **Specular**                                  | **Emissive**                                   | **Normal**                                    |
-| --------------------------------------------- | --------------------------------------------- | ---------------------------------------------- | --------------------------------------------- |
-| ![](/images/cheatsheets/materials/image8.png) | ![](/images/cheatsheets/materials/image1.png) | ![](/images/cheatsheets/materials/image13.png) | ![](/images/cheatsheets/materials/image6.png) |
+| **Diffuse**                                            | **Specular**                                            | **Emissive**                                            | **Normal**                                            |
+| ------------------------------------------------------ | ------------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------- |
+| ![](/images/cheatsheets/materials/channel_diffuse.png) | ![](/images/cheatsheets/materials/channel_specular.png) | ![](/images/cheatsheets/materials/channel_emissive.png) | ![](/images/cheatsheets/materials/channel_normal.png) |
 
 </template>
 <template #step-4>
 
 **Apply** to a StaticMesh’s Material Slot:
 
-![](/images/cheatsheets/materials/image10.png)
+![](/images/cheatsheets/materials/assign_material.png)
 
 </template>
 </steps>
 
 **Additional Custom Materials** may be created from copies of any Material Instance:
 
-![](/images/cheatsheets/materials/image4.png)
+![](/images/cheatsheets/materials/button_create_copy.png)
 
 <ActionBlock>
 

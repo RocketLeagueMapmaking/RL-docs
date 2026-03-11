@@ -56,7 +56,7 @@ To help you with searching through the large collection of materials in the Dumm
 
 :::info Bibliothèque d'Alexandrie
 
-The library allows you to see the map's content and find the name of what you want to get. You can then report the name into UDK to find the material you're looking for in the right package! You can find the library [here](../../resources/downloads.md#miscellaneous).
+The library allows you to see the map's content and find the name of what you want to get. You can then report the name into UDK to find the material you're looking for in the right package! You can find the library [on the downloads page](../../resources/downloads.md#miscellaneous).
 
 How to use this tool:
 

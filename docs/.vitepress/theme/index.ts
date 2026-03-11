@@ -18,5 +18,8 @@ export default {
         for (const [name, component] of components) {
             ctx.app.component(name, component)
         }
+
+        const theme = ctx.app.config.globalProperties.$theme
+        console.log(`Theme: ${theme.name} - v${theme.version}`)
     },
 } satisfies Theme

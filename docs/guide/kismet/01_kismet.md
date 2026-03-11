@@ -87,7 +87,7 @@ If you wish to completely abuse the game for things like Chaos Rumble or (the or
 | External Variable | Named variables of any type from an external sequence ([see Sequences](#sequences)) |
 | Float             | Numbers with decimal precision, like speed or Z location                            |
 | Int               | Numbers with integer precision, like number of players                              |
-| Matinee Data      | Animation data (see [Matinee](../udk/matinee.md))                                |
+| Matinee Data      | Animation data (see [Matinee](../udk/matinee.md))                                   |
 | Named Variable    | [Named variables][udk-docs:named-vars] of any type                                  |
 | Object            | Objects in the map, like the ball                                                   |
 | Player            | Players themselves                                                                  |
@@ -98,12 +98,12 @@ If you wish to completely abuse the game for things like Chaos Rumble or (the or
 
 I encourage you to test out any Events which sound interesting. Here are some of the most frequently and generally useful:
 
-| Event                   | Used for...                                                                               |
-| ----------------------- | ----------------------------------------------------------------------------------------- |
-| Level Loaded            | Running code as soon as the map is loaded                                                 |
-| Player > Player Spawned | Running code when a player spawns or respawns                                             |
-| TAGame > Round Start    | Running code when gameplay starts or resumes                                              |
-| TriggerVolume Touch     | Running code when the player or ball enters a region (more on this [here](trigger.md)) |
+| Event                   | Used for...                                                                                          |
+| ----------------------- | ---------------------------------------------------------------------------------------------------- |
+| Level Loaded            | Running code as soon as the map is loaded                                                            |
+| Player > Player Spawned | Running code when a player spawns or respawns                                                        |
+| TAGame > Round Start    | Running code when gameplay starts or resumes                                                         |
+| TriggerVolume Touch     | Running code when the player or ball enters a region ([read more about trigger volumes](trigger.md)) |
 
 ### Actions
 

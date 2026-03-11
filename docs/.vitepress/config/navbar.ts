@@ -8,37 +8,45 @@ import {
 export default <DefaultTheme.NavItem[]>[
     {
         text: 'Essentials',
+        activeMatch: '/essential/',
         link: '/essential/'
     },
 
     {
         text: 'Guide',
+        activeMatch: '/guide/',
         items: [
             {
                 text: 'UDK',
                 items: [
                     {
                         text: 'Editor',
+                        activeMatch: '/guide/udk/',
                         link: '/guide/udk/start'
                     },
                     {
                         text: 'Kismet',
+                        activeMatch: '/guide/kismet/',
                         link: '/guide/kismet/kismet'
                     },
                     {
                         text: 'Textures',
+                        activeMatch: '/guide/textures/',
                         link: '/guide/textures/textures'
                     },
                     {
                         text: 'Multiplayer',
+                        activeMatch: '/guide/multiplayer/',
                         link: '/guide/multiplayer/multiplayer'
                     },
                     {
                         text: 'Decryption',
+                        activeMatch: '/guide/decryption/',
                         link: '/guide/decryption/'
                     },
                     {
                         text: 'Miscellaneous',
+                        activeMatch: '/guide/misc/',
                         link: '/guide/misc/misc'
                     }
                 ]
@@ -48,6 +56,7 @@ export default <DefaultTheme.NavItem[]>[
                 items: [
                     {
                         text: 'Guide',
+                        activeMatch: '/blender/(?!fbx)',
                         link: '/guide/blender/blender'
                     },
                     {
@@ -61,9 +70,11 @@ export default <DefaultTheme.NavItem[]>[
 
     {
         text: 'Resources',
+        activeMatch: '/(cheatsheet|faq|tipstricks|resources)/',
         items: [
             {
                 text: 'Cheatsheets',
+                activeMatch: '/cheatsheet/',
                 link: '/cheatsheet/'
             },
             {
@@ -72,14 +83,17 @@ export default <DefaultTheme.NavItem[]>[
             },
             {
                 text: 'FAQ',
+                activeMatch: '/faq/',
                 link: '/faq/'
             },
             {
                 text: 'References',
+                activeMatch: '/resources/references/',
                 link: '/resources/references/guide'
             },
             {
                 text: 'Tips and Tricks',
+                activeMatch: '/tipstricks/',
                 link: '/tipstricks/'
             },
             {
@@ -108,6 +122,7 @@ export default <DefaultTheme.NavItem[]>[
 
     {
         text: 'More',
+        activeMatch: '/more/',
         items: [
             {
                 text: 'About',

@@ -93,13 +93,13 @@ Slot 0 will be the hovering ball of gooey boost, which is implemented as a parti
 
 ![](/images/udk/advanced/boost_custompill_attachment0.png "Particular settings")
 
-| Search for                | Take this action   | Set this value |
-| ------------------------- | ------------------ | -------------- |
-| Name                      | Type a name        | BoostOrb_PSC   |
-| Component                 | Click blue arrow   | ParticleSystemComponent |
-| Particle System Component | Assign a Template  | ParticleSystem'Park_P.pickup_boost.BoostOrb_PS' |
-| Attach Any                | Add a new item     | FXActorEvent_X'FXActorEvents.Spawned' |
-| Detach Any                | Add a new item     | FXActorEvent_X'FXActorEvents.PickedUp' |
+| Search for                | Take this action  | Set this value                                  |
+| ------------------------- | ----------------- | ----------------------------------------------- |
+| Name                      | Type a name       | BoostOrb_PSC                                    |
+| Component                 | Click blue arrow  | ParticleSystemComponent                         |
+| Particle System Component | Assign a Template | ParticleSystem'Park_P.pickup_boost.BoostOrb_PS' |
+| Attach Any                | Add a new item    | FXActorEvent_X'FXActorEvents.Spawned'           |
+| Detach Any                | Add a new item    | FXActorEvent_X'FXActorEvents.PickedUp'          |
 
 When adding the ParticleSystemComponent, **press P to quickly jump between items starting with P.** Try out `ParticleSystem'Boost_AlphaReward_SF.boost_alphareward.fx.Drive_PS'` instead of the standard BoostOrb_PS (and set the Primitive Component's Pitch to -90 and Scale to 5).
 
@@ -109,15 +109,15 @@ Slot 1 will be the glow emanating from the base of the pickup, which is implemen
 
 ![](/images/udk/advanced/boost_custompill_attachment1.png "Meshy settings")
 
-| Search for                | Take this action     | Set this value |
-| ------------------------- | -------------------- | -------------- |
-| Name                      | Type a name          | BaseMesh   |
-| Component                 | Click blue arrow     | StaticMeshComponent |
-| Particle System Component | Assign a Static Mesh | StaticMesh'Park_P.pickup_boost.BoostPad_Large_Glow' |
-| Rendering                 | Add a Material slot  | Material'Park_P.pickup_boost.BoostPad_Mat' |
+| Search for                | Take this action     | Set this value                                          |
+| ------------------------- | -------------------- | ------------------------------------------------------- |
+| Name                      | Type a name          | BaseMesh                                                |
+| Component                 | Click blue arrow     | StaticMeshComponent                                     |
+| Particle System Component | Assign a Static Mesh | StaticMesh'Park_P.pickup_boost.BoostPad_Large_Glow'     |
+| Rendering                 | Add a Material slot  | Material'Park_P.pickup_boost.BoostPad_Mat'              |
 | Rendering                 | Add a second slot    | Material'Park_P.pickup_boost.BoostPad_LightCone_03_Mat' |
-| Attach Any                | Add a new item       | FXActorEvent_X'FXActorEvents.Spawned' |
-| Detach Any                | Add a new item       | FXActorEvent_X'FXActorEvents.PickedUp' |
+| Attach Any                | Add a new item       | FXActorEvent_X'FXActorEvents.Spawned'                   |
+| Detach Any                | Add a new item       | FXActorEvent_X'FXActorEvents.PickedUp'                  |
 
 Try replacing the BoostPad_Large_Glow mesh with your own model. The UV map for the LightCone material is exactly what you'd expect.
 
@@ -127,16 +127,17 @@ Slot 2 will be the effect that plays when the boost is picked up, which is imple
 
 ![](/images/udk/advanced/boost_custompill_attachment2.png "Particular settings part 2")
 
-| Search for                | Take this action     | Set this value |
-| ------------------------- | -------------------- | -------------- |
-| Name                      | Type a name          | PickupPSC   |
-| Component                 | Click blue arrow     | ParticleSystemComponent |
-| Particle System Component | Assign a Template    | ParticleSystem'Park_P.pickup_boost.BoostOrb_Used_PS' |
-| Attach Any                | Add a new item       | FXActorEvent_X'FXActorEvents.PickedUp’ |
+| Search for                | Take this action  | Set this value                                       |
+| ------------------------- | ----------------- | ---------------------------------------------------- |
+| Name                      | Type a name       | PickupPSC                                            |
+| Component                 | Click blue arrow  | ParticleSystemComponent                              |
+| Particle System Component | Assign a Template | ParticleSystem'Park_P.pickup_boost.BoostOrb_Used_PS' |
+| Attach Any                | Add a new item    | FXActorEvent_X'FXActorEvents.PickedUp’               |
 
 Note that the Attach Any triggers on **PickedUp,** which is the opposite of the other two attachments. That is because this plays only when the pickup happens.
 
 **Lastly, the FXActor needs one crucial change, otherwise it will never reappear visually:**
+
 | Search for | Change the line(s) | To this value |
 | ---------- | ------------------ | ------------- |
 | “del”      | No Delete          | Checked       |
@@ -166,15 +167,15 @@ To create a boost pad, we will follow most of the same steps. This time, however
 
 Slot 0 will be the glow emanating from the base of the pickup, which is implemented as a mesh.
 
-| Search for                | Take this action     | Set this value |
-| ------------------------- | -------------------- | -------------- |
-| Name                      | Type a name          | BaseMesh   |
-| Component                 | Click blue arrow     | StaticMeshComponent |
-| Particle System Component | Assign a Static Mesh | StaticMesh'Park_P.pickup_boost.BoostPad_Small_02_SM' |
-| Rendering                 | Add a Material slot  | Material'Park_P.pickup_boost.BoostPad_LightCone_03_Mat' |
+| Search for                | Take this action     | Set this value                                            |
+| ------------------------- | -------------------- | --------------------------------------------------------- |
+| Name                      | Type a name          | BaseMesh                                                  |
+| Component                 | Click blue arrow     | StaticMeshComponent                                       |
+| Particle System Component | Assign a Static Mesh | StaticMesh'Park_P.pickup_boost.BoostPad_Small_02_SM'      |
+| Rendering                 | Add a Material slot  | Material'Park_P.pickup_boost.BoostPad_LightCone_03_Mat'   |
 | Rendering                 | Add a second slot    | Material'Park_P.pickup_boost.Materials.BoostOrb_Glow_Mat' |
-| Attach Any                | Add a new item       | FXActorEvent_X'FXActorEvents.Spawned' |
-| Detach Any                | Add a new item       | FXActorEvent_X'FXActorEvents.PickedUp' |
+| Attach Any                | Add a new item       | FXActorEvent_X'FXActorEvents.Spawned'                     |
+| Detach Any                | Add a new item       | FXActorEvent_X'FXActorEvents.PickedUp'                    |
 
 Note that the order of the materials is swapped from the boost pills. Thanks Psyonix.
 
@@ -182,14 +183,15 @@ Note that the order of the materials is swapped from the boost pills. Thanks Psy
 
 Slot 1 will be the effect that plays when the boost is picked up, which is implemented as a particle system.
 
-| Search for                | Take this action     | Set this value |
-| ------------------------- | -------------------- | -------------- |
-| Name                      | Type a name          | PickupPSC   |
-| Component                 | Click blue arrow     | ParticleSystemComponent |
-| Particle System Component | Assign a Template    | ParticleSystem'Park_P.pickup_boost.BoostPad_Used_PS' |
-| Attach Any                | Add a new item       | FXActorEvent_X'FXActorEvents.PickedUp’ |
+| Search for                | Take this action  | Set this value                                       |
+| ------------------------- | ----------------- | ---------------------------------------------------- |
+| Name                      | Type a name       | PickupPSC                                            |
+| Component                 | Click blue arrow  | ParticleSystemComponent                              |
+| Particle System Component | Assign a Template | ParticleSystem'Park_P.pickup_boost.BoostPad_Used_PS' |
+| Attach Any                | Add a new item    | FXActorEvent_X'FXActorEvents.PickedUp’               |
 
 **Lastly, the `FXActor_Boost_TA` needs that same crucial change, otherwise it will never reappear visually:**
+
 | Search for | Change the line(s) | To this value |
 | ---------- | ------------------ | ------------- |
 | “del”      | No Delete          | Checked       |
