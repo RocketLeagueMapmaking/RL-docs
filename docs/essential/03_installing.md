@@ -20,20 +20,6 @@ If you don’t want to stress about this setup process, there are some publicly-
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CfelMbPLF6U?si=45jt7nXF4s2ohOn3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-::::details Community installers tools
-
-:::warning Setup steps
-The steps for the setup using this tool may differ from this guide and the other tools, see the page on the rocketleaguemods website for more information. Note that it might be outdated and it might not have all the latest discoveries added
-:::
-
-### Newk’s UDK Simple Setup
-
-To download this, you will need to make an account with RocketLeagueMods.com, our little corner of the VideoGameMods network. Newk’s package supplies detailed instructions for installing UDK 2015, and provides a huge set of resources to get going quickly. Refer to the section below to install UDK properly.
-
-* [RocketLeagueMods Link](https://rocketleaguemods.com/mods/udk-2015-simple-setup/)
-
-::::
-
 ## Running the Installer
 
 After you [download the UDK 2015 Installer](../resources/downloads.md#setup) from my Drive (or any other friendly modder’s secret stash), double click it to start the install process. Accept the TOS.
@@ -46,8 +32,8 @@ After you [download the UDK 2015 Installer](../resources/downloads.md#setup) fro
 
 In the Project Name field, enter a good name for your project. I call mine RLMM (Rocket League MapMaking) but yours will be referred to as `{ProjectName}` in this guide. Additionally, this folder will be called `{UDK Folder}` for the rest of this guide.
 
-> [!WARNING]
-> It is recommended to not choose a project name with a space or other special characters!
+> [!DANGER]
+> You cannot choose a project name with a space or other special characters!
 > This could give you trouble later, such as when running installers.
 
 Twiddle your thumbs for a few minutes as it installs prerequisites and then installs UDK.
