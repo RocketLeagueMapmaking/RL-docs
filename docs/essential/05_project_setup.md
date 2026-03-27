@@ -7,19 +7,53 @@ title: Project Setup
 
 UDK is from a different era of software project development, so it doesn’t have a lot of the nice features (or the look) that we have grown accustomed to. It can be a bit annoying to navigate and understand, so the next few sections will be a walkthrough of how you should set it up.
 
+:::info Guide paths
+
+To customize your guide experience, you can change the paths to your installation. These settings are saved locally in the browser only.
+
+<PreferenceSetting
+  storeKey="rlmm-path-udk"
+  defaultValue="C:\UDK\RLMM\"
+  type="input"
+  :resetOptions="{ enabled: true }"
+>
+
+UDK Installation folder
+</PreferenceSetting>
+
+Use the location of [the UDK installer](./installing#running-the-installer) for this path. This path can be referred as `{UDK Folder}` throughout the guide.
+
+<PreferenceSetting
+  storeKey="rlmm-path-rl"
+  defaultValue="C:\Games\SteamApps\common\rocketleague\"
+  type="input"
+  :resetOptions="{ enabled: true }"
+>
+
+Rocket League installation folder
+</PreferenceSetting>
+
+You should see in <code><PreferenceSetting storeKey="rlmm-path-rl" defaultValue="C:\Games\SteamApps\common\rocketleague\" type="input" :renderValue="true" />TAGame\CookedPCConsole</code> a list of `.upk` game files. This path can be referred as `{CookedPCConsole}` throughout the guide.
+
+You can change more preferences [in the settings page](/settings).
+
+:::
+
 ## Folder Setup
+
+> [!TIP]
+> If you used the installer package, these shortcuts are already created for you.
 
 I use Windows 10 and the Steam version of Rocket League, so please keep that in mind through the entirety of this guide. Because Rocket League is no longer officially supported on Mac or Linux as of 2019, and installing UDK is also unlikely to work, you're almost certainly going to have to be on Windows also.
 
-* My Rocket League install location is `C:\Games\SteamApps\common\rocketleague`
+* My Rocket League install location is <code><PreferenceSetting storeKey="rlmm-path-rl" defaultValue="C:\Games\SteamApps\common\rocketleague\" type="input" :renderValue="true" /></code>
   * All Rocket League assets live inside `\TAGame\CookedPCConsole`
     * Several of my modded maps live inside `\mods`, a folder I created
-`C:\Games\SteamApps\common\rocketleague\TAGame\CookedPCConsole` will be referred to as `{CookedPCConsole}` for simplicity.
 
 * As mentioned in the [UDK install process](installing.md), everything will live inside `{UDK Folder}`
-  * **Each individual custom map should live inside a folder within `{UDK Folder}\UDKGame\Content\Maps\`**
+  * **Each individual custom map should live inside a folder within <code><PreferenceSetting storeKey="rlmm-path-udk" defaultValue="C:\UDK\RLMM\" type="input" :renderValue="true" />UDKGame\Content\Maps\ </code>**
   * In addition to these folders, I highly highly recommend making two Windows File Explorer shortcuts, or bookmarking these locations
-    * One that points to `{CookedPCConsole}`
+    * One that points to `{CookedPCConsole}`: <code><PreferenceSetting storeKey="rlmm-path-rl" defaultValue="C:\Games\SteamApps\common\rocketleague\" type="input" :renderValue="true" />TAGame\CookedPCConsole</code>
     * One that points to the Steam Workshop folder for Rocket League. This may be found in the Steam install location (the first half of `{CookedPCConsole}`), but instead of `\common\` it will be `\workshop\content\252950\`. Each downloaded map has a custom identifier in here, and it can be incredibly valuable to open them up in UDK and see how things are made.
     * Keep these within the `\Maps\` folder
 
@@ -31,7 +65,7 @@ I use Windows 10 and the Steam version of Rocket League, so please keep that in 
 I highly recommend creating folder shortcuts between all of these places, because it’s easy to get lost. It also gets tiresome navigating folders all day.
 :::
 
-## Batch Script For Quickly Testing Maps (BSFQTM) <Badge text="important" type="tip"/>
+## Batch Script For Quickly Testing Maps (BSFQTM) <Badge text="important" type="tip"/> {#bsfqtm}
 
 Create a new text file, then rename it something like UtopiaOverwrite.bat. To use this script, simply drag your map file onto it, and it will overwrite the Rocket Labs Utopia Retro (donut) map, which is not used in any online multiplayer playlist.
 
@@ -46,15 +80,7 @@ echo F|xcopy /y "%~1" "{CookedPCConsole}\Labs_Utopia_P.upk"
 ```
 
 CookedPCConsole is the folder containing all of Rocket League’s assets, within the install folder:
-**C:\Program Files (x86)\Steam\steamapps\common\rocketleague\TAGame\CookedPCConsole**
-
-Meaning that the script for me is:
-
-```sh
-@echo off
-echo "%~1"
-echo F|xcopy /y "%~1" "C:\Program Files (x86)\Steam\steamapps\common\rocketleague\TAGame\CookedPCConsole\Labs_Utopia_P.upk"
-```
+**<code><PreferenceSetting storeKey="rlmm-path-rl" defaultValue="C:\Games\SteamApps\common\rocketleague\" type="input" :renderValue="true" />TAGame\CookedPCConsole</code>**
 
 For ease of use, I copy this script into the folder of each of my in-progress maps.
 
@@ -68,6 +94,8 @@ If you want to have an animated skysphere around your world, use one of the Ligh
 
 After making the project, the first thing you are going to want to do is save your new project with a better name than Untitled-3. I recommend putting it in a dedicated folder such as:
 
-`{UDK Folder}\UDKGame\Content\Maps\MyNewMap`
+<code>
+<PreferenceSetting storeKey="rlmm-path-udk" defaultValue="C:\UDK\RLMM\" type="input" :renderValue="true" />UDKGame\Content\Maps\MyNewMap
+</code>
 
 It is no problem at all to change the name of a project after the fact, so don’t feel like you are locked in to a folder name or a project name.

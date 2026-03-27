@@ -60,10 +60,10 @@ const sidebar: Sidebar = {
                         text: 'Installing',
                         link: 'installing',
                     },
-                    {
-                        text: 'Dummy Classes',
-                        link: 'dummy_classes',
-                    },
+                    // {
+                    //     text: 'Dummy Classes',
+                    //     link: 'dummy_classes',
+                    // },
                     {
                         text: 'Project setup',
                         link: 'project_setup',

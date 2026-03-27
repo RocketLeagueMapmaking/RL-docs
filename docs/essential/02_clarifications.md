@@ -9,9 +9,11 @@ One frequently asked question is “why do we have to use UDK?” Rocket League 
 
 **Maps made with UDK 2015 cannot be opened in UDK 2013,** but the reverse is not a problem at all. If everyone makes the switch to UDK 2015, then we will have world peace.
 
-## Unreal Engine 4
+## Unreal Engine 4/5
 
 UDK is for Unreal Engine 3. Unreal Engine 4 was first released in 2014, and it’s almost a completely new engine. **Unreal Engine 4 cannot be used for Rocket League Mapmaking.**
+
+There were some rumors about the game Rocket League moving to Unreal Engine 5, but this was not confirmed by Psyonix. [Read more](/more/ue5) about what this could mean for making custom maps.
 
 ## File Extensions
 
